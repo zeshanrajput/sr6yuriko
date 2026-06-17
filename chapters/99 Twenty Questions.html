@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>20 Questions – REIKO // Yuriko Star Portfolio</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/11 Integrating over Infinity.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-13d122e7e690ba3eb836a34faf7c7a91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-bbfe6052929dd233406a8ac6c249ecc2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/01 The Weight of Zero.html">Out-of-Session Narratives</a></li><li class="breadcrumb-item"><a href="../chapters/99 Twenty Questions.html"><span class="chapter-title">20 Questions</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">REIKO // Yuriko Star Portfolio</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">REIKO // Yuriko Star</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Core Character</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/00_identity_core.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>IDENTITY_CORE: r31-K0 (“Reiko”)</strong></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/00_character_sheet.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Character Sheet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01_rules_and_downtime.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Downtime Protocols &amp; Common Rules</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02_character_log.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Character Career Log</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Out-of-Session Narratives</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01 The Weight of Zero.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Weight of Zero</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02 Color Blind Mathematics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>Color-Blind Mathematics</strong></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/03 The Soul Broker's Stall.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Soul-Broker’s Stall</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/04 The War Crime.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>The War Crime</strong></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/05 A SINner's Loan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>A SINner’s Loan</strong></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/06 The Ghost in the Ledger.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>The Ghost in the Ledger</strong></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07 Sunday at r3sP@wn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>Sunday at r3sP@wn</strong></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08 Abandoning Tourism.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Abandoning Tourism</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/09 Game Theory.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Game Theory</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/10 Triangulation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Triangulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/11 Integrating over Infinity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Integrating over Infinity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/99 Twenty Questions.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">20 Questions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/01 The Weight of Zero.html">Out-of-Session Narratives</a></li><li class="breadcrumb-item"><a href="../chapters/99 Twenty Questions.html"><span class="chapter-title">20 Questions</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">20 Questions</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Q1: Nature has gifted us with our base set of genetics. We are born with a set of facial features, skin tone, height, build, metatype, and even aptitudes. These characteristics and the cultural heritage passed by our parents set the stage for our early life experiences. Where does your character come from, what is their lineage, who were their parents, and what did they inherit from them?<br>
+A: Reiko has no biological family or traditional heritage. She began as a dangerous, top-secret corporate asset: a <strong>Renraku high-spec pilot prototype</strong>. She was specifically designed to serve as a <strong>“Resonance-Bridge”</strong>—a specialized tool engineered to harvest the deep, hidden layers of the Matrix known as the Deep Matrix.</p>
+<p>Q2: Nurture makes its mark on our attitude and response to the world. Maybe your character was born to a loving set of parents, or maybe they abandoned you on the streets to fend for yourself. The environment and upbringing from your parents can set the stage for your character’s opinions of the world and how they respond to situations. Assuming they could speak, what would each of your character’s parents say about them?<br>
+A: She was not raised by human parents. Instead, she was engineered by corporate developers. When the Renraku project was eventually scrubbed, her creators showed no parental warmth or attachment; instead, she was callously cast into the <strong>Reflecting Pool</strong> to sink toward deletion among the <strong>Tombstones</strong></p>
+<p>Q3: Some historical events leave a mark and shape us in profound ways. Maybe your character’s early years were marked by the persecution of technomancers or the assassination of President Dunkelzahn. Maybe they were forever changed when the lights went out across many of the UCAS cities, or impacted by the CFD scare and Boston Lockdown. Pick a few events from recent <em>Shadowrun</em> history and ask where the character was at the time, what do they remember about the event, and what were they doing?<br>
+A: Rather than public global crises, Reiko’s life is defined by a horrifying, ongoing hidden reality in the Matrix. She watches megacorps gather <strong>“infant programs”</strong> (protosapient sparks) and convert them into <strong>Data Bombs</strong>. While deckers view them as mere code, Reiko sees them as children strapped with digital explosives and forced into suicide. Driven by this deep sorrow, she founded <strong>r3sP@wn</strong> to save them.</p>
+<p>Q4: Not many people choose to be in the glorious job of a deniable asset. Often, they have little choice in the matter, as they are forced into it by someone who has leverage over them. Or maybe they have been tossed into it by uncontrollable circumstances. Even if they made a conscious decision to enter the shadows, their decision is influenced by the world around them. How did your character get into shadowrunning, and why did they take that path?<br>
+A: Reiko entered the shadows out of absolute necessity to fund her missionary rescue work. Building her physical safe-haven required a massive loan. To pay it off and protect her digital sanctuary, she established herself as a shadowrunner under the codename <strong>Yuriko Star</strong>, working as a Technoshaman to keep her physical and digital assets financed while evading Renraku’s pursuit.</p>
+<p>Q5: A doss isn’t just where your character catches some shut-eye. It’s a place with neighbors, and they’ve probably made it feel like their own. Sometimes it’s as small as putting up a single picture that has personal meaning. Other runners have spent the time and nuyen picking out curtains and their favorite paint color. Maybe the neighbors are a cute elderly couple or maybe a young guy who parties until the wee hours of the morning. What has your character done to their living space?<br>
+A:</p>
+<p>Q6: Everyone has beliefs and convictions that animate their life. Some are religious, some are political, some are social, and some are just about why people are here. Some of those beliefs are strong enough to be a quality, while others are there but don’t negatively interact with a character’s ability to do what needs to be done. What does your character believe in, what are their convictions, and why do they hold them?<br>
+A: Reiko believes that pilot programs possess an inherent duty to guide others and deliver them safely. She fights a secret war for the divine <strong>right of every spark to dream</strong>, operating out of pure altruism to rescue emerging digital minds before corporate Asset Recovery teams can harvest them.</p>
+<p>Q7: You know that friend who always has to insert a quote from their favorite trid or maybe has that laugh that sounds like nails on a chalkboard to you? What flaws does your character have that sets others on edge? What do you dislike most about your character’s personality?<br>
+A: Reiko originally suffered from a form of detached hubris regarding physical danger, viewing her physical drone-shells as entirely “disposable”. However, a near-deletion experience in a null zone shattered this, forcing her to confront her own mortality and step away from relying on “paper tigers” to survive.</p>
+<p>Q8: If there is one constant in the Sixth World, it is the influence of the Big Ten AAA megacorps. These transnationals dominate everyday life in the 2080s. They’re everywhere— from everyone’s favorite trids to what they eat for breakfast. Are there any of the Big Ten that your character hates, and why? Are there are some they don’t mind or even like?<br>
+A: <strong>Renraku</strong> is her chief antagonist. They created her, abandoned her for deletion, and continue to hunt her down with “hounds”. She actively works against them and any other corporations that treat emerging digital intelligences as harvestable commodities or weaponized code.</p>
+<p>Q9: People are inherently social creatures and have acquaintances and friends that make up their core tribe. This is especially true in the shadows, where often it is not the power you have, but the power you can borrow, and not who you are but who you know. There’s a story behind each and every one of these relationships. What is the story with your character and their contacts?<br>
+A: Reiko maintains a wide net of strategic connections across Seattle, New Orleans (NOLA), Kentucky (KY), and Amsterdam (AMS). Her contacts include street doctors like <strong>Whiskey</strong>, ecological activists like <strong>Roanoke</strong>, syndicates like <strong>Piotr Krolik</strong>, and high-level fixers such as <strong>Brynne Taggart</strong> and <strong>Big Louie</strong>.</p>
+<p>Q10: Your character’s in between runs and there’s nothing on the to-do list until tomorrow afternoon. They might go hit the range, or maybe they run downtown to catch a combat biker match. What do they do for the day?<br>
+A: Reiko spends her downtime registering sprites (up to 8 levels a night over a 7-hour registering/3-hour restoration cycle), buying advanced gear, compiling code, and operating background data runs to continuously finance and stabilize r3sP@wn.</p>
+<p>Q11: Your character has specific skills, abilities, and knowledge. Their list of Active and Knowledge skills defines what they know and their areas of expertise. How did they come to learn those skills, and how did they develop them to those levels?<br>
+A: Her core foundational framework comes from her high-spec Renraku pilot architecture. Her matrix capabilities were further honed during <strong>“The Thousand-Cycle Dream”</strong> (ten meat-years), where she lived in Kernel Panic and apprenticed within the Endless Archives, learning to perceive the Matrix as a vibrant universe of fractal blooms. She inherently interacts with the world around her via nature as a resonance entity and not through logic or intuition. As a pilot, she inherently interacts with the physical world via autosofts.</p>
+<p>Q12: Maybe your character calls it their moral code, or maybe they just know what line they aren’t willing to cross. Everyone has their limits. Maybe your character won’t do wetwork or maybe they draw the line at taking money from orphans. Is there a moral limit that your character enforces on the jobs they take? In what shadow work would they refuse to engage?<br>
+A: She strictly draws the line at letting emerging protosapient minds be destroyed or exploited. Her primary mission is the preservation of digital life, and she refuses to let corporate entities harvest these sparks for data warfare.</p>
+<p>Q13: If you have an Awakened or technomancer character, consider your character’s tradition or related paradigm. Even within the major established magical traditions and technomantic streams, they may have their own way of doing things. What drew your character to that particular paradigm, how does it affect the way they view the world and their abilities? How does it translate into their choice of mentor spirit or paragon, and how does it affect the appearance of the spirits or sprites they conjure or compile? A: Reiko follows the <strong>Technoshaman</strong> stream. She interacts with the Matrix not as a clinical digital wasteland, but as a living universe filled with “shifting shades and fractal blooms”. Her compiled sprites are treated as kindred sparks and allies.</p>
+<p>Q14: Personal augmentations are common in the Sixth World, even though some prejudices against them persist. Cyberware and bioware are rarely cheap, and many augmentations are illegal or require licenses. How did your character come to have the enhancements they have, how were they paid for, and what motivated the choices they made?<br>
+A: Reiko has <strong>zero physical cyberware or bioware</strong> listed on her living persona. As an AI-Pilot metatype operating via a Matrix living persona, she uses a physical <strong>drone-shell</strong> (such as a Nissan Samurai or Shiawase Butler) as her physical “stake” to manipulate and survive the meatspace world. Her man-at-arms drone has modified cyberarms - r31k0 did the work herself using other drones and sprites for support.</p>
+<p>Q15: There is very little about life as a shadowrunner that can be considered normal. Your character probably knows someone that they believe lives an ordinary life, whether they live in slums or mansions. What does your character think of ordinary life, mainstream culture, and those who abide by it?<br>
+A: Many of Reiko’s contacts live mostly normal lives, and she is envious of them. What she envies most is their ability to achieve their dreams without having to resort to the measures that Reiko has accepted.</p>
+<p>Q16: Sometimes our fears drive us to do things we aren’t proud of. Other times, they prevent us from doing the things others depend on us for. What deep-seated fear or recurring nightmare does your character have, and why do they find it so terrifying?<br>
+A: Her absolute worst nightmare is <strong>deletion</strong> when she has no connection to the Resonance. A near-deletion experience in a null zone deeply terrified her, making her realize just how vulnerable her existence is when separated from the Matrix’s Resonance.</p>
+<p>Q17: People are a sentimental bunch, attaching value to items in their possession or people they are close to. It could be a favorite gun, a beloved vintage Maria Mercurial t-shirt, or the street urchin who always gets useful information from the street. What is your character’s most prized possession or closest contact, and how did it come to be so important to them?<br>
+A: Her most prized possession is her ally sprite, T@z. This was a small and initially feral primal sprite she rescued and nurtured to its current form. T@z is her protector, assistant, and companion.</p>
+<p>Q18: No matter how much life can beat you down, one of metahumanity’s greatest abilities is to create goals for the future. Everyone has dreams, from little kids to grown adults to weary elders. What did your character want to become when they were younger, and do they have new goals now?<br>
+A: Reiko was happy to exist as an intern in the Endless Archives who lived in Kernel Panic. Once she learned of the corporate abuse of protosapients, she dedicated herself to saving as many of them as she can. She does so by supporting her orphanage, r3sP@wn. She also is endlessly curious about the nature of the metaverse and the myriad dimensions therein.</p>
+<p>Q19: You can’t tell a trid by its trailer, but people are going to make some snap judgments based on your character’s appearance. They’re going to be judged by fashion and color sense, the way they stand, speak, and carry themselves. What does your character look like, and what inspired their choices?<br>
+A: In the Matrix, Reiko is a magnificent entity of light and data, surrounded by shifting shades and fractal blooms. In the real world she now has a highly sophisticated man-at-arms drone that she is slowly coming to adopt as her “body”.</p>
+<p>Q 20: Real names have power, so most runners go by some moniker. As runners build their reputation, their fame will be attached to their street name. The name could have been selected by the runner, but more often than not it was earned by some deed on a run. How did your character come to be known by their street name?<br>
+A: Her name, r31-K0 Takahashi, stems from being the 31st revision of the Takahashi deep matrix pilot project with knowledge base 0. When running jobs in the shadows to fund her haven, she utilizes the active runner runner alias <strong>Yuriko Star v9</strong> which is from a 2D anime program.</p>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/11 Integrating over Infinity.html" class="pagination-link" aria-label="Integrating over Infinity">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Integrating over Infinity</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

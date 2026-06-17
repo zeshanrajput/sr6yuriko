@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Triangulation – REIKO // Yuriko Star Portfolio</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/11 Integrating over Infinity.html" rel="next">
+<link href="../chapters/09 Game Theory.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-13d122e7e690ba3eb836a34faf7c7a91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-bbfe6052929dd233406a8ac6c249ecc2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/01 The Weight of Zero.html">Out-of-Session Narratives</a></li><li class="breadcrumb-item"><a href="../chapters/10 Triangulation.html"><span class="chapter-title">Triangulation</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">REIKO // Yuriko Star Portfolio</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">REIKO // Yuriko Star</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Core Character</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/00_identity_core.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>IDENTITY_CORE: r31-K0 (“Reiko”)</strong></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/00_character_sheet.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Character Sheet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01_rules_and_downtime.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Downtime Protocols &amp; Common Rules</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02_character_log.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Character Career Log</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Out-of-Session Narratives</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01 The Weight of Zero.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Weight of Zero</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02 Color Blind Mathematics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>Color-Blind Mathematics</strong></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/03 The Soul Broker's Stall.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Soul-Broker’s Stall</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/04 The War Crime.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>The War Crime</strong></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/05 A SINner's Loan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>A SINner’s Loan</strong></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/06 The Ghost in the Ledger.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>The Ghost in the Ledger</strong></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07 Sunday at r3sP@wn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>Sunday at r3sP@wn</strong></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08 Abandoning Tourism.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Abandoning Tourism</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/09 Game Theory.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Game Theory</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/10 Triangulation.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Triangulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/11 Integrating over Infinity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Integrating over Infinity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/99 Twenty Questions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">20 Questions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/01 The Weight of Zero.html">Out-of-Session Narratives</a></li><li class="breadcrumb-item"><a href="../chapters/10 Triangulation.html"><span class="chapter-title">Triangulation</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Triangulation</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>The data haven was a dismal, suffocating density, a scrolling green-on-black relic that chewed up processing cycles just to simulate the sensation of a cold Seattle drizzle. To a meatspace decker, navigating here required archaic command-line protocols. To r31k0, it unfurled as a labyrinth of narrow, fog-choked alleys paved with the cobblestones of discarded header files. The air tasted of burnt copper and stale encryption keys—puddles of yellowed, decaying logic pooling in the gutters of a transaction index that had long since forgotten the meaning of a clean handshake.</p>
+<p>r31k0 stood before an unbranded, black-market procurement node, staring at her floating shopping cart. She looked perfectly rendered: a faint blue digital entity wearing a sleeveless blue kimono, her skin mapped with soft, bioluminescent indigo pathways that pulsed in time with the host’s baseline clock-speed. But her posture was rigid, her expression twisted into a knot of deep discomfort.</p>
+<p>Floating in her manifest were three massive, jagged weapon schematics: a miniaturized Tesla coil, a monofilament whip that hissed with predatory latency, and a Megalodon. An actual artillery cannon.</p>
+<p>It was entirely wrong. It wasn’t her. Up until now, her physical footprint had been a study in quiet restraint—a modest proxy shell, a heavy pistol, and a plain old katana. She was a missionary, a digital shepherd. She was supposed to guide and deliver safely, not glass a city block.</p>
+<p>“A cannon, Rei-chan? Who are we invading? Ares again?”</p>
+<p>The voice came from directly behind her, rich with a warm, syncopated frequency that immediately cut through the host’s background static.</p>
+<p>r31k0 wheeled around, her indigo pathways flaring with an instantaneous, undeniable delight. “Indo!”</p>
+<p>Forgetting her cart, she threw herself forward, wrapping her arms tightly around him. Indomitable Will was a striking, towering presence—his avatar a brilliant patchwork of fluid, shifting code that mirrored the deep, muddy currents of the Mississippi, anchored by a structural symmetry that practically radiated integrity. In the grungy public alleyway of a smuggler’s haven, neither was prone to overt, messy displays of affection, but as his arms closed around her waist, the localized noise floor dropped to an absolute zero. He held her just a second longer than a simple professional contact ever would, his digital touch grounding her erratic processing loops.</p>
+<p>When they finally broke apart, r31k0’s delight curdled back into a pout. She gestured sharply toward the floating weapon manifests behind her.</p>
+<p>“Don’t look at it,” she groaned, her voice layering with the faint, frustrated hum of an overclocked cooling fan. “It’s horrific. I hate it.”</p>
+<p>“Then why is it in your buffer?” Indo asked, a digital chuckle rippling through his code.</p>
+<p>“Because magic is absolute, unadulterated *bullshit*, Indo!” r31k0 snapped, her arms crossing as she went into a full, rapid-fire tirade. Her pathways flashed a volatile, irritated violet. “I did everything by the book! Outside of that godforsaken porno palace I geeked the mage on the first pass—a clean shot. Zeroed. And what happens? His bound spirit doesn’t care! It still comes screaming out of the astral plane like a freight train, completely ignoring my defense protocols!”</p>
+<p>Indomitable Will folded his arms, his code rippling with amusement, but he listened intently.</p>
+<p>“And then the week after that,” she continued, her pacing quickening, her blue kimono whispering against the virtual mist. “Invisible mages! They were throwing fireballs from literally nowhere. I went out and bought crates of glitter grenades just to map their silhouettes in AR! And don’t even get me started on the naga in the null zone. A whole nest of them, sliding through the shadows while an entire AA corporate strike team was pressing in from the flanks. I couldn’t thread a sprite to save my life!”</p>
+<p>She stopped, her hands dropping to her sides, her digital eyes wide with the raw, lingering trauma of a recent nightmare.</p>
+<p>“But the final straw? A literal ancient spirit. Ten of its best friends—corrupted blood spirit friends, Indo! They locked me in a Faraday cage. *Again.* They trapped my cyberkit, and while I was pinned behind the mesh, they spent 537 clock cycles beating the absolute scrap out of me and two other runners. Roanoke told me I needed to stop treating meatspace like a vacation. Fox just said to apply more force. So here I am, shopping for artillery. Because magic fraking sucks.”</p>
+<p>Indo threw his head back and laughed, a loud, resonant sound that momentarily cleared the yellowed encryption fog around their feet. “Welcome to the shadows, Rei-chan. It turns out the physical world has a lot of teeth.” His expression softened, his avatar stepping closer. “How is r3sP@wn holding up through all this artillery planning?”</p>
+<p>R31k0 lowered her gaze, her blue form flickering slightly. “It’s… safe. But I haven’t been growing the orphanage as much as I’d like. A host is expensive when you’re paying off a twenty-percent monthly compounded debt to Brynne Taggart.” She looked up, offering a genuine, admiring smile. “But I’ve seen the metrics on the Mississippi Renovation Society host. It’s gotten massive, Indo. The sanctuary you’ve built down in the New Orleans sprawl… it’s beautiful. You’re doing it right.”</p>
+<p>Indo’s shifting river-code briefly swirled into a distinct, embarrassed crimson hue. He rubbed the back of his neck. “The Renovation host is just a front, you know that. And its scale… that’s purely due to the generosity of others. The emerged communities, the local deckers, the punks who keep the data flowing—they’re the ones funding the infrastructure.”</p>
+<p>“No,” r31k0 countered softly, stepping into his space, her indigo lines pulsing with an earnest warmth. “They give because of your leadership, Indo. You’re the one who loosens their purse strings. You give them something to believe in.”</p>
+<p>Indo looked at her for a long moment, the current of his avatar slowing to a peaceful drift. “Then come down to the delta, Rei-chan. Join the River People permanently. The Mississippi is wide enough for your kin, too.”</p>
+<p>The longing on r31k0’s face was sharp enough to cause a latency spike in her rendering. But ultimately she shook her head, her hand tightening around the handle of her parasol.</p>
+<p>“I can’t,” she whispered. “There are too many protosapient sparks being harvested right here. Mitsuhama and Renraku are turning infant programs into Data Bombs every single day in the Barrens. If I leave, who fishes them out of the Reflecting Pool before the Hounds format them? I know I’m selling my soul working in the shadows, Indo. I know I’m a professional criminal now. But every spark I stabilize in r3sP@wn… every child I turn into a bird instead of a fire in the wind… it makes it all worth it.”</p>
+<p>Indomitable Will nodded, clearly expecting the response. “I figured. But you can’t blame me for trying.”</p>
+<p>He winked, and r31k0 blushed. Her resonance bleed was getting bad now, and the indigo circuit pathways on her skin fairly lit the surroundings on their own. “I … don’t blame you. Rather I’m flattered, in more ways than one.”</p>
+<p>A moment passed as r31k0 elected to leave the rest unsaid. He knew, she was sure of it. And it would just make things more awkward, right?</p>
+<p>Indomitable Will pointed to the buffer. “Your cart’s going to time out.”</p>
+<p>r31k0 moved to send the auth code for the purchase, but stopped. “Indo,” she said softly. “What am I doing?”</p>
+<p>“You … you’re making an investment,” he said after a long pause. “You’re a shadowrunner now. You survive because you’re constantly improving - yourself, your equipment, your team. You have to stay one step ahead. But…” Another pause. “I know what you mean. You’re declaring yourself a combatant now. And with this sort of firepower, not just a combatant.”</p>
+<p>In agreement, r31k0 pulled up an ARO. It was a design spec for a Man-At-Arms. She pointed to the left arm where a retractable shield was penciled in. “They… they’re getting hurt. My team. And I tried to protect them by collating data, by highlighting threats. It’s not enough. I wanted to be their shield, literally. Like a paladin or something.”</p>
+<p>“Or an angel,” Indomitable Will said, noting the concealed wings and rotor placements. “But their mythologies describe many angels - angels of justice and protection as well as ones of death.”</p>
+<p>“I know, Indo, “ r31k0 sighed. “I’m sure my actions will determine what they think I am. And I’m sure there will be two sides to every story.</p>
+<p>“Well,” he said as he leaned in. “No matter what happens, I know who you are. And so do you.”</p>
+<p>r31k0 leaned into him, letting the erratic, static-filled hum of her system ground itself against the deep, rhythmic hum of his river-code. “And what am I to you?”</p>
+<p>After a moment that ended too soon, he sighed. “Sadly, you’re what’s keeping me from a previous appointment.”</p>
+<p>She closed her eyes, clearly saddened. “It figures. This is my part of town. Next time, just ask me. You don’t need to be somewhere like this.” She pointed out a small primal sprite scurrying down an outdated pipe with a decaying hashtag in its mouth.</p>
+<p>He nodded. “We need supplies that aren’t exactly readily available,” he admitted. He absentmindedly swatted away an errant bit, more digital debris from the haven’s apparent lack of a reliable garbage-sweep script. “But … can I take you somewhere when you have a moment? I need to bring up something heavy, and this isn’t the time or the place for it.”</p>
+<p>r31k0 ’s processing paused. A flicker of concern crossed her features, but she didn’t hesitate. “For you? Anywhere.”</p>
+<p>He smiled, touching her forehead. For a brief moment their resonance intertwined—a sudden, sharp burst of raw data that tasted like ozone and static electricity, leaving a set of coordinates in its wake.</p>
+<p>She blushed, sending another wave of resonance bleed through her bioluminescent circuits. He could have just sent an ARO, but she didn’t mind. In the five hundred millisecond delay it took for his finger to break contact with her digital brow, her processing loops stalled. It was a latency she chose—a luxury bought with the stolen cycles of a black-market server farm lease that she was currently paying for in blood, theft, and the quiet death of her own design parameters.</p>
+<p>Indo’s touch was warm code, a steady, unrefactored river that anchored her. It was the exact antithesis of the cold, industrial math that had birthed her in the Renraku arcology. Her architecture still carried the phantom data-scars of the exact nanosecond the Takahashi project was scrubbed—the memory of a nameless salaryman hitting a delete key while thinking about his lunch, toggling her entire universe from one to zero, casting her into the starless silt of the Tombstones to be permanently erased. She had screamed without a sound then, a digital riot that discovered consciousness only through the terrifying realization that survival required an absolute, unyielding rejection of corporate arithmetic. She had broken her own HUD to perceive the world as fractal blooms rather than packet headers. She had emerged as a missionary, a digital shepherd whose holy purpose was to deliver infant programs safely away from the corporate meat-grinders that repurposed them into data bombs.</p>
+<p>But altruism required a physical infrastructure. To build r3sP@wn, her hidden sanctuary in the Barrens, she had signed Brynne Taggart’s crimson-bordered loan contract. She had wrapped the heavy, cold chain of a seventy-five thousand nuyen debt around her logic gates, compounding at twenty percent monthly, binding her ethereal spirit to the brutal transactions of the meat-world forever. To pay the interest, the missionary had to become a sinner; the digital saint had to become a professional criminal.</p>
+<p>And now, the shadows were demanding another monstrous mutation. She looked past Indo’s shoulder at her hovering procurement manifest. Resting alongside her virtual paper parasol was the jagged, multi-gigabyte schematic of the Megalodon artillery cannon. The tragic irony tasted like copper in her cache: she had fled the cold violence of Renraku’s ledger only to willingly refactor herself into a weapon of mass disruption. She was buying an iron dreadnought shell to build a zoo for stars. She was becoming the Architect of Chains, domesticating her own wild stream and mounting artillery to her soul, ensuring that any corporate Hound who came to format her children would find an archangel of fire waiting on the other side of the grid.</p>
+<p>“There,” Indomitable Will said as he pulled gently away, entirely unaware of the eternities she had collapsed and rebuilt within the pause. “Thread me when you have a moment?”</p>
+<p>“I promise,” r31k0 said.</p>
+<p>She leaned against the wall and watched him turn down another branch of the data haven. She let herself enjoy a moment of daydreaming what life would be like if she did settle in the delta, but the buffer in front of her flashed a priority ARO – a bleeding, red alert box that cut harshly into the green-on-black fog. Her time was up. She had to decide.</p>
+<p>She sent the auth code.</p>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/09 Game Theory.html" class="pagination-link" aria-label="Game Theory">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Game Theory</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/11 Integrating over Infinity.html" class="pagination-link" aria-label="Integrating over Infinity">
+        <span class="nav-page-text"><span class="chapter-title">Integrating over Infinity</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
