@@ -16,7 +16,7 @@ This section aggregates core cheat sheets and templates for downtime registratio
 * **Technoshaman Stream Modification:** Grants +1 additional service on a successful compiling test. Total compiled services = **2 services/powers**.  
 * **Fading Value (FV):** Under core rules, compiling fade is exactly equal to the hits received on the sprite's defense test = **3**.  
 * **Technoshaman Mitigation:** Reduces compiling fade by a flat 2 (3 - 2 = 1).  
-* **Fading Resistance:** Willpower (6) + Charisma (4) + Submersion Grade / Sprite Conduit (3) = **13 dice** → **3 Bought Hits**.  
+* **Fading Resistance:** Willpower (6) + Charisma (4) + Submersion Grade / Sprite Conduit (5) = **15 dice** → **3 Bought Hits**.  
 * **Compiling Damage Taken:** 1 FV - 3 hits = **0 Damage**.
 
 ### 2. Registering Phase
@@ -26,8 +26,8 @@ This section aggregates core cheat sheets and templates for downtime registratio
 * **Net Hits:** 4 - 3 = 1 → **1 base service**.  
 * **Combined Total Services:** 2 (compiled) + 1 (registered) = **3 total services/powers**.  
 * **Fading Value (FV):** Under core rules, registering fade is equal to *twice* the hits received on the sprite's defense test (3 x 2 = 6).  
-* **Fading Resistance:** Willpower (6) + Charisma (4) + Submersion Grade / Sprite Conduit (3) = **13 dice** → **3 Bought Hits**.  
-* **Registering Damage Taken:** 6 FV - 3 hits = **3 boxes of Stun damage**.
+* **Fading Resistance:** Willpower (6) + Charisma (4) + Submersion Grade / Sprite Conduit (5) = **15 dice** → **4 Bought Hits** (average/rounded).  
+* **Registering Damage Taken:** 6 FV - 4 hits = **2 boxes of Stun damage** (down from 3).
 
 ### 3. Resonance Focus Fading
 
