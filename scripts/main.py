@@ -639,7 +639,7 @@ def parse_character(input_path):
             mapped_matrix = find_json_matrix(ref, custom_name)
             
             is_drone = mapped_drone is not None or (norm_ref in fnd_drones)
-            is_matrix = mapped_matrix is not None or (norm_ref in fnd_matrix) or ref in ["erika_elite", "transys_avalon"] or custom_name == "Cyberkit (R6)"
+            is_matrix = (mapped_matrix is not None or (norm_ref in fnd_matrix) or ref in ["erika_elite", "transys_avalon"] or custom_name == "Cyberkit (R6)") and ref != "cyberweapon_wrist_shield"
             
             accessories = []
             for acc in it.findall('.//item'):
@@ -1375,37 +1375,26 @@ def generate_ascii_sheet(char_data, verbose=False):
                 bod_fn = fn_registry.add_footnote(f"S. Man-at-Arms BOD {base_body}({augmented_body})", bod_fn_desc)
                 bod_display = f"{base_body}({augmented_body}) {bod_fn}"
                 
-                # Calculate augmented armor
+                # Calculate augmented armor using drone's own accessories
                 base_armor = 8
                 supplements = []
                 arm_sum = 0
                 
-                # Check character inventory/items for AAS, Skinshield, Invisi-shield, Ballistic Hood, RACS
-                inventory_item_names = [it.get("name", "").lower() for it in char_data.get("items", [])]
-                for it in char_data.get("items", []):
-                    for acc in it.get("accessories", []):
-                        inventory_item_names.append(acc.get("name", "").lower())
-                
-                if any("aas" in name or "armor augmentation" in name for name in inventory_item_names):
-                    supplements.append("AAS (+1)")
-                    arm_sum += 1
-                if any("skinshield" in name for name in inventory_item_names):
-                    supplements.append("Skinshield (+2)")
-                    arm_sum += 2
-                if any("invisishield" in name or "invisi-shield" in name for name in inventory_item_names):
-                    supplements.append("Invisi-shield Armor (+2)")
-                    arm_sum += 2
-                if any("ballistic hood" in name for name in inventory_item_names):
-                    supplements.append("Ballistic Hood (+1) (Skinshield)")
-                    arm_sum += 1
-                if any("racs" in name or "ruthenium armor" in name or "ruthenium concealment" in name for name in inventory_item_names):
-                    supplements.append("RACS (+2) (Skinshield)")
-                    arm_sum += 2
+                if isinstance(drn_accs, str) and drn_accs:
+                    m_arm = re.search(r'(?:armor increase|armor augmentation)\s*(\d+)', drn_accs, re.IGNORECASE)
+                    if m_arm:
+                        incr_val = int(m_arm.group(1))
+                        supplements.append(f"Armor Increase {incr_val} (+{incr_val})")
+                        arm_sum += incr_val
+                    
+                    if re.search(r'wrist shield', drn_accs, re.IGNORECASE):
+                        supplements.append("Wrist shield (+4)")
+                        arm_sum += 4
                     
                 augmented_armor = base_armor + arm_sum
                 
                 arm_fn_desc = [
-                    f"ARM is {base_armor}({augmented_armor}) total.",
+                    f"ARM is {base_armor}[{augmented_armor}] total.",
                     "Standard armor is supplemented by:"
                 ]
                 if supplements:
@@ -1413,8 +1402,8 @@ def generate_ascii_sheet(char_data, verbose=False):
                 else:
                     arm_fn_desc.append(["None"])
                     
-                arm_fn = fn_registry.add_footnote(f"S. Man-at-Arms ARM {base_armor}({augmented_armor})", arm_fn_desc)
-                arm_display = f"{base_armor}({augmented_armor}) {arm_fn}"
+                arm_fn = fn_registry.add_footnote(f"S. Man-at-Arms ARM {base_armor}[{augmented_armor}]", arm_fn_desc)
+                arm_display = f"{base_armor}[{augmented_armor}] {arm_fn}"
             
             if "MAN-AT-ARMS" in d_name:
                 lines.append(f"- {d_name[:22]}")
