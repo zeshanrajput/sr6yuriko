@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+/.quarto/
+
+# Local environment
+.env
+
+# Quarto output
+_book/
+
+# Rules caches and local indexes
+.rules_cache.json
+.rules_index.json
+cache_index.json
+scratch/

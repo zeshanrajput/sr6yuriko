@@ -1,0 +1,138 @@
+___________________________________________________________________________
+// ACCESSING: REIKO_TAKAHASHI.bin // SOURCE: RESONANCE_REALMS //
+// STATUS: ONLINE // SUBMERSION: 2 // KARMA: 5 // NUYEN: ¥3,260 //
+___________________________________________________________________________
+
+[ IDENTITY ]
+  > NAME: Reiko Takahashi        > ALIAS: Yuriko Star v5
+  > METATYPE: Ai-Resonance Realms Ai > GENDER: DIVERSE
+  > STREAM: Technoshamans        > SIN: [LOCAL_FILE_ENCRYPTED]
+
+[ CORE_ATTRIBUTES ]
+  MAT | FWL [05]  SLZ [05]  DPR [04]  ATK [03]
+  MNT | WIL [05]  LOG [02]  INT [03]  CHA [06]
+  SPP | EDG [05]  RES [06]  SPK [06]  SUB [02]
+
+[ MATRIX EQUIVALENT ATTRIBUTES ]
+  BOD [F]  AGI [D]  REA [S]  STR [A]
+  --------------------------------------
+  INIT (PHYS): 8 +1D6
+  INIT (HOT) : 7 +3D6
+  COMPOSURE  : 11
+  JUDGE INT  : 8
+
+[ MATRIX_CONDITION_MONITOR ]
+  [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] 
+
+[ SKILL_MATRICES ]
+  CON                   : 01                   -> Pool: 07
+  CRACKING              : 05 (Hacking +2)      -> Pool: 11* / 13*
+  ELECTRONICS           : 05 (Complex Forms +2) -> Mtx 11* / 13* | Log 07 / 09
+  ENGINEERING           : 01                   -> Pool: 03
+  INFLUENCE             : 01                   -> Pool: 07
+  PILOTING              : 01                   -> Pool: 06
+  STEALTH               : 01                   -> Pool: 05
+  TASKING               : 06 (Registering +2)  -> Pool: 13 / 15
+    * Pool substitutes Logic/Willpower with Resonance (Natural Hacker)
+
+[ KNOWLEDGE ]
+  RESONANCE REALMS      : 01                   -> Pool: 03
+  DATA HAVENS           : 01                   -> Pool: 03
+
+[ LANGUAGES ]
+  NATIVE LANGUAGE       : 04                   -> Pool: 06
+
+[ COMPLEX_FORMS ]
+  - EDITOR       (Fading 3)           -> Pool: 13  [Fading Resist: 07] [CRB 190]
+  - PUPPETEER    (Fading 5)           -> Pool: 13  [Fading Resist: 07] [CRB 190]
+
+[ ECHOES & SUBMERSION ]
+  - HYBRID SPRITES                 [HnS 67]
+  - NEW SPRITE TYPE                [HnS 68]
+  - SPRITE CONDUIT                 [HnS 69]
+
+[ RESONANCE_QUICK_ACTIONS ]
+  - COMPILING SPRITES   -> Pool: 13*   [Fading Resist: 13]
+  - REGISTERING SPRITES -> Pool: 15    [Fading Resist: 13]
+  - DECOMPILING SPRITES -> Pool: 13*   [Fading Resist: 11]
+    * Fade -2, +1 Service on compiling net hit (Technoshaman)
+    * +2 Fading Resist on Comp/Reg (Sprite Conduit)
+
+[ DRONE_COMMAND_ARRAY ]
+  - SHIAWASE BI-DRONE BUTLER
+    HAN 4/5 ACC 5/5 INT 5 SPD 8 BOD 4 ARM 0 PIL 2 SEN 3          [DC 117]
+  - HAWKER-SIDDLEY BAT
+    HAN 4/4 ACC 10/10 INT 15 SPD 30 BOD 4 ARM 4 PIL 2 SEN 3      [DC 106]
+
+[ MATRIX_DEVICES ]
+  - AI NATIVE PROTOCOLS (VIRTUAL)
+    ATK 03 SLZ 05 DPR 04 FWL 05
+
+  - ERIKA ELITE (COMMLINK)
+    ATK 00 SLZ 00 DPR 02 FWL 01   [CRB 267]
+    > Satellite link
+    > Personal Assistant
+    > P-ICE Spines
+
+
+[ MATRIX_OPTIMIZATION_PROTOCOLS ]
+  > RESONANCE_BONUS: Points [06] (Can raise ASDF by max +50% of base, max +4)
+  > HOME_DEVICE_TUNING (AI ONLY):
+    - OPTIMIZE (Free Action): Set 1 attribute (>0) to AI's native rating.
+    - PASSIVE: +1 Program Capacity | +4 Device Rating.
+
+[ SOFTWARE_LIBRARY ]
+  - AUTOSOFT HOST                  (Basic programs)   
+  - BABY MONITOR (DECK)            (Basic programs)   
+  - BROWSE (DECK)                  (Basic programs)   
+  - EDIT (DECK)                    (Basic programs)   
+  - EMULATOR                       (Basic programs)   
+  - ENCRYPTION                     (Basic programs)   
+  - SIGNAL SCRUBBER (DECK)         (Basic programs)   
+  - TOOLBOX (DECK)                 (Basic programs)   
+  - VIRTUAL MACHINE (DECK)         (Basic programs)   
+  - FACIAL SCANNER                 (Commlink Apps)    
+  - P-ICE SPINES                   (Commlink Apps)    
+  - PERSONAL ASSISTANT             (Commlink Apps)    
+  - SOCIAL HUD                     (Commlink Apps)    
+  - THERMAL MOOD READING           (Commlink Apps)    
+  - ARMOR (DECK)                   (Hackingprograms)  
+  - DECRYPTION                     (Hackingprograms)  
+  - DEFENSE PODS                   (Hackingprograms)  
+  - DEFUSE                         (Hackingprograms)  
+  - DIRECTIONAL SHIELD             (Hackingprograms)  
+  - DRONE MASTER                   (Hackingprograms)  
+  - EXPLOIT                        (Hackingprograms)  
+  - FORK                           (Hackingprograms)  
+  - HITCHHIKER                     (Hackingprograms)  
+  - OVERCLOCK                      (Hackingprograms)  
+  - STEALTH                        (Hackingprograms)  
+  - TRACE                          (Hackingprograms)  
+
+[ QUALITIES ]
+  > NATURAL HACKER                      [HnS 83]
+  ! SPRITE BANE (PRIMAL SPRITE)         [CRB 79]
+  ! HONORBOUND (PIRATE'S CODE)          [CRB 76]
+  ! SINNER                              [CRB 78]
+  ! HOODER                              [6WC 137]
+  > STREAM: TECHNOSHAMANS               [HnS 131]
+  > HELLO WORLD!                        [HnS 119]
+  > PHOTOGRAPHIC MEMORY                 [CRB 73]
+  ! REAL WORLD NAIVETE                  [HnS 121]
+
+[ SOCIAL_NETWORK_CONTACTS ]
+  - MACALLISTER          SEA Fixer                           L:4 I:5
+  - WHISKEY              SEA StreetDoc                       L:2 I:2
+  - INDOMITABLE WILL     NOLA River People Sysop             L:5 I:3
+  - ROANOKE              NOLA Ecological Activist            L:3 I:3
+  - CLAUDETTE LAURIER    NOLA Order of Golden Dawn Librarian L:4 I:5
+
+[ REGISTERED_IDENTITIES ]
+  - SIN: Yuriko Star                    [Rating 1]
+  - SIN: Reiko Takahashi                [-1]
+
+[ LIFESTYLE_DATA ]
+  - LOW (1 Months Pre-paid)
+
+___________________________________________________________________________
+// END_OF_FILE // REIKO@RESONANCE:~$ _

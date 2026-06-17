@@ -1,0 +1,146 @@
+___________________________________________________________________________
+// ACCESSING: R31K0_TAKAHASHI.bin // SOURCE: RESONANCE_REALMS //
+// STATUS: ONLINE // SUBMERSION: 2 // KARMA: 7 // NUYEN: ¥1,870 //
+___________________________________________________________________________
+
+[ IDENTITY ]
+  > NAME: r31k0 Takahashi        > ALIAS: Yuriko Star v9
+  > METATYPE: Ai-Pilot Ai        > GENDER: DIVERSE
+  > STREAM: Technoshamans        > SIN: [LOCAL_FILE_ENCRYPTED]
+
+[ CORE_ATTRIBUTES ]
+  MAT | FWL [05]  SLZ [05]  DPR [03]  ATK [03]
+  MNT | WIL [06]  LOG [04]  INT [02]  CHA [04]
+  SPP | EDG [05]  RES [06]  SPK [06]  SUB [02]
+
+[ MATRIX EQUIVALENT ATTRIBUTES ]
+  BOD [F]  AGI [D]  REA [S]  STR [A]
+  --------------------------------------
+  INIT (PHYS): 7 +1D6
+  INIT (HOT) : 5 +3D6
+  COMPOSURE  : 10
+  JUDGE INT  : 8
+
+[ MATRIX_CONDITION_MONITOR ]
+  [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] 
+
+[ SKILL_MATRICES ]
+  TASKING               : 06 (Registering +2)  -> Pool: 13 / 15
+  ELECTRONICS           : 05 (Software +2)     -> Mtx 11* / 13* | Log 09 / 11
+  CRACKING              : 05 (Hacking +2)      -> Pool: 11* / 13*
+  CON                   : 01                   -> Pool: 05
+  INFLUENCE             : 01                   -> Pool: 05
+    * Pool substitutes Logic/Willpower with Resonance (Natural Hacker)
+
+[ LANGUAGES ]
+  NATIVE LANGUAGE       : 04                   -> Pool: 08
+
+[ COMPLEX_FORMS ]
+  - CLEANER      (Fading 2)           -> Pool: 11  [Fading Resist: 10] [CRB 190]
+  - TECHNOREGENERATION (Fading -1)           -> Pool: 11  [Fading Resist: 10] [HnS 67]
+
+[ ECHOES & SUBMERSION ]
+  - HYBRID SPRITES                 [HnS 67]
+  - NEW SPRITE TYPE                [HnS 68]
+  - SPRITE CONDUIT                 [HnS 69]
+
+[ RESONANCE_QUICK_ACTIONS ]
+  - COMPILING SPRITES   -> Pool: 13*   [Fading Resist: 12]
+  - REGISTERING SPRITES -> Pool: 15    [Fading Resist: 12]
+  - DECOMPILING SPRITES -> Pool: 13*   [Fading Resist: 10]
+    * Fade -2, +1 Service on compiling net hit (Technoshaman)
+    * +2 Fading Resist on Comp/Reg (Sprite Conduit)
+
+[ DRONE_COMMAND_ARRAY ]
+  - NISSAN SAMURAI
+    HAN 3/4 ACC 10/10 INT 10 SPD 30 BOD 6 ARM 6 PIL 3 SEN 2      [CRB 300]
+
+[ MATRIX_DEVICES ]
+  - AI NATIVE PROTOCOLS (VIRTUAL)
+    ATK 03 SLZ 05 DPR 03 FWL 05
+
+  - CYBERKIT (R6) (COMMLINK)
+    ATK 00 SLZ 00 DPR 03 FWL 01   [CRB 267]
+    > Satellite link
+    > Trid projector
+    > Stealthlink Upgrade
+
+
+[ MATRIX_OPTIMIZATION_PROTOCOLS ]
+  > RESONANCE_BONUS: Points [06] (Can raise ASDF by max +50% of base, max +4)
+  > HOME_DEVICE_TUNING (AI ONLY):
+    - OPTIMIZE (Free Action): Set 1 attribute (>0) to AI's native rating.
+    - PASSIVE: +1 Program Capacity | +4 Device Rating.
+
+[ SOFTWARE_LIBRARY ]
+  - BIOTECH                        (Autosofts)        
+  - CLEARSIGHT                     (Autosofts)        
+  - CLOSE COMBAT                   (Autosofts)        
+  - EVASION                        (Autosofts)        
+  - MANEUVERING                    (Autosofts)        
+  - NAVIGATION                     (Autosofts)        
+  - PERFORMANCE                    (Autosofts)        
+  - STEALTH                        (Autosofts)        
+  - TARGETING                      (Autosofts)        
+  - TRACKING                       (Autosofts)        
+  - BABY MONITOR (DECK)            (Basic programs)   
+  - BROWSE (DECK)                  (Basic programs)   
+  - EDIT (DECK)                    (Basic programs)   
+  - EMULATOR                       (Basic programs)   
+  - ENCRYPTION                     (Basic programs)   
+  - SIGNAL SCRUBBER (DECK)         (Basic programs)   
+  - TOOLBOX (DECK)                 (Basic programs)   
+  - VIRTUAL MACHINE (DECK)         (Basic programs)   
+  - FACIAL SCANNER                 (Commlink Apps)    
+  - MANNEQUIN                      (Commlink Apps)    
+  - MEFEED                         (Commlink Apps)    
+  - P-ICE SPINES                   (Commlink Apps)    
+  - PERSONAL ASSISTANT             (Commlink Apps)    
+  - SOCIAL HUD                     (Commlink Apps)    
+  - THERMAL MOOD READING           (Commlink Apps)    
+  - VOCAL TENSION DETECTION        (Commlink Apps)    
+  - DECRYPTION                     (Hackingprograms)  
+  - DEFENSE PODS                   (Hackingprograms)  
+  - DIRECTIONAL SHIELD             (Hackingprograms)  
+  - FORK                           (Hackingprograms)  
+  - HITCHHIKER                     (Hackingprograms)  
+  - NEXUS PROTOCOL PROGRAM         (Hackingprograms)  
+  - OVERCLOCK                      (Hackingprograms)  
+  - TRACE                          (Hackingprograms)  
+  - MAPSOFT                        (Other Programs)   
+  - MAPSOFT                        (Other Programs)   
+
+[ QUALITIES ]
+  > NATURAL HACKER                      [HnS 83]
+  > STREAM: TECHNOSHAMANS               [HnS 131]
+  ! BUDDY SYSTEM                        [HnS 84]
+  ! SPRITE BANE (PRIMAL SPRITE)         [CRB 79]
+  ! HOODER                              [6WC 137]
+  > DESIGNER                            [HnS 119]
+  > SENSOR UPGRADE                      [HnS 120]
+  > PILOT ORIGINS                       [HnS 120]
+
+[ SOCIAL_NETWORK_CONTACTS ]
+  - BRYNNE TAGGART       SEA Fixer                           L:2 I:4
+  - WHISKEY              SEA Street Doc                      L:4 I:2
+  - INDOMITABLE WILL     NOLA River People Sysop             L:3 I:3
+  - ROANOKE              NOLA Ecological Activist            L:3 I:3
+  - PIOTR KROLIK         NOLA Vory Borjevik                  L:1 I:4
+  - LE TIGRE             NOLA Epoch Model                    L:1 I:5
+  - WHITE JACKALOPE      Emergent Lifeform                   L:1 I:2
+  - BIG LOUIE            SEA Fixer                           L:1 I:3
+
+[ REGISTERED_IDENTITIES ]
+  - SIN: Yuriko Star                    [Rating 2]
+  - LIC: Drone                          [ROUGH_MATCH]
+  - LIC: Firearms                       [ROUGH_MATCH]
+
+[ PHYSICAL_EQUIPMENT_MANIFEST ]
+  - HEAVY PISTOL/SMG (10X)         (Ammunition & Explosives)   [CRB 262]
+  - RESONANCE FOCUS (R4)           (Survival)   [CRB 279]
+
+[ LIFESTYLE_DATA ]
+  - LOW (1 Months Pre-paid)
+
+___________________________________________________________________________
+// END_OF_FILE // REIKO@RESONANCE:~$ _

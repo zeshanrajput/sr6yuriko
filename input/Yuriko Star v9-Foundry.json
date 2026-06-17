@@ -1,0 +1,1566 @@
+{
+  "type": "Player",
+  "system": {
+    "overflow": {
+      "base": 0,
+      "mod": 0,
+      "value": 0,
+      "max": 0
+    },
+    "nuyen": 17795,
+    "mortype": "technomancer",
+    "special-traits": {
+      "initiation": 0,
+      "submersion": 5
+    },
+    "attributes": {
+      "bod": {
+        "base": 5,
+        "mod": 0,
+        "pool": 5,
+        "modString": "5 Body"
+      },
+      "agi": {
+        "base": 3,
+        "mod": 0,
+        "pool": 3,
+        "modString": "3 Agility"
+      },
+      "rea": {
+        "base": 5,
+        "mod": 0,
+        "pool": 5,
+        "modString": "5 Reaction"
+      },
+      "str": {
+        "base": 3,
+        "mod": 0,
+        "pool": 3,
+        "modString": "3 Strength"
+      },
+      "wil": {
+        "base": 6,
+        "mod": 0,
+        "pool": 6,
+        "modString": "6 Willpower"
+      },
+      "log": {
+        "base": 4,
+        "mod": 0,
+        "pool": 4,
+        "modString": "4 Logic"
+      },
+      "int": {
+        "base": 2,
+        "mod": 0,
+        "pool": 2,
+        "modString": "2 Intuition"
+      },
+      "cha": {
+        "base": 4,
+        "mod": 0,
+        "pool": 4,
+        "modString": "4 Charisma"
+      },
+      "mag": {
+        "base": 0,
+        "mod": 0,
+        "pool": 0,
+        "modString": ""
+      },
+      "res": {
+        "base": 6,
+        "mod": 0,
+        "pool": 6,
+        "modString": "6 Resonance"
+      }
+    },
+    "initiative": {
+      "physical": {
+        "mod": 0,
+        "dice": 1
+      },
+      "astral": {
+        "mod": 0,
+        "dice": 2
+      }
+    },
+    "derived": {
+      "attack_rating": {
+        "base": 0,
+        "mod": 8,
+        "pool": 8
+      },
+      "defense_rating": {
+        "base": 0,
+        "mod": 7,
+        "pool": 7
+      },
+      "composure": {
+        "base": 10,
+        "mod": 0,
+        "pool": 0
+      },
+      "judge_intentions": {
+        "base": 8,
+        "mod": 0,
+        "pool": 0
+      },
+      "memory": {
+        "base": 6,
+        "mod": 0,
+        "pool": 0
+      },
+      "lift_carry": {
+        "base": 11,
+        "mod": 0,
+        "pool": 0
+      }
+    },
+    "resist": {
+      "attacks": {
+        "base": 0,
+        "mod": 0,
+        "pool": 5
+      },
+      "damage": {
+        "base": 0,
+        "mod": 0,
+        "pool": 0
+      },
+      "astral_direct": {
+        "base": 0,
+        "mod": 0,
+        "pool": 0
+      },
+      "astral_indirect": {
+        "base": 0,
+        "mod": 0,
+        "pool": 0
+      },
+      "toxin": {
+        "base": 11,
+        "mod": 0,
+        "pool": 11
+      }
+    },
+    "skills": {
+      "astral": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "athletics": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "biotech": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "close_combat": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "con": {
+        "points": 1,
+        "modifier": 0,
+        "modString": "4 Charisma\n1 Con",
+        "augment": 0
+      },
+      "conjuring": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "cracking": {
+        "points": 5,
+        "modifier": 0,
+        "modString": "4 Logic\n5 Cracking",
+        "augment": 0,
+        "specialization": "hacking"
+      },
+      "electronics": {
+        "points": 5,
+        "modifier": 0,
+        "modString": "4 Logic\n5 Electronics",
+        "augment": 0,
+        "specialization": "software"
+      },
+      "enchanting": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "engineering": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "exotic_weapons": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "firearms": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "influence": {
+        "points": 1,
+        "modifier": 0,
+        "modString": "4 Charisma\n1 Influence",
+        "augment": 0
+      },
+      "outdoors": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "perception": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "piloting": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "sorcery": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "stealth": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "tasking": {
+        "points": 6,
+        "modifier": 0,
+        "modString": "6 Resonance\n6 Tasking",
+        "augment": 0,
+        "specialization": "registering"
+      }
+    },
+    "metatype": "AI-Pilot AI",
+    "gender": "DIVERSE",
+    "movement": {
+      "walk": 0,
+      "sprint": 0,
+      "perHit": 0
+    },
+    "physical": {
+      "base": 8,
+      "mod": 3,
+      "modString": "8 Physical Monitor\n3 Body/2",
+      "value": 11,
+      "max": 0
+    },
+    "stun": {
+      "base": 8,
+      "mod": 3,
+      "modString": "8 Stun Monitor\n3 Willpower/2",
+      "value": 11,
+      "max": 0
+    },
+    "edge": {
+      "value": 5,
+      "max": 5
+    }
+  },
+  "generatorName": "Commlink6",
+  "generatorVersion": "1.13.0",
+  "exportVersion": "14.0",
+  "token": {
+    "name": "Yuriko Star v9",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "scale": 1,
+    "mirrorX": false,
+    "mirrorY": false,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1.0,
+    "hidden": false,
+    "vision": false,
+    "dimSight": 0,
+    "brightSight": 0,
+    "dimLight": 0,
+    "brightLight": 0,
+    "sightAngle": 0.0,
+    "lightAngle": 0.0,
+    "lightAlpha": 0.0,
+    "disposition": 0,
+    "displayBars": 20,
+    "randomImg": false
+  },
+  "items": [
+    {
+      "type": "skill",
+      "data": {
+        "genesisID": "language",
+        "points": 4,
+        "modifier": 0
+      },
+      "effects": [],
+      "name": "Native Language",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "NORMAL",
+        "level": false,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "natural_hacker",
+        "product": "hack_slash",
+        "page": 83
+      },
+      "effects": [],
+      "name": "Natural Hacker",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "STREAM",
+        "level": false,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "technoshaman",
+        "product": "hack_slash",
+        "page": 131
+      },
+      "effects": [],
+      "name": "Stream: Technoshamans",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "NORMAL",
+        "level": false,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "buddy_system",
+        "product": "hack_slash",
+        "page": 85
+      },
+      "effects": [],
+      "name": "Buddy System",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "NORMAL",
+        "level": false,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "sprite_bane",
+        "product": "core",
+        "page": 79
+      },
+      "effects": [],
+      "name": "Sprite Bane",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "NORMAL",
+        "level": true,
+        "positive": false,
+        "value": 2,
+        "modifier": [],
+        "genesisID": "hooder",
+        "product": "companion",
+        "page": 148
+      },
+      "effects": [],
+      "name": "Hooder 2",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "VIRTUAL_LIFE",
+        "level": false,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "designer",
+        "product": "hack_slash",
+        "page": 120
+      },
+      "effects": [],
+      "name": "Designer",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "VIRTUAL_LIFE",
+        "level": true,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "pilot_origins",
+        "product": "hack_slash",
+        "page": 120
+      },
+      "effects": [],
+      "name": "Pilot Origins 1",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "VIRTUAL_LIFE",
+        "level": false,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "sensor_upgrade",
+        "product": "hack_slash",
+        "page": 121
+      },
+      "effects": [],
+      "name": "Sensor Upgrade",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "type": "ELECTRONICS",
+        "subtype": "COMMLINK",
+        "availDef": "3",
+        "avail": 3,
+        "price": 10880,
+        "accessories": "Satellite link, Trid projector, Stealthlink Upgrade 2, Signal Scrubber (Deck), Toolbox (Deck), Virtual Machine (Deck)",
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "customName": "Cyberkit (R6)",
+        "countable": false,
+        "count": 0,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "transys_avalon",
+        "product": "core",
+        "page": 267
+      },
+      "effects": [],
+      "name": "Cyberkit (R6)",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "type": "SURVIVAL",
+        "subtype": "SURVIVAL_GEAR",
+        "availDef": "3",
+        "avail": 3,
+        "price": 20000,
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "customName": "Resonance Focus (R4)",
+        "countable": false,
+        "count": 0,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "diving_gear",
+        "product": "core",
+        "page": 279
+      },
+      "effects": [],
+      "name": "Resonance Focus (R4)",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "handlOn": 3,
+        "handlOff": 4,
+        "accOn": 10,
+        "accOff": 10,
+        "spdiOn": 10,
+        "spdiOff": 10,
+        "tspd": 30,
+        "bod": 6,
+        "arm": 6,
+        "pil": 3,
+        "sen": 2,
+        "sea": 0,
+        "vtype": "GROUND",
+        "type": "DRONE_MEDIUM",
+        "subtype": "ANTHRO",
+        "availDef": "2",
+        "avail": 2,
+        "price": 4500,
+        "accessories": "Anti-theft system (Rating 1), Nissan Spurs, Samurai Weapon Mount, Samurai Weapon Mount",
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "countable": true,
+        "count": 1,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "nissan_samurai",
+        "product": "core",
+        "page": 300
+      },
+      "effects": [],
+      "name": "Nissan Samurai",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "type": "ELECTRONICS",
+        "subtype": "COMMLINK",
+        "availDef": "2",
+        "avail": 2,
+        "price": 3600,
+        "accessories": "Personal Assistant 6, P-ICE Spines",
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "countable": false,
+        "count": 0,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "erika_elite",
+        "product": "core",
+        "page": 267
+      },
+      "effects": [],
+      "name": "Erika Elite",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "handlOn": 3,
+        "handlOff": 3,
+        "accOn": 4,
+        "accOff": 4,
+        "spdiOn": 10,
+        "spdiOff": 10,
+        "tspd": 30,
+        "bod": 0,
+        "arm": 0,
+        "pil": 2,
+        "sen": 1,
+        "sea": 0,
+        "type": "DRONE_MICRO",
+        "subtype": "AIR",
+        "availDef": "2",
+        "avail": 2,
+        "price": 4000,
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "countable": true,
+        "count": 5,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "mct_gnat",
+        "product": "core",
+        "page": 299
+      },
+      "effects": [],
+      "name": "MCT Gnat",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "handlOn": 4,
+        "handlOff": 4,
+        "accOn": 20,
+        "accOff": 20,
+        "spdiOn": 30,
+        "spdiOff": 30,
+        "tspd": 190,
+        "bod": 4,
+        "arm": 2,
+        "pil": 4,
+        "sen": 5,
+        "sea": 0,
+        "type": "DRONE_SMALL",
+        "subtype": "AIR",
+        "availDef": "4",
+        "avail": 4,
+        "price": 18800,
+        "accessories": "Chameleon Coating 1, Drone rack (Micro/Mini), Integrated Matrix Device Dock, Anti-theft system (Rating 1), Enhanced Sensors 2, Electronic Countermeasures (ECM) 6, RAM Plating 4",
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "countable": true,
+        "count": 1,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "boing_sky_commander",
+        "product": "double_clutch",
+        "page": 105
+      },
+      "effects": [],
+      "name": "Federated-Boeing Sky Commander",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "handlOn": 4,
+        "handlOff": 5,
+        "accOn": 5,
+        "accOff": 5,
+        "spdiOn": 5,
+        "spdiOff": 5,
+        "tspd": 8,
+        "bod": 4,
+        "arm": 0,
+        "pil": 2,
+        "sen": 3,
+        "sea": 0,
+        "type": "DRONE_MEDIUM",
+        "subtype": "ANTHRO",
+        "availDef": "2",
+        "avail": 2,
+        "price": 3000,
+        "accessories": "Anti-theft system (Rating 1), Integrated Cyberarm, Integrated Cyberarm, Realistic Features 1",
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "countable": true,
+        "count": 1,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "shiawase_BD_butler",
+        "product": "double_clutch",
+        "page": 116
+      },
+      "effects": [],
+      "name": "Shiawase Bi-Drone Butler",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "dmgDef": "6P",
+        "dmg": 6,
+        "stun": false,
+        "attackRating": [
+          19,
+          0,
+          0,
+          0,
+          0
+        ],
+        "type": "WEAPON_CLOSE_COMBAT",
+        "subtype": "WHIPS",
+        "availDef": "6 I",
+        "avail": 6,
+        "price": 1300,
+        "needsRating": false,
+        "rating": 0,
+        "skill": "exotic_weapons",
+        "skillSpec": "whips",
+        "wild": false,
+        "countable": false,
+        "count": 0,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "monofilament_whip",
+        "product": "core",
+        "page": 249
+      },
+      "effects": [],
+      "name": "Monofilament Whip",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "dmgDef": "7P",
+        "dmg": 7,
+        "stun": false,
+        "attackRating": [
+          3,
+          9,
+          14,
+          10,
+          8
+        ],
+        "modes": {
+          "BF": true,
+          "FA": false,
+          "SA": true,
+          "SS": false,
+          "RB": false
+        },
+        "type": "WEAPON_FIREARMS",
+        "subtype": "ASSAULT_CANNON",
+        "availDef": "6 I",
+        "avail": 6,
+        "price": 13200,
+        "accessories": "Smartgun system",
+        "needsRating": false,
+        "rating": 0,
+        "skill": "firearms",
+        "skillSpec": "assault_cannons",
+        "wild": false,
+        "countable": false,
+        "count": 0,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "megalodon",
+        "product": "firing_squad",
+        "page": 45
+      },
+      "effects": [],
+      "name": "Megalodon",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "type": "AMMUNITION",
+        "subtype": "AMMUNITION",
+        "availDef": "4 I",
+        "avail": 4,
+        "price": 200,
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "countable": true,
+        "count": 2,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "ammo_cannon",
+        "product": "core",
+        "page": 262
+      },
+      "effects": [],
+      "name": "Assault Cannon (10x)",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "dmgDef": "3P",
+        "dmg": 3,
+        "stun": false,
+        "attackRating": [
+          10,
+          10,
+          8,
+          0,
+          0
+        ],
+        "modes": {
+          "BF": true,
+          "FA": false,
+          "SA": true,
+          "SS": false,
+          "RB": false
+        },
+        "type": "WEAPON_FIREARMS",
+        "subtype": "PISTOLS_HEAVY",
+        "availDef": "2 L",
+        "avail": 2,
+        "price": 1250,
+        "accessories": "Silencer, Variable ammunition system, Smartgun system",
+        "needsRating": false,
+        "rating": 0,
+        "skill": "firearms",
+        "skillSpec": "pistols_heavy",
+        "wild": false,
+        "countable": false,
+        "count": 0,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "ares_predator_vi",
+        "product": "core",
+        "page": 253
+      },
+      "effects": [],
+      "name": "Ares Predator VI",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "type": "AMMUNITION",
+        "subtype": "AMMUNITION",
+        "availDef": "1",
+        "avail": 1,
+        "price": 100,
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "countable": true,
+        "count": 5,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "ammo_heavy_smg",
+        "product": "core",
+        "page": 262
+      },
+      "effects": [],
+      "name": "Heavy Pistol/SMG (10x)",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "type": "AMMUNITION",
+        "subtype": "AMMUNITION",
+        "availDef": "1",
+        "avail": 1,
+        "price": 100,
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "countable": true,
+        "count": 5,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "ammo_heavy_smg",
+        "product": "core",
+        "page": 262
+      },
+      "effects": [],
+      "name": "Heavy Pistol/SMG (10x)",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "type": "AMMUNITION",
+        "subtype": "GRENADES",
+        "availDef": "3 L",
+        "avail": 3,
+        "price": 1000,
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "countable": true,
+        "count": 10,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "glitter_grenade",
+        "product": "firing_squad",
+        "page": 39
+      },
+      "effects": [],
+      "name": "Grenade, Glitter",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "handlOn": 3,
+        "handlOff": 3,
+        "accOn": 5,
+        "accOff": 5,
+        "spdiOn": 5,
+        "spdiOff": 5,
+        "tspd": 10,
+        "bod": 10,
+        "arm": 8,
+        "pil": 2,
+        "sen": 2,
+        "sea": 0,
+        "type": "DRONE_MEDIUM",
+        "subtype": "ANTHRO",
+        "availDef": "3",
+        "avail": 3,
+        "price": 126000,
+        "accessories": "Pop-Out Concealment (Pop-Out Large), Drone rack (Small), Anti-theft system (Rating 1), Secondary Propulsion Systems (Rotor), Increased Structural Integrity 5, Realistic Features 4, Weapon mount-Heavy, Integrated Cyberarm, Tesla coil, Fingertip compartment, Implanted Heavy Pistol, Integrated Cyberarm, Wrist shield, Armor increase 5",
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "countable": true,
+        "count": 1,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "shiawase_BD_man_at_arms",
+        "product": "double_clutch",
+        "page": 116
+      },
+      "effects": [],
+      "name": "Shiawase Bi-Drone Man-At-Arms",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "defense": 2,
+        "social": 0,
+        "type": "ARMOR",
+        "subtype": "ARMOR_BODY",
+        "availDef": "3",
+        "avail": 3,
+        "price": 3000,
+        "accessories": "Concealable holster, Ruthenium Armor Concealment System 2",
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "countable": false,
+        "count": 0,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "securetech_skinshield",
+        "product": "firing_squad",
+        "page": 74
+      },
+      "effects": [],
+      "name": "Ares Securetech SkinShield",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "type": "TOOLS",
+        "subtype": "TOOLS",
+        "availDef": "1",
+        "avail": 1,
+        "price": 500,
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "countable": false,
+        "count": 0,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "kit",
+        "product": "core",
+        "page": 273
+      },
+      "effects": [],
+      "name": "Kit",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "type": "BIOLOGY",
+        "subtype": "BIOTECH",
+        "availDef": "3",
+        "avail": 3,
+        "price": 250,
+        "needsRating": true,
+        "rating": 1,
+        "wild": false,
+        "countable": true,
+        "count": 1,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "medkit",
+        "product": "core",
+        "page": 281
+      },
+      "effects": [],
+      "name": "Medkit",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "type": "BIOLOGY",
+        "subtype": "BIOTECH",
+        "availDef": "1",
+        "avail": 1,
+        "price": 500,
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "countable": true,
+        "count": 5,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "medkit_supplies",
+        "product": "core",
+        "page": 281
+      },
+      "effects": [],
+      "name": "Medkit supplies",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "type": "TOOLS",
+        "subtype": "TOOLS",
+        "availDef": "1",
+        "avail": 1,
+        "price": 5,
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "customName": "Order of the Lion of the United Netherlands Medal",
+        "countable": true,
+        "count": 1,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "trading_card",
+        "product": "de_other",
+        "page": 22
+      },
+      "effects": [],
+      "name": "Order of the Lion of the United Netherlands Medal",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "type": "CHEMICALS",
+        "subtype": "DRUGS",
+        "availDef": "1",
+        "avail": 1,
+        "price": 5,
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "customName": "Broach of the Seelie Court (+2 Power Focus)",
+        "countable": true,
+        "count": 1,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "alcohol",
+        "product": "core",
+        "page": 124
+      },
+      "effects": [],
+      "name": "Broach of the Seelie Court (+2 Power Focus)",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "dmgDef": "2P",
+        "dmg": 2,
+        "stun": false,
+        "attackRating": [
+          9,
+          1,
+          0,
+          0,
+          0
+        ],
+        "type": "WEAPON_CLOSE_COMBAT",
+        "subtype": "BLADES",
+        "availDef": "1",
+        "avail": 1,
+        "price": 20,
+        "needsRating": false,
+        "rating": 0,
+        "skill": "close_combat",
+        "skillSpec": "blades",
+        "wild": false,
+        "customName": "Dagger of the Sacred Rose (+1 Weapon Focus)",
+        "countable": false,
+        "count": 0,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "knife",
+        "product": "core",
+        "page": 247
+      },
+      "effects": [],
+      "name": "Dagger of the Sacred Rose (+1 Weapon Focus)",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "type": "ELECTRONICS",
+        "subtype": "TOOLS",
+        "avail": 0,
+        "price": 46490,
+        "accessories": "Baby Monitor (Deck), Biotech 9, Browse (Deck), Clearsight 9, Close Combat 9, Decryption, Defense Pods, Directional Shield, Edit (Deck), Encryption, Evasion 9, Facial Scanner, Fork, Hitchhiker, Maneuvering 9, Mannequin, Mapsoft, MeFeed, Navigation 9, Nexus Protocol Program, Overclock, Performance 9, Social HUD, Targeting 9, Trace, Tracking 9, Thermal Mood Reading, Vocal Tension Detection, Engineering 9, Smartsoft, Artillery Barrage, ECM Warrior II, Mobile Medic, Sneak-Sneak, Target Artist, Shopsoft, Language 5, Knowledge, Emulator",
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "countable": false,
+        "count": 0,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "software_library",
+        "product": "core",
+        "page": 271
+      },
+      "effects": [],
+      "name": "Software Library",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "capacity": 0,
+        "type": "CYBERWARE",
+        "subtype": "CYBER_HEADWARE",
+        "availDef": "4 L",
+        "avail": 4,
+        "price": 0,
+        "needsRating": true,
+        "rating": 1,
+        "wild": false,
+        "countable": false,
+        "count": 0,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "control_rig",
+        "product": "core",
+        "page": 283
+      },
+      "effects": [],
+      "name": "Pilot Origins",
+      "sort": 0
+    },
+    {
+      "type": "complexform",
+      "data": {
+        "duration": "permanent",
+        "fading": 2,
+        "threshold": 0,
+        "genesisID": "cleaner",
+        "product": "core",
+        "page": 190
+      },
+      "effects": [],
+      "name": "Cleaner",
+      "sort": 0
+    },
+    {
+      "type": "complexform",
+      "data": {
+        "choice": "Firewall",
+        "duration": "sustained",
+        "fading": 4,
+        "threshold": 0,
+        "genesisID": "diffusion",
+        "product": "core",
+        "page": 190
+      },
+      "effects": [],
+      "name": "Diffusion",
+      "sort": 0
+    },
+    {
+      "type": "complexform",
+      "data": {
+        "duration": "permanent",
+        "fading": -1,
+        "threshold": 0,
+        "genesisID": "technoregeneration",
+        "product": "hack_slash",
+        "page": 68
+      },
+      "effects": [],
+      "name": "Technoregeneration",
+      "sort": 0
+    },
+    {
+      "type": "echo",
+      "data": {
+        "level": false,
+        "genesisID": "hybrid_sprites",
+        "product": "hack_slash",
+        "page": 68
+      },
+      "effects": [],
+      "name": "Hybrid Sprites",
+      "sort": 0
+    },
+    {
+      "type": "echo",
+      "data": {
+        "level": false,
+        "genesisID": "new_sprite_type",
+        "product": "hack_slash",
+        "page": 69
+      },
+      "effects": [],
+      "name": "New Sprite Type",
+      "sort": 0
+    },
+    {
+      "type": "echo",
+      "data": {
+        "level": false,
+        "genesisID": "sprite_conduit",
+        "product": "hack_slash",
+        "page": 69
+      },
+      "effects": [],
+      "name": "Sprite Conduit",
+      "sort": 0
+    },
+    {
+      "type": "echo",
+      "data": {
+        "level": false,
+        "genesisID": "sprite_symbiosis",
+        "product": "hack_slash",
+        "page": 70
+      },
+      "effects": [],
+      "name": "Sprite Symbiosis",
+      "sort": 0
+    },
+    {
+      "type": "echo",
+      "data": {
+        "level": false,
+        "genesisID": "living_network",
+        "product": "core",
+        "page": 195
+      },
+      "effects": [],
+      "name": "Living Network",
+      "sort": 0
+    },
+    {
+      "type": "echo",
+      "data": {
+        "level": false,
+        "genesisID": "transcendent_network",
+        "product": "hack_slash",
+        "page": 70
+      },
+      "effects": [],
+      "name": "Transcendent Network",
+      "sort": 0
+    },
+    {
+      "type": "sin",
+      "data": {
+        "quality": "ROUGH_MATCH"
+      },
+      "effects": [],
+      "name": "Yuriko Star",
+      "sort": 0
+    },
+    {
+      "type": "lifestyle",
+      "data": {
+        "genesisID": "low",
+        "type": "low",
+        "cost": 2000,
+        "paid": 1
+      },
+      "effects": [],
+      "name": "Low",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 4,
+        "loyalty": 2,
+        "type": "Criminal",
+        "description": "Character creation"
+      },
+      "effects": [],
+      "name": "Brynne Taggart",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 2,
+        "loyalty": 4,
+        "type": "Medical",
+        "description": "Character Creation"
+      },
+      "effects": [],
+      "name": "Whiskey",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 3,
+        "loyalty": 3,
+        "type": "Corporate",
+        "description": "Character creation"
+      },
+      "effects": [],
+      "name": "Indomitable Will",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 3,
+        "loyalty": 3,
+        "type": "Criminal",
+        "description": "Character creation"
+      },
+      "effects": [],
+      "name": "Roanoke",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 4,
+        "loyalty": 1,
+        "type": "Criminal",
+        "description": "SMH 2083-02 EggHunt at the Jackalope Ranch: +1 FP -- L1"
+      },
+      "effects": [],
+      "name": "Piotr Krolik",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 5,
+        "loyalty": 1,
+        "type": "Corporate",
+        "description": "SMH 2083-02 EggHunt at the Jackalope Ranch. +1 FP -- L1"
+      },
+      "effects": [],
+      "name": "Le Tigre",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 2,
+        "loyalty": 1,
+        "type": "Matrix",
+        "description": "SMH 2083-02 EggHunt at the Jackalope Ranch. +1 FP -- L1"
+      },
+      "effects": [],
+      "name": "White Jackalope",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 3,
+        "loyalty": 1,
+        "type": "Criminal",
+        "description": "CMP First Taste : Top Chef - Seattle. +1 FP -- L1. \n\nMale Troll, likes Jazz, works out of Matchsticks\n"
+      },
+      "effects": [],
+      "name": "Big Louie",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 4,
+        "loyalty": 1,
+        "type": "Corporate",
+        "description": "Human Female\n2083-03: Unofficial Dunkelzahn Fan Club. 2FP - 1FP + L1"
+      },
+      "effects": [],
+      "name": "Dominique Augustin",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 3,
+        "loyalty": 1,
+        "type": "Corporate",
+        "description": "Human Male\n2083-03: Unofficial Dunkelzahn Fan Club. 1FP -- L1"
+      },
+      "effects": [],
+      "name": "Daniel Fortune",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 4,
+        "loyalty": 2,
+        "type": "Magic",
+        "description": "Male Troll\n2083-03: Unofficial Dunkelzahn Fan Club. 3FP -- L2"
+      },
+      "effects": [],
+      "name": "Renée Martin",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 6,
+        "loyalty": 1,
+        "type": "Criminal",
+        "description": "Amsterdam\nCMP 2081-09 | Bring me Prince Charming: +1 FP -- L1"
+      },
+      "effects": [],
+      "name": "The Frisian",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 4,
+        "loyalty": 1,
+        "type": "Magic",
+        "description": "Female Elf\nCMP 2081-18: Blue Kentucky Girl: +2 FP -- L1/F1"
+      },
+      "effects": [],
+      "name": "Ree \u0027Dolly\u0027 Hacker",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 6,
+        "loyalty": 2,
+        "type": "Magic",
+        "description": "Fae Noble. RN: Siobhan Ceidwad Hydief Gwynt\nCMP 2081-18: Blue Kentucky Girl: +1 FP -- L1\nCMP 2081-20: In the Cold Kentucky Rain: +1L"
+      },
+      "effects": [],
+      "name": "\u0027Granny\u0027",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 4,
+        "loyalty": 1,
+        "type": "Corporate",
+        "description": "CMP 2081-10 | A Diamond In The Rough - +2FP -- L1/FP1"
+      },
+      "effects": [],
+      "name": "Kiara Shaw",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 5,
+        "loyalty": 1,
+        "type": "Corporate",
+        "description": "CMP 2081-11 | Paved with good intentions - +2FP -- L1/FP1"
+      },
+      "effects": [],
+      "name": "Simon Andrews",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 2,
+        "loyalty": 1,
+        "type": "Criminal",
+        "description": "CMP 2081-11 | Paved with good intentions - +1FP -- L1"
+      },
+      "effects": [],
+      "name": "Squint",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 5,
+        "loyalty": 1,
+        "type": "NOT_SET",
+        "description": "Female Human, Arcano-Archaelogist, Spinrad Global Connection 5, CHA 7\nCMP 2081-19: The Blue Moon of Kentucky: +2 FP -- L1/FP1"
+      },
+      "effects": [],
+      "name": "Dr. Laureline Dodd",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 3,
+        "loyalty": 1,
+        "type": "NOT_SET",
+        "description": "CopperHead Naga Street Samurai\nCMP 2081-19: The Blue Moon of Kentucky: +1 FP -- L1"
+      },
+      "effects": [],
+      "name": "Thaddeus",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 3,
+        "loyalty": 1,
+        "type": "Criminal",
+        "description": "2081-17: +1 FP -- L1"
+      },
+      "effects": [],
+      "name": "Duan Yuhai",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 4,
+        "loyalty": 1,
+        "type": "Corporate",
+        "description": "2081-17: +1FP -- L1"
+      },
+      "effects": [],
+      "name": "Xiong Giuyin",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 1,
+        "loyalty": 1,
+        "type": "Corporate",
+        "description": "CMP 2081-20: In the Cold Kentucky Rain - +1L/+1FP"
+      },
+      "effects": [],
+      "name": "Reilly Dragman",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 12,
+        "loyalty": 1,
+        "type": "Magic",
+        "description": "CMP 2081-20: In the Cold Kentucky Rain: +1 L"
+      },
+      "effects": [],
+      "name": "Queen Brane",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 4,
+        "loyalty": 1,
+        "type": "NOT_SET",
+        "description": "CMP 2081-12 | Uneasy lies the head - +4FP -- L1 FP3"
+      },
+      "effects": [],
+      "name": "Sigrûn (Marikka von Harbou )",
+      "sort": 0
+    }
+  ],
+  "effects": [],
+  "name": "Yuriko Star v9",
+  "sort": 0
+}

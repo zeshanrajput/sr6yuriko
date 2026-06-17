@@ -1,0 +1,143 @@
+___________________________________________________________________________
+// ACCESSING: YURIKO_STAR_V6.bin // SOURCE: RESONANCE_REALMS //
+// STATUS: ONLINE // SUBMERSION: 3 // KARMA: 0 // NUYEN: ¥11,010 //
+___________________________________________________________________________
+
+[ IDENTITY ]
+  > NAME: Yuriko Star v6         > ALIAS: Yuriko Star v6
+  > METATYPE: Ai-Deep Foundation Ai > GENDER: Diverse
+  > STREAM: Technomancer         > SIN: [LOCAL_FILE_ENCRYPTED]
+
+[ CORE_ATTRIBUTES ]
+  MAT | FWL [05]  SLZ [03]  DPR [03]  ATK [03]
+  MNT | WIL [07]  LOG [05]  INT [02]  CHA [04]
+  SPP | EDG [05]  RES [06]  SPK [06]  SUB [03]
+
+[ MATRIX EQUIVALENT ATTRIBUTES ]
+  BOD [F]  AGI [D]  REA [S]  STR [A]
+  --------------------------------------
+  INIT (PHYS): 0 +1D6
+  INIT (HOT) : 7 +3D6
+  COMPOSURE  : 11
+  JUDGE INT  : 9
+
+[ MATRIX_CONDITION_MONITOR ]
+  [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] 
+
+[ SKILL_MATRICES ]
+  BIOTECH               : 01                   -> Pool: 06
+  CON                   : 01                   -> Pool: 05
+  CRACKING              : 05 (Hacking +2)      -> Pool: 11* / 13*
+  ELECTRONICS           : 05 (Software +2)     -> Mtx 11* / 13* | Log 10 / 12
+  ENGINEERING           : 01                   -> Pool: 06
+  INFLUENCE             : 01                   -> Pool: 05
+  PILOTING              : 01                   -> Pool: 04
+  TASKING               : 06 (Registering +2)  -> Pool: 12 / 14
+    * Pool substitutes Logic/Willpower with Resonance (Natural Hacker)
+
+[ KNOWLEDGE ]
+  RESONANCE REALMS      : 01                   -> Pool: 06
+  DEEP FOUNDATION       : 01                   -> Pool: 06
+  DATA HAVENS           : 01                   -> Pool: 06
+  KERNEL PANIC REALM    : 01                   -> Pool: 06
+  ENDLESS ARCHIVE REALM : 01                   -> Pool: 06
+
+[ LANGUAGES ]
+  NATIVE LANGUAGE       : 04                   -> Pool: 09
+
+[ COMPLEX_FORMS ]
+  - CLEANER      (Fading 2)           -> Pool: 11  [Fading Resist: 12] [CRB 190]
+  - STATIC VEIL  (Fading 3)           -> Pool: 11  [Fading Resist: 12] [CRB 191]
+
+[ ECHOES & SUBMERSION ]
+  - HYBRID SPRITES                 [HnS 68]
+  - SPRITE CONDUIT                 [HnS 69]
+  - NEW SPRITE TYPE                [HnS 69]
+
+[ RESONANCE_QUICK_ACTIONS ]
+  - COMPILING SPRITES   -> Pool: 12*   [Fading Resist: 14]
+  - REGISTERING SPRITES -> Pool: 12    [Fading Resist: 14]
+  - DECOMPILING SPRITES -> Pool: 12*   [Fading Resist: 11]
+    * Fade -2, +1 Service on compiling net hit (Technoshaman)
+    * +3 Fading Resist on Comp/Reg (Sprite Conduit)
+
+[ DRONE_COMMAND_ARRAY ]
+  - SHIAWASE BI-DRONE BUTLER
+    HAN 4/5 ACC 5/5 INT 5 SPD 8 BOD 4 ARM 0 PIL 2 SEN 3          [DC 116]
+  - WHISPERING DEATH
+    HAN 3/3 ACC 6/6 INT 8 SPD 12 BOD 3 ARM 0 PIL 3 SEN 1         [DC 106]
+
+[ MATRIX_DEVICES ]
+  - AI NATIVE PROTOCOLS (VIRTUAL)
+    ATK 03 SLZ 03 DPR 03 FWL 05
+
+  - TRANSYS AVALON (COMMLINK)
+    ATK 00 SLZ 00 DPR 00 FWL 00   [CRB 267]
+    > Satellite link
+
+
+[ MATRIX_OPTIMIZATION_PROTOCOLS ]
+  > RESONANCE_BONUS: Points [06] (Can raise ASDF by max +50% of base, max +4)
+  > HOME_DEVICE_TUNING (AI ONLY):
+    - OPTIMIZE (Free Action): Set 1 attribute (>0) to AI's native rating.
+    - PASSIVE: +1 Program Capacity | +4 Device Rating.
+
+[ SOFTWARE_LIBRARY ]
+  - CLEARSIGHT                     (Autosofts)         [Rating 4]
+  - EVASION                        (Autosofts)         [Rating 4]
+  - MANEUVERING                    (Autosofts)         [Rating 2]
+  - MANEUVERING                    (Autosofts)         [Rating 2]
+  - AUTOSOFT HOST                  (Basic)            
+  - BROWSE (DECK)                  (Basic)            
+  - EDIT (DECK)                    (Basic)            
+  - EMULATOR                       (Basic)            
+  - ENCRYPTION                     (Basic)            
+  - TAPEWORM                       (Basic)            
+  - THERMAL MOOD READING           (Basic)            
+  - TOOLBOX (DECK)                 (Basic)            
+  - VIRTUAL MACHINE (DECK)         (Basic)            
+  - CODE BUDDY                     (Commlink Apps)    
+  - CODE BUDDY                     (Commlink Apps)    
+  - FACIAL SCANNER                 (Commlink Apps)    
+  - MANNEQUIN                      (Commlink Apps)    
+  - MEFEED                         (Commlink Apps)    
+  - P-ICE SPINES                   (Commlink Apps)    
+  - PERSONAL ASSISTANT             (Commlink Apps)     [Rating 6]
+  - SOCIAL HUD                     (Commlink Apps)    
+  - ARMOR (DECK)                   (Hacking)          
+  - BABY MONITOR (DECK)            (Hacking)          
+  - DECRYPTION                     (Hacking)          
+  - DEFENSE PODS                   (Hacking)          
+  - DIRECTIONAL SHIELD             (Hacking)          
+  - EXPLOIT                        (Hacking)          
+  - FORK                           (Hacking)          
+  - HITCHHIKER                     (Hacking)          
+  - OVERCLOCK                      (Hacking)          
+  - STEALTH                        (Hacking)          
+  - TRACE                          (Hacking)          
+  - SATELLITE LINK                 (Hackingprograms)  
+
+[ QUALITIES ]
+  ! NATURAL HACKER                      [HnS 83]
+  ! BUDDY SYSTEM                        [HnS 85]
+  ! HOODER 2                            [6WC 148]
+  ! HONORBOUND                          [CRB 76]
+  ! STREAM: TECHNOSHAMANS               [HnS 131]
+  ! IN DEBT                             [CRB 77]
+  ! PHOTOGRAPHIC MEMORY                 [CRB 75]
+  ! REAL WORLD NAIVETE                  [HnS 122]
+
+[ SOCIAL_NETWORK_CONTACTS ]
+  - BRYNNE TAGGART       Street                              L:2 I:4
+  - WHISKEY              Medical                             L:2 I:2
+  - INDOMITABLE WILL     Matrix                              L:4 I:3
+  - ROANOKE              Matrix                              L:4 I:3
+
+[ REGISTERED_IDENTITIES ]
+  - SIN: Yuriko Star                    [ROUGH_MATCH]
+
+[ LIFESTYLE_DATA ]
+  - LOW (1 Months Pre-paid)
+
+___________________________________________________________________________
+// END_OF_FILE // REIKO@RESONANCE:~$ _

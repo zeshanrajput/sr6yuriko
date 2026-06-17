@@ -1,0 +1,152 @@
+___________________________________________________________________________
+// ACCESSING: YURIKO_STAR_V7.bin // SOURCE: RESONANCE_REALMS //
+// STATUS: ONLINE // SUBMERSION: 3 // KARMA: 0 // NUYEN: ¥220 //
+___________________________________________________________________________
+
+[ IDENTITY ]
+  > NAME: Yuriko Star v7         > ALIAS: Yuriko Star v7
+  > METATYPE: Ai-Pilot Ai        > GENDER: Diverse
+  > STREAM: Technomancer         > SIN: [LOCAL_FILE_ENCRYPTED]
+
+[ CORE_ATTRIBUTES ]
+  MAT | FWL [05]  SLZ [03]  DPR [05]  ATK [03]
+  MNT | WIL [06]  LOG [04]  INT [02]  CHA [04]
+  SPP | EDG [05]  RES [06]  SPK [06]  SUB [03]
+
+[ MATRIX EQUIVALENT ATTRIBUTES ]
+  BOD [F]  AGI [D]  REA [S]  STR [A]
+  --------------------------------------
+  INIT (PHYS): 0 +1D6
+  INIT (HOT) : 7 +3D6
+  COMPOSURE  : 10
+  JUDGE INT  : 8
+
+[ MATRIX_CONDITION_MONITOR ]
+  [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] 
+
+[ SKILL_MATRICES ]
+  BIOTECH               : 01                   -> Pool: 05
+  CON                   : 01                   -> Pool: 05
+  CRACKING              : 05 (Hacking +2)      -> Pool: 11* / 13*
+  ELECTRONICS           : 05 (Software +2)     -> Mtx 11* / 13* | Log 09 / 11
+  ENGINEERING           : 01                   -> Pool: 05
+  INFLUENCE             : 01                   -> Pool: 05
+  PILOTING              : 01                   -> Pool: 04
+  TASKING               : 06 (Registering +2)  -> Pool: 12 / 14
+    * Pool substitutes Logic/Willpower with Resonance (Natural Hacker)
+
+[ KNOWLEDGE ]
+  RESONANCE REALMS      : 01                   -> Pool: 05
+  DATA HAVENS           : 01                   -> Pool: 05
+  ENDLESS ARCHIVE REALM : 01                   -> Pool: 05
+  KERNEL PANIC REALM    : 01                   -> Pool: 05
+
+[ LANGUAGES ]
+  NATIVE LANGUAGE       : 04                   -> Pool: 08
+
+[ COMPLEX_FORMS ]
+  - CLEANER      (Fading 2)           -> Pool: 11  [Fading Resist: 10] [CRB 190]
+  - STATIC VEIL  (Fading 3)           -> Pool: 11  [Fading Resist: 10] [CRB 191]
+
+[ ECHOES & SUBMERSION ]
+  - HYBRID SPRITES                 [HnS 68]
+  - NEW SPRITE TYPE                [HnS 69]
+  - SPRITE CONDUIT                 [HnS 69]
+
+[ RESONANCE_QUICK_ACTIONS ]
+  - COMPILING SPRITES   -> Pool: 12*   [Fading Resist: 13]
+  - REGISTERING SPRITES -> Pool: 12    [Fading Resist: 13]
+  - DECOMPILING SPRITES -> Pool: 12*   [Fading Resist: 10]
+    * Fade -2, +1 Service on compiling net hit (Technoshaman)
+    * +3 Fading Resist on Comp/Reg (Sprite Conduit)
+
+[ DRONE_COMMAND_ARRAY ]
+  - SHIAWASE BI-DRONE BUTLER
+    HAN 4/5 ACC 5/5 INT 5 SPD 8 BOD 4 ARM 0 PIL 2 SEN 3          [DC 116]
+  - MCT GNAT
+    HAN 3/3 ACC 4/4 INT 10 SPD 30 BOD 0 ARM 0 PIL 2 SEN 1        [CRB 299]
+
+[ MATRIX_DEVICES ]
+  - AI NATIVE PROTOCOLS (VIRTUAL)
+    ATK 03 SLZ 03 DPR 05 FWL 05
+
+  - SONY EMPEROR (COMMLINK)
+    ATK 00 SLZ 00 DPR 00 FWL 00   [CRB 267]
+
+  - SCRATCH-BUILD JUNK (RIGGER_CONSOLE)
+    ATK 00 SLZ 00 DPR 00 FWL 00   [CRB 197]
+    > Armor (RCC)
+    > Encryption
+    > Signal Scrubber (RCC)
+
+
+[ MATRIX_OPTIMIZATION_PROTOCOLS ]
+  > RESONANCE_BONUS: Points [06] (Can raise ASDF by max +50% of base, max +4)
+  > HOME_DEVICE_TUNING (AI ONLY):
+    - OPTIMIZE (Free Action): Set 1 attribute (>0) to AI's native rating.
+    - PASSIVE: +1 Program Capacity | +4 Device Rating.
+
+[ SOFTWARE_LIBRARY ]
+  - BIOTECH                        (Autosofts)         [Rating 6]
+  - CLEARSIGHT                     (Autosofts)         [Rating 6]
+  - CLOSE COMBAT                   (Autosofts)         [Rating 6]
+  - EVASION                        (Autosofts)         [Rating 6]
+  - MANEUVERING                    (Autosofts)         [Rating 6]
+  - STEALTH                        (Autosofts)         [Rating 6]
+  - STEALTH                        (Autosofts)         [Rating 6]
+  - TARGETING                      (Autosofts)         [Rating 6]
+  - AUTOSOFT HOST                  (Basic)            
+  - BROWSE (DECK)                  (Basic)            
+  - EDIT (DECK)                    (Basic)            
+  - EMULATOR                       (Basic)            
+  - ENCRYPTION                     (Basic)            
+  - TOOLBOX (DECK)                 (Basic)            
+  - VIRTUAL MACHINE (DECK)         (Basic)            
+  - CODE BUDDY                     (Commlink Apps)    
+  - FACIAL SCANNER                 (Commlink Apps)    
+  - MANNEQUIN                      (Commlink Apps)    
+  - MEFEED                         (Commlink Apps)    
+  - P-ICE SPINES                   (Commlink Apps)    
+  - PERSONAL ASSISTANT             (Commlink Apps)     [Rating 6]
+  - SOCIAL HUD                     (Commlink Apps)    
+  - VOCAL TENSION DETECTION        (Commlink Apps)    
+  - ARMOR (DECK)                   (Hacking)          
+  - BABY MONITOR (DECK)            (Hacking)          
+  - DECRYPTION                     (Hacking)          
+  - DEFENSE PODS                   (Hacking)          
+  - DIRECTIONAL SHIELD             (Hacking)          
+  - EXPLOIT                        (Hacking)          
+  - FORK                           (Hacking)          
+  - HITCHHIKER                     (Hacking)          
+  - OVERCLOCK                      (Hacking)          
+  - SIGNAL SCRUBBER (DECK)         (Hacking)          
+  - STEALTH                        (Hacking)          
+  - TRACE                          (Hacking)          
+  - ARMOR (RCC)                    (Rigger Software)  
+  - ENCRYPTION                     (Rigger Software)  
+  - SIGNAL SCRUBBER (RCC)          (Rigger Software)  
+
+[ QUALITIES ]
+  ! BUDDY SYSTEM                        [HnS 85]
+  ! IN DEBT                             [CRB 77]
+  ! NATURAL HACKER                      [HnS 83]
+  ! HOODER 2                            [6WC 148]
+  ! SPRITE BANE                         [CRB 79]
+  ! STREAM: TECHNOSHAMANS               [HnS 131]
+  ! PILOT ORIGINS 2                     [HnS 120]
+  ! SENSOR UPGRADE                      [HnS 121]
+
+[ SOCIAL_NETWORK_CONTACTS ]
+  - WHISKEY              Medical                             L:4 I:2
+  - BRYNNE TAGGART       Street                              L:2 I:4
+  - INDOMITABLE WILL     Corporate                           L:3 I:3
+  - ROANOKE              Criminal                            L:3 I:3
+
+[ REGISTERED_IDENTITIES ]
+  - SIN: Yuriko Star                    [ROUGH_MATCH]
+
+[ LIFESTYLE_DATA ]
+  - LOW (1 Months Pre-paid)
+
+___________________________________________________________________________
+// END_OF_FILE // REIKO@RESONANCE:~$ _

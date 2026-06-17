@@ -1,0 +1,198 @@
+# Character Career Log
+
+This log chronicles the out-of-session missions, downtime decisions, Karma expenditures, and financial ledgers.
+
+---
+
+### **2026-Apr-24: SMH 2083-02 EggHunt at the Jackalope Ranch**
+
+* **GM:** Jeffrey "JaGator" G.  
+* **Difficulty:** Normal/Adult
+  * **Rewards:** +6 Karma, +9,000 Nuyen (deducting the expenses of the run distributed evenly, 500 Nuyen)  
+* **Reputation:** +2 Rep Vory
+* **Contacts:**
+  * +1 FP Piotr Krolik (Vory Borjevik, Connection 4) Human Male Russian
+  * *EITHER* **+1 FP Le Tigre Male Valkyrie Model/Johnson (Connection 5)** - purchases/conspiracy info *OR* +1 FP Fernand Amato Male Cybered Ork (Connection 4) - procured Eggs Paydata
+  * *EITHER* +1 FP Simon Andrews British Punk LizardFolk Johnson (Connection 5) *OR* **+1 FP White Jackalope - Emergent Lifeform (Connection 2)**
+* **Heat:** No heat (-1,000 Nuyen bribe to Oli / Leeta)
+* **Downtime Actions (2 Minor):**  
+  * *Working for the People:* +1 Karma, -2,000 Nuyen  
+  * *Compiling and Registering Taz (Rank 1 Primal Ally Sprite):* -6 Karma  
+    * *Writing Code:* Software + RES (Natural Hacker) + RES Focus = 7 + 6 + 4 = 17 (4 Bought Hits)  
+    * Compiling and Registering per Downtime Template
+
+---
+
+### **2026-Apr-25: CMP First Taste : Top Chef - Seattle**
+
+* **GM:** Jeffrey "JaGator" G.  
+* **Rewards:** +3 Karma, +2,600 Nuyen  
+* **Reputation:** +1 Rep Seattle (selling paydata and commcode for the port storage to the homeless)  
+* **Contacts:** +1 FP Big Louie Fixer (Connection 3) Male Troll, likes Jazz, works out of Matchsticks  
+* **Heat:** No heat  
+* **Downtime Actions (2 Minor):**  
+  * *Working for the People:* +1 Karma, -2,000 Nuyen  
+  * *Register Sprites:* Register 8 levels of sprites (1 R7 modular w/ Shield, Death Mark)
+
+---
+
+### **2026-Apr-29: SRM 2083-03: Unofficial Dunkelzahn Fan Club**
+
+* **GM:** Jeffrey "JaGator" G  
+* **Rewards:** +8 Karma, +9,000 Nuyen  
+* **Contacts:**
+  * +2 FP with Dominique Augustin of Wolverine Security (Wolverine Security, Connection 4) Female Human
+  * +1 FP with Daniel Fortune (Corporate, Connection 3) Human Male
+  * +3 FP with Renée Martin (League of Laveau Community Outreach, Connection 4) Male Troll  
+* **Downtime Actions (1 Major & 1 Minor):**  
+  * *Working for the People:* +1 Karma, -2,000 Nuyen  
+  * *Submersion:* Sprite Symbiosis
+
+---
+
+### **2026-May-02: CMP 2081-09 | Bring me Prince Charming**
+
+* **Summary:** The team met their Johnson duo, Baby Face and The Butcher, at Mama Appeltaart in Amsterdam and took on the job to kidnap the Vory Líder Grisha Semyonovich who basically never leaves the Vory controlled hookah bar "Sasha Lounge". After some scouting the team just entered as guests, found Grisha and convinced him to look at their car and maybe come along for a ride. Soon after that, a tranq patch sealed the deal. The team went to the safehouse as instructed, only to learn that a hostile armada was heading their way. Even though 7 players led to 35 gangers, they tore through their ranks via stun grenades and burst fire, leaving only few of them still somewhat alive by the time of the reinforcements. The cavalry at round 5 proved unnecessary. They assured that Grisha would leave the chat as alive as promised and left before the execution of the traitor happened.  
+* **Team:** Bast (teapot_tempest), Elknar (elknar), Mithral (mithral_gleaming), P!X (danthebuilder), Rei (snowcrash3969), Robuki Fox (jagator), Yuriko Star (wardr)  
+* **GM:** CDT Agent Kira Capalu  
+* **Difficulty Level:** Veteran  
+* **Rewards:** +7 Karma, +12,000 Nuyen  
+* **Reputation:** +1 Reputation  
+* **Contacts:** +1 FP with The Frisian (Crime Lord of the Dutch Penose syndicate, Connection 6)  
+* **Heat:** ±0 (Roll: 2+5, Base +2 for Excessive Violence and Murder, -5 for Bribes by Bast, Mithral, P!X, Rei, Yuriko)  
+  * -1,000 Nuyen  
+* **Downtime Actions (2 Minor):**  
+  * *Working for the People:* +1 Karma, -2,000 Nuyen  
+  * *Register Sprites:* Register 8 levels of sprites (1 R7 modular w/ Shield, Death Mark)
+
+---
+
+### **2026-May-13: CMP 2081-18 | Blue Kentucky Girl**
+
+* **GM:** JaGator  
+* **Difficulty Level:** Veteran  
+* **Rewards:** +7 Karma, +15,000 Nuyen  
+* **Reputation:** 0 Reputation  
+* **Contacts:**
+  * +2 FP Ree "Dolly" Hacker, Connection 4, Talismonger and Racer, Female Elf
+  * +1 FP "Granny" Lady of the Autumn Wind: Siobhan Ceidwad Hydief Gwynt Connection 6 Fae Noble  
+* **Heat:** 0  
+* **Downtime Actions (2 Minor):**  
+  * *Working for the People:* +1 Karma, -2,000 Nuyen  
+  * *Register Sprites:* Register 8 levels of sprites (1 R7 modular w/ Shield, Death Mark)
+
+---
+
+### **2026-May-14: CMP 2081-10 | A Diamond in The Rough**
+
+* **Summary:** After getting hired by "Ms. Johnson" alias Kiara Shaw in the restaurant "Le GastroGnome" high in the "Space Needle-like" Europort Mast, the team travelled from Europort to Antwerp to enter the historical sewers of the Ruien and find a forgotten back door into the archives of a local security firm, Sinjoor Incorporated. After passing by some locals and hiring two former shadowrunners as guides, the team got ambushed by the rats living close to the door, but blasted through them. Gotten to the archives, their hacker took care of the host and all of the security features, making the copying of the data go swimmingly. The team got back to their Ms. Johnson, but did take a look at the plans and got a hunch of something bigger: they did copy security plans of the shops in Antwerp where the Queen of the United Netherlands, Amalia, got the ring for her daughter and her upcoming wedding.  
+* **Team:** Elknar (elknar), Frostbyte (dash2059), Rei (snowcrash3969), Robuki Fox (jagator), Yuriko Star (wardr)  
+* **GM:** CDT Agent Kira Capalu  
+* **Difficulty Level:** Veteran  
+* **Rewards:** +7 Karma, +9,500 Nuyen  
+* **Reputation:** ±0 Reputation  
+* **Contacts:**
+  * +2 FP with Kiara Shaw (Knight Errant Company Suit, Connection 4)  
+  * *(Only Robuki)* +1 FP with The Frisian (Crime Lord, Connection 6)  
+* **Heat:** ±0 (Roll: 5+2, Base +1 for Excessive violence, -3 for Bribes by Frostbyte, Rei, Yuriko)  
+  * -1,000 Nuyen  
+* **Downtime Actions (2 Minor):**  
+  * *Working for the People:* +1 Karma, -2,000 Nuyen  
+  * *Register Sprites:* Register 8 levels of sprites (1 R7 modular w/ Shield, Death Mark)
+
+---
+
+### **2026-May-25: CMP 2081-11 | Paved with good intentions**
+
+* **Summary:** The group met S-K Johnson Simon Andrews in an all-yellow interior bar at Utrecht and took on the mission to steal some crates off a secured convoy. They rescued an informant out of a soccer bar, learned some details and went about the heist as the vehicles got stuck in traffic. Using an Ares Scylla, they fried the convoy, got the stuff and left as quickly as they came.  
+* **Team:** Elknar (elknar), Frostbyte (dash2059), Queen of Foxes (orrfieldmedic), Rei (snowcrash3969), Robuki Fox (jagator), Yuriko Star (wardr)  
+* **GM:** CDT Agent Kira Capalu  
+* **Difficulty Level:** Veteran  
+* **Rewards:** +8 Karma, +9,000 Nuyen  
+* **Reputation:** +1 Reputation  
+* **Contacts:**
+  * +2 FP with Simon Andrews (S-K Johnson, Connection 5)  
+  * +1 FP with Squint (Smuggler, Connection 2)  
+* **Heat:** 0 (Roll: 1+6, Base: 0, Bribes: 0)  
+* **Downtime Actions (2 Minor):**  
+  * *Working for the People:* +1 Karma, -2,000 Nuyen  
+  * *Register Sprites:* Register 8 levels of sprites (1 R7 modular w/ Shield, Death Mark)
+
+---
+
+### **2026-May-30: CMP 2081-19: The Blue Moon of Kentucky**
+
+* **Summary:** Dr Laureline Dodd discovered a lost city of T'In'Abula from the 4th age of the Dawn of Civilization. She protected the discovery, with help from the Governor, KSP, the artist sometimes known as Fox, and the local Naga Pit, from an incursion by Global Security.  
+* **Team:** Oli K, Caitlin/Artemis (Kira), Snowcrash, Yuriko Star (Zeshan/WarDoctor), Dan the Builder, Dreamwalker, Hibiki54  
+* **GM:** JaGator  
+* **Rewards:** +7 Karma (including Veteran bonuses and distributed sales), +15,500 Nuyen  
+* **Reputation:** +2 Rep Kentucky  
+* **Contacts:**
+  * +2 FP with Dr. Laureline Dodd, Arcano-Archaeologist, Spinrad Global Connection 5  
+  * +1 FP with Mr. Thaddeus CopperHead Naga Street Samurai Connection 3  
+* **Heat:** No Heat (-1,000 Nuyen bribe to James Kon)  
+* **Downtime Actions (2 Minor):**  
+  * *Working for the People:* +1 Karma, -2,000 Nuyen  
+  * *Register Sprites:* Register 8 levels of sprites (1 R7 modular w/ Shield, Diagnosis)  
+  * *Note:* Two additional registered sprites compiled during game downtime (2 days).
+
+---
+
+### **2026-June-03: SRM 2081-17: Framed in Blood**
+
+* **Summary:** Duan Yuhai hired the team to eliminate a rival triad's leader, David Guo. David and his team had been invested by blood spirits tracing back to blood sacrifice rituals in Central America hundreds of years ago.  
+* **Team:** Poe (Dreamwalker), Caitlin/Artemis (Kira Capalu), Yuriko Star  
+* **GM:** Oli K  
+* **Rewards:** +7 Karma, +9,500 Nuyen (-1,000 Nuyen bribe)  
+* **Reputation:** +1 Rep SEA  
+* **Contacts:**
+  * +1 FP Duan Yuhai (criminal connection 3)  
+  * +1 FP Xiong Giuyin (CORP Wuxing connection 4)  
+* **Heat:** No heat (Bribes: Poe, Yuriko)  
+* **Downtime Actions (1 Major & 1 Minor):**  
+  * *Submersion:* Living Network  
+  * *Working for the People:* +1 Karma, -2,000 Nuyen  
+  * *Note:* Three additional registered sprites compiled during game downtime (3 nights).
+
+---
+
+### **2026-June-06: CMP 2081-20: In the Cold Kentucky Rain**
+
+* **Team:** Rei (Snowcrash), June (Hibiki), Frostbyte (Dreamwalker), Line (OliK), Yuriko  
+* **GM:** JaGator  
+* **Rewards:** +9 Karma, +11,500 Nuyen  
+* **Reputation:** +1 Reputation, +1 Loyalty Siobhan, +1 FP Reilly Dragman, +1 Loyalty Reilly (Connection 2, 8-year old human female), +1 Loyalty Queen Brane (Connection 12, Seelie Queen), +1 FP Dolly (Rei), +1 FP Remy (June)  
+* **Heat:** +1 Heat (no one paid for reductions)  
+* **Downtime Actions (2 Minor):**  
+  * *Working for the People:* +1 Karma, -2,000 Nuyen  
+  * *Register Sprites:* Registering 8 Levels of Sprites (1 sprite with autosofts)  
+  * *Note:* Paid -2,000 Nuyen to buy off Heat.
+
+---
+
+### **2026-June-07: SRM 2081-21: Grudge Match Gladiators**
+
+* **Team:** Bast, Rei (Dreamwalker), Esme (JaGator), James Kon, Caitlin (Kira Capalu), Yuriko  
+* **GM:** Medtec28  
+* **Rewards:** +4 Karma, +10,500 Nuyen  
+* **Reputation:** +1 Rep SEA  
+* **Contacts:** +2 FP Kirt Liger (C3 Body Mod/Engineering Cybercatman)  
+* **Downtime Actions (1 Major & 1 Minor):**  
+  * *Submersion:* Transcendent Network  
+  * *Working for the People:* +1 Karma, -2,000 Nuyen  
+
+---
+
+### **2026-June-12: CMP 2081-12 | Uneasy lies the head**
+
+* **Summary:** While the talk about and protests against the engagement of crown princess Emma reached their boiling point, the team got called by the orkish shadowrunner Sigrûn to The Hague's Noordeinde Paleis, where she reveals herself to be princess Emma's personal bodyguard and hires them to protect two palace officials during a trip through the city. As they tricked their way through a group of protesters they found out that the trip was about creating a chemsniffer primed on the chemical that's supposed to be used on an upcoming terrorist attack.  
+  Back in the palace they learned that 1) their Ms. Johnson happened to be this mysterious fiancée, 2) the engagement ring was secretly turned into the attack vessel and 3) none of that mattered as groups of armed terrorists flooded the hallways. Tasked with defending the door to the princess, they let the attackers run into the area of effect of gas grenades and mowed them down with automatic weapons. Their Ms. Johnson was happy, and while she got her knight and princess yuri happy ending, the group returned to America, only to receive a medal months later, welcoming them into the Order of the Lion of the United Netherlands.
+* **Team:** Jolthead (zombiemiles), Mithral (mithral_gleaming), Queen of Foxes (orrfieldmedic), Rei (snowcrash3969), Yuriko Star (wardr)  
+* **GM:** Kira Capalu  
+* **Rewards:** +6 Karma, +8,500 Nuyen  
+* **Reputation:** +1 Rep AMS  
+* **Heat:** 0 (Bribes: Yuriko)  
+* **Contacts:** +4 FP Sigrûn/Marikka von Harbou (Shadowrunner)  
+* **Downtime Actions (2 Minor):**  
+  * *Working for the People:* +1 Karma, -2,000 Nuyen  
+  * *Register Sprites:* Registering 8 Levels of Sprites (1 modular sprite with autosofts)  

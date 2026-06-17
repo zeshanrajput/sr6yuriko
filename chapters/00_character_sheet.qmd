@@ -1,0 +1,10 @@
+# Character Sheet
+
+```{python}
+#| echo: false
+#| output: asis
+with open("../output/character_sheet.txt", "r", encoding="utf-8") as f:
+    print("```text")
+    print(f.read())
+    print("```")
+```

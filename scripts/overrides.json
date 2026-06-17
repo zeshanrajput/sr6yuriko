@@ -1,0 +1,13 @@
+{
+  "character_overrides": {
+    "pilot-ai": {
+      "inject_items": [
+        {
+          "name": "Resonance Focus (Rating 4)",
+          "type": "Resonance Gear",
+          "page": "Hack'n Slash 76"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+project:
+  type: book
+  output-dir: _book
+  pre-render: uv run python scripts/main.py "input/Yuriko Star v9.json" --output "output/character_sheet.txt"
+
+book:
+  title: "REIKO // Yuriko Star Portfolio"
+  author: "Reiko"
+  date: "2026-06-17"
+  chapters:
+    - index.qmd
+    - part: "Core Character"
+      chapters:
+        - chapters/00_identity_core.qmd
+        - chapters/00_character_sheet.qmd
+        - chapters/01_rules_and_downtime.qmd
+        - chapters/02_character_log.qmd
+    - part: "Out-of-Session Narratives"
+      chapters:
+        - chapters/01 The Weight of Zero.md
+        - chapters/02 Color Blind Mathematics.md
+        - chapters/03 The Soul Broker's Stall.md
+        - chapters/04 The War Crime.md
+        - chapters/05 A SINner's Loan.md
+        - chapters/06 The Ghost in the Ledger.md
+        - chapters/07 Sunday at r3sP@wn.md
+        - chapters/08 Abandoning Tourism.md
+        - chapters/09 Game Theory.md
+        - chapters/10 Triangulation.md
+        - chapters/11 Integrating over Infinity.md
+        - chapters/99 Twenty Questions.md
+
+format:
+  html:
+    theme:
+      - cosmo
+      - theme.scss
+    toc: true
+    number-sections: false
+    code-copy: true

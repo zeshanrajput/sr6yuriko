@@ -1,0 +1,317 @@
+___________________________________________________________________________
+// ACCESSING: R31K0_TAKAHASHI.bin // SOURCE: RESONANCE_REALMS //
+// STATUS: ONLINE // LIFETIME KARMA: 103 // KARMA: 8 // NUYEN: ¥17,795 //
+___________________________________________________________________________
+
+[ IDENTITY ]
+  > NAME: r31k0 Takahashi        > ALIAS: Yuriko Star v9
+  > METATYPE: Ai-Pilot Ai        > GENDER: DIVERSE
+  > STREAM: Technoshamans        > SIN: [LOCAL_FILE_ENCRYPTED]
+
+[ CORE_ATTRIBUTES ]                          | [ DERIVED_STATUS ]
+  MAT | ATK [03] SLZ [05] DPR [03] FWL [05]  |   INIT (VR)  : 6 +3D6
+  MNT | WIL [06] LOG [04] INT [02] CHA [04]  |   ATK RATING : 11 (ATK+SLZ)
+  SPP | EDG [05] RES [06] SPK [06] SUB [05]  |   DEF RATING : 11 (DPR+FWL)
+                                             |   COMPOSURE  : 10
+[ MATRIX EQUIVALENT ATTRIBUTES ]             |   JUDGE INT  : 8
+  BOD [F]  AGI [D]  REA [S]  STR [A]         | Def (Bio): WIL + FWL (13)
+  Resist: FWL (07)                           | Heal: Software + LOG vs (5-Spark)
+
+[ MATRIX_CONDITION_MONITOR ]
+  [0] [0] [-1] | [-1] [-1] [-2] | [-2] [-2] [-3] | [-3] [-3]
+
+[ SKILL_MATRICES ]
+  CON                   : 01                   -> Pool: 05
+  CRACKING              : 05 (Hacking +2)      -> Pool: 19[#1] / 21[#1]
+  ELECTRONICS           : 05 (Software +2)     -> Mtx:  19[#2] / 21[#2]
+                                                  Log:  13[#2] / 15[#2]
+  INFLUENCE             : 01                   -> Pool: 05
+  NATIVE LANGUAGE       : 04                   -> Pool: 08
+  TASKING               : 06 (Registering +2)  -> Pool: 16[#3] / 18[#3]
+
+[ COMPLEX_FORMS ]
+  - CLEANER (FV 2)                      -> Pool: 19[#4]  [Fading Resist: 10]
+  - DIFFUSION (FV 4)                    -> Pool: 19[#4]  [Fading Resist: 10]
+  - TECHNOREGENERATION (FV Hits)        -> Pool: 19[#4]  [Fading Resist: 10]
+
+[ ECHOES & SUBMERSION ]                | [ RESONANCE_QUICK_ACTIONS ]
+  - HYBRID SPRITES                     |   - COMPILING   -> Pool: 16[#5] (15 v. FV-2)
+  - NEW SPRITE TYPE                    |   - REGISTERING -> Pool: 18[#6] (15 v. FV)
+  - SPRITE CONDUIT                     |   - DECOMPILING -> Pool: 16[#7] (10 v. FV-2)
+  - SPRITE SYMBIOSIS                   |
+  - LIVING NETWORK                     |
+  - TRANSCENDENT NETWORK               |
+
+
+[ DRONE_COMMAND_ARRAY (COL 1) ]        | [ DRONE_COMMAND_ARRAY (COL 2) ]
+- NISSAN SAMURAI                       | - S. BUTLER
+  HAN 3/4 ACC 10/10                    |   HAN 4/5 ACC 5/5
+  INT 10 SPD 30 BOD 6                  |   INT 5 SPD 8 BOD 4
+  ARM 6  PIL 3  SEN 2                  |   ARM 0  PIL 2  SEN 3
+    > Anti-theft system (Rating 1)     |     > Anti-theft system (Rating 1)
+    > Nissan Spurs [4P|7/—/—/—/—]      |     > Integrated Cyberarm
+    > Samurai Weapon Mount             |     > Integrated Cyberarm
+    > Samurai Weapon Mount             |     > Realistic Features 1
+                                       |
+- MCT GNAT                             | - S. MAN-AT-ARMS
+  HAN 3/3 ACC 4/4                      |   HAN 3/3 ACC 5/5
+  INT 10 SPD 30 BOD 0                  |   INT 5 SPD 10 BOD 10(15) [#8]
+  ARM 0  PIL 2  SEN 1                  |   PIL 2 SEN 2  ARM 8(10) [#9]
+                                       |     > Pop-Out Concealment (Large)
+- FB SKY COMMANDER                     |     > Drone rack (Small)
+  HAN 4/4 ACC 20/20                    |     > Anti-theft system (Rating 1)
+  INT 30 SPD 190 BOD 4                 |     > Sec Propulsion (Rotor)
+  ARM 2  PIL 4   SEN 5                  |     > Incr Struct Integrity 5
+    > Chameleon Coating 1              |     > Realistic Features 4
+    > Drone rack (Micro/Mini)          |     > Weapon mount-Heavy
+    > Integrated Matrix Device Dock    |     > Integrated Cyberarm
+    > Anti-theft system (Rating 1)     |     > Tesla coil [5S(e)|8/10*/—/—/—]
+    > Enhanced Sensors 2               |     > Fingertip compartment
+    > ECM 6                            |     > Implanted Heavy Pistol
+    > RAM Plating 4                    |     > Integrated Cyberarm
+                                       |     > Wrist shield [+4]
+                                       |     > Armor increase 5 [+5]
+
+[ MATRIX_DEVICES ] [#10]               |
+- AI NATIVE PROTOCOLS (VIRTUAL)        | - ERIKA ELITE (COMMLINK)
+  ATK 03 SLZ 05 DPR 03 FWL 05          |   ATK 00 SLZ 00 DPR 02 FWL 01
+  Opt ASDF: 06 09 07 08 [#10]          |
+                                       |
+- CYBERKIT (R6) (CYBERDECK)            |
+  ATK 04 SLZ 04 DPR 02 FWL 02          |
+  > Satellite link                     |
+  Opt ASDF: 04 04 04 08                |
+  Def: FWLx2+PA (22)                   |
+  Res: FWL (08)
+  Prgms: PA, P-ICE SPINES       
+                                       |
+- CYBERKIT (R6) (COMMLINK)             |
+  ATK 00 SLZ 00 DPR 00 FWL 00          |
+  Opt ASDF: 04 04 04 08                |
+  Def: FWLx2+PA (22)                   |
+  Res: FWL (08)
+  Prgms: PA, P-ICE SPINES       
+
+[ SOFTWARE_LIBRARY ]
+  - CLEARSIGHT               (Auto)   [R9]  // Perception autosoft
+  - ENGINEERING              (Auto)   [R9]  // Demolitions, Drones
+  - EVASION                  (Auto)   [R9]  // Pilot + Evasion dice pool
+  - MANEUVERING              (Auto)   [R9]  // Piloting autosoft.
+  - NAVIGATION               (Auto)   [R9] 
+  - PERFORMANCE              (Auto)   [R9]  // Con(Performance) autosoft.
+  - SOFT BIOTECH             (Auto)   [R9] 
+  - SOFT CLOSE COMBAT        (Auto)   [R9] 
+  - SOFT KNOWLEDGE           (Auto)        
+  - SOFT LANGUAGE            (Auto)   [R5] 
+  - TARGETING                (Auto)   [R9] 
+  - TRACKING                 (Auto)   [R9] 
+  - ARTILLERY BARRAGE        (TacApp)       // +1 DP Launch weapons; no rifle/cannon penalties
+  - BROWSE                   (Basic)        // +1 Edge, must spend immediately.
+  - ECM WARRIOR II           (TacApp)       // +2 offensive Cracking; -2 noise (DRx5 m)
+  - EDIT                     (Basic)        // +1 Edge on Edit File
+  - EMULATOR                 (Basic)        // Run comm apps. Slots = Dev Rtg.
+  - ENCRYPTION               (Basic)        // +2 Encrypt File
+  - MAPSOFT                  (Basic)        // NOLA, SEA, KY, AMS
+  - MOBILE MEDIC             (TacApp)       // +DR/2 to First Aid DP, or +1 to Medkit rating
+  - NEXUS PROTOCOL           (Basic)        // Upgrades hot-sim to UV for hitchhikers
+  - SHOPSOFT                 (Other)        // Drones, SW, Firearms, Armor, Demolitions, HW
+  - SNEAK-SNEAK              (TacApp)       // +2 to Stealth (Sneaking) tests
+  - TARGET ARTIST            (TacApp)       // Attack without line of sight on painted targets
+  - THERMAL MOOD READING     (Basic)        // +1 Edge: Judge Intentions
+  - TOOLBOX                  (Basic)        // +1 Data Processing
+  - VIRTUAL MACHINE          (Basic)        // +2 slots, +1 Matrix damage
+  - FACIAL SCANNER           (Comm)         // Pair with public dbase to ID tgts
+  - MANNEQUIN                (Comm)         // Simulates active persona.
+  - MEFEED                   (Comm)         // +1 Edge on Matrix searches
+  - P-ICE SPINES (Comm)
+  - PERSONAL ASSISTANT       (Comm)   [R6]  // Full Def: + Rtg
+  - SOCIAL HUD               (Comm)         // Organize all known info on target.
+  - VOCAL TENSION DETECTION  (Comm)         // +1 Edge on Judge Intentions
+  - BABY MONITOR             (Hack)         // Detect Overwatch score.
+  - DECRYPTION               (Hack)         // +2 dice Crack File action
+  - DEFENSE PODS             (Hack)         // -1 Matrix damage per pod.
+  - DIRECTIONAL SHIELD       (Hack)         // Full Defense: Add DP to pool.
+  - FORK                     (Hack)         // Hit 2 targets w/o split pools.
+  - HITCHHIKER               (Hack)         // Bring 2xRtg ppl on Matrix Run (full sim)
+  - OVERCLOCK                (Hack)         // +2 dice (1 wild) to Matrix action.
+  - SIGNAL SCRUBBER          (Hack)         // -2 Noise
+  - TRACE                    (Hack)         // +1 Edge on Trace Icon; Sleaze.
+  - SMARTSOFT                (Rig)          // Share Target Lock with PAN Drones
+
+[ QUALITIES ]                          | [ PHYSICAL_EQUIPMENT_MANIFEST ]
+  > NATURAL HACKER                     |   - RESONANCE FOCUS (R4)
+  > STREAM: TECHNOSHAMANS              |   - ARES PREDATOR VI [3P | 10/10/8/—/—]
+  ! BUDDY SYSTEM                       |   - ARES SECURETECH SKINSHIELD [+2]
+  ! SPRITE BANE (PRIMAL SPRITE)        |   - MONOFILAMENT WHIP [6P | 14/—/—/—/—]
+  ! HOODER                             |   - MEGALODON [7P | 3/8/12/8/8]
+  > DESIGNER                           |   - AMMO CANNON x2
+  > PILOT ORIGINS                      |   - HEAVY PISTOL/SMG (10X)
+  > SENSOR UPGRADE                     |   - GRENADE, GLITTER x10
+                                       |   - MEDKIT
+                                       |   - MEDKIT SUPPLIES x5
+                                       |   - ORDER OF THE LION OF THE UNITED NETHERLANDS MEDAL
+                                       |   - BROACH OF THE SEELIE COURT (+2 POWER FOCUS)
+                                       |   - DAGGER OF THE SACRED ROSE (+1 WEAPON FOCUS) [3P | 10/8/6/—/—]
+
+[ LIFESTYLE_DATA ]
+  - LOW (1 Months Pre-paid)
+
+[ RIGGING_PROTOCOLS_CHEAT_SHEET ]
+  - Maneuvering (D, 7) + REA (S, 9) + Teamwork Diagnosis (3) —-> 19
+  - Weapon Attack: Targeting (D, 7) + AGI (D, 7) + Sprite Symbiosis (4) —-> 18
+  - Perception: Clearsight (D, 7) + Sprite (4) + S. Upg (+1) —-> 12 + Sensor
+  - Stealth: Stealth (D, 7) + AGI (D, 7) + Sprite Symbiosis (4) —-> 18
+  - Defense Test: Evasion (D, 7) + REA (S, 9) + Sprite Symbiosis (4) —-> 20
+  - Defense Rating = BOD + ARM
+  - Damage Resistance Test = BOD
+  - Damage Resistance: convert ARM/8 (round down) physical damage (P)
+    into stun (S). Drones ignore stun damage up to their BOD.
+  - Repair = Electronics(Hardware) + LOG
+
+[ DECKING_PROTOCOLS_CHEAT_SHEET ]
+  > LEGAL ACTIONS: Electronics + LOG      | ILLEGAL ACTIONS: Cracking + LOG (+1 OS)
+    (Exceptions noted in parentheses)       * Indicates specialized action
+
+  [ OUTSIDER / NO ACCESS ]
+  - Enter Host (minor)                    | Brute Force / *Probe
+  - Switch Interface Mode (minor)         | *Backdoor Entry / *Known Exploit
+  - Toggle Silent Running (minor)         | Masquerade / *Metahuman in the Middle
+  - Reconf. Matrix Attrib. (minor)        | *Delayed Command / Popup / *Spoof Command
+  - *Jack out (Elec+WIL)                  | Device Lock / Squelch (Elec+LOG)
+  - Matrix Perception (Elec+INT)          | Denial of Service (Elec+LOG)
+  - Matrix Search (Elec+INT)              | Data Spike / Tarpit
+  - Send Message (minor)                  | Hide
+  - Full Matrix Defense                   |
+  - Virtual Aim (minor) / Threat Analysis |
+
+  [ USER ACCESS (+1 OS/round if forced) ]
+  - Change Icon (minor)                   | *Crack File
+  - *Control Device                       | Hash Check (Elec+LOG)
+  - Edit File / Encrypt File              | Erase Matrix Signature (Elec+LOG)
+  - Disarm Data Bomb (Crack+LOG)          | *Garbage In/Out / Watchdog (minor)
+  - Calibration (Crack+LOG)               |
+
+  [ ADMIN ACCESS (+3 OS/round if forced) ]
+  - *Format Device / *Reboot Device       | Check OS / Crash Program
+                                          | Snoop / *Puppet Cyberware (minor)
+                                          | *Set Data Bomb (Elec+LOG)
+                                          | Modify Icon (Elec+LOG)
+                                          | *Trace Icon (Elec+INT)
+                                          | Subvert Infrastructure (Elec+LOG)
+
+  [ EDGE ACTIONS ]
+  (1) Batch Exec, Emergency Boost, Paint Target
+  (2) Technobabble (Use CHA instead of LOG), Intervene, Hog, Signal Scream
+  (3) Under the Radar (Action does not increase OS)
+
+
+[ CONSOLIDATED_RULES_FOOTNOTES ]
+  [#1] Cracking adjustments:
+       - Pool substitutes Logic/Willpower with Resonance (Natural Hacker)
+       - Includes Sprite Symbiosis bonus +4
+       - Includes Resonance Focus +4 (Fading Value: 2 for use)
+  [#2] Electronics adjustments:
+       - Pool substitutes Logic/Willpower with Resonance (Natural Hacker)
+       - Includes Sprite Symbiosis bonus +4
+       - Includes Resonance Focus +4 (Fading Value: 2 for use)
+  [#3] Tasking adjustments:
+       - Includes Resonance Focus +4 (Fading Value: 2 for use)
+  [#4] Complex Forms:
+       - Includes Sprite Symbiosis bonus +4
+       - Includes Resonance Focus +4 (Fading Value: 2 for use)
+       - Hyperthreading (Opt.): +7, -1 task
+  [#5] Compiling Sprites adjustments:
+       - -2 FV, +1 Service on compiling net hit (Technoshaman)
+       - +5d6 when resisting fading (Sprite Conduit)
+  [#6] Registering Sprites adjustments:
+       - +5d6 when resisting fading (Sprite Conduit)
+  [#7] Decompiling Sprites adjustments:
+       - -2 FV (Technoshaman)
+  [#8] S. Man-at-Arms BOD 10(15):
+       - BOD is 10(15), where increased structural integrity adds +5.
+  [#9] S. Man-at-Arms ARM 8(10):
+       - ARM is 8(10) total.
+       - Standard armor is supplemented by:
+         - Skinshield (+2)
+  [#10] Matrix Optimization:
+       - Resonance points: [06] (ASDF bonus max +50% of base, max +4)
+       - Home Device Tuning: Optimize: set 1 attr to native; Passive: +1
+         capacity, +4 rating
+       - Designer: home dev +1 DP/pilot, 2 Noise Reduction
+       - Opt. ASDF (06 09 07 08) 
+	     - Sprite Symbiosis (+4 Teamwork)
+         - RES 06 (0312)
+	   - Cyberkit
+	     - Toolbox : +1 DP
+		 - Home dev: +1 DP
+		 - FW = AI's FW (8)
+
+[ SOCIAL_NETWORK_CONTACTS ]
+  - BRYNNE TAGGART       SEA Fixer                        L:2 I:4 F:0
+  - WHISKEY              SEA Street Doc                   L:4 I:2 F:0
+  - INDOMITABLE WILL     NOLA River People Sysop          L:3 I:3 F:0
+  - ROANOKE              NOLA Ecological Activist         L:3 I:3 F:0
+  - PIOTR KROLIK         NOLA Vory Borjevik               L:1 I:4 F:0
+  - LE TIGRE             NOLA Epoch Model                 L:1 I:5 F:0
+  - WHITE JACKALOPE      Emergent Lifeform                L:1 I:2 F:0
+  - BIG LOUIE            SEA Fixer                        L:1 I:3 F:0
+  - DOMINIQUE AUGUSTIN   NOLA Wolverine Security          L:1 I:4 F:1
+  - DANIEL FORTUNE       NOLA                             L:1 I:3 F:0
+  - RENÉE MARTIN         NOLA League of Laveau Communi... L:2 I:4 F:0
+  - THE FRISIAN          AMS Crime Lord of the Dutch P... L:1 I:6 F:0
+  - REE 'DOLLY' HACKER   KY Talismonger and Racer         L:1 I:4 F:1
+  - 'GRANNY'             KY Lady of the Autumn Wind       L:2 I:6 F:0
+  - KIARA SHAW           AMS Knight Errant Company Suit   L:1 I:4 F:0
+  - SIMON ANDREWS        AMS S-K Johnson                  L:1 I:5 F:0
+  - SQUINT               Smuggler                         L:1 I:2 F:0
+  - DR. LAURELINE DODD   KY Arcano-Archeologist           L:1 I:5 F:1
+  - THADDEUS             KY Street Samurai                L:1 I:3 F:0
+  - DUAN YUHAI           SEA Minor 88s Johnson            L:1 I:3 F:0
+  - XIONG GIUYIN         SEA Wuxing                       L:1 I:4 F:0
+  - REILLY DRAGMAN       KY Child Heiress                 L:1 I:1 F:1
+  - QUEEN BRANE          Seelie Queen                     L:1 I:12 F:0
+  - SIGRÛN (MARIKKA VON HARBOU ) AMS Shadowrunner                 L:1 I:4 F:3
+
+[ REGISTERED_IDENTITIES ]
+  - SIN: Yuriko Star                    [Rating 2]
+  - LIC: Drone                          [ROUGH_MATCH]
+  - LIC: Firearms                       [ROUGH_MATCH]
+
+[ CAREER_LOG ]
+  DATE         | KARMA |    NUYEN | EVENT
+  ---------------------------------------------------------------------------
+  2026-04-20   |    +1 |    +1000 | CMP Build-A-Runner (GM Credit) (GM: Z. Rajput)
+  2026-04-20   |    -4 |        0 | Chargen correction: Charge for Resonance Focus
+  2026-04-20   |   +13 |        0 | Chargen correction: charged for hybrid sprites
+  2026-04-24   |    +6 |    +8500 | SMH 2083-02 EggHunt at the Ja... (GM: JaGator)
+  2026-04-24   |    +1 |    -2000 | SMH 2083-02: Working for the People
+  2026-04-25   |    +3 |    +2600 | CMP First Taste : Top Chef - ... (GM: JaGator)
+  2026-04-25   |    +1 |    -2000 | CMP First Taste: Working for the People
+  2026-04-29   |    +8 |    +9000 | SRM 2083-03: Unofficial Dunke... (GM: JaGator)
+  2026-04-29   |    +1 |    -2000 | SRM 2083-03: Working for the People
+  2026-05-02   |    +7 |   +12000 | CMP 2081-09 | Bring me Pr... (GM: Kira Capalu)
+  2026-05-02   |    +1 |    -3000 | CMP 2081-09: Working for the People, Bribe
+  2026-05-13   |    +7 |   +15000 | CMP 2081-18: Blue Kentucky Girl (GM: JaGator)
+  2026-05-13   |     0 |    +2500 | CMP 2081-18: Free R4 Commlink
+  2026-05-13   |    +1 |    -2000 | CMP 2081-18: Working for the People
+  2026-05-14   |    +7 |    +9500 | CMP 2081-10 | A Diamond i... (GM: Kira Capalu)
+  2026-05-14   |    +1 |    -2000 | CMP 2081-10: Working for the People
+  2026-05-25   |    +8 |    +9000 | CMP 2081-11: Paved with G... (GM: Kira Capalu)
+  2026-05-25   |    +1 |    -2000 | CMP 2081-11: Working for the People
+  2026-05-30   |    +7 |   +15500 | CMP 2081-19: The Blue Moon of... (GM: JaGator)
+  2026-05-30   |    +1 |    -2000 | CMP 2081-19: Working for the People
+  2026-06-03   |    +7 |    +9500 | SRM 2081-17 Framed in Blood (GM: Oli K)
+  2026-06-03   |   -38 |        0 | SRM 2081-17: R8 Ally Sprite charge
+  2026-06-03   |    +1 |    -5000 | SRM 2081-17: Working for the Ppl, Rent, Bribes
+  2026-06-06   |    +9 |   +11500 | CMP 2081-20: In the Cold Kent... (GM: JaGator)
+  2026-06-06   |    +1 |    -4000 | CMP 2081-20: Working for the People, Bribes
+  2026-06-07   |     0 |   +60500 | CMP 2081-20: Refund for self-modifying drones
+  2026-06-07   |    +4 |   +10500 | SRM 2081-21: Grudge Match Gl... (GM: Medtec28)
+  2026-06-07   |    +1 |    -2000 | SRM 2081-21: Working for the People
+  2026-06-12   |    +6 |    +8500 | CMP 2081-12 | Uneasy lies... (GM: Kira Capalu)
+  2026-06-12   |    +1 |    -3000 | CMP 2081-12: Working for the People, Bribes
+  ---------------------------------------------------------------------------
+  LIFETIME KARMA: 103 (98 earned + 5 from Chargen)
+
+___________________________________________________________________________
+// END_OF_FILE // REIKO@RESONANCE:~$ _

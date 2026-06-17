@@ -1,0 +1,211 @@
+# Downtime Protocols & Common Rules
+
+This section aggregates core cheat sheets and templates for downtime registration, rigging, decking, and resonance network benefits.
+
+## Registering Sprites
+
+* **Minor downtime action:** Register 8 levels of sprites (up to R7 sprite)  
+* 1 per night's rest (7 hrs registering, 3 hrs restoration). Must buy hits (SRMG p19)  
+* **Outcome:** R7 Modular sprite with 3 services/powers for 3 missions
+
+### 1. Compiling Phase
+
+* **Pool:** Tasking (6) + RES (6) + Resonance Focus (4) = **16 dice** → **4 Bought Hits**.  
+* **Sprite's Defense:** Level 7 × 2 = **14 dice** → **3 Bought Hits**.  
+* **Net Hits:** 4 - 3 = 1 → **1 base service**.  
+* **Technoshaman Stream Modification:** Grants +1 additional service on a successful compiling test. Total compiled services = **2 services/powers**.  
+* **Fading Value (FV):** Under core rules, compiling fade is exactly equal to the hits received on the sprite's defense test = **3**.  
+* **Technoshaman Mitigation:** Reduces compiling fade by a flat 2 (3 - 2 = 1).  
+* **Fading Resistance:** Willpower (6) + Charisma (4) + Submersion Grade / Sprite Conduit (3) = **13 dice** → **3 Bought Hits**.  
+* **Compiling Damage Taken:** 1 FV - 3 hits = **0 Damage**.
+
+### 2. Registering Phase
+
+* **Pool:** Registering (8) + RES (6) + RES Focus (4) = **18 dice** → **4 Bought Hits**.  
+* **Sprite's Defense:** Level 7 × 2 = **14 dice** → **3 Bought Hits**.  
+* **Net Hits:** 4 - 3 = 1 → **1 base service**.  
+* **Combined Total Services:** 2 (compiled) + 1 (registered) = **3 total services/powers**.  
+* **Fading Value (FV):** Under core rules, registering fade is equal to *twice* the hits received on the sprite's defense test (3 x 2 = 6).  
+* **Fading Resistance:** Willpower (6) + Charisma (4) + Submersion Grade / Sprite Conduit (3) = **13 dice** → **3 Bought Hits**.  
+* **Registering Damage Taken:** 6 FV - 3 hits = **3 boxes of Stun damage**.
+
+### 3. Resonance Focus Fading
+
+Because a data structure/focus was used to boost both tests, it incurs its own independent data-structure fade (4 / 2 = 2).
+
+* **Focus Fading Pool:** WIL (6) + LOG (4) = **10 dice** → **2 Bought Hits**.  
+* **Damage Taken:** 2 FV - 2 hits = **0 Damage**.
+
+---
+
+## Buying Gear in Downtime
+
+**Base**: Electronics (5) + Int
+
+* Natural Hacker (Allows RES to replace any attribute in a matrix action): +6  
+* Resonance Focus: +4  
+* Overclock: +1  
+* Relevant Shopsoft: +1  
+* Teamwork (R8 ally sprite): +4
+
+**Total**: 21d6 → 5 bought hits
+
+---
+
+## Matrix Actions
+
+**Base**: Electronics (Software, 5) or Cracking (Hacking, 5)
+
+* Natural Hacker (Allows RES to replace any attribute in a matrix action): +6  
+* Resonance Focus: +4, 2FV  
+* Overclock: +2 (1 wild)  
+* Teamwork (R8 ally sprite): +4
+
+**Total**: 21d6 (1 wild, + specialization), FV: 2
+
+---
+
+## Controlling Drones
+
+### Key Qualities and Rules
+
+* **Pilot Origin:** Allows r31k0 to use autosofts up to her **Data Processing** (HnS p 119)  
+* **Sprite Symbiosis:** r31k0's ally *primal sprite* increases her ASDF by +3/+1/+3/+1. (Hack and Slash, Sprite Symbiosis, Page 80; Hack and Slash, Points of Sprite, Page 72)  
+* **EI Resonance:** r31k0 can add her RES (6) to her ASDF, but no attribute can be raised by more than 50% of base  
+* **Attribute Enhancement:** No attribute can be increased more than +4 total  
+* **Devices, AR and VR:** Devices controlled remotely via AR use the operator's physical attributes (SR6B p. 180)  
+* For AI, the Matrix Equivalent Attributes table dictates how ASDF form "physical" attributes (BOD [F] AGI [D] REA [S] STR [A]) (HnS p. 118)  
+* R31k0's ally sprite can offer teamwork for shared autosofts (+4) or via Diagnostics (+4 Electronics, Engineering, Piloting)  
+* Sensor Upgrade adds +1 when using sensors
+
+### Attributes
+
+Base ASDF: 3535
+
+* Primal Sprite Symbiosis: 6666  
+* Resonance (6): 6978
+
+### Skills
+
+Rating 9 Autosofts: 7 (capped by D)
+
+* Sprite Symbiosis (Targeting, Electronics, Engineering, and Piloting only): +4  
+* Sensor Upgrade (Clearsight only): +1
+
+### Total Pools
+
+* **Pilot/Drive/Crash:** Maneuvering (D, 7) + REA (S, 9) + TW (4) ──> **20**
+* **Ramming AR:** Maneuvering (D, 7) + Sensor Rating  
+* **DR vs Ramming:** Maneuvering (D, 7) + Armor Rating  
+* **Ramming Att/Def:** Pilot Test (See Above)  
+* **Weapon AR:** Per Weapon  
+* **DR vs Weapons:** Maneuvering (D, 7) + Armor Rating  
+* **Weapon Attack:** Targeting (D, 7) + AGI (D, 7) + Sprite (+4) ──> **18**  
+* **Weapon Defense:** Evasion (D, 7) + REA (S, 9) ──> **16**  
+* **Perception:** Clearsight (D, 7) + Drone Sensor Rtg + Sensor Upgrade  
+* **Stealth:** Stealth (D, 7) + AGI (D, 7) ──> **14**
+
+To understand how an Artificial Intelligence (AI) character with the **Pilot Origins** quality pilots a drone, we must distinguish between two distinct methods of drone operation: **Jumped-In (Rigging)** and **Remote Control (Un-jumped)** [Hack and Slash, p. 119; SR6 Core Rulebook, p. 198].
+
+The rules handle these two scenarios differently regarding whether they use standard mental attributes or the AI's **Matrix Equivalent Attributes** [Hack and Slash, p. 118; SR6 Core Rulebook, p. 198].  
+
+---
+
+### 1. Jumped-In Operation (Why Matrix Equivalents Are Bypassed)
+
+The **Pilot Origins** quality states:
+
+> *"The AI may jump into drones and vehicles, controlling them like a rigger. Each level of this quality grants the bonus of a control rig of an equal rating"* [Hack and Slash, p. 119].
+
+When an AI character chooses to jump into a drone using this quality, standard rigging rules take over:
+
+* According to the **Control Rigs and You** rules, a rigger who is jumped into a device uses their mind instead of their meat body [SR6 Core Rulebook, p. 198].  
+* Physical attributes are replaced entirely by **Mental attributes** for all jumped-in tests [SR6 Core Rulebook, p. 198].  
+* The conversion table for jumped-in riggers dictates the following replacements [SR6 Core Rulebook, p. 198]:
+
+| Standard Physical Attribute | Jumped-In Mental Attribute |
+| :--- | :--- |
+| **Body** | Willpower |
+| **Strength** | Charisma |
+| **Agility** | Logic |
+| **Reaction** | Intuition |
+
+Since an AI character natively possesses standard Mental attributes (Willpower, Charisma, Logic, and Intuition) in their character block [Hack and Slash, p. 118], they use these **Mental attributes directly** when jumped in.
+
+* **Piloting:** When piloting a jumped-in drone, the test uses Reaction. Because the AI is jumped in, Reaction is replaced by **Intuition**. The AI rolls **Piloting + Intuition** [SR6 Core Rulebook, p. 198].  
+* **Gunnery/Firing:** When firing a jumped-in drone's weapons, the test uses Agility. Because the AI is jumped in, Agility is replaced by **Logic**. The AI rolls **Firearms + Logic** [SR6 Core Rulebook, p. 198].
+
+Because the standard rigging rules bypass physical attributes in favor of mental attributes, the AI does not need to refer to its "Physical Attribute Matrix Equivalents" (Firewall, Sleaze, Data Processing, Attack) in this state.
+
+---
+
+### 2. Remote Control / Un-jumped Operation (When Matrix Equivalents ARE Used)
+
+If the AI is **not** jumped into the drone (e.g., they are issuing remote control commands to a drone, or the drone is operating autonomously as an "AI-driven drone" without the AI jumped in), standard remote control rules dictate that the controller's Physical attributes are used [SR6 Core Rulebook, p. 201]. If the AI is controlling the device via VR they use their mental attributes, but if the AI is controlling the device via AR they use their "physical" attributes [Devices, AR and VR, SR6 Core Rulebook, p. 180].
+
+Because an AI lacks a physical body, they must substitute their missing Physical attributes using the **Matrix Equivalent Attributes** table [Hack and Slash, p. 118]:
+
+| Standard Physical Attribute | AI Matrix Equivalent Attribute |
+| :--- | :--- |
+| **Body** | Firewall |
+| **Agility** | Data Processing |
+| **Reaction** | Sleaze |
+| **Strength** | Attack |
+
+In this remote-control scenario, the AI **does** use its Matrix Equivalents:
+
+* **Piloting:** When remotely piloting a drone, the test normally calls for *Piloting + Reaction*. The AI substitutes Reaction for Sleaze, rolling **Piloting + Sleaze** [Hack and Slash, p. 118].  
+* **Gunnery/Firing:** When remotely firing a drone's mounted weapon, the test normally calls for *Firearms + Agility*. The AI substitutes Agility for Data Processing, rolling **Firearms + Data Processing** [Hack and Slash, p. 118].
+
+---
+
+### Summary Table: AI Drone Attribute Mapping
+
+| Operation State | Attribute Used for Piloting (Reaction equivalent) | Attribute Used for Gunnery (Agility equivalent) | Rules Authority / Source |
+| :--- | :--- | :--- | :--- |
+| **Jumped-In (via Pilot Origins)** | **Intuition** (Mental Attribute) | **Logic** (Mental Attribute) | [SR6 Core Rulebook, p. 198]; [Hack and Slash, p. 119] |
+| **Remote Control (Un-jumped)** | **Sleaze** (Matrix Equivalent) | **Data Processing** (Matrix Equivalent) | [Hack and Slash, p. 118] |
+
+---
+
+### Rules Reference & Citations
+
+* **[Hack and Slash, p. 118]** – AI Character Attribute Block and Matrix Equivalent Attributes.  
+* **[Hack and Slash, p. 119]** – Pilot Origins Quality & AI-driven drone rules.  
+* **[SR6 Core Rulebook, p. 198]** – Control Rigs and You, Jumped-In Attribute conversion table.  
+* **[SR6 Core Rulebook, p. 201]** – Drone Rigging and remote-control command guidelines.  
+* **[SR6 Core Rulebook, p. 180]** - Devices, AR and VR.
+
+---
+
+## Sprite Stable
+
+| Mission | Sprites Registered | Tasks Used |
+| ----- | ----- | ----- |
+| CMP 2081-20 | 2 | 0 |
+| SRM 2081-21 | 0 | 0 |
+| CMP 2081-12 | 1 | 0 |
+| **Total**   | 3 | 9 |
+
+---
+
+## Yuriko Network Benefits
+
+### Permanent Benefits
+
+* **-6 Noise Reduction:** Designer home device -2, signal scrubber -2, ECM warrior -2  
+* **+1 Sensor Rating:** Added to any connected sensor (sensor upgrade)  
+* **Edge Storage:** Capacity (5)  
+* **Resonant Coordination:** Connected characters who use the Send Message action (a Minor Action) among themselves gain a bonus Minor Action immediately afterward.  
+* **Smartsoft Array:** Drone Target Locks are shared among networked drones (smartsoft). Target Lock victims cannot spend edge against attacking networked drones.
+
+### Available Benefits
+
+* **Tasking Tests:** Electronics (+5) and Cracking TW (+7)  
+* **Rigger Support:** Engineering (+3) TW  
+* **Tactical Software apps:**
+  * *Artillery Barrage:* +1 to Launch Weapons, no rifle/cannon penalties  
+  * *Mobile Medic:* +3 Biotech (First Aid) + Harmonize hits  
+  * *Sneak-Sneak:* +2 Stealth  
+  * *Target Artist:* Attack w/o LOS on painted targets  
+  * *Sensory Array:* Social HUD/Thermal Mood Reading/Vocal Tension Detection: +1 Edge on Judge Intentions
