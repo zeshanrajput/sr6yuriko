@@ -22,3 +22,8 @@ _book/
 .rules_index.json
 cache_index.json
 scratch/
+
+# Rules Vault Ignore Rules (keep only SRMG extracts)
+rules_vault/*
+!rules_vault/
+!rules_vault/SRMG-*.md
