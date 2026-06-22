@@ -7,11 +7,11 @@
       "value": 0,
       "max": 0
     },
-    "nuyen": 17795,
+    "nuyen": 48295,
     "mortype": "technomancer",
     "special-traits": {
       "initiation": 0,
-      "submersion": 5
+      "submersion": 6
     },
     "attributes": {
       "bod": {
@@ -475,7 +475,7 @@
         "subtype": "SURVIVAL_GEAR",
         "availDef": "3",
         "avail": 3,
-        "price": 20000,
+        "price": 2000,
         "needsRating": false,
         "rating": 0,
         "wild": false,
@@ -572,7 +572,7 @@
         "subtype": "AIR",
         "availDef": "2",
         "avail": 2,
-        "price": 4000,
+        "price": 800,
         "needsRating": false,
         "rating": 0,
         "wild": false,
@@ -608,7 +608,7 @@
         "availDef": "4",
         "avail": 4,
         "price": 18800,
-        "accessories": "Chameleon Coating 1, Drone rack (Micro/Mini), Integrated Matrix Device Dock, Anti-theft system (Rating 1), Enhanced Sensors 2, Electronic Countermeasures (ECM) 6, RAM Plating 4",
+        "accessories": "Chameleon Coating 1, Drone rack (Micro/Mini), Integrated Matrix Device Dock, Anti-theft system (Rating 1), RAM Plating 4, Enhanced Sensors 2, Electronic Countermeasures (ECM) 6",
         "needsRating": false,
         "rating": 0,
         "wild": false,
@@ -745,7 +745,7 @@
         "subtype": "AMMUNITION",
         "availDef": "4 I",
         "avail": 4,
-        "price": 200,
+        "price": 50,
         "needsRating": false,
         "rating": 0,
         "wild": false,
@@ -811,7 +811,7 @@
         "subtype": "AMMUNITION",
         "availDef": "1",
         "avail": 1,
-        "price": 100,
+        "price": 10,
         "needsRating": false,
         "rating": 0,
         "wild": false,
@@ -834,7 +834,7 @@
         "subtype": "AMMUNITION",
         "availDef": "1",
         "avail": 1,
-        "price": 100,
+        "price": 10,
         "needsRating": false,
         "rating": 0,
         "wild": false,
@@ -857,7 +857,7 @@
         "subtype": "GRENADES",
         "availDef": "3 L",
         "avail": 3,
-        "price": 1000,
+        "price": 100,
         "needsRating": false,
         "rating": 0,
         "wild": false,
@@ -893,7 +893,7 @@
         "availDef": "3",
         "avail": 3,
         "price": 126000,
-        "accessories": "Pop-Out Concealment (Pop-Out Large), Drone rack (Small), Anti-theft system (Rating 1), Secondary Propulsion Systems (Rotor), Increased Structural Integrity 5, Realistic Features 4, Weapon mount-Heavy, Integrated Cyberarm, Tesla coil, Fingertip compartment, Implanted Heavy Pistol, Integrated Cyberarm, Wrist shield, Armor increase 5",
+        "accessories": "Pop-Out Concealment (Pop-Out Large), Drone rack (Small), Anti-theft system (Rating 1), Secondary Propulsion Systems (Rotor), Increased Structural Integrity 5, Realistic Features 4, Integrated Cyberarm, Tesla coil, Fingertip compartment, Implanted Heavy Pistol, Integrated Cyberarm, Wrist shield, Armor increase 5, Weapon mount-Heavy",
         "needsRating": false,
         "rating": 0,
         "wild": false,
@@ -988,7 +988,7 @@
         "subtype": "BIOTECH",
         "availDef": "1",
         "avail": 1,
-        "price": 500,
+        "price": 100,
         "needsRating": false,
         "rating": 0,
         "wild": false,
@@ -1094,7 +1094,7 @@
         "type": "ELECTRONICS",
         "subtype": "TOOLS",
         "avail": 0,
-        "price": 46490,
+        "price": 0,
         "accessories": "Baby Monitor (Deck), Biotech 9, Browse (Deck), Clearsight 9, Close Combat 9, Decryption, Defense Pods, Directional Shield, Edit (Deck), Encryption, Evasion 9, Facial Scanner, Fork, Hitchhiker, Maneuvering 9, Mannequin, Mapsoft, MeFeed, Navigation 9, Nexus Protocol Program, Overclock, Performance 9, Social HUD, Targeting 9, Trace, Tracking 9, Thermal Mood Reading, Vocal Tension Detection, Engineering 9, Smartsoft, Artillery Barrage, ECM Warrior II, Mobile Medic, Sneak-Sneak, Target Artist, Shopsoft, Language 5, Knowledge, Emulator",
         "needsRating": false,
         "rating": 0,
@@ -1179,6 +1179,20 @@
       "sort": 0
     },
     {
+      "type": "complexform",
+      "data": {
+        "duration": "sustained",
+        "fading": 5,
+        "threshold": 0,
+        "genesisID": "puppeteer",
+        "product": "core",
+        "page": 190
+      },
+      "effects": [],
+      "name": "Puppeteer",
+      "sort": 0
+    },
+    {
       "type": "echo",
       "data": {
         "level": false,
@@ -1248,6 +1262,18 @@
       },
       "effects": [],
       "name": "Transcendent Network",
+      "sort": 0
+    },
+    {
+      "type": "echo",
+      "data": {
+        "level": false,
+        "genesisID": "overclocking",
+        "product": "core",
+        "page": 195
+      },
+      "effects": [],
+      "name": "Overclocking",
       "sort": 0
     },
     {
@@ -1557,6 +1583,90 @@
       },
       "effects": [],
       "name": "Sigrûn (Marikka von Harbou )",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 4,
+        "loyalty": 1,
+        "type": "Corporate",
+        "description": "CMP 2083-14: +2 FP -- L1/FP1"
+      },
+      "effects": [],
+      "name": "Dixie L\u0027Amin",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 3,
+        "loyalty": 1,
+        "type": "NOT_SET",
+        "description": "CMP 2083-14: +1FP -- L1"
+      },
+      "effects": [],
+      "name": "Ayanda Shieldbearer Matanagu(?)",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 1,
+        "loyalty": 1,
+        "type": "Magic",
+        "description": "CMP 2083-14: +2FP -- L1 / FP1"
+      },
+      "effects": [],
+      "name": "Ebon Abirashur",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 5,
+        "loyalty": 1,
+        "type": "Corporate",
+        "description": "CMP 2083-16: +2FP -- L1/FP1"
+      },
+      "effects": [],
+      "name": "Col. Deborah Kentwell",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 1,
+        "loyalty": 1,
+        "type": "NOT_SET",
+        "description": "CMP 2083-16: +1FP -- L1"
+      },
+      "effects": [],
+      "name": "Polyphemous \u0027Paul\u0027 Pellagios",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 1,
+        "loyalty": 1,
+        "type": "Criminal",
+        "description": "SRM 2081-19: +1FP -- L1"
+      },
+      "effects": [],
+      "name": "Fernand Anato",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 5,
+        "loyalty": 2,
+        "type": "NOT_SET",
+        "description": "SRM 2081-19: L1/FP3 -- L2/FP1"
+      },
+      "effects": [],
+      "name": "Monsieur Johnson",
       "sort": 0
     }
   ],

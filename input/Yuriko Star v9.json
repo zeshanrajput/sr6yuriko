@@ -8,13 +8,13 @@
   "weight": 0,
   "age": "~ 10",
   "gender": "DIVERSE",
-  "heat": 0,
-  "reputation": 9,
-  "karma": 65,
-  "freeKarma": 8,
-  "nuyen": 17795,
+  "heat": 3,
+  "reputation": 13,
+  "karma": 89,
+  "freeKarma": 11,
+  "nuyen": 48295,
   "initiation": 0,
-  "submersion": 5,
+  "submersion": 6,
   "attributes": [
     {
       "name": "Body",
@@ -136,7 +136,7 @@
       "name": "Initiative (Matrix AR)",
       "id": "INITIATIVE_MATRIX",
       "value": 6,
-      "dice": "+1D6"
+      "dice": "+2D6"
     },
     {
       "name": "Initiative (Matrix VR)",
@@ -349,6 +349,11 @@
       "name": "Transcendent Network",
       "page": "Hack\u0027n Slash 69",
       "description": ""
+    },
+    {
+      "name": "Overclocking",
+      "page": "Core Rulebook 195",
+      "description": ""
     }
   ],
   "complexForms": [
@@ -374,6 +379,14 @@
       "fading": -1,
       "influences": [],
       "page": "Hack\u0027n Slash 67",
+      "description": ""
+    },
+    {
+      "name": "Puppeteer",
+      "duration": "Sustained",
+      "fading": 5,
+      "influences": [],
+      "page": "Core Rulebook 190",
       "description": ""
     }
   ],
@@ -1194,6 +1207,62 @@
       "influence": 4,
       "description": "CMP 2081-12 | Uneasy lies the head - +4FP -- L1 FP3",
       "favors": 3
+    },
+    {
+      "name": "Dixie L\u0027Amin",
+      "type": "DW Naga",
+      "loyalty": 1,
+      "influence": 4,
+      "description": "CMP 2083-14: +2 FP -- L1/FP1",
+      "favors": 1
+    },
+    {
+      "name": "Ayanda Shieldbearer Matanagu(?)",
+      "type": "DW Captain",
+      "loyalty": 1,
+      "influence": 3,
+      "description": "CMP 2083-14: +1FP -- L1",
+      "favors": 0
+    },
+    {
+      "name": "Ebon Abirashur",
+      "type": "DW Leviathan Dragon",
+      "loyalty": 1,
+      "influence": 1,
+      "description": "CMP 2083-14: +2FP -- L1 / FP1",
+      "favors": 1
+    },
+    {
+      "name": "Col. Deborah Kentwell",
+      "type": "DW Thunder Corps Fixer",
+      "loyalty": 1,
+      "influence": 5,
+      "description": "CMP 2083-16: +2FP -- L1/FP1",
+      "favors": 1
+    },
+    {
+      "name": "Polyphemous \u0027Paul\u0027 Pellagios",
+      "type": "DW Background Actor",
+      "loyalty": 1,
+      "influence": 1,
+      "description": "CMP 2083-16: +1FP -- L1",
+      "favors": 0
+    },
+    {
+      "name": "Fernand Anato",
+      "type": "NOLA Kozlowski Capo",
+      "loyalty": 1,
+      "influence": 1,
+      "description": "SRM 2081-19: +1FP -- L1",
+      "favors": 0
+    },
+    {
+      "name": "Monsieur Johnson",
+      "type": "NOLA Johnson",
+      "loyalty": 2,
+      "influence": 5,
+      "description": "SRM 2081-19: L1/FP3 -- L2/FP1",
+      "favors": 1
     }
   ],
   "licenses": [

@@ -1,6 +1,6 @@
 ___________________________________________________________________________
 // ACCESSING: R31K0_TAKAHASHI.bin // SOURCE: RESONANCE_REALMS //
-// STATUS: ONLINE // LIFETIME KARMA: 103 // KARMA: 8 // NUYEN: ¥17,795 //
+// STATUS: ONLINE // LIFETIME KARMA: 127 // KARMA: 11 // NUYEN: ¥48,295 //
 ___________________________________________________________________________
 
 [ IDENTITY ]
@@ -11,7 +11,7 @@ ___________________________________________________________________________
 [ CORE_ATTRIBUTES ]                          | [ DERIVED_STATUS ]
   MAT | ATK [03] SLZ [05] DPR [03] FWL [05]  |   INIT (VR)  : 6 +3D6
   MNT | WIL [06] LOG [04] INT [02] CHA [04]  |   ATK RATING : 11 (ATK+SLZ)
-  SPP | EDG [05] RES [06] SPK [06] SUB [05]  |   DEF RATING : 11 (DPR+FWL)
+  SPP | EDG [05] RES [06] SPK [06] SUB [06]  |   DEF RATING : 11 (DPR+FWL)
                                              |   COMPOSURE  : 10
 [ MATRIX EQUIVALENT ATTRIBUTES ]             |   JUDGE INT  : 8
   BOD [F]  AGI [D]  REA [S]  STR [A]         | Def (Bio): WIL + FWL (13)
@@ -33,14 +33,16 @@ ___________________________________________________________________________
   - CLEANER (FV 2)                      -> Pool: 19[#4]  [Fading Resist: 10]
   - DIFFUSION (FV 4)                    -> Pool: 19[#4]  [Fading Resist: 10]
   - TECHNOREGENERATION (FV Hits)        -> Pool: 19[#4]  [Fading Resist: 10]
+  - PUPPETEER (FV 5)                    -> Pool: 19[#4]  [Fading Resist: 10]
 
 [ ECHOES & SUBMERSION ]                | [ RESONANCE_QUICK_ACTIONS ]
-  - HYBRID SPRITES                     |   - COMPILING   -> Pool: 16[#5] (15 v. FV-2)
-  - NEW SPRITE TYPE                    |   - REGISTERING -> Pool: 18[#6] (15 v. FV)
+  - HYBRID SPRITES                     |   - COMPILING   -> Pool: 16[#5] (16 v. FV-2)
+  - NEW SPRITE TYPE                    |   - REGISTERING -> Pool: 18[#6] (16 v. FV)
   - SPRITE CONDUIT                     |   - DECOMPILING -> Pool: 16[#7] (10 v. FV-2)
   - SPRITE SYMBIOSIS                   |
   - LIVING NETWORK                     |
   - TRANSCENDENT NETWORK               |
+  - OVERCLOCKING                       |
 
 
 [ DRONE_COMMAND_ARRAY (COL 1) ]        | [ DRONE_COMMAND_ARRAY (COL 2) ]
@@ -63,14 +65,14 @@ ___________________________________________________________________________
   INT 30 SPD 190 BOD 4                 |     > Sec Propulsion (Rotor)
   ARM 2  PIL 4   SEN 5                  |     > Incr Struct Integrity 5
     > Chameleon Coating 1              |     > Realistic Features 4
-    > Drone rack (Micro/Mini)          |     > Weapon mount-Heavy
-    > Integrated Matrix Device Dock    |     > Integrated Cyberarm
-    > Anti-theft system (Rating 1)     |     > Tesla coil [5S(e)|8/10*/—/—/—]
-    > Enhanced Sensors 2               |     > Fingertip compartment
-    > ECM 6                            |     > Implanted Heavy Pistol
-    > RAM Plating 4                    |     > Integrated Cyberarm
-                                       |     > Wrist shield [+4]
+    > Drone rack (Micro/Mini)          |     > Integrated Cyberarm
+    > Integrated Matrix Device Dock    |     > Tesla coil [5S(e)|8/10*/—/—/—]
+    > Anti-theft system (Rating 1)     |     > Fingertip compartment
+    > RAM Plating 4                    |     > Implanted Heavy Pistol
+    > Enhanced Sensors 2               |     > Integrated Cyberarm
+    > ECM 6                            |     > Wrist shield [+4]
                                        |     > Armor increase 5 [+5]
+                                       |     > Weapon mount-Heavy
 
 [ MATRIX_DEVICES ] [#10]               |
 - AI NATIVE PROTOCOLS (VIRTUAL)        | - ERIKA ELITE (COMMLINK)
@@ -222,9 +224,9 @@ ___________________________________________________________________________
        - Hyperthreading (Opt.): +7, -1 task
   [#5] Compiling Sprites adjustments:
        - -2 FV, +1 Service on compiling net hit (Technoshaman)
-       - +5d6 when resisting fading (Sprite Conduit)
+       - +6d6 when resisting fading (Sprite Conduit)
   [#6] Registering Sprites adjustments:
-       - +5d6 when resisting fading (Sprite Conduit)
+       - +6d6 when resisting fading (Sprite Conduit)
   [#7] Decompiling Sprites adjustments:
        - -2 FV (Technoshaman)
   [#8] S. Man-at-Arms BOD 10(15):
@@ -272,6 +274,13 @@ ___________________________________________________________________________
   - REILLY DRAGMAN       KY Child Heiress                 L:1 I:1 F:1
   - QUEEN BRANE          Seelie Queen                     L:1 I:12 F:0
   - SIGRÛN (MARIKKA VON HARBOU ) AMS Shadowrunner                 L:1 I:4 F:3
+  - DIXIE L'AMIN         DW Naga                          L:1 I:4 F:1
+  - AYANDA SHIELDBEARER MATANAGU(?) DW Captain                       L:1 I:3 F:0
+  - EBON ABIRASHUR       DW Leviathan Dragon              L:1 I:1 F:1
+  - COL. DEBORAH KENTWELL DW Thunder Corps Fixer           L:1 I:5 F:1
+  - POLYPHEMOUS 'PAUL' PELLAGIOS DW Background Actor              L:1 I:1 F:0
+  - FERNAND ANATO        NOLA Kozlowski Capo              L:1 I:1 F:0
+  - MONSIEUR JOHNSON     NOLA Johnson                     L:2 I:5 F:1
 
 [ REGISTERED_IDENTITIES ]
   - SIN: Yuriko Star                    [Rating 2]
@@ -311,8 +320,14 @@ ___________________________________________________________________________
   2026-06-07   |    +1 |    -2000 | SRM 2081-21: Working for the People
   2026-06-12   |    +6 |    +8500 | CMP 2081-12 | Uneasy lies... (GM: Kira Capalu)
   2026-06-12   |    +1 |    -3000 | CMP 2081-12: Working for the People, Bribes
+  2026-06-19   |    +7 |   +13000 | CMP 2083-14: A Day... (GM: Nick (Origins '26))
+  2026-06-19   |    +1 |    -2000 | CMP 2083-14: Working for the People
+  2026-06-20   |    +6 |   +15000 | CMP 2083-16: ... (GM: Hal "SSDR" (Origins'26))
+  2026-06-20   |    +1 |    -5000 | CMP 2083-16: Working for the People, Bribes
+  2026-06-20   |    +8 |   +13500 | SRM 2081-19: The ... (GM: Morgan (Origins'26))
+  2026-06-20   |    +1 |    -4000 | SRM 2081-19: Working for the People, Rent
   ---------------------------------------------------------------------------
-  LIFETIME KARMA: 103 (98 earned + 5 from Chargen)
+  LIFETIME KARMA: 127 (122 earned + 5 from Chargen)
 
 ___________________________________________________________________________
 // END_OF_FILE // REIKO@RESONANCE:~$ _

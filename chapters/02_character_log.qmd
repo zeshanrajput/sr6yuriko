@@ -196,3 +196,60 @@ This log chronicles the out-of-session missions, downtime decisions, Karma expen
 * **Downtime Actions (2 Minor):**  
   * *Working for the People:* +1 Karma, -2,000 Nuyen  
   * *Register Sprites:* Registering 8 Levels of Sprites (1 modular sprite with autosofts)  
+
+---
+
+### **2026-June-19: CMP 2083-14 | A Day at the Beach**
+
+* **Summary:**: Arrived in Malta and asked by Thunder Corps to ensure that the demonstration of an the 'Silent Knight' Experimental Submarine went off without sabotage during a war game. After locating the submarine, we discovered a Leviathan attacking it. We were able to free the Leviathan from being controlled and rescued the submarine. Yuriko was yet again without matrix activity (due to being under a km of sea water and forced to inhabit a submarine).
+* **Team:**: Angus (Male Ork Street Sam), Thallium (F Elf Shaman), Nova (Elf Mage), Dirk (Ork Phys Adept), Yuriko 
+* **GM:** Nick
+* **Rewards**: 7 karma, 12000 nuyen + 1000 nuyen for sharing media
+* **Reputation**: +1 Rep Mercenary Community
+* **Heat**: No Heat
+* **Contacts**
+  * +2 FP Dixie L'Amina (C4 Naga) --> L1/F1
+  * +1 FP Ayanda Shieldbearer Matanugu (C3 Captain) --> L1
+  * +2 FP Ebon Abirahur (C1 Leviathan Dragon) --> L1/F1
+* **Downtime Actions (2 Minor)**:
+  * *Working for the People:* +1 Karma, -2,000 Nuyen
+  * *Register Sprites:* Registering 8 Levels of Sprites (1 modular sprite with autosofts)
+
+---
+
+### **2026-June-20: CMP 2083-16 | War Never Changes**
+
+* **Summary:**: Hired by Col. Deborah Kentwell (Thunder Corps) to infiltrate Hardwater Security Svcs and procure evidence of cheating. Later re-hired to win the final War Game (CTF). Yuriko was forced to inhabit an Ares ShadowDancer WarMech (Deadly Arts).
+* **Team:**: Bast, Mithral, Ice Lily, Yuriko
+* **GM:** Hal "SSDR"
+* **Rewards:**: 
+  * 6 karma, 
+  * 4500 nuyen (Phase 1), 7000 nuyen (Phase 2), 2000 nuyen (simvest), 2000 nuyen (bonuses), 
+  * -3000 nuyen (bribes, buying down heat), 
+  * Smile for the Camera! Quality (Para Bellum p. 18, Shiawase), 
+  * Two downtime days during session --> 2 R7 Modular Sprites
+* **Reputation:**: +2 Rep Mercenary Community
+* **Heat:**: +4
+* **Contacts:**
+  * +2 FP Col. Deborah Kentwell (C5 Thunder Corps Fixer) --> L1/F1
+  * +1 FP Polyphemous "Phil" Pellagious (C1 Desert Wars Background Actor)
+* **Downtime Actions (2 Minor):**
+  * *Working for the People:* +1 Karma, -2,000 Nuyen
+  * Learn Complex Form: Puppeteer
+
+--- 
+
+### **2026-June-20: SRM 2081-19 | The Hallow Feast**
+
+* **Summary:**: Hired by Monsieur Johnson to ascertain the whereabouts of Snaggletooth. Ultimately found him long since dead and possessed by a spirit attempting to destroy the world. 
+* **Team:**: Eris Pomme, Ice Lily, Jolee, Bob, Yuriko
+* **GM:** Morgan
+* **Rewards:**: 8 karma, 8500 nuyen +5000 bonus for saving NOLA 
+* **Reputation:**: +3 Rep NOLA
+* **Heat:**: No Heat
+* **Contacts:**: 
+  * +1 FP Fernand Anato (NOLA Kozlowski Capo) --> L1
+  * +3 FP * L1 Monsieur Johnson (C5) --> L2/F1
+* **Downtime Actions (1 Minor):**
+  * *Working for the People:* +1 Karma, -2,000 Nuyen
+  * Submersion: Overclocking
