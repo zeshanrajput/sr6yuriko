@@ -28,6 +28,7 @@ book:
         - chapters/09 Game Theory.md
         - chapters/10 Triangulation.md
         - chapters/11 Integrating over Infinity.md
+        - chapters/12 Defrag.md
         - chapters/99 Twenty Questions.md
 
 format:

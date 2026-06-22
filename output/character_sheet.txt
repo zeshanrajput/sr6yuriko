@@ -153,7 +153,7 @@ ___________________________________________________________________________
                                        |   - MEDKIT SUPPLIES x5
                                        |   - ORDER OF THE LION OF THE UNITED NETHERLANDS MEDAL
                                        |   - BROACH OF THE SEELIE COURT (+2 POWER FOCUS)
-                                       |   - DAGGER OF THE SACRED ROSE (+1 WEAPON FOCUS) [3P | 10/8/6/—/—]
+                                       |   - DAGGER OF THE SACRED ROSE (+1 WEAPON FOCUS)
 
 [ LIFESTYLE_DATA ]
   - LOW (1 Months Pre-paid)

@@ -15,10 +15,37 @@ Welcome to the consolidated resonance portfolio for **r31-K0 ("Reiko")**, operat
 
 ::: {.g-col-6 .cyber-card}
 ### [MATRIX_PROGRESSION]
-* **Lifetime Karma:** 103 (98 earned)
-* **Current Karma:** 8
-* **Liquid Capital:** ¥17,795
-* **Submersion Grade:** 5 (Living/Transcendent Network)
+```{python}
+#| echo: false
+#| output: asis
+import re
+
+try:
+    with open("output/character_sheet.txt", "r", encoding="utf-8") as f:
+        content = f.read()
+
+    lifetime_karma = re.search(r"LIFETIME KARMA:\s*(\d+)", content)
+    current_karma = re.search(r"(?<!LIFETIME )KARMA:\s*(\d+)", content)
+    nuyen = re.search(r"NUYEN:\s*([^\s/]+)", content)
+    submersion = re.search(r"SUB\s*\[(\d+)\]", content)
+    earned_match = re.search(r"LIFETIME KARMA:\s*\d+\s*\((\d+)\s*earned", content)
+    
+    lk = lifetime_karma.group(1) if lifetime_karma else "127"
+    ck = current_karma.group(1) if current_karma else "11"
+    ny = nuyen.group(1) if nuyen else "¥48,295"
+    sub = int(submersion.group(1)) if submersion else 6
+    earned = earned_match.group(1) if earned_match else str(int(lk) - 5)
+
+    print(f"* **Lifetime Karma:** {lk} ({earned} earned)")
+    print(f"* **Current Karma:** {ck}")
+    print(f"* **Liquid Capital:** {ny}")
+    print(f"* **Submersion Grade:** {sub}")
+except Exception as e:
+    print("* **Lifetime Karma:** 127 (122 earned)")
+    print("* **Current Karma:** 11")
+    print("* **Liquid Capital:** ¥48,295")
+    print("* **Submersion Grade:** 6")
+```
 :::
 
 :::
@@ -52,4 +79,5 @@ Explore the chronological records of Yuriko's out-of-session narratives:
 * **[Chapter 09: Game Theory](chapters/09 Game Theory.md)**
 * **[Chapter 10: Triangulation](chapters/10 Triangulation.md)**
 * **[Chapter 11: Integrating over Infinity](chapters/11 Integrating over Infinity.md)**
+* **[Chapter 12: Defrag](chapters/12 Defrag.md)**
 * **[Twenty Questions](chapters/99 Twenty Questions.md)**

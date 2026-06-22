@@ -1022,6 +1022,7 @@ def generate_ascii_sheet(char_data, verbose=False):
     edg = a.get('EDGE', 0)
     res = a.get('RESONANCE', 0)
     submersion = char_data["submersion"]
+    has_overclocking = any("overclocking" in echo["name"].lower() for echo in char_data.get("echoes", []))
     
     # Calculate earned_karma and lifetime_karma dynamically from XML attributes
     total_karma = char_data.get("karma", 0) + char_data.get("karmaI", 0)
@@ -1044,7 +1045,7 @@ def generate_ascii_sheet(char_data, verbose=False):
     phys_init_val = 7
     phys_init_dice = "+1D6"
     hot_init_val = 5
-    hot_init_dice = "+3D6"
+    hot_init_dice = "+4D6" if has_overclocking else "+3D6"
     
     composure = cha + wil
     judge_int = int_ + wil
@@ -1104,7 +1105,8 @@ def generate_ascii_sheet(char_data, verbose=False):
     right_status = []
     right_status.append("[ DERIVED_STATUS ]")
     if is_ai:
-        right_status.append(f"  INIT (VR)  : {int_ + d} +3D6")
+        vr_init_dice = "+4D6" if has_overclocking else "+3D6"
+        right_status.append(f"  INIT (VR)  : {int_ + d} {vr_init_dice}")
         right_status.append(f"  ATK RATING : {atk + s_val:02} (ATK+SLZ)")
         right_status.append(f"  DEF RATING : {d + f:02} (DPR+FWL)")
     else:

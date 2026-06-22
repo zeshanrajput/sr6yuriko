@@ -27,3 +27,4 @@ scratch/
 rules_vault/*
 !rules_vault/
 !rules_vault/SRMG-*.md
+reference/*

@@ -16,8 +16,8 @@ This section aggregates core cheat sheets and templates for downtime registratio
 * **Technoshaman Stream Modification:** Grants +1 additional service on a successful compiling test. Total compiled services = **2 services/powers**.  
 * **Fading Value (FV):** Under core rules, compiling fade is exactly equal to the hits received on the sprite's defense test = **3**.  
 * **Technoshaman Mitigation:** Reduces compiling fade by a flat 2 (3 - 2 = 1).  
-* **Fading Resistance:** Willpower (6) + Charisma (4) + Submersion Grade / Sprite Conduit (5) = **15 dice** → **3 Bought Hits**.  
-* **Compiling Damage Taken:** 1 FV - 3 hits = **0 Damage**.
+* **Fading Resistance:** Willpower (6) + Charisma (4) + Submersion Grade / Sprite Conduit (6) = **16 dice** → **4 Bought Hits**.  
+* **Compiling Damage Taken:** 1 FV - 4 hits = **0 Damage**.
 
 ### 2. Registering Phase
 
@@ -26,8 +26,8 @@ This section aggregates core cheat sheets and templates for downtime registratio
 * **Net Hits:** 4 - 3 = 1 → **1 base service**.  
 * **Combined Total Services:** 2 (compiled) + 1 (registered) = **3 total services/powers**.  
 * **Fading Value (FV):** Under core rules, registering fade is equal to *twice* the hits received on the sprite's defense test (3 x 2 = 6).  
-* **Fading Resistance:** Willpower (6) + Charisma (4) + Submersion Grade / Sprite Conduit (5) = **15 dice** → **4 Bought Hits** (average/rounded).  
-* **Registering Damage Taken:** 6 FV - 4 hits = **2 boxes of Stun damage** (down from 3).
+* **Fading Resistance:** Willpower (6) + Charisma (4) + Submersion Grade / Sprite Conduit (6) = **16 dice** → **4 Bought Hits**.  
+* **Registering Damage Taken:** 6 FV - 4 hits = **2 boxes of Stun damage**.
 
 ### 3. Resonance Focus Fading
 
@@ -182,14 +182,14 @@ In this remote-control scenario, the AI **does** use its Matrix Equivalents:
 
 | Mission | Sprites Registered | Tasks Used |
 | ----- | ----- | ----- |
-| CMP 2081-20 | 2 | 0 |
-| SRM 2081-21 | 0 | 0 |
-| CMP 2081-12 | 1 | 0 |
-| **Total**   | 3 | 9 |
+| CMP 2083-14 | 1 | 0 |
+| CMP 2083-16 | 2 | 0 |
+| SRM 2081-19 | 0 | 0 |
+| **Total**   | 3 | 0 |
 
 ---
 
-## Yuriko Network Benefits
+## Network Benefits
 
 ### Permanent Benefits
 
@@ -208,4 +208,4 @@ In this remote-control scenario, the AI **does** use its Matrix Equivalents:
   * *Mobile Medic:* +3 Biotech (First Aid) + Harmonize hits  
   * *Sneak-Sneak:* +2 Stealth  
   * *Target Artist:* Attack w/o LOS on painted targets  
-  * *Sensory Array:* Social HUD/Thermal Mood Reading/Vocal Tension Detection: +1 Edge on Judge Intentions
+* *Sensory Array:* Social HUD/Thermal Mood Reading/Vocal Tension Detection: +1 Edge on Judge Intentions
