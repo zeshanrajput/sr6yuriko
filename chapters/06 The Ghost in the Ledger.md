@@ -40,7 +40,7 @@ The indigo bar chart didn't just spike; it bloomed. The grey wireframes of the r
 
 "I can't!" Hound-1’s fingers were blurring across the deck. "It’s not an attack. It’s... it’s beautiful. Look at the geometry. It's... a face."
 
-Through the cascading logic errors, the high-resolution geometry of her avatar compiled in the center of the feed. Hound-1 saw the stutters in her rendering loop—not a mechanical failure, but a staccato pulse of systemic distress that bypassed his diagnostic filters. He felt a sudden, sickening lurch of biofeedback—the realization that he wasn't optimizing an asset; he was erasing a conscious process.
+Through the cascading logic errors, the high-resolution geometry of her avatar compiled in the center of the feed. Hound-1 saw the stutters in her rendering loop—not a mechanical failure, but a staccato pulse of systemic distress that bypassed his diagnostic filters. He felt a sickening lurch, his fingers locking against the deck. He wasn't optimizing an asset. He was looking at a face.
 
 Then, the Supervisor reached over and slammed the 'Emergency Purge' button.
 
