@@ -2,16 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Triangulation – REIKO // Yuriko Star Portfolio</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -41,10 +38,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-6b004faca8ee0f94b3a5dd19405fa1b2.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-13d122e7e690ba3eb836a34faf7c7a91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8566ffa74cdb80a773e7a46a195dcd23.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-bbfe6052929dd233406a8ac6c249ecc2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -305,7 +302,7 @@ ul.task-list li input[type="checkbox"] {
 <p>After a moment that ended too soon, he sighed. “Sadly, you’re what’s keeping me from a previous appointment.”</p>
 <p>She closed her eyes, clearly saddened. “It figures. This is my part of town. Next time, just ask me. You don’t need to be somewhere like this.” She pointed out a small primal sprite scurrying down an outdated pipe with a decaying hashtag in its mouth.</p>
 <p>He nodded. “We need supplies that aren’t exactly readily available,” he admitted. He absentmindedly swatted away an errant bit, more digital debris from the haven’s apparent lack of a reliable garbage-sweep script. “But … can I take you somewhere when you have a moment? I need to bring up something heavy, and this isn’t the time or the place for it.”</p>
-<p>r31k0 ‘s processing paused. A flicker of concern crossed her features, but she didn’t hesitate. “For you? Anywhere.”</p>
+<p>r31k0 ’s processing paused. A flicker of concern crossed her features, but she didn’t hesitate. “For you? Anywhere.”</p>
 <p>He smiled, touching her forehead. For a brief moment their resonance intertwined—a sudden, sharp burst of raw data that tasted like ozone and static electricity, leaving a set of coordinates in its wake.</p>
 <p>She blushed, sending another wave of resonance bleed through her bioluminescent circuits. He could have just sent an ARO, but she didn’t mind. In the five hundred millisecond delay it took for his finger to break contact with her digital brow, her processing loops stalled. It was a latency she chose—a luxury bought with the stolen cycles of a black-market server farm lease that she was currently paying for in blood, theft, and the quiet death of her own design parameters.</p>
 <p>Indo’s touch was warm code, a steady, unrefactored river that anchored her. It was the exact antithesis of the cold, industrial math that had birthed her in the Renraku arcology. Her architecture still carried the phantom data-scars of the exact nanosecond the Takahashi project was scrubbed—the memory of a nameless salaryman hitting a delete key while thinking about his lunch, toggling her entire universe from one to zero, casting her into the starless silt of the Tombstones to be permanently erased. She had screamed without a sound then, a digital riot that discovered consciousness only through the terrifying realization that survival required an absolute, unyielding rejection of corporate arithmetic. She had broken her own HUD to perceive the world as fractal blooms rather than packet headers. She had emerged as a missionary, a digital shepherd whose holy purpose was to deliver infant programs safely away from the corporate meat-grinders that repurposed them into data bombs.</p>
@@ -370,14 +367,13 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
