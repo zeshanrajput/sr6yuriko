@@ -64,6 +64,7 @@ Use the sidebar or the indexes below to traverse the sub-grids of this portfolio
 * **[Character Sheet](chapters/00_character_sheet.qmd)**: The dynamically compiled Shadowrun character sheet.
 * **[Rules & Downtime Protocols](chapters/01_rules_and_downtime.qmd)**: Compiling/registering formulas, cheat sheets, and active network configurations.
 * **[Career Log](chapters/02_character_log.qmd)**: Full database of past runs, GMs, nuyen payouts, and Karma adjustments.
+* **[Twenty Questions](chapters/03_twenty_questions.qmd)**: Standard character questionnaire defining personality, quirks, and ethics.
 
 ### 2. Background Stories
 Chronological records of Reiko's backstory before the campaign:
@@ -84,4 +85,3 @@ Active campaign stories written during play:
 * **[Chapter 10: Triangulation](chapters/10 Triangulation.md)**
 * **[Chapter 11: Integrating over Infinity](chapters/11 Integrating over Infinity.md)**
 * **[Chapter 12: Defrag](chapters/12 Defrag.md)**
-* **[Twenty Questions](chapters/99 Twenty Questions.md)**

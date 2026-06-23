@@ -15,6 +15,7 @@ book:
         - chapters/00_character_sheet.qmd
         - chapters/01_rules_and_downtime.qmd
         - chapters/02_character_log.qmd
+        - chapters/03_twenty_questions.qmd
     - part: "Background Stories"
       chapters:
         - chapters/01 The Weight of Zero.md
@@ -31,7 +32,6 @@ book:
         - chapters/10 Triangulation.md
         - chapters/11 Integrating over Infinity.md
         - chapters/12 Defrag.md
-        - chapters/99 Twenty Questions.md
 
 format:
   html:
