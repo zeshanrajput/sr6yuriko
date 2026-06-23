@@ -65,8 +65,8 @@ Use the sidebar or the indexes below to traverse the sub-grids of this portfolio
 * **[Rules & Downtime Protocols](chapters/01_rules_and_downtime.qmd)**: Compiling/registering formulas, cheat sheets, and active network configurations.
 * **[Career Log](chapters/02_character_log.qmd)**: Full database of past runs, GMs, nuyen payouts, and Karma adjustments.
 
-### 2. Narrative Chapters
-Explore the chronological records of Yuriko's out-of-session narratives:
+### 2. Background Stories
+Chronological records of Reiko's backstory before the campaign:
 
 * **[Chapter 01: The Weight of Zero](chapters/01 The Weight of Zero.md)**
 * **[Chapter 02: Color Blind Mathematics](chapters/02 Color Blind Mathematics.md)**
@@ -75,6 +75,10 @@ Explore the chronological records of Yuriko's out-of-session narratives:
 * **[Chapter 05: A SINner's Loan](chapters/05 A SINner's Loan.md)**
 * **[Chapter 06: The Ghost in the Ledger](chapters/06 The Ghost in the Ledger.md)**
 * **[Chapter 07: Sunday at r3sP@wn](chapters/07 Sunday at r3sP@wn.md)**
+
+### 3. Out-of-Session Narratives
+Active campaign stories written during play:
+
 * **[Chapter 08: Abandoning Tourism](chapters/08 Abandoning Tourism.md)**
 * **[Chapter 09: Game Theory](chapters/09 Game Theory.md)**
 * **[Chapter 10: Triangulation](chapters/10 Triangulation.md)**

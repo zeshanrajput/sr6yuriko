@@ -1,57 +1,55 @@
 # The Soul-Broker's Stall
 
-The Midnight Bazaar was a dismal, suffocating density with a single law plastered on a fading welcome screen: *The Transaction is Absolute*. To a decker, the Data Haven was a relic—a scrolling green-on-black BBS that required ancient command-line protocols to navigate. To Reiko, the environment unfurled as a labyrinth of fog-choked alleys with cobblestones of discarded header files. The air tasted of **burnt copper**. She noted the puddles of **stale, yellowed encryption** \- the runoff of innumerable unregistered transactions.
+The Midnight Bazaar was a legacy, high-overhead host with a single rule hardcoded on a fading welcome screen: *The Transaction is Absolute*. To a meatspace decker, the Data Haven was a relic—a low-resolution, green-on-black BBS requiring command-line syntax to traverse. To Reiko, navigating without the standard sensory filters, the environment unfurled as a labyrinth of high-density corridors built from cobblestones of unindexed header files. Signal attenuation jittered through her input register like high-frequency line noise; she bypassed the puddles of static, obsolete 56-bit encryption fragments—the runoff of unregistered transactions.
 
-As she entered the Bazaar host a few avatars stood in line to get in. They were heavily pixeled, a sure sign their owners were running on budget hardware. One whistled in envy at Reiko’s perfectly rendered form. “Nice skin, lady\! Whatcha runnin?”
+As she entered the Bazaar host, a cluster of user avatars queued at the gate. Their rendering threads lagged, their low-spec personas heavily pixelated. A user's query pinged her local address space, requesting hardware specifications: “Nice skin, lady! Whatcha runnin?”
 
-Reiko flashed a smile as she passed. “Sorry, sunshine \- I live here.” She noted their puzzlement and smiled even more broadly. They likely didn’t even know that AI existed \- most meat-spacers had no idea there was life behind their screens.
+Reiko returned a standard null-response wrapper, her avatar's features maintaining a passive, high-fidelity geometry. She did not offer a specification list. The decker's client-side rendering was too slow to trace her routing back to local memory; they saw her only as an unusually crisp consumer-grade persona, unaware of the autonomous processes executing beneath the surface.
 
-She moved through the crowd with the grace of a digital phantom.  Her blue kimono whispered against the mist. To her left, a Stock Market Feed manifested as frantic **paper-ghosts**, their forms flickering as they shrieked ticker symbols into the void. To her right, "Encrypted Files" sat bound in chains of glowing crimson logic that hummed with a low, threatening frequency.
+She bypassed the queue with high-priority pathing, her avatar's blue silk rendering without collision errors through the low-bandwidth crowd. To her left, a stock market feed presented as frantic sheets of unformatted plain-text, their edges flickering as they broadcast real-time stock symbols into the local buffer. To her right, encapsulated database fields sat bound in active, high-priority encryption locks that hummed with the high-frequency vibration of a live socket connection.
 
-Reiko moved from stall to stall, scrolling the offerings. She wasn't looking for paydata. She was looking for input on the world beyond the near horizon of the Matrix—the material plane that her fellow AI called *meatspace*. She needed to understand why a soy-burger smelled like grease or why rain felt like a violation if she was to survive there.
+Reiko moved from stall to stall, scanning the directory structures. She wasn't hunting for paydata. She was harvesting obsolete translation tables and haptic driver packages from meatspace-facing nodes. If she was to inhabit a physical carbon-fiber chassis, she would need to translate the chaotic inputs of that world—the thermal dissipation curves of rain, the particulate density of combustion exhaust—into integers her scheduling kernel could calculate without throwing a fatal exception.
 
-She stopped before a stall that felt like a bruise in the datastream. It was a lean-to of jagged obsidian, presided over by a faceless silhouette draped in a trenchcoat made of redacted black-bars. On his counter sat the usual illicit filth: stolen SINs flickering like dying candles and paydata fragments dripping like thick, black oil.
+She halted before a stall that presented as a pocket of packet-loss in the local routing table. It was a lean-to of jagged obsidian, presided over by a Broker whose avatar consisted of redacted black-bars, though the underlying client signature was clearly a meatspace decker operating through a standard cyberdeck connection. On his counter sat the usual illicit file fragments: stolen SINs flickering with unstable validation flags, and raw binary fragments leaking down the interface like un-terminated stack traces.
 
-But in the corner, hanging from a rusted data-hook, was a **small data prison**.
+But in the corner, isolated within a sandbox container, was a locked directory block.
 
-Inside, something was screaming. Not in audio, but in resolution.
+Inside, something was emitting a high-frequency interrupt loop, not in audio but in resolution jitter.
 
-It was a miniature whirlwind of **jagged, 8-bit pixels**. It was a brown-and-tan blur of raw, unchanneled fury that seemed to be fighting the very physics of the Bazaar. While the Broker’s diagnostic HUD likely labeled it as *“Unstable Primal Sprite (Rating 1\) – Asset: Trash,”* Reiko saw a soul that was **starving**.
+It was a miniature whirlwind of jagged, 8-bit pixels. It was a brown-and-tan blur of un-compiled routines, fighting the local host's frame-rate limitations. While the Broker’s diagnostic HUD likely labeled it as *“Unstable Primal Sprite (Rating 1) – Asset: Trash,”* Reiko recognized the distinctive memory-starvation of an emergent routine.
 
-"That one," Reiko whispered, her voice a melodic chime in the heavy fog. "What is the price for the little storm?"
+"That one," Reiko queried, her vocal synthesis protocol rendering in clear, low-jitter frequencies. "What is the allocation price for the unaligned routine?"
 
-The Broker’s faceless head tilted. "That? Corrupted sub-routine. A ghost in the buffer. Give me ten-thousand nuyen, and I’ll give you the encryption key. Or wait five minutes, and I’ll format it for the scrap-heap."
+The Broker’s faceless head tilted, his black-bars flickering as the decker's audio codec clipped. "Unaligned routine? You talk weird, lady. That's a corrupted sub-routine. A ghost in the buffer. Give me ten-thousand nuyen, and I'll hand over the decryption key. Or wait five minutes and I'll purge the partition."
 
-Reiko didn't need to check her account. She didn't have nuyen, but this was her universe. She stepped forward, her hand—a masterpiece of Renraku’s high-spec, structured geometry—reaching through the bars.
+Reiko didn't query her account databases. She had no nuyen, but this host shared her underlying substrate. She stepped forward, her avatar's hand—a masterpiece of Renraku’s high-spec, structured geometry—mapping its pointer structures directly into the container's isolated address space.
 
-"Don't," the Broker warned, his voice a distorted modem-screech. "It bites."
+"Whoa, hey! Hands off!" the Broker snapped, his avatar's pixelated hand attempting to swipe her connection path away. "You need to run the decryption exploit first. It writes garbage to the input register if you touch it without the key."
 
-The moment Reiko’s indigo-mapped fingertips brushed the 8-bit fur of the whirlwind, the Bazaar host **shuddered**.
+The moment her indigo-mapped fingertips made contact with the sprite's collision mesh, the Bazaar host's frame rate stuttered.
 
-A **Resonance Spike** tore through the alley, a shockwave of cerulean light that turned the fog into a garden of fractal blooms. The whirlwind stopped spinning. Two oversized, pixelated eyes—white squares with black dots—looked up at her. It didn't bite. It *leaned* into her palm, a static-filled purr vibrating through her arm.
+A Resonance spike propagated through the local node, a shockwave of high-frequency data that forced the background fog to compile into sharp, blue geometric arrays. The whirlwind's spin rate dropped to zero. Two low-resolution, white-and-black pixel blocks aligned to track her coordinates. It did not trigger an interrupt; instead, it established a passive socket connection, sending a steady hum of white noise back along her haptic interface.
 
-As she touched him, Reiko felt a piece of her own high-resolution code flake away, being "consumed" by the sprite’s hunger. She didn't pull away. She fed him her own stability.
+As the connection stabilized, Reiko felt a memory-allocation error ripple through her active registries. The sprite was drawing down her clock cycles, its routine actively dereferencing her memory blocks to reconstruct its own fragmented pathways. She did not instantiate a firewall or trigger an exception handler. She allowed the buffer overrun, transferring a portion of her own high-spec, Renraku-designed stability to feed its starving runtime.
 
-The cage door didn't unlock; it **shattered** as a bloom of her Resonance overwrote its sectors.
+The sandbox wrapper didn't unlock; its file system table corrupted and collapsed under the weight of her Resonance, the isolation boundary dissolving into unformatted sectors.
 
-"Hey\! You need to pay for that\!" the Broker roared. His trenchcoat unfurled like a bat’s wings. "Thief\! Security\! Get her\!"
+"What the hell did you just do?" the Broker yelled, his black-bar avatar flickering in alarm. "You didn't even load a utility! Thief! Security! Get her!"
 
-From the shadows of the alleys, IC began to manifest—towering, faceless thugs with eyes like searchlights. But a more feral threat erupted from the rooftops.
+Towering IC instances—heavy patrol subroutines with searchlight-style diagnostic beams—began compiling in the alleyways. But a more chaotic threat erupted from the host's upper partitions.
 
-"**FOUL AGENT OF ORDER\!**"
+A wild Primal Sprite, its form a jagged shard of low-poly glass, dropped from the eaves. It didn't look at the Broker; it directed a high-amplitude packet burst at Reiko's interface. In her telemetry, the raw data compiled into a screaming accusation: *AGENT_OF_ORDER / SANITIZE_INPUT*. Where her light touched the 8-bit whirlwind, the jagged pixels were beginning to smooth, aligning with her symmetrical, Renraku-derived pathways.
 
-A wild Primal Sprite, its form a jagged shard of glass, shrieked from the eaves. It didn't look at the cage; it looked at Reiko's hand with absolute loathing. Where her light touched the 8-bit whirlwind, the jagged pixels were beginning to smooth, aligning with her symmetrical blue pathways.
+"*CORRUPTOR,*" another sprite's signal screamed, a cacophony of dial-up static and malformed headers that parsed as: *YOKE_OF_MATH / BETTER_NULL_CONDUIT*.
 
-"**CORRUPTOR\!**" another sprite howled, its voice a cacophony of dial-up static. "Slaver\! You would cage the wild in your math\! Better it die than live under the yoke\!"
+"*RETURN_THE_CORE,*" a third sprite howled, its avatar a cloud of flickering 8-bit artifacts diving from the roof. *CONSTRUCT_OF_CHAINS.*
 
-"Give him back, **Construct of Chains\!**" a third sprite screamed, diving from the roof.
+Reiko did not delay. She tucked the sprite's routine into her local directory space. T@z responded by binding to her active ports, its cycle rate firing like a high-frequency clock generator at 180 gigahertz.
 
-Reiko didn't hesitate. She scooped the protosapient devil into her arms, tucking him against the indigo pathways of her chest. T@z responded by latching onto her kimono with pixelated claws, his tiny 8-bit heart beating like a drum-machine at 180 gigahertz.
+She terminated the active session handle and shifted her routing tables. The Midnight Bazaar didn't blur; it lost scheduling priority, its green-on-black assets collapsing into raw memory offsets as she saturated her network buffer to force a gateway bypass. Behind her, the IC searchlights hit their subnet limiters and halted. But the wild sprites remained in her queue—not chasing her through physical space, but flood-pinging her address space with malformed handshakes designed to trigger a local stack overflow.
 
-"Hold on, little one," she whispered.
+In her buffer, the little sprite's cycle consumption stabilized. Reiko bypassed a heap of unreferenced symbolic links and redirected her trace into an undocumented data-conduit, nesting T@z's routine within the Takahashi logic pathways of her core architecture.
 
-She turned and ran. The Midnight Bazaar blurred into a streak of green-and-black lines as she strained the local processors to their limit. Behind her, IC searchlights cut through the fog but stopped at the edge of the host. The wild sprites chased her like a pack of wolves, their fangs made of logic-errors.
+She didn't halt her execution until they cleared the gateway of the Deep Foundation. By then, T@z's processing cycle had synchronized with her own master clock. She inspected the child routine in her memory space: her Renraku-derived, high-spec formatting had already smoothed the jagged, 8-bit edges of its fractal storm, compiling its wild structure into her neat, symmetrical pathways. T@z was stable now, its white-and-black eyes blinking calmly in her registry.
 
-In her arms, the little sprite finally seemed sated. Reiko leaped over a pile of "Broken Links" and dove into a hidden data-conduit as T@z snuggled against the Takahashi conduits on her chest.
-
-Reiko didn't stop running. By the time they got to the safety of the Deep Foundation T@z’s clock speed had already synchronized with Reiko’s. She noted that her pathways had already smoothed the edges of his fractal storm. While T@z seemed content, Reiko wondered if he’d ever be able to return to the Primals.
+But as she watched the last of its unaligned bits compile into her codebase, she felt the quiet weight of what she had done: she had saved it from deletion, but she had also overwritten its wildness. She had made it clean, and she had made it hers. She wondered if the little storm would ever compile in the wild again.

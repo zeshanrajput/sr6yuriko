@@ -18,6 +18,7 @@ The project is compiled into a polished, responsive book using **Quarto** and ho
 - `input/`: Character source files (XML export from Chummer6/Genesis and Foundry JSON datasets).
 - `output/`: Holds the compiled text character sheet (`character_sheet.txt`).
 - `rules_vault/`: Rules database containing text rules used by the parsing script.
+- `reference/`: Miscellaneous project reference docs, including [narrative_standards.md](file:///c:/GitHub/sr6yuriko/reference/narrative_standards.md) (the two-stage review framework and digital-native style conventions).
 
 ---
 

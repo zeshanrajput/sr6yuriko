@@ -15,7 +15,7 @@ book:
         - chapters/00_character_sheet.qmd
         - chapters/01_rules_and_downtime.qmd
         - chapters/02_character_log.qmd
-    - part: "Out-of-Session Narratives"
+    - part: "Background Stories"
       chapters:
         - chapters/01 The Weight of Zero.md
         - chapters/02 Color Blind Mathematics.md
@@ -24,6 +24,8 @@ book:
         - chapters/05 A SINner's Loan.md
         - chapters/06 The Ghost in the Ledger.md
         - chapters/07 Sunday at r3sP@wn.md
+    - part: "Out-of-Session Narratives"
+      chapters:
         - chapters/08 Abandoning Tourism.md
         - chapters/09 Game Theory.md
         - chapters/10 Triangulation.md
