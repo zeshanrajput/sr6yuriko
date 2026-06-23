@@ -8,11 +8,11 @@
   "weight": 0,
   "age": "~ 10",
   "gender": "DIVERSE",
-  "heat": 3,
-  "reputation": 13,
+  "heat": 0,
+  "reputation": 15,
   "karma": 89,
   "freeKarma": 11,
-  "nuyen": 48295,
+  "nuyen": 22290,
   "initiation": 0,
   "submersion": 6,
   "attributes": [
@@ -495,6 +495,16 @@
       "page": "Firing Squad 49",
       "description": "",
       "primary": true
+    },
+    {
+      "name": "SecureTech Invisi-Shield Armor",
+      "rating": 2,
+      "socialrating": 0,
+      "accessories": [],
+      "isIgnored": false,
+      "page": "Firing Squad 50",
+      "description": "",
+      "primary": false
     }
   ],
   "items": [
@@ -590,6 +600,16 @@
     },
     {
       "name": "Broach of the Seelie Court (+2 Power Focus)",
+      "count": 1,
+      "rating": 0,
+      "type": "Chemicals",
+      "subType": "Drugs",
+      "page": "Core Rulebook 124",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "\"Smile for the Camera!\" Quality (Shiawase)",
       "count": 1,
       "rating": 0,
       "type": "Chemicals",
@@ -1217,11 +1237,11 @@
       "favors": 1
     },
     {
-      "name": "Ayanda Shieldbearer Matanagu(?)",
-      "type": "DW Captain",
+      "name": "Ayanda “Shieldbearer”Mahlangu",
+      "type": "DW \u0027Mystic Edge\u0027 Producer",
       "loyalty": 1,
       "influence": 3,
-      "description": "CMP 2083-14: +1FP -- L1",
+      "description": "Wakyambi Elf Female. (Para Bellum pg. 15)\nCMP 2083-14: +1FP -- L1",
       "favors": 0
     },
     {

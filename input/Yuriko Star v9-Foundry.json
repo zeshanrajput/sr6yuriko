@@ -7,7 +7,7 @@
       "value": 0,
       "max": 0
     },
-    "nuyen": 48295,
+    "nuyen": 22290,
     "mortype": "technomancer",
     "special-traits": {
       "initiation": 0,
@@ -93,8 +93,8 @@
       },
       "defense_rating": {
         "base": 0,
-        "mod": 7,
-        "pool": 7
+        "mod": 9,
+        "pool": 9
       },
       "composure": {
         "base": 10,
@@ -643,11 +643,12 @@
         "subtype": "ANTHRO",
         "availDef": "2",
         "avail": 2,
-        "price": 3000,
-        "accessories": "Anti-theft system (Rating 1), Integrated Cyberarm, Integrated Cyberarm, Realistic Features 1",
+        "price": 33000,
+        "accessories": "Anti-theft system (Rating 1), Secondary Propulsion Systems (Winged), Increased Structural Integrity 2, Drone rack (Small), Integrated Cyberarm, Integrated Cyberarm, Wrist shield, Realistic Features 1",
         "needsRating": false,
         "rating": 0,
         "wild": false,
+        "notes": "Armor: 10 (SkinShield + RACS, InvisiShield, Wrist Shield)",
         "countable": true,
         "count": 1,
         "usedForPool": false,
@@ -1086,6 +1087,56 @@
       },
       "effects": [],
       "name": "Dagger of the Sacred Rose (+1 Weapon Focus)",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "type": "CHEMICALS",
+        "subtype": "DRUGS",
+        "availDef": "1",
+        "avail": 1,
+        "price": 5,
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "notes": "Gain one percent discount on all items from one specific brand/megacorp for every point of heat or reputation, whichever is higher up to ten percent. ",
+        "customName": "\"Smile for the Camera!\" Quality (Shiawase)",
+        "countable": true,
+        "count": 1,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "alcohol",
+        "product": "core",
+        "page": 124
+      },
+      "effects": [],
+      "name": "\"Smile for the Camera!\" Quality (Shiawase)",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "defense": 2,
+        "social": 0,
+        "type": "ARMOR",
+        "subtype": "ARMOR_BODY",
+        "availDef": "3",
+        "avail": 3,
+        "price": 5000,
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "countable": false,
+        "count": 0,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "securetech_invisishield",
+        "product": "firing_squad",
+        "page": 76
+      },
+      "effects": [],
+      "name": "SecureTech Invisi-Shield Armor",
       "sort": 0
     },
     {
@@ -1602,11 +1653,11 @@
       "data": {
         "rating": 3,
         "loyalty": 1,
-        "type": "NOT_SET",
-        "description": "CMP 2083-14: +1FP -- L1"
+        "type": "Media",
+        "description": "Wakyambi Elf Female. (Para Bellum pg. 15)\nCMP 2083-14: +1FP -- L1"
       },
       "effects": [],
-      "name": "Ayanda Shieldbearer Matanagu(?)",
+      "name": "Ayanda “Shieldbearer”Mahlangu",
       "sort": 0
     },
     {

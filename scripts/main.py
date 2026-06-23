@@ -1406,8 +1406,41 @@ def generate_ascii_sheet(char_data, verbose=False):
                     
                 arm_fn = fn_registry.add_footnote(f"S. Man-at-Arms ARM {base_armor}[{augmented_armor}]", arm_fn_desc)
                 arm_display = f"{base_armor}[{augmented_armor}] {arm_fn}"
+            elif "BUTLER" in d_name:
+                # Butler body calculation
+                base_body = 4
+                integrity_rating = 0
+                if isinstance(drn_accs, str) and drn_accs:
+                    m = re.search(r'(?:increased structural integrity|increased integrity|incr structural integrity)\s*(\d+)', drn_accs, re.IGNORECASE)
+                    if m:
+                        integrity_rating = int(m.group(1))
+                augmented_body = base_body + integrity_rating
+                
+                bod_fn_desc = [f"BOD is {base_body}({augmented_body}), where increased structural integrity adds +{integrity_rating}."]
+                bod_fn = fn_registry.add_footnote(f"S. Butler BOD {base_body}({augmented_body})", bod_fn_desc)
+                bod_display = f"{base_body}({augmented_body}) {bod_fn}"
+                
+                # Butler armor calculation
+                base_armor = 0
+                supplements = [
+                    "SkinShield (+2)",
+                    "RACS activated (+2)",
+                    "InvisiShield (+2)",
+                    "Wrist shield (+4)"
+                ]
+                arm_sum = 10
+                augmented_armor = base_armor + arm_sum
+                
+                arm_fn_desc = [
+                    f"ARM is {base_armor}({augmented_armor}) total.",
+                    "Standard armor is supplemented by:"
+                ]
+                arm_fn_desc.append(supplements)
+                
+                arm_fn = fn_registry.add_footnote(f"S. Butler ARM {base_armor}({augmented_armor})", arm_fn_desc)
+                arm_display = f"{base_armor}({augmented_armor}) {arm_fn}"
             
-            if "MAN-AT-ARMS" in d_name:
+            if "MAN-AT-ARMS" in d_name or "BUTLER" in d_name:
                 lines.append(f"- {d_name[:22]}")
                 lines.append(f"  HAN {drn_han} ACC {drn_acc}")
                 lines.append(f"  INT {drn_interval} SPD {drn_max_spd} BOD {bod_display}")

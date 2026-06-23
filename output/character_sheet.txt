@@ -1,6 +1,6 @@
 ___________________________________________________________________________
 // ACCESSING: R31K0_TAKAHASHI.bin // SOURCE: RESONANCE_REALMS //
-// STATUS: ONLINE // LIFETIME KARMA: 127 // KARMA: 11 // NUYEN: ¥48,295 //
+// STATUS: ONLINE // LIFETIME KARMA: 127 // KARMA: 11 // NUYEN: ¥22,290 //
 ___________________________________________________________________________
 
 [ IDENTITY ]
@@ -9,7 +9,7 @@ ___________________________________________________________________________
   > STREAM: Technoshamans        > SIN: [LOCAL_FILE_ENCRYPTED]
 
 [ CORE_ATTRIBUTES ]                          | [ DERIVED_STATUS ]
-  MAT | ATK [03] SLZ [05] DPR [03] FWL [05]  |   INIT (VR)  : 6 +3D6
+  MAT | ATK [03] SLZ [05] DPR [03] FWL [05]  |   INIT (VR)  : 6 +4D6
   MNT | WIL [06] LOG [04] INT [02] CHA [04]  |   ATK RATING : 11 (ATK+SLZ)
   SPP | EDG [05] RES [06] SPK [06] SUB [06]  |   DEF RATING : 11 (DPR+FWL)
                                              |   COMPOSURE  : 10
@@ -48,36 +48,40 @@ ___________________________________________________________________________
 [ DRONE_COMMAND_ARRAY (COL 1) ]        | [ DRONE_COMMAND_ARRAY (COL 2) ]
 - NISSAN SAMURAI                       | - S. BUTLER
   HAN 3/4 ACC 10/10                    |   HAN 4/5 ACC 5/5
-  INT 10 SPD 30 BOD 6                  |   INT 5 SPD 8 BOD 4
-  ARM 6  PIL 3  SEN 2                  |   ARM 0  PIL 2  SEN 3
+  INT 10 SPD 30 BOD 6                  |   INT 5 SPD 8 BOD 4(6) [#8]
+  ARM 6  PIL 3  SEN 2                  |   PIL 2 SEN 3  ARM 0(10) [#9]
     > Anti-theft system (Rating 1)     |     > Anti-theft system (Rating 1)
-    > Nissan Spurs [4P|7/—/—/—/—]      |     > Integrated Cyberarm
-    > Samurai Weapon Mount             |     > Integrated Cyberarm
-    > Samurai Weapon Mount             |     > Realistic Features 1
-                                       |
-- MCT GNAT                             | - S. MAN-AT-ARMS
-  HAN 3/3 ACC 4/4                      |   HAN 3/3 ACC 5/5
-  INT 10 SPD 30 BOD 0                  |   INT 5 SPD 10 BOD 10(15) [#8]
-  ARM 0  PIL 2  SEN 1                  |   PIL 2 SEN 2  ARM 8[17] [#9]
-                                       |     > Pop-Out Concealment (Large)
-- FB SKY COMMANDER                     |     > Drone rack (Small)
-  HAN 4/4 ACC 20/20                    |     > Anti-theft system (Rating 1)
-  INT 30 SPD 190 BOD 4                 |     > Sec Propulsion (Rotor)
-  ARM 2  PIL 4   SEN 5                  |     > Incr Struct Integrity 5
-    > Chameleon Coating 1              |     > Realistic Features 4
-    > Drone rack (Micro/Mini)          |     > Integrated Cyberarm
-    > Integrated Matrix Device Dock    |     > Tesla coil [5S(e)|8/10*/—/—/—]
-    > Anti-theft system (Rating 1)     |     > Fingertip compartment
-    > RAM Plating 4                    |     > Implanted Heavy Pistol
+    > Nissan Spurs [4P|7/—/—/—/—]      |     > Sec Propulsion (Winged)
+    > Samurai Weapon Mount             |     > Incr Struct Integrity 2
+    > Samurai Weapon Mount             |     > Drone rack (Small)
+                                       |     > Integrated Cyberarm
+- MCT GNAT                             |     > Integrated Cyberarm
+  HAN 3/3 ACC 4/4                      |     > Wrist shield [+4]
+  INT 10 SPD 30 BOD 0                  |     > Realistic Features 1
+  ARM 0  PIL 2  SEN 1                  |
+                                       | - S. MAN-AT-ARMS
+- FB SKY COMMANDER                     |   HAN 3/3 ACC 5/5
+  HAN 4/4 ACC 20/20                    |   INT 5 SPD 10 BOD 10(15) [#10]
+  INT 30 SPD 190 BOD 4                 |   PIL 2 SEN 2  ARM 8[17] [#11]
+  ARM 2  PIL 4   SEN 5                  |     > Pop-Out Concealment (Large)
+    > Chameleon Coating 1              |     > Drone rack (Small)
+    > Drone rack (Micro/Mini)          |     > Anti-theft system (Rating 1)
+    > Integrated Matrix Device Dock    |     > Sec Propulsion (Rotor)
+    > Anti-theft system (Rating 1)     |     > Incr Struct Integrity 5
+    > RAM Plating 4                    |     > Realistic Features 4
     > Enhanced Sensors 2               |     > Integrated Cyberarm
-    > ECM 6                            |     > Wrist shield [+4]
+    > ECM 6                            |     > Tesla coil [5S(e)|8/10*/—/—/—]
+                                       |     > Fingertip compartment
+                                       |     > Implanted Heavy Pistol
+                                       |     > Integrated Cyberarm
+                                       |     > Wrist shield [+4]
                                        |     > Armor increase 5 [+5]
                                        |     > Weapon mount-Heavy
 
-[ MATRIX_DEVICES ] [#10]               |
+[ MATRIX_DEVICES ] [#12]               |
 - AI NATIVE PROTOCOLS (VIRTUAL)        | - ERIKA ELITE (COMMLINK)
   ATK 03 SLZ 05 DPR 03 FWL 05          |   ATK 00 SLZ 00 DPR 02 FWL 01
-  Opt ASDF: 06 09 07 08 [#10]          |
+  Opt ASDF: 06 09 07 08 [#12]          |
                                        |
 - CYBERKIT (R6) (CYBERDECK)            |
   ATK 04 SLZ 04 DPR 02 FWL 02          |
@@ -143,17 +147,19 @@ ___________________________________________________________________________
 [ QUALITIES ]                          | [ PHYSICAL_EQUIPMENT_MANIFEST ]
   > NATURAL HACKER                     |   - RESONANCE FOCUS (R4)
   > STREAM: TECHNOSHAMANS              |   - ARES PREDATOR VI [3P | 10/10/8/—/—]
-  ! BUDDY SYSTEM                       |   - ARES SECURETECH SKINSHIELD [+2]
-  ! SPRITE BANE (PRIMAL SPRITE)        |   - MONOFILAMENT WHIP [6P | 14/—/—/—/—]
-  ! HOODER                             |   - MEGALODON [7P | 3/8/12/8/8]
-  > DESIGNER                           |   - AMMO CANNON x2
-  > PILOT ORIGINS                      |   - HEAVY PISTOL/SMG (10X)
-  > SENSOR UPGRADE                     |   - GRENADE, GLITTER x10
+  ! BUDDY SYSTEM                       |   - SECURETECH INVISI-SHIELD ARMOR [+2]
+  ! SPRITE BANE (PRIMAL SPRITE)        |   - ARES SECURETECH SKINSHIELD [+2]
+  ! HOODER                             |   - MONOFILAMENT WHIP [6P | 14/—/—/—/—]
+  > DESIGNER                           |   - MEGALODON [7P | 3/8/12/8/8]
+  > PILOT ORIGINS                      |   - AMMO CANNON x2
+  > SENSOR UPGRADE                     |   - HEAVY PISTOL/SMG (10X)
+                                       |   - GRENADE, GLITTER x10
                                        |   - MEDKIT
                                        |   - MEDKIT SUPPLIES x5
                                        |   - ORDER OF THE LION OF THE UNITED NETHERLANDS MEDAL
                                        |   - BROACH OF THE SEELIE COURT (+2 POWER FOCUS)
-                                       |   - DAGGER OF THE SACRED ROSE (+1 WEAPON FOCUS)
+                                       |   - DAGGER OF THE SACRED ROSE (+1 WEAPON FOCUS) [3P | 10/8/6/—/—]
+                                       |   - "SMILE FOR THE CAMERA!" QUALITY (SHIAWASE) [+10]
 
 [ LIFESTYLE_DATA ]
   - LOW (1 Months Pre-paid)
@@ -229,14 +235,23 @@ ___________________________________________________________________________
        - +6d6 when resisting fading (Sprite Conduit)
   [#7] Decompiling Sprites adjustments:
        - -2 FV (Technoshaman)
-  [#8] S. Man-at-Arms BOD 10(15):
+  [#8] S. Butler BOD 4(6):
+       - BOD is 4(6), where increased structural integrity adds +2.
+  [#9] S. Butler ARM 0(10):
+       - ARM is 0(10) total.
+       - Standard armor is supplemented by:
+         - SkinShield (+2)
+         - RACS activated (+2)
+         - InvisiShield (+2)
+         - Wrist shield (+4)
+  [#10] S. Man-at-Arms BOD 10(15):
        - BOD is 10(15), where increased structural integrity adds +5.
-  [#9] S. Man-at-Arms ARM 8[17]:
+  [#11] S. Man-at-Arms ARM 8[17]:
        - ARM is 8[17] total.
        - Standard armor is supplemented by:
          - Armor Increase 5 (+5)
          - Wrist shield (+4)
-  [#10] Matrix Optimization:
+  [#12] Matrix Optimization:
        - Resonance points: [06] (ASDF bonus max +50% of base, max +4)
        - Home Device Tuning: Optimize: set 1 attr to native; Passive: +1
          capacity, +4 rating
@@ -275,7 +290,7 @@ ___________________________________________________________________________
   - QUEEN BRANE          Seelie Queen                     L:1 I:12 F:0
   - SIGRÛN (MARIKKA VON HARBOU ) AMS Shadowrunner                 L:1 I:4 F:3
   - DIXIE L'AMIN         DW Naga                          L:1 I:4 F:1
-  - AYANDA SHIELDBEARER MATANAGU(?) DW Captain                       L:1 I:3 F:0
+  - AYANDA “SHIELDBEARER”MAHLANGU DW 'Mystic Edge' Producer        L:1 I:3 F:0
   - EBON ABIRASHUR       DW Leviathan Dragon              L:1 I:1 F:1
   - COL. DEBORAH KENTWELL DW Thunder Corps Fixer           L:1 I:5 F:1
   - POLYPHEMOUS 'PAUL' PELLAGIOS DW Background Actor              L:1 I:1 F:0
@@ -322,10 +337,12 @@ ___________________________________________________________________________
   2026-06-12   |    +1 |    -3000 | CMP 2081-12: Working for the People, Bribes
   2026-06-19   |    +7 |   +13000 | CMP 2083-14: A Day... (GM: Nick (Origins '26))
   2026-06-19   |    +1 |    -2000 | CMP 2083-14: Working for the People
+  2026-06-20   |     0 |    -6000 | CMP 2083-16: Buying down heat
   2026-06-20   |    +6 |   +15000 | CMP 2083-16: ... (GM: Hal "SSDR" (Origins'26))
   2026-06-20   |    +1 |    -5000 | CMP 2083-16: Working for the People, Bribes
   2026-06-20   |    +8 |   +13500 | SRM 2081-19: The ... (GM: Morgan (Origins'26))
   2026-06-20   |    +1 |    -4000 | SRM 2081-19: Working for the People, Rent
+  2026-06-22   |     0 |   +16000 | Refund (self-modifying drone, Smile for the...
   ---------------------------------------------------------------------------
   LIFETIME KARMA: 127 (122 earned + 5 from Chargen)
 
