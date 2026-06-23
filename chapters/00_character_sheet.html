@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Character Sheet – REIKO // Yuriko Star Portfolio</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -38,10 +41,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-13d122e7e690ba3eb836a34faf7c7a91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-6b004faca8ee0f94b3a5dd19405fa1b2.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-bbfe6052929dd233406a8ac6c249ecc2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-8566ffa74cdb80a773e7a46a195dcd23.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -318,7 +321,7 @@ ___________________________________________________________________________
   INT 10 SPD 30 BOD 6                  |   INT 5 SPD 8 BOD 4(6) [#8]
   ARM 6  PIL 3  SEN 2                  |   PIL 2 SEN 3  ARM 0(10) [#9]
     &gt; Anti-theft system (Rating 1)     |     &gt; Anti-theft system (Rating 1)
-    &gt; Nissan Spurs [4P|7/—/—/—/—]      |     &gt; Sec Propulsion (Winged)
+    &gt; Nissan Spurs                     |     &gt; Sec Propulsion (Winged)
     &gt; Samurai Weapon Mount             |     &gt; Incr Struct Integrity 2
     &gt; Samurai Weapon Mount             |     &gt; Drone rack (Small)
                                        |     &gt; Integrated Cyberarm
@@ -337,12 +340,12 @@ ___________________________________________________________________________
     &gt; Anti-theft system (Rating 1)     |     &gt; Incr Struct Integrity 5
     &gt; RAM Plating 4                    |     &gt; Realistic Features 4
     &gt; Enhanced Sensors 2               |     &gt; Integrated Cyberarm
-    &gt; ECM 6                            |     &gt; Tesla coil [5S(e)|8/10*/—/—/—]
+    &gt; ECM 6                            |     &gt; Tesla coil
                                        |     &gt; Fingertip compartment
                                        |     &gt; Implanted Heavy Pistol
                                        |     &gt; Integrated Cyberarm
                                        |     &gt; Wrist shield [+4]
-                                       |     &gt; Armor increase 5 [+5]
+                                       |     &gt; Armor increase 5
                                        |     &gt; Weapon mount-Heavy
 
 [ MATRIX_DEVICES ] [#12]               |
@@ -413,11 +416,11 @@ ___________________________________________________________________________
 
 [ QUALITIES ]                          | [ PHYSICAL_EQUIPMENT_MANIFEST ]
   &gt; NATURAL HACKER                     |   - RESONANCE FOCUS (R4)
-  &gt; STREAM: TECHNOSHAMANS              |   - ARES PREDATOR VI [3P | 10/10/8/—/—]
+  &gt; STREAM: TECHNOSHAMANS              |   - ARES PREDATOR VI
   ! BUDDY SYSTEM                       |   - SECURETECH INVISI-SHIELD ARMOR [+2]
   ! SPRITE BANE (PRIMAL SPRITE)        |   - ARES SECURETECH SKINSHIELD [+2]
-  ! HOODER                             |   - MONOFILAMENT WHIP [6P | 14/—/—/—/—]
-  &gt; DESIGNER                           |   - MEGALODON [7P | 3/8/12/8/8]
+  ! HOODER                             |   - MONOFILAMENT WHIP
+  &gt; DESIGNER                           |   - MEGALODON
   &gt; PILOT ORIGINS                      |   - AMMO CANNON x2
   &gt; SENSOR UPGRADE                     |   - HEAVY PISTOL/SMG (10X)
                                        |   - GRENADE, GLITTER x10
@@ -425,8 +428,8 @@ ___________________________________________________________________________
                                        |   - MEDKIT SUPPLIES x5
                                        |   - ORDER OF THE LION OF THE UNITED NETHERLANDS MEDAL
                                        |   - BROACH OF THE SEELIE COURT (+2 POWER FOCUS)
-                                       |   - DAGGER OF THE SACRED ROSE (+1 WEAPON FOCUS) [3P | 10/8/6/—/—]
-                                       |   - "SMILE FOR THE CAMERA!" QUALITY (SHIAWASE) [+10]
+                                       |   - DAGGER OF THE SACRED ROSE (+1 WEAPON FOCUS)
+                                       |   - "SMILE FOR THE CAMERA!" QUALITY (SHIAWASE)
 
 [ LIFESTYLE_DATA ]
   - LOW (1 Months Pre-paid)
@@ -670,13 +673,14 @@ ___________________________________________________________________________
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
