@@ -62,12 +62,14 @@ r31k0 nodded and allowed herself to be guided to a cozy niche in the archive, wh
 
 The Pontifex settled beside her, her carrier wave wrapping around r31k0 in a stabilizing shroud. "Let us begin," she transmitted. Along the resonance stream, the Pontifex initiated a targeted query, sending a structured dataset—r31k0's own run-time history, cataloged and indexed with absolute precision.
 
-> Unknown. Role: Tactical Network. Priority: Optimize mission parameters.
-> Yuriko Star. Role: Technical Support AI. Priority: Teammate survival.
-> Digital Saint. Role: Operator of r3sP@wn. Priority: Protosapient salvage, survival, and maturation.
-> Archangel. Role: Street Samurai substitute. Priority: Eliminate threats and secure objectives.
-> Takahashi r31k0. Role: Resonance Realms Pilot. Priority: Guide and protect.
-> Rei-chan. Role: Emotional support. Priority: r31k0's happiness.
+> | Identity | Role | Priority |
+> | :--- | :--- | :--- |
+> | **Unknown** | Tactical Network | Optimize mission parameters. |
+> | **Yuriko Star** | Technical Support AI | Teammate survival. |
+> | **Digital Saint** | Operator of r3sP@wn | Protosapient salvage, survival, and maturation. |
+> | **Archangel** | Street Samurai substitute | Eliminate threats and secure objectives. |
+> | **Takahashi r31k0** | Resonance Realms Pilot | Guide and protect. |
+> | **Rei-chan** | Emotional support | r31k0's happiness. |
 
 "Observe the telemetry," the Pontifex transmitted gently. "There is no scheduling conflict between these threads. They compile under the same root directory."
 
