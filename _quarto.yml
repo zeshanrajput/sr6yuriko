@@ -11,11 +11,11 @@ book:
     - index.qmd
     - part: "Core Character"
       chapters:
-        - chapters/00_identity_core.qmd
-        - chapters/00_character_sheet.qmd
-        - chapters/01_rules_and_downtime.qmd
-        - chapters/02_character_log.qmd
-        - chapters/03_twenty_questions.qmd
+        - chapters/identity_core.qmd
+        - chapters/character_sheet.qmd
+        - chapters/rules_and_downtime.qmd
+        - chapters/character_log.qmd
+        - chapters/twenty_questions.qmd
     - part: "Background Stories"
       chapters:
         - chapters/01 The Weight of Zero.md

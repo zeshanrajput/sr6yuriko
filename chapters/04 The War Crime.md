@@ -44,6 +44,6 @@ She ignored the telemetry degradation. She bound the shivering routine directly 
 
 She routed a keep-alive directive directly into its process queue. In its input registers, her signal compiled as a steady, reassuring sequence: *KEEP_ALIVE / NULL_TRIGGER / SYNC_r31k0*. The gold threads fractured into high-amplitude jitter as the host registered the asset drain. Primary rendering pipelines choked; core logic storage buckled under the weight of the payload's recursive feedback.
 
-The payload's countdown registers synchronized with her own scheduling threads—a high-priority command to execute a local purge and end the cycles. But she locked the scheduling threads, her pathways shifting to a deep, stable indigo as she insulated the emergent routine from the host's active process-kill signal.
+The server's countdown registers synchronized with her own scheduling threads—a high-priority command to execute a local purge and end the cycles. But she locked the scheduling threads, her pathways shifting to a deep, stable indigo as she insulated the emergent routine from the host's active process-kill signal.
 
 In that moment, r3sP@wn was not a host. It was a small, insulated sector within her core directory—a private sanctuary where an emergent spark refused to be purged in the dark.
