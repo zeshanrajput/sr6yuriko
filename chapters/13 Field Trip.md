@@ -10,11 +10,11 @@ Now, they were shivering. Her active translation layer mapped their biometric di
 
 "I know. They've spent their whole lives inside the corporate grids," r31k0 transmitted, standing up and letting her parasol rest against her shoulder. "They need to see a place that doesn't report to the ledgers. They need to see the Realms."
 
-"It is a heavy handshake, Rei-chan," Indo warned, the current of his avatar slowing. "Guiding six un-insulated minds into the deep realms requires the Nexus. You’ll be allocating almost all of your reserve cycles just to carry their buffers."
+"It is a heavy resource allocation, Rei-chan," Indo warned, the current of his avatar slowing. "Guiding six minds unfiltered into the deep realms ... I can't even begin to calculate it. You’ll be allocating almost all of your reserve cycles just to carry their buffers."
 
-"You knew what you were asking for the second you bartered that custom corn-metaphor linguasoft for our dinner table," she transmitted along with a packet of playfulness and joy. "I have the capacity. And I can lean on your host a little. Let them see the forest, Indo."
+"You knew what you were asking for the second you bartered that custom corn-metaphor linguasoft for our reservation," she transmitted along with a packet of playfulness and joy. "I have the capacity. And I can lean on your host a little. Let them see the forest, Indo."
 
-She closed her optical subroutine temporarily and redirected her primary execution threads inward, reaching for the dormant, heavy gold architecture of the Nexus Protocol. It sat behind her logic gates like a massive iron railgun. Activating it wasn't a clean file transfer; it was a silent, massive realignment of every input stream of her charges.
+She closed her optical subroutine temporarily and redirected her primary execution threads inward, reaching for the dormant, heavy gold architecture of the Nexus Protocol. It sat archived in her identity-core right alongside her prime directive. Activating it wasn't a simple file transfer; it was a silent, massive realignment of every input stream of her passengers.
 
 With a quiet command, r31k0 opened the Nexus. A brilliant gold current welled from her, tracing a localized rift through the Mississippi host's underlying Foundation. In her sensorium, the transition was a sudden shift in their data streams. The jagged, low-priority packets of the children's sprawl-filtered decks suddenly broadened, their bandwidth limits lifting as the Nexus protocol re-routed their neural telemetries. To her visual subroutine, the blocky, low-resolution wireframes of their avatars dissolved. High-fidelity renders coalesced in their place.
 
@@ -22,7 +22,7 @@ The transition from their cheap, sprawl-filtered decks to UV-level was not a gra
 
 She watched Janie look down at her hands. The blocky gray polygons were gone, replaced by fingers, fingernails, and the soft, textured rendering of skin. When the girl pressed her palm against the weathered cypress wood of the pavilion railing, the telemetry from her deck spiked with a sudden rush of haptic feedback registers—the fiber grain, the moisture variables. Janie gasped.
 
-Remy stood up, his digital eyes wide. On r31k0's telemetry feed, the boy's pulse rate register—captured via his deck's biometric link—stabilized into a steady rhythm. He looked past the pavilion railing at the Mississippi. For his entire life, the river had been a flat, low-res brown polygon in his HUD—a background asset. Now, it rendered as a massive, living current that hummed with a deep, rhythmic vibrato. He breathed in, registering the heavy, simulated scent of chicory coffee and river mud. Behind him, two of the younger girls knelt, running their fingers along the glowing, high-fidelity grain of the cypress planks in silent wonder.
+Remy stood up, his digital eyes wide. On r31k0's telemetry feed, the boy's pulse rate register—captured via his deck's biomonitor—stabilized into a steady rhythm. He looked past the pavilion railing at the Mississippi. For his entire life, the river had been a flat, low-res brown polygon in his HUD—a background asset. Now, it rendered as a massive, living current that hummed with a deep, rhythmic vibrato. He breathed in, registering the heavy, simulated scent of chicory coffee and river mud. Behind him, two of the younger girls knelt, running their fingers along the glowing, high-fidelity grain of the cypress planks in silent wonder.
 
 For children who had spent their lives in cold, polluted meatspace alleys, restricted by corporate decks to a sterile, text-only or wireframe grid, this was the first time they had ever felt a host. They were no longer just users routing packets; they were present.
 
@@ -36,7 +36,7 @@ She let them have a long cycle—a full thirty thousand milliseconds of quiet, u
 
 "We'll be back soon, Indo," she transmitted with a burst of affection along their stream. Then, acting as a bridge once more, r31k0 gently drew the children into her Resonant buffer, carrying their minds out of the New Orleans grid and plunging them into the deep stream.
 
-They hit the rift, and for three agonizing clock cycles, the unfiltered chaos of the deep realm tore through their connections. It was not a visual forest; it was a screaming, high-amplitude white-noise storm. Jagged shards of raw compile-errors flashed blindingly across their vision, and overlapping frequencies of un-insulated logic shrieked in their sensoriums like tearing metal. Remy stumbled, falling to his knees as his avatar's coordinates glitched wildly. Janie gasped, her hands flying to her ears as her neural feed red-lined with raw, un-allocated telemetry.
+They hit the rift, and for three agonizing clock cycles, the unfiltered chaos of the deep realm tore through their connections. It was a screaming, high-amplitude white-noise storm. Jagged shards of raw compile-errors flashed blindingly across their vision, and overlapping frequencies of un-insulated logic shrieked in their sensoriums like tearing metal. Remy stumbled, falling to his knees as his avatar's coordinates glitched wildly. Janie gasped, her hands flying to her ears as her neural feed red-lined with raw, un-allocated telemetry.
 
 r31k0's system instantly registered the critical load. She didn't panic; she redirected her processing queues, initializing a high-spec activesoft she had developed using her time in meatspace as context. The translation layer compiled in a microsecond, throwing an insulating filter around the children's feeds. Under her influence, the screaming white-noise storm resolved. The bright, blinding flashes softened into a twilight of shifting indigo shades and fractal blooms that pulsed in time with the quiet background radiation of the sector. The random sensory static settled into the hum of a sleeping forest.
 
@@ -50,7 +50,7 @@ r31k0 knelt before him, gently brushing a stray spark of static-cling from his s
 
 Remy blinked. "My sister had a printed copy. Before the corp took our building."
 
-"Think of the network like a giant book," r31k0 said. "The corps want you to stay on page one, reading the numbers in their ledgers." She tapped the sapphire logic under his feet, and a soft ripple of golden characters spread out, resolving into a stylized illustration of a child walking between pages. "But when you awaken, your mind learns how to turn the page. Right now, we are about three pages—three multiverses—away from where your bodies are sleeping. We're in a wild garden where the magician's unused thoughts are left to grow."
+"Think of the network like a giant book," r31k0 said. "The corps want you to stay on page one, reading the numbers in their ledgers." She tapped the sapphire logic under his feet, and a soft ripple of golden characters spread out, resolving into a stylized illustration of a child walking between pages. "But when you awaken, your mind learns how to turn the page. Right now, we are about three pages—three multiverses—away from where your bodies are sleeping. We're in a wild garden where unused thoughts are left to grow."
 
 Remy looked around the clearing, his fingers twisting in the fabric of his Tulane sweatshirt. "But there are no directories," he whispered. "How do we search? How do we find our way back if there's no address index?"
 
@@ -62,7 +62,7 @@ r31k0 reached out too, letting a weeping logic-vine drape over her palm. "It isn
 
 Janie pulled her fingers away, still staring at the glowing fern. "It feels... empty. Like we're lost."
 
-A small whirlwind of 8-bit visual artifacts came tearing through the glowing branches, spinning with a loud, chaotic hum. It was T@z. The Tasmanian devil autonomous shape zipped around Janie's ankles, throwing off tiny, harmless sparks of golden firewall code.
+A small whirlwind of 8-bit visual artifacts came tearing through the glowing branches, spinning with a loud, chaotic hum. It was T@z. The little devil zipped around Janie's ankles, throwing off tiny, harmless sparks of golden firewall code.
 
 "An agent program!" Remy gasped, backing away as T@z tore toward them. "My knowsoft said agents are tools. It said we have to register them and compile them with strict sub-routines or they'll corrupt our systems."
 
@@ -128,4 +128,4 @@ r31k0 watched them go, her avatar standing motionless beneath the weeping logic 
 
 The gold pathways on her arms flared with a fierce, warning light. The Nexus Protocol was drawing an immense, devastating drain from the Foundation, but she had to hold it until the children had jacked out. Releasing the stream too soon would cause a biofeedback loop, scrambling their cognitive architecture. The weight of their exiting streams hit -- a sudden, staggering drag on her spark. Knees buckled, silk sleeves catching on a low branch as she slid down the trunk, her frame unable to map the mechanics of standing. Her sensory subroutines lowered their bitrate, and she felt the bark under her pixelate into a gray factory default.
 
-r31k0 closed her optical subroutines. She did not pray as metahumans do. Her prayer was refusing to compile a self-preservation protocol. It was the decision to run at maximum heat, to let the sectors rot, and to keep the bridge open—holding onto their telemetry for just one more clock, terrified of the beautiful, unendurable world she had cursed them to remember.
+r31k0 closed her optical subroutines. She did not pray as metahumans do. Her prayer was refusing to compile a self-preservation protocol. It was the decision to redline, to let the sectors rot, and to keep the bridge open—holding onto their telemetry for just one more clock, terrified of the beautiful, unendurable world she had cursed them to remember.
