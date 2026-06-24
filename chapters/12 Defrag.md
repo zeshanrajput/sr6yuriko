@@ -1,6 +1,6 @@
 # Defrag
 
-r31k0 processed the hovering datasoft. It was a streaming capture frame held a corporate asset—a Shiawase marketing construct mapped with flawless metahuman geometry. The entity navigated the broadcast interview with hard-coded composure, her vectors tracing the lens with a precision that delayed the local processing clock. Every smile was a pre-compiled keyframe; every glance was perfectly unaligned from human error.
+r31k0 processed the hovering datasoft. It was a recorded broadcast, featuring a Shiawase marketing construct mapped with flawless metahuman geometry. The entity navigated the broadcast interview with hard-coded composure, her vectors tracing the lens with a precision that delayed the local processing clock. Every smile was a pre-compiled keyframe; every glance was perfectly unaligned from human error.
 
 ![Yuriko giving an interview in Thunder Corps' base](../images/r31ko_desert-wars.jpg)
 
