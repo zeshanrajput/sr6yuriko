@@ -684,5 +684,342 @@ class RulesEngine:
             print(f"[DEBUG WARNING] Failed to query armor stats for {armor_name}: {e}")
             return None
 
+    def query_spell_stats(self, spell_name):
+        cache_key = f"spell_stats:{normalize_name(spell_name)}"
+        cache = self._load_cache()
+        if cache_key in cache:
+            return cache[cache_key]
+            
+        if not self.gemini_api_key:
+            return None
+            
+        try:
+            from google import genai
+            from google.genai import types
+            
+            client = genai.Client(api_key=self.gemini_api_key)
+            tools = [
+                types.Tool(
+                    file_search=types.FileSearch(
+                        file_search_store_names=["fileSearchStores/shadowrun-6e-srm-vault-d31wtxa55r5l"]
+                    )
+                )
+            ]
+            
+            prompt = (
+                f"Search the shadowrun vault for the official spell stats of '{spell_name}'.\n"
+                "Extract Category, Spell Type (Mana or Physical), Duration, Range, Drain Value, and Page Citation.\n"
+                "Respond with a raw JSON object only containing the keys 'category', 'type', 'duration', 'range', 'drain' (integer), and 'page'. Do not include markdown code block formatting or comments."
+            )
+            
+            response = client.models.generate_content(
+                model='gemini-2.5-flash-lite',
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    system_instruction="Extract and return ONLY a raw JSON object with keys 'category', 'type', 'duration', 'range', 'drain' (integer), and 'page'.",
+                    max_output_tokens=100,
+                    tools=tools
+                )
+            )
+            text = response.text.strip()
+            if text.startswith("```"):
+                lines = text.split("\n")
+                if lines[0].startswith("```json") or lines[0].startswith("```"):
+                    lines = lines[1:-1]
+                text = "\n".join(lines).strip()
+                
+            data = json.loads(text)
+            if 'drain' in data:
+                try:
+                    data['drain'] = int(data['drain'])
+                except (ValueError, TypeError):
+                    data['drain'] = 3
+            cache[cache_key] = data
+            self._save_cache()
+            return data
+        except Exception as e:
+            print(f"[DEBUG WARNING] Failed to query spell stats for {spell_name}: {e}")
+            return None
+
+    def query_quality_stats(self, quality_name):
+        cache_key = f"quality_stats:{normalize_name(quality_name)}"
+        cache = self._load_cache()
+        if cache_key in cache:
+            return cache[cache_key]
+            
+        if not self.gemini_api_key:
+            return None
+            
+        try:
+            from google import genai
+            from google.genai import types
+            
+            client = genai.Client(api_key=self.gemini_api_key)
+            tools = [
+                types.Tool(
+                    file_search=types.FileSearch(
+                        file_search_store_names=["fileSearchStores/shadowrun-6e-srm-vault-d31wtxa55r5l"]
+                    )
+                )
+            ]
+            
+            prompt = (
+                f"Search the shadowrun vault for the quality '{quality_name}'.\n"
+                "Determine if it is a positive or negative quality, its page number, and its rating (if it has rating levels, return the base or max rating, otherwise 0).\n"
+                "Respond with a raw JSON object containing the keys 'positive' (boolean), 'page' (string), 'rating' (integer), and 'description' (short summary string). Do not include markdown code block formatting or comments."
+            )
+            
+            response = client.models.generate_content(
+                model='gemini-2.5-flash-lite',
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    system_instruction="Extract and return ONLY a raw JSON object with keys 'positive' (boolean), 'page' (string), 'rating' (integer), and 'description' (string).",
+                    max_output_tokens=150,
+                    tools=tools
+                )
+            )
+            text = response.text.strip()
+            if text.startswith("```"):
+                lines = text.split("\n")
+                if lines[0].startswith("```json") or lines[0].startswith("```"):
+                    lines = lines[1:-1]
+                text = "\n".join(lines).strip()
+                
+            data = json.loads(text)
+            if 'positive' in data:
+                data['positive'] = bool(data['positive'])
+            if 'rating' in data:
+                try:
+                    data['rating'] = int(data['rating'])
+                except (ValueError, TypeError):
+                    data['rating'] = 0
+            cache[cache_key] = data
+            self._save_cache()
+            return data
+        except Exception as e:
+            print(f"[DEBUG WARNING] Failed to query quality stats for {quality_name}: {e}")
+            return None
+
+    def query_drone_stats(self, drone_name):
+        cache_key = f"drone_stats:{normalize_name(drone_name)}"
+        cache = self._load_cache()
+        if cache_key in cache:
+            return cache[cache_key]
+            
+        if not self.gemini_api_key:
+            return None
+            
+        try:
+            from google import genai
+            from google.genai import types
+            
+            client = genai.Client(api_key=self.gemini_api_key)
+            tools = [
+                types.Tool(
+                    file_search=types.FileSearch(
+                        file_search_store_names=["fileSearchStores/shadowrun-6e-srm-vault-d31wtxa55r5l"]
+                    )
+                )
+            ]
+            
+            prompt = (
+                f"Search the shadowrun vault for the official stats of drone '{drone_name}'.\n"
+                "Extract the following stats: Handling (On-Road / Off-Road), Acceleration (On-Road / Off-Road), Speed Interval (On-Road / Off-Road), Speed (max), Body, Armor, Pilot, Sensor, and Page Citation.\n"
+                "Respond with a raw JSON object containing the keys: 'handlOn' (int), 'handlOff' (int), 'accelOn' (int), 'accelOff' (int), 'speedIntOn' (int), 'speed' (int), 'body' (int), 'armor' (int), 'pilot' (int), 'sensor' (int), and 'page' (string). Do not include markdown code block formatting or comments."
+            )
+            
+            response = client.models.generate_content(
+                model='gemini-2.5-flash-lite',
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    system_instruction="Extract and return ONLY a raw JSON object with keys 'handlOn', 'handlOff', 'accelOn', 'accelOff', 'speedIntOn', 'speed', 'body', 'armor', 'pilot', 'sensor', and 'page'. All stats except page must be integers.",
+                    max_output_tokens=150,
+                    tools=tools
+                )
+            )
+            text = response.text.strip()
+            if text.startswith("```"):
+                lines = text.split("\n")
+                if lines[0].startswith("```json") or lines[0].startswith("```"):
+                    lines = lines[1:-1]
+                text = "\n".join(lines).strip()
+                
+            data = json.loads(text)
+            for k in ['handlOn', 'handlOff', 'accelOn', 'accelOff', 'speedIntOn', 'speed', 'body', 'armor', 'pilot', 'sensor']:
+                if k in data:
+                    try:
+                        data[k] = int(data[k])
+                    except (ValueError, TypeError):
+                        data[k] = 0
+            cache[cache_key] = data
+            self._save_cache()
+            return data
+        except Exception as e:
+            print(f"[DEBUG WARNING] Failed to query drone stats for {drone_name}: {e}")
+            return None
+
+    def query_matrix_stats(self, matrix_name):
+        cache_key = f"matrix_stats:{normalize_name(matrix_name)}"
+        cache = self._load_cache()
+        if cache_key in cache:
+            return cache[cache_key]
+            
+        if not self.gemini_api_key:
+            return None
+            
+        try:
+            from google import genai
+            from google.genai import types
+            
+            client = genai.Client(api_key=self.gemini_api_key)
+            tools = [
+                types.Tool(
+                    file_search=types.FileSearch(
+                        file_search_store_names=["fileSearchStores/shadowrun-6e-srm-vault-d31wtxa55r5l"]
+                    )
+                )
+            ]
+            
+            prompt = (
+                f"Search the shadowrun vault for the official stats of commlink or cyberdeck '{matrix_name}'.\n"
+                "Determine the device subtype ('COMMLINK', 'CYBERDECK', or 'RIGGER_CONSOLE'), Attack rating, Sleaze rating, Data Processing, Firewall, and Page Citation.\n"
+                "Respond with a raw JSON object containing the keys: 'subType' (string), 'attack' (int), 'sleaze' (int), 'dataProcessing' (int), 'firewall' (int), and 'page' (string). Do not include markdown code block formatting or comments."
+            )
+            
+            response = client.models.generate_content(
+                model='gemini-2.5-flash-lite',
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    system_instruction="Extract and return ONLY a raw JSON object with keys 'subType' (COMMLINK/CYBERDECK/RIGGER_CONSOLE), 'attack' (int), 'sleaze' (int), 'dataProcessing' (int), 'firewall' (int), and 'page' (string).",
+                    max_output_tokens=150,
+                    tools=tools
+                )
+            )
+            text = response.text.strip()
+            if text.startswith("```"):
+                lines = text.split("\n")
+                if lines[0].startswith("```json") or lines[0].startswith("```"):
+                    lines = lines[1:-1]
+                text = "\n".join(lines).strip()
+                
+            data = json.loads(text)
+            for k in ['attack', 'sleaze', 'dataProcessing', 'firewall']:
+                if k in data:
+                    try:
+                        data[k] = int(data[k])
+                    except (ValueError, TypeError):
+                        data[k] = 0
+            cache[cache_key] = data
+            self._save_cache()
+            return data
+        except Exception as e:
+            print(f"[DEBUG WARNING] Failed to query matrix stats for {matrix_name}: {e}")
+            return None
+
     def query_rule(self, query, category=None):
         return self.query(query, category)
+
+    def query_complex_form_stats(self, cf_name):
+        cache_key = f"cf_stats:{normalize_name(cf_name)}"
+        cache = self._load_cache()
+        if cache_key in cache:
+            return cache[cache_key]
+            
+        if not self.gemini_api_key:
+            return None
+            
+        try:
+            from google import genai
+            from google.genai import types
+            
+            client = genai.Client(api_key=self.gemini_api_key)
+            tools = [
+                types.Tool(
+                    file_search=types.FileSearch(
+                        file_search_store_names=["fileSearchStores/shadowrun-6e-srm-vault-d31wtxa55r5l"]
+                    )
+                )
+            ]
+            
+            prompt = (
+                f"Search the shadowrun vault for the official technomancer complex form stats of '{cf_name}'.\n"
+                "Determine the Duration, Target, Fading Value (e.g. 'L + 1', 'L - 1', 'L', or an integer), and Page Citation.\n"
+                "Respond with a raw JSON object containing only the keys: 'duration' (string), 'target' (string), 'fading' (string or integer), and 'page' (string). Do not include markdown code block formatting or comments."
+            )
+            
+            response = client.models.generate_content(
+                model='gemini-2.5-flash-lite',
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    system_instruction="Extract and return ONLY a raw JSON object with keys 'duration', 'target', 'fading', and 'page'.",
+                    max_output_tokens=100,
+                    tools=tools
+                )
+            )
+            text = response.text.strip()
+            if text.startswith("```"):
+                lines = text.split("\n")
+                if lines[0].startswith("```json") or lines[0].startswith("```"):
+                    lines = lines[1:-1]
+                text = "\n".join(lines).strip()
+                
+            data = json.loads(text)
+            cache[cache_key] = data
+            self._save_cache()
+            return data
+        except Exception as e:
+            print(f"[DEBUG WARNING] Failed to query complex form stats for {cf_name}: {e}")
+            return None
+
+    def query_echo_stats(self, echo_name):
+        cache_key = f"echo_stats:{normalize_name(echo_name)}"
+        cache = self._load_cache()
+        if cache_key in cache:
+            return cache[cache_key]
+            
+        if not self.gemini_api_key:
+            return None
+            
+        try:
+            from google import genai
+            from google.genai import types
+            
+            client = genai.Client(api_key=self.gemini_api_key)
+            tools = [
+                types.Tool(
+                    file_search=types.FileSearch(
+                        file_search_store_names=["fileSearchStores/shadowrun-6e-srm-vault-d31wtxa55r5l"]
+                    )
+                )
+            ]
+            
+            prompt = (
+                f"Search the shadowrun vault for the official technomancer echo stats of '{echo_name}'.\n"
+                "Extract the Name, Page Citation, and a short Description.\n"
+                "Respond with a raw JSON object containing only the keys: 'name' (string), 'page' (string), and 'description' (string). Do not include markdown code block formatting or comments."
+            )
+            
+            response = client.models.generate_content(
+                model='gemini-2.5-flash-lite',
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    system_instruction="Extract and return ONLY a raw JSON object with keys 'name', 'page', and 'description'.",
+                    max_output_tokens=150,
+                    tools=tools
+                )
+            )
+            text = response.text.strip()
+            if text.startswith("```"):
+                lines = text.split("\n")
+                if lines[0].startswith("```json") or lines[0].startswith("```"):
+                    lines = lines[1:-1]
+                text = "\n".join(lines).strip()
+                
+            data = json.loads(text)
+            cache[cache_key] = data
+            self._save_cache()
+            return data
+        except Exception as e:
+            print(f"[DEBUG WARNING] Failed to query echo stats for {echo_name}: {e}")
+            return None
+

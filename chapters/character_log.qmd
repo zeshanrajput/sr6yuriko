@@ -2,11 +2,15 @@
 
 This log chronicles the out-of-session missions, downtime decisions, Karma expenditures, and financial ledgers.
 
+:::{.callout-warning}
+This log contains spoilers! Please do not read if you haven't played the sessions yet!
+:::
+
 ---
 
 ### **2026-Apr-24: SMH 2083-02 EggHunt at the Jackalope Ranch**
 
-* **GM:** Jeffrey "JaGator" G.  
+* **GM:** JaGator 
 * **Difficulty:** Normal/Adult
   * **Rewards:** +6 Karma, +9,000 Nuyen (deducting the expenses of the run distributed evenly, 500 Nuyen)  
 * **Reputation:** +2 Rep Vory
@@ -25,7 +29,7 @@ This log chronicles the out-of-session missions, downtime decisions, Karma expen
 
 ### **2026-Apr-25: CMP First Taste : Top Chef - Seattle**
 
-* **GM:** Jeffrey "JaGator" G.  
+* **GM:** JaGator  
 * **Rewards:** +3 Karma, +2,600 Nuyen  
 * **Reputation:** +1 Rep Seattle (selling paydata and commcode for the port storage to the homeless)  
 * **Contacts:** +1 FP Big Louie Fixer (Connection 3) Male Troll, likes Jazz, works out of Matchsticks  
@@ -38,7 +42,7 @@ This log chronicles the out-of-session missions, downtime decisions, Karma expen
 
 ### **2026-Apr-29: SRM 2083-03: Unofficial Dunkelzahn Fan Club**
 
-* **GM:** Jeffrey "JaGator" G  
+* **GM:** JaGator  
 * **Rewards:** +8 Karma, +9,000 Nuyen  
 * **Contacts:**
   * +2 FP with Dominique Augustin of Wolverine Security (Wolverine Security, Connection 4) Female Human
@@ -253,3 +257,23 @@ This log chronicles the out-of-session missions, downtime decisions, Karma expen
 * **Downtime Actions (1 Minor):**
   * *Working for the People:* +1 Karma, -2,000 Nuyen
   * Submersion: Overclocking
+
+---
+
+### **2026-June-25: SRM 2081-05 | This is Renton**
+
+* **Summary:** The team was hired by upcoming rapper Swango to investigate death threats, discovering that her previous fixer, Brynne Taggart, had gone missing. While a summoned spirit tracked Brynne, the team traced the messages to a used electronics store in a mall hangout for the Night Hunters gang. Intimidating a member revealed their employer: a retired LoneStar captain leading the local Neighborhood Watch. Following the spirit's lead to a shabby hotel, the runners located Brynne, who confirmed their findings. Forewarned of an approaching hit squad, the team easily repelled them. Swango then hired them as concert security. During the performance, they repelled a frontal gang assault, and one runner took a bullet to protect Swango from a backstage assassin.
+* **Team:** Jolthead (Zombie), Marcon (Trax), Poe (Dreamwalker), Yuriko Star (Zeshan/WarDoctor), Xiao (Inirlan)
+* **GM:** CDT Agent Kira Capalu
+* **Difficulty Level:** Veteran
+* **Rewards:** +8 Karma (7 + 1 Veteran), +12,500 Nuyen (-1,000 Nuyen bribe for Heat reduction)
+* **Reputation:** +2 Reputation
+* **Heat:** ±0 (Roll: 6+4, Base +2, -4 for Bribes by Jolthead, Poe, Xiao, Yuriko)
+* **Contacts:**
+  * +1 FP Brynne Taggart (C4 Fixer)
+  * +3 FP Swango (C3 Musician) (includes +1 FP unique to Yuriko Star)
+  * +1 FP Toil (C4 Fixer)
+  * +1 FP Trubble (C1 Bodyguard)
+* **Downtime Actions (2 Minor):**
+  * *Working for the People:* +1 Karma, -2,000 Nuyen
+  * *Register Sprites:* Registering 8 Levels of Sprites (2 sprites registered, as recorded in the Sprite Stable)

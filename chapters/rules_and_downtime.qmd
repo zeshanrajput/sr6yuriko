@@ -181,11 +181,11 @@ In this remote-control scenario, the AI **does** use its Matrix Equivalents:
 ## Sprite Stable
 
 | Mission | Sprites Registered | Tasks Used |
-| ----- | ----- | ----- |
-| CMP 2083-14 | 1 | 0 |
-| CMP 2083-16 | 2 | 0 |
-| SRM 2081-19 | 0 | 0 |
-| **Total**   | 3 | 0 |
+| ----------- | --- | --- |
+| CMP 2083-16 |  2  |  0  |
+| SRM 2081-19 |  0  |  0  |
+| SRM 2081-05 |  2  |  0  |
+| **Total**   |  4  |  0  |
 
 ---
 
@@ -209,3 +209,20 @@ In this remote-control scenario, the AI **does** use its Matrix Equivalents:
   * *Sneak-Sneak:* +2 Stealth  
   * *Target Artist:* Attack w/o LOS on painted targets  
 * *Sensory Array:* Social HUD/Thermal Mood Reading/Vocal Tension Detection: +1 Edge on Judge Intentions
+
+---
+
+## Krime Splash Self-Defense Ammunition
+
+The outer coating is a friction-liquefying material that is impossible to wash off and paints the target in whatever color you choose when purchasing the ammo. This splash-color is just the jacket for a good degree of glitter-based micro RFID tags that get into the user’s skin through any non-chemical resistant or waterproof outfit, which sparkles while impregnated into their skin while also transmitting to the Matrix. Finally, the major layer, which protects you while the intruder is still in your face: a basic gel round that slams home like every other gel round on the market.
+
+| 2D6 RESULT| 2D6 RESULT |
+| --------- | ---------- |
+| 2 Silver  | 8 Red      |
+| 3 Blue    | 9 White    |
+| 4 Green   | 10 Yellow  |
+| 5 Orange  | 11 Indigo  |
+| 6 Pink    | 12 Rainbow*|
+| 7 Purple  |            |
+
+(*Just roll with it and make the targets taste the rainbow!)
