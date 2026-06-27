@@ -243,7 +243,7 @@ This log contains spoilers! Please do not read if you haven't played the session
 
 --- 
 
-### **2026-June-20: SRM 2081-19 | The Hallow Feast**
+### **2026-June-20: SRM 2083-19 | The Hallow Feast**
 
 * **Summary:**: Hired by Monsieur Johnson to ascertain the whereabouts of Snaggletooth. Ultimately found him long since dead and possessed by a spirit attempting to destroy the world. 
 * **Team:**: Eris Pomme, Ice Lily, Jolee, Bob, Yuriko
