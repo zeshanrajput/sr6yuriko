@@ -28,8 +28,8 @@ book:
     - part: "Out-of-Session Narratives"
       chapters:
         - chapters/08 Abandoning Tourism.md
-        - chapters/09 Game Theory.md
-        - chapters/10 Triangulation.md
+        - chapters/09 Triangulation.md
+        - chapters/10 Game Theory.md
         - chapters/11 Integrating over Infinity.md
         - chapters/12 Defrag.md
         - chapters/13 Field Trip.md

@@ -81,8 +81,8 @@ Chronological records of Reiko's backstory before the campaign:
 Active campaign stories written during play:
 
 * **[Chapter 08: Abandoning Tourism](chapters/08 Abandoning Tourism.md)**
-* **[Chapter 09: Game Theory](chapters/09 Game Theory.md)**
-* **[Chapter 10: Triangulation](chapters/10 Triangulation.md)**
+* **[Chapter 09: Triangulation](chapters/09 Triangulation.md)**
+* **[Chapter 10: Game Theory](chapters/10 Game Theory.md)**
 * **[Chapter 11: Integrating over Infinity](chapters/11 Integrating over Infinity.md)**
 * **[Chapter 12: Defrag](chapters/12 Defrag.md)**
 * **[Chapter 13: Field Trip](chapters/13 Field Trip.md)**
