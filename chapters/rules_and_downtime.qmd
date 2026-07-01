@@ -182,10 +182,10 @@ In this remote-control scenario, the AI **does** use its Matrix Equivalents:
 
 | Mission | Sprites Registered | Tasks Used |
 | ----------- | --- | --- |
-| CMP 2083-16 |  2  |  0  |
 | SRM 2081-19 |  0  |  0  |
 | SRM 2081-05 |  2  |  0  |
-| **Total**   |  4  |  0  |
+| CMP 2083-01 |  1  |  0  |
+| **Total**   |  3  |  0  |
 
 ---
 

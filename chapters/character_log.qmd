@@ -199,7 +199,7 @@ This log contains spoilers! Please do not read if you haven't played the session
 * **Contacts:** +4 FP Sigrûn/Marikka von Harbou (Shadowrunner)  
 * **Downtime Actions (2 Minor):**  
   * *Working for the People:* +1 Karma, -2,000 Nuyen  
-  * *Register Sprites:* Registering 8 Levels of Sprites (1 modular sprite with autosofts)  
+  * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
 
 ---
 
@@ -217,7 +217,7 @@ This log contains spoilers! Please do not read if you haven't played the session
   * +2 FP Ebon Abirahur (C1 Leviathan Dragon) --> L1/F1
 * **Downtime Actions (2 Minor)**:
   * *Working for the People:* +1 Karma, -2,000 Nuyen
-  * *Register Sprites:* Registering 8 Levels of Sprites (1 modular sprite with autosofts)
+  * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
 
 ---
 
@@ -276,4 +276,24 @@ This log contains spoilers! Please do not read if you haven't played the session
   * +1 FP Trubble (C1 Bodyguard)
 * **Downtime Actions (2 Minor):**
   * *Working for the People:* +1 Karma, -2,000 Nuyen
-  * *Register Sprites:* Registering 8 Levels of Sprites (2 sprites registered, as recorded in the Sprite Stable)
+  * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
+* **Other bonuses:** 2 sprites registered during in-session downtime
+
+---
+
+### **2026-June-30: CMP 2083-01: NONPLUSHED**
+
+* **Summary:** Hired to locate and return a missing convoy of S-K trucks. Simon called, asking for information on why they were stolen. Trucks located, liberated, and returned. Lost two Johnsons on this one - Simon's looking into it.
+* **Team:** Mithral, Elknar, Jolthead, Panda, Yuriko
+* **GM**: JaGator
+* **Difficulty**: Normal
+* **Rewards:** 6 karma, 9500 nuyen
+* **Reputation:** 0
+* **Heat:** 0 
+* **Contacts:** 
+  * +1 FP Simon Andrews (Punk Lizard, S-K Fixer) Connection 5
+  * +1 FP SpiiniCop (NB Human, Penose Spider) Connection 2 (paid 500 from Yuriko)
+* **Downtime Actions (2 Minor):**
+  * Working for the People: +1 karma, -2000 nuyen
+  * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
+* **Other bonuses:** 1 sprite registered during in-session downtime
