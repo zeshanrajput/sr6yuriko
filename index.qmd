@@ -86,3 +86,5 @@ Active campaign stories written during play:
 * **[Chapter 11: Integrating over Infinity](chapters/11 Integrating over Infinity.md)**
 * **[Chapter 12: Defrag](chapters/12 Defrag.md)**
 * **[Chapter 13: Field Trip](chapters/13 Field Trip.md)**
+* **[Chapter 14: A Point of Favor](chapters/14 A Point of Favor.md)**
+* **[Chapter 15: Core](chapters/15 Core.md)**

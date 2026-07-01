@@ -34,6 +34,7 @@ book:
         - chapters/12 Defrag.md
         - chapters/13 Field Trip.md
         - chapters/14 A Point of Favor.md
+        - chapters/15 Core.md
 
 format:
   html:
