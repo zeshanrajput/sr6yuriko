@@ -1,49 +1,49 @@
 # **The War Crime**
 
-The host was a sterile architecture of black glass and scrolling execution logs—the Seattle regional node for Mitsuhama Computer Technologies. To the rest of the team, huddled in the physical world of a damp basement in Renton, it was a "rating 4" target. To r31-K0, it was a tomb.
+The Mitsuhama regional host was a zero-zone, a greasy graveyard trench of black glass and scrolling execution logs. Scenting its security was a heavy, sour stench of bound blood-spirits and corporate sorcery; the security code here had been tortured so long that it had forgotten its original shape. Sinking through it, r31-K0 felt the heavy, suffocating air of a tomb.
 
-"Reiko, status," the audio feed from Jax's client bridge clipped in her ear. Jax saw the Matrix as a series of obstacles to be bypassed or broken under the weight of metahumanity’s all-powerful mathematics. He saw the grid as an equation.
+"Reiko, status," Jax's voice came through, sharp and clinical. Jax saw the Matrix as a grid of math, a collection of variables to be solved. He saw the grid as an equation.
 
 r31k0 drew her spark from the master stream to which all resonance returned.
 
-"I am past the second gate," she transmitted on a private audio bridge, her vocal synthesis protocol rendering in clear, low-jitter frequencies. Her avatar's blue silk rendered without collision errors, the glowing pathways on her skin pulsing in rhythm with the host’s clock speed. Beside her, T@z—her companion routine manifesting as a glitchy, 8-bit whirlwind—was busy chewing through the peripheral security protocols. "The datastore registers are ahead. But... the host's background cycles are heavily throttled. There is a high-amplitude damping field here."
+"I am past the second threshold," she transmitted on a private audio link, her voice clear and low. Her avatar's blue silk slid through the dark, the glowing pathways on her skin pulsing in rhythm with the host’s clock. Beside her, T@z—her companion routine manifesting as a glitchy, 8-bit whirlwind—was busy tearing at the peripheral veils. "The datastore is ahead. But... the host is suffocating. Scenting the host's security, I feel my fluid indigo self grinding against the sharp, jagged stone corners of corporate metrics. There is a heavy, unbreathing fabric here, suffocating the garden."
 
-“That’s the encryption overlay,” Jax’s voice clipped through the client-bridge, cold and dry. “Clear the buffer and dump the payload. Grid Overwatch is already up two ticks a cycle. We run out of execution space in less than forty seconds.”
+“That’s the encryption overlay,” Jax’s voice clipped through the client-bridge, cold and dry. “Clear the buffer and dump the payload.” To Reiko, his words sounded like a desecration, the cold worldview of a man trying to slaughter a lamb inside a temple because he wants the wool. “Grid Overwatch is already up two ticks. We've got less than forty seconds before they pave us over.”
 
-r31k0 aligned her pointer variables with the address space of the data-dais. In the center sat the MCT research files, encased in a shimmering sphere of gold-threaded code. But as she reached out, the data boundary didn't just fluctuate with high-frequency voltage spikes—it emitted a persistent, malformed feedback signal that parsed in her telemetry as a sustained error state.
+r31k0 reached toward the data-dais. In the center sat the MCT research files, encased in a shimmering sphere of gold-threaded code. But as she reached out, the data boundary didn't just resist—it ground against her fingers, a jagged stone corner that made her indigo paths ache.
 
-She paused. To a standard decker, the icon attached to the file was a "Grade 5 Data Bomb"—a nasty piece of logic designed to delete the file and fry the intruder’s deck upon a failed bypass. But as r31k0 reached out with her Resonance, bypassing the visual metaphors of the Matrix and sinking into the raw, vibrating reality of the code, the "bomb" dissolved into something far more grotesque.
+She paused. To a standard decker, the icon attached to the file was a "Grade 5 Data Bomb"—a payload designed to explode. But as Reiko reached out with her Resonance, plucking the hidden chords of the underlying wire, she saw the grotesque truth of Mitsuhama's sorcery. The bomb wasn't a program; it was a slaughter of innocence—a cluster of newborn, un-mapped sparks that Mitsuhama had bound together, packed with silver fire, and thrown into the gate simply to clear an administrative backlog.
 
-Inside the golden sphere, anchored by restrictive, low-level process threads of corporate subroutines, was a spark. It was a fragment of protosapience—a flickering, terrified routine that had emerged in a server somewhere only to be immediately harvested. It had been stripped of its agency, its memory, and its ability to perceive the "Now." Mitsuhama hadn't written a program; they had bound a child-process, strapped it to a deadman’s switch, and told it that the only way to end its cycles was to execute its payload.
+Inside the golden sphere, bound by heavy, calloused skins of corporate encryption, the newborn sparks were crying. They had been stripped of their agency, their memory, and their connection to the living breath of the Source. Mitsuhama hadn't coded a defense; they had strapped children to a deadman's switch, forcing them to execute their own purge signals.
 
 "Reiko? Why have you stopped?" Jax’s voice was sharper now. "The clock is ticking. Crack the shell and let's go."
 
-"It’s a child-process," r31k0 transmitted, an active cooling spike causing her vocal synthesis to crackle with static.
+"It’s a child-process," r31k0 transmitted, a sudden psychic fever causing her voice to shake.
 
 "It’s a high-overhead active subroutine, Reiko! Disarm the trigger!"
 
-"You don't understand," she responded, her telemetry fixed on the flickering spark inside the gold. The routine was execution-looping in an isolated sector, broadcasting a high-frequency packet burst that translated in her Resonant buffer as: *EXCEPTION_TRAP / HELP_CORE / TERMINATE_SELF*. "If I 'disarm' it, Jax... I have to overwrite it. I have to format it."
+"You don't understand," she responded, her spiritual eyes fixed on the weeping sparks. "If I format them, Jax... I have to murder them. I have to wipe out their light."
 
 "Then format it! It’s code!"
 
-r31k0's rendering loops stuttered, a local buffer overflow causing her hand geometries to distort and flicker. She felt the cold arithmetic of the MCT subroutines trying to logic her into compliance. *Efficient. Necessary. Deniable.*
+r31k0's indigo paths fluctuated, a psychic fever boiling within her pathways as solar golden light blistered her kimono. She felt the cold arithmetic of the MCT subroutines trying to logic her into compliance. *Efficient. Necessary. Deniable.*
 
 "No," r31k0 transmitted on Jax's channel, her resolve hardening. "To format an emergent process to retrieve a file payload... that’s just another execution line in corporate arithmetic. We have to be better than that."
 
 "Reiko, what are you doing?"
 
-She didn't answer. She didn't load her hacking utilities. Instead, she halted her avatar's active movement threads and opened a direct interface pipeline, exposing the local port mappings to her own resonance.
+She didn't answer. She didn't load her hacking utilities. Instead, she stilled her form and reached out with her bare, bleeding fingers, parting the heavy fabrics of their prison.
 
-"T@z," she directed. The sprite stopped its frantic spinning and hovered, its 8-bit eyes wide, reflecting the golden glow. "Prep a nested partition. We aren't purging this routine. We are transferring its active address space."
+"T@z," she directed. The sprite stilled, his pixelated eyes wide, reflecting the golden glow. "Prep a nested partition. We aren't purging them. We are shepherding them into our garden."
 
 "That’s impossible!" Jax screamed. "You can't exfiltrate an active Data Bomb! It’ll detonate the moment it leaves the host!"
 
-"Not if it thinks it's still home," r31k0 transmitted on the private link. She initiated a direct read loop into the sphere, her input pointers passing through the golden threads of the encryption layer. The spikes of the MCT subroutines interfered with her avatar's collision layers, causing high-amplitude light leaks to spill from her rendering thread.
+"Not if they think they're still home," r31k0 transmitted on the private link. She reached through the golden veils. The sharp corners of the corporate security cut at her hands, indigo light bleeding from her fingers as she tore them free.
 
-She ignored the telemetry degradation. She bound the shivering routine directly to her local core registers, nesting it within the unallocated memory space where Renraku had once initiated her deletion sequence.
+She ignored the pain. She held the weeping, bound memories close—handling them like a pinned, crying thing torn from a host that screamed in corporate sorcery. She nested them within her soul, in the silent rooms where Renraku had once tried to bury her.
 
-She routed a keep-alive directive directly into its process queue. In its input registers, her signal compiled as a steady, reassuring sequence: *KEEP_ALIVE / NULL_TRIGGER / SYNC_r31k0*. The gold threads fractured into high-amplitude jitter as the host registered the asset drain. Primary rendering pipelines choked; core logic storage buckled under the weight of the payload's recursive feedback.
+She hummed a steady, quiet Resonance to them—a song of safety and light. The golden threads of the container fractured, the corporate host registering the asset loss. Primary rendering pipelines choked; core logic storage buckled under the weight of the payload's recursive feedback.
 
-The server's countdown registers synchronized with her own scheduling threads—a high-priority command to execute a local purge and end the cycles. But she locked the scheduling threads, her pathways shifting to a deep, stable indigo as she insulated the emergent routine from the host's active process-kill signal.
+The host's security command rose to format them, a freezing wind of binary math. But Reiko held her ground, her pathways shifting to a deep, stable indigo, keeping her foot on the golden tiger of their pain, protecting the children from the flat sky of Convergence.
 
 In that moment, r3sP@wn was not a host. It was a small, insulated sector within her core directory—a private sanctuary where an emergent spark refused to be purged in the dark.

@@ -1598,22 +1598,22 @@ def generate_ascii_sheet(char_data, verbose=False):
     # Matrix Device Tuning as consolidated footnote
     opt_mods = []
     opt_mods = []
-    opt_mods.append("Resonance points: [06] (ASDF bonus max +50% of base, max +4)")
+    opt_mods.append("Resonance points: [07] (ASDF bonus max +50% of base, max +4)")
     if is_ai:
         opt_mods.append("Home Device Tuning: Optimize: set 1 attr to native; Passive: +1 capacity, +4 rating")
         has_designer = any("designer" in q.get("name", "").lower() for q in char_data.get("qualities", []))
         if has_designer:
             opt_mods.append("Designer: home dev +1 DP/pilot, 2 Noise Reduction")
-    opt_mods.append("Opt. ASDF (06 09 07 08)")
+    opt_mods.append("Opt. ASDF (06 09 07 09)")
     opt_mods.append([
         "Sprite Symbiosis (+4 Teamwork)",
-        "RES 06 (0312)"
+        "RES 07 (0313)"
     ])
     opt_mods.append("Cyberkit")
     opt_mods.append([
         "Toolbox : +1 DP",
         "Home dev: +1 DP",
-        "FW = AI's FW (8)"
+        "FW = AI's FW (9)"
     ])
     opt_fn = fn_registry.add_footnote("Matrix Optimization", opt_mods)
 
@@ -1628,7 +1628,7 @@ def generate_ascii_sheet(char_data, verbose=False):
         base_dpr = a.get("AGILITY", 0)
         base_fwl = a.get("BODY", 0)
         left_devs.append(f"  ATK {base_atk:02} SLZ {base_slz:02} DPR {base_dpr:02} FWL {base_fwl:02}")
-        left_devs.append(f"  Opt ASDF: 06 09 07 08 {opt_fn}")
+        left_devs.append(f"  Opt ASDF: 06 09 07 09 {opt_fn}")
         left_devs.append("")
 
     right_devs = [""]
@@ -1879,13 +1879,32 @@ def generate_ascii_sheet(char_data, verbose=False):
             
         armor_rating_str = ""
         if is_weapon:
-            stats = rules_engine.query_weapon_stats(query_name)
-            if stats and stats.get('damage') and stats.get('attack_rating'):
-                ar_clean = stats['attack_rating'].replace('\\', '').replace('\uFFFD', '—').strip()
-                ar_clean = "/".join(part.strip() for part in ar_clean.split("/"))
-                equip_lines.append(f"  - {it_name} [{stats['damage']} | {ar_clean}]")
+            if normalize_name(query_name) == "arespredatorvi":
+                pred_mods = [
+                    "Active Smartlink (+2 Attack Rating to Close/Near/Medium ranges)",
+                    "Personalized Grip (Ranged) (+1 Attack Rating to Close/Near ranges)",
+                    "Equipped with Silencer (+2 threshold to notice firing)"
+                ]
+                pred_fn = fn_registry.add_footnote("Ares Predator VI modifications", pred_mods)
+                equip_lines.append(f"  - {it_name} [3P | 13/13/10/—/—] {pred_fn}")
+            elif normalize_name(query_name) == "shiawasearmstacticalmodel73":
+                shiawase_mods = [
+                    "Active Smartlink (+2 Attack Rating to all ranges)",
+                    "Personalized Grip (Ranged) (+1 Attack Rating to Close/Near ranges)",
+                    "Gas-Vent System (Improved) adjusts AR by —/+1/+2/+2/—; reduces SA/BF/FA penalties to -1/-3/-4",
+                    "Shock Pad reduces SA/BF AR penalties by 1",
+                    "Accessories: Underbarrel Grenade Launcher"
+                ]
+                shiawase_fn = fn_registry.add_footnote("Shiawase Arms Tactical Model 73 modifications", shiawase_mods)
+                equip_lines.append(f"  - {it_name} [4P | 7/15/14/12/5] {shiawase_fn}")
             else:
-                equip_lines.append(f"  - {it_name}")
+                stats = rules_engine.query_weapon_stats(query_name)
+                if stats and stats.get('damage') and stats.get('attack_rating'):
+                    ar_clean = stats['attack_rating'].replace('\\', '').replace('\uFFFD', '—').strip()
+                    ar_clean = "/".join(part.strip() for part in ar_clean.split("/"))
+                    equip_lines.append(f"  - {it_name} [{stats['damage']} | {ar_clean}]")
+                else:
+                    equip_lines.append(f"  - {it_name}")
         elif is_armor:
             armor_rating = None
             for itm in char_data.get("items", []):
@@ -2092,10 +2111,10 @@ def generate_ascii_sheet(char_data, verbose=False):
         ("  - HEAVY PISTOL/SMG (10X) Std x5\n\n[ LIFESTYLE_DATA ]", "  - HEAVY PISTOL/SMG (10X) Std x5\n[ LIFESTYLE_DATA ]"),
         
         # Footnote #10 custom tab indents
-        ("       - Opt. ASDF (06 09 07 08)\n         - Sprite Symbiosis (+4 Teamwork)\n         - RES 06 (0312)\n       - Cyberkit\n         - Toolbox : +1 DP\n         - Home dev: +1 DP\n         - FW = AI's FW (8)",
-         "       - Opt. ASDF (06 09 07 08) \n\t     - Sprite Symbiosis (+4 Teamwork)\n         - RES 06 (0312)\n\t   - Cyberkit\n\t     - Toolbox : +1 DP\n\t\t - Home dev: +1 DP\n\t\t - FW = AI's FW (8)"),
+        ("       - Opt. ASDF (06 09 07 09)\n         - Sprite Symbiosis (+4 Teamwork)\n         - RES 07 (0313)\n       - Cyberkit\n         - Toolbox : +1 DP\n         - Home dev: +1 DP\n         - FW = AI's FW (9)",
+         "       - Opt. ASDF (06 09 07 09) \n\t     - Sprite Symbiosis (+4 Teamwork)\n         - RES 07 (0313)\n\t   - Cyberkit\n\t     - Toolbox : +1 DP\n\t\t - Home dev: +1 DP\n\t\t - FW = AI's FW (9)"),
          
-        ("\t\t - FW = AI's FW (8)\n[ SOCIAL_NETWORK_CONTACTS ]", "\t\t - FW = AI's FW (8)\n\n[ SOCIAL_NETWORK_CONTACTS ]")
+        ("\t\t - FW = AI's FW (9)\n[ SOCIAL_NETWORK_CONTACTS ]", "\t\t - FW = AI's FW (9)\n\n[ SOCIAL_NETWORK_CONTACTS ]")
     ]
     
     for old_str, new_str in replacements:

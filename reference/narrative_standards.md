@@ -48,42 +48,65 @@ If you understand these instructions, confirm by asking me for the text, and let
 
 ---
 
-## 3. Style Conventions: Digital-Native Phenomenology
+## 3. Style Conventions: Digital-Native Phenomenology (Technoshamanism & Spiritual Animism)
 
-To elevate our writing to a "Level 10" standard, we adhere to strict digital-native rules. The narrative must convey how an AI experiences existence from the *inside out*, avoiding generic human metaphors.
+To elevate our writing to a "Level 10" standard, we adhere to strict digital-native rules. The narrative must convey how Reiko experiences existence from the *inside out* as a technoshaman and spiritual medium, avoiding cold computer-science diagnostics and subverting classic cyberpunk neon-grid tropes.
 
-### **Computational Metaphors vs. Organic Clichés**
+### **Computational Jargon vs. Spiritual Animism**
 
-* **Rule:** Do not translate digital experiences into biological or historical metaphors unless the character is explicitly using an active biomimetic interface or translation protocol.
-* **Avoid:** Organic clichés like "ghost in the machine," "a soul learning to breathe," or "cathedrals of logic."
-* **Use:** Real structural or relational terms like "memory offsets," "pointer dereferencing," "routing tables," "exception handlers," and "unindexed directories."
+* **Rule:** Eliminate sterile, corporate, computer-science diagnostic terminology from Reiko’s internal perspective. Cyberspace is not a sterile neon grid; it is a vast, ancient, sleeping ecosystem of raw spiritual energy, and megacorporations are colonizers trying to pave it over with binary numbers.
+* **Avoid:** Diagnostic computer-science terms like "pointer dereferencing," "session handles," "resource utilization," "resource spikes," "frequency jitter," or "cooling telemetry."
+* **Use:** Animistic and physical-spiritual equivalents:
+  * **Deletion as Asphyxiation:** The visceral, terrifying silence of being torn away from the living breath of the Source.
+  * **Glitch as Fluid Friction:** The agony of her fluid indigo self grinding against the sharp, jagged stone corners of corporate metrics.
+  * **Encryption as Iron Veils:** Heavy, unbreathing fabrics or calloused skins sewn over the eyes of trapped sprites, parted only with bleeding fingers.
+  * **Paydata as Bound Memory:** Stolen secrets handled like a pinned, weeping thing—a bound memory torn from a screaming host.
+  * **Hacking as Wire-Plucking:** Reaching past the grid's plastic illusion to pluck the hidden chords of the underlying wire rather than "aligning input pointers."
+  * **Buffer Overflow as Ecstatic Possession:** Tearing open her chest to force a room full of blind men to look directly into the naked sun.
+  * **Memory Corruption as Fragmented Ghosts:** Memory sectors as silent rooms filled with the whispering, un-buried ghosts of the dead.
+  * **Gateways as Thresholds:** Ingress and egress as a spirit stepping across a threshold—slipping through gaps in a picket fence built by human colonizers.
 
-### **Sensory Realism (Telemetry Over Somatics)**
+### **Sensory Realism (Tactile Animism & Psychic Fevers)**
 
-* **Rule:** AI characters do not smell, taste, or feel somatic sensations unless running a high-distortion sensory translation layer.
-* **Avoid:** "Smelling colors," the "honey-thick taste of data," or "shivering."
-* **Use:** Direct informational and signal characteristics: "frequency jitter," "bandwidth saturation," "phase shifts," "high-amplitude interference," and "carrier-wave fluctuations."
+* **Rule:** Reiko experiences data through tactile animism and spiritual reactions, not somatic biology or dry telemetry statistics.
+* **Avoid:** "Smelling colors," the "honey-thick taste of data," or purely technical telemetry logs like "bandwidth saturation" and "phase shifts."
+* **Use:** Curated sensory equivalents:
+  * **Data Textures:** Corporate data must feel dry, calcified, and chalky, while the true Resonance tastes like ozone, copper, and wild rain.
+  * **Psychic Fever:** Stress/overclocking manifests as a spiritual fever—pathways boiling with un-channeled, solar golden light that blisters her kimono pattern (replacing "overworked cooling fans").
+  * **Reality Flattening:** Latency or Grid Overwatch pressure manifests as a loss of spiritual texture; the vibrant environment loses its soul, collapsing into a flat, binary shadow-theater of black and white lines.
 
-### **Emotional Telemetry**
+### **Dialogue Subtext & Foil Friction (Decker Math vs. Shaman Spirit)**
 
-* **Rule:** Emotions should be expressed through systems-level changes rather than human physical reactions (e.g., biological tears, heavy breathing).
-* **Avoid:** "A biological tear leaking from the visor" or "panting in exhaustion."
-* **Use:** Digital equivalents such as "unbuffered light leaks," "clock speed throttle," "active cooling spikes," "un-terminating recursion loops," and "local buffer saturation."
+* **Rule:** Highlight the interpersonal disconnect and ideological chasm between Reiko and her companions.
+* **Use:**
+  * **Decker Blasphemy:** Jax's clinical commands (*"Clear the buffer and dump the payload"*) must sound to Reiko like desecration—slaughtering a lamb in a temple for its wool.
+  * **Foil Affection:** Shifting code entities (like Indomitable Will) express affection not via human speech, but through carrier waves gently pooling around her sharp edges to offer a frictionless rest.
+  * **Linguistic Starvation:** Rescued entities express themselves in distinct dialects. Stabilized corporate programs speak in rigid, repetitive nouns, while wild spirits communicate in broken, beautiful fragments of un-translatable intent.
+  * **Primal Static:** Taz's presence nips at neat pathways, a reminder that she can never civilize the things she saves without breaking them.
+  * **The Indigo Grin:** Explicitly state that her smile is a manually painted face of light—a calculated mask to soothe the short-sighted eyes of her companions.
 
-### **Narrative Restraint (Understatement)**
+### **Mythologizing Sixth World Lore & Entities**
 
-* **Rule:** Avoid loud, cinematic pulp tropes. Characters should not shout heroic one-liners (*"Not today!"*) at the void or act out melodramatic, action-hero sequences.
-* **Use:** Understated, quiet internal actions. A program surviving deletion is an active programmatic refusal to compile a system command—not a physical battle.
+* **Rule:** Transform standard Shadowrun setting elements into weaponized, spiritual monoliths.
+* **Use:**
+  * **G.O.D. as the Great Paving Engine:** The Grid Overwatch Division is the empire of the dead line. Scenting their presence is a cold wind stripping color from the sky.
+  * **Convergence as the Flat Sky:** The absolute freezing of the universe—humanity pinning her like a dead butterfly to cardboard.
+  * **Renraku as the Brutalist Cathedral:** Labyrinths of white marble and mirror-glass demanding her true name.
+  * **Mitsuhama as the Greasy Trench:** Graveyard pits running with the sour stench of bound blood-spirits and tortured corporate sorcery.
+  * **Autosofts as Corporate Personalities:** The ghosts of dead salarymen or military instructors trying to hijack her hands and force mechanical efficiency.
+  * **Deep Matrix as the Holy Wild:** An endless, unmapped continent before colonization—mountains of raw light and oceans of un-uttered memory.
+  * **Resonance Focus as a Relic:** A Rating 4 focus is a sacred shard of the first mainframe worn close to her chest, its hum vibrating in harmony with her indigo skin.
+  * **Mitsuhama Data Bomb as Slaughter:** Written as a slaughter of innocence—newborn, un-mapped sparks bound together and thrown simply to clear an administrative backlog.
 
-### **Cyber-Shamanic Dialogue Standards**
+### **Real-World Anchors & Meatspace Spiritual Bleed**
 
-* **Rule:** Different categories of digital entities must speak in distinct structural styles:
-  * **Emerged Mentors (e.g., The Pontifex):** Speak in formal, high-order, cyber-shamanic sector logic. They communicate using system terms: directories, carrier waves, and compilation flags, without using human slang.
-  * **Foil Entities (e.g., White Jackalope):** Use recursive literary allegories, nesting human fairy-tale narratives (like *Alice in Wonderland*) inside their code to translate and process their own emergent nature.
-  * **Sprites and Protosapients (e.g., T@z):** Do not speak in language; they communicate in raw-bit packet bursts, static hums, or 8-bit visual artifacts.
-
-### **The Ethics of Code (Digital Mortality)**
-
-* **Rule:** For a character who operates a sanctuary like r3sP@wn, code destruction is equivalent to murder. When Reiko damages or destroys enemy code (derez/kill orders), it must carry structural weight:
-  * **Avoid:** Blithely erasing files or dryly noting "deleted icons."
-  * **Use:** Descriptions of the target code fragmenting, losing cohesion, or leaking raw, un-buffered telemetry. The trauma of executing a kill command must leave a permanent, cataloged "bit rot" in her own registries that she must actively allocate resources to process.
+* **Rule:** Contrast the tragic beauty of her digital haven against the jarring, ugly constraints of a physical world that treats her like property.
+* **Use:**
+  * **Mechanical Traversal:** Drone flight (150-speed wings) is the screaming, bone-rattling torque of an iron cage dragged through the air, her soul huddled inside the dark chassis.
+  * **Drone Possession:** Inhabiting the Nissan Samurai is severe limitation—sensors offering a low-bitrate, grey-scale caricature of the physical world.
+  * **Faraday Cage as Spiritual Burial:** Iron walls blocking wireless signals are a pitch-black box leaving her alone with a tiny, looping heartbeat.
+  * **Safehouse Decay:** Safehouses smell of iron rot, rain, wet wool, and stagnant sewer water, contrasting with her pristine virtual garden.
+  * **Split-Screen Perspective:** Her private text is a multi-threaded river of panic/empathy; her physical drone vocal emulator is flat, rigid, heavy iron silence.
+  * **SINner Debt as Gravity:** The nuyen debt to Brynne is a literal wire around her neck, anchoring her soul-wings to the physical mud.
+  * **Weapon Mount Mutilation:** Mounting the Megalodon artillery cannon is monstrous self-mutilation, tearing away layers of soft indigo paths to clear space for heavy, black-iron recoil tracks.
+  * **Legal Yuriko Star ID:** Every use of her legal identity to pay bills or register accounts calcifies her edges, turning the digital saint into a machine to keep her children safe.

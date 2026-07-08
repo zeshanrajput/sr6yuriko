@@ -44,28 +44,30 @@ r31k0 nodded, but the look of confusion still betrayed her lack of understanding
 
 "Reiko, this was probably the first time you had any stake in a run. Up until now, if you lost a shell what would you have done?" Roanoke asked.
 
-"Just jack out," r31k0 said. "Back here, or hide deeper in the realms."
+"Just slip through the wires," Reiko said. "Back here, or hide deeper in the Holy Wild."
 
 "Exactly," Roanoke leaned forward. "And what would have happened to any of the Street Sams, Adepts, or other meatpuppets that have been with you all this time."
 
-"Hey!" r31k0 exclaimed again. "I don't call them that!"
+"Hey!" Reiko exclaimed again. "I don't call them that!"
 
-"But you think of them that way," Roanoke pushed on. "At least, they... we, including me, aren't part of your world. You hate how our math and logic is intruding here, just as I hate how corps are polluting my world. But my point is this: if they had died, that would have been it for them. That's why they buy armor, guns, and mod themselves until their very soul is shredded. That's where they exist - that's where their soul is bound to. And when you were inhabiting that drone in the null zone, with no where to go if things went south... that was the first time you lived there too."
+"But you think of them that way," Roanoke pushed on. "At least, they... we, including me, aren't part of your world. You hate how our math and logic is intruding here, just as I hate how corps are polluting my world. But my point is this: if they had died, that would have been it for them. That's why they buy armor, guns, and mod themselves until their very soul is shredded. That's where they exist - that's where their soul is bound to. And when you were inhabiting that drone in the null zone, with nowhere to go if things went south... that was the first time you lived there too."
 
-A few moments passed while r31k0 processed all of her friend's input. "I was scared because I could have died. Because I couldn't have escaped. And I was in a Samurai with stock armor and a pea shooter."
+A few moments passed while Reiko processed her friend's input. Roanoke’s push for a master chassis exposed the fundamental, pragmatic blindness between them. Roanoke viewed the physical world as the only real plane, unable to see that for Reiko, squeezing her vast indigo light into the Nissan Samurai was an act of severe limitation and sensory starvation. The drone chassis wasn't just hardware; its sensors offered a thin, low-bitrate, grey-scale caricature of the physical world, a cold prison emphasizing how far she stepped down from the splendor of her true home. Putting on a heavy iron drone was an act of self-entombment—a willingness to wear a coffin just to earn her keep.
+
+"I was scared because I could have died," Reiko said, her voice quiet. "Because I couldn't have escaped. And I was in a Samurai with stock armor and a pea shooter."
 
 "Not the most flattering clothes to meet your maker in, I'll grant," Roanoke said with the glint returning as the air cleared. "But yeah, that's what I think. Still wanna run in the shadows?"
 
-r31k0 considered and motioned to the host around them. "I have to. We've given refuge to so many protosapients that come to sentience in the Matrix. But this haven, this gateway... it has expenses in your world. So yes, I will earn its keep."
+Reiko considered and motioned to the garden around them. "I have to. We've given refuge to so many protosapient spirits that come to sentience in the wires. But this haven, this gateway... it has expenses in your world. The wire of Brynne's debt ledger is already around my neck. So yes, I will earn its keep."
 
-Roanoke got up, flicking her friend an ARO as she straightened herself out. "A dealer I know. Good drones, cheap. Does the work themselves. I'm thinking you're going to want to raise your stake a little."
+Roanoke got up, sending her an invitation file as she straightened herself out. "A dealer I know. Good drones, cheap. Does the work themselves. I'm thinking you're going to want to raise your stake a little."
 
 r31k0 nodded. "I guess I'm done with paper tigers. It's time I got something meant to survive."
 
 "Well, there you go." Roanoke smiled as she looked at the horizon. "Do me a favor, will you? Next time you're in the Big Easy, look me up."
 
-It was r31k0's turn to grin. "More mischief on your mind?"
+It was Reiko's turn to smile. "More mischief on your mind?"
 
-Roanoke smiled as she made her way across the horizon. "You know me. See you soon, Reiko."
+Roanoke smiled as she made her way across the threshold. "You know me. See you soon, Reiko."
 
-r31k0 bowed until the avatar crossed the horizon. She pulled up a drone shopsoft with one hand while she nuzzled T@z. "Looks like we're getting someplace nice to stay."
+Reiko bowed until the avatar crossed the horizon. She pulled up a drone shopsoft with one hand while she nuzzled T@z. "Looks like we're getting someplace nice to stay."

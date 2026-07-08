@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<sr6char career="true" gender="DIVERSE" karmaF="27" karmaI="78" meta="pilot-ai" nuyen="42190">
+<sr6char career="true" gender="DIVERSE" karmaI="113" meta="pilot-ai" nuyen="43190">
    <lifestyles>
       <lifestyle comfort="low" entert="low" lang="en" necess="low" neigh="low" ref="low" security="low" space="low" value="1"/>
    </lifestyles>
@@ -166,6 +166,12 @@ CMP 2083-14: +1FP -- L1</description>
          <description>NB Human
 CMP 2083-01: NONPLUSHED: +1 FP -- L1</description>
       </contact>
+      <contact id="dc6e2c88-7056-450b-a075-b4a32c206207" loy="1" name="Eddie Wei" rat="4" type="CORPORATE" typename="Triad/Johnson">
+         <description>SRM 2081-08 Child's Play: +1 FP -- L1</description>
+      </contact>
+      <contact id="4542297c-d98c-486a-b46b-4b4ea6036685" loy="1" name="Julian Müntefering" rat="1" typename="Renraku Corpokid">
+         <description>SRM 2081-08 Child's Play: +1 FP -- L1</description>
+      </contact>
    </contacts>
    <name>Yuriko Star v9</name>
    <datasets mode="ALL"/>
@@ -190,7 +196,7 @@ CMP 2083-01: NONPLUSHED: +1 FP -- L1</description>
       <attributes id="CHARISMA" start="4" value="4"/>
       <attributes id="EDGE" start="5" value="5"/>
       <attributes id="MAGIC" value="0"/>
-      <attributes id="RESONANCE" start="6" value="6"/>
+      <attributes id="RESONANCE" start="6" value="7"/>
       <attributes id="POWER_POINTS" value="0"/>
    </attributes>
    <skills>
@@ -276,11 +282,18 @@ CMP 2083-01: NONPLUSHED: +1 FP -- L1</description>
             </item>
          </accessoriesInFact>
       </item>
-      <item lang="en" mode="CARRIED" ref="monofilament_whip" uuid="f22457ad-1d7d-4332-91a5-f6033f3fc9c5"/>
+      <item lang="en" mode="CARRIED" ref="monofilament_whip" uuid="f22457ad-1d7d-4332-91a5-f6033f3fc9c5">
+         <enhancements>
+            <enhancement lang="en" ref="personalized_grip_melee"/>
+         </enhancements>
+      </item>
       <item lang="en" mode="CARRIED" ref="ares_predator_vi" uuid="cf818944-2089-43aa-bfa9-2cb80f9e2510">
          <accessories>
             <item lang="en" mode="EMBEDDED" ref="silencer" slot="BARREL" uuid="5127c297-0b3e-424d-9f24-ec8a10d4bd91"/>
          </accessories>
+         <enhancements>
+            <enhancement lang="en" ref="personalized_grip_ranged"/>
+         </enhancements>
       </item>
       <item count="5" lang="en" mode="CARRIED" ref="ammo_heavy_smg" uuid="d3aadd59-b155-48a0-8b3e-a3154a57d1ff">
          <decision choice="b015341d-24dc-42bb-a46b-781a5340e0b3" value="explosive"/>
@@ -347,13 +360,14 @@ CMP 2083-01: NONPLUSHED: +1 FP -- L1</description>
       <item lang="en" mode="CARRIED" ref="securetech_invisishield" uuid="26c35c3f-8533-46ea-9d17-e0b6eca54d1c"/>
       <item lang="en" mode="CARRIED" ref="shiawase_arms_tactical_model_73" uuid="c106b839-6fc4-4e40-a12a-e0bc757d9016">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="gas-vent_system" slot="BARREL" uuid="3dc7227f-7292-40b3-9e7c-afa874a6abeb"/>
             <item lang="en" mode="EMBEDDED" ref="shock_pad" slot="STOCK" uuid="5561cb18-b91e-4959-a3c3-967521763f98"/>
             <item lang="en" mode="EMBEDDED" ref="under_grenade_launcher" slot="UNDER_WEAPON_MOUNT" uuid="33570f85-56d7-4dcc-a16e-7fff67e67655"/>
          </accessories>
          <enhancements>
             <enhancement lang="en" ref="smartgun_system_mod"/>
             <enhancement lang="en" ref="underbarrel_weapon_mount_attach"/>
+            <enhancement lang="en" ref="gas-vent_improved"/>
+            <enhancement lang="en" ref="personalized_grip_ranged"/>
          </enhancements>
       </item>
       <item count="5" lang="en" mode="CARRIED" ref="ammo_rifles" uuid="7aecb3a1-bbbd-4e28-b994-306276c0602b">
@@ -363,6 +377,9 @@ CMP 2083-01: NONPLUSHED: +1 FP -- L1</description>
          <decision choice="b015341d-24dc-42bb-a46b-781a5340e0b3" value="explosive"/>
       </item>
       <item lang="en" mode="CARRIED" ref="shock_gloves" uuid="aff32e21-314b-43ab-8c20-2c2361a9e3f7">
+         <enhancements>
+            <enhancement lang="en" ref="personalized_grip_melee"/>
+         </enhancements>
          <customName>Krime Gloves (Stun)</customName>
       </item>
       <item lang="en" mode="CARRIED" ref="knucks" uuid="8c7102cc-68d5-4d45-b7c1-1786945be646">
@@ -677,6 +694,8 @@ CMP 2083-01: NONPLUSHED: +1 FP -- L1</description>
       <valmod date="2026-06-26T21:35:43.486-04:00" id="1afcb50e-e010-45bf-9489-cd11e3a8de51" ref="ammo_rifles" set="AUGMENTED" type="CARRIED" value="40"/>
       <valmod date="2026-06-30T19:46:48.236-04:00" id="aff32e21-314b-43ab-8c20-2c2361a9e3f7" ref="shock_gloves" set="AUGMENTED" type="CARRIED" value="790"/>
       <valmod date="2026-06-30T19:47:07.712-04:00" id="8c7102cc-68d5-4d45-b7c1-1786945be646" ref="knucks" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-08T13:45:30.097-04:00" expCost="35" ref="RESONANCE" set="AUGMENTED" type="ATTRIBUTE" value="7"/>
+      <valmod date="2026-07-08T15:24:53.524-04:00" id="3dc7227f-7292-40b3-9e7c-afa874a6abeb" ref="gas-vent_system" set="AUGMENTED" type="CARRIED" value="500"/>
    </history>
    <rewards>
       <reward date="2026-04-20T00:00:00.000-04:00" exp="13">
@@ -879,6 +898,16 @@ CMP 2083-01: NONPLUSHED: +1 FP -- L1</description>
       </reward>
       <reward date="2026-06-30T00:00:00.000-04:00" exp="1" money="-2500">
          <title>CMP 2083-01: Working for the People, Bribes</title>
+      </reward>
+      <reward date="2026-07-07T00:00:00.000-04:00" exp="6" money="6500">
+         <title>SRM 2081-08 Child's Play</title>
+         <gamemaster>JaGator</gamemaster>
+         <modifications>
+            <valmod ref="REPUTATION" set="AUGMENTED" type="ATTRIBUTE" value="1" when="ALLCREATE"/>
+         </modifications>
+      </reward>
+      <reward date="2026-07-07T00:00:00.000-04:00" exp="1" money="-5000">
+         <title>SRM 2081-08: Bribes, Rent, Working for the People</title>
       </reward>
    </rewards>
 </sr6char>

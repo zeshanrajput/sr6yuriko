@@ -274,9 +274,9 @@ This log contains spoilers! Please do not read if you haven't played the session
   * +3 FP Swango (C3 Musician) (includes +1 FP unique to Yuriko Star)
   * +1 FP Toil (C4 Fixer)
   * +1 FP Trubble (C1 Bodyguard)
-* **Downtime Actions (2 Minor):**
+* **Downtime Actions (1 Major, 1 Minor):**
   * *Working for the People:* +1 Karma, -2,000 Nuyen
-  * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
+  * Buying Favors (Brynne Taggart)
 * **Other bonuses:** 2 sprites registered during in-session downtime
 
 ---
@@ -297,3 +297,22 @@ This log contains spoilers! Please do not read if you haven't played the session
   * Working for the People: +1 karma, -2000 nuyen
   * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
 * **Other bonuses:** 1 sprite registered during in-session downtime
+
+---
+
+### **2026-July-07: SRM 2081-08 Child's Play**
+
+* **Summary:**: Hired by a CorpoKid to bodyguard him while he developed and sold a new neural interface for drones. A corp tried to steal it, but they failed. 
+* **Team:**: Rei, Jolthead, Yuriko, Poe, Jack Diamond, Panda
+* **GM:** JaGator
+* **Rewards:** 6 Karma, 6500 nuyen
+* **Reputation:** +1 SEA
+* **Heat:** 0
+* **Contacts:** 
+  * +1 FP Eddie Wei (Triad/Johnson, Connection 4)
+  * +1 FP Julian Müntefering (Renraku Corpkid, Connection 1)
+* **Downtime Actions (3 Minors):**
+  * *Working for the People:* +1 Karma, -2,000 Nuyen
+  * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
+  * Modifying Man-At-Arms: Removing megalodon, adding Shiawase Arms Tactical Model 73
+* **Other bonuses:** 3 sprites registered during in-session downtime
