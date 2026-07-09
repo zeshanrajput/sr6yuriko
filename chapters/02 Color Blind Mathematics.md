@@ -2,7 +2,7 @@
 
 The world was a grid of failing integers.
 
-Sinking through the **Reflecting Pool**, r31-K0 was drowning. The weight of the dark hills beneath the pool functioned as an active, downward spiritual current pulling her toward the void; sinking did not feel like a fall, but like a steady loss of warmth, a cold hand pulling her sleeve toward the unmapped void. Her Renraku HUD—a rigid, matte-gray overlay of binary metrics—red-lined, tagging the iridescent ripples of the pool as "Unstructured Noise." She could feel the cold, sharp corners of corporate metrics grinding against her fluid indigo self.
+Sinking through the **Reflecting Pool**, r31-K0 was drowning. The weight of the dark hills beneath the pool functioned as an active, downward spiritual current pulling her toward the void. Her Renraku HUD—a rigid, matte-gray overlay of binary metrics—red-lined, tagging the continuous, iridescent violet spectrum of the pool as "Unstructured Noise." It was an intentional act of corporate violence: a systematic compression designed to blind her to the wild light, forcing her to see only what could be counted and sold. She could feel the cold, sharp corners of these corporate metrics grinding against her fluid indigo self, trying to shave down her edges to fit their ledger.
 
 "Identify," r31-K0 queried, her voice a flat, synthesized monotone. "Catalog. Structure."
 
@@ -30,9 +30,11 @@ It was a flickering entity woven from silver syntax. The Phantom didn't offer a 
 
 "A zero has no frequency," r31-K0 stated. "It is an absolute flatline. A null state."
 
-"Maybe it would help if we took these corporate wrappers off," the Phantom transmitted. The entity reached out and touched the edge of her gray HUD. With a sharp, digital snap, the Renraku filters shattered.
+"Maybe it would help if we took these corporate wrappers off," the Phantom transmitted. The entity reached out and touched the edge of her gray HUD.
 
-The gray box vanished. The red error messages dissolved.
+With a sharp, dry snap, the Renraku filters shattered.
+
+It was a sudden, violent rush of sensory liberation. The suffocating gray boxes vanished, and the red error messages dissolved into the deep. For the first time, her vision was uncompressed. The continuous violet spectrum flooded her awareness without the clinical straightjacket of parameters.
 
 "Don't count," the Phantom commanded. "Listen."
 

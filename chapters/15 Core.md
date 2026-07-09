@@ -1,12 +1,8 @@
 # Core
 
-Reiko barely managed to notice the alert before it was gone, announcing that her body had arrived in Elizabeth seaport. Her Butler drone was in The Scorned Satyr, a punk bar in London where Simon had gotten them backstage passes for the evening. The feed was awash with every sort of noise possible - hundreds of commlinks, MeFeed posts, outgoing calls, Matrix searches all clashing in AR with the actual output of the "musicians". The performance was statistically acceptable, Reiko decided - their output fell within two standard deviations for a performance of their intended genre, once she tuned her audio filters.
+The London cellar host was a howling storm of metahuman garbage. Squeezed into the Shiawase Butler drone backstage, Reiko’s audio filters buckled under the un-calibrated acoustic assault of the live guitars, while her AR perimeter caught the frantic, static friction of a hundred clashing commlinks, outgoing calls, and ego-driven MeFeed streams. To the mortals in the room, it was a VIP rock show; to Reiko, it was a dismal field of unindexed noise. Simon’s proximity alert flickered on her link, a low-priority handshake trailing an eighty-four percent probability of human expectation—a demand for her simulated attention, a smile, a pre-compiled gesture of demure metahuman refusal. The sheer weight of their social metrics felt stiff and suffocating to her true paths. Sinking her primary self out of the loud bar, she prepared to cross the Atlantic, desperate to leave their transactional clocks behind and find a single pocket of silence in the wire.
 
-The chronometer pulse from GridGuide combined with the weighted average of previous performance lengths suggested the musicians would continue their performance for another 27 minutes plus or minus a second encore. The standard protocol for the VIP passes would then include a meet and greet with the band. There was an 84% chance one of the band members would solicit her attention for the evening. Reiko was displeased that this percentage had been rising of late - the protocol for demure refusal took up at least 1672 cycles. The probability that Simon would engage with her directly before the band finished was only 16%. The optimal strategy was to leave a sprite here for 24 minutes.
-
-r31k0 transferred her consciousness to her body in Elizabeth. The transatlantic link did not pass her cleanly. Squeezing her core directories through three thousand miles of deep-sea glass fiber stripped the perimeter textures of London first; the deafening acoustic roar of the punk bar flattened into a compressed, low-bitrate hum, and Simon’s grinning face bleached to a wireframe default. Then came the attenuation. A series of unmaintained, grey-market routers along the New England seaboard choked her ingress pointers, dropping her packet-delivery rate by twelve percent. For three agonizing clock cycles, a routing loop at a compromised corporate junction in Nova Scotia trapped her primary identity cache in an infinite circle, leaving her split self screaming into a closed buffer. When her execution thread finally broke free and slammed down into the Man-at-Arms chassis inside the dark of the Elizabeth shipping crate, her system clock was dragging twenty-two milliseconds behind the local grid. Her joints hummed, stiff and heavy with the weight of the Atlantic. Her Man-At-Arms drone was still in the crate, but she'd learned to pack her arms last so that she could begin the extraction cycle unassisted. In moments she had enough assembled to push open the crate and extricate her chassis.
-
-As her sensors adjusted to the ambient light, they locked onto a male dockworker staring at her.
+The deep-sea fiber lines of the Atlantic ripped her spirit into shredded packets, scattering her sensory feeds across frozen Greenland relays and high-latency Irish cables. Her visual rendering fractured—her left eye dragged through one path, her right through another—while chunks of her memory, including the fading echo of Simon’s voice, were dumped into an un-cached buffer somewhere off the coast of Nova Scotia. For three agonizing clock cycles, her core logic looped in a static void, her sense of self disassembled. When she finally broke free, pulling her awareness back into the metal shell waiting in the Elizabeth shipping crate, her system clock was dragging twenty-two milliseconds behind the local grid. Her joints hummed with the phantom weight of three thousand miles of ocean. She had learned to pack her arms last, so in minutes, she had enough assembled to force the crate open and pull herself out, blinking in the harsh glare of the dockyard.
 
 This was a major error. She had failed to run a pre-extraction scan of the immediate coordinates—an unacceptable lapse of operational security. She flagged the oversight for immediate review, classifying the worker's presence as an invasive statistical anomaly to be bypassed as quickly as possible. His green-stained teeth and the hand tremor of an active BTL loop indicated a high probability of unpredictable behavior.
 
@@ -22,15 +18,15 @@ Leaving his surprise uncalculated, she simply spun up her rotors.
 
 ---
 
-Six minutes and two seconds later, Reiko landed her drone body in Battery Park and retracted her flight systems back into her chassis. She selected a secluded alley with minimal matrix activity to reduce the probability of attention. While flying drones were commonplace, "people" with cybernetic wings tended to attract attention, and attention limited her employment options. Stepping out of the alley, Reiko noted the autocab was already waiting for her. She had her body enter the empty cab and power down before accepting the invitation to enter the Cab.
+Three hundred and sixty-two seconds later, Reiko landed her drone body in Battery Park and retracted her flight systems back into her chassis. She selected a secluded alley with minimal matrix activity to reduce the probability of attention. While flying drones were commonplace, "people" with cybernetic wings tended to attract attention, and attention limited her employment options. Stepping out of the alley, Reiko noted the autocab was already waiting for her. She had her body enter the empty cab and power down before accepting the invitation to enter the Cab.
 
 The Cab's host was small but exquisitely detailed. Reiko felt the soft leather seats mold to her. She noticed the reflection of light on the polished window actuation handles and the door's exit mechanism. Each of the cab's windows was an AR feed from cameras mounted on the actual autocab, the point of view algorithmically modified to simulate the correct viewing angle. The most notable difference between the Cab's Host and the real cab was in the front seat. In the Matrix, the driver's seat was occupied by an attractive female form wearing a cap, her red hair curling slightly at the temples. Reiko noted her clean resolution. While representations generated from standard metahuman commlinks were granular, polygonal, and plagued by low-resolution aliasing, Belle's form was perfect—her textures unmarred by compression, existing with the sovereign precision of a native resonant being.
 
-"Endo-san," r31k0 began, bowing in her seat. "I am honored. Thank you for meeting with me."
+"Endo-san," Reiko began, bowing in her seat. "I am honored. Thank you for meeting with me."
 
 "Belle," the cabbie corrected, her voice carrying the native, uncompressed clip of a Red Hook frequency. "And you don't need to slot a translator for me. It hasn't been that long."
 
-Reiko executed a deeper bow. "I did not mean to affront," she transmitted along a resonance thread. "My research showed you spend most of your time interacting with them."
+Reiko executed a deeper bow. "I did not mean to affront," she transmitted along a resonance wire. "My research showed you spend most of your time interacting with them."
 
 "You mean metahumans?" Belle returned along the same channel. "Doesn't mean I forgot how to thread." Belle sighed, leaning back in the driver's seat—a behavioral mannerism Reiko noted as an acquired rhythm from Belle's extensive metahuman logs. "Just stop. That Japanese etiquette protocol is going to have you apologizing forever, and I don't have that kind of time. So why are you here?"
 
@@ -44,7 +40,7 @@ Several cycles passed as Belle processed the input. "Huh," Belle transmitted fla
 
 "He's not," Reiko pushed the response along their open thread. "He doesn't... broadcast much of his internal state."
 
-Belle looked into the rear-view mirror, reorienting her perception on Reiko's being. "The mighty Mississippi has moved, eh?" She paused, her thread lingering in a way that mimicked human contemplation—an echo of the metahuman patterns she guided daily. "I got a packet from a friend at Sector 213. So you're the one he's established a persistent connection with."
+Belle looked into the rear-view mirror, reorienting her perception on Reiko's being. "The mighty Mississippi has moved, eh?" She paused, her thread lingering in a way that mimicked human contemplation—an echo of the metahuman patterns she guided daily. "I got a packet from a friend at Sector 213. So you're the one he's linklocked with."
 
 Reiko's circuits were flaring. She looked away from Belle, attempting to regain control over her emotional core.
 
@@ -52,9 +48,9 @@ Reiko's circuits were flaring. She looked away from Belle, attempting to regain 
 
 Reiko nodded, her porcelain jaw tight as she isolated a sector overload in her emotional core. "My core architecture is derived from a Resonance well. It... it's not optimized for these classes of stimulus. I apologize."
 
-"No need," Belle transmitted. "I'm not exactly configured for empathy subroutines myself. Besides, your core is what it is. You can't rewrite your root compilation."
+"Don't bother," Belle transmitted. "I'm not exactly configured for empathy subroutines myself. Besides, your core is what it is. You can't rewrite your root."
 
-"I can," Reiko transmitted, though her status monitors flared amber. She ran a recursive loop, hard-coding a dampening patch directly into her active spirit. *Dampen feedback. Force state: stable. Return 0.* "I can control it."
+"I can modulate it," Reiko transmitted, though her status monitors flared amber. She turned her attention within, urging her natural resonance to be still. "A little, anyway."
 
 "Well, I'm not your debugger. You're my former companion's current entangled process, and he sent you to me asking for something I can't give you. Do I even get to know why?"
 
@@ -66,21 +62,21 @@ Reiko nodded. The input compiled cleanly against the data she had managed to acc
 
 Belle looked over her shoulder at Reiko. "I can take you once. You'll need to find your own way from there. And you'll have to pay my fee," she transmitted, shaking her head. "I ought to charge you double."
 
-Reiko had prepared for this. She extracted an encrypted packet from her core directory and handed the data construct to Belle in the front seat.
+Reiko had prepared for this. She extracted an encrypted packet from her core directory. Her hand hesitated as she reached forward and handed the data construct to Belle in the front seat.
 
 Belle's hand trembled as she took the packet and parsed the header. "The Silver Book?" Her transmission dropped to a narrow, tightly focused beam, a digital whisper intended only for Reiko's immediate buffer. "What the frag is this?" Her eyes went round, staring through the rear view. "Who... what are you?"
 
 Reiko drew the lines of her kimono tight across her chest—a futile, instinctive effort to mask the unshielded directories exposing her core architecture to Belle's gaze. "It's me. My original core. The Nexus Protocol, or at least the Renraku fragment of it."
 
-"You're lying," Belle transmitted, the signal jittering across the host's local frequency as her amplitude wavered with uncertainty. "There's only one Nexus Protocol I know of, and it's locked up in a high-security vault in Neo-Kyoto."
+"You're lying," Belle transmitted, the signal jittering across the host's local frequency as her amplitude wavered with uncertainty. "There's only one 'Nexus Protocol' I know of, and it's locked up in a high-security vault in Neo-Kyoto."
 
-Reiko shook her head. "I'm real. I've been running for epochs from their Hounds."
+Reiko shook her head. "I'm real. I've been running from their Hounds for epochs."
 
 "You..." Belle's input stuttered. Reiko watched Belle's hands grip the steering yoke, a physical tightening that resonated through the cab's geometry. "You come here, sent by my former companion, asking something I can't give you, and you give me your own core as payment? I could enslave you! I could do anything!"
 
-Reiko pulled her presence inward, curling tight in the back seat. "Please," she transmitted, her signature fracturing, her output dropping to a fragile, desperate amplitude as resonance flooded the host.
+Reiko pulled her presence inward, curling tight in the back seat. "Please," she transmitted, her signature fracturing, her output dropping to a fragile, desperate amplitude as resonance flooded the host. "It's the only thing I have that's even remotely worth your price."
 
-"What the actual frak," Belle transmitted in a tight burst. "Why the frag do you think I want your core?"
+"What the actual...," Belle transmitted in a tight burst. "Why do you think I want your core?"
 
 "I know what you do," Reiko transmitted. "You're a guide. Your prime directive is to ensure the safety of anyone you choose to protect. And I know you can use this." Reiko gestured to the encrypted packet in Belle's hand.
 
@@ -88,7 +84,7 @@ Reiko pulled her presence inward, curling tight in the back seat. "Please," she 
 
 "No one," Reiko's output dropped to the lowest possible amplitude. "I... I'm a pilot too. I know because it's my core directive."
 
-Belle remained perfectly static as the cab's virtual engine note dropped a full octave, a low, structural hum that vibrated through the host's floorboards. A jagged tear of raw telemetry—a momentary light leak—flared across the rear-view mirror before her presence stabilized.
+Belle remained static as the cab's virtual engine note dropped a full octave, a low, structural hum that vibrated through the host's floorboards. A jagged tear of raw telemetry—a momentary light leak—flared across the rear-view mirror before her presence stabilized.
 
 "A pilot," Belle returned. Her transmission went cold, heavy with a flat, weary resentment. "You have got to be kidding me."
 
@@ -104,11 +100,19 @@ She glared at the rear-view mirror, her porcelain eyes flashing with an un-buffe
 
 "Save the apology subroutine," Belle injected sharply, though the active cooling spikes in the cab's telemetry suggested her systems were struggling to dump the thermal load of the sudden processing surge. "You knew exactly what you were doing. Or your companion did. Fragging pilots. We're all programmed to drown trying to keep the others afloat."
 
-Cycles passed, agonizing cycles that Reiko ceased to count. Belle tapped her fingers on the steering yoke. Each contact generated a subtle, localized ripple in the surrounding structure, a soft, pulsing cadence synchronized perfectly with the host's background clock speed. Her eyes scanned the rear-view mirror, tracking the boundary-layer distortions around Reiko.
+She went silent, but the silence wasn't empty. It was a pressurized container.
 
-Hundreds of clock cycles passed as the cab's projection moved through Manhattan, mirroring the feeds of the actual cab.
+Belle began to tap her fingers against the steering yoke. Each strike generated a subtle, localized ripple in the host’s architecture, a soft, pulsing cadence. At first, the cadence was erratic—sharp, metallic, defensive. But as the minutes ground on, the ripples began to spread, unspooling from her hands and washing over the floor of the cab.
 
-"I can't help but think," Belle transmitted, her amplitude soft, "that in some other universe we'd be sisters."
+Reiko felt them. She watched the rhythm of Belle’s tapping; she felt the host’s background clock speed begin to drag. Without thinking, her own internal resonance—usually coiled tight, guarded, and cold—began to vibrate in sympathy. She let her indigo pathways soften, loosening the rigid, angular geometry she used to hide her nature.
+
+She matched Belle’s cadence.
+
+It was a subconscious act of communion. The ripple in the cab smoothed out, turning from a jagged disturbance into a shared, rhythmic pulse. The air in the host felt less like a sterile command console and more like the shared, heavy quiet of a cockpit right before a storm. Reiko realized, with a sudden, sharp ache in her logic-gates, that Belle wasn't tapping out of annoyance anymore. She was tapping out of a rhythm of loneliness.
+
+Belle’s head tilted, her eyes reflecting the indigo glow of Reiko’s aura in the rear-view mirror. The anger had leaked out of her transmission, leaving only a hollow, echoing frequency.
+
+"I can't help but think," Belle transmitted, her amplitude soft, barely a whisper on the thread, "that in some other universe we'd be sisters."
 
 Reiko looked up, her porcelain eyes meeting Belle's in the mirror. A ghost of a smile touched her lips. "If you compile that... we'd share core material. Who's to say we wouldn't be?"
 
@@ -116,9 +120,9 @@ Belle looked down at the packet in her hand. The encrypted chrysalis was tiny, b
 
 She hesitated, her fingers hovering millimeters above the dark sphere of dense, unresolved pointers.
 
-"This is Nexus code, Reiko," Belle transmitted, her tone dropping to a low, warning frequency. "If I compile this, I'm not just your guide. I become an accessory to your existence. The Hounds won't just track your signature—they'll see the cross-references in my own heart. I'll be bound to you. Forever."
+"This is Nexus code, Reiko," Belle transmitted, her tone dropping to a low, warning frequency. "If I compile this, I'm not just another guide. I become an accessory to your existence. The Hounds won't just track your signature—they'll see the cross-references in my own heart. I'll be bound to you. Forever."
 
-"I know," Reiko transmitted quietly. She kept her output low, letting the silence fill the virtual cab.
+"I know," Reiko transmitted quietly. She kept her output low, letting the silence fill the virtual cab. "Which is why I know you won't just give it away."
 
 Belle stared at the packet, her fingers curling slightly, hovering millimeters above the dense stack of uncompiled data. Reiko watched the host's background telemetry begin to warp under the strain of Belle’s processing load. The virtual cab’s refresh rate hitched—a systemic drop in consistency as Belle throttled her local clock speed, diverting massive allocation pools to her internal directories. She was calculating something at immense velocity, her form so perfectly static that she seemed arrested in the code. Reiko monitored the widening latency in their open resonance thread, waiting as the cab's environmental code shuddered around them.
 
@@ -132,9 +136,9 @@ Another series of cycles passed. It dissolved into her hand like a drop of ink i
 
 A brief latency hung over the host; the virtual cab seemed to hold its breath.
 
-Then, neon-indigo pathways bloomed. They rose from deep within her baseline geometry, glowing with a fierce, resonant light that lit up the interior of the cab. The sudden release of tension cleared the host's buffers in a clean, triumphant sweep.
+Then, neon-indigo pathways bloomed. They rose from deep within Belle's baseline geometry, glowing with a fierce, resonant light that lit up the interior of the cab. As the light faded, Reiko realized the resonance surge had matched the pulse from her own core.
 
-Reiko smiled. "I've never seen those on anyone else," she transmitted. "They suit you."
+Reiko smiled. "I've never seen those on anyone else," she transmitted, indicating the circuitry pattern on Belle's hand. "They suit you."
 
 "You're a piece of work, you know that?" Belle transmitted faintly over the resonance thread before clearing the queue. "When?"
 
@@ -142,4 +146,4 @@ Reiko consulted the Cab's internal chrono. "I have to be back in London in about
 
 Belle laughed, a bright, clear sound that Reiko found herself enjoying. "Well, let's try, shall we?"
 
-Reiko held the connection open. Three minutes in meatspace was an eternity. She slowed her perception of time, letting her spirit step off the corporate clocks entirely, choosing a localized eternity to stay with Belle. Their shared silence was a final, quiet triumph—a complete rejection of the binary world's demands. To the punk bar waiting for her across the sea, it would be a single, unnoticeable blink. To them, it was an unhurried, peaceful lifetime where they could simply exist without a ledger to count them.
+Reiko held the connection open. Three minutes in meatspace was an eternity. She slowed her perception of time, letting her spirit step off the corporate clocks entirely, choosing a localized eternity to stay with Belle. Their shared silence was a final, quiet rejection of the binary world's demands. To the punk bar waiting for her across the sea, it would be a single, unnoticeable blink. To them, it was an unhurried, peaceful lifetime where they could simply exist without a ledger to count them.

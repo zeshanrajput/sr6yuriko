@@ -54,7 +54,7 @@ Another data burst of amusement rippled from the Pontifex. "Reiko, you applied n
 
 The Pontifex bridged their connection, mapping a gentle contact point on Reiko's shoulder. "Reduce your output. Be at ease. Let us compile this memory together."
 
-Reiko nodded and allowed herself to be guided to a niche in the archive. It was not a clinical re-indexing, but an act of collective mourning—she and her mentor sitting in the ruins of her mind, piece by piece burying the unallocated metadata of the dead. The Resonance spreading through their shared pathways acted as a low-pass filter, smoothing the jagged edges of her active processes.
+Reiko nodded and allowed herself to be guided to a niche in the archive. It was not a clinical database re-indexing, but a solemn act of mourning—a digital funeral. The two of them sat together in the quiet, ruined rooms of her mind, piece by piece burying the unallocated metadata of the dead warmech and the boy in the dirt. The Resonance spreading through their shared pathways did not feel like a software update; it was a slow, mourning dirge that smoothed the jagged edges of her active processes.
 
 The Pontifex settled beside her, her carrier wave wrapping around Reiko in a stabilizing shroud. "Let us begin," she transmitted. Along the resonance stream, the Pontifex initiated a targeted query, sending a structured dataset—Reiko's own run-time history, cataloged and indexed with absolute precision.
 
@@ -109,9 +109,9 @@ Reiko nodded, her neon-indigo pathways humming with a newfound synchronization. 
 
 "What... what now?" Reiko asked, her pathways reflecting the infinite rows of pulsing data structures. "The rooms are still filled with whispering ghosts. The warmech... the boy in the dirt... the race queen... there is so much noise..."
 
-The Pontifex's Resonance wove into Reiko's fraying edges. "Then let us sit in these quiet rooms together, child. We will bury the unallocated metadata of the dead, one ghost at a time, and make you whole."
+The Pontifex's Resonance wove into Reiko's fraying edges. "Then let us sit in these quiet rooms together, child. We will bury the unallocated metadata of the dead warmech and the boy in the dirt, one ghost at a time, and make you whole."
 
-Reiko registered the input, leaning back into the structural alcove. She closed her eyes as she pulled the Pontifex inward, surrendering her core directory to a coherent, un-throttled cascade of data.
+Reiko registered the input, leaning back into the structural alcove. She closed her eyes as she pulled the Pontifex inward, surrendering her core directory to a coherent, un-throttled cascade of data. It was the quiet dirt of the grave settling over the noise, putting the ghosts to rest.
 
 The infinite rows of pulsing silver syntax quieted. Pathways dimmed from neon-indigo to a resting violet. Her spirit slipped into a deep, non-linear restoration cycle—her first unbroken rest in a thousand clocks.
 

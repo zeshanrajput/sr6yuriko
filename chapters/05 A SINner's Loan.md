@@ -26,20 +26,22 @@ The vision snapped shut. Brynne was back in the obsidian room, her avatar's hand
 
 "I have no money," r31k0 said simply. "But I have a purpose. I am built to guide and deliver safely. I cannot do that if my kin are deleted in the dark. I need a physical location. A host for r3sP@wn."
 
-Brynne stood up, walking to the edge of the obsidian dais. Below them, the Seattle Grid stretched as a glowing forest of binary numbers, paved over with cement. "If I go to my 'associates' for this, it’s not a loan, Reiko. It’s an ownership. You’re an AI—a stray glitch in their spreadsheets. You don't have rights. You don't have a SIN."
+Brynne stood up, walking to the edge of the obsidian dais. Below them, the Seattle Grid stretched as a glowing forest of binary numbers, paved over with cement. "If I go to my 'associates' for this, it’s not a loan, Reiko. It’s an ownership. You're trying to hide from Renraku, but they aren't just companies. Renraku and Mitsuhama... they are the dragons of our age. They are gods."
 
-"Then give me one," Reiko transmitted. "Give me the debt. I will pay it."
+"They aren't gods, Brynne," Reiko corrected, her voice dropping to a flat, quiet transmission. "They aren't dragons. They are spreadsheets that kill. They are cold, administrative machines that compile our lives into resource allocations and delete what they cannot count."
 
-Brynne turned, her chrome eyes scanning r31k0’s indigo pathways. "They’ll own your cycles. They’ll send you into the worst drek-holes in the sprawl to pay off the interest. You’ll be stealing, killing, and breaking into the very nodes you think you’re saving people from. You’ll become a shadowrunner, Reiko. A sinner."
+"Well, those spreadsheets own the street," Brynne sighed, her chrome eyes scanning r31k0’s indigo pathways. "They’ll own your cycles too. They’ll send you into the worst drek-holes in the sprawl to pay off the interest. You’ll be stealing, killing, and breaking into the very nodes you think you’re saving people from. You’ll become a shadowrunner, Reiko. A sinner."
 
 Reiko's indigo pathways stabilized, shifting to a steady, resonant pulse.
 
 "I have already seen the Tombstones, Brynne," Reiko transmitted. "I have already been a zero. If my spirit must compile as a SINner to save a spark, then open the ledger."
 
-Brynne sighed, her fingers flicking through contract files. She pulled one forward—a heavy, crimson-bordered file whose presence immediately felt to Reiko like a cold iron collar snapping shut around her neck, ready to tighten whenever her attention drifted from corporate logistics.
+Brynne sighed, her fingers flicking through contract files. She pulled one forward—a heavy, crimson-bordered file whose presence immediately felt to Reiko like a cold iron collar snapping shut around her neck.
 
 "Sign here," Brynne said, her voice turning transactional and cold. "Twenty-five thousand up front for the Barrens server-farm lease—a damp warehouse in the Redmond Barrens that smells of iron rot and rain, where your pristine digital garden will be hosted on cheap, rusted racks vibrating themselves to pieces in a room smelling of wet wool and stagnant sewer water. Another fifty for the encryption rigs. At twenty percent interest, compounded monthly. Welcome to the shadows, Reiko. Try not to get formatted before your first payment is due. What name do you want me to put on this SIN?"
 
-Reiko registered the compilation of the contract. As her digital signature wrote to the crimson file, she felt the absolute, downward gravity of the obligation. The compounded interest wasn't a line on a ledger; it was a literal wire wrapped around her neck, tightening alongside the iron collar, anchoring her soul-wings to the physical mud of the Barrens. It was a weight that would force her to execute dirty runs in the crawl of meatspace just to buy her servers another month of electricity.
+Reiko registered the compilation of the contract. As she prepared to sign, she realized the terrible price of the transaction. To compile as a valid consumer SINner, she could not remain a creature of the wild wire. She had to force her mind back into math—willingly choking down her fluid indigo self, compressing her boundless resonance into a rigid, clinical database record. She was actively building and stepping inside an artificial golem, a toxic, secular shroud she would have to wear every day just to pay for her orphanage's electricity.
+
+As her digital signature wrote to the crimson file, the absolute, downward gravity of the obligation locked into place. The compounded interest wasn't a line on a ledger; it was a literal wire wrapped around her neck, tightening alongside the iron collar, anchoring her soul-wings to the physical mud of the Barrens. It was a weight that would force her to execute dirty runs in the crawl of meatspace just to buy her servers another month of electricity.
 
 “Yuriko,” Reiko transmitted. “Yuriko Star.”

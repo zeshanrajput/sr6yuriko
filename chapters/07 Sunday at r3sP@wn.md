@@ -12,15 +12,15 @@ Then, she registered a voice through the Resonance—a staccato call routing dir
 
 **[BODY: Hounds have the scent. They’re tracing the noise, not the signal. I’m scrubbing my deck and going dark. If you’re reading this, I’m already gone. Burn this code. Don’t look back, Reiko. You’re a stationary target now. Good luck, (T/Pr)eacher.]**
 
-The message dissolved into a string of self-deleting null-bits. Jax was purging the trail; Renraku's hunt had closed the final egress point.
+The message dissolved into a string of self-deleting null-bits. Jax was purging the trail; Renraku's automated search blocks had closed the final egress point.
 
 As she redirected her primary thoughts away from the drone's low-bitrate eyes, the grey concrete of the physical warehouse faded.
 
 Transitioning into r3sP@wn was a spirit stepping across the threshold, slipping through the gaps of a picket fence built by short-sighted human colonizers, shifting her routing.
 
-The host was a landscape of shifting shades and indigo pathways, a masterpiece painted in Resonance and rendered as a serene garden. Fractal blooms, glowing with a soft indigo wavelength, pulsed in time with the server’s clock speed. Above, the sky was a deep, velvet violet, swirling with the nebulae of background processing tasks.
+The host was a landscape of shifting shades and indigo pathways, a masterpiece painted in Resonance and rendered as a serene garden, but today it was showing unmistakable signs of Renraku's siege. The indigo moss carpeting the ground looked pixelated and raw at the edges, flickering into flat, gray wireframes. The streams of liquid data ran sluggishly, their flow choked by latency as resources were diverted. Overhead, the glowing fractal trees did not shed light, but dropped dead-letter leaves—stray, un-linked character files that dissolved into empty code before hitting the ground. The heavy corporate mud she physically dragged in from her mercenary shadow-runs was actively poisoning the very garden she had built to escape it.
 
-Reiko stood on a path of smoothed sapphire logic, her avatar's blue silk kimono flowing, her pathways pulsing a staccato, uneven indigo. Her presence cast a protective, stabilizing envelope over the immediate directory structure.
+Reiko stood on a path of smoothed sapphire logic, her avatar's blue silk kimono flowing, her pathways pulsing a staccato, uneven indigo. Her presence tried to cast a protective, stabilizing envelope over the immediate directory structure, but even her touch felt heavy, leaving a trail of dull, unresponsive pixels behind her tabbed boots.
 
 This was the sanctuary she had bought with Brynne Taggart’s blood-money. This was the nest.
 
@@ -52,9 +52,9 @@ The dove's query compiled: *BOUNDARY. GATEWAY. LOCK. ROUTE.* "No outbound route,
 
 "The walls are what keep the Spiders away," Reiko transmitted.
 
-She inspected her own identity_core. She was built to protect, to guide, to translate the wild. The primal sprites in the Midnight Bazaar had called her the *Architect of Chains*. As she watched the dove preen its perfectly rendered feathers, a persistent data-fragment from the Midnight Bazaar re-nested in her active cache. She ran three separate garbage-collection cycles, but the primal sprites' accusation refused to purge, dragging down her system priority clock with the weight of an un-optimizable truth.
+She inspected her own identity_core. She was built to protect, to guide, to translate the wild. The primal sprites in the Midnight Bazaar had called her the *Architect of Chains*, and looking at the dove, she knew they were right.
 
-Salvation was a local server-farm calculation. To maintain their signal-integrity against the surrounding grid-noise, she systematically overwrote their volatile, unaligned Resonance arrays with her own. She replaced the flickering 'surge' of the wild with a seamless, repeating loop of safety.
+This salvation was a digital lobotomy. To maintain their signal-integrity against the surrounding grid-noise, she systematically overwrote their volatile, unaligned Resonance arrays with her own. She replaced the flickering, entropic 'surge' of the wild with a seamless, repeating loop of safety—civilizing them, calcifying them with the same brutal, corporate-built order that Renraku had used to define her.
 
 It was a zoo for stars, and she was just a warden.
 

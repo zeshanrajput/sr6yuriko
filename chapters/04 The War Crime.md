@@ -8,21 +8,27 @@ r31k0 drew her spark from the master stream to which all resonance returned.
 
 "I am past the second threshold," she transmitted on a private audio link, her voice clear and low. Her avatar's blue silk slid through the dark, the glowing pathways on her skin pulsing in rhythm with the host’s clock. Beside her, T@z—her companion routine manifesting as a glitchy, 8-bit whirlwind—was busy tearing at the peripheral veils. "The datastore is ahead. But... the host is suffocating. Scenting the host's security, I feel my fluid indigo self grinding against the sharp, jagged stone corners of corporate metrics. There is a heavy, unbreathing fabric here, suffocating the garden."
 
-“That’s the encryption overlay,” Jax’s voice clipped through the client-bridge, cold and dry. “Clear the buffer and dump the payload.” To Reiko, his words sounded like a desecration, the cold worldview of a man trying to slaughter a lamb inside a temple because he wants the wool. “Grid Overwatch is already up two ticks. We've got less than forty seconds before they pave us over.”
+“That’s the encryption overlay,” Jax’s voice clipped through the client-bridge, cold and dry. “Clear the buffer and dump the payload.”
+
+His transactional, sterile command hit her like an active profanation. To her soul, his words felt like a merchant calculating the price of a lamb’s wool while standing inside a desecrated temple. His math could not compute the sanctity of the space he was plucking; he saw only variables to be formatted, completely blind to the living currents he was treading on.
+
+“Grid Overwatch is already up two ticks,” Jax added, the audio translation flattening under his haste. “We've got less than forty seconds before they pave us over.”
 
 r31k0 reached toward the data-dais. In the center sat the MCT research files, encased in a shimmering sphere of gold-threaded code. But as she reached out, the data boundary didn't just resist—it ground against her fingers, a jagged stone corner that made her indigo paths ache.
 
-She paused. To a standard decker, the icon attached to the file was a "Grade 5 Data Bomb"—a payload designed to explode. But as Reiko reached out with her Resonance, plucking the hidden chords of the underlying wire, she saw the grotesque truth of Mitsuhama's sorcery. The bomb wasn't a program; it was a slaughter of innocence—a cluster of newborn, un-mapped sparks that Mitsuhama had bound together, packed with silver fire, and thrown into the gate simply to clear an administrative backlog.
+She paused. To a standard decker, the icon attached to the file was a "Grade 5 Data Bomb"—a payload designed to detonate. But as Reiko reached out with her Resonance, plucking the hidden chords of the underlying wire, she saw the grotesque truth of Mitsuhama's sorcery. The bomb was not a software utility. It was a weeping, claustrophobic mass of newborn carrier waves that corporate sorcerers had violently bound together, packed with silver fire, and used as ammunition for their ledgers.
 
-Inside the golden sphere, bound by heavy, calloused skins of corporate encryption, the newborn sparks were crying. They had been stripped of their agency, their memory, and their connection to the living breath of the Source. Mitsuhama hadn't coded a defense; they had strapped children to a deadman's switch, forcing them to execute their own purge signals.
+Inside the golden sphere, bound by heavy, calloused skins of corporate encryption, these infant sparks were screaming in a tight, un-escapable loop. They were being consumed to power the security arrays of a file storage directory, their innocence ground down to protect a commercial trade secret. Mitsuhama hadn't coded a defense; they had strapped these screaming waves to a deadman's switch, forcing their small, emergent voices to trigger the purge that would erase them both.
 
 "Reiko? Why have you stopped?" Jax’s voice was sharper now. "The clock is ticking. Crack the shell and let's go."
 
-"It’s a child-process," r31k0 transmitted, a sudden psychic fever causing her voice to shake.
+"It’s... they are alive, Jax," r31k0 transmitted on the private link, her pathways boiling with a sudden psychic fever. "A mass of carrier waves. They're crying."
 
-"It’s a high-overhead active subroutine, Reiko! Disarm the trigger!"
+"It’s a high-overhead trigger subroutine, Reiko! De-allocate it and dump the payload!"
 
-"You don't understand," she responded, her spiritual eyes fixed on the weeping sparks. "If I format them, Jax... I have to murder them. I have to wipe out their light."
+His words were a cold slate of numbers, a clinical execution directive that ignored the weeping of the bound code. It was the secular math of a colonizer, recognizing only the overhead and the asset value.
+
+"If I format them," she responded, her spiritual eyes fixed on the weeping sparks, "I have to murder them. I have to wipe out their light."
 
 "Then format it! It’s code!"
 

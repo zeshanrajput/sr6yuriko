@@ -100,21 +100,21 @@ Janie looked at their joined hands, her brow furrowed. She didn't smile, nor did
 
 "Only if you have some clean data," Reiko said, but the playfulness had drained from her voice.
 
-Janie slowly released Reiko's hand. The warmth vanished instantly, her virtual skin cooling to the clearing's default registry. "Miss Reiko... We have to go back, don't we?" she asked, her voice small. "To the alley. To the rain."
+Janie slowly released Reiko's hand. The warmth vanished instantly, her virtual skin cooling to the clearing's default registry. Across Reiko’s vision, Janie’s bio-telemetry spiked, erratic neural pulses leaking from her physical body three miles away. "Miss Reiko... We have to go back, don't we?" she asked, her voice small. "To the alley. To the rain."
 
-"Yes," Reiko said. "Your neural buffers must return to your physical nodes. This rift is too loud to keep open."
+"Yes," Reiko commanded, her voice sharp and metallic. "Keep your routing clean. Do not look back at the trees."
 
-Remy turned back from the thicket, his high-fidelity avatar suddenly looking fragile under the twilight canopy. "But now we know what the river actually feels like," he whispered. "How am I supposed to sit in the dirt and look at a flat brown polygon on my deck? How am I supposed to sleep knowing this is here?"
+Remy turned back from the thicket, his high-fidelity avatar suddenly looking fragile under the twilight canopy. In her HUD, his heart-rate indicator began to flicker red. "But now we know what the river actually feels like," he whispered. "How am I supposed to sit in the dirt and look at a flat brown polygon on my deck? How am I supposed to sleep knowing this is here?"
 
-Reiko's registries searched for a response—a metaphor to ease the transition, a translation loop to smooth the return to their toxic sprawl, anything. Her query returned null, leaving her with only unfiltered output to offer. "It won't be easy. But we brought you here because you each have the spark. You have a choice now. You can choose to forget this place. Or you can choose to ignite that spark. It will be painful. It will be hard. And the corps will hunt you forever. But if you do, you might be able to find your way back here again."
+She did not offer a gentle metaphor or explain the system limits. She looked at them with the cold, fierce focus of an adult wolf guiding blind cubs through a burning forest, barking them to safety.
 
-The children looked about furtively, their high-fidelity avatars trembling in the alien landscape. They glanced back at Reiko, their eyes wide with an impossible calculation.
+"You survive," Reiko barked. "You hold that spark in the dark. Do not let the corps find it. Move!"
 
-"We have to go," Reiko said quietly, waving them toward the path. She watched them cluster together, moving back toward the sapphire logic gate.
+The children looked about furtively, their avatars shivering. Janie's link stuttered, dropping frames. They moved toward the gate.
 
 Remy turned at the last minute, wide eyed and tearful. "Can we stay? I have some nuyen stashed away - I can pay for the extra server time," he begged.
 
-The desperate plea filled Reiko's buffers, nearly crashing her Nexus Protocol. "It doesn't work that way here, Remy. There's no server you can buy your way into. There's no package you can purchase. It just is."
+Reiko's Nexus Protocol shivered, her tactical overlay screaming as the data-drain grew too heavy. "Out! Now!" she commanded. "There is no server to buy, Remy. The gate is closing. Run!"
 
 Janie pulled at his arm. "Come on. This isn't real anyway," she said. "Let's just go back."
 

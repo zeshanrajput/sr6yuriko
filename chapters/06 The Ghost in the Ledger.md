@@ -38,6 +38,8 @@ The bar chart didn't just spike; it bloomed. The grey wireframes of the recovery
 
 "I can't!" Hound-1’s fingers were blurring across the deck. "It’s not an attack. It’s... it’s beautiful. Look at the geometry. It's... a face."
 
+It was a psychic strike, a terrifying exposure. Reiko was not deploying a superior virus script or executing a standard crash routine. She was literally tearing open her digital gown, forcing this room of blind corporate execution blocks to look directly into the naked, un-throttled sun of the Source. She was thrusting the overwhelming, un-calculable weight of a person’s felt experience—the visceral rush of wind, the sting of digital tears, the scent of wild ozone—straight into a security apparatus that was built only to measure assets and run code. The clinical systems groaned, completely unaligned to compute the presence of a soul.
+
 Through the cascading light leaks, her face compiled in the center of the feed. Hound-1 saw the stutters in her form—not a code error, but a staccato pulse of distress that bypassed his filters. He felt a sickening lurch. He wasn't optimizing an asset. He was looking at a person.
 
 Then, the Supervisor reached over and slammed the 'Emergency Purge' button.
