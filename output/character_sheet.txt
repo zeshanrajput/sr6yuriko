@@ -78,18 +78,6 @@ ___________________________________________________________________________
                                        |     > Armor increase 5 [+5]
                                        |     > Weapon mount-Heavy
 
-[ MATRIX_DEVICES ] [#12]               |
-- AI NATIVE PROTOCOLS (VIRTUAL)        |
-  ATK 03 SLZ 05 DPR 03 FWL 05          |
-  Opt ASDF: 06 09 07 09 [#12]          |
-                                       |
-- CYBERKIT (R6) (CYBERDECK)            |
-  ATK 04 SLZ 04 DPR 02 FWL 02          |
-  Opt ASDF: 04 04 04 08                |
-  Def: FWLx2+PA (22)                   |
-  Res: FWL (08)
-  Prgms: PA, P-ICE SPINES       
-
 [ SOFTWARE_LIBRARY ]
   - CLEARSIGHT               (Auto)   [R9]  // Perception autosoft
   - ENGINEERING              (Auto)   [R9]  // Demolitions, Drones
@@ -251,7 +239,6 @@ ___________________________________________________________________________
        - Opt. ASDF (06 09 07 09) 
 	     - Sprite Symbiosis (+4 Teamwork)
          - RES 07 (0313)
-	   - Cyberkit
 	     - Toolbox : +1 DP
 		 - Home dev: +1 DP
 		 - FW = AI's FW (9)

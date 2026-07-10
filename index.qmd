@@ -89,3 +89,4 @@ Active campaign stories written during play:
 * **[Chapter 14: A Point of Favor](chapters/14 A Point of Favor.md)**
 * **[Chapter 15: Core](chapters/15 Core.md)**
 * **[Chapter 16: Faith](chapters/16 Faith.md)**
+* **[Chapter 17: Sheets](chapters/17 Sheets.md)**
