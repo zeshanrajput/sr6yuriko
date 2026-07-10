@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<sr6char career="true" gender="DIVERSE" karmaI="113" meta="pilot-ai" nuyen="43190">
+<sr6char career="true" gender="DIVERSE" karmaF="7" karmaI="113" meta="pilot-ai" nuyen="290">
    <lifestyles>
       <lifestyle comfort="low" entert="low" lang="en" necess="low" neigh="low" ref="low" security="low" space="low" value="1"/>
    </lifestyles>
@@ -172,6 +172,17 @@ CMP 2083-01: NONPLUSHED: +1 FP -- L1</description>
       <contact id="4542297c-d98c-486a-b46b-4b4ea6036685" loy="1" name="Julian Müntefering" rat="1" typename="Renraku Corpokid">
          <description>SRM 2081-08 Child's Play: +1 FP -- L1</description>
       </contact>
+      <contact id="4a71a665-1027-468b-98b4-b8df136fbbd5" loy="2" name="Ni Ni Xiaolu" rat="3" type="CORPORATE" typename="Johnson/Triad">
+         <description>SRM 2081-07 | Bootleg Bliss: +3 FP -- 2L</description>
+      </contact>
+      <contact id="c1936bbb-d691-4300-985e-95bd22489dc7" loy="1" name="Bookie" rat="3" type="CRIMINAL" typename="Ancients Bookie">
+         <description>SRM 2081-07 | Bootleg Bliss: +1 FP -- L1
+Male Elf</description>
+      </contact>
+      <contact id="3bf7c9db-2ebb-4328-be79-9de3e27b506a" loy="1" name="Trudy" rat="2" type="CRIMINAL" typename="Cutter Lieutenant">
+         <description>Female Human Mage
+SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
+      </contact>
    </contacts>
    <name>Yuriko Star v9</name>
    <datasets mode="ALL"/>
@@ -219,37 +230,8 @@ CMP 2083-01: NONPLUSHED: +1 FP -- L1</description>
    <charGenUsed>pointbuy</charGenUsed>
    <strictness>srm</strictness>
    <items>
-      <item count="1" lang="en" mode="CARRIED" ref="transys_avalon" uuid="38e2efca-41f3-4c8b-b6b6-4114f3f99d53">
-         <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="ELECTRONIC_ACCESSORY" uuid="9399038f-7d20-4817-a782-cd64cbf23605"/>
-            <item lang="en" mode="EMBEDDED" ref="trid_projector" slot="ELECTRONIC_ACCESSORY" uuid="2f22eeb6-361d-416b-a515-fff17c54e186"/>
-            <item lang="en" mode="EMBEDDED" ref="comhack_stealthlink_upgrade" slot="ELECTRONIC_ACCESSORY" uuid="ffcd9fce-8ce2-4e32-b950-1ef379ee9979">
-               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="2"/>
-            </item>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="signal_scrubber" slot="SOFTWARE" uuid="215aa551-68ec-4854-8735-d59e342b53f9" variant="regular"/>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="toolbox" slot="SOFTWARE" uuid="300d3c6c-9042-40bc-8b01-d6cb0d1ebed7" variant="regular"/>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="virtual_machine" slot="SOFTWARE" uuid="b7ceba6e-c736-4e42-84f8-a058ba60babb" variant="regular"/>
-         </accessories>
-         <flag>PRIMARY</flag>
-         <customName>Cyberkit (R6)</customName>
-      </item>
       <item count="10" lang="en" mode="CARRIED" ref="diving_gear" uuid="454bd629-9975-4ecb-b208-79c75d0c56af">
          <customName>Resonance Focus (R4)</customName>
-      </item>
-      <item changes="0,0,0" count="1" lang="en" mode="CARRIED" ref="nissan_samurai" uuid="809edaef-91b7-4fa7-b5cc-04f3ed7b6a6d">
-         <accessories>
-            <item lang="en" mode="EMBEDDED" ref="anti_theft" slot="VEHICLE_ELECTRONICS" uuid="73a990f0-4434-474d-9b7f-6f4b9340ad75" variant="rating1">
-               <flag>AUTO_ADDED</flag>
-            </item>
-         </accessories>
-      </item>
-      <item lang="en" mode="CARRIED" ref="erika_elite" uuid="0ff6ae53-cedc-474b-84a9-de4efa3dfb73">
-         <accessories>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="personal_assistant" slot="SOFTWARE" uuid="c5e5ec5e-9c8e-4cd5-85bd-fd0ad8990726">
-               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="6"/>
-            </item>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="p-ice_spines" slot="SOFTWARE" uuid="6ac6378b-d7b0-4e31-b963-589d3de2744a"/>
-         </accessories>
       </item>
       <item changes="0,0,0" count="5" lang="en" mode="CARRIED" ref="mct_gnat" uuid="9b9e6ccc-07fc-4e18-b748-cd750f3e3ac3"/>
       <item changes="0,0,0" count="1" lang="en" mode="CARRIED" ref="boing_sky_commander" uuid="2f5ae0f0-cd22-4a90-9817-3e9e54bf6559">
@@ -336,7 +318,9 @@ CMP 2083-01: NONPLUSHED: +1 FP -- L1</description>
             </item>
          </accessoriesInFact>
       </item>
-      <item lang="en" mode="CARRIED" ref="securetech_skinshield" uuid="974830e7-625a-486d-9ad0-42d0aa49ffde"/>
+      <item lang="en" mode="CARRIED" ref="securetech_skinshield" uuid="974830e7-625a-486d-9ad0-42d0aa49ffde">
+         <flag>PRIMARY</flag>
+      </item>
       <item lang="en" mode="CARRIED" ref="kit" uuid="039a01fe-6405-4f53-a70f-4a204c477c27">
          <decision choice="8d33356c-f3d4-4387-a6a2-a9575c449ae7" value="engineering"/>
       </item>
@@ -385,6 +369,17 @@ CMP 2083-01: NONPLUSHED: +1 FP -- L1</description>
       <item lang="en" mode="CARRIED" ref="knucks" uuid="8c7102cc-68d5-4d45-b7c1-1786945be646">
          <customName>Krime Gloves (Phys)</customName>
       </item>
+      <item lang="en" mode="CARRIED" ref="mtoc_mark2" uuid="8111bbf4-5fc7-449d-acaf-41402ee536b1">
+         <accessories>
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="target_artist" slot="SOFTWARE" uuid="ccd718da-a362-4d43-bda9-8b6bf982eadb"/>
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="ELECTRONIC_ACCESSORY" uuid="14236071-919a-4a38-9073-f4e39982c2aa"/>
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="sneak_sneak" slot="SOFTWARE" uuid="677568f7-6265-4159-a886-b6ab331d041e"/>
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="artillery_barrage" slot="SOFTWARE" uuid="5ca61534-4a27-408a-b88d-9c10bc1a23c7"/>
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="ecm_warrior_ii" slot="SOFTWARE" uuid="1cdd833d-6881-4c27-a083-bea18f834c53"/>
+         </accessories>
+         <flag>PRIMARY</flag>
+      </item>
+      <item count="10" lang="en" mode="CARRIED" ref="rfid_software_tags" uuid="c3a11a88-9e56-4b11-9d41-9410ec852068"/>
       <item lang="en" mode="VIRTUAL" ref="software_library" uuid="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979">
          <accessories>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="baby_monitor" slot="SOFTWARE" uuid="21252dd0-210b-47e1-a7b4-4ce367ef6878" variant="regular"/>
@@ -403,7 +398,6 @@ CMP 2083-01: NONPLUSHED: +1 FP -- L1</description>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="defense_pods" slot="SOFTWARE" uuid="51cbd3dd-cc91-4bb0-9288-fab6edb1ac72"/>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="directional_shield" slot="SOFTWARE" uuid="3a774c61-6b50-4bea-9e06-a9412ddb6f04"/>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="edit" slot="SOFTWARE" uuid="aadac09a-608a-41be-819a-82ee7dc03a9e" variant="regular"/>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="encryption" slot="SOFTWARE" uuid="e02787fb-6703-42d5-8cae-8fed4ba35c1f"/>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="evasion" slot="SOFTWARE" uuid="27ad6e49-f0b8-4e74-adf6-172339ff3589">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9"/>
             </item>
@@ -443,19 +437,23 @@ CMP 2083-01: NONPLUSHED: +1 FP -- L1</description>
                <decision choice="712a1bb4-b761-48a7-b2ba-ae5d36f47166" value="engineering/industrial_mechanic"/>
             </item>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="smart_rig" slot="SOFTWARE" uuid="c72e6196-a65a-4a86-8c3e-a755ace6b964"/>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="artillery_barrage" slot="SOFTWARE" uuid="5ca61534-4a27-408a-b88d-9c10bc1a23c7"/>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="ecm_warrior_ii" slot="SOFTWARE" uuid="1cdd833d-6881-4c27-a083-bea18f834c53"/>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="mobile_medic" slot="SOFTWARE" uuid="9335def9-98ad-4852-9b9c-07fbd1b512d7"/>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="sneak_sneak" slot="SOFTWARE" uuid="677568f7-6265-4159-a886-b6ab331d041e"/>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="target_artist" slot="SOFTWARE" uuid="ccd718da-a362-4d43-bda9-8b6bf982eadb"/>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="shopsoft" slot="SOFTWARE" uuid="11232734-9d02-40ae-803b-08205e458e09">
-               <decision choice="47d1e468-6df7-43ce-9651-44485cc78bb8" value="Drones, SW, HW, Firearms, Armor, Demolitions"/>
-            </item>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_language" slot="SOFTWARE" uuid="7d04ba55-a99c-49c4-8710-b4f924ab0c9c">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="5"/>
             </item>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_knowledge" slot="SOFTWARE" uuid="12d50f1e-ac93-410c-b691-c537a4def8b7"/>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="emulator" slot="SOFTWARE" uuid="0f38bf43-dfc0-4da6-bc70-ff46d68ba70b"/>
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="p-ice_spines" slot="SOFTWARE" uuid="6ac6378b-d7b0-4e31-b963-589d3de2744a"/>
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="personal_assistant" slot="SOFTWARE" uuid="c5e5ec5e-9c8e-4cd5-85bd-fd0ad8990726">
+               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="6"/>
+            </item>
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="toolbox" slot="SOFTWARE" uuid="300d3c6c-9042-40bc-8b01-d6cb0d1ebed7" variant="regular"/>
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="encryption" slot="SOFTWARE" uuid="e02787fb-6703-42d5-8cae-8fed4ba35c1f"/>
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="signal_scrubber" slot="SOFTWARE" uuid="215aa551-68ec-4854-8735-d59e342b53f9" variant="regular"/>
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="virtual_machine" slot="SOFTWARE" uuid="b7ceba6e-c736-4e42-84f8-a058ba60babb" variant="regular"/>
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="shopsoft" slot="SOFTWARE" uuid="11232734-9d02-40ae-803b-08205e458e09">
+               <decision choice="47d1e468-6df7-43ce-9651-44485cc78bb8" value="Drones, SW, HW, Firearms, Armor, Demolitions"/>
+            </item>
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="mobile_medic" slot="SOFTWARE" uuid="9335def9-98ad-4852-9b9c-07fbd1b512d7"/>
          </accessories>
       </item>
    </items>
@@ -696,6 +694,20 @@ CMP 2083-01: NONPLUSHED: +1 FP -- L1</description>
       <valmod date="2026-06-30T19:47:07.712-04:00" id="8c7102cc-68d5-4d45-b7c1-1786945be646" ref="knucks" set="AUGMENTED" type="CARRIED" value="100"/>
       <valmod date="2026-07-08T13:45:30.097-04:00" expCost="35" ref="RESONANCE" set="AUGMENTED" type="ATTRIBUTE" value="7"/>
       <valmod date="2026-07-08T15:24:53.524-04:00" id="3dc7227f-7292-40b3-9e7c-afa874a6abeb" ref="gas-vent_system" set="AUGMENTED" type="CARRIED" value="500"/>
+      <valmod date="2026-07-09T21:18:21.485-04:00" id="8111bbf4-5fc7-449d-acaf-41402ee536b1" ref="mtoc_mark2" set="AUGMENTED" type="CARRIED" value="65000"/>
+      <valmod date="2026-07-09T21:20:40.663-04:00" id="14236071-919a-4a38-9073-f4e39982c2aa" ref="satellite_link" set="AUGMENTED" type="CARRIED" value="500"/>
+      <valmod date="2026-07-09T21:23:48.176-04:00" id="c3a11a88-9e56-4b11-9d41-9410ec852068" ref="rfid_software_tags" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-09T21:23:53.053-04:00" id="c3a11a88-9e56-4b11-9d41-9410ec852068" ref="rfid_software_tags" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-09T21:23:53.266-04:00" id="c3a11a88-9e56-4b11-9d41-9410ec852068" ref="rfid_software_tags" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-09T21:23:53.467-04:00" id="c3a11a88-9e56-4b11-9d41-9410ec852068" ref="rfid_software_tags" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-09T21:23:53.663-04:00" id="c3a11a88-9e56-4b11-9d41-9410ec852068" ref="rfid_software_tags" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-09T21:23:53.873-04:00" id="c3a11a88-9e56-4b11-9d41-9410ec852068" ref="rfid_software_tags" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-09T21:23:54.081-04:00" id="c3a11a88-9e56-4b11-9d41-9410ec852068" ref="rfid_software_tags" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-09T21:23:54.278-04:00" id="c3a11a88-9e56-4b11-9d41-9410ec852068" ref="rfid_software_tags" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-09T21:23:54.477-04:00" id="c3a11a88-9e56-4b11-9d41-9410ec852068" ref="rfid_software_tags" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-09T21:23:54.689-04:00" id="c3a11a88-9e56-4b11-9d41-9410ec852068" ref="rfid_software_tags" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-09T21:25:05.485-04:00" id="d03ff079-e65c-4a07-8d68-1f11c3b5eaa3" ref="laser_jack" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-09T21:25:09.073-04:00" id="d03ff079-e65c-4a07-8d68-1f11c3b5eaa3" ref="laser_jack" set="AUGMENTED" type="CARRIED" value="100"/>
    </history>
    <rewards>
       <reward date="2026-04-20T00:00:00.000-04:00" exp="13">
@@ -908,6 +920,14 @@ CMP 2083-01: NONPLUSHED: +1 FP -- L1</description>
       </reward>
       <reward date="2026-07-07T00:00:00.000-04:00" exp="1" money="-5000">
          <title>SRM 2081-08: Bribes, Rent, Working for the People</title>
+      </reward>
+      <reward date="2026-07-09T21:04:57.509-04:00" exp="6" money="8000">
+         <title>SRM 2081-07 | Bootleg Bliss</title>
+         <gamemaster>JaGator</gamemaster>
+      </reward>
+      <reward date="2026-07-09T21:05:24.777-04:00" exp="1" money="-2000">
+         <title>SRM 2081-07: Working for the People</title>
+         <gamemaster>JaGator</gamemaster>
       </reward>
    </rewards>
 </sr6char>

@@ -182,10 +182,10 @@ In this remote-control scenario, the AI **does** use its Matrix Equivalents:
 
 | Mission | Sprites Registered | Tasks Used |
 | ----------- | --- | --- |
-| SRM 2081-05 |  2  |  0  |
 | CMP 2083-01 |  1  |  0  |
-| SRM 2081-08 |  4  |  1  |
-| **Total**   |  7  |  1  |
+| SRM 2081-08 |  4  |  0  |
+| SRM 2081-07 |  1  |  0  | 
+| **Total**   |  6  |  0  |
 
 ---
 
@@ -193,23 +193,21 @@ In this remote-control scenario, the AI **does** use its Matrix Equivalents:
 
 ### Permanent Benefits
 
+* **Edge Storage:** Capacity 11 (6 Transcendent Network, 5 M-TOC II)  
 * **-6 Noise Reduction:** Designer home device -2, signal scrubber -2, ECM warrior -2  
 * **+1 Sensor Rating:** Added to any connected sensor (sensor upgrade)  
-* **Edge Storage:** Capacity (6)  
 * **Resonant Coordination:** Connected characters who use the Send Message action (a Minor Action) among themselves gain a bonus Minor Action immediately afterward.  
-* **Smartsoft Array:** Drone Target Locks are shared among networked drones (smartsoft). Target Lock victims cannot spend edge against attacking networked drones.
-
-### Available Benefits
-
-* **Tasking Tests:** Electronics (+5) and Cracking (+7) TW
-* **Rigger Support:** Engineering (+3) TW  
+* **Smartsoft Array:** 
+  * Drone Target Locks are shared among networked drones (smartsoft). 
+  * Target Locked victims cannot spend edge against attacking networked drones.
+* **Detect Ambush:** -2 Perception test threshold to detect ambush.  
+* **Smartguns:** +1 AR to smartlinked weapons.
+* **Encryption:** +1 increased threshold for all Cracking tests. 
 * **Tactical Software apps:**
-  * *Artillery Barrage:* +1 to Launch Weapons, no rifle/cannon penalties  
-  * *Mobile Medic:* +3 Biotech (First Aid) + Harmonize hits  
+  * *Artillery Barrage:* +1 to Launchers, no rifle/mg/cannon penalties  
+  * *ECM Warrior II:* +2 Offensive Cracking tests
   * *Sneak-Sneak:* +2 Stealth  
   * *Target Artist:* Attack w/o LOS on painted targets  
-* *Sensory Array:* Social HUD/Thermal Mood Reading/Vocal Tension Detection: +1 Edge on Judge Intentions
-
 ---
 
 ## Krime Splash Self-Defense Ammunition

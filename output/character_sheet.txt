@@ -1,6 +1,6 @@
 ___________________________________________________________________________
 // ACCESSING: R31K0_TAKAHASHI.bin // SOURCE: RESONANCE_REALMS //
-// STATUS: ONLINE // LIFETIME KARMA: 151 // KARMA: 0 // NUYEN: ¥43,190 //
+// STATUS: ONLINE // LIFETIME KARMA: 158 // KARMA: 7 // NUYEN: ¥290 //
 ___________________________________________________________________________
 
 [ IDENTITY ]
@@ -46,31 +46,31 @@ ___________________________________________________________________________
 
 
 [ DRONE_COMMAND_ARRAY (COL 1) ]        | [ DRONE_COMMAND_ARRAY (COL 2) ]
-- NISSAN SAMURAI                       | - S. BUTLER
-  HAN 3/4 ACC 10/10                    |   HAN 4/5 ACC 5/5
-  INT 10 SPD 30 BOD 6                  |   INT 5 SPD 8 BOD 4(6) [#8]
-  ARM 6  PIL 3  SEN 2                  |   PIL 2 SEN 3  ARM 0(10) [#9]
-    > Anti-theft system (Rating 1)     |     > Anti-theft system (Rating 1)
-    > Nissan Spurs [4P|7/—/—/—/—]      |     > Sec Propulsion (Winged)
-    > Samurai Weapon Mount             |     > Incr Struct Integrity 2
-    > Samurai Weapon Mount             |     > Drone rack (Small)
+- MCT GNAT                             | - S. BUTLER
+  HAN 3/3 ACC 4/4                      |   HAN 4/5 ACC 5/5
+  INT 10 SPD 30 BOD 0                  |   INT 5 SPD 8 BOD 4(6) [#8]
+  ARM 0  PIL 2  SEN 1                  |   PIL 2 SEN 3  ARM 0(10) [#9]
+                                       |     > Anti-theft system (Rating 1)
+- FB SKY COMMANDER                     |     > Sec Propulsion (Winged)
+  HAN 4/4 ACC 20/20                    |     > Incr Struct Integrity 2
+  INT 30 SPD 190 BOD 4                 |     > Drone rack (Small)
+  ARM 2  PIL 4   SEN 5                  |     > Integrated Cyberarm
+    > Chameleon Coating 1              |     > Integrated Cyberarm
+    > Drone rack (Micro/Mini)          |     > Wrist shield [+4]
+    > Integrated Matrix Device Dock    |     > Realistic Features 1
+    > Anti-theft system (Rating 1)     |
+    > RAM Plating 4                    | - S. MAN-AT-ARMS
+    > Enhanced Sensors 2               |   HAN 3/3 ACC 5/5
+    > ECM 6                            |   INT 5 SPD 10 BOD 10(15) [#10]
+                                       |   PIL 2 SEN 2  ARM 8[17] [#11]
+                                       |     > Pop-Out Concealment (Large)
+                                       |     > Drone rack (Small)
+                                       |     > Anti-theft system (Rating 1)
+                                       |     > Sec Propulsion (Rotor)
+                                       |     > Incr Struct Integrity 5
+                                       |     > Realistic Features 4
                                        |     > Integrated Cyberarm
-- MCT GNAT                             |     > Integrated Cyberarm
-  HAN 3/3 ACC 4/4                      |     > Wrist shield [+4]
-  INT 10 SPD 30 BOD 0                  |     > Realistic Features 1
-  ARM 0  PIL 2  SEN 1                  |
-                                       | - S. MAN-AT-ARMS
-- FB SKY COMMANDER                     |   HAN 3/3 ACC 5/5
-  HAN 4/4 ACC 20/20                    |   INT 5 SPD 10 BOD 10(15) [#10]
-  INT 30 SPD 190 BOD 4                 |   PIL 2 SEN 2  ARM 8[17] [#11]
-  ARM 2  PIL 4   SEN 5                  |     > Pop-Out Concealment (Large)
-    > Chameleon Coating 1              |     > Drone rack (Small)
-    > Drone rack (Micro/Mini)          |     > Anti-theft system (Rating 1)
-    > Integrated Matrix Device Dock    |     > Sec Propulsion (Rotor)
-    > Anti-theft system (Rating 1)     |     > Incr Struct Integrity 5
-    > RAM Plating 4                    |     > Realistic Features 4
-    > Enhanced Sensors 2               |     > Integrated Cyberarm
-    > ECM 6                            |     > Tesla coil [5S(e)|8/10*/—/—/—]
+                                       |     > Tesla coil [5S(e)|8/10*/—/—/—]
                                        |     > Fingertip compartment
                                        |     > Implanted Heavy Pistol
                                        |     > Integrated Cyberarm
@@ -79,20 +79,12 @@ ___________________________________________________________________________
                                        |     > Weapon mount-Heavy
 
 [ MATRIX_DEVICES ] [#12]               |
-- AI NATIVE PROTOCOLS (VIRTUAL)        | - ERIKA ELITE (COMMLINK)
-  ATK 03 SLZ 05 DPR 03 FWL 05          |   ATK 00 SLZ 00 DPR 02 FWL 01
+- AI NATIVE PROTOCOLS (VIRTUAL)        |
+  ATK 03 SLZ 05 DPR 03 FWL 05          |
   Opt ASDF: 06 09 07 09 [#12]          |
                                        |
 - CYBERKIT (R6) (CYBERDECK)            |
   ATK 04 SLZ 04 DPR 02 FWL 02          |
-  > Satellite link                     |
-  Opt ASDF: 04 04 04 08                |
-  Def: FWLx2+PA (22)                   |
-  Res: FWL (08)
-  Prgms: PA, P-ICE SPINES       
-                                       |
-- CYBERKIT (R6) (COMMLINK)             |
-  ATK 00 SLZ 00 DPR 00 FWL 00          |
   Opt ASDF: 04 04 04 08                |
   Def: FWLx2+PA (22)                   |
   Res: FWL (08)
@@ -111,9 +103,7 @@ ___________________________________________________________________________
   - SOFT LANGUAGE            (Auto)   [R5] 
   - TARGETING                (Auto)   [R9] 
   - TRACKING                 (Auto)   [R9] 
-  - ARTILLERY BARRAGE        (TacApp)       // +1 DP Launch weapons; no rifle/cannon penalties
   - BROWSE                   (Basic)        // +1 Edge, must spend immediately.
-  - ECM WARRIOR II           (TacApp)       // +2 offensive Cracking; -2 noise (DRx5 m)
   - EDIT                     (Basic)        // +1 Edge on Edit File
   - EMULATOR                 (Basic)        // Run comm apps. Slots = Dev Rtg.
   - ENCRYPTION               (Basic)        // +2 Encrypt File
@@ -121,8 +111,6 @@ ___________________________________________________________________________
   - MOBILE MEDIC             (TacApp)       // +DR/2 to First Aid DP, or +1 to Medkit rating
   - NEXUS PROTOCOL           (Basic)        // Upgrades hot-sim to UV for hitchhikers
   - SHOPSOFT                 (Other)        // Drones, SW, Firearms, Armor, Demolitions, HW
-  - SNEAK-SNEAK              (TacApp)       // +2 to Stealth (Sneaking) tests
-  - TARGET ARTIST            (TacApp)       // Attack without line of sight on painted targets
   - THERMAL MOOD READING     (Basic)        // +1 Edge: Judge Intentions
   - TOOLBOX                  (Basic)        // +1 Data Processing
   - VIRTUAL MACHINE          (Basic)        // +2 slots, +1 Matrix damage
@@ -162,6 +150,8 @@ ___________________________________________________________________________
                                        |   - AMMO RIFLES x5
                                        |   - KRIME GLOVES (STUN) [3P / 4S(e) | 6/—/—/—/—]
                                        |   - KRIME GLOVES (PHYS) [3P | 6/—/—/—/—]
+                                       |   - MTOC MARK2 [+12]
+                                       |   - RFID SOFTWARE TAGS x10
 
 [ LIFESTYLE_DATA ]
   - LOW (1 Months Pre-paid)
@@ -316,6 +306,9 @@ ___________________________________________________________________________
   - SPIINICOP            AMS Penose Spider                L:1 I:2 F:0
   - EDDIE WEI            Triad/Johnson                    L:1 I:4 F:0
   - JULIAN MÜNTEFERING   Renraku Corpokid                 L:1 I:1 F:0
+  - NI NI XIAOLU         Johnson/Triad                    L:2 I:3 F:0
+  - BOOKIE               Ancients Bookie                  L:1 I:3 F:0
+  - TRUDY                Cutter Lieutenant                L:1 I:2 F:0
 
 [ REGISTERED_IDENTITIES ]
   - SIN: Yuriko Star                    [Rating 2]
@@ -370,8 +363,10 @@ ___________________________________________________________________________
   2026-06-30   |    +1 |    -2500 | CMP 2083-01: Working for the People, Bribes
   2026-07-07   |    +6 |    +6500 | SRM 2081-08 Child's Play (GM: JaGator)
   2026-07-07   |    +1 |    -5000 | SRM 2081-08: Bribes, Rent, Working for the ...
+  2026-07-09   |    +6 |    +8000 | SRM 2081-07 | Bootleg Bliss (GM: JaGator)
+  2026-07-09   |    +1 |    -2000 | SRM 2081-07: Working for the ... (GM: JaGator)
   ---------------------------------------------------------------------------
-  LIFETIME KARMA: 151 (146 earned + 5 from Chargen)
+  LIFETIME KARMA: 158 (153 earned + 5 from Chargen)
 
 ___________________________________________________________________________
 // END_OF_FILE // REIKO@RESONANCE:~$ _

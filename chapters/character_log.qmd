@@ -316,3 +316,21 @@ This log contains spoilers! Please do not read if you haven't played the session
   * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
   * Modifying Man-At-Arms: Removing megalodon, adding Shiawase Arms Tactical Model 73
 * **Other bonuses:** 3 sprites registered during in-session downtime
+
+---
+
+### **2026-July-09: SRM 2081-07 | Bootleg Bliss**
+
+* **Summary:** Hired by Ni Ni to eliminate a fool who was pawning off poor quality illicit drugs as Triad goods. 
+* **Team:** Poe, Jolthead, Cassandra, Babel, Baakfu, Yuriko
+* **GM:** JaGator
+* **Rewards:** 6 Karma, 8000 nuyen
+* **Reputation:** 0
+* **Heat:** 0
+* **Contacts:**
+  * +3 FP with Ni Ni Xiaolu (Johnson/Triad, Connection 3) Chinese Female Human
+  * +1 FP with Bookie (Ancients Bookie, Connection 3) Male Elf 
+  * +1 FP with Trudy (Cutter Lieutenant, Connection 2) Female Human Mage
+* **Downtime Actions (3 Minor):**
+  * *Working for the People:* +1 Karma, -2,000 Nuyen
+  * *Register Sprites:* Registering 8 Levels of Sprites (1 sprite with autosofts)
