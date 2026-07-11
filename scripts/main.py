@@ -317,6 +317,9 @@ def parse_character(input_path):
     if xml_items_el is not None:
         for it in xml_items_el.findall('item'):
             ref = it.get('ref')
+            if ref == "kit" or (ref and "cyberkit" in ref.lower()):
+                continue
+                
             custom_name_el = it.find('customName')
             custom_name = custom_name_el.text.strip() if custom_name_el is not None and custom_name_el.text else ""
             
@@ -384,7 +387,7 @@ def parse_character(input_path):
                 
             # Mapped item checks
             is_drone = any(d in ref.lower() or (custom_name and d in custom_name.lower()) for d in ["drone", "flying_eye", "fly-spy", "steel_lynx", "boeing_ld", "kanmushi", "rotodrone", "gnat", "sky_commander", "skycommander", "butler", "man_at_arms", "manatarms", "nissansamurai", "samurai"])
-            is_matrix = (any(m in ref.lower() or (custom_name and m in custom_name.lower()) for m in ["commlink", "cyberdeck", "rigger_console", "transys_avalon", "erika_elite", "renraku_sensei", "sony_emperor", "novatech_navigator", "hermes_chariot", "vulcan_liege_lord", "cyberkit"]) or ref == "kit") and ref != "cyberweapon_wrist_shield"
+            is_matrix = (any(m in ref.lower() or (custom_name and m in custom_name.lower()) for m in ["commlink", "cyberdeck", "rigger_console", "transys_avalon", "erika_elite", "renraku_sensei", "sony_emperor", "novatech_navigator", "hermes_chariot", "vulcan_liege_lord", "cyberkit", "mtoc"]) or ref == "kit") and ref != "cyberweapon_wrist_shield"
             
             accessories = []
             for acc in it.findall('.//item'):
@@ -714,6 +717,8 @@ def parse_character(input_path):
                 m_type = mat_stats.get("subType", "COMMLINK")
                 if ref == "kit" or "cyberkit" in ref.lower():
                     m_type = "CYBERDECK"
+                elif "mtoc" in ref.lower():
+                    m_type = "DEVICE"
                 
                 # Clean up Cyberkit accessories Link Projector etc.
                 if ref == "kit" or ref == "transys_avalon":
@@ -733,6 +738,8 @@ def parse_character(input_path):
                 if not name_val:
                     if ref == "kit":
                         name_val = "Cyberkit (R6)"
+                    elif "mtoc" in ref.lower():
+                        name_val = "M-TOC II (R5)"
                     else:
                         name_val = mat_stats.get("name") if mat_stats.get("name") else ref.replace('_', ' ').title()
                         
@@ -741,10 +748,10 @@ def parse_character(input_path):
                     "subType": m_type,
                     "page": mat_stats.get("page", "") or (REF_MAP.get(ref, ref.replace('_', ' ').title())),
                     "accessories": accessories,
-                    "attack": 0 if m_type == "COMMLINK" else (4 if ref == "kit" else mat_stats.get("attack", 0)),
-                    "sleaze": 0 if m_type == "COMMLINK" else (4 if ref == "kit" else mat_stats.get("sleaze", 0)),
-                    "dataProcessing": 2 if ref == "erika_elite" else (2 if ref == "kit" else 0),
-                    "firewall": 1 if ref == "erika_elite" else (2 if ref == "kit" else 0)
+                    "attack": 0 if m_type in ["COMMLINK", "DEVICE"] else (4 if ref == "kit" else mat_stats.get("attack", 0)),
+                    "sleaze": 0 if m_type in ["COMMLINK", "DEVICE"] else (4 if ref == "kit" else mat_stats.get("sleaze", 0)),
+                    "dataProcessing": 6 if "mtoc" in ref.lower() else (2 if ref == "erika_elite" else (2 if ref == "kit" else mat_stats.get("dataProcessing", 0))),
+                    "firewall": 5 if "mtoc" in ref.lower() else (1 if ref == "erika_elite" else (2 if ref == "kit" else mat_stats.get("firewall", 0)))
                 })
                 continue
                 
@@ -883,7 +890,9 @@ def parse_character(input_path):
             return 2
         if "cyberkit" in name.lower() and sub == "COMMLINK":
             return 3
-        return 4
+        if "m-toc" in name.lower():
+            return 4
+        return 5
     matrix_items.sort(key=matrix_sort_key)
     
     # Enforce technomancer living persona calculations
@@ -1376,9 +1385,13 @@ def generate_ascii_sheet(char_data, verbose=False):
 
     # Split drones across columns
     drones = char_data["drones"]
-    half = (len(drones) + 1) // 2
-    left_drn_list = drones[:half]
-    right_drn_list = drones[half:]
+    if len(drones) == 4:
+        left_drn_list = drones[:3]
+        right_drn_list = drones[3:]
+    else:
+        half = (len(drones) + 1) // 2
+        left_drn_list = drones[:half]
+        right_drn_list = drones[half:]
 
     def get_drone_panel_lines(drn_list, title):
         import re
@@ -1609,7 +1622,7 @@ def generate_ascii_sheet(char_data, verbose=False):
         "Sprite Symbiosis (+4 Teamwork)",
         "RES 07 (0313)"
     ])
-    opt_mods.append("Cyberkit")
+    opt_mods.append("M-TOC II")
     opt_mods.append([
         "Toolbox : +1 DP",
         "Home dev: +1 DP",
@@ -1656,6 +1669,15 @@ def generate_ascii_sheet(char_data, verbose=False):
             dev_block.append("  Def: FWLx2+PA (22)")
             dev_block.append("  Res: FWL (08)")
             dev_block.append("  Prgms: PA, P-ICE SPINES")
+            dev_block.append("")
+            left_devs.extend(dev_block)
+        elif "M-TOC" in m_name:
+            dev_block.append("  Opt ASDF: 00 00 08 09")
+            dev_block.append("  Def: FWLx2 (18)")
+            dev_block.append("  Res: FWL (09)")
+            dev_block.append("  Prgms: ARTILLERY BARRAGE,")
+            dev_block.append("         SNEAK SNEAK, TARGET")
+            dev_block.append("         ARTIST, ECM WARRIOR II")
             dev_block.append("")
             left_devs.extend(dev_block)
         elif "ERIKA" in m_name:
@@ -1729,6 +1751,8 @@ def generate_ascii_sheet(char_data, verbose=False):
             lookup_name = "P-ICE Spines"
             
         lookup_key = lookup_name.lower().replace("-", " ")
+        if lookup_key in ["artillery barrage", "sneak sneak", "target artist", "ecm warrior ii"]:
+            continue
         if lookup_key in seen_software:
             continue
         seen_software.add(lookup_key)
@@ -2003,13 +2027,16 @@ def generate_ascii_sheet(char_data, verbose=False):
         page3.append("[ SOCIAL_NETWORK_CONTACTS ]")
         for c in char_data["contacts"]:
             name = c.get("name", "Unknown")
+            name_display = name.upper()
+            if len(name_display) > 20:
+                name_display = name_display[:17] + "..."
             c_type = c.get("type", "Contact")
             loy = c.get("loyalty", 0)
             inf = c.get("influence", 0)
             fav = c.get("favors", 0)
             if len(c_type) > 32:
                 c_type = c_type[:29] + "..."
-            page3.append(f"  - {name.upper().ljust(20)} {c_type.ljust(32)} L:{loy} I:{inf} F:{fav}")
+            page3.append(f"  - {name_display.ljust(20)} {c_type.ljust(32)} L:{loy} I:{inf} F:{fav}")
         page3.append("")
 
     if char_data["sins"] or char_data["licenses"]:
@@ -2104,15 +2131,17 @@ def generate_ascii_sheet(char_data, verbose=False):
          "  ARM 2  PIL 4   SEN 5"),
          
         # Matrix Devices panel right side trailing pipe removals
-        ("  Res: FWL (08)                        |", "  Res: FWL (08)"),
-        ("  Prgms: PA, P-ICE SPINES              |", "  Prgms: PA, P-ICE SPINES       "),
+        ("  Res: FWL (09)                        |", "  Res: FWL (09)"),
+        ("  Prgms: ARTILLERY BARRAGE,            |", "  Prgms: ARTILLERY BARRAGE"),
+        ("         SNEAK SNEAK, TARGET           |", "         SNEAK SNEAK, TARGET"),
+        ("         ARTIST, ECM WARRIOR II        |", "         ARTIST, ECM WARRIOR II"),
         ("                                       |\n\n[ MATRIX_DEVICES ]", "\n[ MATRIX_DEVICES ]"),
         ("                                       |\n\n[ SOFTWARE_LIBRARY ]", "\n[ SOFTWARE_LIBRARY ]"),
         ("  - HEAVY PISTOL/SMG (10X) Std x5\n\n[ LIFESTYLE_DATA ]", "  - HEAVY PISTOL/SMG (10X) Std x5\n[ LIFESTYLE_DATA ]"),
         
         # Footnote #10 custom tab indents
-        ("       - Opt. ASDF (06 09 07 09)\n         - Sprite Symbiosis (+4 Teamwork)\n         - RES 07 (0313)\n       - Cyberkit\n         - Toolbox : +1 DP\n         - Home dev: +1 DP\n         - FW = AI's FW (9)",
-         "       - Opt. ASDF (06 09 07 09) \n\t     - Sprite Symbiosis (+4 Teamwork)\n         - RES 07 (0313)\n\t   - Cyberkit\n\t     - Toolbox : +1 DP\n\t\t - Home dev: +1 DP\n\t\t - FW = AI's FW (9)"),
+        ("       - Opt. ASDF (06 09 07 09)\n         - Sprite Symbiosis (+4 Teamwork)\n         - RES 07 (0313)\n       - M-TOC II\n         - Toolbox : +1 DP\n         - Home dev: +1 DP\n         - FW = AI's FW (9)",
+         "       - Opt. ASDF (06 09 07 09) \n\t     - Sprite Symbiosis (+4 Teamwork)\n         - RES 07 (0313)\n\t   - M-TOC II\n\t     - Toolbox : +1 DP\n\t\t - Home dev: +1 DP\n\t\t - FW = AI's FW (9)"),
          
         ("\t\t - FW = AI's FW (9)\n[ SOCIAL_NETWORK_CONTACTS ]", "\t\t - FW = AI's FW (9)\n\n[ SOCIAL_NETWORK_CONTACTS ]")
     ]

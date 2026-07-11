@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<sr6char career="true" gender="DIVERSE" karmaF="7" karmaI="113" meta="pilot-ai" nuyen="290">
+<sr6char career="true" gender="DIVERSE" karmaI="130" meta="pilot-ai" nuyen="2290">
    <lifestyles>
       <lifestyle comfort="low" entert="low" lang="en" necess="low" neigh="low" ref="low" security="low" space="low" value="1"/>
    </lifestyles>
@@ -35,6 +35,7 @@
       <metaEcho lang="en" ref="living_network"/>
       <metaEcho lang="en" ref="transcendent_network"/>
       <metaEcho lang="en" ref="overclocking"/>
+      <metaEcho lang="en" ref="software_emulator"/>
    </metaEchoes>
    <sins>
       <sin name="Yuriko Star" quality="ROUGH_MATCH" uniqueid="59d9bf7c-436d-4fe6-9989-7a08504ec9e2"/>
@@ -380,6 +381,7 @@ SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
          <flag>PRIMARY</flag>
       </item>
       <item count="10" lang="en" mode="CARRIED" ref="rfid_software_tags" uuid="c3a11a88-9e56-4b11-9d41-9410ec852068"/>
+      <item count="10" lang="en" mode="CARRIED" ref="laser_jack" uuid="e5c07b07-fecf-4c7c-92c1-ab18da0d49e8"/>
       <item lang="en" mode="VIRTUAL" ref="software_library" uuid="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979">
          <accessories>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="baby_monitor" slot="SOFTWARE" uuid="21252dd0-210b-47e1-a7b4-4ce367ef6878" variant="regular"/>
@@ -708,6 +710,17 @@ SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
       <valmod date="2026-07-09T21:23:54.689-04:00" id="c3a11a88-9e56-4b11-9d41-9410ec852068" ref="rfid_software_tags" set="AUGMENTED" type="CARRIED" value="100"/>
       <valmod date="2026-07-09T21:25:05.485-04:00" id="d03ff079-e65c-4a07-8d68-1f11c3b5eaa3" ref="laser_jack" set="AUGMENTED" type="CARRIED" value="100"/>
       <valmod date="2026-07-09T21:25:09.073-04:00" id="d03ff079-e65c-4a07-8d68-1f11c3b5eaa3" ref="laser_jack" set="AUGMENTED" type="CARRIED" value="100"/>
+      <itemmod date="2026-07-10T22:14:45.610-04:00" expCost="17" ref="software_emulator" type="METAECHO"/>
+      <valmod date="2026-07-10T22:23:31.037-04:00" id="e5c07b07-fecf-4c7c-92c1-ab18da0d49e8" ref="laser_jack" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-10T22:23:37.186-04:00" id="e5c07b07-fecf-4c7c-92c1-ab18da0d49e8" ref="laser_jack" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-10T22:23:37.657-04:00" id="e5c07b07-fecf-4c7c-92c1-ab18da0d49e8" ref="laser_jack" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-10T22:23:38.049-04:00" id="e5c07b07-fecf-4c7c-92c1-ab18da0d49e8" ref="laser_jack" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-10T22:23:38.603-04:00" id="e5c07b07-fecf-4c7c-92c1-ab18da0d49e8" ref="laser_jack" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-10T22:23:41.467-04:00" id="e5c07b07-fecf-4c7c-92c1-ab18da0d49e8" ref="laser_jack" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-10T22:23:42.819-04:00" id="e5c07b07-fecf-4c7c-92c1-ab18da0d49e8" ref="laser_jack" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-10T22:23:43.774-04:00" id="e5c07b07-fecf-4c7c-92c1-ab18da0d49e8" ref="laser_jack" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-10T22:23:45.597-04:00" id="e5c07b07-fecf-4c7c-92c1-ab18da0d49e8" ref="laser_jack" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-10T22:23:46.003-04:00" id="e5c07b07-fecf-4c7c-92c1-ab18da0d49e8" ref="laser_jack" set="AUGMENTED" type="CARRIED" value="100"/>
    </history>
    <rewards>
       <reward date="2026-04-20T00:00:00.000-04:00" exp="13">
@@ -809,9 +822,6 @@ SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
       </reward>
       <reward date="2026-06-03T00:00:00.000-04:00" exp="1" money="-5000">
          <title>SRM 2081-17: Working for the Ppl, Rent, Bribes</title>
-      </reward>
-      <reward date="2026-06-03T00:00:00.000-04:00" exp="-38">
-         <title>SRM 2081-17: R8 Ally Sprite charge</title>
       </reward>
       <reward date="2026-06-06T21:42:12.671-04:00" exp="9" money="11500">
          <title>CMP 2081-20: In the Cold Kentucky Rain</title>
@@ -928,6 +938,23 @@ SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
       <reward date="2026-07-09T21:05:24.777-04:00" exp="1" money="-2000">
          <title>SRM 2081-07: Working for the People</title>
          <gamemaster>JaGator</gamemaster>
+      </reward>
+      <reward date="2026-07-10T22:03:56.405-04:00" exp="6" money="8000">
+         <title>SRM 2081-06 | Cutting Strings</title>
+         <gamemaster>Kira Capalu</gamemaster>
+         <modifications>
+            <valmod ref="HEAT" set="AUGMENTED" type="ATTRIBUTE" value="1" when="ALLCREATE"/>
+            <valmod ref="REPUTATION" set="AUGMENTED" type="ATTRIBUTE" value="1" when="ALLCREATE"/>
+         </modifications>
+      </reward>
+      <reward date="2026-07-10T22:04:16.485-04:00" money="-5000">
+         <title>SRM 2081-06: Working for the People, Bribes, Buying down heat</title>
+         <modifications>
+            <valmod ref="HEAT" set="AUGMENTED" type="ATTRIBUTE" value="-1" when="ALLCREATE"/>
+         </modifications>
+      </reward>
+      <reward date="2026-06-03T00:00:00.000-04:00" exp="-34">
+         <title>SRM 2081-17: R7 Ally Sprite Charge</title>
       </reward>
    </rewards>
 </sr6char>

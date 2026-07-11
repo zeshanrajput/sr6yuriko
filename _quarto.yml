@@ -37,6 +37,7 @@ book:
         - chapters/15 Core.md
         - chapters/16 Faith.md
         - chapters/17 Sheets.md
+        - chapters/18 The Geometry of a Sieve.md
 
 format:
   html:

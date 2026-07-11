@@ -334,3 +334,23 @@ This log contains spoilers! Please do not read if you haven't played the session
 * **Downtime Actions (3 Minor):**
   * *Working for the People:* +1 Karma, -2,000 Nuyen
   * *Register Sprites:* Registering 8 Levels of Sprites (1 sprite with autosofts)
+  * *Register Sprites:* Registering 8 Levels of Sprites (1 sprite with autosofts)
+
+---
+
+### **2026-July-10: SRM 2081-06 | Cutting Strings**
+
+* **Summary:** Hired by a Johnson to find a friend.
+* **Team:** Poe, Baakfu, Yuriko, He-nu, Jolthead, Georges Baptiste, Babel, Havoc, Marcon
+* **GM:** Kira Capalu
+* **Rewards:** 6 Karma, 8000 nuyen
+* **Reputation:** +1 SEA
+* **Heat:** +1 (spent 1000 nuyen pre roll, 2000 post-roll to negate)
+* **Contacts:**
+  * +3 FP Saint James (Fixer, Connection 8) --> L2
+  * +1 FP Jeanie Trudel (Bartender, Renton Hole in the Wall, Connection 1)
+  * +1 FP Kingston (Shadowrunner, Connection 2)
+* **Downtime Actions (3 Minor):**
+  * *Working for the People:* +1 Karma, -2,000 Nuyen
+  * *Register Sprites:* Registering 8 Levels of Sprites (1 sprite with autosofts)
+  * *Register Sprites:* Registering 8 Levels of Sprites (1 sprite with autosofts)

@@ -1,6 +1,6 @@
 ___________________________________________________________________________
 // ACCESSING: R31K0_TAKAHASHI.bin // SOURCE: RESONANCE_REALMS //
-// STATUS: ONLINE // LIFETIME KARMA: 158 // KARMA: 7 // NUYEN: ¥290 //
+// STATUS: ONLINE // LIFETIME KARMA: 164 // KARMA: 0 // NUYEN: ¥2,290 //
 ___________________________________________________________________________
 
 [ IDENTITY ]
@@ -11,7 +11,7 @@ ___________________________________________________________________________
 [ CORE_ATTRIBUTES ]                          | [ DERIVED_STATUS ]
   MAT | ATK [03] SLZ [05] DPR [03] FWL [05]  |   INIT (VR)  : 6 +4D6
   MNT | WIL [06] LOG [04] INT [02] CHA [04]  |   ATK RATING : 11 (ATK+SLZ)
-  SPP | EDG [05] RES [07] SPK [06] SUB [06]  |   DEF RATING : 11 (DPR+FWL)
+  SPP | EDG [05] RES [07] SPK [06] SUB [07]  |   DEF RATING : 11 (DPR+FWL)
                                              |   COMPOSURE  : 10
 [ MATRIX EQUIVALENT ATTRIBUTES ]             |   JUDGE INT  : 8
   BOD [F]  AGI [D]  REA [S]  STR [A]         | Def (Bio): WIL + FWL (13)
@@ -36,47 +36,61 @@ ___________________________________________________________________________
   - PUPPETEER (FV 5)                    -> Pool: 20[#4]  [Fading Resist: 10]
 
 [ ECHOES & SUBMERSION ]                | [ RESONANCE_QUICK_ACTIONS ]
-  - HYBRID SPRITES                     |   - COMPILING   -> Pool: 17[#5] (16 v. FV-2)
-  - NEW SPRITE TYPE                    |   - REGISTERING -> Pool: 19[#6] (16 v. FV)
+  - HYBRID SPRITES                     |   - COMPILING   -> Pool: 17[#5] (17 v. FV-2)
+  - NEW SPRITE TYPE                    |   - REGISTERING -> Pool: 19[#6] (17 v. FV)
   - SPRITE CONDUIT                     |   - DECOMPILING -> Pool: 17[#7] (10 v. FV-2)
   - SPRITE SYMBIOSIS                   |
   - LIVING NETWORK                     |
   - TRANSCENDENT NETWORK               |
   - OVERCLOCKING                       |
+  - SOFTWARE EMULATOR                  |
 
 
 [ DRONE_COMMAND_ARRAY (COL 1) ]        | [ DRONE_COMMAND_ARRAY (COL 2) ]
-- MCT GNAT                             | - S. BUTLER
-  HAN 3/3 ACC 4/4                      |   HAN 4/5 ACC 5/5
-  INT 10 SPD 30 BOD 0                  |   INT 5 SPD 8 BOD 4(6) [#8]
-  ARM 0  PIL 2  SEN 1                  |   PIL 2 SEN 3  ARM 0(10) [#9]
-                                       |     > Anti-theft system (Rating 1)
-- FB SKY COMMANDER                     |     > Sec Propulsion (Winged)
-  HAN 4/4 ACC 20/20                    |     > Incr Struct Integrity 2
-  INT 30 SPD 190 BOD 4                 |     > Drone rack (Small)
-  ARM 2  PIL 4   SEN 5                  |     > Integrated Cyberarm
-    > Chameleon Coating 1              |     > Integrated Cyberarm
-    > Drone rack (Micro/Mini)          |     > Wrist shield [+4]
-    > Integrated Matrix Device Dock    |     > Realistic Features 1
-    > Anti-theft system (Rating 1)     |
-    > RAM Plating 4                    | - S. MAN-AT-ARMS
-    > Enhanced Sensors 2               |   HAN 3/3 ACC 5/5
-    > ECM 6                            |   INT 5 SPD 10 BOD 10(15) [#10]
-                                       |   PIL 2 SEN 2  ARM 8[17] [#11]
+- MCT GNAT                             | - S. MAN-AT-ARMS
+  HAN 3/3 ACC 4/4                      |   HAN 3/3 ACC 5/5
+  INT 10 SPD 30 BOD 0                  |   INT 5 SPD 10 BOD 10(15) [#10]
+  ARM 0  PIL 2  SEN 1                  |   PIL 2 SEN 2  ARM 8[17] [#11]
                                        |     > Pop-Out Concealment (Large)
-                                       |     > Drone rack (Small)
-                                       |     > Anti-theft system (Rating 1)
-                                       |     > Sec Propulsion (Rotor)
-                                       |     > Incr Struct Integrity 5
-                                       |     > Realistic Features 4
-                                       |     > Integrated Cyberarm
-                                       |     > Tesla coil [5S(e)|8/10*/—/—/—]
-                                       |     > Fingertip compartment
-                                       |     > Implanted Heavy Pistol
-                                       |     > Integrated Cyberarm
-                                       |     > Wrist shield [+4]
+- FB SKY COMMANDER                     |     > Drone rack (Small)
+  HAN 4/4 ACC 20/20                    |     > Anti-theft system (Rating 1)
+  INT 30 SPD 190 BOD 4                 |     > Sec Propulsion (Rotor)
+  ARM 2  PIL 4   SEN 5                  |     > Incr Struct Integrity 5
+    > Chameleon Coating 1              |     > Realistic Features 4
+    > Drone rack (Micro/Mini)          |     > Integrated Cyberarm
+    > Integrated Matrix Device Dock    |     > Tesla coil [5S(e)|8/10*/—/—/—]
+    > Anti-theft system (Rating 1)     |     > Fingertip compartment
+    > RAM Plating 4                    |     > Implanted Heavy Pistol
+    > Enhanced Sensors 2               |     > Integrated Cyberarm
+    > ECM 6                            |     > Wrist shield [+4]
                                        |     > Armor increase 5 [+5]
-                                       |     > Weapon mount-Heavy
+- S. BUTLER                            |     > Weapon mount-Heavy
+  HAN 4/5 ACC 5/5                      |
+  INT 5 SPD 8 BOD 4(6) [#8]            |
+  PIL 2 SEN 3  ARM 0(10) [#9]          |
+    > Anti-theft system (Rating 1)     |
+    > Sec Propulsion (Winged)          |
+    > Incr Struct Integrity 2          |
+    > Drone rack (Small)               |
+    > Integrated Cyberarm              |
+    > Integrated Cyberarm              |
+    > Wrist shield [+4]                |
+    > Realistic Features 1             |
+
+[ MATRIX_DEVICES ] [#12]               |
+- AI NATIVE PROTOCOLS (VIRTUAL)        |
+  ATK 03 SLZ 05 DPR 03 FWL 05          |
+  Opt ASDF: 06 09 07 09 [#12]          |
+                                       |
+- M-TOC II (R5) (DEVICE)               |
+  ATK 00 SLZ 00 DPR 06 FWL 05          |
+  > Satellite link                     |
+  Opt ASDF: 00 00 08 09                |
+  Def: FWLx2 (18)                      |
+  Res: FWL (09)
+  Prgms: ARTILLERY BARRAGE
+         SNEAK SNEAK, TARGET
+         ARTIST, ECM WARRIOR II
 
 [ SOFTWARE_LIBRARY ]
   - CLEARSIGHT               (Auto)   [R9]  // Perception autosoft
@@ -138,8 +152,8 @@ ___________________________________________________________________________
                                        |   - AMMO RIFLES x5
                                        |   - KRIME GLOVES (STUN) [3P / 4S(e) | 6/—/—/—/—]
                                        |   - KRIME GLOVES (PHYS) [3P | 6/—/—/—/—]
-                                       |   - MTOC MARK2 [+12]
                                        |   - RFID SOFTWARE TAGS x10
+                                       |   - LASER JACK x10 [6P* | 14/16/16/9/—]
 
 [ LIFESTYLE_DATA ]
   - LOW (1 Months Pre-paid)
@@ -210,9 +224,9 @@ ___________________________________________________________________________
        - Hyperthreading (Opt.): +7, -1 task
   [#5] Compiling Sprites adjustments:
        - -2 FV, +1 Service on compiling net hit (Technoshaman)
-       - +6d6 when resisting fading (Sprite Conduit)
+       - +7d6 when resisting fading (Sprite Conduit)
   [#6] Registering Sprites adjustments:
-       - +6d6 when resisting fading (Sprite Conduit)
+       - +7d6 when resisting fading (Sprite Conduit)
   [#7] Decompiling Sprites adjustments:
        - -2 FV (Technoshaman)
   [#8] S. Butler BOD 4(6):
@@ -239,6 +253,7 @@ ___________________________________________________________________________
        - Opt. ASDF (06 09 07 09) 
 	     - Sprite Symbiosis (+4 Teamwork)
          - RES 07 (0313)
+	   - M-TOC II
 	     - Toolbox : +1 DP
 		 - Home dev: +1 DP
 		 - FW = AI's FW (9)
@@ -279,12 +294,12 @@ ___________________________________________________________________________
   - XIONG GIUYIN         SEA Wuxing                       L:1 I:4 F:0
   - REILLY DRAGMAN       KY Child Heiress                 L:1 I:1 F:1
   - QUEEN BRANE          Seelie Queen                     L:1 I:12 F:0
-  - SIGRÛN (MARIKKA VON HARBOU ) AMS Shadowrunner                 L:1 I:4 F:3
+  - SIGRÛN (MARIKKA V... AMS Shadowrunner                 L:1 I:4 F:3
   - DIXIE L'AMIN         DW Naga                          L:1 I:4 F:1
-  - AYANDA “SHIELDBEARER”MAHLANGU DW 'Mystic Edge' Producer        L:1 I:3 F:0
+  - AYANDA “SHIELDBEA... DW 'Mystic Edge' Producer        L:1 I:3 F:0
   - EBON ABIRASHUR       DW Leviathan Dragon              L:1 I:1 F:1
-  - COL. DEBORAH KENTWELL DW Thunder Corps Fixer           L:1 I:5 F:1
-  - POLYPHEMOUS 'PAUL' PELLAGIOS DW Background Actor              L:1 I:1 F:0
+  - COL. DEBORAH KENT... DW Thunder Corps Fixer           L:1 I:5 F:1
+  - POLYPHEMOUS 'PAUL... DW Background Actor              L:1 I:1 F:0
   - FERNAND ANATO        NOLA Kozlowski Capo              L:1 I:1 F:0
   - MONSIEUR JOHNSON     NOLA Johnson                     L:2 I:5 F:1
   - SWANGO               SEA Rapper                       L:2 I:3 F:0
@@ -326,7 +341,7 @@ ___________________________________________________________________________
   2026-05-30   |    +7 |   +15500 | CMP 2081-19: The Blue Moon of... (GM: JaGator)
   2026-05-30   |    +1 |    -2000 | CMP 2081-19: Working for the People
   2026-06-03   |    +7 |    +9500 | SRM 2081-17 Framed in Blood (GM: Oli K)
-  2026-06-03   |   -38 |        0 | SRM 2081-17: R8 Ally Sprite charge
+  2026-06-03   |   -34 |        0 | SRM 2081-17: R7 Ally Sprite Charge
   2026-06-03   |    +1 |    -5000 | SRM 2081-17: Working for the Ppl, Rent, Bribes
   2026-06-06   |    +9 |   +11500 | CMP 2081-20: In the Cold Kent... (GM: JaGator)
   2026-06-06   |    +1 |    -4000 | CMP 2081-20: Working for the People, Bribes
@@ -352,8 +367,10 @@ ___________________________________________________________________________
   2026-07-07   |    +1 |    -5000 | SRM 2081-08: Bribes, Rent, Working for the ...
   2026-07-09   |    +6 |    +8000 | SRM 2081-07 | Bootleg Bliss (GM: JaGator)
   2026-07-09   |    +1 |    -2000 | SRM 2081-07: Working for the ... (GM: JaGator)
+  2026-07-10   |    +6 |    +8000 | SRM 2081-06 | Cutting Str... (GM: Kira Capalu)
+  2026-07-10   |     0 |    -5000 | SRM 2081-06: Working for the People, Bribes...
   ---------------------------------------------------------------------------
-  LIFETIME KARMA: 158 (153 earned + 5 from Chargen)
+  LIFETIME KARMA: 164 (159 earned + 5 from Chargen)
 
 ___________________________________________________________________________
 // END_OF_FILE // REIKO@RESONANCE:~$ _

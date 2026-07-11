@@ -182,10 +182,10 @@ In this remote-control scenario, the AI **does** use its Matrix Equivalents:
 
 | Mission | Sprites Registered | Tasks Used |
 | ----------- | --- | --- |
-| CMP 2083-01 |  1  |  0  |
 | SRM 2081-08 |  4  |  0  |
-| SRM 2081-07 |  1  |  0  | 
-| **Total**   |  6  |  0  |
+| SRM 2081-07 |  2  |  0  |
+| SRM 2081-06 |  2  |  0  | 
+| **Total**   |  8  |  0  |
 
 ---
 
@@ -207,7 +207,8 @@ In this remote-control scenario, the AI **does** use its Matrix Equivalents:
   * *Artillery Barrage:* +1 to Launchers, no rifle/mg/cannon penalties  
   * *ECM Warrior II:* +2 Offensive Cracking tests
   * *Sneak-Sneak:* +2 Stealth  
-  * *Target Artist:* Attack w/o LOS on painted targets  
+  * *Target Artist:* Attack w/o LOS on painted targets 
+ 
 ---
 
 ## Krime Splash Self-Defense Ammunition

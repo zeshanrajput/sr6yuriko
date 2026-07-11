@@ -26,7 +26,7 @@ Reiko motioned to a chair for Brynne. Though it made no difference in her dimens
 
 In answer, Reiko had the drone attach its other arm and open the package. Inside was a small obsidian metal box, devoid of any external markings or features. Reiko knew it was exactly 85mm x 55mm x 22mm without having to measure it, just as she knew it was 874g and that its ventral surface slid off to reveal an assortment of connectors. She had the drone hold it up so that Brynne could see it.
 
-"A cyberdeck?" Brynne asked, but her brow furrowed again. "No, too small. " She leaned in closer, tapping one of the corners. "Ruggedized.Soft ports for easy maintenance..." Her eyes widened in sudden recognition, and she looked up at Reiko. "You could have paid me off with what you paid for this!"
+"A cyberdeck?" Brynne asked, but her brow furrowed again. "No, too small. " She leaned in closer, tapping one of the corners. "Ruggedized, so clearly military. Soft ports for easy maintenance..." Her eyes widened in sudden recognition, and she looked up at Reiko. "You could have paid me off with what you paid for this!"
 
 Reiko nodded. "I could have, but I didn't want to." She tapped the connection port with her finger. "The jobs are getting harder, Brynne. Half of my team took fire last week."
 
