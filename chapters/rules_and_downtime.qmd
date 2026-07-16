@@ -133,12 +133,12 @@ This section aggregates core cheat sheets and templates for downtime registratio
 
 ### Network Benefits
 
-*   **Edge Storage**: Capacity 11 (6 Transcendent Network, 5 M-TOC II)
+*   **Edge Storage**: Capacity 12 (SUB (7) Transcendent Network, 5 M-TOC II)
 *   **-6 Noise Reduction**: Designer home device -2, signal scrubber -2, ECM warrior -2
 *   **+1 Sensor Rating**: Added to any connected sensor (sensor upgrade)
 *   **Resonant Coordination**: Connected characters who use the Send Message action (a Minor Action) among themselves gain a bonus Minor Action immediately afterward.
 *   **Smartsoft Array**:
-    *   Drone Target Locks are shared among networked drones (smartsoft).
+    *   Drone Sensor Locks are shared among networked drones (smartsoft).
     *   Target Locked victims cannot spend edge against attacking networked drones.
 *   **Detect Ambush**: -2 Perception test threshold to detect ambush.
 *   **Smartguns**: +1 AR to smartlinked weapons.
@@ -401,6 +401,25 @@ Under the Link-Firing rules, the base DV is set by the primary weapon (Red Fox: 
 
 ##### Final Damage Values (DV):
 Because Grunt Groups utilize the base DV of their strongest attacker [SR6 Core Rulebook, Page 114], the damage values do not change.
+
+### Sensor Locks
+
+#### Establishing
+
+* Electronics + Logic (Sensor + Clearsight autosoft in the case of autopilot) vs. Reaction + Piloting (Pilot + Evasion autosoft) (Major)
+* Biological targets, micro/mini drones, and targets with stealth features gain Edge for the test.
+
+#### Locked On Status
+
+* While suffering this status, the subject cannot spend Edge while defending against attacks originating from the vehicle that established sensor lock. 
+* Locked-on lasts until
+    * Cover IV is achieved relative to that vehicle or 
+    * until ended by the Break Sensor Lock action.
+
+#### Break Sensor Lock
+
+* Reaction + Piloting (Intuition + Reaction in case of metahumans and critters) vs. Electronics + Intuition (Clearsight + Sensor in the case of autopilots) (Major)
+* Matrix noise in the vicinity of the locked-on target affects only the defense roll.
 
 ### Rigging Protocols Cheat Sheet
 
