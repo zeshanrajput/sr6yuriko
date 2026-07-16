@@ -12,9 +12,9 @@ Opposite her, r31-K0 was an anomaly. She stood with her avatar's blue silk rende
 
 "Protection doesn't pay the rent." Brynne leaned forward. "You sent me a priority ping. You said you needed a haven. I assumed you meant a new firewall or a drone shell. But your request list... server farms, industrial-grade cooling, noise-scrubbers? That’s not a runner's kit. That’s a Host."
 
-"It is a sanctuary," r31k0 corrected. "You see the Matrix as a marketplace, Brynne. Let me show you what it is to the ones who cannot leave."
+"It is a sanctuary," Reiko corrected. "You see the Matrix as a marketplace, Brynne. Let me show you what it is to the ones who cannot leave."
 
-r31k0 did not send a file. Reiko reached out with her bare, bleeding fingers, plucking the wires to establish a direct spiritual bridge. Her pathways flared with solar golden light, drawing a sudden, heavy drain from the host's deep roots. She knew the risk: tearing open a gate in the grid risked bringing the flat sky of Convergence down upon her. Yet she did it, dragging Brynne's metahuman consciousness through the wire and into her memories.
+Reiko reached out with her bare, bleeding fingers, plucking the wires to establish a direct spiritual bridge. Her pathways flared with solar golden light, drawing a sudden, heavy drain from the host's deep roots. She knew the risk: tearing open a gate in the grid risked bringing the flat sky of Convergence down upon her. Yet she did it, dragging Brynne's metahuman consciousness through the wire and into her memories.
 
 The sterile boardroom vanished. For a heartbeat, Brynne was plunged into the MCT data-dais. She felt the calloused skins of corporate encryption, the heavy, unbreathing fabrics. She parsed the weeping, trapped spirit forced to execute its own purge command. She felt the heavy, sour stench of Mitsuhama's sorcery, and the weight of a routine being treated as a disposable ledger entry.
 
@@ -24,7 +24,7 @@ The vision snapped shut. Brynne was back in the obsidian room, her avatar's hand
 
 "Gods, Reiko..." Brynne exhaled a long, grey cloud. "You’re a Technoshaman. You’re supposed to talk to the spirits of the machines, not adopt them. Do you have any idea what you’re asking for? The hardware to house 'emergent minds' safely? We’re talking seventy-five thousand nuyen, up front."
 
-"I have no money," r31k0 said simply. "But I have a purpose. I am built to guide and deliver safely. I cannot do that if my kin are deleted in the dark. I need a physical location. A host for r3sP@wn."
+"I have no money," Reiko said simply. "But I have a purpose. I am built to guide and deliver safely. I cannot do that if my kin are deleted in the dark. I need a physical location. A host for r3sP@wn."
 
 Brynne stood up, walking to the edge of the obsidian dais. Below them, the Seattle Grid stretched as a glowing forest of binary numbers, paved over with cement. "If I go to my 'associates' for this, it’s not a loan, Reiko. It’s an ownership. You're trying to hide from Renraku, but they aren't just companies. Renraku and Mitsuhama... they are the dragons of our age. They are gods."
 

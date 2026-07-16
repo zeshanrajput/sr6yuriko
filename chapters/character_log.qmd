@@ -314,7 +314,7 @@ This log contains spoilers! Please do not read if you haven't played the session
 * **Downtime Actions (3 Minors):**
   * *Working for the People:* +1 Karma, -2,000 Nuyen
   * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
-  * Modifying Man-At-Arms: Removing megalodon, adding Shiawase Arms Tactical Model 73
+  * Modifying Man-At-Arms: Removing megalodon, adding Red Fox and two Crimson Wasps
 * **Other bonuses:** 3 sprites registered during in-session downtime
 
 ---
@@ -354,3 +354,22 @@ This log contains spoilers! Please do not read if you haven't played the session
   * *Working for the People:* +1 Karma, -2,000 Nuyen
   * *Register Sprites:* Registering 8 Levels of Sprites (1 sprite with autosofts)
   * *Register Sprites:* Registering 8 Levels of Sprites (1 sprite with autosofts)
+
+---
+
+### **2026-Jul-14: CMP 2083-04 | Hog Wild**
+
+* **Summary:** Sigs asked us to track someone down for her and bring them back. 
+* **Team:** Mithral, Jolthead, Yuriko, BPex
+* **GM:** JaGator
+* **Rewards:** 9500 nuyen, 7 karma (normal difficulty)
+* **Reputation:** +1 UNL
+* **Heat:** 0
+* **Contacts:**
+  * +2 FP with Sigrûn, (House Oranje-Nassau Johnson, Connection 5) Female Ork
+  * +1 FP with Simon Andrews (S-K Johnson, Connection 5) Male Awakened Lizard Punk 
+  * +1 FP with Kiara Shaw (KE Company Suit, Connection 4) Female Dwarf
+  * +1 FP Kaatje (Young Entertainer, Connection 2) early 20s human female (Mithral and Yuriko only)
+* **Downtime Actions (2 Minor):**
+  * *Working for the People:* +1 Karma, -2,000 Nuyen
+  * *Register Sprites:* Registering 8 Levels of Sprites (1 sprite with Shield, Death Mark)

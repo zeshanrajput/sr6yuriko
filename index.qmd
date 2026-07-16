@@ -91,3 +91,4 @@ Active campaign stories written during play:
 * **[Chapter 16: Faith](chapters/16 Faith.md)**
 * **[Chapter 17: Sheets](chapters/17 Sheets.md)**
 * **[Chapter 18: The Geometry of the Sieve](chapters/18 The Geometry of a Sieve.md)**
+* **[Chapter 19: Legacy Code](chapters/19 Legacy Code.md)**

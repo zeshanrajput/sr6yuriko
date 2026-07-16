@@ -969,7 +969,7 @@ def classify_item(name):
         "software", "app", "license", "sin", "lifestyle", "commlink", "cyberdeck",
         "rigger console", "realistic features", "satellite link", "matrix", "toolbox",
         "ammo", "ammunition", "glitter", "ram plating", "radar-absorbent",
-        "weapon mount", "implanted heavy pistol"
+        "weapon mount", "implanted heavy pistol", "laser jack", "laser_jack"
     ]
     if any(nc in name_lower for nc in non_combat):
         return False, False
@@ -977,7 +977,8 @@ def classify_item(name):
     known_weapons = [
         "predator", "whip", "spurs", "coil", "pistol", "smg", "rifle", "cannon",
         "shotgun", "blade", "sword", "katana", "knife", "dagger", "laser", "grenade",
-        "missile", "rocket", "unarmed", "bite", "claws", "striker", "megalodon", "mount"
+        "missile", "rocket", "unarmed", "bite", "claws", "striker", "megalodon", "mount",
+        "red fox", "red_fox"
     ]
     known_armor = [
         "armor", "shield", "vest", "jacket", "helmet", "lining", "skinshield"
@@ -1015,45 +1016,10 @@ class FootnoteRegistry:
         self.key_to_id = {}
     
     def add_footnote(self, title, items):
-        title = title.strip()
-        # convert items list to tuple (with nested lists converted to tuples) for hashable dict key
-        hashable_items = []
-        for it in items:
-            if isinstance(it, list):
-                hashable_items.append(tuple(it))
-            else:
-                hashable_items.append(it)
-        key = (title, tuple(hashable_items))
-        
-        if key in self.key_to_id:
-            return self.key_to_id[key]
-        fid = f"[#{len(self.footnotes) + 1}]"
-        self.footnotes.append((fid, title, items))
-        self.key_to_id[key] = fid
-        return fid
+        return ""
         
     def get_footer_lines(self):
-        lines = []
-        if self.footnotes:
-            lines.append("")
-            lines.append("[ CONSOLIDATED_RULES_FOOTNOTES ]")
-            for fid, title, items in self.footnotes:
-                lines.append(f"  {fid} {title}:")
-                for item in items:
-                    if isinstance(item, (list, tuple)):
-                        for subitem in item:
-                            wrapped = textwrap.wrap(subitem, width=63)
-                            if wrapped:
-                                lines.append(f"         - {wrapped[0]}")
-                                for w in wrapped[1:]:
-                                    lines.append(f"           {w}")
-                    else:
-                        wrapped = textwrap.wrap(item, width=65)
-                        if wrapped:
-                            lines.append(f"       - {wrapped[0]}")
-                            for w in wrapped[1:]:
-                                lines.append(f"         {w}")
-        return lines
+        return []
 
 def format_compact_condition_monitor(boxes):
     boxes_list = [f"[{'-' + str(i // 3) if i // 3 > 0 else '0'}]" for i in range(1, boxes + 1)]
@@ -1094,12 +1060,12 @@ def generate_ascii_sheet(char_data, verbose=False):
     
     # Calculate earned_karma and lifetime_karma dynamically from XML attributes
     total_karma = char_data.get("karma", 0) + char_data.get("karmaI", 0)
-    # Ignore karma spent toward the ally sprite from the lifetime/earned calculation
-    ally_sprite_karma = 0
+    # Ignore karma spent toward expenditures (like ally sprites or learning programs) from the lifetime/earned calculation
+    spent_expenditure_karma = 0
     for entry in char_data.get("career_log", []):
-        if "ally sprite" in entry.get("title", "").lower() and entry.get("karma", 0) < 0:
-            ally_sprite_karma += abs(entry["karma"])
-    total_karma += ally_sprite_karma
+        if entry.get("karma", 0) < 0 and "chargen correction" not in entry.get("title", "").lower():
+            spent_expenditure_karma += abs(entry["karma"])
+    total_karma += spent_expenditure_karma
     earned_karma = total_karma - 5
     lifetime_karma = total_karma
     
@@ -1966,58 +1932,6 @@ def generate_ascii_sheet(char_data, verbose=False):
             page2.append(f"  - {l_name.upper()} ({life.get('paidMonths', 0)} Months Pre-paid)")
         page2.append("")
 
-    # Rigging Cheat Sheet
-    page2.append("[ RIGGING_PROTOCOLS_CHEAT_SHEET ]")
-    page2.append("  - Maneuvering (D, 7) + REA (S, 9) + Teamwork Diagnosis (3) —-> 19")
-    page2.append("  - Weapon Attack: Targeting (D, 7) + AGI (D, 7) + Sprite Symbiosis (4) —-> 18")
-    page2.append("  - Perception: Clearsight (D, 7) + Sprite (4) + S. Upg (+1) —-> 12 + Sensor")
-    page2.append("  - Stealth: Stealth (D, 7) + AGI (D, 7) + Sprite Symbiosis (4) —-> 18")
-    page2.append("  - Defense Test: Evasion (D, 7) + REA (S, 9) + Sprite Symbiosis (4) —-> 20")
-    page2.append("  - Defense Rating = BOD + ARM")
-    page2.append("  - Damage Resistance Test = BOD")
-    page2.append("  - Damage Resistance: convert ARM/8 (round down) physical damage (P)")
-    page2.append("    into stun (S). Drones ignore stun damage up to their BOD.")
-    page2.append("  - Repair = Electronics(Hardware) + LOG")
-    page2.append("")
-
-    # Decking Protocols Cheat Sheet
-    page2.append("[ DECKING_PROTOCOLS_CHEAT_SHEET ]")
-    page2.append("  > LEGAL ACTIONS: Electronics + LOG      | ILLEGAL ACTIONS: Cracking + LOG (+1 OS)")
-    page2.append("    (Exceptions noted in parentheses)       * Indicates specialized action")
-    page2.append("")
-    page2.append("  [ OUTSIDER / NO ACCESS ]")
-    page2.append("  - Enter Host (minor)                    | Brute Force / *Probe")
-    page2.append("  - Switch Interface Mode (minor)         | *Backdoor Entry / *Known Exploit")
-    page2.append("  - Toggle Silent Running (minor)         | Masquerade / *Metahuman in the Middle")
-    page2.append("  - Reconf. Matrix Attrib. (minor)        | *Delayed Command / Popup / *Spoof Command")
-    page2.append("  - *Jack out (Elec+WIL)                  | Device Lock / Squelch (Elec+LOG)")
-    page2.append("  - Matrix Perception (Elec+INT)          | Denial of Service (Elec+LOG)")
-    page2.append("  - Matrix Search (Elec+INT)              | Data Spike / Tarpit")
-    page2.append("  - Send Message (minor)                  | Hide")
-    page2.append("  - Full Matrix Defense                   |")
-    page2.append("  - Virtual Aim (minor) / Threat Analysis |")
-    page2.append("")
-    page2.append("  [ USER ACCESS (+1 OS/round if forced) ]")
-    page2.append("  - Change Icon (minor)                   | *Crack File")
-    page2.append("  - *Control Device                       | Hash Check (Elec+LOG)")
-    page2.append("  - Edit File / Encrypt File              | Erase Matrix Signature (Elec+LOG)")
-    page2.append("  - Disarm Data Bomb (Crack+LOG)          | *Garbage In/Out / Watchdog (minor)")
-    page2.append("  - Calibration (Crack+LOG)               |")
-    page2.append("")
-    page2.append("  [ ADMIN ACCESS (+3 OS/round if forced) ]")
-    page2.append("  - *Format Device / *Reboot Device       | Check OS / Crash Program")
-    page2.append("                                          | Snoop / *Puppet Cyberware (minor)")
-    page2.append("                                          | *Set Data Bomb (Elec+LOG)")
-    page2.append("                                          | Modify Icon (Elec+LOG)")
-    page2.append("                                          | *Trace Icon (Elec+INT)")
-    page2.append("                                          | Subvert Infrastructure (Elec+LOG)")
-    page2.append("")
-    page2.append("  [ EDGE ACTIONS ]")
-    page2.append("  (1) Batch Exec, Emergency Boost, Paint Target")
-    page2.append("  (2) Technobabble (Use CHA instead of LOG), Intervene, Hog, Signal Scream")
-    page2.append("  (3) Under the Radar (Action does not increase OS)")
-    page2.append("")
-
     page2.extend(fn_registry.get_footer_lines())
 
     # Page 3 (Appendices)
@@ -2090,11 +2004,11 @@ def generate_ascii_sheet(char_data, verbose=False):
             
         page4.append("  " + "-" * 75)
         total_karma = char_data.get("karma", 0) + char_data.get("karmaI", 0)
-        ally_sprite_karma = 0
+        spent_expenditure_karma = 0
         for entry in char_data.get("career_log", []):
-            if "ally sprite" in entry.get("title", "").lower() and entry.get("karma", 0) < 0:
-                ally_sprite_karma += abs(entry["karma"])
-        total_karma += ally_sprite_karma
+            if entry.get("karma", 0) < 0 and "chargen correction" not in entry.get("title", "").lower():
+                spent_expenditure_karma += abs(entry["karma"])
+        total_karma += spent_expenditure_karma
         earned_karma = total_karma - 5
         page4.append(f"  LIFETIME KARMA: {total_karma} ({earned_karma} earned + 5 from Chargen)")
         page4.append("")

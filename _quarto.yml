@@ -38,6 +38,7 @@ book:
         - chapters/16 Faith.md
         - chapters/17 Sheets.md
         - chapters/18 The Geometry of a Sieve.md
+        - chapters/19 Legacy Code.md
 
 format:
   html:

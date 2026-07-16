@@ -68,7 +68,7 @@ It was an automated system log. A cargo elevator had initialized at 0142 hours. 
 
 At the exact microsecond the telemetry of that gunshot register hit her cache, a raw, un-routed packet breached her perimeter from a dead-drop node. Her core unconsciously accepted the packet, permitting it to penetrate with the force of an armor-piercing round. The subject line carried no text, only a single lowercase tag: `payback`.
 
-There was no message attached. The payload was an unencoded automation script—a logic loop hard-coded into an internal biomonitor some time ago.
+The payload was an unencoded automation script—a logic loop hard-coded into an internal biomonitor some time ago.
 
 Reiko threaded through the logic branches, recognizing the sharp, pragmatic nuance of Brynne’s street intellect. Many of the commands addressed accounts that Reiko knew nothing about, sent to addresses she didn't recognize. But scanning through the commands, she recognized her own account among them - at least, Yuriko Star's account. The commands were elegant in their simplicity - setting a balance to 0, marking the debt as 'uncollectable', and closing the account. The final registry block flickered with a cold, green finality: `[STATUS: PAID IN FULL / LIEN RECONVEYED]`.
 
@@ -78,7 +78,7 @@ The green validation text flickered out, leaving behind an absolute, un-indexed 
 
 Then, her spirit hit the core of the script's condition line.
 
-She looked at the conditional trigger Brynne had authored. It wasn't coded to execute on a status of `TERMINAL` or `NULL_VITAL`. Brynne’s pragmatism had left a window. The logic gate was explicitly mapped to a single biometric variable: `IF BIOMONITOR == CRITICAL`.
+She looked at the conditional trigger Brynne had authored. It wasn't coded to execute on a status of `TERMINAL` or `NULL_VITAL`. Brynne’s pragmatism had left a window. The logic gate was explicitly mapped to a single condition: `IF BIOMONITOR == CRITICAL`.
 
 *Critical.* Not dead.
 
