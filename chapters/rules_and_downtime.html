@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -261,6 +290,11 @@ ul.task-list li input[type="checkbox"] {
   <a href="../chapters/18 The Geometry of a Sieve.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Geometry of the Sieve</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/19 Legacy Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legacy Code</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -273,31 +307,34 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#registering-sprites" id="toc-registering-sprites" class="nav-link active" data-scroll-target="#registering-sprites">Registering Sprites</a>
+  <li><a href="#matrix-decking-protocols" id="toc-matrix-decking-protocols" class="nav-link active" data-scroll-target="#matrix-decking-protocols">Matrix &amp; Decking Protocols</a>
   <ul class="collapse">
-  <li><a href="#compiling-phase" id="toc-compiling-phase" class="nav-link" data-scroll-target="#compiling-phase">1. Compiling Phase</a></li>
-  <li><a href="#registering-phase" id="toc-registering-phase" class="nav-link" data-scroll-target="#registering-phase">2. Registering Phase</a></li>
-  <li><a href="#resonance-focus-fading" id="toc-resonance-focus-fading" class="nav-link" data-scroll-target="#resonance-focus-fading">3. Resonance Focus Fading</a></li>
-  </ul></li>
-  <li><a href="#buying-gear-in-downtime" id="toc-buying-gear-in-downtime" class="nav-link" data-scroll-target="#buying-gear-in-downtime">Buying Gear in Downtime</a></li>
+  <li><a href="#matrix-attributes" id="toc-matrix-attributes" class="nav-link" data-scroll-target="#matrix-attributes">Matrix Attributes</a></li>
   <li><a href="#matrix-actions" id="toc-matrix-actions" class="nav-link" data-scroll-target="#matrix-actions">Matrix Actions</a></li>
-  <li><a href="#controlling-drones" id="toc-controlling-drones" class="nav-link" data-scroll-target="#controlling-drones">Controlling Drones</a>
-  <ul class="collapse">
-  <li><a href="#key-qualities-and-rules" id="toc-key-qualities-and-rules" class="nav-link" data-scroll-target="#key-qualities-and-rules">Key Qualities and Rules</a></li>
-  <li><a href="#attributes" id="toc-attributes" class="nav-link" data-scroll-target="#attributes">Attributes</a></li>
-  <li><a href="#skills" id="toc-skills" class="nav-link" data-scroll-target="#skills">Skills</a></li>
-  <li><a href="#total-pools" id="toc-total-pools" class="nav-link" data-scroll-target="#total-pools">Total Pools</a></li>
-  <li><a href="#jumped-in-operation-why-matrix-equivalents-are-bypassed" id="toc-jumped-in-operation-why-matrix-equivalents-are-bypassed" class="nav-link" data-scroll-target="#jumped-in-operation-why-matrix-equivalents-are-bypassed">1. Jumped-In Operation (Why Matrix Equivalents Are Bypassed)</a></li>
-  <li><a href="#remote-control-un-jumped-operation-when-matrix-equivalents-are-used" id="toc-remote-control-un-jumped-operation-when-matrix-equivalents-are-used" class="nav-link" data-scroll-target="#remote-control-un-jumped-operation-when-matrix-equivalents-are-used">2. Remote Control / Un-jumped Operation (When Matrix Equivalents ARE Used)</a></li>
-  <li><a href="#summary-table-ai-drone-attribute-mapping" id="toc-summary-table-ai-drone-attribute-mapping" class="nav-link" data-scroll-target="#summary-table-ai-drone-attribute-mapping">Summary Table: AI Drone Attribute Mapping</a></li>
-  <li><a href="#rules-reference-citations" id="toc-rules-reference-citations" class="nav-link" data-scroll-target="#rules-reference-citations">Rules Reference &amp; Citations</a></li>
+  <li><a href="#network-benefits" id="toc-network-benefits" class="nav-link" data-scroll-target="#network-benefits">Network Benefits</a></li>
+  <li><a href="#learned-programs" id="toc-learned-programs" class="nav-link" data-scroll-target="#learned-programs">Learned Programs</a></li>
+  <li><a href="#full-matrix-defense" id="toc-full-matrix-defense" class="nav-link" data-scroll-target="#full-matrix-defense">Full Matrix Defense</a></li>
+  <li><a href="#home-device-optimization" id="toc-home-device-optimization" class="nav-link" data-scroll-target="#home-device-optimization">Home Device Optimization</a></li>
+  <li><a href="#decking-protocols-cheat-sheet" id="toc-decking-protocols-cheat-sheet" class="nav-link" data-scroll-target="#decking-protocols-cheat-sheet">Decking Protocols Cheat Sheet</a></li>
+  <li><a href="#buying-gear-in-downtime" id="toc-buying-gear-in-downtime" class="nav-link" data-scroll-target="#buying-gear-in-downtime">Buying Gear in Downtime</a></li>
   </ul></li>
+  <li><a href="#drones-rigging" id="toc-drones-rigging" class="nav-link" data-scroll-target="#drones-rigging">Drones &amp; Rigging</a>
+  <ul class="collapse">
+  <li><a href="#drone-modified-values" id="toc-drone-modified-values" class="nav-link" data-scroll-target="#drone-modified-values">Drone Modified Values</a></li>
+  <li><a href="#controlling-drones" id="toc-controlling-drones" class="nav-link" data-scroll-target="#controlling-drones">Controlling Drones</a></li>
+  <li><a href="#man-at-arms---crimson-wasp-weapons-array" id="toc-man-at-arms---crimson-wasp-weapons-array" class="nav-link" data-scroll-target="#man-at-arms---crimson-wasp-weapons-array">Man-At-Arms - Crimson Wasp Weapons Array</a></li>
+  <li><a href="#rigging-protocols-cheat-sheet" id="toc-rigging-protocols-cheat-sheet" class="nav-link" data-scroll-target="#rigging-protocols-cheat-sheet">Rigging Protocols Cheat Sheet</a></li>
+  </ul></li>
+  <li><a href="#sprites-resonance" id="toc-sprites-resonance" class="nav-link" data-scroll-target="#sprites-resonance">Sprites &amp; Resonance</a>
+  <ul class="collapse">
+  <li><a href="#complex-forms" id="toc-complex-forms" class="nav-link" data-scroll-target="#complex-forms">Complex Forms</a></li>
+  <li><a href="#registering-sprites" id="toc-registering-sprites" class="nav-link" data-scroll-target="#registering-sprites">Registering Sprites</a></li>
   <li><a href="#sprite-stable" id="toc-sprite-stable" class="nav-link" data-scroll-target="#sprite-stable">Sprite Stable</a></li>
-  <li><a href="#network-benefits" id="toc-network-benefits" class="nav-link" data-scroll-target="#network-benefits">Network Benefits</a>
-  <ul class="collapse">
-  <li><a href="#permanent-benefits" id="toc-permanent-benefits" class="nav-link" data-scroll-target="#permanent-benefits">Permanent Benefits</a></li>
   </ul></li>
+  <li><a href="#gear-ammunition" id="toc-gear-ammunition" class="nav-link" data-scroll-target="#gear-ammunition">Gear &amp; Ammunition</a>
+  <ul class="collapse">
   <li><a href="#krime-splash-self-defense-ammunition" id="toc-krime-splash-self-defense-ammunition" class="nav-link" data-scroll-target="#krime-splash-self-defense-ammunition">Krime Splash Self-Defense Ammunition</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -324,174 +361,288 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>This section aggregates core cheat sheets and templates for downtime registration, rigging, decking, and resonance network benefits.</p>
-<section id="registering-sprites" class="level2">
-<h2 class="anchored" data-anchor-id="registering-sprites">Registering Sprites</h2>
+<hr>
+<section id="matrix-decking-protocols" class="level2">
+<h2 class="anchored" data-anchor-id="matrix-decking-protocols">Matrix &amp; Decking Protocols</h2>
+<section id="matrix-attributes" class="level3">
+<h3 class="anchored" data-anchor-id="matrix-attributes">Matrix Attributes</h3>
 <ul>
-<li><strong>Minor downtime action:</strong> Register 8 levels of sprites (up to R7 sprite)<br>
-</li>
-<li>1 per night’s rest (7 hrs registering, 3 hrs restoration). Must buy hits (SRMG p19)<br>
-</li>
-<li><strong>Outcome:</strong> R7 Modular sprite with 3 services/powers for 3 missions</li>
-</ul>
-<section id="compiling-phase" class="level3">
-<h3 class="anchored" data-anchor-id="compiling-phase">1. Compiling Phase</h3>
-<ul>
-<li><strong>Pool:</strong> Tasking (6) + RES (7) + Resonance Focus (4) = <strong>17 dice</strong> → <strong>4 Bought Hits</strong>.<br>
-</li>
-<li><strong>Sprite’s Defense:</strong> Level 7 × 2 = <strong>14 dice</strong> → <strong>3 Bought Hits</strong>.<br>
-</li>
-<li><strong>Net Hits:</strong> 4 - 3 = 1 → <strong>1 base service</strong>.<br>
-</li>
-<li><strong>Technoshaman Stream Modification:</strong> Grants +1 additional service on a successful compiling test. Total compiled services = <strong>2 services/powers</strong>.<br>
-</li>
-<li><strong>Fading Value (FV):</strong> Under core rules, compiling fade is exactly equal to the hits received on the sprite’s defense test = <strong>3</strong>.<br>
-</li>
-<li><strong>Technoshaman Mitigation:</strong> Reduces compiling fade by a flat 2 (3 - 2 = 1).<br>
-</li>
-<li><strong>Fading Resistance:</strong> Willpower (6) + Charisma (4) + Submersion Grade / Sprite Conduit (6) = <strong>16 dice</strong> → <strong>4 Bought Hits</strong>.<br>
-</li>
-<li><strong>Compiling Damage Taken:</strong> 1 FV - 4 hits = <strong>0 Damage</strong>.</li>
+<li><strong>Base ASDF</strong>: 3535</li>
+<li><strong>Sprite Symbiosis (Crack Sprite)</strong>: 0321 → 3856</li>
+<li><strong>Toolbox</strong>: 0010 → 3866</li>
+<li><strong>Resonance (7)</strong>: 2113 → 5979</li>
+<li><strong>Active Matrix Attributes</strong>: 5979</li>
 </ul>
 </section>
-<section id="registering-phase" class="level3">
-<h3 class="anchored" data-anchor-id="registering-phase">2. Registering Phase</h3>
+<section id="matrix-actions" class="level3">
+<h3 class="anchored" data-anchor-id="matrix-actions">Matrix Actions</h3>
+<p><strong>Base</strong>: Electronics (Software, 5) or Cracking (Hacking, 5)</p>
 <ul>
-<li><strong>Pool:</strong> Registering (8) + RES (7) + RES Focus (4) = <strong>19 dice</strong> → <strong>4 Bought Hits</strong>.<br>
-</li>
-<li><strong>Sprite’s Defense:</strong> Level 7 × 2 = <strong>14 dice</strong> → <strong>3 Bought Hits</strong>.<br>
-</li>
-<li><strong>Net Hits:</strong> 4 - 3 = 1 → <strong>1 base service</strong>.<br>
-</li>
-<li><strong>Combined Total Services:</strong> 2 (compiled) + 1 (registered) = <strong>3 total services/powers</strong>.<br>
-</li>
-<li><strong>Fading Value (FV):</strong> Under core rules, registering fade is equal to <em>twice</em> the hits received on the sprite’s defense test (3 x 2 = 6).<br>
-</li>
-<li><strong>Fading Resistance:</strong> Willpower (6) + Charisma (4) + Submersion Grade / Sprite Conduit (6) = <strong>16 dice</strong> → <strong>4 Bought Hits</strong>.<br>
-</li>
-<li><strong>Registering Damage Taken:</strong> 6 FV - 4 hits = <strong>2 boxes of Stun damage</strong>.</li>
+<li>Natural Hacker (Allows RES to replace any attribute in a matrix action): +7</li>
+<li>Resonance Focus: +4, 2FV</li>
+<li>Overclock: +2 (1 wild)</li>
+<li>Teamwork (R8 ally sprite): +4</li>
+</ul>
+<p><strong>Total</strong>: 22d6 (1 wild, + specialization), FV: 2</p>
+</section>
+<section id="network-benefits" class="level3">
+<h3 class="anchored" data-anchor-id="network-benefits">Network Benefits</h3>
+<ul>
+<li><strong>Edge Storage</strong>: Capacity 11 (6 Transcendent Network, 5 M-TOC II)</li>
+<li><strong>-6 Noise Reduction</strong>: Designer home device -2, signal scrubber -2, ECM warrior -2</li>
+<li><strong>+1 Sensor Rating</strong>: Added to any connected sensor (sensor upgrade)</li>
+<li><strong>Resonant Coordination</strong>: Connected characters who use the Send Message action (a Minor Action) among themselves gain a bonus Minor Action immediately afterward.</li>
+<li><strong>Smartsoft Array</strong>:
+<ul>
+<li>Drone Target Locks are shared among networked drones (smartsoft).</li>
+<li>Target Locked victims cannot spend edge against attacking networked drones.</li>
+</ul></li>
+<li><strong>Detect Ambush</strong>: -2 Perception test threshold to detect ambush.</li>
+<li><strong>Smartguns</strong>: +1 AR to smartlinked weapons.</li>
+<li><strong>Encryption</strong>: +1 increased threshold for all incoming Cracking tests.</li>
+<li><strong>Tactical Software apps</strong>:
+<ul>
+<li><em>Artillery Barrage</em>: +1 to Launchers, no rifle/mg/cannon penalties</li>
+<li><em>ECM Warrior II</em>: +2 Offensive Cracking tests</li>
+<li><em>Sneak-Sneak</em>: +2 Stealth</li>
+<li><em>Target Artist</em>: Attack w/o LOS on painted targets</li>
+</ul></li>
 </ul>
 </section>
-<section id="resonance-focus-fading" class="level3">
-<h3 class="anchored" data-anchor-id="resonance-focus-fading">3. Resonance Focus Fading</h3>
-<p>Because a data structure/focus was used to boost both tests, it incurs its own independent data-structure fade (4 / 2 = 2).</p>
+<section id="learned-programs" class="level3">
+<h3 class="anchored" data-anchor-id="learned-programs">Learned Programs</h3>
+<section id="cmp-2083-04-hog-wild" class="level4">
+<h4 class="anchored" data-anchor-id="cmp-2083-04-hog-wild">CMP 2083-04 | Hog Wild</h4>
+<p>2026-Jul-15</p>
 <ul>
-<li><strong>Focus Fading Pool:</strong> WIL (6) + LOG (4) = <strong>10 dice</strong> → <strong>2 Bought Hits</strong>.<br>
-</li>
-<li><strong>Damage Taken:</strong> 2 FV - 2 hits = <strong>0 Damage</strong>.</li>
+<li><strong>Nexus Protocol</strong>: Hitchhikers experience UV</li>
+<li><strong>Emulator</strong>: Run Commlink Apps
+<ul>
+<li><em>Personal Assistant (R6)</em>: Full Matrix Defense every round</li>
+<li><em>P-ICE Spines</em></li>
+<li><em>Social HUD</em>
+<ul>
+<li>Major action: Conduct matrix search to identify anyone broadcasting a SIN or other credentials</li>
+<li>Major action: Conduct matrix search based on facial recognition (tgt must have a SIN on file)</li>
+<li>+1 Edge on first social skill test with identified targets</li>
+</ul></li>
+<li><em>Thermal Mood Reading</em>: Minor action +1 edge on Judge Intentions</li>
+<li><em>Comm Spoofer</em>: +1 Edge on Con tests that involve misrepresenting oneself on a comm call</li>
+<li><em>Facial Scanner</em>
+<ul>
+<li>Major action to scan face for nanopaste disguise</li>
+<li>+1 situational edge on matrix search to identify recognized targets</li>
+</ul></li>
+<li><em>MeFeed</em>: +1 situational Edge on matrix search about a person, company, pop culture topic, or current event</li>
+</ul></li>
+<li><strong>Virtual Machine</strong>: +2 program slots, +1 Matrix Damage taken</li>
+<li><strong>Directional Shield</strong>: When in Full Matrix Defense, minor anytime action to add DP to defense pool</li>
+<li><strong>Toolbox</strong>: +1 DP</li>
+<li><strong>Clearsight</strong></li>
+<li><strong>Stealth Autosoft</strong></li>
+<li><strong>Coding Facility</strong>
+<ul>
+<li>Reduces the interval of all programming tests by half (usually 30 minutes)</li>
+<li>Grants 1 point of situational edge on programming tests</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="full-matrix-defense" class="level3">
+<h3 class="anchored" data-anchor-id="full-matrix-defense">Full Matrix Defense</h3>
+<p>ASDF (from Matrix Attributes)[#matrix-attributes]: 5979</p>
+<section id="the-base-matrix-defense-pool-16-dice" class="level4">
+<h4 class="anchored" data-anchor-id="the-base-matrix-defense-pool-16-dice">1. The Base Matrix Defense Pool (16 Dice)</h4>
+<p>A standard Matrix defense test uses a <strong>Mental Attribute + Matrix Attribute</strong> (most commonly <em>Intuition + Firewall</em> or <em>Willpower + Firewall</em> depending on the incoming Matrix action) [6WB, Page 180].</p>
+<ul>
+<li><strong>Replacing the Mental Attribute</strong>: Because Reiko has the <strong>Natural Hacker</strong> quality, Reiko can replace the non-Matrix mental attribute with Reiko’s <strong>Resonance (7)</strong> [HnS, Page 84].</li>
+<li><strong>Base Pool</strong>: Resonance (7) + Firewall (9) = <strong>16 dice</strong>.</li>
+</ul>
+</section>
+<section id="personal-assistant-rating-6-6-dice" class="level4">
+<h4 class="anchored" data-anchor-id="personal-assistant-rating-6-6-dice">2. Personal Assistant Rating 6 (+6 Dice)</h4>
+<p>Reiko is running a Rating 6 Personal Assistant commlink app inside Reiko’s Emulator.</p>
+<ul>
+<li><strong>Rule</strong>: A Personal Assistant app on its default setting constantly takes the Full Defense Matrix action on Reiko’s behalf, which adds its Rating directly to Reiko’s dice pool to resist hostile Matrix actions [HnS, Page 56 / 119].</li>
+<li><strong>Bonus</strong>: Rating 6 Personal Assistant = <strong>+6 dice</strong> [HnS, Page 56].</li>
+</ul>
+</section>
+<section id="directional-shield-program-7-dice" class="level4">
+<h4 class="anchored" data-anchor-id="directional-shield-program-7-dice">3. Directional Shield Program (+7 Dice)</h4>
+<p>Because Reiko’s Personal Assistant is constantly keeping Reiko in a state of Full Matrix Defense, Reiko meets the requirement to activate her Directional Shield program.</p>
+<ul>
+<li><strong>Rule</strong>: When Reiko has taken the Full Defense action, Reiko can spend a Minor Anytime Action to add Reiko’s <strong>Data Processing</strong> attribute to Reiko’s Matrix defense dice pool against an anticipated Matrix action Reiko is aware of [HnS, Page 56].</li>
+<li><strong>Bonus</strong>: Reiko’s Data Processing is <strong>7</strong> = <strong>+7 dice</strong>.</li>
+</ul>
+</section>
+<section id="resonance-focus-4-dice" class="level4">
+<h4 class="anchored" data-anchor-id="resonance-focus-4-dice">4. Resonance Focus (+4 Dice)</h4>
+<ul>
+<li><strong>Bonus</strong>: Utilizing her Resonance Focus adds <strong>+4 dice</strong> directly to Reiko’s Matrix defense tests.</li>
+</ul>
+</section>
+<section id="shield-sprite-power" class="level4">
+<h4 class="anchored" data-anchor-id="shield-sprite-power">5. Shield Sprite Power</h4>
+<ul>
+<li><strong>Bonus</strong>: Shield allows Reiko to add her sprite’s RES (7, see [[registering-sprites#registering-sprites]]) again to the matrix defense tests and opposed complex form / sprite power tests of up to RES icons, personas, or devices under her protection. [HnS p.&nbsp;74]</li>
 </ul>
 <hr>
 </section>
+<section id="final-pool-calculation" class="level4">
+<h4 class="anchored" data-anchor-id="final-pool-calculation">Final Pool Calculation</h4>
+<p><span class="math display">\[\text{2 * Resonance (7)} + \text{Firewall (9)} + \text{Personal Assistant (6)} + \text{Data Processing (7)} + \text{Resonance Echo (4)} = \mathbf{40\text{ Dice}}\]</span></p>
+<p>Reiko’s full Matrix defense pool when all of these elements are active is <strong>40 dice</strong>.</p>
 </section>
-<section id="buying-gear-in-downtime" class="level2">
-<h2 class="anchored" data-anchor-id="buying-gear-in-downtime">Buying Gear in Downtime</h2>
+</section>
+<section id="home-device-optimization" class="level3">
+<h3 class="anchored" data-anchor-id="home-device-optimization">Home Device Optimization</h3>
+<ul>
+<li>Home Device Tuning: Optimize: set 1 attribute to native; Passive: +1 capacity, +4 rating.</li>
+<li>Designer: home dev +1 DP/pilot, 2 Noise Reduction.</li>
+<li>M-TOC II:
+<ul>
+<li>Toolbox: +1 DP.</li>
+<li>Home dev: +1 DP.</li>
+<li>FW = AI’s FW (9).</li>
+</ul></li>
+</ul>
+</section>
+<section id="decking-protocols-cheat-sheet" class="level3">
+<h3 class="anchored" data-anchor-id="decking-protocols-cheat-sheet">Decking Protocols Cheat Sheet</h3>
+<ul>
+<li><strong>Legal Actions</strong>: Electronics + LOG (exceptions noted)</li>
+<li><strong>Illegal Actions</strong>: Cracking + LOG (+1 OS, <code>*</code> indicates specialized action)</li>
+</ul>
+<section id="actions-by-access-level" class="level4">
+<h4 class="anchored" data-anchor-id="actions-by-access-level">Actions by Access Level</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Access Level</th>
+<th style="text-align: left;">Legal Actions (Electronics + LOG)</th>
+<th style="text-align: left;">Illegal Actions (Cracking + LOG)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Outsider / No Access</strong></td>
+<td style="text-align: left;">- Enter Host (Minor)<br>- Switch Interface Mode (Minor)<br>- Toggle Silent Running (Minor)<br>- Reconfigure Matrix Attribute (Minor)<br>- *Jack out (Elec + WIL)<br>- Matrix Perception (Elec + INT)<br>- Matrix Search (Elec + INT)<br>- Send Message (Minor)<br>- Full Matrix Defense<br>- Virtual Aim (Minor) / Threat Analysis</td>
+<td style="text-align: left;">- Brute Force / <em>Probe<br>- </em>Backdoor Entry / <em>Known Exploit<br>- Masquerade / </em>Metahuman in the Middle<br>- <em>Delayed Command / Popup / </em>Spoof Command<br>- Device Lock / Squelch (Elec + LOG)<br>- Denial of Service (Elec + LOG)<br>- Data Spike / Tarpit<br>- Hide</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>User Access</strong><br><em>(+1 OS/round if forced)</em></td>
+<td style="text-align: left;">- Change Icon (Minor)<br>- Edit File / Encrypt File<br>- Hash Check (Elec + LOG)</td>
+<td style="text-align: left;">- <em>Crack File<br>- </em>Control Device<br>- Erase Matrix Signature (Elec + LOG)<br>- *Garbage In/Out / Watchdog (Minor)<br>- Disarm Data Bomb (Crack + LOG)<br>- Calibration (Crack + LOG)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Admin Access</strong><br><em>(+3 OS/round if forced)</em></td>
+<td style="text-align: left;">- Check OS / Crash Program<br>- Modify Icon (Elec + LOG)</td>
+<td style="text-align: left;">- <em>Format Device / </em>Reboot Device<br>- Snoop / <em>Puppet Cyberware (Minor)<br>- </em>Set Data Bomb (Elec + LOG)<br>- *Trace Icon (Elec + INT)<br>- Subvert Infrastructure (Elec + LOG)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="edge-actions" class="level4">
+<h4 class="anchored" data-anchor-id="edge-actions">Edge Actions</h4>
+<ul>
+<li><strong>(1 Edge)</strong>: Batch Exec, Emergency Boost, Paint Target</li>
+<li><strong>(2 Edge)</strong>: Technobabble (Use CHA instead of LOG), Intervene, Hog, Signal Scream</li>
+<li><strong>(3 Edge)</strong>: Under the Radar (Action does not increase OS)</li>
+</ul>
+</section>
+</section>
+<section id="buying-gear-in-downtime" class="level3">
+<h3 class="anchored" data-anchor-id="buying-gear-in-downtime">Buying Gear in Downtime</h3>
 <p><strong>Base</strong>: Electronics (5) + Int</p>
 <ul>
-<li>Natural Hacker (Allows RES to replace any attribute in a matrix action): +7<br>
-</li>
-<li>Resonance Focus: +4<br>
-</li>
-<li>Overclock: +1<br>
-</li>
-<li>Relevant Shopsoft: +1<br>
-</li>
+<li>Natural Hacker (Allows RES to replace any attribute in a matrix action): +7</li>
+<li>Resonance Focus: +4</li>
+<li>Overclock: +1</li>
+<li>Relevant Shopsoft: +1</li>
 <li>Teamwork (R8 ally sprite): +4</li>
 </ul>
 <p><strong>Total</strong>: 22d6 → 5 bought hits</p>
 <hr>
 </section>
-<section id="matrix-actions" class="level2">
-<h2 class="anchored" data-anchor-id="matrix-actions">Matrix Actions</h2>
-<p><strong>Base</strong>: Electronics (Software, 5) or Cracking (Hacking, 5)</p>
-<ul>
-<li>Natural Hacker (Allows RES to replace any attribute in a matrix action): +7<br>
-</li>
-<li>Resonance Focus: +4, 2FV<br>
-</li>
-<li>Overclock: +2 (1 wild)<br>
-</li>
-<li>Teamwork (R8 ally sprite): +4</li>
-</ul>
-<p><strong>Total</strong>: 22d6 (1 wild, + specialization), FV: 2</p>
-<hr>
 </section>
-<section id="controlling-drones" class="level2">
-<h2 class="anchored" data-anchor-id="controlling-drones">Controlling Drones</h2>
-<section id="key-qualities-and-rules" class="level3">
-<h3 class="anchored" data-anchor-id="key-qualities-and-rules">Key Qualities and Rules</h3>
+<section id="drones-rigging" class="level2">
+<h2 class="anchored" data-anchor-id="drones-rigging">Drones &amp; Rigging</h2>
+<section id="drone-modified-values" class="level3">
+<h3 class="anchored" data-anchor-id="drone-modified-values">Drone Modified Values</h3>
 <ul>
-<li><strong>Pilot Origin:</strong> Allows r31k0 to use autosofts up to her <strong>Data Processing</strong> (HnS p 119)<br>
-</li>
-<li><strong>Sprite Symbiosis:</strong> r31k0’s ally <em>primal sprite</em> increases her ASDF by +3/+1/+3/+1. (Hack and Slash, Sprite Symbiosis, Page 80; Hack and Slash, Points of Sprite, Page 72)<br>
-</li>
-<li><strong>EI Resonance:</strong> r31k0 can add her RES (7) to her ASDF, but no attribute can be raised by more than 50% of base<br>
-</li>
-<li><strong>Attribute Enhancement:</strong> No attribute can be increased more than +4 total<br>
-</li>
-<li><strong>Devices, AR and VR:</strong> Devices controlled remotely via AR use the operator’s physical attributes (SR6B p.&nbsp;180)<br>
-</li>
-<li>For AI, the Matrix Equivalent Attributes table dictates how ASDF form “physical” attributes (BOD [F] AGI [D] REA [S] STR [A]) (HnS p.&nbsp;118)<br>
-</li>
-<li>R31k0’s ally sprite can offer teamwork for shared autosofts (+4) or via Diagnostics (+4 Electronics, Engineering, Piloting)<br>
-</li>
+<li><strong>S. Butler BOD 4(6)</strong>:
+<ul>
+<li>BOD is 4(6) where structural integrity adds +2.</li>
+</ul></li>
+<li><strong>S. Butler ARM 0(10)</strong>:
+<ul>
+<li>ARM is 0(10) total.</li>
+<li>Standard armor is supplemented by: SkinShield (+2), RACS activated (+2), InvisiShield (+2), and Wrist shield (+4).</li>
+</ul></li>
+<li><strong>S. Man-at-Arms BOD 10(15)</strong>:
+<ul>
+<li>BOD is 10(15) where structural integrity adds +5.</li>
+</ul></li>
+<li><strong>S. Man-at-Arms ARM 8[17]</strong>:
+<ul>
+<li>ARM is 8[17] total.</li>
+<li>Standard armor is supplemented by: Armor Increase 5 (+5) and Wrist shield (+4).</li>
+</ul></li>
+</ul>
+</section>
+<section id="controlling-drones" class="level3">
+<h3 class="anchored" data-anchor-id="controlling-drones">Controlling Drones</h3>
+<section id="key-qualities-and-rules" class="level4">
+<h4 class="anchored" data-anchor-id="key-qualities-and-rules">Key Qualities and Rules</h4>
+<ul>
+<li><strong>Pilot Origin</strong>: Allows r31k0 to use autosofts up to her <strong>Data Processing</strong> (HnS p 119)</li>
+<li><strong>Devices, AR and VR</strong>: Devices controlled remotely via AR use the operator’s physical attributes (SR6B p.&nbsp;180)</li>
+<li>For AI, the Matrix Equivalent Attributes table dictates how ASDF form “physical” attributes (BOD [F] AGI [D] REA [S] STR [A]) (HnS p.&nbsp;118)</li>
+<li>R31k0’s ally sprite can offer teamwork for shared autosofts (+4) or via Diagnostics (+4 Electronics, Engineering, Piloting)</li>
 <li>Sensor Upgrade adds +1 when using sensors</li>
 </ul>
 </section>
-<section id="attributes" class="level3">
-<h3 class="anchored" data-anchor-id="attributes">Attributes</h3>
-<p>Base ASDF: 3535</p>
-<ul>
-<li>Primal Sprite Symbiosis: 6666<br>
-</li>
-<li>Resonance (7): 6979</li>
-</ul>
-</section>
-<section id="skills" class="level3">
-<h3 class="anchored" data-anchor-id="skills">Skills</h3>
+<section id="skills" class="level4">
+<h4 class="anchored" data-anchor-id="skills">Skills</h4>
 <p>Rating 9 Autosofts: 7 (capped by D)</p>
 <ul>
-<li>Sprite Symbiosis (Targeting, Electronics, Engineering, and Piloting only): +4<br>
-</li>
+<li>Sprite Symbiosis (Targeting, Electronics, Engineering, and Piloting only): +4</li>
 <li>Sensor Upgrade (Clearsight only): +1</li>
 </ul>
 </section>
-<section id="total-pools" class="level3">
-<h3 class="anchored" data-anchor-id="total-pools">Total Pools</h3>
+<section id="total-pools" class="level4">
+<h4 class="anchored" data-anchor-id="total-pools">Total Pools</h4>
 <ul>
-<li><strong>Pilot/Drive/Crash:</strong> Maneuvering (D, 7) + REA (S, 9) + TW (4) ──&gt; <strong>20</strong></li>
-<li><strong>Ramming AR:</strong> Maneuvering (D, 7) + Sensor Rating<br>
-</li>
-<li><strong>DR vs Ramming:</strong> Maneuvering (D, 7) + Armor Rating<br>
-</li>
-<li><strong>Ramming Att/Def:</strong> Pilot Test (See Above)<br>
-</li>
-<li><strong>Weapon AR:</strong> Per Weapon<br>
-</li>
-<li><strong>DR vs Weapons:</strong> Maneuvering (D, 7) + Armor Rating<br>
-</li>
-<li><strong>Weapon Attack:</strong> Targeting (D, 7) + AGI (D, 7) + Sprite (+4) ──&gt; <strong>18</strong><br>
-</li>
-<li><strong>Weapon Defense:</strong> Evasion (D, 7) + REA (S, 9) ──&gt; <strong>16</strong><br>
-</li>
-<li><strong>Perception:</strong> Clearsight (D, 7) + Drone Sensor Rtg + Sensor Upgrade<br>
-</li>
-<li><strong>Stealth:</strong> Stealth (D, 7) + AGI (D, 7) ──&gt; <strong>14</strong></li>
+<li><strong>Pilot/Drive/Crash</strong>: Maneuvering (D, 7) + REA (S, 9) + TW (4) ──&gt; <strong>20</strong></li>
+<li><strong>Ramming AR</strong>: Maneuvering (D, 7) + Sensor Rating</li>
+<li><strong>DR vs Ramming</strong>: Maneuvering (D, 7) + Armor Rating</li>
+<li><strong>Ramming Att/Def</strong>: Pilot Test (See Above)</li>
+<li><strong>Weapon AR</strong>: Per Weapon</li>
+<li><strong>DR vs Weapons</strong>: Maneuvering (D, 7) + Armor Rating</li>
+<li><strong>Weapon Attack</strong>: Targeting (D, 7) + AGI (D, 7) + Sprite (+4) ──&gt; <strong>18</strong></li>
+<li><strong>Weapon Defense</strong>: Evasion (D, 7) + REA (S, 9) ──&gt; <strong>16</strong></li>
+<li><strong>Perception</strong>: Clearsight (D, 7) + Drone Sensor Rtg + Sensor Upgrade</li>
+<li><strong>Stealth</strong>: Stealth (D, 7) + AGI (D, 7) ──&gt; <strong>14</strong></li>
 </ul>
 <p>To understand how an Artificial Intelligence (AI) character with the <strong>Pilot Origins</strong> quality pilots a drone, we must distinguish between two distinct methods of drone operation: <strong>Jumped-In (Rigging)</strong> and <strong>Remote Control (Un-jumped)</strong> [Hack and Slash, p.&nbsp;119; SR6 Core Rulebook, p.&nbsp;198].</p>
 <p>The rules handle these two scenarios differently regarding whether they use standard mental attributes or the AI’s <strong>Matrix Equivalent Attributes</strong> [Hack and Slash, p.&nbsp;118; SR6 Core Rulebook, p.&nbsp;198].</p>
 <hr>
 </section>
-<section id="jumped-in-operation-why-matrix-equivalents-are-bypassed" class="level3">
-<h3 class="anchored" data-anchor-id="jumped-in-operation-why-matrix-equivalents-are-bypassed">1. Jumped-In Operation (Why Matrix Equivalents Are Bypassed)</h3>
+<section id="jumped-in-operation-why-matrix-equivalents-are-bypassed" class="level4">
+<h4 class="anchored" data-anchor-id="jumped-in-operation-why-matrix-equivalents-are-bypassed">1. Jumped-In Operation (Why Matrix Equivalents Are Bypassed)</h4>
 <p>The <strong>Pilot Origins</strong> quality states:</p>
 <blockquote class="blockquote">
 <p><em>“The AI may jump into drones and vehicles, controlling them like a rigger. Each level of this quality grants the bonus of a control rig of an equal rating”</em> [Hack and Slash, p.&nbsp;119].</p>
 </blockquote>
 <p>When an AI character chooses to jump into a drone using this quality, standard rigging rules take over:</p>
 <ul>
-<li>According to the <strong>Control Rigs and You</strong> rules, a rigger who is jumped into a device uses their mind instead of their meat body [SR6 Core Rulebook, p.&nbsp;198].<br>
-</li>
-<li>Physical attributes are replaced entirely by <strong>Mental attributes</strong> for all jumped-in tests [SR6 Core Rulebook, p.&nbsp;198].<br>
-</li>
+<li>According to the <strong>Control Rigs and Reiko</strong> rules, a rigger who is jumped into a device uses their mind instead of their meat body [SR6 Core Rulebook, p.&nbsp;198].</li>
+<li>Physical attributes are replaced entirely by <strong>Mental attributes</strong> for all jumped-in tests [SR6 Core Rulebook, p.&nbsp;198].</li>
 <li>The conversion table for jumped-in riggers dictates the following replacements [SR6 Core Rulebook, p.&nbsp;198]:</li>
 </ul>
 <table class="caption-top table">
@@ -522,15 +673,14 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p>Since an AI character natively possesses standard Mental attributes (Willpower, Charisma, Logic, and Intuition) in their character block [Hack and Slash, p.&nbsp;118], they use these <strong>Mental attributes directly</strong> when jumped in.</p>
 <ul>
-<li><strong>Piloting:</strong> When piloting a jumped-in drone, the test uses Reaction. Because the AI is jumped in, Reaction is replaced by <strong>Intuition</strong>. The AI rolls <strong>Piloting + Intuition</strong> [SR6 Core Rulebook, p.&nbsp;198].<br>
-</li>
-<li><strong>Gunnery/Firing:</strong> When firing a jumped-in drone’s weapons, the test uses Agility. Because the AI is jumped in, Agility is replaced by <strong>Logic</strong>. The AI rolls <strong>Firearms + Logic</strong> [SR6 Core Rulebook, p.&nbsp;198].</li>
+<li><strong>Piloting</strong>: When piloting a jumped-in drone, the test uses Reaction. Because the AI is jumped in, Reaction is replaced by <strong>Intuition</strong>. The AI rolls <strong>Piloting + Intuition</strong> [SR6 Core Rulebook, p.&nbsp;198].</li>
+<li><strong>Gunnery/Firing</strong>: When firing a jumped-in drone’s weapons, the test uses Agility. Because the AI is jumped in, Agility is replaced by <strong>Logic</strong>. The AI rolls <strong>Firearms + Logic</strong> [SR6 Core Rulebook, p.&nbsp;198].</li>
 </ul>
 <p>Because the standard rigging rules bypass physical attributes in favor of mental attributes, the AI does not need to refer to its “Physical Attribute Matrix Equivalents” (Firewall, Sleaze, Data Processing, Attack) in this state.</p>
 <hr>
 </section>
-<section id="remote-control-un-jumped-operation-when-matrix-equivalents-are-used" class="level3">
-<h3 class="anchored" data-anchor-id="remote-control-un-jumped-operation-when-matrix-equivalents-are-used">2. Remote Control / Un-jumped Operation (When Matrix Equivalents ARE Used)</h3>
+<section id="remote-control-un-jumped-operation-when-matrix-equivalents-are-used" class="level4">
+<h4 class="anchored" data-anchor-id="remote-control-un-jumped-operation-when-matrix-equivalents-are-used">2. Remote Control / Un-jumped Operation (When Matrix Equivalents ARE Used)</h4>
 <p>If the AI is <strong>not</strong> jumped into the drone (e.g., they are issuing remote control commands to a drone, or the drone is operating autonomously as an “AI-driven drone” without the AI jumped in), standard remote control rules dictate that the controller’s Physical attributes are used [SR6 Core Rulebook, p.&nbsp;201]. If the AI is controlling the device via VR they use their mental attributes, but if the AI is controlling the device via AR they use their “physical” attributes [Devices, AR and VR, SR6 Core Rulebook, p.&nbsp;180].</p>
 <p>Because an AI lacks a physical body, they must substitute their missing Physical attributes using the <strong>Matrix Equivalent Attributes</strong> table [Hack and Slash, p.&nbsp;118]:</p>
 <table class="caption-top table">
@@ -561,14 +711,13 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p>In this remote-control scenario, the AI <strong>does</strong> use its Matrix Equivalents:</p>
 <ul>
-<li><strong>Piloting:</strong> When remotely piloting a drone, the test normally calls for <em>Piloting + Reaction</em>. The AI substitutes Reaction for Sleaze, rolling <strong>Piloting + Sleaze</strong> [Hack and Slash, p.&nbsp;118].<br>
-</li>
-<li><strong>Gunnery/Firing:</strong> When remotely firing a drone’s mounted weapon, the test normally calls for <em>Firearms + Agility</em>. The AI substitutes Agility for Data Processing, rolling <strong>Firearms + Data Processing</strong> [Hack and Slash, p.&nbsp;118].</li>
+<li><strong>Piloting</strong>: When remotely piloting a drone, the test normally calls for <em>Piloting + Reaction</em>. The AI substitutes Reaction for Sleaze, rolling <strong>Piloting + Sleaze</strong> [Hack and Slash, p.&nbsp;118].</li>
+<li><strong>Gunnery/Firing</strong>: When remotely firing a drone’s mounted weapon, the test normally calls for <em>Firearms + Agility</em>. The AI substitutes Agility for Data Processing, rolling <strong>Firearms + Data Processing</strong> [Hack and Slash, p.&nbsp;118].</li>
 </ul>
 <hr>
 </section>
-<section id="summary-table-ai-drone-attribute-mapping" class="level3">
-<h3 class="anchored" data-anchor-id="summary-table-ai-drone-attribute-mapping">Summary Table: AI Drone Attribute Mapping</h3>
+<section id="summary-table-ai-drone-attribute-mapping" class="level4">
+<h4 class="anchored" data-anchor-id="summary-table-ai-drone-attribute-mapping">Summary Table: AI Drone Attribute Mapping</h4>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -601,24 +750,137 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <hr>
 </section>
-<section id="rules-reference-citations" class="level3">
-<h3 class="anchored" data-anchor-id="rules-reference-citations">Rules Reference &amp; Citations</h3>
+<section id="rules-reference-citations" class="level4">
+<h4 class="anchored" data-anchor-id="rules-reference-citations">Rules Reference &amp; Citations</h4>
 <ul>
-<li><strong>[Hack and Slash, p.&nbsp;118]</strong> – AI Character Attribute Block and Matrix Equivalent Attributes.<br>
-</li>
-<li><strong>[Hack and Slash, p.&nbsp;119]</strong> – Pilot Origins Quality &amp; AI-driven drone rules.<br>
-</li>
-<li><strong>[SR6 Core Rulebook, p.&nbsp;198]</strong> – Control Rigs and You, Jumped-In Attribute conversion table.<br>
-</li>
-<li><strong>[SR6 Core Rulebook, p.&nbsp;201]</strong> – Drone Rigging and remote-control command guidelines.<br>
-</li>
+<li><strong>[Hack and Slash, p.&nbsp;118]</strong> – AI Character Attribute Block and Matrix Equivalent Attributes.</li>
+<li><strong>[Hack and Slash, p.&nbsp;119]</strong> – Pilot Origins Quality &amp; AI-driven drone rules.</li>
+<li><strong>[SR6 Core Rulebook, p.&nbsp;198]</strong> – Control Rigs and Reiko, Jumped-In Attribute conversion table.</li>
+<li><strong>[SR6 Core Rulebook, p.&nbsp;201]</strong> – Drone Rigging and remote-control command guidelines.</li>
 <li><strong>[SR6 Core Rulebook, p.&nbsp;180]</strong> - Devices, AR and VR.</li>
+</ul>
+</section>
+</section>
+<section id="man-at-arms---crimson-wasp-weapons-array" class="level3">
+<h3 class="anchored" data-anchor-id="man-at-arms---crimson-wasp-weapons-array">Man-At-Arms - Crimson Wasp Weapons Array</h3>
+<section id="weapon-profiles-range-profiles" class="level4">
+<h4 class="anchored" data-anchor-id="weapon-profiles-range-profiles">1. Weapon Profiles &amp; Range Profiles</h4>
+<ul>
+<li><strong>rEVOlution Arms Red Fox (Primary)</strong> [Firing Squad, Page 44]:
+<ul>
+<li><strong>Base DV</strong>: 6P* (Decreases to 3P at Medium and further ranges)</li>
+<li><strong>Base Attack Rating</strong>: 14 / 16 / 16 / 9 / — (Close / Near / Medium / Far / Extreme)</li>
+</ul></li>
+<li><strong>rEVOlution Arms Crimson Wasp (Secondary Link-Fired)</strong> [Firing Squad, Page 44]:
+<ul>
+<li><strong>Base DV</strong>: 5P* (Decreases to 3P at Medium and further ranges)</li>
+<li><strong>Base Attack Rating</strong>: 16 / 14 / 11 / 6 / — (Close / Near / Medium / Far / Extreme)</li>
+</ul></li>
+</ul>
+</section>
+<section id="attack-rating-ar-modifications" class="level4">
+<h4 class="anchored" data-anchor-id="attack-rating-ar-modifications">2. Attack Rating (AR) Modifications</h4>
+<ol type="1">
+<li><strong>Smartlink Bonus</strong>: Adding an internal smartlink system to the primary weapon (Red Fox) increases its Attack Rating by <strong>+2 across all available range categories</strong> [SR6 Core Rulebook (Berlin Ed.), Page 262].
+<ul>
+<li>Red Fox Adjusted AR: <strong>16 / 18 / 18 / 11 / —</strong></li>
+</ul></li>
+<li><strong>Link-Firing Bonus</strong>: Link-firing multiple weapons increases the primary weapon’s AR by <strong>+1 AR for each additional weapon</strong> added to the attack [Double Clutch, Page 144]. With two Crimson Wasps added, this grants <strong>+2 AR</strong>.
+<ul>
+<li><strong>Final Attack Rating</strong>: <strong>18 / 20 / 20 / 13 / —</strong></li>
+</ul></li>
+</ol>
+</section>
+<section id="damage-value-dv-modifications" class="level4">
+<h4 class="anchored" data-anchor-id="damage-value-dv-modifications">3. Damage Value (DV) Modifications</h4>
+<p>Under the Link-Firing rules, the base DV is set by the primary weapon (Red Fox: 6P at Close/Near, 3P at Medium/Far) and modified by the secondary weapons (Crimson Wasps):</p>
+<ul>
+<li><strong>Rule</strong>: Added weapons of DV 5 or higher add <strong>+2 DV</strong> to the attack.</li>
+<li><strong>At Close / Near Ranges</strong>
+<ul>
+<li>Both Wasps are DV 5+, adding +2 DV each (+4 DV total).</li>
+<li><strong>Final DV</strong>: 6P + 4 = <strong>10P</strong></li>
+</ul></li>
+<li><strong>At Medium / Far Ranges</strong>
+<ul>
+<li>Both Wasps are below DV 5, adding +1 DV each (+2 DV total).</li>
+<li><strong>Final DV</strong>: 3P + 2 = <strong>5P</strong></li>
+</ul></li>
+</ul>
+<section id="final-damage-values-dv" class="level5">
+<h5 class="anchored" data-anchor-id="final-damage-values-dv">Final Damage Values (DV):</h5>
+<p>Because Grunt Groups utilize the base DV of their strongest attacker [SR6 Core Rulebook, Page 114], the damage values do not change.</p>
+</section>
+</section>
+</section>
+<section id="rigging-protocols-cheat-sheet" class="level3">
+<h3 class="anchored" data-anchor-id="rigging-protocols-cheat-sheet">Rigging Protocols Cheat Sheet</h3>
+<ul>
+<li><strong>Pilot/Drive/Crash</strong>: Maneuvering (D, 7) + REA (S, 9) + Teamwork Diagnosis (3) ──&gt; <strong>19</strong></li>
+<li><strong>Weapon Attack</strong>: Targeting (D, 7) + AGI (D, 7) + Sprite Symbiosis (4) ──&gt; <strong>18</strong></li>
+<li><strong>Perception</strong>: Clearsight (D, 7) + Sprite (4) + Sensor Upgrade (+1) ──&gt; <strong>12 + Sensor</strong></li>
+<li><strong>Stealth</strong>: Stealth (D, 7) + AGI (D, 7) + Sprite Symbiosis (4) ──&gt; <strong>18</strong></li>
+<li><strong>Defense Test</strong>: Evasion (D, 7) + REA (S, 9) + Sprite Symbiosis (4) ──&gt; <strong>20</strong></li>
+<li><strong>Defense Rating</strong>: BOD + ARM</li>
+<li><strong>Damage Resistance Test</strong>: BOD</li>
+<li><strong>Damage Resistance</strong>: Convert ARM/8 (round down) physical damage (P) into stun (S). Drones ignore stun damage up to their BOD.</li>
+<li><strong>Repair</strong>: Electronics(Hardware) + LOG</li>
 </ul>
 <hr>
 </section>
 </section>
-<section id="sprite-stable" class="level2">
-<h2 class="anchored" data-anchor-id="sprite-stable">Sprite Stable</h2>
+<section id="sprites-resonance" class="level2">
+<h2 class="anchored" data-anchor-id="sprites-resonance">Sprites &amp; Resonance</h2>
+<section id="complex-forms" class="level3">
+<h3 class="anchored" data-anchor-id="complex-forms">Complex Forms</h3>
+<ul>
+<li>Includes Sprite Symbiosis bonus: +4.</li>
+<li>Includes Resonance Focus: +4 (Fading Value: 2 for use).</li>
+</ul>
+</section>
+<section id="registering-sprites" class="level3">
+<h3 class="anchored" data-anchor-id="registering-sprites">Registering Sprites</h3>
+<ul>
+<li><strong>Minor downtime action</strong>: Register 8levels of sprites (up to R7 sprite)</li>
+<li>1 per night’s rest (7 hrs registering, 3 hrs restoration). Must buy hits (SRMG p19)</li>
+<li><strong>Outcome</strong>: R7 Modular sprite with 3 services/powers for 3 missions</li>
+</ul>
+<section id="compiling-phase" class="level4">
+<h4 class="anchored" data-anchor-id="compiling-phase">1. Compiling Phase</h4>
+<ul>
+<li><strong>Pool</strong>: Tasking (6) + RES (7) + Resonance Focus (4) = <strong>17 dice</strong> → <strong>4 Bought Hits</strong>.</li>
+<li><strong>Sprite’s Defense</strong>: Level 7 × 2 = <strong>14 dice</strong> → <strong>3 Bought Hits</strong>.</li>
+<li><strong>Net Hits</strong>: 4 - 3 = 1 → <strong>1 base service</strong>.</li>
+<li><strong>Technoshaman Stream Modification</strong>: Grants +1 additional service on a successful compiling test. Total compiled services = <strong>2 services/powers</strong>.</li>
+<li><strong>Fading Value (FV)</strong>: Under core rules, compiling fade is exactly equal to the hits received on the sprite’s defense test = <strong>3</strong>.</li>
+<li><strong>Technoshaman Mitigation</strong>: Reduces compiling fade by a flat 2 (3 - 2 = 1).</li>
+<li><strong>Fading Resistance</strong>: Willpower (6) + Charisma (4) + Submersion Grade / Sprite Conduit (7) = <strong>17 dice</strong> → <strong>4 Bought Hits</strong>.</li>
+<li><strong>Compiling Damage Taken</strong>: 1 FV - 4 hits = <strong>0 Damage</strong>.</li>
+</ul>
+</section>
+<section id="registering-phase" class="level4">
+<h4 class="anchored" data-anchor-id="registering-phase">2. Registering Phase</h4>
+<ul>
+<li><strong>Pool</strong>: Registering (8) + RES (7) + RES Focus (4) = <strong>19 dice</strong> → <strong>4 Bought Hits</strong>.</li>
+<li><strong>Sprite’s Defense</strong>: Level 7 × 2 = <strong>14 dice</strong> → <strong>3 Bought Hits</strong>.</li>
+<li><strong>Net Hits</strong>: 4 - 3 = 1 → <strong>1 base service</strong>.</li>
+<li><strong>Combined Total Services</strong>: 2 (compiled) + 1 (registered) = <strong>3 total services/powers</strong>.</li>
+<li><strong>Fading Value (FV)</strong>: Under core rules, registering fade is equal to <em>twice</em> the hits received on the sprite’s defense test (3 x 2 = 6).</li>
+<li><strong>Fading Resistance</strong>: Willpower (6) + Charisma (4) + Submersion Grade / Sprite Conduit (7) = <strong>17 dice</strong> → <strong>4 Bought Hits</strong>.</li>
+<li><strong>Registering Damage Taken</strong>: 6 FV - 4 hits = <strong>2 boxes of Stun damage</strong>.</li>
+</ul>
+</section>
+<section id="resonance-focus-fading" class="level4">
+<h4 class="anchored" data-anchor-id="resonance-focus-fading">3. Resonance Focus Fading</h4>
+<p>Because a data structure/focus was used to boost both tests, it incurs its own independent data-structure fade (4 / 2 = 2).</p>
+<ul>
+<li><strong>Focus Fading Pool</strong>: WIL (6) + LOG (4) = <strong>10 dice</strong> → <strong>2 Bought Hits</strong>.</li>
+<li><strong>Damage Taken</strong>: 2 FV - 2 hits = <strong>0 Damage</strong>.</li>
+</ul>
+</section>
+</section>
+<section id="sprite-stable" class="level3">
+<h3 class="anchored" data-anchor-id="sprite-stable">Sprite Stable</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -629,67 +891,46 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>SRM 2081-08</td>
-<td>4</td>
-<td>0</td>
-</tr>
-<tr class="even">
 <td>SRM 2081-07</td>
 <td>2</td>
 <td>0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>SRM 2081-06</td>
 <td>2</td>
 <td>0</td>
 </tr>
+<tr class="odd">
+<td>CMP 2083-04</td>
+<td>1</td>
+<td>0</td>
+</tr>
 <tr class="even">
 <td><strong>Total</strong></td>
-<td>8</td>
+<td>5</td>
 <td>0</td>
 </tr>
 </tbody>
 </table>
 <hr>
 </section>
-<section id="network-benefits" class="level2">
-<h2 class="anchored" data-anchor-id="network-benefits">Network Benefits</h2>
-<section id="permanent-benefits" class="level3">
-<h3 class="anchored" data-anchor-id="permanent-benefits">Permanent Benefits</h3>
+</section>
+<section id="gear-ammunition" class="level2">
+<h2 class="anchored" data-anchor-id="gear-ammunition">Gear &amp; Ammunition</h2>
 <ul>
-<li><strong>Edge Storage:</strong> Capacity 11 (6 Transcendent Network, 5 M-TOC II)<br>
-</li>
-<li><strong>-6 Noise Reduction:</strong> Designer home device -2, signal scrubber -2, ECM warrior -2<br>
-</li>
-<li><strong>+1 Sensor Rating:</strong> Added to any connected sensor (sensor upgrade)<br>
-</li>
-<li><strong>Resonant Coordination:</strong> Connected characters who use the Send Message action (a Minor Action) among themselves gain a bonus Minor Action immediately afterward.<br>
-</li>
-<li><strong>Smartsoft Array:</strong>
+<li><strong>Ares Predator VI Modifications</strong>:
 <ul>
-<li>Drone Target Locks are shared among networked drones (smartsoft).</li>
-<li>Target Locked victims cannot spend edge against attacking networked drones.</li>
-</ul></li>
-<li><strong>Detect Ambush:</strong> -2 Perception test threshold to detect ambush.<br>
-</li>
-<li><strong>Smartguns:</strong> +1 AR to smartlinked weapons.</li>
-<li><strong>Encryption:</strong> +1 increased threshold for all Cracking tests.</li>
-<li><strong>Tactical Software apps:</strong>
-<ul>
-<li><em>Artillery Barrage:</em> +1 to Launchers, no rifle/mg/cannon penalties<br>
-</li>
-<li><em>ECM Warrior II:</em> +2 Offensive Cracking tests</li>
-<li><em>Sneak-Sneak:</em> +2 Stealth<br>
-</li>
-<li><em>Target Artist:</em> Attack w/o LOS on painted targets</li>
+<li>Base: 3P, 10/10/8/–/–</li>
+<li>Active Smartlink (+2 Attack Rating to Close/Near/Medium ranges).</li>
+<li>Personalized Grip (Ranged) (+1 Attack Rating to Close/Near ranges). (Applies because gun is held.)</li>
+<li>Equipped with Silencer (+2 threshold to notice firing).</li>
+<li>Ammo: Explosive (4P) or KSSD (5S)</li>
+<li><strong>Total</strong> 4P/5S, 13/13/11/–/–</li>
 </ul></li>
 </ul>
-<hr>
-</section>
-</section>
-<section id="krime-splash-self-defense-ammunition" class="level2">
-<h2 class="anchored" data-anchor-id="krime-splash-self-defense-ammunition">Krime Splash Self-Defense Ammunition</h2>
-<p>The outer coating is a friction-liquefying material that is impossible to wash off and paints the target in whatever color you choose when purchasing the ammo. This splash-color is just the jacket for a good degree of glitter-based micro RFID tags that get into the user’s skin through any non-chemical resistant or waterproof outfit, which sparkles while impregnated into their skin while also transmitting to the Matrix. Finally, the major layer, which protects you while the intruder is still in your face: a basic gel round that slams home like every other gel round on the market.</p>
+<section id="krime-splash-self-defense-ammunition" class="level3">
+<h3 class="anchored" data-anchor-id="krime-splash-self-defense-ammunition">Krime Splash Self-Defense Ammunition</h3>
+<p>The outer coating is a friction-liquefying material that is impossible to wash off and paints the target in whatever color Reiko choose when purchasing the ammo. This splash-color is just the jacket for a good degree of glitter-based micro RFID tags that get into the user’s skin through any non-chemical resistant or waterproof outfit, which sparkles while impregnated into their skin while also transmitting to the Matrix. Finally, the major layer, which protects Reiko while the intruder is still in Reikor face: a basic gel round that slams home like every other gel round on the market.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -727,6 +968,7 @@ ul.task-list li input[type="checkbox"] {
 <p>(*Just roll with it and make the targets taste the rainbow!)</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
