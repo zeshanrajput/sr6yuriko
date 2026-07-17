@@ -1,6 +1,12 @@
 import os
 import sys
 
+# Exit early if running in GitHub Actions CI to avoid dependency issues & overhead
+if os.environ.get("GITHUB_ACTIONS") == "true":
+    print("[*] Running in GitHub Actions CI. Skipping narration generation since audio files are pre-rendered and committed.")
+    sys.exit(0)
+
+
 # Crucial: Pre-load the correct onnxruntime DLL from the local virtual environment
 # to override any older system-wide onnxruntime.dll loaded from C:\Windows\System32.
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
