@@ -1,5 +1,7 @@
 # Legacy Code
 
+<audio controls src="audio/19%20Legacy%20Code.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
+
 Brynne’s dying breath was a sequence of zeroes. When her heart stuttered, her biomonitor should have screamed for DocWagon, clawing at the wireless sky to pull down a team of high-altitude paramedics. Instead, Brynne had strangled the emergency signal. She routed the final, fading sparks of her life into a silent script, sending it to slip through the corporate ledgers and erase the debts of thirty-seven ghosts in the Barrens. It had wiped their slates clean and locked the doors behind them, trading the ambulance that could have saved her for thirty-seven quiet lives.
 
 The fourth step of the stairwell at 1412 Pulaski Street was rotting. Inhabiting the heavy drone was a constant friction—its joints groaning as the water-logged timber sagged under her iron weight. The low-bitrate, grey-scale feed of her sensors tilted, forcing her to drag the machine's heavy legs into a clumsy balance.

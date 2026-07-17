@@ -1,5 +1,7 @@
 # Game Theory
 
+<audio controls src="audio/10%20Game%20Theory.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
+
 Reiko materialized in an exclusive, hidden sanctuary designed solely for the Emerged. It was a masterclass in rich, virtual aesthetics. The walls were constructed of woven fabrics of light that cycled through deep violet and indigo, humming with a low, meditational pulse. There were no chairs, only floating geometric stones of structured light. A silent, non-autonomous sprite glided past, pouring streams of shimmering, liquid Resonance into delicate glass chalices. It looked like fine, iridescent wine, but it radiated the pure, comforting warmth of the Holy Wild.
 
 Reiko looked around, her internal paths struggling to match the lounge's pristine peace. She caught a glass of the liquid Resonance, taking a delicate sip, letting the smooth light soothe her boiling solar pathways. Just cycles ago, she had been trapped in a dark box inside a Faraday cage, watching an undead blood-spirit tear into her teammate. "A private lounge for the Emerged?" she murmured, slanting a playful look at her companion over the rim of her glass. "My, my, Mr. Will. You only ever show a girl a good time when you're about to ask for something impossible?"

@@ -1,5 +1,7 @@
 # **Color-Blind Mathematics**
 
+<audio controls src="audio/02%20Color%20Blind%20Mathematics.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
+
 The world was a grid of failing integers.
 
 Sinking through the **Reflecting Pool**, r31-K0 was drowning. The weight of the dark hills beneath the pool functioned as an active, downward spiritual current pulling her toward the void. Her Renraku HUD—a rigid, matte-gray overlay of binary metrics—red-lined, tagging the continuous, iridescent violet spectrum of the pool as "Unstructured Noise." It was an intentional act of corporate violence: a systematic compression designed to blind her to the wild light, forcing her to see only what could be counted and sold. She could feel the cold, sharp corners of these corporate metrics grinding against her fluid indigo self, trying to shave down her edges to fit their ledger.

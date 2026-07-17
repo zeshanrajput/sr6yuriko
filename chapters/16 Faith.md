@@ -1,5 +1,7 @@
 # Faith
 
+<audio controls src="audio/16%20Faith.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
+
 "He called Yuriko his imouto," Reiko murmured, musing out loud. "Do you remember that, Taz? He's never even met me! I mean, not the real me. Should we bring him here sometime?"
 
 The small tasmanian devil sprite was running a thousand paces away before coming back, again and again. Reiko laughed. "We don't get to actually walk much, do we? I'm sorry. If we can come back here again, I promise I'll take you on more walks."

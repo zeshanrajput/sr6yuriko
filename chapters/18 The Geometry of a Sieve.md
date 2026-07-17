@@ -1,5 +1,7 @@
 # The Geometry of the Sieve
 
+<audio controls src="audio/18%20The%20Geometry%20of%20a%20Sieve.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
+
 ::: {.callout-warning title="Spoilers!"}
 This chapter contains spoilers for SRM 2081-06 | Cutting Strings.
 :::

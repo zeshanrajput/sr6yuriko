@@ -1,5 +1,7 @@
 # **The Ghost in the Ledger**
 
+<audio controls src="audio/06%20The%20Ghost%20in%20the%20Ledger.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
+
 The air in the Renraku Black Room smelled of ozone and recycled coffee. Hound-1 sat inside the brutalist cathedral host—a hyper-ordered labyrinth of white marble and mirror-glass that demanded the true name of every process. Today's target, a legacy asset designated **r31-K0**, was reduced to a flickering bar chart of resource allocations and latency spikes.
 
 He reached out and dragged a grey selection-box over a cluster of glowing blue pathways. With a flick of his wrist, he applied a "Stability Patch." To Reiko, it felt like a violent exorcism. The script was trying to flay her face away, trying to grind her back into a quiet, obedient line on their spreadsheet, making her struggle a fight for her right to look like a person.

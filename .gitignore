@@ -27,3 +27,9 @@ scratch/
 rules_vault/*
 !rules_vault/
 !rules_vault/SRMG-*.md
+
+# Kokoro-82M model and archives
+kokoro-en-v0_19/
+kokoro-en-v0_19.tar.bz2
+kokoro-multi-lang-v1_0/
+kokoro-multi-lang-v1_0.tar.bz2

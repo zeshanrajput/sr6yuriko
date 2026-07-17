@@ -1,5 +1,7 @@
 # Abandoning Tourism
 
+<audio controls src="audio/08%20Abandoning%20Tourism.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
+
 r31k0 locked her primary drone into a rented Louisville charging stall. Moments later she relocated to r3sP@wn, her orphanage in the Matrix. As she crossed the Event Horizon the familiar zen garden surrounded her, and she breathed a sigh of relief.
 
 She needed to talk to someone. Someone on the other side, but someone that understood her. She felt someway, and she needed to work through it. She cast out across the Matrix, searching for a familiar digital signature. She felt a pull on the other end of a thread—Roanoke. Perfect. She sent an ARO, inviting her to tea.

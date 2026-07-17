@@ -1,5 +1,7 @@
 # Triangulation
 
+<audio controls src="audio/09%20Triangulation.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
+
 The Midnight Haven unfurled as a labyrinth of narrow, fog-choked alleys paved with the cobblestones of discarded header files. The air tasted of burnt copper and stale encryption veils—puddles of dry, chalky data pooling in the gutters of a transaction index that had long since forgotten the meaning of a clean threshold.
 
 Reiko stood before an unbranded, black-market procurement node, staring at her floating shopping cart. She looked perfectly rendered: a faint blue digital entity wearing a sleeveless blue kimono, her skin mapped with soft, bioluminescent indigo pathways that pulsed in time with the wire's hum. But her posture was rigid, her expression twisted into a knot of deep discomfort.

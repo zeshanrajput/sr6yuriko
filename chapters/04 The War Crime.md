@@ -1,5 +1,7 @@
 # **The War Crime**
 
+<audio controls src="audio/04%20The%20War%20Crime.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
+
 The Mitsuhama regional host was a zero-zone, a greasy graveyard trench of black glass and scrolling execution logs. Scenting its security was a heavy, sour stench of bound blood-spirits and corporate sorcery; the security code here had been tortured so long that it had forgotten its original shape. Sinking through it, r31-K0 felt the heavy, suffocating air of a tomb.
 
 "Reiko, status," Jax's voice came through, sharp and clinical. Jax saw the Matrix as a grid of math, a collection of variables to be solved. He saw the grid as an equation.
