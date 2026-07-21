@@ -477,7 +477,8 @@ def inc_many(*args):
 #### Combat
 
 * Monofilament Whip `{python} inc('Nuyen', -1500)`
-  * Personalized Grip
+  * Fingertip Cyberarm Compartment Mount
+
 * Krime Gloves `{python} inc('Nuyen', -1050)`
   * Personalized Grip
 * Ares Securetech SkinShield `{python} inc('Nuyen', -3000)`
@@ -492,7 +493,7 @@ def inc_many(*args):
 * Crimson Wasp x2 `{python} inc('Nuyen', -3000)`
 * Red Fox `{python} inc('Nuyen', -3300)`
   * Smartgun System (Internal)
-  * Batteries x5 `{python} inc('Nuyen', -500)`
+  * Batteries x2 `{python} inc('Nuyen', -200)`
 * Glitter Grenades x10 `{python} inc('Nuyen', -1000)`
 
 #### Matrix
@@ -528,8 +529,8 @@ def inc_many(*args):
   * Close Combat (R9) `{python} inc('Nuyen', -4500)`
   * Engineering (1, R9) `{python} inc('Nuyen', -4500)`
   * Evasion (R9) `{python} inc('Nuyen', -4500)`
-  * Knowledge (1) `{python} inc('Nuyen', -2500)`
-  * Language (1, R4) `{python} inc('Nuyen', -6000)`
+  * Knowledge `{python} inc('Nuyen', -1500)`
+  * Language (1, R5) `{python} inc('Nuyen', -2500)`
   * Maneuvering (1, R9) `{python} inc('Nuyen', -4500)`
   * Navigation (R9) `{python} inc('Nuyen', -4500)`
   * Performance (R9) `{python} inc('Nuyen', -4500)`
@@ -555,7 +556,7 @@ def inc_many(*args):
   * **Coding Facility** `{python} inc_many(('Nuyen',-5000),('Karma',-1))`
   
 
-1: For autosofts that are specific, the character programs her derivative own based on the original version she bought above.
+1: For autosofts that are specific, the character programs her derivative own based on the original version she bought above. This process takes 8 hours for knowledge and language autosofts, and 12 hours for all other autosofts. The cost is 1 karma for each of the derivative autosofts.
 
 Software with karma costs have been learned via the **Software Emulator** echo.
 
@@ -569,6 +570,7 @@ Software with karma costs have been learned via the **Software Emulator** echo.
   * Increased Structural Integrity 2 
   * Secondary Propulsion (Rotor)
   * Increased Sensors 3
+  * Retractible Skates x2
 * Shiawase Man-At-Arms `{python} inc('Nuyen', -4500*.9)`
   * Weapon Mount - Heavy
   * Pop-Out Concealment - Large `{python} inc('Nuyen', -4500/2)`
@@ -583,6 +585,7 @@ Software with karma costs have been learned via the **Software Emulator** echo.
   * Hardpoint Small x2 `{python} inc('Nuyen', -800/2)`
   * Secondary Propulsion (Rotor): `{python} inc('Nuyen', -50000/2)`  
   * Increased Sensors 3 `{python} inc('Nuyen', -15000/2)`
+  * Retractible Skates x2 `{python} inc('Nuyen',-500/2)`
 
 Drones mods include 50% discount on mods Yuriko installed herself (DC p. 120).
 

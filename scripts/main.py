@@ -2,6 +2,7 @@ import json
 import argparse
 import sys
 import os
+import yaml
 import dotenv
 
 dotenv.load_dotenv()
@@ -12,6 +13,8 @@ import copy
 from utils import sanitize_string, normalize_name
 from rules_data import REF_MAP, SW_CAT_MAP
 from rules_engine import RulesEngine
+from log_engine import get_log_totals
+
 
 # Global Rules Engine
 rules_engine = RulesEngine()
@@ -51,27 +54,115 @@ def parse_career_log(xml_root):
     career_log.sort(key=lambda x: (x['date'], x['title']))
     return career_log
 
-def load_overrides(char_name, meta_type):
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    overrides_file = os.path.join(script_dir, "overrides.json")
-    if not os.path.exists(overrides_file):
-        return None
-    try:
-        with open(overrides_file, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        
-        char_overrides = data.get("character_overrides", {})
-        if char_name and char_name.lower() in char_overrides:
-            return char_overrides[char_name.lower()]
-        if meta_type and meta_type in char_overrides:
-            return char_overrides[meta_type]
-    except Exception as e:
-        print(f"[*] Warning: Could not parse overrides: {e}")
+def load_master_drones():
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    yaml_master_path = os.path.join(base_dir, "yuriko_master.yaml")
+    drones_map = {}
+    if os.path.exists(yaml_master_path):
+        try:
+            with open(yaml_master_path, "r", encoding="utf-8") as f:
+                ydata = yaml.safe_load(f)
+            for d in ydata.get("drones", []):
+                ref_key = normalize_name(d.get("ref", d.get("name", "")))
+                drones_map[ref_key] = {
+                    "name": d.get("name"),
+                    "body": d.get("body", 0),
+                    "armor": d.get("armor", 0),
+                    "pilot": d.get("pilot", 1),
+                    "sensor": d.get("sensor", 1),
+                    "speed": d.get("speed", 0),
+                    "handlOn": d.get("handling_on", 0),
+                    "handlOff": d.get("handling_off", 0),
+                    "accelOn": d.get("accel_on", 0),
+                    "accelOff": d.get("accel_off", 0),
+                    "speedIntOn": d.get("speed_interval_on", 0),
+                    "page": d.get("page", "")
+                }
+        except Exception as e:
+            print(f"[*] Warning: Could not parse master drones from YAML: {e}")
+    return drones_map
+
     return None
 
+def parse_character_yaml(yaml_path):
+    with open(yaml_path, "r", encoding="utf-8") as f:
+        data = yaml.safe_load(f)
+    
+    identity = data.get("identity", {})
+    attrs = data.get("attributes", {})
+    
+    attributes = {
+        "BODY": attrs.get("body", 5),
+        "AGILITY": attrs.get("agility", 3),
+        "REACTION": attrs.get("reaction", 5),
+        "STRENGTH": attrs.get("strength", 3),
+        "WILLPOWER": attrs.get("willpower", 6),
+        "LOGIC": attrs.get("logic", 4),
+        "INTUITION": attrs.get("intuition", 2),
+        "CHARISMA": attrs.get("charisma", 4),
+        "EDGE": attrs.get("edge", 5),
+        "RESONANCE": attrs.get("resonance", 7),
+        "MAGIC": 0,
+    }
+    
+    qual_data = data.get("qualities", {})
+    qualities = []
+    for q in qual_data.get("positive", []):
+        qualities.append({
+            "name": q.get("name"),
+            "ref": q.get("ref", q.get("name").lower().replace(" ", "_")),
+            "positive": True,
+            "choice": q.get("choice", ""),
+            "rating": q.get("rating", 0),
+        })
+    for q in qual_data.get("negative", []):
+        qualities.append({
+            "name": q.get("name"),
+            "ref": q.get("ref", q.get("name").lower().replace(" ", "_")),
+            "positive": False,
+            "choice": q.get("choice", ""),
+            "rating": q.get("rating", 0),
+        })
+        
+    skills = {}
+    for s in data.get("skills", []):
+        s_id = s.get("id", s["name"].lower().replace(" ", "_"))
+        skills[s_id] = {
+            "name": s.get("name"),
+            "id": s_id,
+            "rating": s.get("rating", 1),
+            "attribute": s.get("attribute", "Logic"),
+            "specialization": s.get("specialization", ""),
+        }
+
+    return {
+        "name": identity.get("real_name", "r31k0 Takahashi"),
+        "alias": identity.get("handle", "Yuriko Star"),
+        "metatype": identity.get("metatype", "Ai-Pilot Ai"),
+        "stream": identity.get("stream", "Technoshamans"),
+        "gender": identity.get("gender", "DIVERSE"),
+        "is_ai": True,
+        "attributes": attributes,
+        "qualities": qualities,
+        "skills": skills,
+        "complex_forms": data.get("complex_forms", []),
+        "meta_echoes": data.get("meta_echoes", []),
+        "armors": data.get("armors", []),
+        "weapons": data.get("weapons", {}),
+        "matrix_devices": data.get("matrix_devices", {}),
+        "sins": data.get("sins", []),
+        "licenses": data.get("licenses", []),
+        "lifestyles": data.get("lifestyles", []),
+    }
+
 def parse_character(input_path):
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    yaml_master_path = os.path.join(base_dir, "yuriko_master.yaml")
+    
     path_xml = input_path
-    if not path_xml.endswith(".xml"):
+    if path_xml.endswith(".yaml") or path_xml.endswith(".yml"):
+        path_xml = os.path.join(base_dir, "input", "Yuriko Star.xml")
+    elif not path_xml.endswith(".xml"):
         path_xml = input_path.replace(".json", ".xml")
         
     # 1. XML Ingestion
@@ -85,6 +176,7 @@ def parse_character(input_path):
     except Exception as e:
         print(f"Error parsing XML file {path_xml}: {e}")
         sys.exit(1)
+
         
     is_ai = (root.get('meta') == 'pilot-ai')
     nuyen = int(root.get('nuyen', 0))
@@ -106,10 +198,8 @@ def parse_character(input_path):
     if metatype == "Pilot Ai":
         metatype = "Ai-Pilot Ai"
     
-    # Load overrides.json configuration block
-    overrides = load_overrides(name_out, root.get('meta'))
-    
     # Load attributes
+
     attributes = {}
     attr_el = root.find('attributes')
     if attr_el is not None:
@@ -448,125 +538,13 @@ def parse_character(input_path):
                 
             if is_drone:
                 ref_norm = normalize_name(ref)
-                fallback_drones = {
-                    "nissansamurai": {
-                        "name": "Nissan Samurai",
-                        "body": 6,
-                        "armor": 6,
-                        "pilot": 3,
-                        "sensor": 2,
-                        "speed": 30,
-                        "handlOn": 3,
-                        "handlOff": 4,
-                        "accelOn": 10,
-                        "accelOff": 10,
-                        "speedIntOn": 10,
-                        "page": "6WC 137"
-                    },
-                    "mctgnat": {
-                        "name": "MCT Gnat",
-                        "body": 0,
-                        "armor": 0,
-                        "pilot": 2,
-                        "sensor": 1,
-                        "speed": 30,
-                        "handlOn": 3,
-                        "handlOff": 3,
-                        "accelOn": 4,
-                        "accelOff": 4,
-                        "speedIntOn": 10,
-                        "page": "CRB 299"
-                    },
-                    "boingskycommander": {
-                        "name": "FB Sky Commander",
-                        "body": 4,
-                        "armor": 2,
-                        "pilot": 4,
-                        "sensor": 5,
-                        "speed": 190,
-                        "handlOn": 4,
-                        "handlOff": 4,
-                        "accelOn": 20,
-                        "accelOff": 20,
-                        "speedIntOn": 30,
-                        "page": "DC 116"
-                    },
-                    "boeingskycommander": {
-                        "name": "FB Sky Commander",
-                        "body": 4,
-                        "armor": 2,
-                        "pilot": 4,
-                        "sensor": 5,
-                        "speed": 190,
-                        "handlOn": 4,
-                        "handlOff": 4,
-                        "accelOn": 20,
-                        "accelOff": 20,
-                        "speedIntOn": 30,
-                        "page": "DC 116"
-                    },
-                    "shiawasebdbutler": {
-                        "name": "S. Butler",
-                        "body": 4,
-                        "armor": 0,
-                        "pilot": 2,
-                        "sensor": 3,
-                        "speed": 8,
-                        "handlOn": 4,
-                        "handlOff": 5,
-                        "accelOn": 5,
-                        "accelOff": 5,
-                        "speedIntOn": 5,
-                        "page": "DC 116"
-                    },
-                    "shiawasebidronebutler": {
-                        "name": "S. Butler",
-                        "body": 4,
-                        "armor": 0,
-                        "pilot": 2,
-                        "sensor": 3,
-                        "speed": 8,
-                        "handlOn": 4,
-                        "handlOff": 5,
-                        "accelOn": 5,
-                        "accelOff": 5,
-                        "speedIntOn": 5,
-                        "page": "DC 116"
-                    },
-                    "shiawasebdmanatarms": {
-                        "name": "S. Man-at-Arms",
-                        "body": 10,
-                        "armor": 8,
-                        "pilot": 2,
-                        "sensor": 2,
-                        "speed": 10,
-                        "handlOn": 3,
-                        "handlOff": 3,
-                        "accelOn": 5,
-                        "accelOff": 5,
-                        "speedIntOn": 5,
-                        "page": "DC 116"
-                    },
-                    "shiawasebidronemanatarms": {
-                        "name": "S. Man-at-Arms",
-                        "body": 10,
-                        "armor": 8,
-                        "pilot": 2,
-                        "sensor": 2,
-                        "speed": 10,
-                        "handlOn": 3,
-                        "handlOff": 3,
-                        "accelOn": 5,
-                        "accelOff": 5,
-                        "speedIntOn": 5,
-                        "page": "DC 116"
-                    }
-                }
+                master_drones = load_master_drones()
                 
-                if ref_norm in fallback_drones:
-                    drn_stats = fallback_drones[ref_norm]
+                if ref_norm in master_drones:
+                    drn_stats = master_drones[ref_norm]
                 else:
                     drn_stats = rules_engine.query_drone_stats(ref) or {}
+
                 
                 body_val = drn_stats.get("body", 1)
                 drone_cm_boxes = (body_val + 1) // 2 + 8
@@ -871,16 +849,7 @@ def parse_character(input_path):
                 "armorRating": armor_rating
             })
             
-    # Overrides custom injections
-    if overrides and "inject_items" in overrides:
-        for inject in overrides["inject_items"]:
-            items.append({
-                "name": inject.get("name"),
-                "type": inject.get("type", "GEAR"),
-                "accessories": [],
-                "page": inject.get("page", "")
-            })
-            
+
     # Sort matrix_items to maintain the expected order
     def matrix_sort_key(item):
         name = item.get("name", "")
@@ -928,6 +897,24 @@ def parse_character(input_path):
         
     wil_val = attributes.get('WILLPOWER', 0)
     matrix_cm_boxes = (wil_val + 1) // 2 + 8
+    # Merge master YAML overrides if yuriko_master.yaml exists
+    if os.path.exists(yaml_master_path):
+        try:
+            with open(yaml_master_path, "r", encoding="utf-8") as yf:
+                ydata = yaml.safe_load(yf)
+            yattrs = ydata.get("attributes", {})
+            for k, v in yattrs.items():
+                attributes[k.upper()] = v
+            yident = ydata.get("identity", {})
+            if "real_name" in yident:
+                name_out = yident["real_name"]
+            if "handle" in yident:
+                alias_out = yident["handle"]
+            if "metatype" in yident:
+                metatype = yident["metatype"]
+        except Exception as ye:
+            print(f"[*] Warning: Could not merge yuriko_master.yaml: {ye}")
+
     char_data = {
         "name": name_out,
         "alias": alias_out,
@@ -939,8 +926,8 @@ def parse_character(input_path):
         "nuyen": nuyen,
         "submersion": submersion,
         "is_ai": is_ai,
-        "has_natural_hacker": any("natural_hacker" in q["id"] for q in qualities),
-        "has_technoshaman": any("technoshaman" in q["id"] for q in qualities),
+        "has_natural_hacker": any("natural_hacker" in q.get("id", "") for q in qualities),
+        "has_technoshaman": any("technoshaman" in q.get("id", "") for q in qualities),
         "attributes": attributes,
         "skills": skills,
         "complex_forms": complex_forms,
@@ -961,6 +948,7 @@ def parse_character(input_path):
     }
     
     return char_data
+
 
 def classify_item(name):
     name_lower = name.lower()
@@ -1790,6 +1778,8 @@ def generate_ascii_sheet(char_data, verbose=False):
     equip_lines = ["[ PHYSICAL_EQUIPMENT_MANIFEST ]"]
     seen_equip = set()
     equip_items = []
+    has_added_ammo = False
+
     for it in char_data["items"]:
         if any(sw["name"] == it["name"] for sw in char_data["xml_software"]):
             continue
@@ -1812,106 +1802,38 @@ def generate_ascii_sheet(char_data, verbose=False):
             
         if "RESONANCE FOCUS" in it_name:
             it_name = "RESONANCE FOCUS (R4)"
-        if "HEAVY PISTOL/SMG" in it_name:
-            it_name = "HEAVY PISTOL/SMG (10X)"
         if "GLITTER" in it_name:
             it_name = "GRENADE, GLITTER x10"
             
         if "SPURS" in it_name:
             continue
-            
+
+        # Consolidate ammo entries into a single summary line
+        if "ammo" in it_name.lower() or "heavy pistol/smg" in it_name.lower():
+            if not has_added_ammo:
+                equip_items.append("AMMO: PISTOL & LASER BATTERIES")
+                has_added_ammo = True
+            continue
+
         norm_it = it_name.lower()
         if norm_it in seen_equip:
             continue
         seen_equip.add(norm_it)
+        
+        # Exclude weapons from general equipment manifest (they have dedicated section)
+        is_w, _ = classify_item(it_name)
+        if is_w or norm_it in ["ares predator vi", "red fox", "crimson wasp x2", "monofilament whip", "krime gloves (stun)", "krime gloves (phys)", "dagger of the sacred rose (+1 weapon focus)"]:
+            continue
+
         equip_items.append(it_name)
-        
-    manifest_order = [
-        "RESONANCE FOCUS (R4)",
-        "ARES PREDATOR VI",
-        "SECURETECH INVISI-SHIELD ARMOR",
-        "ARES SECURETECH SKINSHIELD",
-        "MONOFILAMENT WHIP",
-        "MEGALODON",
-        "AMMO CANNON x2",
-        "HEAVY PISTOL/SMG (10X)",
-        "GRENADE, GLITTER x10"
-    ]
-    
-    def get_order_idx(item):
-        for idx, pattern in enumerate(manifest_order):
-            if pattern.upper() == item.upper():
-                return idx
-        return 999
-        
-    equip_items.sort(key=get_order_idx)
+
     for it_name in equip_items:
         query_name = re.sub(r'\s+(?:Gel\s+x\d+|Std\s+x\d+|x\d+)\s*$', '', it_name, flags=re.IGNORECASE).strip()
-        
-        # Check if the item type is a weapon/armor in char_data
-        it_type = ""
-        for it in char_data.get("items", []):
-            clean_name_it = re.sub(r'\s+(?:Gel\s+x\d+|Std\s+x\d+|x\d+)\s*$', '', it.get("name", ""), flags=re.IGNORECASE).strip()
-            if normalize_name(clean_name_it) == normalize_name(query_name):
-                it_type = it.get("type", "")
-                break
-                
         is_weapon, is_armor = classify_item(query_name)
-        if "ammo" in it_type.lower() or "explosive" in it_type.lower() or "grenade" in query_name.lower() or it_type.lower() not in ["weapon", "armor"]:
-            is_weapon = False
-            is_armor = False
-
-        if is_weapon is None or is_armor is None:
-            is_weapon_llm = rules_engine.check_if_weapon(query_name)
-            is_armor_llm = rules_engine.check_if_armor(query_name)
-            if is_weapon is None:
-                is_weapon = is_weapon_llm
-            if is_armor is None:
-                is_armor = is_armor_llm
-        
-        # Fallbacks
-        if not is_weapon:
-            is_weapon = (
-                it_type in ["Firearms", "Close Combat Weapons", "Weapon", "Weapons"] or 
-                "weapon" in it_type.lower() or 
-                "firearm" in it_type.lower() or 
-                "close combat" in it_type.lower() or
-                query_name.lower() in ["megalodon", "ares predator vi", "monofilament whip", "katana"]
-            )
-        if not is_armor:
-            is_armor = "armor" in it_type.lower() or "shield" in it_type.lower()
         if "smile for the camera" in query_name.lower():
             is_armor = True
-            
-        armor_rating_str = ""
-        if is_weapon:
-            if normalize_name(query_name) == "arespredatorvi":
-                pred_mods = [
-                    "Active Smartlink (+2 Attack Rating to Close/Near/Medium ranges)",
-                    "Personalized Grip (Ranged) (+1 Attack Rating to Close/Near ranges)",
-                    "Equipped with Silencer (+2 threshold to notice firing)"
-                ]
-                pred_fn = fn_registry.add_footnote("Ares Predator VI modifications", pred_mods)
-                equip_lines.append(f"  - {it_name} [3P | 13/13/10/—/—] {pred_fn}")
-            elif normalize_name(query_name) == "shiawasearmstacticalmodel73":
-                shiawase_mods = [
-                    "Active Smartlink (+2 Attack Rating to all ranges)",
-                    "Personalized Grip (Ranged) (+1 Attack Rating to Close/Near ranges)",
-                    "Gas-Vent System (Improved) adjusts AR by —/+1/+2/+2/—; reduces SA/BF/FA penalties to -1/-3/-4",
-                    "Shock Pad reduces SA/BF AR penalties by 1",
-                    "Accessories: Underbarrel Grenade Launcher"
-                ]
-                shiawase_fn = fn_registry.add_footnote("Shiawase Arms Tactical Model 73 modifications", shiawase_mods)
-                equip_lines.append(f"  - {it_name} [4P | 7/15/14/12/5] {shiawase_fn}")
-            else:
-                stats = rules_engine.query_weapon_stats(query_name)
-                if stats and stats.get('damage') and stats.get('attack_rating'):
-                    ar_clean = stats['attack_rating'].replace('\\', '').replace('\uFFFD', '—').strip()
-                    ar_clean = "/".join(part.strip() for part in ar_clean.split("/"))
-                    equip_lines.append(f"  - {it_name} [{stats['damage']} | {ar_clean}]")
-                else:
-                    equip_lines.append(f"  - {it_name}")
-        elif is_armor:
+
+        if is_armor:
             armor_rating = None
             for itm in char_data.get("items", []):
                 clean_itm_name = re.sub(r'\s+(?:Gel\s+x\d+|Std\s+x\d+|x\d+)\s*$', '', itm.get("name", ""), flags=re.IGNORECASE).strip()
@@ -1941,12 +1863,28 @@ def generate_ascii_sheet(char_data, verbose=False):
     page2.extend(zip_panels(qual_lines, equip_lines, left_width=38, separator=" | "))
     page2.append("")
 
+    # Dedicated Combat Weapons Inventory Section (Max width < 80 chars)
+    weapons_lines = [
+        "[ COMBAT_WEAPONS_INVENTORY ]",
+        "  - RED FOX ARRAY (LINK)  [10P/11P | 21/23/23/16/—] (SS/SA, 30c)  [MAA Mounted]",
+        "  - ARES PREDATOR VI      [3P/4P/5P| 15/15/11/—/—]  (SS/SA/BF, 15c) [Both]",
+        "  - MONOFILAMENT WHIP     [6P      | 16/—/—/—/—]    (Melee)        [MAA Cyberarm]",
+        "  - KRIME GLOVES (STUN)   [4S(e)   | 7/—/—/—/—]     (Melee)        [Butler]",
+        "  - KRIME GLOVES (PHYS)   [3P      | 8/—/—/—/—]     (Melee)        [Butler]",
+        "  - DAGGER SACRED ROSE    [3P      | 10/8/6/—/—]    (Melee, Focus) [Both]",
+        ""
+    ]
+    page2.extend(weapons_lines)
+
+
+
     if char_data.get("lifestyles"):
         page2.append("[ LIFESTYLE_DATA ]")
         for life in char_data["lifestyles"]:
             l_name = life.get("name", "Unknown")
             page2.append(f"  - {l_name.upper()} ({life.get('paidMonths', 0)} Months Pre-paid)")
         page2.append("")
+
 
     page2.extend(fn_registry.get_footer_lines())
 
@@ -2073,6 +2011,53 @@ def generate_ascii_sheet(char_data, verbose=False):
         
     return sheet_text
 
+def post_process_json(raw_json_path, log_totals, out_json_path):
+    if not os.path.exists(raw_json_path):
+        return
+    try:
+        with open(raw_json_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        
+        if "Lifetime_Karma" in log_totals:
+            data["karma"] = log_totals["Lifetime_Karma"]
+        if "Karma" in log_totals:
+            data["freeKarma"] = log_totals["Karma"]
+        if "Nuyen" in log_totals:
+            data["nuyen"] = int(log_totals["Nuyen"])
+        if "Submersion_Grade" in log_totals:
+            data["submersion"] = log_totals["Submersion_Grade"]
+        if "Heat" in log_totals:
+            data["heat"] = log_totals["Heat"]
+        if "Total_Reputation" in log_totals:
+            data["reputation"] = log_totals["Total_Reputation"]
+            
+        os.makedirs(os.path.dirname(out_json_path) or '.', exist_ok=True)
+        with open(out_json_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2)
+        print(f"[*] Post-processed JSON saved to: {out_json_path}")
+    except Exception as e:
+        print(f"[*] Warning: Could not post-process JSON file: {e}")
+
+def post_process_xml(raw_xml_path, log_totals, out_xml_path):
+    if not os.path.exists(raw_xml_path):
+        return
+    try:
+        tree = ET.parse(raw_xml_path)
+        root = tree.getroot()
+        
+        if "Lifetime_Karma" in log_totals:
+            root.set("karmaI", str(log_totals["Lifetime_Karma"]))
+        if "Karma" in log_totals:
+            root.set("karmaF", str(log_totals["Karma"]))
+        if "Nuyen" in log_totals:
+            root.set("nuyen", str(int(log_totals["Nuyen"])))
+            
+        os.makedirs(os.path.dirname(out_xml_path) or '.', exist_ok=True)
+        tree.write(out_xml_path, encoding="utf-8", xml_declaration=True)
+        print(f"[*] Post-processed XML saved to: {out_xml_path}")
+    except Exception as e:
+        print(f"[*] Warning: Could not post-process XML file: {e}")
+
 def main():
     parser = argparse.ArgumentParser(description="Generate SR6 CLI Character Sheet from JSON/XML")
     parser.add_argument("input_json", help="Path to the SR6 character JSON file")
@@ -2083,17 +2068,47 @@ def main():
     char_data = parse_character(args.input_json)
     sheet_text = generate_ascii_sheet(char_data, verbose=args.verbose)
     
-    out_path = args.output
-    if not out_path.endswith('.txt') and not out_path.endswith('.md'):
-        os.makedirs(out_path, exist_ok=True)
+    out_arg = args.output
+    if out_arg.endswith('.txt') or out_arg.endswith('.md'):
+        out_dir = os.path.dirname(out_arg) or '.'
+        txt_path = out_arg
+    else:
+        out_dir = out_arg
         filename = char_data['name'].replace(' ', '_') + ".txt"
-        out_path = os.path.join(out_path, filename)
+        txt_path = os.path.join(out_dir, filename)
         
-    os.makedirs(os.path.dirname(out_path) or '.', exist_ok=True)
+    os.makedirs(out_dir, exist_ok=True)
     
-    with open(out_path, "w", encoding="utf-8") as f:
+    with open(txt_path, "w", encoding="utf-8") as f:
         f.write(sheet_text)
-    print(f"[*] Sheet saved to: {out_path}")
+    print(f"[*] Sheet saved to: {txt_path}")
+    
+    # Post-process XML and JSON outputs into output directory
+    log_totals = get_log_totals()
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    input_dir = os.path.join(base_dir, "input")
+    
+    if args.input_json.endswith('.yaml') or args.input_json.endswith('.yml'):
+        raw_json = os.path.join(input_dir, "Yuriko Star.json")
+        raw_xml = os.path.join(input_dir, "Yuriko Star.xml")
+    else:
+        raw_json = args.input_json if args.input_json.endswith('.json') else args.input_json.replace('.xml', '.json')
+        if not os.path.isabs(raw_json):
+            raw_json = os.path.join(base_dir, raw_json)
+        if not os.path.exists(raw_json):
+            raw_json = os.path.join(input_dir, "Yuriko Star.json")
+            
+        raw_xml = args.input_json.replace('.json', '.xml') if args.input_json.endswith('.json') else args.input_json
+        if not os.path.isabs(raw_xml):
+            raw_xml = os.path.join(base_dir, raw_xml)
+        if not os.path.exists(raw_xml):
+            raw_xml = os.path.join(input_dir, "Yuriko Star.xml")
+        
+    out_json = os.path.join(out_dir, "Yuriko Star.json")
+    out_xml = os.path.join(out_dir, "Yuriko Star.xml")
+    
+    post_process_json(raw_json, log_totals, out_json)
+    post_process_xml(raw_xml, log_totals, out_xml)
 
 if __name__ == "__main__":
     main()

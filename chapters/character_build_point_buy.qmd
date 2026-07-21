@@ -72,7 +72,7 @@ Shadowrunners are built with 100 Character Points (CP). You still gain 50 points
 * All characters start with 1 metatype adjustment point for free: `{python} inc('Resonance', 1)`
 * You may purchase up to 12 additional adjustment points at 4 CP each:
   * `{python} inc('Resonance', 4)` : `{python} inc('Character_Points', -16)`
-  * `{python} inc('Edge', 4)` : `{python} inc('Character_Points', -16)`
+  * `{python} inc('Edge', 3)` : `{python} inc('Character_Points', -12)`
 
 ## Purchase Attributes with CP
 
@@ -116,6 +116,7 @@ Shadowrunners are built with 100 Character Points (CP). You still gain 50 points
 
 * All characters start with `{python} assign('Nuyen', 10000)`
 * You may purchase resources at a rate of 1 CP per 20,000 Nuyen
+  * `{python} inc_many(('Nuyen', 80000), ('Character_Points', -4))`
 
 | Attributes | Current Value |
 |------------|:-------------:|

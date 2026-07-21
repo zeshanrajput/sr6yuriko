@@ -15,8 +15,8 @@ The project is compiled into a polished, responsive book using **Quarto** and ho
   - `rules_and_downtime.qmd`: Fading calculations, rigger/decking shortcuts, and network setups.
   - `character_log.qmd`: Complete run history, karma trackers, nuyen ledgers, and contact lists.
   - Narrative Chapters (`01 The Weight of Zero.md`, etc.): Out-of-session narrative archives.
-- `input/`: Character source files (XML export from Chummer6/Genesis and Foundry JSON datasets).
-- `output/`: Holds the compiled text character sheet (`character_sheet.txt`).
+- `input/`: Pre-processed raw character exports (`Yuriko Star.xml`, `Yuriko Star.json` from Genesis/Commlink).
+- `output/`: Post-processed calculated artifacts (`character_sheet.txt`, `Yuriko Star.json`, `Yuriko Star.xml`) generated with true Karma, Nuyen, and career ledger data.
 - `rules_vault/`: Rules database containing text rules used by the parsing script.
 - `reference/`: Miscellaneous project reference docs, including [narrative_standards.md](file:///c:/GitHub/sr6yuriko/reference/narrative_standards.md) (the two-stage review framework and digital-native style conventions).
 

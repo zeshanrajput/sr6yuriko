@@ -1,0 +1,297 @@
+# Shadowrun 6th Edition Master Character Sheet: Yuriko Star
+# Single Source of Truth (SSOT)
+
+identity:
+  handle: "Yuriko Star"
+  real_name: "r31k0 Takahashi"
+  metatype: "AI-Pilot AI"
+  stream: "Technoshamans"
+  gender: "DIVERSE"
+  age: "~ 10"
+
+attributes:
+  body: 5
+  agility: 3
+  reaction: 5
+  strength: 3
+  willpower: 6
+  logic: 4
+  intuition: 2
+  charisma: 4
+  edge: 4
+
+  resonance: 7
+
+living_persona:
+  asdf_bonuses:
+    firewall: 2
+    sleaze: 1
+    data_processing: 1
+    attack: 3
+
+qualities:
+  positive:
+    - name: "Natural Hacker"
+      ref: "natural_hacker"
+    - name: "Stream: Technoshamans"
+      ref: "technoshaman"
+    - name: "Designer"
+      ref: "designer"
+    - name: "Sensor Upgrade"
+      ref: "sensor_upgrade"
+    - name: "Pilot Origins"
+      ref: "pilot_origins"
+  negative:
+    - name: "Buddy System"
+      ref: "buddy_system"
+    - name: "Sprite Bane"
+      ref: "sprite_bane"
+      choice: "Primal Sprite"
+    - name: "Hooder"
+      ref: "hooder"
+      rating: 2
+
+skills:
+  - name: "Tasking"
+    id: "tasking"
+    attribute: "Resonance"
+    rating: 6
+    specialization: "Registering"
+  - name: "Cracking"
+    id: "cracking"
+    attribute: "Logic"
+    rating: 5
+    specialization: "Hacking"
+  - name: "Electronics"
+    id: "electronics"
+    attribute: "Logic"
+    rating: 5
+    specialization: "Software"
+  - name: "Influence"
+    id: "influence"
+    attribute: "Charisma"
+    rating: 1
+  - name: "Con"
+    id: "con"
+    attribute: "Charisma"
+    rating: 1
+  - name: "Native Language"
+    id: "language"
+    attribute: "Logic"
+    rating: 4
+
+complex_forms:
+  - name: "Cleaner"
+    ref: "cleaner"
+    fading: 2
+    duration: "Permanent"
+  - name: "Diffusion"
+    ref: "diffusion"
+    target: "Firewall"
+    fading: 4
+    duration: "Sustained"
+  - name: "Technoregeneration"
+    ref: "technoregeneration"
+    fading: -1
+    duration: "Permanent"
+  - name: "Puppeteer"
+    ref: "puppeteer"
+    fading: 5
+    duration: "Sustained"
+
+meta_echoes:
+  - name: "Hybrid Sprites"
+    ref: "hybrid_sprites"
+  - name: "New Sprite Type"
+    ref: "new_sprite_type"
+  - name: "Sprite Conduit"
+    ref: "sprite_conduit"
+  - name: "Sprite Symbiosis"
+    ref: "sprite_symbiosis"
+  - name: "Living Network"
+    ref: "living_network"
+  - name: "Transcendent Network"
+    ref: "transcendent_network"
+  - name: "Overclocking"
+    ref: "overclocking"
+  - name: "Software Emulator"
+    ref: "software_emulator"
+
+drones:
+  - name: "Nissan Samurai"
+    ref: "nissansamurai"
+    body: 6
+    armor: 6
+    pilot: 3
+    sensor: 2
+    speed: 30
+    handling_on: 3
+    handling_off: 4
+    accel_on: 10
+    accel_off: 10
+    speed_interval_on: 10
+    page: "6WC 137"
+
+  - name: "MCT Gnat"
+    ref: "mctgnat"
+    body: 0
+    armor: 0
+    pilot: 2
+    sensor: 1
+    speed: 30
+    handling_on: 3
+    handling_off: 3
+    accel_on: 4
+    accel_off: 4
+    speed_interval_on: 10
+    page: "CRB 299"
+
+  - name: "FB Sky Commander"
+    ref: "boingskycommander"
+    body: 4
+    armor: 2
+    pilot: 4
+    sensor: 5
+    speed: 190
+    handling_on: 4
+    handling_off: 4
+    accel_on: 20
+    accel_off: 20
+    speed_interval_on: 30
+    page: "DC 116"
+
+  - name: "Shiawase Butler"
+    ref: "shiawasebdbutler"
+    body: 4
+    armor: 0
+    pilot: 2
+    sensor: 3
+    speed: 8
+    handling_on: 4
+    handling_off: 5
+    accel_on: 5
+    accel_off: 5
+    speed_interval_on: 5
+    page: "DC 116"
+    modifications:
+      - "Increased Structural Integrity 2"
+      - "Secondary Propulsion (Rotor)"
+      - "Increased Sensors 3"
+      - "Retractable Skates"
+
+  - name: "Shiawase Man-at-Arms"
+    ref: "shiawasebdmanatarms"
+    body: 10
+    armor: 8
+    pilot: 2
+    sensor: 2
+    speed: 10
+    handling_on: 3
+    handling_off: 3
+    accel_on: 5
+    accel_off: 5
+    speed_interval_on: 5
+    page: "DC 116"
+    modifications:
+      - "Weapon Mount (Heavy)"
+      - "Pop-Out Concealment (Large)"
+      - "Armor Increase 5"
+      - "Secondary Propulsion (Rotor)"
+      - "Increased Sensors 3"
+      - "Retractable Skates"
+
+
+armors:
+  - name: "Ares Securetech SkinShield"
+    rating: 2
+    primary: true
+  - name: "SecureTech Invisi-Shield Armor"
+    rating: 2
+    primary: false
+
+weapons:
+  ranged:
+    - name: "Ares Predator VI"
+      damage: "3P"
+      attack_rating: "11/11/8/-/-"
+      mode: "SA,BF"
+      ammo: "15(c)"
+      smartlink: true
+      personalized_grip: true
+      accessories:
+        - "Silencer"
+        - "Smartlink"
+        - "Personalized Grip"
+    - name: "Crimson Wasp"
+      damage: "5P"
+      attack_rating: "16/14/11/6/-"
+      mode: "SA"
+      ammo: "15(c)"
+      smartlink: true
+      is_vehicle_mounted: true
+      accessories:
+        - "Smartlink"
+        - "Drone Mount (+2 AR)"
+    - name: "Red Fox"
+      damage: "6P"
+      attack_rating: "14/16/16/9/-"
+      mode: "SA,BF"
+      ammo: "30(c)"
+      smartlink: true
+      is_vehicle_mounted: true
+      link_fired_count: 2
+      accessories:
+        - "Smartlink"
+        - "Drone Mount (+2 AR)"
+        - "Link-Fired (2x Wasps)"
+
+  close_combat:
+    - name: "Monofilament Whip"
+      damage: "6P"
+      attack_rating: "14/-/-/-/-"
+      is_vehicle_mounted: true
+      accessories:
+        - "Fingertip Cyberarm Mount (+2 AR)"
+
+    - name: "Dagger of the Sacred Rose (+1 Weapon Focus)"
+      damage: "2P"
+      attack_rating: "9/1/-/-/-"
+    - name: "Krime Gloves (Stun)"
+      damage: "4S(e)"
+      attack_rating: "5/-/-/-/-"
+      personalized_grip: true
+      accessories:
+        - "Personalized Grip"
+    - name: "Krime Gloves (Phys)"
+      damage: "3P"
+      attack_rating: "6/-/-/-/-"
+      personalized_grip: true
+      accessories:
+        - "Personalized Grip"
+
+
+
+matrix_devices:
+  commlinks:
+    - name: "Hermes Ikon"
+      device_rating: 5
+      data_processing: 5
+      firewall: 4
+
+sins:
+  - name: "Yuriko Star"
+    rating: 2
+
+licenses:
+  - name: "Drone License"
+    sin: "Yuriko Star"
+  - name: "Firearms License"
+    sin: "Yuriko Star"
+
+lifestyles:
+  - name: "Low Lifestyle"
+    comfort: "low"
+    entertainment: "low"
+    necessities: "low"
+    neighborhood: "low"
+    security: "low"
