@@ -14,6 +14,8 @@ from utils import sanitize_string, normalize_name
 from rules_data import REF_MAP, SW_CAT_MAP
 from rules_engine import RulesEngine
 from log_engine import get_log_totals
+from char_engine import get_living_persona
+
 
 
 # Global Rules Engine
@@ -1058,10 +1060,11 @@ def generate_ascii_sheet(char_data, verbose=False):
     earned_karma = total_karma - 5
     lifetime_karma = total_karma
     
-    f = a.get("FWL", 0)
-    s_val = a.get("SLZ", 0)
-    d = a.get("DPR", 0)
-    atk = a.get("ATK", 0)
+    lp_stats = get_living_persona()
+    f = lp_stats["active"]["F"]
+    s_val = lp_stats["active"]["S"]
+    d = lp_stats["active"]["D"]
+    atk = lp_stats["active"]["A"]
     
     spark = a.get('ESSENCE', a.get('SPARK', 6))
     
@@ -1109,8 +1112,8 @@ def generate_ascii_sheet(char_data, verbose=False):
     left_attr.append("")
     
     if is_ai:
-        left_attr.append("[ MATRIX EQUIVALENT ATTRIBUTES ]")
-        left_attr.append(f"  BOD [F]  AGI [D]  REA [S]  STR [A]")
+        left_attr.append("[ LIVING_PERSONA_ACTIVE_ASDF ]")
+        left_attr.append(f"  ATK [{atk:02}]  SLZ [{s_val:02}]  DPR [{d:02}]  FWL [{f:02}]")
         left_attr.append(f"  Resist: FWL ({f:02})")
     elif char_data["mortype"].lower() in ["technomancer", "technoshamans"]:
         left_attr.append("[ LIVING_PERSONA ]")
@@ -1134,6 +1137,7 @@ def generate_ascii_sheet(char_data, verbose=False):
     if is_ai or char_data["mortype"].lower() in ["technomancer", "technoshamans"]:
         right_status.append(f"Def (Bio): WIL + FWL ({wil + f:02})")
         right_status.append(f"Heal: Software + LOG vs (5-Spark)")
+
 
     page1.extend(zip_panels(left_attr, right_status, left_width=44, separator=" | "))
     page1.append("")
