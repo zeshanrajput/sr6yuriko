@@ -1100,13 +1100,6 @@ def generate_ascii_sheet(char_data, verbose=False):
 
     # Build Page 1 Front
     page1 = []
-    page1.append("___________________________________________________________________________")
-    file_name = char_data['name'].upper().replace(' ', '_')
-    nuyen = char_data.get('nuyen', 0)
-    page1.append(f"// ACCESSING: {file_name}.bin // SOURCE: RESONANCE_REALMS //")
-    page1.append(f"// STATUS: ONLINE // LIFETIME KARMA: {lifetime_karma} // KARMA: {char_data['karma']} // NUYEN: ¥{nuyen:,} //")
-    page1.append("___________________________________________________________________________")
-    page1.append("")
     page1.append("[ IDENTITY ]")
     page1.append(f"  > NAME: {char_data['name'].ljust(22)} > ALIAS: {char_data['alias']}")
     page1.append(f"  > METATYPE: {char_data['metatype'].ljust(18)} > GENDER: {char_data['gender']}")
@@ -2003,14 +1996,6 @@ def generate_ascii_sheet(char_data, verbose=False):
             page4.append(f"  {date.ljust(12)} | {karma_str.rjust(5)} | {nuyen_str.rjust(8)} | {event}")
             
         page4.append("  " + "-" * 75)
-        total_karma = char_data.get("karma", 0) + char_data.get("karmaI", 0)
-        spent_expenditure_karma = 0
-        for entry in char_data.get("career_log", []):
-            if entry.get("karma", 0) < 0 and "chargen correction" not in entry.get("title", "").lower():
-                spent_expenditure_karma += abs(entry["karma"])
-        total_karma += spent_expenditure_karma
-        earned_karma = total_karma - 5
-        page4.append(f"  LIFETIME KARMA: {total_karma} ({earned_karma} earned + 5 from Chargen)")
         page4.append("")
 
     out = []

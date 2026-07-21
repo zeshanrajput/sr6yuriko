@@ -4,7 +4,7 @@ project:
   resources:
     - chapters/audio/
   pre-render:
-    - uv run python scripts/main.py "input/Yuriko Star v9.xml" --output "output/character_sheet.txt"
+    - uv run python scripts/main.py "input/Yuriko Star.xml" --output "output/character_sheet.txt"
     - uv run python scripts/generate_narration.py
 
 book:
@@ -16,6 +16,7 @@ book:
     - part: "Core Character"
       chapters:
         - chapters/identity_core.qmd
+        - chapters/character_build_point_buy.qmd
         - chapters/character_sheet.qmd
         - chapters/rules_and_downtime.qmd
         - chapters/character_log.qmd

@@ -2,14 +2,23 @@
 
 ```{python}
 #| echo: false
+#| include: false
+import sys
+import os
+sys.path.extend([os.path.abspath("scripts"), os.path.abspath("../scripts")])
+from char_engine import get_character_stats
+from log_engine import get_log_totals
+
+stats = get_character_stats()
+log_totals = get_log_totals()
 
 # Core Attributes
-RESONANCE = 7
-WILLPOWER = 6
-CHARISMA = 4
-INTUITION = 5
-LOGIC = 4
-REACTION = 1
+RESONANCE = stats["Resonance"]
+WILLPOWER = stats["Willpower"]
+CHARISMA = stats["Charisma"]
+INTUITION = stats["Intuition"]
+LOGIC = stats["Logic"]
+REACTION = stats["Reaction"]
 
 # Base Matrix Attributes
 BASE_ATTACK = 3
@@ -42,10 +51,13 @@ ACTIVE_D = BASE_DATA_PROCESSING + RESONANCE_D + TOOLBOX_D + SYMBIOSIS_D
 ACTIVE_F = BASE_FIREWALL + RESONANCE_F + SYMBIOSIS_F
 
 # Skills and Adjustments
-TASKING = 6
-REGISTERING = 8
+TASKING = stats["Tasking"]
+ELECTRONICS = stats["Electronics"]
+CRACKING = stats["Cracking"]
+INFLUENCE = stats["Influence"]
+REGISTERING = TASKING + 2
 RESONANCE_FOCUS = 4
-SUBMERSION_GRADE = 7
+SUBMERSION_GRADE = log_totals["Submersion_Grade"]
 
 # Sprite Stats
 SPRITE_LEVEL = 7
@@ -476,14 +488,23 @@ Because a data structure/focus was used to boost both tests, it incurs its own i
 *   **Focus Fading Pool**: WIL (`{python} WILLPOWER`) + LOG (`{python} LOGIC`) = **`{python} focus_fade_res_pool` dice** → **`{python} focus_fade_res_hits` Bought Hits**.
 *   **Damage Taken**: `{python} focus_fade_fv` FV - `{python} focus_fade_res_hits` hits = **`{python} focus_fade_damage` Damage**.
 
-### Sprite Stable
+### Active Sprite Stable
 
-| Mission | Sprites Registered | Tasks Used |
-| ----------- | --- | --- |
-| SRM 2081-07 |  2  |  0  |
-| SRM 2081-06 |  2  |  0  |
-| CMP 2083-04 |  1  |  0  |
-| **Total**   |  5  |  0  |
+```{python}
+#| echo: false
+#| output: asis
+active = log_totals.get("Active_Sprites", [])
+print(f"Total Active Sprites: **{len(active)}** (See [Career Log](character_log.qmd) for full expiration details)")
+print("")
+print("| Sprite Name | Rating & Type | Registered During | Status |")
+print("| ----------- | --- | --- | --- |")
+for s in active:
+    if s.get("is_ally"):
+        print(f"| {s['name']} | R{s['level']} {s['type']} | Character Creation | Permanent (Ally) |")
+    else:
+        m_name = s.get('registered_mission_name', f"Mission {s['registered_mission']}")
+        print(f"| {s['name']} | R{s['level']} {s['type']} ({s['details']}) | {m_name} | Active |")
+```
 
 
 ---

@@ -1,273 +1,365 @@
 # Character Career Log
 
-This log chronicles the out-of-session missions, downtime decisions, Karma expenditures, and financial ledgers.
+This log chronicles out-of-session missions, downtime decisions, Karma expenditures, and financial ledgers.
 
-:::{.callout-warning}
-This log contains spoilers! Please do not read if you haven't played the sessions yet!
+::: {.callout-warning title="Spoilers"}
+*This log contains spoilers! Please do not read if you haven't played the sessions yet!*
 :::
+
+```{python}
+#| echo: false
+#| include: false
+# Initial values
+Karma = 1
+Lifetime_Karma = 1
+Nuyen = 90000 # Nuyen from Chargen. I couldn't figure out how to separate what was bought then vs. later.
+Submersion_Grade = 2
+Resonance = 6
+Heat = 0
+Current_Mission = 0
+
+Missions = []
+Reputation = {}
+Sprites = []
+
+def start_mission(name=""):
+    globals()['Current_Mission'] += 1
+    Missions.append(name if name else f"Mission {globals()['Current_Mission']}")
+    return f"{name}"
+
+def add_rep(faction, amount=1):
+    Reputation[faction] = Reputation.get(faction, 0) + amount
+    return f"+{amount} Rep {faction}"
+
+def add_sprite(name, level=7, type_name="Modular", details="", is_ally=False):
+    mission_idx = globals()['Current_Mission']
+    mission_name = Missions[mission_idx - 1] if 0 < mission_idx <= len(Missions) else f"Mission {mission_idx}"
+    Sprites.append({
+        "name": name,
+        "level": level,
+        "type": type_name,
+        "registered_mission": mission_idx,
+        "registered_mission_name": mission_name,
+        "is_ally": is_ally,
+        "details": details
+    })
+    return f"Registered {name} (R{level} {type_name})"
+
+def get_active_sprites():
+    curr = globals()['Current_Mission']
+    active = []
+    for s in Sprites:
+        if s.get("is_ally") or (curr <= s["registered_mission"] + 3):
+            active.append(s)
+    return active
+
+def inc(name, amount=1):
+    globals()[name] += amount
+    if name == 'Karma' and amount > 0:
+        globals()['Lifetime_Karma'] += amount
+    op = "+=" if amount >= 0 else "-="
+    return f"{name} {op} {abs(amount)}"
+
+def assign(name, value):
+    globals()[name] = value
+    return f"{name} = {value}"
+
+def inc_many(*args):
+    if len(args) == 1 and isinstance(args[0], (list, tuple)):
+        pairs = args[0]
+    elif len(args) > 0 and isinstance(args[0], (list, tuple)):
+        pairs = args
+    elif len(args) % 2 == 0:
+        pairs = [(args[i], args[i+1]) for i in range(0, len(args), 2)]
+    else:
+        pairs = args
+
+    res = []
+    for item in pairs:
+        if isinstance(item, (list, tuple)) and len(item) == 2:
+            name, amount = item
+        else:
+            continue
+        globals()[name] += amount
+        if name == 'Karma' and amount > 0:
+            globals()['Lifetime_Karma'] += amount
+        op = "+=" if amount >= 0 else "-="
+        res.append(f"{name} {op} {abs(amount)}")
+    return ", ".join(res)
+```
+
+### Build-A-Runner
+
+* **GM**: WarDoctor /# 1077
+* **Rewards:** `{python} inc_many(('Karma', 1), ('Nuyen', 1000))`
 
 ---
 
-### **2026-Apr-24: SMH 2083-02 EggHunt at the Jackalope Ranch**
+### **2026-Apr-24: SMH 2083-02 EggHunt at the Jackalope Ranch** `{python} start_mission('SMH 2083-02')`
 
 * **GM:** JaGator 
 * **Difficulty:** Normal/Adult
-  * **Rewards:** +6 Karma, +9,000 Nuyen (deducting the expenses of the run distributed evenly, 500 Nuyen)  
-* **Reputation:** +2 Rep Vory
+* **Rewards:** `{python} inc('Karma', 6)`, `{python} inc('Nuyen', 9000)` (deducting the expenses of the run distributed evenly, 500 Nuyen)  
+* **Reputation:** `{python} add_rep('Vory', 2)`
 * **Contacts:**
   * +1 FP Piotr Krolik (Vory Borjevik, Connection 4) Human Male Russian
   * *EITHER* **+1 FP Le Tigre Male Valkyrie Model/Johnson (Connection 5)** - purchases/conspiracy info *OR* +1 FP Fernand Amato Male Cybered Ork (Connection 4) - procured Eggs Paydata
   * *EITHER* +1 FP Simon Andrews British Punk LizardFolk Johnson (Connection 5) *OR* **+1 FP White Jackalope - Emergent Lifeform (Connection 2)**
-* **Heat:** No heat (-1,000 Nuyen bribe to Oli / Leeta)
+* **Heat:** No heat (bribe to Oli / Leeta)
 * **Downtime Actions (2 Minor):**  
-  * *Working for the People:* +1 Karma, -2,000 Nuyen  
-  * *Compiling and Registering Taz (Rank 1 Primal Ally Sprite):* -6 Karma  
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
+  * *Compiling and Registering Taz (Rank 1 Crack Ally Sprite):* `{python} inc('Karma', -6)`  
     * *Writing Code:* Software + RES (Natural Hacker) + RES Focus = 7 + 6 + 4 = 17 (4 Bought Hits)  
     * Compiling and Registering per Downtime Template
+  * `{python} add_sprite('Taz', 7, 'Crack Ally', 'Ally Sprite', is_ally=True)`
 
 ---
 
-### **2026-Apr-25: CMP First Taste : Top Chef - Seattle**
+### **2026-Apr-25: CMP First Taste : Top Chef - Seattle** `{python} start_mission('CMP First Taste')`
 
 * **GM:** JaGator  
-* **Rewards:** +3 Karma, +2,600 Nuyen  
-* **Reputation:** +1 Rep Seattle (selling paydata and commcode for the port storage to the homeless)  
+* **Rewards:** `{python} inc('Karma', 3)`, `{python} inc('Nuyen', 2600)`  
+* **Reputation:** `{python} add_rep('Seattle', 1)` (selling paydata and commcode for the port storage to the homeless)  
 * **Contacts:** +1 FP Big Louie Fixer (Connection 3) Male Troll, likes Jazz, works out of Matchsticks  
 * **Heat:** No heat  
 * **Downtime Actions (2 Minor):**  
-  * *Working for the People:* +1 Karma, -2,000 Nuyen  
-  * *Register Sprites:* Register 8 levels of sprites (1 R7 modular w/ Shield, Death Mark)
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
+  * *Register Sprites:* `{python} add_sprite('Sprite-M2', 7, 'Modular', 'Shield, Death Mark')`
 
 ---
 
-### **2026-Apr-29: SRM 2083-03: Unofficial Dunkelzahn Fan Club**
+### **2026-Apr-29: SRM 2083-03: Unofficial Dunkelzahn Fan Club** `{python} start_mission('SRM 2083-03')`
 
 * **GM:** JaGator  
-* **Rewards:** +8 Karma, +9,000 Nuyen  
+* **Rewards:** `{python} inc('Karma', 8)`, `{python} inc('Nuyen', 9000)`  
 * **Contacts:**
   * +2 FP with Dominique Augustin of Wolverine Security (Wolverine Security, Connection 4) Female Human
   * +1 FP with Daniel Fortune (Corporate, Connection 3) Human Male
   * +3 FP with Renée Martin (League of Laveau Community Outreach, Connection 4) Male Troll  
 * **Downtime Actions (1 Major & 1 Minor):**  
-  * *Working for the People:* +1 Karma, -2,000 Nuyen  
-  * *Submersion:* Sprite Symbiosis
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
+  * *Submersion - Sprite Symbiosis:* `{python} inc_many(('Karma', -11-Submersion_Grade), ('Submersion_Grade', 1))`
 
 ---
 
-### **2026-May-02: CMP 2081-09 | Bring me Prince Charming**
+### **2026-May-02: CMP 2081-09 | Bring me Prince Charming** `{python} start_mission('CMP 2081-09')`
 
 * **Summary:** The team met their Johnson duo, Baby Face and The Butcher, at Mama Appeltaart in Amsterdam and took on the job to kidnap the Vory Líder Grisha Semyonovich who basically never leaves the Vory controlled hookah bar "Sasha Lounge". After some scouting the team just entered as guests, found Grisha and convinced him to look at their car and maybe come along for a ride. Soon after that, a tranq patch sealed the deal. The team went to the safehouse as instructed, only to learn that a hostile armada was heading their way. Even though 7 players led to 35 gangers, they tore through their ranks via stun grenades and burst fire, leaving only few of them still somewhat alive by the time of the reinforcements. The cavalry at round 5 proved unnecessary. They assured that Grisha would leave the chat as alive as promised and left before the execution of the traitor happened.  
 * **Team:** Bast (teapot_tempest), Elknar (elknar), Mithral (mithral_gleaming), P!X (danthebuilder), Rei (snowcrash3969), Robuki Fox (jagator), Yuriko Star (wardr)  
 * **GM:** CDT Agent Kira Capalu  
 * **Difficulty Level:** Veteran  
-* **Rewards:** +7 Karma, +12,000 Nuyen  
-* **Reputation:** +1 Reputation  
+* **Rewards:** `{python} inc('Karma', 7)`, `{python} inc('Nuyen', 12000)`  
+* **Reputation:** `{python} add_rep('AMS', 1)`  
 * **Contacts:** +1 FP with The Frisian (Crime Lord of the Dutch Penose syndicate, Connection 6)  
 * **Heat:** ±0 (Roll: 2+5, Base +2 for Excessive Violence and Murder, -5 for Bribes by Bast, Mithral, P!X, Rei, Yuriko)  
-  * -1,000 Nuyen  
+  * `{python} inc('Nuyen', -1000)`  
 * **Downtime Actions (2 Minor):**  
-  * *Working for the People:* +1 Karma, -2,000 Nuyen  
-  * *Register Sprites:* Register 8 levels of sprites (1 R7 modular w/ Shield, Death Mark)
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
+  * *Register Sprites:* `{python} add_sprite('Sprite-M4', 7, 'Modular', 'Shield, Death Mark')`
 
 ---
 
-### **2026-May-13: CMP 2081-18 | Blue Kentucky Girl**
+### **2026-May-13: CMP 2081-18 | Blue Kentucky Girl** `{python} start_mission('CMP 2081-18')`
 
 * **GM:** JaGator  
 * **Difficulty Level:** Veteran  
-* **Rewards:** +7 Karma, +15,000 Nuyen  
+* **Rewards:** `{python} inc('Karma', 7)`, `{python} inc('Nuyen', 15000)`  
 * **Reputation:** 0 Reputation  
 * **Contacts:**
   * +2 FP Ree "Dolly" Hacker, Connection 4, Talismonger and Racer, Female Elf
   * +1 FP "Granny" Lady of the Autumn Wind: Siobhan Ceidwad Hydief Gwynt Connection 6 Fae Noble  
 * **Heat:** 0  
 * **Downtime Actions (2 Minor):**  
-  * *Working for the People:* +1 Karma, -2,000 Nuyen  
-  * *Register Sprites:* Register 8 levels of sprites (1 R7 modular w/ Shield, Death Mark)
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
+  * *Register Sprites:* `{python} add_sprite('Sprite-M5', 7, 'Modular', 'Shield, Death Mark')`
 
 ---
 
-### **2026-May-14: CMP 2081-10 | A Diamond in The Rough**
+### **2026-May-14: CMP 2081-10 | A Diamond in The Rough** `{python} start_mission('CMP 2081-10')`
 
 * **Summary:** After getting hired by "Ms. Johnson" alias Kiara Shaw in the restaurant "Le GastroGnome" high in the "Space Needle-like" Europort Mast, the team travelled from Europort to Antwerp to enter the historical sewers of the Ruien and find a forgotten back door into the archives of a local security firm, Sinjoor Incorporated. After passing by some locals and hiring two former shadowrunners as guides, the team got ambushed by the rats living close to the door, but blasted through them. Gotten to the archives, their hacker took care of the host and all of the security features, making the copying of the data go swimmingly. The team got back to their Ms. Johnson, but did take a look at the plans and got a hunch of something bigger: they did copy security plans of the shops in Antwerp where the Queen of the United Netherlands, Amalia, got the ring for her daughter and her upcoming wedding.  
 * **Team:** Elknar (elknar), Frostbyte (dash2059), Rei (snowcrash3969), Robuki Fox (jagator), Yuriko Star (wardr)  
 * **GM:** CDT Agent Kira Capalu  
 * **Difficulty Level:** Veteran  
-* **Rewards:** +7 Karma, +9,500 Nuyen  
+* **Rewards:** `{python} inc('Karma', 7)`, `{python} inc('Nuyen', 9500)`  
 * **Reputation:** ±0 Reputation  
 * **Contacts:**
   * +2 FP with Kiara Shaw (Knight Errant Company Suit, Connection 4)  
   * *(Only Robuki)* +1 FP with The Frisian (Crime Lord, Connection 6)  
 * **Heat:** ±0 (Roll: 5+2, Base +1 for Excessive violence, -3 for Bribes by Frostbyte, Rei, Yuriko)  
-  * -1,000 Nuyen  
+  * `{python} inc('Nuyen', -1000)`  
 * **Downtime Actions (2 Minor):**  
-  * *Working for the People:* +1 Karma, -2,000 Nuyen  
-  * *Register Sprites:* Register 8 levels of sprites (1 R7 modular w/ Shield, Death Mark)
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
+  * *Register Sprites:* `{python} add_sprite('Sprite-M6', 7, 'Modular', 'Shield, Death Mark')`
 
 ---
 
-### **2026-May-25: CMP 2081-11 | Paved with good intentions**
+### **2026-May-25: CMP 2081-11 | Paved with good intentions** `{python} start_mission('CMP 2081-11')`
 
 * **Summary:** The group met S-K Johnson Simon Andrews in an all-yellow interior bar at Utrecht and took on the mission to steal some crates off a secured convoy. They rescued an informant out of a soccer bar, learned some details and went about the heist as the vehicles got stuck in traffic. Using an Ares Scylla, they fried the convoy, got the stuff and left as quickly as they came.  
 * **Team:** Elknar (elknar), Frostbyte (dash2059), Queen of Foxes (orrfieldmedic), Rei (snowcrash3969), Robuki Fox (jagator), Yuriko Star (wardr)  
 * **GM:** CDT Agent Kira Capalu  
 * **Difficulty Level:** Veteran  
-* **Rewards:** +8 Karma, +9,000 Nuyen  
-* **Reputation:** +1 Reputation  
+* **Rewards:** `{python} inc('Karma', 8)`, `{python} inc('Nuyen', 9000)`  
+* **Reputation:** `{python} add_rep('AMS', 1)`  
 * **Contacts:**
   * +2 FP with Simon Andrews (S-K Johnson, Connection 5)  
   * +1 FP with Squint (Smuggler, Connection 2)  
 * **Heat:** 0 (Roll: 1+6, Base: 0, Bribes: 0)  
 * **Downtime Actions (2 Minor):**  
-  * *Working for the People:* +1 Karma, -2,000 Nuyen  
-  * *Register Sprites:* Register 8 levels of sprites (1 R7 modular w/ Shield, Death Mark)
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
+  * *Register Sprites:* `{python} add_sprite('Sprite-M7', 7, 'Modular', 'Shield, Death Mark')`
 
 ---
 
-### **2026-May-30: CMP 2081-19: The Blue Moon of Kentucky**
+### **2026-May-30: CMP 2081-19: The Blue Moon of Kentucky** `{python} start_mission('CMP 2081-19')`
 
 * **Summary:** Dr Laureline Dodd discovered a lost city of T'In'Abula from the 4th age of the Dawn of Civilization. She protected the discovery, with help from the Governor, KSP, the artist sometimes known as Fox, and the local Naga Pit, from an incursion by Global Security.  
 * **Team:** Oli K, Caitlin/Artemis (Kira), Snowcrash, Yuriko Star (Zeshan/WarDoctor), Dan the Builder, Dreamwalker, Hibiki54  
 * **GM:** JaGator  
-* **Rewards:** +7 Karma (including Veteran bonuses and distributed sales), +15,500 Nuyen  
-* **Reputation:** +2 Rep Kentucky  
+* **Rewards:** `{python} inc('Karma', 7)` (including Veteran bonuses and distributed sales), `{python} inc('Nuyen', 15500)`  
+* **Reputation:** `{python} add_rep('Kentucky', 2)`  
 * **Contacts:**
   * +2 FP with Dr. Laureline Dodd, Arcano-Archaeologist, Spinrad Global Connection 5  
   * +1 FP with Mr. Thaddeus CopperHead Naga Street Samurai Connection 3  
-* **Heat:** No Heat (-1,000 Nuyen bribe to James Kon)  
+* **Heat:** No Heat (`{python} inc('Nuyen', -1000)` bribe to James Kon)  
 * **Downtime Actions (2 Minor):**  
-  * *Working for the People:* +1 Karma, -2,000 Nuyen  
-  * *Register Sprites:* Register 8 levels of sprites (1 R7 modular w/ Shield, Diagnosis)  
-  * *Note:* Two additional registered sprites compiled during game downtime (2 days).
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
+  * *Register Sprites:* `{python} add_sprite('Sprite-M8a', 7, 'Modular', 'Shield, Diagnosis')`  
+  * *Note:* Two additional registered sprites compiled during game downtime (2 days): `{python} add_sprite('Sprite-M8b', 7, 'Modular', 'In-session downtime')`, `{python} add_sprite('Sprite-M8c', 7, 'Modular', 'In-session downtime')`
 
 ---
 
-### **2026-June-03: SRM 2081-17: Framed in Blood**
+### **2026-June-03: SRM 2081-17: Framed in Blood** `{python} start_mission('SRM 2081-17')`
 
 * **Summary:** Duan Yuhai hired the team to eliminate a rival triad's leader, David Guo. David and his team had been invested by blood spirits tracing back to blood sacrifice rituals in Central America hundreds of years ago.  
 * **Team:** Poe (Dreamwalker), Caitlin/Artemis (Kira Capalu), Yuriko Star  
 * **GM:** Oli K  
-* **Rewards:** +7 Karma, +9,500 Nuyen (-1,000 Nuyen bribe)  
-* **Reputation:** +1 Rep SEA  
+* **Rewards:** `{python} inc('Karma', 7)`, `{python} inc('Nuyen', 9500)`  
+* **Reputation:** `{python} add_rep('Seattle', 1)`  
 * **Contacts:**
   * +1 FP Duan Yuhai (criminal connection 3)  
   * +1 FP Xiong Giuyin (CORP Wuxing connection 4)  
 * **Heat:** No heat (Bribes: Poe, Yuriko)  
 * **Downtime Actions (1 Major & 1 Minor):**  
-  * *Submersion:* Living Network  
-  * *Working for the People:* +1 Karma, -2,000 Nuyen  
-  * *Note:* Three additional registered sprites compiled during game downtime (3 nights).
+  * *Submersion - Living Network:* `{python} inc_many(('Karma', -11-Submersion_Grade), ('Submersion_Grade', 1))`  
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
+* **Other**
+  * Three additional registered sprites compiled during game downtime (3 nights): `{python} add_sprite('Sprite-M9a', 7, 'Modular', 'Downtime 3 nights')`, `{python} add_sprite('Sprite-M9b', 7, 'Modular', 'Downtime 3 nights')`, `{python} add_sprite('Sprite-M9c', 7, 'Modular', 'Downtime 3 nights')`
+  * Ally Sprite code recompiled to R7 crack ally sprite. `{python} inc('Karma', -28)`
 
 ---
 
-### **2026-June-06: CMP 2081-20: In the Cold Kentucky Rain**
+### **2026-June-06: CMP 2081-20: In the Cold Kentucky Rain** `{python} start_mission('CMP 2081-20')`
 
 * **Team:** Rei (Snowcrash), June (Hibiki), Frostbyte (Dreamwalker), Line (OliK), Yuriko  
 * **GM:** JaGator  
-* **Rewards:** +9 Karma, +11,500 Nuyen  
-* **Reputation:** +1 Reputation, +1 Loyalty Siobhan, +1 FP Reilly Dragman, +1 Loyalty Reilly (Connection 2, 8-year old human female), +1 Loyalty Queen Brane (Connection 12, Seelie Queen), +1 FP Dolly (Rei), +1 FP Remy (June)  
-* **Heat:** +1 Heat (no one paid for reductions)  
+* **Rewards:** `{python} inc('Karma', 9)`, `{python} inc('Nuyen', 11500)`  
+* **Reputation:** `{python} add_rep('Kentucky', 1)`, +1 Loyalty Siobhan, +1 FP Reilly Dragman, +1 Loyalty Reilly (Connection 2, 8-year old human female), +1 Loyalty Queen Brane (Connection 12, Seelie Queen), +1 FP Dolly (Rei), +1 FP Remy (June)  
+* **Heat:** `{python} inc('Heat', 1)` (no one paid for reductions)  
 * **Downtime Actions (2 Minor):**  
-  * *Working for the People:* +1 Karma, -2,000 Nuyen  
-  * *Register Sprites:* Registering 8 Levels of Sprites (1 sprite with autosofts)  
-  * *Note:* Paid -2,000 Nuyen to buy off Heat.
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
+  * *Register Sprites:* `{python} add_sprite('Sprite-M10', 7, 'Modular', 'Autosofts')`  
+  * *Note:* Paid `{python} inc_many(('Nuyen', -2000), ('Heat', -1))` to buy off Heat.
 
 ---
 
-### **2026-June-07: SRM 2081-21: Grudge Match Gladiators**
+### **2026-June-07: SRM 2081-21: Grudge Match Gladiators** `{python} start_mission('SRM 2081-21')`
 
 * **Team:** Bast, Rei (Dreamwalker), Esme (JaGator), James Kon, Caitlin (Kira Capalu), Yuriko  
 * **GM:** Medtec28  
-* **Rewards:** +4 Karma, +10,500 Nuyen  
-* **Reputation:** +1 Rep SEA  
+* **Rewards:** `{python} inc('Karma', 4)`, `{python} inc('Nuyen', 10500)`  
+* **Reputation:** `{python} add_rep('Seattle', 1)`  
 * **Contacts:** +2 FP Kirt Liger (C3 Body Mod/Engineering Cybercatman)  
 * **Downtime Actions (1 Major & 1 Minor):**  
-  * *Submersion:* Transcendent Network  
-  * *Working for the People:* +1 Karma, -2,000 Nuyen  
+  * *Submersion - Transcendent Network:* `{python} inc_many(('Karma', -11-Submersion_Grade), ('Submersion_Grade', 1))`  
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
 
 ---
 
-### **2026-June-12: CMP 2081-12 | Uneasy lies the head**
+### **2026-June-12: CMP 2081-12 | Uneasy lies the head** `{python} start_mission('CMP 2081-12')`
 
 * **Summary:** While the talk about and protests against the engagement of crown princess Emma reached their boiling point, the team got called by the orkish shadowrunner Sigrûn to The Hague's Noordeinde Paleis, where she reveals herself to be princess Emma's personal bodyguard and hires them to protect two palace officials during a trip through the city. As they tricked their way through a group of protesters they found out that the trip was about creating a chemsniffer primed on the chemical that's supposed to be used on an upcoming terrorist attack.  
   Back in the palace they learned that 1) their Ms. Johnson happened to be this mysterious fiancée, 2) the engagement ring was secretly turned into the attack vessel and 3) none of that mattered as groups of armed terrorists flooded the hallways. Tasked with defending the door to the princess, they let the attackers run into the area of effect of gas grenades and mowed them down with automatic weapons. Their Ms. Johnson was happy, and while she got her knight and princess yuri happy ending, the group returned to America, only to receive a medal months later, welcoming them into the Order of the Lion of the United Netherlands.
 * **Team:** Jolthead (zombiemiles), Mithral (mithral_gleaming), Queen of Foxes (orrfieldmedic), Rei (snowcrash3969), Yuriko Star (wardr)  
 * **GM:** Kira Capalu  
-* **Rewards:** +6 Karma, +8,500 Nuyen  
-* **Reputation:** +1 Rep AMS  
+* **Rewards:** `{python} inc('Karma', 6)`, `{python} inc('Nuyen', 8500)`  
+* **Reputation:** `{python} add_rep('Amsterdam', 1)`  
 * **Heat:** 0 (Bribes: Yuriko)  
 * **Contacts:** +4 FP Sigrûn/Marikka von Harbou (Shadowrunner)  
 * **Downtime Actions (2 Minor):**  
-  * *Working for the People:* +1 Karma, -2,000 Nuyen  
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
   * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
 
 ---
 
-### **2026-June-19: CMP 2083-14 | A Day at the Beach**
+### **2026-June-19: CMP 2083-14 | A Day at the Beach** `{python} start_mission('CMP 2083-14')`
 
 * **Summary:**: Arrived in Malta and asked by Thunder Corps to ensure that the demonstration of an the 'Silent Knight' Experimental Submarine went off without sabotage during a war game. After locating the submarine, we discovered a Leviathan attacking it. We were able to free the Leviathan from being controlled and rescued the submarine. Yuriko was yet again without matrix activity (due to being under a km of sea water and forced to inhabit a submarine).
 * **Team:**: Angus (Male Ork Street Sam), Thallium (F Elf Shaman), Nova (Elf Mage), Dirk (Ork Phys Adept), Yuriko 
 * **GM:** Nick
-* **Rewards**: 7 karma, 12000 nuyen + 1000 nuyen for sharing media
-* **Reputation**: +1 Rep Mercenary Community
+* **Rewards**: `{python} inc('Karma', 7)`, `{python} inc('Nuyen', 12000)` + `{python} inc('Nuyen', 1000)` for sharing media
+* **Reputation**: `{python} add_rep('Mercenary', 1)`
 * **Heat**: No Heat
 * **Contacts**
   * +2 FP Dixie L'Amina (C4 Naga) --> L1/F1
   * +1 FP Ayanda Shieldbearer Matanugu (C3 Captain) --> L1
   * +2 FP Ebon Abirahur (C1 Leviathan Dragon) --> L1/F1
 * **Downtime Actions (2 Minor)**:
-  * *Working for the People:* +1 Karma, -2,000 Nuyen
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
   * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
+* **Other**
+  * `{python} inc_many(('Karma', -35), ('Resonance', 1))`
 
 ---
 
-### **2026-June-20: CMP 2083-16 | War Never Changes**
+### **2026-June-20: CMP 2083-16 | War Never Changes** `{python} start_mission('CMP 2083-16')`
 
 * **Summary:**: Hired by Col. Deborah Kentwell (Thunder Corps) to infiltrate Hardwater Security Svcs and procure evidence of cheating. Later re-hired to win the final War Game (CTF). Yuriko was forced to inhabit an Ares ShadowDancer WarMech (Deadly Arts).
 * **Team:**: Bast, Mithral, Ice Lily, Yuriko
 * **GM:** Hal "SSDR"
 * **Rewards:**: 
-  * 6 karma, 
-  * 4500 nuyen (Phase 1), 7000 nuyen (Phase 2), 2000 nuyen (simvest), 2000 nuyen (bonuses), 
-  * -3000 nuyen (bribes, buying down heat), 
+  * `{python} inc('Karma', 6)`, 
+  * `{python} inc('Nuyen', 4500)` (Phase 1), `{python} inc('Nuyen', 7000)` (Phase 2), `{python} inc('Nuyen', 2000)` (simvest), `{python} inc('Nuyen', 2000)` (bonuses), 
+  * `{python} inc('Nuyen', -3000)` (bribes, buying down heat), 
   * Smile for the Camera! Quality (Para Bellum p. 18, Shiawase), 
-  * Two downtime days during session --> 2 R7 Modular Sprites
-* **Reputation:**: +2 Rep Mercenary Community
-* **Heat:**: +4
+  * Two downtime days during session --> 2 R7 Modular Sprites: `{python} add_sprite('Sprite-M14a', 7, 'Modular', 'In-session downtime')`, `{python} add_sprite('Sprite-M14b', 7, 'Modular', 'In-session downtime')`
+* **Reputation:**: `{python} add_rep('Mercenary', 2)`
+* **Heat:** `{python} inc_many(('Heat', 4), ('Heat', -3))`
 * **Contacts:**
   * +2 FP Col. Deborah Kentwell (C5 Thunder Corps Fixer) --> L1/F1
   * +1 FP Polyphemous "Phil" Pellagious (C1 Desert Wars Background Actor)
 * **Downtime Actions (2 Minor):**
-  * *Working for the People:* +1 Karma, -2,000 Nuyen
-  * Learn Complex Form: Puppeteer
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
+  * Learn Complex Form: Puppeteer `{python} inc('Karma', -5)`
 
 --- 
 
-### **2026-June-20: SRM 2083-19 | The Hallow Feast**
+### **2026-June-20: SRM 2083-19 | The Hallow Feast** `{python} start_mission('SRM 2083-19')`
 
 * **Summary:**: Hired by Monsieur Johnson to ascertain the whereabouts of Snaggletooth. Ultimately found him long since dead and possessed by a spirit attempting to destroy the world. 
 * **Team:**: Eris Pomme, Ice Lily, Jolee, Bob, Yuriko
 * **GM:** Morgan
-* **Rewards:**: 8 karma, 8500 nuyen +5000 bonus for saving NOLA 
-* **Reputation:**: +3 Rep NOLA
+* **Rewards:**: `{python} inc('Karma', 8)`, `{python} inc('Nuyen', 8500)` + `{python} inc('Nuyen', 5000)` bonus for saving NOLA 
+* **Reputation:**: `{python} add_rep('NOLA', 3)`
 * **Heat:**: No Heat
 * **Contacts:**: 
   * +1 FP Fernand Anato (NOLA Kozlowski Capo) --> L1
   * +3 FP * L1 Monsieur Johnson (C5) --> L2/F1
 * **Downtime Actions (1 Minor):**
-  * *Working for the People:* +1 Karma, -2,000 Nuyen
-  * Submersion: Overclocking
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
+  * *Submersion - Overclocking:* `{python} inc_many(('Karma', -11-Submersion_Grade), ('Submersion_Grade', 1))`
 
 ---
 
-### **2026-June-25: SRM 2081-05 | This is Renton**
+### **2026-June-25: SRM 2081-05 | This is Renton** `{python} start_mission('SRM 2081-05')`
 
 * **Summary:** The team was hired by upcoming rapper Swango to investigate death threats, discovering that her previous fixer, Brynne Taggart, had gone missing. While a summoned spirit tracked Brynne, the team traced the messages to a used electronics store in a mall hangout for the Night Hunters gang. Intimidating a member revealed their employer: a retired LoneStar captain leading the local Neighborhood Watch. Following the spirit's lead to a shabby hotel, the runners located Brynne, who confirmed their findings. Forewarned of an approaching hit squad, the team easily repelled them. Swango then hired them as concert security. During the performance, they repelled a frontal gang assault, and one runner took a bullet to protect Swango from a backstage assassin.
 * **Team:** Jolthead (Zombie), Marcon (Trax), Poe (Dreamwalker), Yuriko Star (Zeshan/WarDoctor), Xiao (Inirlan)
 * **GM:** CDT Agent Kira Capalu
 * **Difficulty Level:** Veteran
-* **Rewards:** +8 Karma (7 + 1 Veteran), +12,500 Nuyen (-1,000 Nuyen bribe for Heat reduction)
-* **Reputation:** +2 Reputation
+* **Rewards:** `{python} inc('Karma', 8)` (7 + 1 Veteran), `{python} inc('Nuyen', 12500)` (`{python} inc('Nuyen', -1000)` bribe for Heat reduction)
+* **Reputation:** `{python} add_rep('Seattle', 2)`
 * **Heat:** ±0 (Roll: 6+4, Base +2, -4 for Bribes by Jolthead, Poe, Xiao, Yuriko)
 * **Contacts:**
   * +1 FP Brynne Taggart (C4 Fixer)
@@ -275,56 +367,56 @@ This log contains spoilers! Please do not read if you haven't played the session
   * +1 FP Toil (C4 Fixer)
   * +1 FP Trubble (C1 Bodyguard)
 * **Downtime Actions (1 Major, 1 Minor):**
-  * *Working for the People:* +1 Karma, -2,000 Nuyen
-  * Buying Favors (Brynne Taggart)
-* **Other bonuses:** 2 sprites registered during in-session downtime
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
+  * Learned Complex Form - Diffusion (Firewall): `{python} inc('Karma', -5)`
+* **Other bonuses:** 2 sprites registered during in-session downtime: `{python} add_sprite('Sprite-M16a', 7, 'Modular', 'In-session downtime')`, `{python} add_sprite('Sprite-M16b', 7, 'Modular', 'In-session downtime')`
 
 ---
 
-### **2026-June-30: CMP 2083-01: NONPLUSHED**
+### **2026-June-30: CMP 2083-01: NONPLUSHED** `{python} start_mission('CMP 2083-01')`
 
 * **Summary:** Hired to locate and return a missing convoy of S-K trucks. Simon called, asking for information on why they were stolen. Trucks located, liberated, and returned. Lost two Johnsons on this one - Simon's looking into it.
 * **Team:** Mithral, Elknar, Jolthead, Panda, Yuriko
 * **GM**: JaGator
 * **Difficulty**: Normal
-* **Rewards:** 6 karma, 9500 nuyen
+* **Rewards:** `{python} inc('Karma', 6)`, `{python} inc('Nuyen', 9500)`
 * **Reputation:** 0
 * **Heat:** 0 
 * **Contacts:** 
   * +1 FP Simon Andrews (Punk Lizard, S-K Fixer) Connection 5
-  * +1 FP SpiiniCop (NB Human, Penose Spider) Connection 2 (paid 500 from Yuriko)
+  * +1 FP SpiiniCop (NB Human, Penose Spider) Connection 2 (paid `{python} inc('Nuyen', -500)` from Yuriko)
 * **Downtime Actions (2 Minor):**
-  * Working for the People: +1 karma, -2000 nuyen
+  * Working for the People: `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
   * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
-* **Other bonuses:** 1 sprite registered during in-session downtime
+* **Other bonuses:** 1 sprite registered during in-session downtime: `{python} add_sprite('Sprite-M17', 7, 'Modular', 'In-session downtime')`
 
 ---
 
-### **2026-July-07: SRM 2081-08 Child's Play**
+### **2026-July-07: SRM 2081-08 Child's Play** `{python} start_mission('SRM 2081-08')`
 
 * **Summary:**: Hired by a CorpoKid to bodyguard him while he developed and sold a new neural interface for drones. A corp tried to steal it, but they failed. 
 * **Team:**: Rei, Jolthead, Yuriko, Poe, Jack Diamond, Panda
 * **GM:** JaGator
-* **Rewards:** 6 Karma, 6500 nuyen
-* **Reputation:** +1 SEA
+* **Rewards:** `{python} inc('Karma', 6)`, `{python} inc('Nuyen', 6500)`
+* **Reputation:** `{python} add_rep('Seattle', 1)`
 * **Heat:** 0
 * **Contacts:** 
   * +1 FP Eddie Wei (Triad/Johnson, Connection 4)
   * +1 FP Julian Müntefering (Renraku Corpkid, Connection 1)
 * **Downtime Actions (3 Minors):**
-  * *Working for the People:* +1 Karma, -2,000 Nuyen
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
   * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
   * Modifying Man-At-Arms: Removing megalodon, adding Red Fox and two Crimson Wasps
-* **Other bonuses:** 3 sprites registered during in-session downtime
+* **Other bonuses:** 3 sprites registered during in-session downtime: `{python} add_sprite('Sprite-M18a', 7, 'Modular', 'Shield')`, `{python} add_sprite('Sprite-M18b', 7, 'Modular', 'Death Mark')`, `{python} add_sprite('Sprite-M18c', 7, 'Modular', 'Death Mark')`
 
 ---
 
-### **2026-July-09: SRM 2081-07 | Bootleg Bliss**
+### **2026-July-09: SRM 2081-07 | Bootleg Bliss** `{python} start_mission('SRM 2081-07')`
 
 * **Summary:** Hired by Ni Ni to eliminate a fool who was pawning off poor quality illicit drugs as Triad goods. 
 * **Team:** Poe, Jolthead, Cassandra, Babel, Baakfu, Yuriko
 * **GM:** JaGator
-* **Rewards:** 6 Karma, 8000 nuyen
+* **Rewards:** `{python} inc('Karma', 6)`, `{python} inc('Nuyen', 8000)`
 * **Reputation:** 0
 * **Heat:** 0
 * **Contacts:**
@@ -332,38 +424,41 @@ This log contains spoilers! Please do not read if you haven't played the session
   * +1 FP with Bookie (Ancients Bookie, Connection 3) Male Elf 
   * +1 FP with Trudy (Cutter Lieutenant, Connection 2) Female Human Mage
 * **Downtime Actions (3 Minor):**
-  * *Working for the People:* +1 Karma, -2,000 Nuyen
-  * *Register Sprites:* Registering 8 Levels of Sprites (1 sprite with autosofts)
-  * *Register Sprites:* Registering 8 Levels of Sprites (1 sprite with autosofts)
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
+  * *Submersion - Software Emulator:* `{python} inc_many(('Karma', -11-Submersion_Grade), ('Submersion_Grade', 1))`
+* **Other**
+  * Two sprites registered during in-game downtime
+    * `{python} add_sprite('Sprite-M19a', 7, 'Modular', 'Autosofts')`
+    * `{python} add_sprite('Sprite-M19b', 7, 'Modular', 'Autosofts')`
 
 ---
 
-### **2026-July-10: SRM 2081-06 | Cutting Strings**
+### **2026-July-10: SRM 2081-06 | Cutting Strings** `{python} start_mission('SRM 2081-06')`
 
 * **Summary:** Hired by a Johnson to find a friend.
 * **Team:** Poe, Baakfu, Yuriko, He-nu, Jolthead, Georges Baptiste, Babel, Havoc, Marcon
 * **GM:** Kira Capalu
-* **Rewards:** 6 Karma, 8000 nuyen
-* **Reputation:** +1 SEA
-* **Heat:** +1 (spent 1000 nuyen pre roll, 2000 post-roll to negate)
+* **Rewards:** `{python} inc('Karma', 6)`, `{python} inc('Nuyen', 8000)`
+* **Reputation:** `{python} add_rep('Seattle', 1)`
+* **Heat:** +1 (spent `{python} inc('Nuyen', -1000)` pre roll, `{python} inc('Nuyen', -2000)` post-roll to negate)
 * **Contacts:**
   * +3 FP Saint James (Fixer, Connection 8) --> L2
   * +1 FP Jeanie Trudel (Bartender, Renton Hole in the Wall, Connection 1)
   * +1 FP Kingston (Shadowrunner, Connection 2)
 * **Downtime Actions (3 Minor):**
-  * *Working for the People:* +1 Karma, -2,000 Nuyen
-  * *Register Sprites:* Registering 8 Levels of Sprites (1 sprite with autosofts)
-  * *Register Sprites:* Registering 8 Levels of Sprites (1 sprite with autosofts)
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
+  * *Register Sprites:* `{python} add_sprite('Sprite-M20a', 7, 'Modular', 'Autosofts')`
+  * *Register Sprites:* `{python} add_sprite('Sprite-M20b', 7, 'Modular', 'Autosofts')`
 
 ---
 
-### **2026-Jul-14: CMP 2083-04 | Hog Wild**
+### **2026-Jul-14: CMP 2083-04 | Hog Wild** `{python} start_mission('CMP 2083-04')`
 
 * **Summary:** Sigs asked us to track someone down for her and bring them back. 
 * **Team:** Mithral, Jolthead, Yuriko, BPex
 * **GM:** JaGator
-* **Rewards:** 9500 nuyen, 7 karma (normal difficulty)
-* **Reputation:** +1 UNL
+* **Rewards:** `{python} inc('Nuyen', 9500)`, `{python} inc('Karma', 7)` (normal difficulty)
+* **Reputation:** `{python} add_rep('UNL', 1)`
 * **Heat:** 0
 * **Contacts:**
   * +2 FP with Sigrûn, (House Oranje-Nassau Johnson, Connection 5) Female Ork
@@ -371,5 +466,181 @@ This log contains spoilers! Please do not read if you haven't played the session
   * +1 FP with Kiara Shaw (KE Company Suit, Connection 4) Female Dwarf
   * +1 FP Kaatje (Young Entertainer, Connection 2) early 20s human female (Mithral and Yuriko only)
 * **Downtime Actions (2 Minor):**
-  * *Working for the People:* +1 Karma, -2,000 Nuyen
-  * *Register Sprites:* Registering 8 Levels of Sprites (1 sprite with Shield, Death Mark)
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
+  * *Register Sprites:* `{python} add_sprite('Sprite-M21', 7, 'Modular', 'Shield, Death Mark')`
+* **Other**: Learned 8 programs. 
+
+---
+
+### Historical Gear Purchases
+
+#### Combat
+
+* Monofilament Whip `{python} inc('Nuyen', -1500)`
+  * Personalized Grip
+* Krime Gloves `{python} inc('Nuyen', -1050)`
+  * Personalized Grip
+* Ares Securetech SkinShield `{python} inc('Nuyen', -3000)`
+* SecureTech Invisi-Shield `{python} inc('Nuyen', -5000)`
+* Ares Predator VI `{python} inc('Nuyen', -1450)`
+  * Silencer
+  * Personalized Grip
+  * Smartgun System
+  * Variable Ammunition System
+  * 50 Explosive Rounds `{python} inc('Nuyen', -100)`
+  * 50 Krime Self Defense Rounds `{python} inc('Nuyen', -100)`
+* Crimson Wasp x2 `{python} inc('Nuyen', -3000)`
+* Red Fox `{python} inc('Nuyen', -3300)`
+  * Smartgun System (Internal)
+  * Batteries x5 `{python} inc('Nuyen', -500)`
+* Glitter Grenades x10 `{python} inc('Nuyen', -1000)`
+
+#### Matrix
+
+* M-TOC II `{python} inc('Nuyen', -65000)`
+  * Satellite Link `{python} inc('Nuyen', -500)`
+* Software Library
+  * Basic Programs
+    * Baby Monitor `{python} inc('Nuyen', -100)`
+    * Browse `{python} inc('Nuyen', -100)`
+    * Edit `{python} inc('Nuyen', -100)`
+    * **Emulator** `{python} inc_many(('Nuyen', -100),('Karma', -1))`
+    * Encryption `{python} inc('Nuyen', -100)`
+    * Signal Scrubber `{python} inc('Nuyen', -100)`
+    * **Toolbox** `{python} inc_many(('Nuyen', -100),('Karma', -1))`
+    * **Virtual Machine** `{python} inc_many(('Nuyen', -100),('Karma', -1))`
+  * Hacking Programs
+    * Decryption `{python} inc('Nuyen', -200)`
+    * Defense Pods `{python} inc('Nuyen', -200)`
+    * **Directional Shields** `{python} inc_many(('Nuyen', -200),('Karma', -1))`
+    * Fork `{python} inc('Nuyen', -200)`
+    * Hitchhiker `{python} inc('Nuyen', -200)`
+    * **Nexus Protocol** `{python} inc_many(('Nuyen', -1000),('Karma', -1))`
+    * Overclock `{python} inc('Nuyen', -200)`
+    * Trace `{python} inc('Nuyen', -200)`
+ * Rigger Programs
+   * Smartsoft `{python} inc('Nuyen', -250)`  
+   * Swarm `{python} inc('Nuyen', -250)`
+   * Encryption (Rigger) `{python} inc('Nuyen', -250)`
+* Autosofts
+  * Biotech (R9) `{python} inc('Nuyen', -4500)`
+  * **Clearsight (R9)** `{python} inc_many(('Nuyen', -4500),('Karma', -1))`
+  * Close Combat (R9) `{python} inc('Nuyen', -4500)`
+  * Engineering (1, R9) `{python} inc('Nuyen', -4500)`
+  * Evasion (R9) `{python} inc('Nuyen', -4500)`
+  * Knowledge (1) `{python} inc('Nuyen', -2500)`
+  * Language (1, R4) `{python} inc('Nuyen', -6000)`
+  * Maneuvering (1, R9) `{python} inc('Nuyen', -4500)`
+  * Navigation (R9) `{python} inc('Nuyen', -4500)`
+  * Performance (R9) `{python} inc('Nuyen', -4500)`
+  * **Stealth (1, R9)** `{python} inc_many(('Nuyen', -4500),('Karma', -1))`
+  * Targeting (1, R9) `{python} inc('Nuyen', -4500)`
+  * Tracking (R9) `{python} inc('Nuyen', -4500)`
+* Tactical Software
+   * Artillery Barrage `{python} inc('Nuyen', -200)`
+   * ECM Warrior II `{python} inc('Nuyen', -200)`
+   * Mobile Medic `{python} inc('Nuyen', -200)`
+   * Sneak-Sneak `{python} inc('Nuyen', -200)`
+   * Target Artist `{python} inc('Nuyen', -200)`
+* Commlink Apps
+  * Facial Scanner `{python} inc('Nuyen', -750)`
+  * P-ICE Spines `{python} inc('Nuyen', -500)`
+  * Personal Assistant (R6) `{python} inc('Nuyen', -600)`
+  * Social HUD (R6) `{python} inc('Nuyen', -700)`
+  * Thermal Mood Reading `{python} inc('Nuyen', -700)`
+  * Vocal Tension Detection `{python} inc('Nuyen', -700)`
+* Other
+  * Mapsoft x4 `{python} inc('Nuyen', -400)`
+  * Shopsoft x6 `{python} inc('Nuyen',-900)`
+  * **Coding Facility** `{python} inc_many(('Nuyen',-5000),('Karma',-1))`
+  
+
+1: For autosofts that are specific, the character programs her derivative own based on the original version she bought above.
+
+Software with karma costs have been learned via the **Software Emulator** echo.
+
+#### Vehicles
+
+* MCT Gnat x5 `{python} inc('Nuyen', -4000)`
+* Shiawase Bi-Drone Butler 
+  * Drone Rack (Small) 
+  * Wrist Shield 
+  * Realistic Features 1
+  * Increased Structural Integrity 2 
+  * Secondary Propulsion (Rotor)
+  * Increased Sensors 3
+* Shiawase Man-At-Arms `{python} inc('Nuyen', -4500*.9)`
+  * Weapon Mount - Heavy
+  * Pop-Out Concealment - Large `{python} inc('Nuyen', -4500/2)`
+  * Drone Rack (Small) `{python} inc('Nuyen', -3000/2)`
+  * Tesla Coil `{python} inc('Nuyen', -15000/2)`
+  * Fingertip Compartment `{python} inc('Nuyen', -3000/2)`
+  * Implanted Heavy Pistol `{python} inc('Nuyen', -4300/2)`
+  * Wrist Shield `{python} inc('Nuyen', -2000/2)`
+  * Armor Increase 5 `{python} inc('Nuyen', -25000/2)`
+  * Increased Structural Integrity 5 `{python} inc('Nuyen', -25000/2)`
+  * Realistic Features 4 `{python} inc('Nuyen', -10000/2)`
+  * Hardpoint Small x2 `{python} inc('Nuyen', -800/2)`
+  * Secondary Propulsion (Rotor): `{python} inc('Nuyen', -50000/2)`  
+  * Increased Sensors 3 `{python} inc('Nuyen', -15000/2)`
+
+Drones mods include 50% discount on mods Yuriko installed herself (DC p. 120).
+
+Shiawase drones include 10% discount (Smile at the Camera).
+
+There is no cost for the Butler drone because it's less than the cost of the Man-At-Arms drone and I only use one or the other for difficulty mode adjustment.
+
+#### Electronics
+
+* Software Tag x10 `{python} inc('Nuyen', -1000)`
+* Laser Jack x10 `{python} inc('Nuyen', -1000)`
+
+#### Other
+
+* Engineering Kit `{python} inc('Nuyen', -500)`
+* Medkit R1 `{python} inc('Nuyen', -250)`
+
+#### SINs
+
+* Yuriko Star (R2) `{python} inc('Nuyen', -5000)`
+  * Drone License `{python} inc('Nuyen', -400)`
+  * Firearms License `{python} inc('Nuyen', -400)`
+
+---
+
+### **Current Totals**
+
+* **Lifetime Karma:** `{python} Lifetime_Karma`
+* **Available Karma:** `{python} Karma`
+* **Total Nuyen:** ¥`{python} f"{Nuyen:,}"`
+* **Submersion Grade:** `{python} Submersion_Grade`
+* **Resonance:** `{python} Resonance`
+* **Current Heat:** `{python} Heat`
+* **Total Reputation:** `{python} sum(Reputation.values())`
+  * **Seattle (SEA):** +`{python} Reputation.get('Seattle', 0)`
+  * **NOLA:** +`{python} Reputation.get('NOLA', 0)`
+  * **Vory:** +`{python} Reputation.get('Vory', 0)`
+  * **Kentucky:** +`{python} Reputation.get('Kentucky', 0)`
+  * **Mercenary:** +`{python} Reputation.get('Mercenary', 0)`
+  * **Amsterdam / UNL:** +`{python} Reputation.get('Amsterdam', 0) + Reputation.get('UNL', 0)`
+
+---
+
+### **Active Sprite Stable**
+
+```{python}
+#| echo: false
+#| output: asis
+active = get_active_sprites()
+print("| Sprite Name | Rating & Type | Registered During | Full Missions Active | Status |")
+print("| ----------- | --- | --- | --- | --- |")
+for s in active:
+    if s.get("is_ally"):
+        print(f"| {s['name']} | R{s['level']} {s['type']} | Character Creation | Permanent | Active (Ally) |")
+    else:
+        elapsed = Current_Mission - s['registered_mission']
+        rem = 3 - elapsed
+        status_str = f"Active ({rem} mission{'s' if rem != 1 else ''} remaining)"
+        m_name = s.get('registered_mission_name', f"Mission {s['registered_mission']}")
+        print(f"| {s['name']} | R{s['level']} {s['type']} ({s['details']}) | {m_name} | {elapsed} / 3 | {status_str} |")
+```

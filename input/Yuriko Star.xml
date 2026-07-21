@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<sr6char career="true" gender="DIVERSE" karmaI="130" meta="pilot-ai" nuyen="2630">
+<sr6char career="true" gender="DIVERSE" karmaI="130" meta="pilot-ai" nuyen="37860">
    <lifestyles>
       <lifestyle comfort="low" entert="low" lang="en" necess="low" neigh="low" ref="low" security="low" space="low" value="1"/>
    </lifestyles>
@@ -109,7 +109,7 @@ CMP 2081-11 | Paved with good intentions - +2FP -- L1/FP1
 CMP 2083-01: NONPLUSHED + 1FP
 CMP 2083-04 | Hog Wild: +1 FP -- L2/FP1</description>
       </contact>
-      <contact id="ff9242f4-7f59-4007-9b66-12ed979ffece" loy="1" name="Squint" rat="2" type="CRIMINAL" typename="Smuggler">
+      <contact id="ff9242f4-7f59-4007-9b66-12ed979ffece" loy="1" name="Squint" rat="2" type="CRIMINAL" typename="AMS Smuggler">
          <description>CMP 2081-11 | Paved with good intentions - +1FP -- L1</description>
       </contact>
       <contact favors="1" id="bab7a38b-3a7c-4ce5-89fa-16aeefeb5ebc" loy="1" name="Dr. Laureline Dodd" rat="5" typename="KY Arcano-Archeologist">
@@ -172,20 +172,20 @@ CMP 2083-14: +1FP -- L1</description>
          <description>NB Human
 CMP 2083-01: NONPLUSHED: +1 FP -- L1</description>
       </contact>
-      <contact id="dc6e2c88-7056-450b-a075-b4a32c206207" loy="1" name="Eddie Wei" rat="4" type="CORPORATE" typename="Triad/Johnson">
+      <contact id="dc6e2c88-7056-450b-a075-b4a32c206207" loy="1" name="Eddie Wei" rat="4" type="CORPORATE" typename="SEA Triad/Johnson">
          <description>SRM 2081-08 Child's Play: +1 FP -- L1</description>
       </contact>
-      <contact id="4542297c-d98c-486a-b46b-4b4ea6036685" loy="1" name="Julian Müntefering" rat="1" typename="Renraku Corpokid">
+      <contact id="4542297c-d98c-486a-b46b-4b4ea6036685" loy="1" name="Julian Müntefering" rat="1" typename="SEA Renraku Corpokid">
          <description>SRM 2081-08 Child's Play: +1 FP -- L1</description>
       </contact>
-      <contact id="4a71a665-1027-468b-98b4-b8df136fbbd5" loy="2" name="Ni Ni Xiaolu" rat="3" type="CORPORATE" typename="Johnson/Triad">
+      <contact id="4a71a665-1027-468b-98b4-b8df136fbbd5" loy="2" name="Ni Ni Xiaolu" rat="3" type="CRIMINAL" typename="SEA Johnson/Triad">
          <description>SRM 2081-07 | Bootleg Bliss: +3 FP -- 2L</description>
       </contact>
-      <contact id="c1936bbb-d691-4300-985e-95bd22489dc7" loy="1" name="Bookie" rat="3" type="CRIMINAL" typename="Ancients Bookie">
+      <contact id="c1936bbb-d691-4300-985e-95bd22489dc7" loy="1" name="Bookie" rat="3" type="CRIMINAL" typename="SEA Ancients Bookie">
          <description>SRM 2081-07 | Bootleg Bliss: +1 FP -- L1
 Male Elf</description>
       </contact>
-      <contact id="3bf7c9db-2ebb-4328-be79-9de3e27b506a" loy="1" name="Trudy" rat="2" type="CRIMINAL" typename="Cutter Lieutenant">
+      <contact id="3bf7c9db-2ebb-4328-be79-9de3e27b506a" loy="1" name="Trudy" rat="2" type="CRIMINAL" typename="SEA Cutter Lieutenant">
          <description>Female Human Mage
 SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
       </contact>
@@ -194,7 +194,7 @@ SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
 2083-04 Hog Wild: +1 FP -- L1. (Was playing harmonica in a bar. Yuriko introduced her to Fuchs. Also met Kaatje's grandmother in a religious commune)</description>
       </contact>
    </contacts>
-   <name>Yuriko Star v9</name>
+   <name>Yuriko Star</name>
    <datasets mode="ALL"/>
    <rules>
       <set rule="CAREER_UNDO_FROM_CAREER" to="true"/>
@@ -243,18 +243,6 @@ SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
          <customName>Resonance Focus (R4)</customName>
       </item>
       <item changes="0,0,0" count="5" lang="en" mode="CARRIED" ref="mct_gnat" uuid="9b9e6ccc-07fc-4e18-b748-cd750f3e3ac3"/>
-      <item changes="0,0,0" count="1" lang="en" mode="CARRIED" ref="boing_sky_commander" uuid="2f5ae0f0-cd22-4a90-9817-3e9e54bf6559">
-         <accessories>
-            <item lang="en" mode="EMBEDDED" ref="chameleon_coating" slot="VEHICLE_ELECTRONICS" uuid="4fca3a8c-104f-4ae9-b557-22c44b13709f">
-               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="1"/>
-            </item>
-            <item lang="en" mode="EMBEDDED" ref="drone_rack" slot="VEHICLE_HARDPOINT" uuid="86dbcfb1-a6fc-4387-8ad6-8b146300ab59" variant="micromini"/>
-            <item lang="en" mode="EMBEDDED" ref="integrated_matrix_device" slot="VEHICLE_ELECTRONICS" uuid="b903e671-2778-4f41-b6d4-966bd2f4d1f6"/>
-            <item lang="en" mode="EMBEDDED" ref="anti_theft" slot="VEHICLE_ELECTRONICS" uuid="faaebd18-bd46-4420-9f2c-b275098abe5e" variant="rating1">
-               <flag>AUTO_ADDED</flag>
-            </item>
-         </accessories>
-      </item>
       <item changes="0,0,0" count="1" lang="en" mode="CARRIED" ref="shiawase_BD_butler" uuid="227c5aa8-b36c-436a-b759-18ea24ff300c">
          <notes>Armor: 10 (SkinShield + RACS, InvisiShield, Wrist Shield)</notes>
          <accessories>
@@ -266,6 +254,9 @@ SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="2"/>
             </item>
             <item lang="en" mode="EMBEDDED" ref="drone_rack" slot="VEHICLE_HARDPOINT" uuid="894d6aa6-81b4-4534-b7a8-47fa37af97ea" variant="small"/>
+            <item lang="en" mode="EMBEDDED" ref="enhanced_sensors" slot="VEHICLE_ELECTRONICS" uuid="c079b5ed-e8f0-4986-9fa5-983537383ee4">
+               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="3"/>
+            </item>
          </accessories>
          <accessoriesInFact>
             <item inFactoryItem="4f2a8d0b-381f-4464-b14b-ef5c6c6ef9bf" lang="en" mode="EMBEDDED" ref="cyberweapon_wrist_shield" slot="CYBERLIMB_IMPLANT" uuid="1c09ce2a-129d-4d4d-aebf-ca3f020c3fe7">
@@ -309,6 +300,9 @@ SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
             </item>
             <item lang="en" mode="EMBEDDED" ref="hardpoint_small" slot="VEHICLE_CHASSIS" uuid="ba346adf-9f5a-4b98-a98e-43f30ab57001"/>
             <item lang="en" mode="EMBEDDED" ref="hardpoint_small" slot="VEHICLE_CHASSIS" uuid="21ebc127-50bb-4900-8a45-7259049cc960"/>
+            <item lang="en" mode="EMBEDDED" ref="enhanced_sensors" slot="VEHICLE_ELECTRONICS" uuid="81cffb5b-67fe-4b0f-816a-9faed6575ddc">
+               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="3"/>
+            </item>
          </accessories>
          <accessoriesInFact>
             <item inFactoryItem="e6358fb9-51ab-48bb-9f7d-f073b08f2d2d" lang="en" mode="EMBEDDED" ref="cyberweapon_tesla_coil" slot="CYBERLIMB_IMPLANT" uuid="4089bd53-21f4-4bac-b517-694e35856aba">
@@ -364,11 +358,13 @@ SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
       </item>
       <item lang="en" mode="CARRIED" ref="mtoc_mark2" uuid="8111bbf4-5fc7-449d-acaf-41402ee536b1">
          <accessories>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="target_artist" slot="SOFTWARE" uuid="ccd718da-a362-4d43-bda9-8b6bf982eadb"/>
             <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="ELECTRONIC_ACCESSORY" uuid="14236071-919a-4a38-9073-f4e39982c2aa"/>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="sneak_sneak" slot="SOFTWARE" uuid="677568f7-6265-4159-a886-b6ab331d041e"/>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="artillery_barrage" slot="SOFTWARE" uuid="5ca61534-4a27-408a-b88d-9c10bc1a23c7"/>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="ecm_warrior_ii" slot="SOFTWARE" uuid="1cdd833d-6881-4c27-a083-bea18f834c53"/>
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="mapsoft" slot="SOFTWARE" uuid="af663ff9-bcc0-4c1b-abe2-c1af1792d739">
+               <decision choice="47d1e468-6df7-43ce-9651-44485cc78bb8" value="SEA"/>
+            </item>
          </accessories>
          <flag>PRIMARY</flag>
       </item>
@@ -411,9 +407,6 @@ SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
                <decision choice="355a3a45-39fc-4376-8667-661c9873dfdb" value="shiawase_BD_butler"/>
             </item>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="mannequin" slot="SOFTWARE" uuid="64de90de-7f43-4eff-a4fc-2a0937dbdf85"/>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="mapsoft" slot="SOFTWARE" uuid="af663ff9-bcc0-4c1b-abe2-c1af1792d739">
-               <decision choice="47d1e468-6df7-43ce-9651-44485cc78bb8" value="SEA"/>
-            </item>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="mefeed" slot="SOFTWARE" uuid="0683fd5d-e4be-4d7e-ad81-df8fe96f2163"/>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_navigation" slot="SOFTWARE" uuid="14c1be8f-e64e-44cc-895a-98cb7574d4b8">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9"/>
@@ -456,6 +449,12 @@ SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
                <decision choice="47d1e468-6df7-43ce-9651-44485cc78bb8" value="Drones, SW, HW, Firearms, Armor, Demolitions"/>
             </item>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="mobile_medic" slot="SOFTWARE" uuid="9335def9-98ad-4852-9b9c-07fbd1b512d7"/>
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="swarm_rig" slot="SOFTWARE" uuid="7d3e5678-e55a-49ca-9b89-da41613521b7"/>
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="target_artist" slot="SOFTWARE" uuid="ccd718da-a362-4d43-bda9-8b6bf982eadb"/>
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="stealth_auto" slot="SOFTWARE" uuid="5ad6833a-c2dd-4912-8e29-b1466ecb2945">
+               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9"/>
+               <decision choice="355a3a45-39fc-4376-8667-661c9873dfdb" value="shiawase_BD_man_at_arms"/>
+            </item>
          </accessories>
       </item>
    </items>
@@ -736,6 +735,10 @@ SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
       <valmod date="2026-07-15T23:54:19.517-04:00" id="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0" ref="ammo_battery_laser" set="AUGMENTED" type="CARRIED" value="100"/>
       <valmod date="2026-07-15T23:54:20.033-04:00" id="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0" ref="ammo_battery_laser" set="AUGMENTED" type="CARRIED" value="100"/>
       <valmod date="2026-07-15T23:54:20.498-04:00" id="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0" ref="ammo_battery_laser" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-07-20T21:33:23.881-04:00" id="7d3e5678-e55a-49ca-9b89-da41613521b7" ref="swarm_rig" set="AUGMENTED" type="CARRIED" value="-46430"/>
+      <valmod date="2026-07-20T21:49:36.764-04:00" id="5ad6833a-c2dd-4912-8e29-b1466ecb2945" ref="stealth_auto" set="AUGMENTED" type="CARRIED" value="0"/>
+      <valmod date="2026-07-20T23:09:48.603-04:00" id="81cffb5b-67fe-4b0f-816a-9faed6575ddc" ref="enhanced_sensors" set="AUGMENTED" type="CARRIED" value="15000"/>
+      <valmod date="2026-07-20T23:10:01.582-04:00" id="c079b5ed-e8f0-4986-9fa5-983537383ee4" ref="enhanced_sensors" set="AUGMENTED" type="CARRIED" value="15000"/>
    </history>
    <rewards>
       <reward date="2026-04-20T00:00:00.000-04:00" exp="13">

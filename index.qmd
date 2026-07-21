@@ -2,6 +2,17 @@
 
 Welcome to the consolidated resonance portfolio for **r31-K0 ("Reiko")**, operating in physical nodes under the runner alias **Yuriko Star**.
 
+```{python}
+#| echo: false
+#| include: false
+import sys
+import os
+sys.path.extend([os.path.abspath("scripts"), os.path.abspath("../scripts")])
+from log_engine import get_log_totals
+
+log_totals = get_log_totals()
+```
+
 ::: {.grid}
 
 ::: {.g-col-6 .cyber-card}
@@ -15,37 +26,13 @@ Welcome to the consolidated resonance portfolio for **r31-K0 ("Reiko")**, operat
 
 ::: {.g-col-6 .cyber-card}
 ### [MATRIX_PROGRESSION]
-```{python}
-#| echo: false
-#| output: asis
-import re
-
-try:
-    with open("output/character_sheet.txt", "r", encoding="utf-8") as f:
-        content = f.read()
-
-    lifetime_karma = re.search(r"LIFETIME KARMA:\s*(\d+)", content)
-    current_karma = re.search(r"(?<!LIFETIME )KARMA:\s*(\d+)", content)
-    nuyen = re.search(r"NUYEN:\s*([^\s/]+)", content)
-    submersion = re.search(r"SUB\s*\[(\d+)\]", content)
-    earned_match = re.search(r"LIFETIME KARMA:\s*\d+\s*\((\d+)\s*earned", content)
-    
-    lk = lifetime_karma.group(1) if lifetime_karma else "127"
-    ck = current_karma.group(1) if current_karma else "11"
-    ny = nuyen.group(1) if nuyen else "¥48,295"
-    sub = int(submersion.group(1)) if submersion else 6
-    earned = earned_match.group(1) if earned_match else str(int(lk) - 5)
-
-    print(f"* **Lifetime Karma:** {lk} ({earned} earned)")
-    print(f"* **Current Karma:** {ck}")
-    print(f"* **Liquid Capital:** {ny}")
-    print(f"* **Submersion Grade:** {sub}")
-except Exception as e:
-    print("* **Lifetime Karma:** 127 (122 earned)")
-    print("* **Current Karma:** 11")
-    print("* **Liquid Capital:** ¥48,295")
-    print("* **Submersion Grade:** 6")
-```
+* **Lifetime Karma:** `{python} log_totals['Lifetime_Karma']`
+* **Current Karma:** `{python} log_totals['Karma']`
+* **Liquid Capital:** ¥`{python} f"{log_totals['Nuyen']:,}"`
+* **Submersion Grade:** `{python} log_totals['Submersion_Grade']`
+* **Current Heat:** `{python} log_totals['Heat']`
+* **Total Reputation:** `{python} log_totals['Total_Reputation']`
+* **Active Sprites:** `{python} log_totals['Active_Sprite_Count']`
 :::
 
 :::
@@ -61,6 +48,7 @@ Use the sidebar or the indexes below to traverse the sub-grids of this portfolio
 
 ### 1. Core Profile
 * **[Identity Core](chapters/identity_core.qmd)**: Detailed background history and lore.
+* **[Character Build (Point Buy)](chapters/character_build_point_buy.qmd)**: The character build process description (Point Buy).
 * **[Character Sheet](chapters/character_sheet.qmd)**: The dynamically compiled Shadowrun character sheet.
 * **[Rules & Downtime Protocols](chapters/rules_and_downtime.qmd)**: Compiling/registering formulas, cheat sheets, and active network configurations.
 * **[Career Log](chapters/character_log.qmd)**: Full database of past runs, GMs, nuyen payouts, and Karma adjustments.
