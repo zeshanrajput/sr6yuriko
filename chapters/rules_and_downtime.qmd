@@ -70,11 +70,18 @@ BUTLER_BOD_BASE = 4
 BUTLER_BOD_AUG = 6
 BUTLER_ARM_BASE = 0
 BUTLER_ARM_AUG = 10
+BUTLER_SEN_BASE = 3
+BUTLER_SEN_AUG = 7
 
 MAA_BOD_BASE = 10
 MAA_BOD_AUG = 15
 MAA_ARM_BASE = 8
 MAA_ARM_AUG = 17
+MAA_SEN_BASE = 2
+MAA_SEN_AUG = 6
+
+GNAT_SEN_BASE = 1
+GNAT_SEN_AUG = 2
 
 # Program and App Ratings
 PA_RATING = 6
@@ -277,11 +284,17 @@ Reiko's full Matrix defense pool when all of these elements are active is **`{py
 *   **S. Butler ARM `{python} BUTLER_ARM_BASE`(`{python} BUTLER_ARM_AUG`)**:
     *   ARM is `{python} BUTLER_ARM_BASE`(`{python} BUTLER_ARM_AUG`) total.
     *   Standard armor is supplemented by: SkinShield (+2), RACS activated (+2), InvisiShield (+2), and Wrist shield (+4).
+*   **S. Butler SEN `{python} BUTLER_SEN_BASE`[`{python} BUTLER_SEN_AUG`]**:
+    *   SEN is `{python} BUTLER_SEN_BASE`[`{python} BUTLER_SEN_AUG`] total (Enhanced Sensors 3 adds +3, Sensor Upgrade quality adds +1).
 *   **S. Man-at-Arms BOD `{python} MAA_BOD_BASE`(`{python} MAA_BOD_AUG`)**:
     *   BOD is `{python} MAA_BOD_BASE`(`{python} MAA_BOD_AUG`) where structural integrity adds +5.
 *   **S. Man-at-Arms ARM `{python} MAA_ARM_BASE`[`{python} MAA_ARM_AUG`]**:
     *   ARM is `{python} MAA_ARM_BASE`[`{python} MAA_ARM_AUG`] total.
     *   Standard armor is supplemented by: Armor Increase 5 (+5) and Wrist shield (+4).
+*   **S. Man-at-Arms SEN `{python} MAA_SEN_BASE`[`{python} MAA_SEN_AUG`]**:
+    *   SEN is `{python} MAA_SEN_BASE`[`{python} MAA_SEN_AUG`] total (Enhanced Sensors 3 adds +3, Sensor Upgrade quality adds +1).
+*   **MCT Gnat SEN `{python} GNAT_SEN_BASE`[`{python} GNAT_SEN_AUG`]**:
+    *   SEN is `{python} GNAT_SEN_BASE`[`{python} GNAT_SEN_AUG`] total (Sensor Upgrade quality adds +1).
 
 ### Controlling Drones
 

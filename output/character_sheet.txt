@@ -45,12 +45,12 @@
 - MCT GNAT                             | - S. MAN-AT-ARMS
   HAN 3/3 ACC 4/4                      |   HAN 3/3 ACC 5/5
   INT 10 SPD 30 BOD 0                  |   INT 5 SPD 10 BOD 10(15)
-  ARM 0  PIL 2  SEN 1                  |   PIL 2 SEN 2  ARM 8[17]
+  ARM 0  PIL 2  SEN 1 [2]              |   PIL 2 SEN 2 [6]  ARM 8[17] 
                                        |     > Pop-Out Concealment (Large)
 - S. BUTLER                            |     > Drone rack (Small)
   HAN 4/5 ACC 5/5                      |     > Anti-theft system (Rating 1)
   INT 5 SPD 8 BOD 4(6)                 |     > Sec Propulsion (Rotor)
-  PIL 2 SEN 3  ARM 0(10)               |     > Incr Struct Integrity 5
+  PIL 2 SEN 3 [7]  ARM 0(10)           |     > Incr Struct Integrity 5
     > Anti-theft system (Rating 1)     |     > Realistic Features 4
     > Sec Propulsion (Winged)          |     > Integrated Cyberarm
     > Incr Struct Integrity 2          |     > Tesla coil [5S(e)|8/10*/—/—/—]
@@ -59,10 +59,10 @@
     > Integrated Cyberarm              |     > Integrated Cyberarm
     > Wrist shield [+4]                |     > Wrist shield [+4]
     > Realistic Features 1             |     > Armor increase 5 [+5]
-    > Enhanced Sensors 2               |     > Weapon mount-Heavy
+    > Enhanced Sensors 3               |     > Weapon mount-Heavy
                                        |     > Hardpoint Small [+3]
                                        |     > Hardpoint Small [+3]
-                                       |     > Enhanced Sensors 2
+                                       |     > Enhanced Sensors 3
 
 [ MATRIX_DEVICES ]                     |
 - AI NATIVE PROTOCOLS (VIRTUAL)        |

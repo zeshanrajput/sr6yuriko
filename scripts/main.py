@@ -624,7 +624,8 @@ def parse_character(input_path):
                     elif acc_ref == "ram_plating":
                         drn_acc_list.append("RAM Plating 4")
                     elif acc_ref == "enhanced_sensors":
-                        drn_acc_list.append("Enhanced Sensors 2")
+                        rating_val = get_decision_rating(acc) or "3"
+                        drn_acc_list.append(f"Enhanced Sensors {rating_val}")
                     elif acc_ref == "ecm":
                         drn_acc_list.append("ECM 6")
                     elif acc_ref == "integrated_matrix_device":
@@ -648,7 +649,7 @@ def parse_character(input_path):
                     if not any("ram plating" in a.lower() for a in drn_acc_list):
                         drn_acc_list.append("RAM Plating 4")
                     if not any("enhanced sensors" in a.lower() for a in drn_acc_list):
-                        drn_acc_list.append("Enhanced Sensors 2")
+                        drn_acc_list.append("Enhanced Sensors 3")
                     if not any("ecm 6" in a.lower() for a in drn_acc_list):
                         drn_acc_list.append("ECM 6")
                 elif "butler" in ref_lower:
@@ -667,7 +668,7 @@ def parse_character(input_path):
                 if "samurai" in ref_lower:
                     order_list = ["Anti-theft system (Rating 1)", "Nissan Spurs", "Samurai Weapon Mount"]
                 elif "sky_commander" in ref_lower or "skycommander" in ref_lower:
-                    order_list = ["Chameleon Coating 1", "Drone rack (Micro/Mini)", "Integrated Matrix Device Dock", "Anti-theft system (Rating 1)", "RAM Plating 4", "Enhanced Sensors 2", "ECM 6"]
+                    order_list = ["Chameleon Coating 1", "Drone rack (Micro/Mini)", "Integrated Matrix Device Dock", "Anti-theft system (Rating 1)", "RAM Plating 4", "Enhanced Sensors 3", "ECM 6"]
                 elif "butler" in ref_lower:
                     order_list = ["Anti-theft system (Rating 1)", "Sec Propulsion (Winged)", "Incr Structural Integrity 2", "Drone rack (Small)", "Integrated Cyberarm", "Wrist shield", "Realistic Features 1"]
                 elif "man_at_arms" in ref_lower or "manatarms" in ref_lower:
@@ -1363,7 +1364,7 @@ def generate_ascii_sheet(char_data, verbose=False):
             drn_bod = drn.get('body', '0')
             drn_arm = drn.get('armor', '0')
             drn_pil = drn.get('pilot', '0')
-            drn_sen = drn.get('sensor', '0')
+            base_sen = int(drn.get('sensor', 0))
             
             has_struct_integrity = False
             drn_accs = drn.get("accessories", "")
@@ -1471,17 +1472,39 @@ def generate_ascii_sheet(char_data, verbose=False):
                 arm_fn = fn_registry.add_footnote(f"S. Butler ARM {base_armor}({augmented_armor})", arm_fn_desc)
                 arm_display = f"{base_armor}({augmented_armor}) {arm_fn}"
             
+            # Calculate augmented sensor rating
+            enh_sen_rating = 0
+            if isinstance(drn_accs, str) and drn_accs:
+                m_sen = re.search(r'enhanced sensors\s*(\d+)', drn_accs, re.IGNORECASE)
+                if m_sen:
+                    enh_sen_rating = int(m_sen.group(1))
+
+            has_sensor_upgrade = False
+            for q in char_data.get("qualities", []):
+                q_name = q.get("name", "") if isinstance(q, dict) else str(q)
+                if "sensor upgrade" in q_name.lower():
+                    has_sensor_upgrade = True
+                    break
+
+            sensor_upgrade_bonus = 1 if has_sensor_upgrade else 0
+            augmented_sen = base_sen + enh_sen_rating + sensor_upgrade_bonus
+
+            if enh_sen_rating > 0 or sensor_upgrade_bonus > 0:
+                sen_display = f"{base_sen} [{augmented_sen}]"
+            else:
+                sen_display = str(base_sen)
+
             if "MAN-AT-ARMS" in d_name or "BUTLER" in d_name:
                 lines.append(f"- {d_name[:22]}")
                 lines.append(f"  HAN {drn_han} ACC {drn_acc}")
                 lines.append(f"  INT {drn_interval} SPD {drn_max_spd} BOD {bod_display}")
-                lines.append(f"  PIL {drn_pil} SEN {drn_sen}  ARM {arm_display}")
+                lines.append(f"  PIL {drn_pil} SEN {sen_display}  ARM {arm_display}")
             else:
                 # Add extra spacing to standard drones for clean alignment
                 lines.append(f"- {d_name[:22]}")
                 lines.append(f"  HAN {drn_han} ACC {drn_acc}")
                 lines.append(f"  INT {drn_interval} SPD {drn_max_spd} BOD {bod_display}")
-                lines.append(f"  ARM {str(arm_display).ljust(2)} PIL {str(drn_pil).ljust(2)} SEN {drn_sen}")
+                lines.append(f"  ARM {str(arm_display).ljust(2)} PIL {str(drn_pil).ljust(2)} SEN {sen_display}")
             
             if isinstance(drn_accs, str) and drn_accs:
                 drn_acc_list = [a.strip() for a in drn_accs.split(",")]
@@ -2020,12 +2043,12 @@ def generate_ascii_sheet(char_data, verbose=False):
          "                                                  Log:  10[#2] / 12[#2]"),
          
         # Drone command array alignments
-        ("  ARM 0  PIL 2  SEN 3                  | - S. MAN-AT-ARMS",
-         "  ARM 0 PIL 2 SEN 3                    | - S. MAN-AT-ARMS"),
-        ("  ARM 0  PIL 2  SEN 1                  |     > Anti-theft system (Rating 1)",
-         "  ARM 0 PIL 2 SEN 1                    |     > Anti-theft system (Rating 1)"),
-        ("  PIL 2 SEN 2  ARM 8(12) [#9]",
-         "  PIL 2 SEN 2  ARM 8(12)  [#9] "),
+        ("  ARM 0  PIL 2  SEN 3 [7]              | - S. MAN-AT-ARMS",
+         "  ARM 0 PIL 2 SEN 3 [7]                | - S. MAN-AT-ARMS"),
+        ("  ARM 0  PIL 2  SEN 1 [2]              |     > Anti-theft system (Rating 1)",
+         "  ARM 0 PIL 2 SEN 1 [2]                |     > Anti-theft system (Rating 1)"),
+        ("  PIL 2 SEN 2 [6]  ARM 8[17]",
+         "  PIL 2 SEN 2 [6]  ARM 8[17] "),
         ("  ARM 2  PIL 4  SEN 5",
          "  ARM 2  PIL 4   SEN 5"),
          
