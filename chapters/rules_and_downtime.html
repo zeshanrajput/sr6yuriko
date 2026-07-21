@@ -73,35 +73,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -312,33 +283,31 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#matrix-decking-protocols" id="toc-matrix-decking-protocols" class="nav-link active" data-scroll-target="#matrix-decking-protocols">Matrix &amp; Decking Protocols</a>
+  <li><a href="#matrix-protocols" id="toc-matrix-protocols" class="nav-link active" data-scroll-target="#matrix-protocols">Matrix Protocols</a>
   <ul class="collapse">
   <li><a href="#matrix-attributes" id="toc-matrix-attributes" class="nav-link" data-scroll-target="#matrix-attributes">Matrix Attributes</a></li>
-  <li><a href="#matrix-actions" id="toc-matrix-actions" class="nav-link" data-scroll-target="#matrix-actions">Matrix Actions</a></li>
+  <li><a href="#standardized-matrix-action-pools" id="toc-standardized-matrix-action-pools" class="nav-link" data-scroll-target="#standardized-matrix-action-pools">Standardized Matrix Action Pools</a></li>
   <li><a href="#network-benefits" id="toc-network-benefits" class="nav-link" data-scroll-target="#network-benefits">Network Benefits</a></li>
   <li><a href="#learned-programs" id="toc-learned-programs" class="nav-link" data-scroll-target="#learned-programs">Learned Programs</a></li>
   <li><a href="#full-matrix-defense" id="toc-full-matrix-defense" class="nav-link" data-scroll-target="#full-matrix-defense">Full Matrix Defense</a></li>
   <li><a href="#home-device-optimization" id="toc-home-device-optimization" class="nav-link" data-scroll-target="#home-device-optimization">Home Device Optimization</a></li>
   <li><a href="#decking-protocols-cheat-sheet" id="toc-decking-protocols-cheat-sheet" class="nav-link" data-scroll-target="#decking-protocols-cheat-sheet">Decking Protocols Cheat Sheet</a></li>
-  <li><a href="#buying-gear-in-downtime" id="toc-buying-gear-in-downtime" class="nav-link" data-scroll-target="#buying-gear-in-downtime">Buying Gear in Downtime</a></li>
-  </ul></li>
-  <li><a href="#drones-rigging" id="toc-drones-rigging" class="nav-link" data-scroll-target="#drones-rigging">Drones &amp; Rigging</a>
-  <ul class="collapse">
-  <li><a href="#drone-modified-values" id="toc-drone-modified-values" class="nav-link" data-scroll-target="#drone-modified-values">Drone Modified Values</a></li>
-  <li><a href="#controlling-drones" id="toc-controlling-drones" class="nav-link" data-scroll-target="#controlling-drones">Controlling Drones</a></li>
-  <li><a href="#man-at-arms---crimson-wasp-weapons-array" id="toc-man-at-arms---crimson-wasp-weapons-array" class="nav-link" data-scroll-target="#man-at-arms---crimson-wasp-weapons-array">Man-At-Arms - Crimson Wasp Weapons Array</a></li>
-  <li><a href="#sensor-locks" id="toc-sensor-locks" class="nav-link" data-scroll-target="#sensor-locks">Sensor Locks</a></li>
-  <li><a href="#rigging-protocols-cheat-sheet" id="toc-rigging-protocols-cheat-sheet" class="nav-link" data-scroll-target="#rigging-protocols-cheat-sheet">Rigging Protocols Cheat Sheet</a></li>
   </ul></li>
   <li><a href="#sprites-resonance" id="toc-sprites-resonance" class="nav-link" data-scroll-target="#sprites-resonance">Sprites &amp; Resonance</a>
   <ul class="collapse">
   <li><a href="#complex-forms" id="toc-complex-forms" class="nav-link" data-scroll-target="#complex-forms">Complex Forms</a></li>
   <li><a href="#registering-sprites" id="toc-registering-sprites" class="nav-link" data-scroll-target="#registering-sprites">Registering Sprites</a></li>
-  <li><a href="#active-sprite-stable" id="toc-active-sprite-stable" class="nav-link" data-scroll-target="#active-sprite-stable">Active Sprite Stable</a></li>
   </ul></li>
-  <li><a href="#gear-ammunition" id="toc-gear-ammunition" class="nav-link" data-scroll-target="#gear-ammunition">Gear &amp; Ammunition</a>
+  <li><a href="#drones-rigging" id="toc-drones-rigging" class="nav-link" data-scroll-target="#drones-rigging">Drones &amp; Rigging</a>
   <ul class="collapse">
+  <li><a href="#drone-stat-blocks-augmented-profiles" id="toc-drone-stat-blocks-augmented-profiles" class="nav-link" data-scroll-target="#drone-stat-blocks-augmented-profiles">Drone Stat Blocks &amp; Augmented Profiles</a></li>
+  <li><a href="#standardized-drone-action-pools" id="toc-standardized-drone-action-pools" class="nav-link" data-scroll-target="#standardized-drone-action-pools">Standardized Drone Action Pools</a></li>
+  <li><a href="#controlling-drones-protocols-rules" id="toc-controlling-drones-protocols-rules" class="nav-link" data-scroll-target="#controlling-drones-protocols-rules">Controlling Drones Protocols &amp; Rules</a></li>
+  <li><a href="#sensor-locks" id="toc-sensor-locks" class="nav-link" data-scroll-target="#sensor-locks">Sensor Locks</a></li>
+  </ul></li>
+  <li><a href="#weapons-gear" id="toc-weapons-gear" class="nav-link" data-scroll-target="#weapons-gear">Weapons &amp; Gear</a>
+  <ul class="collapse">
+  <li><a href="#standardized-weapon-attack-rating-cheatsheets" id="toc-standardized-weapon-attack-rating-cheatsheets" class="nav-link" data-scroll-target="#standardized-weapon-attack-rating-cheatsheets">Standardized Weapon &amp; Attack Rating Cheatsheets</a></li>
   <li><a href="#krime-splash-self-defense-ammunition" id="toc-krime-splash-self-defense-ammunition" class="nav-link" data-scroll-target="#krime-splash-self-defense-ammunition">Krime Splash Self-Defense Ammunition</a></li>
   </ul></li>
   </ul>
@@ -368,28 +337,69 @@ window.Quarto = {
 
 <p>This section aggregates core cheat sheets and templates for downtime registration, rigging, decking, and resonance network benefits.</p>
 <hr>
-<section id="matrix-decking-protocols" class="level2">
-<h2 class="anchored" data-anchor-id="matrix-decking-protocols">Matrix &amp; Decking Protocols</h2>
+<section id="matrix-protocols" class="level2">
+<h2 class="anchored" data-anchor-id="matrix-protocols">Matrix Protocols</h2>
 <section id="matrix-attributes" class="level3">
 <h3 class="anchored" data-anchor-id="matrix-attributes">Matrix Attributes</h3>
 <ul>
-<li><strong>Base ASDF</strong>: 3535</li>
-<li><strong>Sprite Symbiosis (Crack Sprite)</strong>: 0321 → 3856</li>
-<li><strong>Toolbox</strong>: 0010 → 3866</li>
-<li><strong>Resonance (7)</strong>: 2113 → 5979</li>
-<li><strong>Active Matrix Attributes</strong>: 5979</li>
+<li><strong>Base ASDF</strong>: 03 05 03 05</li>
+<li><strong>Sprite Symbiosis (Crack Sprite)</strong>: 00 03 02 01 → 03 08 05 06</li>
+<li><strong>Programs (Toolbox + Encryption)</strong>: 00 00 01 01 → 03 08 06 07</li>
+<li><strong>Resonance Point Allocation (+7 RES)</strong>: 03 01 01 02 → 06 09 07 09</li>
+<li><strong>Active Matrix Attributes</strong>: 06 09 07 09</li>
 </ul>
 </section>
-<section id="matrix-actions" class="level3">
-<h3 class="anchored" data-anchor-id="matrix-actions">Matrix Actions</h3>
-<p><strong>Base</strong>: Electronics (Software, 5) or Cracking (Hacking, 5)</p>
-<ul>
-<li>Natural Hacker (Allows RES to replace any attribute in a matrix action): +7</li>
-<li>Resonance Focus: +4, 2FV</li>
-<li>Overclock: +2 (1 wild)</li>
-<li>Teamwork (R8 ally sprite): +4</li>
-</ul>
-<p><strong>Total</strong>: 22d6 (1 wild, + specialization), FV: 2</p>
+<section id="standardized-matrix-action-pools" class="level3">
+<h3 class="anchored" data-anchor-id="standardized-matrix-action-pools">Standardized Matrix Action Pools</h3>
+<p>The following table provides a transparent breakdown of base attributes, applied modifiers math (Natural Hacker, Resonance Focus, Overclocking, Teamwork, Tactical Software), and total effective dice pools for Matrix operations.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 21%">
+<col style="width: 17%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Action Category / Test</th>
+<th style="text-align: center;">Base Stat + Skill</th>
+<th style="text-align: left;">Applied Modifiers Math</th>
+<th style="text-align: center;">Final Dice Pool</th>
+<th style="text-align: center;">Bought Hits</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Offensive Matrix Actions</strong><br><em>(Brute Force, Data Spike, Control Device)</em></td>
+<td style="text-align: center;">Cracking (5) + RES (7) = <strong>12d6</strong></td>
+<td style="text-align: left;">Base (12) + Natural Hacker (RES Sub) + Focus (+4) + Overclock (+2, 1 wild) + Ally Teamwork (+4) + ECM Warrior II (+2)</td>
+<td style="text-align: center;"><strong>24d6</strong> (1 wild)</td>
+<td style="text-align: center;"><strong>6 Hits</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Full Matrix Defense Test</strong><br><em>(Opposed Hostile Matrix Attacks)</em></td>
+<td style="text-align: center;">RES (7) + FW (9) = <strong>16d6</strong></td>
+<td style="text-align: left;">Base (16) + PA App R6 (+6) + Directional Shield (+7) + Focus (+4)</td>
+<td style="text-align: center;"><strong>33d6</strong></td>
+<td style="text-align: center;"><strong>8 Hits</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Matrix Perception &amp; Search</strong><br><em>(Identify SINs, Facial Scan, Search)</em></td>
+<td style="text-align: center;">Electronics (5) + RES (7) = <strong>12d6</strong></td>
+<td style="text-align: left;">Base (12) + Social HUD (+1) + MeFeed (+1) + Focus (+4)</td>
+<td style="text-align: center;"><strong>18d6</strong></td>
+<td style="text-align: center;"><strong>4 Hits</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Downtime Buying Gear Test</strong><br><em>(Matrix Purchasing / Legwork)</em></td>
+<td style="text-align: center;">Electronics (5) + RES (7) = <strong>12d6</strong></td>
+<td style="text-align: left;">Base (12) + Focus (+4) + Overclock (+1) + Shopsoft (+1) + Ally Teamwork (+4)</td>
+<td style="text-align: center;"><strong>22d6</strong></td>
+<td style="text-align: center;"><strong>5 Hits</strong></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="network-benefits" class="level3">
 <h3 class="anchored" data-anchor-id="network-benefits">Network Benefits</h3>
@@ -456,7 +466,7 @@ window.Quarto = {
 </section>
 <section id="full-matrix-defense" class="level3">
 <h3 class="anchored" data-anchor-id="full-matrix-defense">Full Matrix Defense</h3>
-<p>ASDF (from Matrix Attributes)[#matrix-attributes]: 5979</p>
+<p>ASDF (from Matrix Attributes)[#matrix-attributes]: 06 09 07 09</p>
 <section id="the-base-matrix-defense-pool-16-dice" class="level4">
 <h4 class="anchored" data-anchor-id="the-base-matrix-defense-pool-16-dice">1. The Base Matrix Defense Pool (16 Dice)</h4>
 <p>A standard Matrix defense test uses a <strong>Mental Attribute + Matrix Attribute</strong> (most commonly <em>Intuition + Firewall</em> or <em>Willpower + Firewall</em> depending on the incoming Matrix action) [6WB, Page 180].</p>
@@ -496,14 +506,57 @@ window.Quarto = {
 </section>
 <section id="final-pool-calculation" class="level4">
 <h4 class="anchored" data-anchor-id="final-pool-calculation">Final Pool Calculation</h4>
-<p><span class="math display">\[\text{2 * Resonance (7)} + \text{Firewall (9)} + \text{Personal Assistant (6)} + \text{Data Processing (7)} + \text{Resonance Echo (4)} = \mathbf{40\text{ Dice}}\]</span></p>
-<p>Reiko’s full Matrix defense pool when all of these elements are active is <strong>40 dice</strong>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Component</th>
+<th style="text-align: center;">Rating / Bonus</th>
+<th style="text-align: center;">Cumulative Dice</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Resonance (Natural Hacker Mental Sub)</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Firewall Attribute</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Personal Assistant App (R6)</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">22</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Data Processing (Directional Shield)</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">29</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Resonance Focus (R4)</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">33</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Total Full Matrix Defense Pool</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>33 Dice</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Reiko’s full Matrix defense pool when all of these elements are active is <strong>33 dice</strong>.</p>
 </section>
 </section>
 <section id="home-device-optimization" class="level3">
 <h3 class="anchored" data-anchor-id="home-device-optimization">Home Device Optimization</h3>
 <ul>
-<li>Home Device Tuning: Optimize: set 1 attribute to native; Passive: +1 capacity, +4 rating.</li>
+<li>Home Device Tuning</li>
+<li>Optimize: set 1 attribute to native;</li>
+<li>Passive: +1 program capacity,</li>
+<li>+4 rating for the purpose of determining if the AI’s opponents gain edge.</li>
 <li>Designer: home dev +1 DP/pilot, 2 Noise Reduction.</li>
 <li>M-TOC II:
 <ul>
@@ -560,97 +613,358 @@ window.Quarto = {
 <li><strong>(2 Edge)</strong>: Technobabble (Use CHA instead of LOG), Intervene, Hog, Signal Scream</li>
 <li><strong>(3 Edge)</strong>: Under the Radar (Action does not increase OS)</li>
 </ul>
-</section>
-</section>
-<section id="buying-gear-in-downtime" class="level3">
-<h3 class="anchored" data-anchor-id="buying-gear-in-downtime">Buying Gear in Downtime</h3>
-<p><strong>Base</strong>: Electronics (5) + Int</p>
-<ul>
-<li>Natural Hacker (Allows RES to replace any attribute in a matrix action): +7</li>
-<li>Resonance Focus: +4</li>
-<li>Overclock: +1</li>
-<li>Relevant Shopsoft: +1</li>
-<li>Teamwork (R8 ally sprite): +4</li>
-</ul>
-<p><strong>Total</strong>: 22d6 → 5 bought hits</p>
 <hr>
+</section>
+</section>
+</section>
+<section id="sprites-resonance" class="level2">
+<h2 class="anchored" data-anchor-id="sprites-resonance">Sprites &amp; Resonance</h2>
+<section id="complex-forms" class="level3">
+<h3 class="anchored" data-anchor-id="complex-forms">Complex Forms</h3>
+<ul>
+<li>Includes Sprite Symbiosis bonus: +4.</li>
+<li>Includes Resonance Focus: +4 (Fading Value: 2 for use).</li>
+</ul>
+</section>
+<section id="registering-sprites" class="level3">
+<h3 class="anchored" data-anchor-id="registering-sprites">Registering Sprites</h3>
+<ul>
+<li><strong>Minor downtime action</strong>: Register 8 levels of sprites (up to R7 sprite)</li>
+<li>1 per night’s rest (7 hrs registering, 3 hrs restoration). Must buy hits (SRMG p19)</li>
+<li><strong>Outcome</strong>: R7 Modular sprite with 3 services/powers for 3 missions</li>
+</ul>
+<section id="compiling-phase" class="level4">
+<h4 class="anchored" data-anchor-id="compiling-phase">1. Compiling Phase</h4>
+<ul>
+<li><strong>Pool</strong>: Tasking (6) + RES (7) + Resonance Focus (4) = <strong>17 dice</strong> → <strong>4 Bought Hits</strong>.</li>
+<li><strong>Sprite’s Defense</strong>: Level 7 × 2 = <strong>14 dice</strong> → <strong>3 Bought Hits</strong>.</li>
+<li><strong>Net Hits</strong>: 4 - 3 = 1 → <strong>1 base service</strong>.</li>
+<li><strong>Technoshaman Stream Modification</strong>: Grants +1 additional service on a successful compiling test. Total compiled services = <strong>2 services/powers</strong>.</li>
+<li><strong>Fading Value (FV)</strong>: Under core rules, compiling fade is exactly equal to the hits received on the sprite’s defense test = <strong>3</strong>.</li>
+<li><strong>Technoshaman Mitigation</strong>: Reduces compiling fade by a flat 2 (3 - 2 = 1).</li>
+<li><strong>Fading Resistance</strong>: Willpower (6) + Charisma (4) + Submersion Grade / Sprite Conduit (7) = <strong>17 dice</strong> → <strong>4 Bought Hits</strong>.</li>
+<li><strong>Compiling Damage Taken</strong>: 1 FV - 4 hits = <strong>0 Damage</strong>.</li>
+</ul>
+</section>
+<section id="registering-phase" class="level4">
+<h4 class="anchored" data-anchor-id="registering-phase">2. Registering Phase</h4>
+<ul>
+<li><strong>Pool</strong>: Registering (8) + RES (7) + RES Focus (4) = <strong>19 dice</strong> → <strong>4 Bought Hits</strong>.</li>
+<li><strong>Sprite’s Defense</strong>: Level 7 × 2 = <strong>14 dice</strong> → <strong>3 Bought Hits</strong>.</li>
+<li><strong>Net Hits</strong>: 4 - 3 = 1 → <strong>1 base service</strong>.</li>
+<li><strong>Combined Total Services</strong>: 2 (compiled) + 1 (registered) = <strong>3 total services/powers</strong>.</li>
+<li><strong>Fading Value (FV)</strong>: Under core rules, registering fade is equal to <em>twice</em> the hits received on the sprite’s defense test (3 x 2 = 6).</li>
+<li><strong>Fading Resistance</strong>: Willpower (6) + Charisma (4) + Submersion Grade / Sprite Conduit (7) = <strong>17 dice</strong> → <strong>4 Bought Hits</strong>.</li>
+<li><strong>Registering Damage Taken</strong>: 6 FV - 4 hits = <strong>2 boxes of Stun damage</strong>.</li>
+</ul>
+</section>
+<section id="resonance-focus-fading" class="level4">
+<h4 class="anchored" data-anchor-id="resonance-focus-fading">3. Resonance Focus Fading</h4>
+<p>Because a data structure/focus was used to boost both tests, it incurs its own independent data-structure fade (4 / 2 = 2).</p>
+<ul>
+<li><strong>Focus Fading Pool</strong>: WIL (6) + LOG (4) = <strong>10 dice</strong> → <strong>2 Bought Hits</strong>.</li>
+<li><strong>Damage Taken</strong>: 2 FV - 2 hits = <strong>0 Damage</strong>.</li>
+</ul>
+<hr>
+</section>
 </section>
 </section>
 <section id="drones-rigging" class="level2">
 <h2 class="anchored" data-anchor-id="drones-rigging">Drones &amp; Rigging</h2>
-<section id="drone-modified-values" class="level3">
-<h3 class="anchored" data-anchor-id="drone-modified-values">Drone Modified Values</h3>
+<section id="drone-stat-blocks-augmented-profiles" class="level3">
+<h3 class="anchored" data-anchor-id="drone-stat-blocks-augmented-profiles">Drone Stat Blocks &amp; Augmented Profiles</h3>
+<p>The following stat blocks list Yuriko’s active drones in official <strong>SR6 Vehicle/Drone Stat Block Order</strong> (Handling, Acceleration, Speed, Body, Armor, Pilot, Sensor), detailing base ratings, applied modifications, and final augmented values.</p>
+<section id="shiawase-butler-anthrodrone" class="level4">
+<h4 class="anchored" data-anchor-id="shiawase-butler-anthrodrone">1. Shiawase Butler (Anthrodrone)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 38%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">SR6 Attribute</th>
+<th style="text-align: center;">Rating / Value</th>
+<th style="text-align: left;">Applied Modifiers Math &amp; Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Handling (HND)</strong></td>
+<td style="text-align: center;"><strong>4 / 5</strong> (Ground) | <strong>5</strong> (Rotor)</td>
+<td style="text-align: left;">On/Off-Road Ground Handling / Rotor Assembly Handling</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Acceleration (ACC)</strong></td>
+<td style="text-align: center;"><strong>5 / 5</strong> (Ground) | <strong>10</strong> (Rotor)</td>
+<td style="text-align: left;">On/Off-Road Ground Accel / Rotor Assembly Accel</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Top Speed (SPD) / Interval</strong></td>
+<td style="text-align: center;"><strong>8 / 5m</strong> (Ground) | <strong>120 / 20m</strong> (Rotor)</td>
+<td style="text-align: left;">Ground Speed &amp; Interval / Rotor Flight Speed &amp; Interval</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Body (BOD)</strong></td>
+<td style="text-align: center;"><strong>6</strong></td>
+<td style="text-align: left;">Base 4 + Structural Integrity (+2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Armor (ARM)</strong></td>
+<td style="text-align: center;"><strong>10</strong></td>
+<td style="text-align: left;">Base 0 + SkinShield (+2) + RACS (+2) + InvisiShield (+2) + Wrist Shield (+4)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Pilot (PLT)</strong></td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: left;">Base 2 <em>(Overridden by AI Pilot Origins)</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sensor (SEN)</strong></td>
+<td style="text-align: center;"><strong>7</strong></td>
+<td style="text-align: left;">Base 3 + Enhanced Sensors 3 (+3) + Network Sensor Upgrade (+1)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="shiawase-man-at-arms-anthrodrone" class="level4">
+<h4 class="anchored" data-anchor-id="shiawase-man-at-arms-anthrodrone">2. Shiawase Man-at-Arms (Anthrodrone)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 38%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">SR6 Attribute</th>
+<th style="text-align: center;">Rating / Value</th>
+<th style="text-align: left;">Applied Modifiers Math &amp; Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Handling (HND)</strong></td>
+<td style="text-align: center;"><strong>3 / 3</strong> (Ground) | <strong>5</strong> (Rotor)</td>
+<td style="text-align: left;">On/Off-Road Ground Handling / Rotor Assembly Handling</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Acceleration (ACC)</strong></td>
+<td style="text-align: center;"><strong>5 / 5</strong> (Ground) | <strong>10</strong> (Rotor)</td>
+<td style="text-align: left;">On/Off-Road Ground Accel / Rotor Assembly Accel</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Top Speed (SPD) / Interval</strong></td>
+<td style="text-align: center;"><strong>10 / 5m</strong> (Ground) | <strong>120 / 20m</strong> (Rotor)</td>
+<td style="text-align: left;">Ground Speed &amp; Interval / Rotor Flight Speed &amp; Interval</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Body (BOD)</strong></td>
+<td style="text-align: center;"><strong>15</strong></td>
+<td style="text-align: left;">Base 10 + Structural Integrity (+5)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Armor (ARM)</strong></td>
+<td style="text-align: center;"><strong>17</strong></td>
+<td style="text-align: left;">Base 8 + Armor Increase 5 (+5) + Wrist Shield (+4)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Pilot (PLT)</strong></td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: left;">Base 2 <em>(Overridden by AI Pilot Origins)</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sensor (SEN)</strong></td>
+<td style="text-align: center;"><strong>6</strong></td>
+<td style="text-align: left;">Base 2 + Enhanced Sensors 3 (+3) + Network Sensor Upgrade (+1)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="mct-gnat-microdrone" class="level4">
+<h4 class="anchored" data-anchor-id="mct-gnat-microdrone">3. MCT Gnat (Microdrone)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 38%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">SR6 Attribute</th>
+<th style="text-align: center;">Rating / Value</th>
+<th style="text-align: left;">Applied Modifiers Math &amp; Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Handling (HND)</strong></td>
+<td style="text-align: center;"><strong>3 / 3</strong></td>
+<td style="text-align: left;">Base On/Off-Road Handling</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Acceleration (ACC)</strong></td>
+<td style="text-align: center;"><strong>4 / 4</strong></td>
+<td style="text-align: left;">Base On/Off-Road Acceleration</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Top Speed (SPD) / Interval</strong></td>
+<td style="text-align: center;"><strong>30 / 10m</strong></td>
+<td style="text-align: left;">Base Top Speed / Interval</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Body (BOD)</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: left;">Microdrone chassis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Armor (ARM)</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: left;">Unarmored</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Pilot (PLT)</strong></td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: left;">Base 2 Pilot Autosoft</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sensor (SEN)</strong></td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: left;">Base 1 + Network Sensor Upgrade (+1)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="retractable-skates-alternate-movement-protocol" class="level4">
+<h4 class="anchored" data-anchor-id="retractable-skates-alternate-movement-protocol">Retractable Skates Alternate Movement Protocol</h4>
+<p>Both Shiawase anthrodrones are fitted with <strong>Retractable Skates</strong>. Retractable Skates provide an alternate metahuman movement mode rather than modifying vehicle maneuvering attributes [Double Clutch]:</p>
 <ul>
-<li><strong>S. Butler BOD 4(6)</strong>:
+<li><strong>Activation / Deployment</strong>: Extending or retracting the skates requires a <strong>Minor Action</strong>.</li>
+<li><strong>Metahuman Movement Rules</strong>: While deployed, the drone uses metahuman movement rules instead of vehicle handling:
 <ul>
-<li>BOD is 4(6) where structural integrity adds +2.</li>
-</ul></li>
-<li><strong>S. Butler ARM 0(10)</strong>:
-<ul>
-<li>ARM is 0(10) total.</li>
-<li>Standard armor is supplemented by: SkinShield (+2), RACS activated (+2), InvisiShield (+2), and Wrist shield (+4).</li>
-</ul></li>
-<li><strong>S. Butler SEN 3[7]</strong>:
-<ul>
-<li>SEN is 3[7] total (Enhanced Sensors 3 adds +3, Sensor Upgrade quality adds +1).</li>
-</ul></li>
-<li><strong>S. Man-at-Arms BOD 10(15)</strong>:
-<ul>
-<li>BOD is 10(15) where structural integrity adds +5.</li>
-</ul></li>
-<li><strong>S. Man-at-Arms ARM 8[17]</strong>:
-<ul>
-<li>ARM is 8[17] total.</li>
-<li>Standard armor is supplemented by: Armor Increase 5 (+5) and Wrist shield (+4).</li>
-</ul></li>
-<li><strong>S. Man-at-Arms SEN 2[6]</strong>:
-<ul>
-<li>SEN is 2[6] total (Enhanced Sensors 3 adds +3, Sensor Upgrade quality adds +1).</li>
-</ul></li>
-<li><strong>MCT Gnat SEN 1[2]</strong>:
-<ul>
-<li>SEN is 1[2] total (Sensor Upgrade quality adds +1).</li>
+<li><strong>Walking Speed</strong>: <strong>10 meters</strong> / combat round.</li>
+<li><strong>Sprinting Speed</strong>: <strong>30 meters</strong> / combat round.</li>
+<li><strong>Sprint Bonus</strong>: <strong>+2 meters</strong> per net hit on Sprinting tests.</li>
 </ul></li>
 </ul>
 </section>
-<section id="controlling-drones" class="level3">
-<h3 class="anchored" data-anchor-id="controlling-drones">Controlling Drones</h3>
-<section id="key-qualities-and-rules" class="level4">
-<h4 class="anchored" data-anchor-id="key-qualities-and-rules">Key Qualities and Rules</h4>
-<ul>
-<li><strong>Pilot Origin</strong>: Allows r31k0 to use autosofts up to her <strong>Data Processing</strong> (HnS p 119)</li>
-<li><strong>Devices, AR and VR</strong>: Devices controlled remotely via AR use the operator’s physical attributes (SR6B p.&nbsp;180)</li>
-<li>For AI, the Matrix Equivalent Attributes table dictates how ASDF form “physical” attributes (BOD [F] AGI [D] REA [S] STR [A]) (HnS p.&nbsp;118)</li>
-<li>R31k0’s ally sprite can offer teamwork for shared autosofts (+4) or via Diagnostics (+4 Electronics, Engineering, Piloting)</li>
-<li>Sensor Upgrade adds +1 when using sensors</li>
-</ul>
+<section id="mct-gnat-microdrone-1" class="level4">
+<h4 class="anchored" data-anchor-id="mct-gnat-microdrone-1">3. MCT Gnat (Microdrone)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 38%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">SR6 Attribute</th>
+<th style="text-align: center;">Rating / Value</th>
+<th style="text-align: left;">Applied Modifiers Math &amp; Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Handling (HND)</strong></td>
+<td style="text-align: center;"><strong>3 / 3</strong></td>
+<td style="text-align: left;">Base On/Off-Road Handling</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Acceleration (ACC)</strong></td>
+<td style="text-align: center;"><strong>4 / 4</strong></td>
+<td style="text-align: left;">Base On/Off-Road Acceleration</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Top Speed (SPD) / Interval</strong></td>
+<td style="text-align: center;"><strong>30 / 10m</strong></td>
+<td style="text-align: left;">Base Top Speed / Interval</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Body (BOD)</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: left;">Microdrone chassis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Armor (ARM)</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: left;">Unarmored</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Pilot (PLT)</strong></td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: left;">Base 2 Pilot Autosoft</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sensor (SEN)</strong></td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: left;">Base 1 + Network Sensor Upgrade (+1)</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="skills" class="level4">
-<h4 class="anchored" data-anchor-id="skills">Skills</h4>
-<p>Rating 9 Autosofts: 7 (capped by D)</p>
-<ul>
-<li>Sprite Symbiosis (Targeting, Electronics, Engineering, and Piloting only): +4</li>
-<li>Sensor Upgrade (Clearsight only): +1</li>
-</ul>
 </section>
-<section id="total-pools" class="level4">
-<h4 class="anchored" data-anchor-id="total-pools">Total Pools</h4>
+<section id="standardized-drone-action-pools" class="level3">
+<h3 class="anchored" data-anchor-id="standardized-drone-action-pools">Standardized Drone Action Pools</h3>
+<p>The following table details base skills, Matrix Equivalent Attributes, applied modifiers (Sprite Symbiosis, Sensor Upgrade, Tactical Software), and total effective dice pools for controlling drones.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 27%">
+<col style="width: 22%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Drone Action / Test</th>
+<th style="text-align: center;">Base Skill &amp; Attributes</th>
+<th style="text-align: left;">Applied Modifiers Math</th>
+<th style="text-align: center;">Final Dice Pool</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Drone Piloting / Maneuvering</strong></td>
+<td style="text-align: center;">Maneuvering (7) + Sleaze (9) = <strong>16d6</strong></td>
+<td style="text-align: left;">Base (16) + Sprite Symbiosis (+4)</td>
+<td style="text-align: center;"><strong>20d6</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Drone Weapon Attack (Gunnery)</strong></td>
+<td style="text-align: center;">Targeting (7) + Data Processing (7) = <strong>14d6</strong></td>
+<td style="text-align: left;">Base (14) + Sprite Symbiosis (+4)</td>
+<td style="text-align: center;"><strong>18d6</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Drone Evasion (Defense Test)</strong></td>
+<td style="text-align: center;">Evasion (7) + Sleaze (9) = <strong>16d6</strong></td>
+<td style="text-align: left;">Base (16) + Sprite Symbiosis (+4)</td>
+<td style="text-align: center;"><strong>20d6</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Drone Perception Test</strong></td>
+<td style="text-align: center;">Clearsight (7) + Sensor (6) = <strong>13d6</strong></td>
+<td style="text-align: left;">Base (13) + Sensor Upgrade (+1)</td>
+<td style="text-align: center;"><strong>14d6</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Drone Stealth Test</strong></td>
+<td style="text-align: center;">Stealth (7) + Data Processing (7) = <strong>14d6</strong></td>
+<td style="text-align: left;">Base (14) + Tactical Soft Sneak-Sneak (+2)</td>
+<td style="text-align: center;"><strong>16d6</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="controlling-drones-protocols-rules" class="level3">
+<h3 class="anchored" data-anchor-id="controlling-drones-protocols-rules">Controlling Drones Protocols &amp; Rules</h3>
 <ul>
-<li><strong>Pilot/Drive/Crash</strong>: Maneuvering (D, 7) + REA (S, 9) + TW (4) ──&gt; <strong>20</strong></li>
-<li><strong>Ramming AR</strong>: Maneuvering (D, 7) + Sensor Rating</li>
-<li><strong>DR vs Ramming</strong>: Maneuvering (D, 7) + Armor Rating</li>
-<li><strong>Ramming Att/Def</strong>: Pilot Test (See Above)</li>
-<li><strong>Weapon AR</strong>: Per Weapon</li>
-<li><strong>DR vs Weapons</strong>: Maneuvering (D, 7) + Armor Rating</li>
-<li><strong>Weapon Attack</strong>: Targeting (D, 7) + AGI (D, 7) + Sprite (+4) ──&gt; <strong>18</strong></li>
-<li><strong>Weapon Defense</strong>: Evasion (D, 7) + REA (S, 9) ──&gt; <strong>16</strong></li>
-<li><strong>Perception</strong>: Clearsight (D, 7) + Drone Sensor Rtg + Sensor Upgrade</li>
-<li><strong>Stealth</strong>: Stealth (D, 7) + AGI (D, 7) ──&gt; <strong>14</strong></li>
+<li><strong>Pilot Origin</strong>: Allows Yuriko to use autosofts up to her <strong>Data Processing</strong> [HnS, p.&nbsp;119].</li>
+<li><strong>Devices, AR and VR</strong>: Devices controlled remotely via AR use the operator’s physical attributes [SR6 Core Rulebook, p.&nbsp;180].</li>
+<li><strong>Matrix Equivalent Attributes</strong>: For AI characters, the Matrix Equivalent Attributes table dictates how ASDF attributes map to physical attributes (BOD [F=9], AGI [D=7], REA [S=9], STR [A=6]) [HnS, p.&nbsp;118].</li>
+<li><strong>Ally Sprite Teamwork</strong>: Ally sprite offers teamwork for shared autosofts (+4) or via Diagnostics (+4 Electronics, Engineering, Piloting).</li>
 </ul>
 <p>To understand how an Artificial Intelligence (AI) character with the <strong>Pilot Origins</strong> quality pilots a drone, we must distinguish between two distinct methods of drone operation: <strong>Jumped-In (Rigging)</strong> and <strong>Remote Control (Un-jumped)</strong> [Hack and Slash, p.&nbsp;119; SR6 Core Rulebook, p.&nbsp;198].</p>
-<p>The rules handle these two scenarios differently regarding whether they use standard mental attributes or the AI’s <strong>Matrix Equivalent Attributes</strong> [Hack and Slash, p.&nbsp;118; SR6 Core Rulebook, p.&nbsp;198].</p>
-<hr>
-</section>
 <section id="jumped-in-operation-why-matrix-equivalents-are-bypassed" class="level4">
 <h4 class="anchored" data-anchor-id="jumped-in-operation-why-matrix-equivalents-are-bypassed">1. Jumped-In Operation (Why Matrix Equivalents Are Bypassed)</h4>
 <p>The <strong>Pilot Origins</strong> quality states:</p>
@@ -659,9 +973,8 @@ window.Quarto = {
 </blockquote>
 <p>When an AI character chooses to jump into a drone using this quality, standard rigging rules take over:</p>
 <ul>
-<li>According to the <strong>Control Rigs and Reiko</strong> rules, a rigger who is jumped into a device uses their mind instead of their meat body [SR6 Core Rulebook, p.&nbsp;198].</li>
-<li>Physical attributes are replaced entirely by <strong>Mental attributes</strong> for all jumped-in tests [SR6 Core Rulebook, p.&nbsp;198].</li>
-<li>The conversion table for jumped-in riggers dictates the following replacements [SR6 Core Rulebook, p.&nbsp;198]:</li>
+<li>According to the <strong>Control Rigs and Yuriko</strong> rules, a rigger who is jumped into a device uses their mind instead of their meat body [SR6 Core Rulebook, p.&nbsp;198].</li>
+<li>Physical attributes are replaced entirely by <strong>Mental attributes</strong> for all jumped-in tests [SR6 Core Rulebook, p.&nbsp;198]:</li>
 </ul>
 <table class="caption-top table">
 <thead>
@@ -689,18 +1002,15 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<p>Since an AI character natively possesses standard Mental attributes (Willpower, Charisma, Logic, and Intuition) in their character block [Hack and Slash, p.&nbsp;118], they use these <strong>Mental attributes directly</strong> when jumped in.</p>
 <ul>
-<li><strong>Piloting</strong>: When piloting a jumped-in drone, the test uses Reaction. Because the AI is jumped in, Reaction is replaced by <strong>Intuition</strong>. The AI rolls <strong>Piloting + Intuition</strong> [SR6 Core Rulebook, p.&nbsp;198].</li>
-<li><strong>Gunnery/Firing</strong>: When firing a jumped-in drone’s weapons, the test uses Agility. Because the AI is jumped in, Agility is replaced by <strong>Logic</strong>. The AI rolls <strong>Firearms + Logic</strong> [SR6 Core Rulebook, p.&nbsp;198].</li>
+<li><strong>Piloting</strong>: Jumped-in AI rolls <strong>Piloting + Intuition</strong> [SR6 Core Rulebook, p.&nbsp;198].</li>
+<li><strong>Gunnery/Firing</strong>: Jumped-in AI rolls <strong>Firearms + Logic</strong> [SR6 Core Rulebook, p.&nbsp;198].</li>
 </ul>
-<p>Because the standard rigging rules bypass physical attributes in favor of mental attributes, the AI does not need to refer to its “Physical Attribute Matrix Equivalents” (Firewall, Sleaze, Data Processing, Attack) in this state.</p>
 <hr>
 </section>
 <section id="remote-control-un-jumped-operation-when-matrix-equivalents-are-used" class="level4">
 <h4 class="anchored" data-anchor-id="remote-control-un-jumped-operation-when-matrix-equivalents-are-used">2. Remote Control / Un-jumped Operation (When Matrix Equivalents ARE Used)</h4>
-<p>If the AI is <strong>not</strong> jumped into the drone (e.g., they are issuing remote control commands to a drone, or the drone is operating autonomously as an “AI-driven drone” without the AI jumped in), standard remote control rules dictate that the controller’s Physical attributes are used [SR6 Core Rulebook, p.&nbsp;201]. If the AI is controlling the device via VR they use their mental attributes, but if the AI is controlling the device via AR they use their “physical” attributes [Devices, AR and VR, SR6 Core Rulebook, p.&nbsp;180].</p>
-<p>Because an AI lacks a physical body, they must substitute their missing Physical attributes using the <strong>Matrix Equivalent Attributes</strong> table [Hack and Slash, p.&nbsp;118]:</p>
+<p>If the AI is <strong>not</strong> jumped into the drone, standard remote control rules dictate that the controller’s Physical attributes are substituted using the <strong>Matrix Equivalent Attributes</strong> table [Hack and Slash, p.&nbsp;118]:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -711,26 +1021,25 @@ window.Quarto = {
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><strong>Body</strong></td>
-<td style="text-align: left;">Firewall</td>
+<td style="text-align: left;">Firewall (9)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Agility</strong></td>
-<td style="text-align: left;">Data Processing</td>
+<td style="text-align: left;">Data Processing (7)</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Reaction</strong></td>
-<td style="text-align: left;">Sleaze</td>
+<td style="text-align: left;">Sleaze (9)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Strength</strong></td>
-<td style="text-align: left;">Attack</td>
+<td style="text-align: left;">Attack (6)</td>
 </tr>
 </tbody>
 </table>
-<p>In this remote-control scenario, the AI <strong>does</strong> use its Matrix Equivalents:</p>
 <ul>
-<li><strong>Piloting</strong>: When remotely piloting a drone, the test normally calls for <em>Piloting + Reaction</em>. The AI substitutes Reaction for Sleaze, rolling <strong>Piloting + Sleaze</strong> [Hack and Slash, p.&nbsp;118].</li>
-<li><strong>Gunnery/Firing</strong>: When remotely firing a drone’s mounted weapon, the test normally calls for <em>Firearms + Agility</em>. The AI substitutes Agility for Data Processing, rolling <strong>Firearms + Data Processing</strong> [Hack and Slash, p.&nbsp;118].</li>
+<li><strong>Piloting</strong>: Remotely piloted drone test rolls <strong>Piloting + Sleaze</strong> [Hack and Slash, p.&nbsp;118].</li>
+<li><strong>Gunnery/Firing</strong>: Remotely fired mounted weapon test rolls <strong>Firearms + Data Processing</strong> [Hack and Slash, p.&nbsp;118].</li>
 </ul>
 <hr>
 </section>
@@ -768,68 +1077,6 @@ window.Quarto = {
 </table>
 <hr>
 </section>
-<section id="rules-reference-citations" class="level4">
-<h4 class="anchored" data-anchor-id="rules-reference-citations">Rules Reference &amp; Citations</h4>
-<ul>
-<li><strong>[Hack and Slash, p.&nbsp;118]</strong> – AI Character Attribute Block and Matrix Equivalent Attributes.</li>
-<li><strong>[Hack and Slash, p.&nbsp;119]</strong> – Pilot Origins Quality &amp; AI-driven drone rules.</li>
-<li><strong>[SR6 Core Rulebook, p.&nbsp;198]</strong> – Control Rigs and Reiko, Jumped-In Attribute conversion table.</li>
-<li><strong>[SR6 Core Rulebook, p.&nbsp;201]</strong> – Drone Rigging and remote-control command guidelines.</li>
-<li><strong>[SR6 Core Rulebook, p.&nbsp;180]</strong> - Devices, AR and VR.</li>
-</ul>
-</section>
-</section>
-<section id="man-at-arms---crimson-wasp-weapons-array" class="level3">
-<h3 class="anchored" data-anchor-id="man-at-arms---crimson-wasp-weapons-array">Man-At-Arms - Crimson Wasp Weapons Array</h3>
-<section id="weapon-profiles-range-profiles" class="level4">
-<h4 class="anchored" data-anchor-id="weapon-profiles-range-profiles">1. Weapon Profiles &amp; Range Profiles</h4>
-<ul>
-<li><strong>rEVOlution Arms Red Fox (Primary)</strong> [Firing Squad, Page 44]:
-<ul>
-<li><strong>Base DV</strong>: 6P* (Decreases to 3P at Medium and further ranges)</li>
-<li><strong>Base Attack Rating</strong>: 14 / 16 / 16 / 9 / — (Close / Near / Medium / Far / Extreme)</li>
-</ul></li>
-<li><strong>rEVOlution Arms Crimson Wasp (Secondary Link-Fired)</strong> [Firing Squad, Page 44]:
-<ul>
-<li><strong>Base DV</strong>: 5P* (Decreases to 3P at Medium and further ranges)</li>
-<li><strong>Base Attack Rating</strong>: 16 / 14 / 11 / 6 / — (Close / Near / Medium / Far / Extreme)</li>
-</ul></li>
-</ul>
-</section>
-<section id="attack-rating-ar-modifications" class="level4">
-<h4 class="anchored" data-anchor-id="attack-rating-ar-modifications">2. Attack Rating (AR) Modifications</h4>
-<ol type="1">
-<li><strong>Smartlink Bonus</strong>: Adding an internal smartlink system to the primary weapon (Red Fox) increases its Attack Rating by <strong>+2 across all available range categories</strong> [SR6 Core Rulebook (Berlin Ed.), Page 262].
-<ul>
-<li>Red Fox Adjusted AR: <strong>16 / 18 / 18 / 11 / —</strong></li>
-</ul></li>
-<li><strong>Link-Firing Bonus</strong>: Link-firing multiple weapons increases the primary weapon’s AR by <strong>+1 AR for each additional weapon</strong> added to the attack [Double Clutch, Page 144]. With two Crimson Wasps added, this grants <strong>+2 AR</strong>.
-<ul>
-<li><strong>Final Attack Rating</strong>: <strong>18 / 20 / 20 / 13 / —</strong></li>
-</ul></li>
-</ol>
-</section>
-<section id="damage-value-dv-modifications" class="level4">
-<h4 class="anchored" data-anchor-id="damage-value-dv-modifications">3. Damage Value (DV) Modifications</h4>
-<p>Under the Link-Firing rules, the base DV is set by the primary weapon (Red Fox: 6P at Close/Near, 3P at Medium/Far) and modified by the secondary weapons (Crimson Wasps):</p>
-<ul>
-<li><strong>Rule</strong>: Added weapons of DV 5 or higher add <strong>+2 DV</strong> to the attack.</li>
-<li><strong>At Close / Near Ranges</strong>
-<ul>
-<li>Both Wasps are DV 5+, adding +2 DV each (+4 DV total).</li>
-<li><strong>Final DV</strong>: 6P + 4 = <strong>10P</strong></li>
-</ul></li>
-<li><strong>At Medium / Far Ranges</strong>
-<ul>
-<li>Both Wasps are below DV 5, adding +1 DV each (+2 DV total).</li>
-<li><strong>Final DV</strong>: 3P + 2 = <strong>5P</strong></li>
-</ul></li>
-</ul>
-<section id="final-damage-values-dv" class="level5">
-<h5 class="anchored" data-anchor-id="final-damage-values-dv">Final Damage Values (DV):</h5>
-<p>Because Grunt Groups utilize the base DV of their strongest attacker [SR6 Core Rulebook, Page 114], the damage values do not change.</p>
-</section>
-</section>
 </section>
 <section id="sensor-locks" class="level3">
 <h3 class="anchored" data-anchor-id="sensor-locks">Sensor Locks</h3>
@@ -857,162 +1104,112 @@ window.Quarto = {
 <li>Reaction + Piloting (Intuition + Reaction in case of metahumans and critters) vs.&nbsp;Electronics + Intuition (Clearsight + Sensor in the case of autopilots) (Major)</li>
 <li>Matrix noise in the vicinity of the locked-on target affects only the defense roll.</li>
 </ul>
-</section>
-</section>
-<section id="rigging-protocols-cheat-sheet" class="level3">
-<h3 class="anchored" data-anchor-id="rigging-protocols-cheat-sheet">Rigging Protocols Cheat Sheet</h3>
-<ul>
-<li><strong>Pilot/Drive/Crash</strong>: Maneuvering (D, 7) + REA (S, 9) + Teamwork Diagnosis (3) ──&gt; <strong>19</strong></li>
-<li><strong>Weapon Attack</strong>: Targeting (D, 7) + AGI (D, 7) + Sprite Symbiosis (4) ──&gt; <strong>18</strong></li>
-<li><strong>Perception</strong>: Clearsight (D, 7) + Sprite (4) + Sensor Upgrade (+1) ──&gt; <strong>12 + Sensor</strong></li>
-<li><strong>Stealth</strong>: Stealth (D, 7) + AGI (D, 7) + Sprite Symbiosis (4) ──&gt; <strong>18</strong></li>
-<li><strong>Defense Test</strong>: Evasion (D, 7) + REA (S, 9) + Sprite Symbiosis (4) ──&gt; <strong>20</strong></li>
-<li><strong>Defense Rating</strong>: BOD + ARM</li>
-<li><strong>Damage Resistance Test</strong>: BOD</li>
-<li><strong>Damage Resistance</strong>: Convert ARM/8 (round down) physical damage (P) into stun (S). Drones ignore stun damage up to their BOD.</li>
-<li><strong>Repair</strong>: Electronics(Hardware) + LOG</li>
-</ul>
 <hr>
 </section>
 </section>
-<section id="sprites-resonance" class="level2">
-<h2 class="anchored" data-anchor-id="sprites-resonance">Sprites &amp; Resonance</h2>
-<section id="complex-forms" class="level3">
-<h3 class="anchored" data-anchor-id="complex-forms">Complex Forms</h3>
-<ul>
-<li>Includes Sprite Symbiosis bonus: +4.</li>
-<li>Includes Resonance Focus: +4 (Fading Value: 2 for use).</li>
-</ul>
 </section>
-<section id="registering-sprites" class="level3">
-<h3 class="anchored" data-anchor-id="registering-sprites">Registering Sprites</h3>
-<ul>
-<li><strong>Minor downtime action</strong>: Register 8levels of sprites (up to R7 sprite)</li>
-<li>1 per night’s rest (7 hrs registering, 3 hrs restoration). Must buy hits (SRMG p19)</li>
-<li><strong>Outcome</strong>: R7 Modular sprite with 3 services/powers for 3 missions</li>
-</ul>
-<section id="compiling-phase" class="level4">
-<h4 class="anchored" data-anchor-id="compiling-phase">1. Compiling Phase</h4>
-<ul>
-<li><strong>Pool</strong>: Tasking (6) + RES (7) + Resonance Focus (4) = <strong>17 dice</strong> → <strong>4 Bought Hits</strong>.</li>
-<li><strong>Sprite’s Defense</strong>: Level 7 × 2 = <strong>14 dice</strong> → <strong>3 Bought Hits</strong>.</li>
-<li><strong>Net Hits</strong>: 4 - 3 = 1 → <strong>1 base service</strong>.</li>
-<li><strong>Technoshaman Stream Modification</strong>: Grants +1 additional service on a successful compiling test. Total compiled services = <strong>2 services/powers</strong>.</li>
-<li><strong>Fading Value (FV)</strong>: Under core rules, compiling fade is exactly equal to the hits received on the sprite’s defense test = <strong>3</strong>.</li>
-<li><strong>Technoshaman Mitigation</strong>: Reduces compiling fade by a flat 2 (3 - 2 = 1).</li>
-<li><strong>Fading Resistance</strong>: Willpower (6) + Charisma (4) + Submersion Grade / Sprite Conduit (7) = <strong>17 dice</strong> → <strong>4 Bought Hits</strong>.</li>
-<li><strong>Compiling Damage Taken</strong>: 1 FV - 4 hits = <strong>0 Damage</strong>.</li>
-</ul>
-</section>
-<section id="registering-phase" class="level4">
-<h4 class="anchored" data-anchor-id="registering-phase">2. Registering Phase</h4>
-<ul>
-<li><strong>Pool</strong>: Registering (8) + RES (7) + RES Focus (4) = <strong>19 dice</strong> → <strong>4 Bought Hits</strong>.</li>
-<li><strong>Sprite’s Defense</strong>: Level 7 × 2 = <strong>14 dice</strong> → <strong>3 Bought Hits</strong>.</li>
-<li><strong>Net Hits</strong>: 4 - 3 = 1 → <strong>1 base service</strong>.</li>
-<li><strong>Combined Total Services</strong>: 2 (compiled) + 1 (registered) = <strong>3 total services/powers</strong>.</li>
-<li><strong>Fading Value (FV)</strong>: Under core rules, registering fade is equal to <em>twice</em> the hits received on the sprite’s defense test (3 x 2 = 6).</li>
-<li><strong>Fading Resistance</strong>: Willpower (6) + Charisma (4) + Submersion Grade / Sprite Conduit (7) = <strong>17 dice</strong> → <strong>4 Bought Hits</strong>.</li>
-<li><strong>Registering Damage Taken</strong>: 6 FV - 4 hits = <strong>2 boxes of Stun damage</strong>.</li>
-</ul>
-</section>
-<section id="resonance-focus-fading" class="level4">
-<h4 class="anchored" data-anchor-id="resonance-focus-fading">3. Resonance Focus Fading</h4>
-<p>Because a data structure/focus was used to boost both tests, it incurs its own independent data-structure fade (4 / 2 = 2).</p>
-<ul>
-<li><strong>Focus Fading Pool</strong>: WIL (6) + LOG (4) = <strong>10 dice</strong> → <strong>2 Bought Hits</strong>.</li>
-<li><strong>Damage Taken</strong>: 2 FV - 2 hits = <strong>0 Damage</strong>.</li>
-</ul>
-</section>
-</section>
-<section id="active-sprite-stable" class="level3">
-<h3 class="anchored" data-anchor-id="active-sprite-stable">Active Sprite Stable</h3>
-<p>Total Active Sprites: <strong>9</strong> (See <a href="../chapters/character_log.html">Career Log</a> for full expiration details)</p>
+<section id="weapons-gear" class="level2">
+<h2 class="anchored" data-anchor-id="weapons-gear">Weapons &amp; Gear</h2>
+<section id="standardized-weapon-attack-rating-cheatsheets" class="level3">
+<h3 class="anchored" data-anchor-id="standardized-weapon-attack-rating-cheatsheets">Standardized Weapon &amp; Attack Rating Cheatsheets</h3>
+<p>The following table provides a transparent breakdown of base weapon statistics, applied modifiers (Smartlink, Network Smartgun, Mount Stability, Personalized Grip, Link-Firing), final effective Attack Ratings (AR), and Firing Mode options.</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 17%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Sprite Name</th>
-<th>Rating &amp; Type</th>
-<th>Registered During</th>
-<th>Status</th>
+<th style="text-align: left;">Weapon Name</th>
+<th style="text-align: center;">Mode (Rounds)</th>
+<th style="text-align: center;">Final DV</th>
+<th style="text-align: center;">Final Effective AR</th>
+<th style="text-align: left;">Notes &amp; Constraints</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Taz</td>
-<td>R7 Crack Ally</td>
-<td>Character Creation</td>
-<td>Permanent (Ally)</td>
+<td style="text-align: left;"><strong>Red Fox Array (Link-Fired)</strong></td>
+<td style="text-align: center;"><strong>SS</strong> (1/gun)</td>
+<td style="text-align: center;">10P (Close/Near) / 5P (Med/Far)</td>
+<td style="text-align: center;"><strong>21 / 23 / 23 / 16 / -</strong></td>
+<td style="text-align: left;">Link-fired 2x Wasps (+7 AR total)</td>
 </tr>
 <tr class="even">
-<td>Sprite-M18a</td>
-<td>R7 Modular (Shield)</td>
-<td>SRM 2081-08</td>
-<td>Active</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"><strong>SA</strong> (2/gun)</td>
+<td style="text-align: center;">11P (Close/Near) / 6P (Med/Far)</td>
+<td style="text-align: center;"><strong>20 / 22 / 22 / 15 / -</strong></td>
+<td style="text-align: left;">Link-fired array (Wasps restrict mode to SS/SA)</td>
 </tr>
 <tr class="odd">
-<td>Sprite-M18b</td>
-<td>R7 Modular (Death Mark)</td>
-<td>SRM 2081-08</td>
-<td>Active</td>
+<td style="text-align: left;"><strong>Ares Predator VI</strong></td>
+<td style="text-align: center;"><strong>SS</strong> (1)</td>
+<td style="text-align: center;">3P</td>
+<td style="text-align: center;"><strong>15 / 15 / 11 / - / -</strong></td>
+<td style="text-align: left;">Hand-held sidearm (+4 AR Close/Near)</td>
 </tr>
 <tr class="even">
-<td>Sprite-M18c</td>
-<td>R7 Modular (Death Mark)</td>
-<td>SRM 2081-08</td>
-<td>Active</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"><strong>SA</strong> (2)</td>
+<td style="text-align: center;">4P</td>
+<td style="text-align: center;"><strong>13 / 13 / 9 / - / -</strong></td>
+<td style="text-align: left;">2-round SA burst</td>
 </tr>
 <tr class="odd">
-<td>Sprite-M19a</td>
-<td>R7 Modular (Autosofts)</td>
-<td>SRM 2081-07</td>
-<td>Active</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"><strong>BF</strong> (4)</td>
+<td style="text-align: center;">5P</td>
+<td style="text-align: center;"><strong>11 / 11 / 7 / - / -</strong></td>
+<td style="text-align: left;">4-round narrow burst</td>
 </tr>
 <tr class="even">
-<td>Sprite-M19b</td>
-<td>R7 Modular (Autosofts)</td>
-<td>SRM 2081-07</td>
-<td>Active</td>
+<td style="text-align: left;"><strong>Monofilament Whip</strong></td>
+<td style="text-align: center;"><strong>Melee</strong></td>
+<td style="text-align: center;">6P</td>
+<td style="text-align: center;"><strong>16 / - / - / - / -</strong></td>
+<td style="text-align: left;">Fingertip cyberarm compartment (+2 AR)</td>
 </tr>
 <tr class="odd">
-<td>Sprite-M20a</td>
-<td>R7 Modular (Autosofts)</td>
-<td>SRM 2081-06</td>
-<td>Active</td>
+<td style="text-align: left;"><strong>Krime Gloves (Butler - Stun)</strong></td>
+<td style="text-align: center;"><strong>Melee</strong></td>
+<td style="text-align: center;">4S(e)</td>
+<td style="text-align: center;"><strong>7 / - / - / - / -</strong></td>
+<td style="text-align: left;">Butler drone equipped (Personalized Grip +2 AR)</td>
 </tr>
 <tr class="even">
-<td>Sprite-M20b</td>
-<td>R7 Modular (Autosofts)</td>
-<td>SRM 2081-06</td>
-<td>Active</td>
-</tr>
-<tr class="odd">
-<td>Sprite-M21</td>
-<td>R7 Modular (Shield, Death Mark)</td>
-<td>CMP 2083-04</td>
-<td>Active</td>
+<td style="text-align: left;"><strong>Krime Gloves (Butler - Phys)</strong></td>
+<td style="text-align: center;"><strong>Melee</strong></td>
+<td style="text-align: center;">3P</td>
+<td style="text-align: center;"><strong>8 / - / - / - / -</strong></td>
+<td style="text-align: left;">Butler drone equipped (Personalized Grip +2 AR)</td>
 </tr>
 </tbody>
 </table>
-<hr>
+<section id="firing-mode-summary-rules-sr6-core-rulebook-p.-109-double-clutch-p.-142" class="level4">
+<h4 class="anchored" data-anchor-id="firing-mode-summary-rules-sr6-core-rulebook-p.-109-double-clutch-p.-142">1. Firing Mode Summary Rules (SR6 Core Rulebook p.&nbsp;109 &amp; Double Clutch p.&nbsp;142)</h4>
+<ol type="1">
+<li><strong>Single Shot (SS)</strong>: 1 round fired. Base DV, 0 AR penalty.</li>
+<li><strong>Semi-Automatic (SA Burst)</strong>: 2 rounds fired. Adds <strong>+1 DV</strong>. Standard -2 AR penalty (halved to <strong>-1 AR</strong> on vehicle/drone mounts).</li>
+<li><strong>Burst Fire (BF Narrow)</strong>: 4 rounds fired. Adds <strong>+2 DV</strong>. Standard -4 AR penalty (halved to <strong>-2 AR</strong> on vehicle/drone mounts).</li>
+</ol>
+</section>
+<section id="attack-rating-ar-modifications-rule-summary" class="level4">
+<h4 class="anchored" data-anchor-id="attack-rating-ar-modifications-rule-summary">2. Attack Rating (AR) Modifications Rule Summary</h4>
+<ol type="1">
+<li><strong>Smartlink System (+2 AR Base, +1 Networked = +3 AR)</strong>: Adding a smartlink connected to Yuriko’s network increases Attack Rating by <strong>+3 across valid ranges</strong>.</li>
+<li><strong>Personalized Grip (+1 Close/Near Ranged, +2 Melee)</strong>: Custom ergonomic grip adds <strong>+1 AR to Close &amp; Near ranges only</strong> for ranged weapons and <strong>+2 AR</strong> for melee weapons.</li>
+<li><strong>Vehicle / Drone / Cyberarm Weapon Mount (+2 AR, Halve Burst AR Penalty)</strong>: Weapons mounted on vehicles, drones, or cyberarms gain <strong>+2 AR across all valid ranges</strong> due to structural stability and <strong>halve the AR penalties</strong> for firing bursts [Double Clutch, Page 142].</li>
+<li><strong>Link-Firing Bonus (+1 AR per secondary weapon)</strong>: Link-firing multiple weapons increases the primary weapon’s AR by <strong>+1 AR for each additional weapon</strong> added to the attack. With two Crimson Wasps added, this grants <strong>+2 AR</strong>.</li>
+</ol>
 </section>
 </section>
-<section id="gear-ammunition" class="level2">
-<h2 class="anchored" data-anchor-id="gear-ammunition">Gear &amp; Ammunition</h2>
-<ul>
-<li><strong>Ares Predator VI Modifications</strong>:
-<ul>
-<li>Base: 3P, 10/10/8/–/–</li>
-<li>Active Smartlink (+2 Attack Rating to Close/Near/Medium ranges).</li>
-<li>Personalized Grip (Ranged) (+1 Attack Rating to Close/Near ranges). (Applies because gun is held.)</li>
-<li>Equipped with Silencer (+2 threshold to notice firing).</li>
-<li>Ammo: Explosive (4P) or KSSD (5S)</li>
-<li><strong>Total</strong> 4P/5S, 13/13/11/–/–</li>
-</ul></li>
-</ul>
 <section id="krime-splash-self-defense-ammunition" class="level3">
 <h3 class="anchored" data-anchor-id="krime-splash-self-defense-ammunition">Krime Splash Self-Defense Ammunition</h3>
-<p>The outer coating is a friction-liquefying material that is impossible to wash off and paints the target in whatever color Reiko choose when purchasing the ammo. This splash-color is just the jacket for a good degree of glitter-based micro RFID tags that get into the user’s skin through any non-chemical resistant or waterproof outfit, which sparkles while impregnated into their skin while also transmitting to the Matrix. Finally, the major layer, which protects Reiko while the intruder is still in Reikor face: a basic gel round that slams home like every other gel round on the market.</p>
+<p>The outer coating is a friction-liquefying material that is impossible to wash off and paints the target in whatever color Yuriko chooses when purchasing the ammo. This splash-color is just the jacket for a good degree of glitter-based micro RFID tags that get into the user’s skin through any non-chemical resistant or waterproof outfit, which sparkles while impregnated into their skin while also transmitting to the Matrix. Finally, the major layer, which protects Yuriko while the intruder is still in face: a basic gel round that slams home like every other gel round on the market.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
