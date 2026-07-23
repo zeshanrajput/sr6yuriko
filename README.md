@@ -14,6 +14,8 @@ The project is compiled into a polished, responsive book using **Quarto** and ho
   - `character_sheet.qmd`: Embeds the generated plain-text VTT-formatted character sheet.
   - `rules_and_downtime.qmd`: Fading calculations, rigger/decking shortcuts, and network setups.
   - `character_log.qmd`: Complete run history, karma trackers, nuyen ledgers, and contact lists.
+  - `dronomancy.md`: DI-to-DI guide on remote drone operation, casemodding, and rigging mechanics.
+  - `twenty_questions.qmd`: Character questionnaire detailing personality and ethics.
   - Narrative Chapters (`01 The Weight of Zero.md`, etc.): Out-of-session narrative archives.
 - `input/`: Pre-processed raw character exports (`Yuriko Star.xml`, `Yuriko Star.json` from Genesis/Commlink).
 - `output/`: Post-processed calculated artifacts (`character_sheet.txt`, `Yuriko Star.json`, `Yuriko Star.xml`) generated with true Karma, Nuyen, and career ledger data.

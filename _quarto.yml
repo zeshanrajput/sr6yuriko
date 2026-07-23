@@ -21,6 +21,7 @@ book:
         - chapters/rules_and_downtime.qmd
         - chapters/character_log.qmd
         - chapters/twenty_questions.qmd
+        - chapters/dronomancy.md
     - part: "Background Stories"
       chapters:
         - chapters/01 The Weight of Zero.md

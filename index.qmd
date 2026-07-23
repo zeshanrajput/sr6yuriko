@@ -53,6 +53,7 @@ Use the sidebar or the indexes below to traverse the sub-grids of this portfolio
 * **[Rules & Downtime Protocols](chapters/rules_and_downtime.qmd)**: Compiling/registering formulas, cheat sheets, and active network configurations.
 * **[Career Log](chapters/character_log.qmd)**: Full database of past runs, GMs, nuyen payouts, and Karma adjustments.
 * **[Twenty Questions](chapters/twenty_questions.qmd)**: Standard character questionnaire defining personality, quirks, and ethics.
+* **[A Drone in Every Port](chapters/dronomancy.md)**: A DI-to-DI guide on remote drone operation, casemodding, and rigging mechanics.
 
 ### 2. Background Stories
 Chronological records of Reiko's backstory before the campaign:
