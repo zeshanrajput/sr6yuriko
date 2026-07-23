@@ -80,3 +80,11 @@ Active campaign stories written during play:
 * **[Chapter 17: Sheets](chapters/17 Sheets.md)**
 * **[Chapter 18: The Geometry of the Sieve](chapters/18 The Geometry of a Sieve.md)**
 * **[Chapter 19: Legacy Code](chapters/19 Legacy Code.md)**
+* **[Chapter 20: The Price of Silk](chapters/20 The Price of Silk.md)**
+
+### 4. Reference & Specifications
+Design rules, faction dossiers, and visual anchor specifications:
+
+* **[Master Visual Anchors](reference/visual_anchors.md)**: Visual anchors, key image reference links (Dante's, SEA Rain, Desert Wars), visual asset gallery, and prompt templates.
+* **[River People Faction Dossier](reference/river_people.md)**: Background and connection details for the River People technomancer/punk network.
+* **[Narrative Standards & Review Framework](reference/narrative_standards.md)**: Guidelines for writing digital-native stories and two-stage review framework.

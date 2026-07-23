@@ -11,22 +11,22 @@ def get_log_totals(log_path="chapters/character_log.qmd"):
 
     env = {}
 
-    # 1. Execute top-level ```{python} ... ``` code blocks
-    block_pattern = re.compile(r'```\{python\}(.*?)```', re.DOTALL)
-    for block in block_pattern.findall(content):
-        clean_lines = [line for line in block.splitlines() if not line.strip().startswith('#|')]
-        exec("\n".join(clean_lines), env)
-
-    # 2. Execute inline `{python} ...` expressions in chronological order
-    inline_pattern = re.compile(r'`\{python\}\s*(.*?)`')
-    for expr in inline_pattern.findall(content):
-        try:
-            eval(expr, env)
-        except Exception:
+    # Execute Python blocks and inline expressions sequentially in document order
+    pattern = re.compile(r'```\{python\}(.*?)```|`\{python\}\s*(.*?)`', re.DOTALL)
+    for match in pattern.finditer(content):
+        block = match.group(1)
+        inline = match.group(2)
+        if block is not None:
+            clean_lines = [line for line in block.splitlines() if not line.strip().startswith('#|')]
+            exec("\n".join(clean_lines), env)
+        elif inline is not None:
             try:
-                exec(expr, env)
-            except Exception as e:
-                print(f"Warning: Failed to evaluate inline python expression '{expr}': {e}")
+                eval(inline, env)
+            except Exception:
+                try:
+                    exec(inline, env)
+                except Exception as e:
+                    print(f"Warning: Failed to evaluate inline python expression '{inline}': {e}")
 
     rep_dict = env.get("Reputation", {})
     total_rep = sum(rep_dict.values()) if isinstance(rep_dict, dict) else 0

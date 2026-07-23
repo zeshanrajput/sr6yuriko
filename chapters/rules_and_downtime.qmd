@@ -484,10 +484,13 @@ The following table provides a transparent breakdown of base weapon statistics, 
 | :--- | :---: | :---: | :---: | :--- |
 | **Red Fox Array (Link-Fired)** | **SS** (1/gun) | `{python} ranged_w['Red Fox']['ss_dv']` | **`{python} ranged_w['Red Fox']['ss_ar']`** | Link-fired 2x Wasps (+7 AR total) |
 | | **SA** (2/gun) | `{python} ranged_w['Red Fox']['sa_dv']` | **`{python} ranged_w['Red Fox']['sa_ar']`** | Link-fired array (Wasps restrict mode to SS/SA) |
+| **Tesla Coil (MAA Cyberarm)** | **SS** (1) | 5S(e) | **10 / 12\u002a / — / — / —** | Max 20m, 20m Cone Area Attack (Flamethrower rules), Cyberarm Mount (+2 AR) |
 | **Ares Predator VI** | **SS** (1) | `{python} ranged_w['Ares Predator VI']['ss_dv']` | **`{python} ranged_w['Ares Predator VI']['ss_ar']`** | Hand-held sidearm (+4 AR Close/Near) |
+
 | | **SA** (2) | `{python} ranged_w['Ares Predator VI']['sa_dv']` | **`{python} ranged_w['Ares Predator VI']['sa_ar']`** | 2-round SA burst |
 | | **BF** (4) | `{python} ranged_w['Ares Predator VI']['bf_dv']` | **`{python} ranged_w['Ares Predator VI']['bf_ar']`** | 4-round narrow burst |
-| **Monofilament Whip** | **Melee** | 6P | **`{python} close_w['Monofilament Whip']['ss_ar']`** | Fingertip cyberarm compartment (+2 AR) |
+| **Monofilament Whip** | **Melee** | 6P | **18 / — / — / — / —** | Fingertip cyberarm compartment (+2 AR) + Wireless ON (+2 AR) |
+
 | **Krime Gloves (Butler - Stun)** | **Melee** | 4S(e) | **`{python} close_w['Krime Gloves (Stun)']['ss_ar']`** | Butler drone equipped (Personalized Grip +2 AR) |
 | **Krime Gloves (Butler - Phys)** | **Melee** | 3P | **`{python} close_w['Krime Gloves (Phys)']['ss_ar']`** | Butler drone equipped (Personalized Grip +2 AR) |
 

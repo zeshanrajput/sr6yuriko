@@ -912,10 +912,11 @@ def parse_character(input_path):
                 name_out = yident["real_name"]
             if "handle" in yident:
                 alias_out = yident["handle"]
-            if "metatype" in yident:
-                metatype = yident["metatype"]
+            if "contacts" in ydata and ydata["contacts"]:
+                contacts = ydata["contacts"]
         except Exception as ye:
             print(f"[*] Warning: Could not merge yuriko_master.yaml: {ye}")
+
 
     char_data = {
         "name": name_out,
@@ -1871,6 +1872,7 @@ def generate_ascii_sheet(char_data, verbose=False):
     weapons_lines = [
         "[ COMBAT_WEAPONS_INVENTORY ]",
         "  - RED FOX ARRAY (LINK)  [10P/11P | 21/23/23/16/—] (SS/SA, 30c)  [MAA Mounted]",
+        "  - TESLA COIL            [5S(e)   | 10/12*/—/—/—]  (SS, 20m Cone) [MAA Cyberarm]",
         "  - ARES PREDATOR VI      [3P/4P/5P| 15/15/11/—/—]  (SS/SA/BF, 15c) [Both]",
         "  - MONOFILAMENT WHIP     [6P      | 16/—/—/—/—]    (Melee)        [MAA Cyberarm]",
         "  - KRIME GLOVES (STUN)   [4S(e)   | 7/—/—/—/—]     (Melee)        [Butler]",
@@ -1879,6 +1881,7 @@ def generate_ascii_sheet(char_data, verbose=False):
         ""
     ]
     page2.extend(weapons_lines)
+
 
 
 
@@ -1897,19 +1900,63 @@ def generate_ascii_sheet(char_data, verbose=False):
 
     if char_data["contacts"]:
         page3.append("[ SOCIAL_NETWORK_CONTACTS ]")
+        
+        def get_c_region(c):
+            if c.get("region"):
+                return c["region"]
+            c_name = c.get("name", "")
+            c_type = c.get("archetype") or c.get("typename") or c.get("type", "")
+            full = (c_type + " " + c_name).upper()
+            if "SEA " in full or "SEATTLE" in full or c_name in ["Brynne Taggart", "Whiskey", "Big Louie", "Duan Yuhai", "Xiong Giuyin", "Swango", "Toil", "Trubble", "Eddie Wei", "Julian Müntefering", "Ni Ni Xiaolu", "Bookie", "Trudy", "Saint James", "Jeanie Trudel", "Kingston", "Kirt Liger"]:
+                return "SEA"
+            if "NOLA " in full or "NOLA" in full or c_name in ["Indomitable Will", "Roanoke", "Piotr Krolik", "Le Tigre", "Dominique Augustin", "Daniel Fortune", "Renée Martin", "Fernand Anato", "Monsieur Johnson"]:
+                return "NOLA"
+            if "AMS " in full or "AMSTERDAM" in full or "DUTCH" in full or "PENOSE" in full or c_name in ["The Frisian", "Kiara Shaw", "Simon Andrews", "Squint", "Sigrún", "SpiiniCop", "Kaatje"]:
+                return "AMS"
+            if "KY " in full or "KENTUCKY" in full or c_name in ["Ree 'Dolly' Hacker", "Granny", "Dr. Laureline Dodd", "Thaddeus", "Reilly Dragman"]:
+                return "KY"
+            if "DW " in full or "DENVER" in full or c_name in ["Dixie L'Amin", "Ayanda 'Shieldbearer' Mahlangu", "Ebon Abirashur", "Col. Deborah Kentwell", "Polyphemous 'Paul' Pellagios"]:
+                return "DW"
+            return "GEN"
+
+        grouped = {}
         for c in char_data["contacts"]:
-            name = c.get("name", "Unknown")
-            name_display = name.upper()
-            if len(name_display) > 20:
-                name_display = name_display[:17] + "..."
-            c_type = c.get("type", "Contact")
-            loy = c.get("loyalty", 0)
-            inf = c.get("influence", 0)
-            fav = c.get("favors", 0)
-            if len(c_type) > 32:
-                c_type = c_type[:29] + "..."
-            page3.append(f"  - {name_display.ljust(20)} {c_type.ljust(32)} L:{loy} I:{inf} F:{fav}")
-        page3.append("")
+            reg = get_c_region(c)
+            grouped.setdefault(reg, []).append(c)
+
+        region_headers = [
+            ("SEA", "-- SEATTLE (SEA) --"),
+            ("NOLA", "-- NEW ORLEANS (NOLA) --"),
+            ("AMS", "-- AMSTERDAM / UNL (AMS) --"),
+            ("KY", "-- KENTUCKY (KY) --"),
+            ("DW", "-- DENVER (DW) --"),
+            ("GEN", "-- GENERAL / MATRIX / OTHER (GEN) --")
+        ]
+
+        for reg_code, header_title in region_headers:
+            clist = grouped.get(reg_code, [])
+            if not clist:
+                continue
+            page3.append(f"  {header_title}")
+            for c in clist:
+                name = c.get("name", "Unknown")
+                name_display = name.upper()
+                if len(name_display) > 20:
+                    name_display = name_display[:17] + "..."
+                c_type = c.get("archetype") or c.get("typename") or c.get("type", "Contact")
+                for prefix in ["SEA ", "NOLA ", "AMS ", "KY ", "DW "]:
+                    if c_type.startswith(prefix):
+                        c_type = c_type[len(prefix):]
+                        break
+                loy = c.get("loyalty", 0)
+                conn = c.get("connection") if c.get("connection") is not None else c.get("influence", c.get("rat", 0))
+                fav = c.get("favors", 0)
+                if len(c_type) > 30:
+                    c_type = c_type[:27] + "..."
+                page3.append(f"    - {name_display.ljust(20)} {c_type.ljust(30)} C:{conn} L:{loy} F:{fav}")
+            page3.append("")
+
+
 
     if char_data["sins"] or char_data["licenses"]:
         page3.append("[ REGISTERED_IDENTITIES ]")
@@ -2022,6 +2069,12 @@ def post_process_json(raw_json_path, log_totals, out_json_path):
         with open(raw_json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
         
+        yaml_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "yuriko_master.yaml")
+        ydata = {}
+        if os.path.exists(yaml_path):
+            with open(yaml_path, "r", encoding="utf-8") as yf:
+                ydata = yaml.safe_load(yf)
+        
         if "Lifetime_Karma" in log_totals:
             data["karma"] = log_totals["Lifetime_Karma"]
         if "Karma" in log_totals:
@@ -2035,12 +2088,296 @@ def post_process_json(raw_json_path, log_totals, out_json_path):
         if "Total_Reputation" in log_totals:
             data["reputation"] = log_totals["Total_Reputation"]
             
+        # Sync attributes from yuriko_master.yaml if present
+        yattrs = ydata.get("attributes", {})
+        if "attributes" in data and isinstance(data["attributes"], list):
+            for attr_item in data["attributes"]:
+                attr_id = attr_item.get("id", "").lower()
+                if attr_id in yattrs:
+                    attr_val = yattrs[attr_id]
+                    attr_item["points"] = attr_val
+                    attr_item["modifiedValue"] = attr_val
+
+        # 1. Skills: Cracking & Electronics link to RESONANCE with mod = 4 and pool = 16 (18 w/ spec)
+        if "skills" in data and isinstance(data["skills"], list):
+            for sk in data["skills"]:
+                sk_name = sk.get("name", "").lower()
+                if sk_name in ["cracking", "electronics"]:
+                    sk["attribute"] = "RESONANCE"
+                    sk["mod"] = 4
+                    sk["pool"] = 16
+                    if "specializations" in sk and isinstance(sk["specializations"], list):
+                        for sp in sk["specializations"]:
+                            sp["attribute"] = "RESONANCE"
+                            sp["mod"] = 4
+                            sp["pool"] = 18
+
+        # 2. Pilot Origins is Quality, augmentations = []
+        data["augmentations"] = []
+        if "qualities" in data and isinstance(data["qualities"], list):
+            has_pilot_orig = any(q.get("name") == "Pilot Origins" for q in data["qualities"])
+            if not has_pilot_orig:
+                data["qualities"].append({
+                    "name": "Pilot Origins",
+                    "id": "pilot_origins",
+                    "choice": "",
+                    "positive": True,
+                    "rating": 1,
+                    "page": "Hack'n Slash 120",
+                    "description": "Allows AI to jump into drones and vehicles, acting as a rigger equal to quality rating."
+                })
+
+        # 3. Licenses = Rating 2
+        if "licenses" in data and isinstance(data["licenses"], list):
+            for lic in data["licenses"]:
+                lic["rating"] = 2
+
+        # 4. Sync full 41 contacts from yuriko_master.yaml
+        ycontacts = ydata.get("contacts", [])
+        if ycontacts:
+            json_contacts = []
+            for c in ycontacts:
+                json_contacts.append({
+                    "name": c.get("name", "Unknown"),
+                    "type": c.get("archetype") or c.get("typename") or c.get("type", "Contact"),
+                    "loyalty": c.get("loyalty", 1),
+                    "influence": c.get("connection", c.get("influence", c.get("rat", 1))),
+                    "favors": c.get("favors", 0),
+                    "description": c.get("description") or c.get("notes", "")
+                })
+            data["contacts"] = json_contacts
+
+
+        # 4. Engineering Kit (rename generic Kit)
+        if "items" in data and isinstance(data["items"], list):
+            for item in data["items"]:
+                item["wifi"] = []
+                it_name = item.get("name", "")
+                if it_name.lower() in ["kit", "tool kit"]:
+                    item["name"] = "Engineering Kit"
+                    item["description"] = "Engineering Kit for drone/hardware repairs and modifications."
+
+        # 5. Software & Autosoft Ratings
+        def fix_autosoft_ratings(soft_list):
+            for s in soft_list:
+                s["wifi"] = []
+                s_name = s.get("name", "").lower()
+                s_sub = s.get("subType", "").lower()
+                if "autosoft" in s_sub or s_name in ["clearsight", "engineering", "evasion", "maneuvering", "navigation", "performance", "biotech", "close combat", "stealth", "targeting", "tracking", "language", "knowledge"]:
+                    if "knowledge" in s_name:
+                        s["rating"] = 3
+                    elif "language" in s_name:
+                        s["rating"] = 5
+                    else:
+                        s["rating"] = 9
+                if "accessories" in s and isinstance(s["accessories"], list):
+                    fix_autosoft_ratings(s["accessories"])
+
+        if "items" in data and isinstance(data["items"], list):
+            fix_autosoft_ratings(data["items"])
+
+        # 6. Weapons: Formatted modes (SS/SA/BF), single damage codes, mod = 12, pool = 18
+        weapon_mods = {
+            "ares predator vi": {
+                "name": "Ares Predator VI",
+                "mode": "SS/SA/BF",
+                "damage": "3P",
+                "attackRating": "15/15/11/—/—",
+                "mod": 12,
+                "pool": 18,
+                "description": "Hand-held heavy pistol sidearm. Internal Smartlink, Personalized Grip, Silencer."
+            },
+            "red fox": {
+                "name": "Red Fox Array (Link-Fired)",
+                "mode": "SS/SA",
+                "damage": "10P",
+                "attackRating": "21/23/23/16/—",
+                "mod": 12,
+                "pool": 18,
+                "description": "Link-fired array with 2x Crimson Wasps. Mounted on Shiawase Man-at-Arms."
+            },
+            "monofilament whip": {
+                "name": "Monofilament Whip",
+                "mode": "SS",
+                "damage": "6P",
+                "attackRating": "18/—/—/—/—",
+                "mod": 12,
+                "pool": 18,
+                "description": "Fingertip cyberarm compartment. Wireless ON (+2 AR)."
+            },
+            "tesla coil": {
+                "name": "Tesla Coil",
+                "mode": "SS",
+                "damage": "5S(e)",
+                "attackRating": "10/12*/—/—/—",
+                "mod": 12,
+                "pool": 18,
+                "description": "20m Cone Area Attack (Flamethrower rules). Integrated in Man-at-Arms Cyberarm."
+            },
+            "krime gloves (stun)": {
+                "name": "Krime Gloves (Stun)",
+                "mode": "SS",
+                "damage": "4S(e)",
+                "attackRating": "7/—/—/—/—",
+                "mod": 12,
+                "pool": 18,
+                "description": "Equipped on Shiawase Butler. Personalized Grip."
+            },
+            "krime gloves (phys)": {
+                "name": "Krime Gloves (Phys)",
+                "mode": "SS",
+                "damage": "3P",
+                "attackRating": "8/—/—/—/—",
+                "mod": 12,
+                "pool": 18,
+                "description": "Equipped on Shiawase Butler. Personalized Grip."
+            },
+            "dagger of the sacred rose": {
+                "name": "Dagger of the Sacred Rose (+1 Weapon Focus)",
+                "mode": "SS",
+                "damage": "3P",
+                "attackRating": "10/8/6/—/—",
+                "mod": 12,
+                "pool": 18,
+                "description": "+1 Weapon Focus."
+            }
+        }
+
+        # Remove standalone Crimson Wasp from longRangeWeapons if present, update weapons
+        if "longRangeWeapons" in data and isinstance(data["longRangeWeapons"], list):
+            data["longRangeWeapons"] = [w for w in data["longRangeWeapons"] if "crimson wasp" not in w.get("name", "").lower()]
+            for w in data["longRangeWeapons"]:
+                w["wifi"] = []
+                w_norm = w.get("name", "").lower().replace(" (+1 weapon focus)", "")
+                for key, mods in weapon_mods.items():
+                    if key in w_norm:
+                        w["name"] = mods["name"]
+                        w["mode"] = mods["mode"]
+                        w["damage"] = mods["damage"]
+                        w["attackRating"] = mods["attackRating"]
+                        w["mod"] = mods["mod"]
+                        w["pool"] = mods["pool"]
+                        w["description"] = mods["description"]
+
+        # Ensure Tesla Coil is in longRangeWeapons
+        has_tesla = any("tesla coil" in w.get("name", "").lower() for w in data.get("longRangeWeapons", []))
+        if not has_tesla:
+            if "longRangeWeapons" not in data:
+                data["longRangeWeapons"] = []
+            data["longRangeWeapons"].append({
+                "name": "Tesla Coil",
+                "type": "Exotic Weapons",
+                "subtype": "Special Weapons",
+                "skill": None,
+                "mod": 12,
+                "pool": 18,
+                "damage": "5S(e)",
+                "attackRating": "10/12*/—/—/—",
+                "mode": "SS",
+                "ammunition": "20m",
+                "wifi": [],
+                "accessories": [],
+                "page": "Firing Squad",
+                "description": "20m Cone Area Attack (Flamethrower rules). Integrated in Man-at-Arms Cyberarm.",
+                "primary": False
+            })
+
+        if "closeCombatWeapons" in data and isinstance(data["closeCombatWeapons"], list):
+            data["closeCombatWeapons"] = [w for w in data["closeCombatWeapons"] if w.get("name", "").lower() != "unarmed"]
+            for w in data["closeCombatWeapons"]:
+                w["wifi"] = []
+                w_norm = w.get("name", "").lower()
+                for key, mods in weapon_mods.items():
+                    if key in w_norm:
+                        w["name"] = mods["name"]
+                        w["mode"] = mods["mode"]
+                        w["damage"] = mods["damage"]
+                        w["attackRating"] = mods["attackRating"]
+                        w["mod"] = mods["mod"]
+                        w["pool"] = mods["pool"]
+                        w["description"] = mods["description"]
+
+        # 7. M-TOC Optimization & Target Artist (replace Mapsoft)
+        if "matrixItems" in data and isinstance(data["matrixItems"], list):
+            for dev in data["matrixItems"]:
+                dev["wifi"] = []
+                d_name = dev.get("name", "").lower()
+                if "m-toc" in d_name:
+                    dev["dataProcessing"] = 6
+                    dev["firewall"] = 5
+                    if "accessories" in dev and isinstance(dev["accessories"], list):
+                        for acc in dev["accessories"]:
+                            acc["wifi"] = []
+                            if acc.get("name", "").lower() == "mapsoft":
+                                acc["name"] = "Target Artist"
+                                acc["subType"] = "TAC-Net Program"
+                                acc["description"] = "Attack without line of sight on painted targets."
+
+        # 8. Vehicles / Drones with base attributes and mod parameters
+        vehicles_list = []
+        for d in ydata.get("drones", []):
+            d_name = d.get("name", "")
+            d_name_l = d_name.lower()
+            b_val = d.get("body", 0)
+            a_val = d.get("armor", 0)
+            p_val = d.get("pilot", 0)
+            s_val = d.get("sensor", 0)
+            
+            pilot_mod = max(0, 7 - p_val) if p_val > 0 else 0
+            if "gnat" in d_name_l:
+                sensor_mod = 1
+                body_mod = 0
+                armor_mod = 0
+                desc = "Microdrone reconnaissance unit."
+            elif "butler" in d_name_l:
+                sensor_mod = 4  # +3 Enhanced Sensor, +1 Sensor Upgrade
+                body_mod = 2    # +2 Structural Integrity
+                armor_mod = 10  # SkinShield +2, RACS +2, InvisiShield +2, Wrist Shield +4
+                desc = "Anthrodrone. Small Internal Drone Bay, Secondary Propulsion (Rotor: HND 5, ACC 10, SPD 120 / 20m), Retractable Skates (Minor Action: Walk 10m / Sprint 30m), Realistic Features 1, Integrated Cyberarms x2, Wrist Shield (+4 Armor)."
+            elif "man-at-arms" in d_name_l or "man at arms" in d_name_l:
+                sensor_mod = 4  # +3 Enhanced Sensor, +1 Sensor Upgrade
+                body_mod = 5    # +5 Structural Integrity
+                armor_mod = 9   # +5 Armor Increase, +4 Wrist Shield
+                desc = "Anthrodrone. Heavy Weapon Mount, Large Pop-Out Concealment, Small Internal Drone Bay, Secondary Propulsion (Rotor: HND 5, ACC 10, SPD 120 / 20m), Retractable Skates (Minor Action: Walk 10m / Sprint 30m), Realistic Features 4, Integrated Cyberarm w/ Fingertip Whip & Tesla Coil, Wrist Shield (+4 Armor)."
+            else:
+                sensor_mod = 0
+                body_mod = 0
+                armor_mod = 0
+                desc = ""
+                
+            vehicles_list.append({
+                "name": d_name,
+                "body": b_val,
+                "bodyMod": body_mod,
+                "armor": a_val,
+                "armorMod": armor_mod,
+                "pilot": p_val,
+                "pilotMod": pilot_mod,
+                "sensor": s_val,
+                "sensorMod": sensor_mod,
+                "speed": d.get("speed", 0),
+                "handling": d.get("handling_on", 0),
+                "accel": d.get("accel_on", 0),
+                "wifi": [],
+                "description": desc
+            })
+        data["vehicles"] = vehicles_list
+
         os.makedirs(os.path.dirname(out_json_path) or '.', exist_ok=True)
         with open(out_json_path, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2)
         print(f"[*] Post-processed JSON saved to: {out_json_path}")
+
     except Exception as e:
+        import traceback
+        traceback.print_exc()
         print(f"[*] Warning: Could not post-process JSON file: {e}")
+
+
+
+
+
+
 
 def post_process_xml(raw_xml_path, log_totals, out_xml_path):
     if not os.path.exists(raw_xml_path):
@@ -2049,18 +2386,147 @@ def post_process_xml(raw_xml_path, log_totals, out_xml_path):
         tree = ET.parse(raw_xml_path)
         root = tree.getroot()
         
+        # 1. Global career totals
         if "Lifetime_Karma" in log_totals:
             root.set("karmaI", str(log_totals["Lifetime_Karma"]))
         if "Karma" in log_totals:
             root.set("karmaF", str(log_totals["Karma"]))
         if "Nuyen" in log_totals:
             root.set("nuyen", str(int(log_totals["Nuyen"])))
-            
+
+        # 2. Sync attributes from yuriko_master.yaml
+        yaml_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "yuriko_master.yaml")
+        if os.path.exists(yaml_path):
+            with open(yaml_path, "r", encoding="utf-8") as yf:
+                ydata = yaml.safe_load(yf)
+            yattrs = ydata.get("attributes", {})
+            for attr_el in root.findall(".//attributes/attributes"):
+                attr_id = attr_el.get("id", "").lower()
+                if attr_id in yattrs:
+                    val = str(yattrs[attr_id])
+                    attr_el.set("value", val)
+                    if attr_el.get("start") is not None:
+                        attr_el.set("start", val)
+
+        # 3. Qualities: Pilot Origins
+        qualities_el = root.find("qualities")
+        if qualities_el is not None:
+            has_pilot_orig = any(q.get("ref") == "pilot_origins" for q in qualities_el.findall("quality"))
+            if not has_pilot_orig:
+                po_el = ET.Element("quality", {"lang": "en", "ref": "pilot_origins"})
+                qualities_el.append(po_el)
+
+        # 4. Licenses: Rating 2
+        for lic in root.findall(".//licenses/licenses"):
+            lic.set("rating", "2")
+
+        # 4b. Sync full contacts into XML
+        contacts_el = root.find("contacts")
+        if contacts_el is not None and "contacts" in ydata:
+            existing_c = {c.get("name"): c for c in contacts_el.findall("contact")}
+            for yc in ydata["contacts"]:
+                cname = yc.get("name")
+                c_el = existing_c.get(cname)
+                if c_el is None:
+                    import uuid
+                    c_el = ET.Element("contact", {"id": str(uuid.uuid4()), "name": cname})
+                    contacts_el.append(c_el)
+                
+                c_el.set("rat", str(yc.get("connection", 1)))
+                c_el.set("loy", str(yc.get("loyalty", 1)))
+                c_el.set("favors", str(yc.get("favors", 0)))
+                if yc.get("type"):
+                    c_el.set("type", yc["type"])
+                if yc.get("archetype"):
+                    c_el.set("typename", yc["archetype"])
+                
+                desc_el = c_el.find("description")
+                if desc_el is None:
+                    desc_el = ET.Element("description")
+                    c_el.append(desc_el)
+                desc_el.text = yc.get("description") or yc.get("notes", "")
+
+
+        # 5. Items: M-TOC Target Artist, Engineering Kit
+        items_el = root.find("items")
+        if items_el is not None:
+            for item in items_el.findall("item"):
+                item_ref = item.get("ref", "")
+                if item_ref == "kit":
+                    for dec in item.findall("decision"):
+                        dec.set("value", "engineering")
+                elif item_ref == "mtoc_mark2":
+                    accs_el = item.find("accessories")
+                    if accs_el is not None:
+                        for acc in accs_el.findall("item"):
+                            if acc.get("ref") == "mapsoft":
+                                acc.set("ref", "target_artist")
+                                for dec in acc.findall("decision"):
+                                    acc.remove(dec)
+                elif item_ref in ["shiawase_BD_butler", "shiawase_BD_man_at_arms"]:
+                    accs_el = item.find("accessories")
+                    if accs_el is not None:
+                        has_skates = any(acc.get("ref") == "skates" for acc in accs_el.findall("item"))
+                        if not has_skates:
+                            import uuid
+                            skate_el = ET.Element("item", {
+                                "lang": "en",
+                                "mode": "EMBEDDED",
+                                "ref": "skates",
+                                "slot": "VEHICLE_POWERTRAIN",
+                                "uuid": str(uuid.uuid4())
+                            })
+                elif item_ref == "software_library":
+                    accs_el = item.find("accessories")
+                    if accs_el is not None:
+                        for acc in accs_el.findall("item"):
+                            # Remove circular inFactoryItem attribute that causes Commlink cost calculation to treat all software as free
+                            if "inFactoryItem" in acc.attrib and acc.attrib["inFactoryItem"] == "8fc8c01e-3023-4ba6-9d02-99ba6fcd6979":
+                                del acc.attrib["inFactoryItem"]
+                            if acc.get("ref") == "soft_knowledge":
+                                has_rating = any(dec.get("choice") == "c2d17c87-1cfe-4355-9877-a20fe09c170d" for dec in acc.findall("decision"))
+                                if not has_rating:
+                                    dec_el = ET.Element("decision", {
+                                        "choice": "c2d17c87-1cfe-4355-9877-a20fe09c170d",
+                                        "value": "3"
+                                    })
+                                    acc.append(dec_el)
+
+        # 6. Deduplicate software items so each program ref exists in EXACTLY ONE container across the XML
+        seen_software = set()
+        if items_el is not None:
+            for item in items_el.findall("item"):
+                if item.get("ref") != "software_library":
+                    accs = item.find("accessories")
+                    if accs is not None:
+                        for acc in accs.findall("item"):
+                            if acc.get("slot") == "SOFTWARE" or "soft" in acc.get("ref", "") or acc.get("ref") in ["target_artist", "sneak_sneak", "artillery_barrage", "ecm_warrior_ii"]:
+                                seen_software.add(acc.get("ref"))
+            sw_lib = None
+            for item in items_el.findall("item"):
+                if item.get("ref") == "software_library":
+                    sw_lib = item
+                    break
+            if sw_lib is not None:
+                accs = sw_lib.find("accessories")
+                if accs is not None:
+                    for acc in list(accs.findall("item")):
+                        if acc.get("ref") in seen_software:
+                            accs.remove(acc)
+
+
+
+
+
         os.makedirs(os.path.dirname(out_xml_path) or '.', exist_ok=True)
         tree.write(out_xml_path, encoding="utf-8", xml_declaration=True)
         print(f"[*] Post-processed XML saved to: {out_xml_path}")
     except Exception as e:
+        import traceback
+        traceback.print_exc()
         print(f"[*] Warning: Could not post-process XML file: {e}")
+
+
 
 def main():
     parser = argparse.ArgumentParser(description="Generate SR6 CLI Character Sheet from JSON/XML")

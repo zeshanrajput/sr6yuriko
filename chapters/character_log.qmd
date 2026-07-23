@@ -86,12 +86,97 @@ def inc_many(*args):
         op = "+=" if amount >= 0 else "-="
         res.append(f"{name} {op} {abs(amount)}")
     return ", ".join(res)
+
+Contacts = {}
+
+def detect_region(name, type_name, region_param="AUTO"):
+    if region_param and region_param != "AUTO":
+        return region_param
+    full = (type_name + " " + name).upper()
+    if "HK" in full or "HONG KONG" in full or "HKB" in full or name in ["Mr. Fa", "Liao Fa Ren", "Fa Ren"]:
+        return "HK"
+    if "SEA " in full or "SEATTLE" in full or name in ["Brynne Taggart", "Whiskey", "Big Louie", "Duan Yuhai", "Xiong Giuyin", "Swango", "Toil", "Trubble", "Eddie Wei", "Julian Müntefering", "Ni Ni Xiaolu", "Bookie", "Trudy", "Saint James", "Jeanie Trudel", "Kingston", "Kirt Liger"]:
+        return "SEA"
+    if "NOLA " in full or "NOLA" in full or name in ["Indomitable Will", "Roanoke", "Piotr Krolik", "Le Tigre", "Dominique Augustin", "Daniel Fortune", "Renée Martin", "Fernand Anato", "Monsieur Johnson"]:
+        return "NOLA"
+    if "AMS " in full or "AMSTERDAM" in full or "DUTCH" in full or "PENOSE" in full or name in ["The Frisian", "Kiara Shaw", "Simon Andrews", "Squint", "Sigrún", "SpiiniCop", "Kaatje"]:
+        return "AMS"
+    if "KY " in full or "KENTUCKY" in full or name in ["Ree 'Dolly' Hacker", "Granny", "Dr. Laureline Dodd", "Thaddeus", "Reilly Dragman"]:
+        return "KY"
+    if "DW " in full or "DENVER" in full or name in ["Dixie L'Amin", "Ayanda 'Shieldbearer' Mahlangu", "Ebon Abirashur", "Col. Deborah Kentwell", "Polyphemous 'Paul' Pellagios"]:
+        return "DW"
+    return "GEN"
+
+def contact(name, connection=1, fp=0, loyalty=None, favors=0, type_name="Contact", region="AUTO", notes=""):
+    reg = detect_region(name, type_name, region)
+    
+    clean_type = type_name
+    for prefix in ["SEA ", "NOLA ", "AMS ", "KY ", "DW "]:
+        if clean_type.startswith(prefix):
+            clean_type = clean_type[len(prefix):]
+            break
+
+    if name not in Contacts:
+        start_loyalty = loyalty if loyalty is not None else 0
+        Contacts[name] = {
+            "name": name,
+            "connection": connection,
+            "loyalty": start_loyalty,
+            "favors": favors,
+            "fp_acc": 0,
+            "type": clean_type,
+            "raw_type": type_name,
+            "region": reg,
+            "notes": notes
+        }
+    else:
+        if connection > Contacts[name]["connection"]:
+            Contacts[name]["connection"] = connection
+        if loyalty is not None and loyalty > Contacts[name]["loyalty"]:
+            Contacts[name]["loyalty"] = loyalty
+        if clean_type and clean_type != "Contact":
+            Contacts[name]["type"] = clean_type
+        if reg != "GEN":
+            Contacts[name]["region"] = reg
+        if notes:
+            if Contacts[name]["notes"]:
+                Contacts[name]["notes"] += f" | {notes}"
+            else:
+                Contacts[name]["notes"] = notes
+
+    c = Contacts[name]
+    if fp > 0:
+        c["fp_acc"] += fp
+        if c["loyalty"] == 0 and c["fp_acc"] >= 1:
+            c["loyalty"] = 1
+            c["fp_acc"] -= 1
+        while c["fp_acc"] >= (c["loyalty"] + 1):
+            c["fp_acc"] -= (c["loyalty"] + 1)
+            c["loyalty"] += 1
+
+    if favors > 0 and c["favors"] < favors:
+        c["favors"] = favors
+    elif c["fp_acc"] > 0 and c["favors"] == 0:
+        c["favors"] = c["fp_acc"]
+
+    fp_str = f" (+{fp} FP)" if fp > 0 else ""
+    reg_badge = f"[{c['region']}] " if c['region'] != "GEN" else ""
+    return f"**{name}** ({reg_badge}{c['type']}, C:{c['connection']} L:{c['loyalty']} F:{c['favors']}{fp_str})"
 ```
+
+```
+
 
 ### Build-A-Runner
 
 * **GM**: WarDoctor /# 1077
 * **Rewards:** `{python} inc_many(('Karma', 1), ('Nuyen', 1000))`
+* **Chargen Contacts:**
+  * `{python} contact("Brynne Taggart", connection=4, loyalty=2, type_name="SEA Fixer", notes="Character Creation")`
+  * `{python} contact("Whiskey", connection=2, loyalty=4, type_name="SEA Street Doc", notes="Character Creation")`
+  * `{python} contact("Indomitable Will", connection=3, loyalty=3, type_name="NOLA River People Sysop", notes="Character Creation")`
+  * `{python} contact("Roanoke", connection=3, loyalty=3, type_name="NOLA Ecological Activist", notes="Character Creation")`
+
 
 ---
 
@@ -102,9 +187,9 @@ def inc_many(*args):
 * **Rewards:** `{python} inc('Karma', 6)`, `{python} inc('Nuyen', 9000)` (deducting the expenses of the run distributed evenly, 500 Nuyen)  
 * **Reputation:** `{python} add_rep('Vory', 2)`
 * **Contacts:**
-  * +1 FP Piotr Krolik (Vory Borjevik, Connection 4) Human Male Russian
-  * *EITHER* **+1 FP Le Tigre Male Valkyrie Model/Johnson (Connection 5)** - purchases/conspiracy info *OR* +1 FP Fernand Amato Male Cybered Ork (Connection 4) - procured Eggs Paydata
-  * *EITHER* +1 FP Simon Andrews British Punk LizardFolk Johnson (Connection 5) *OR* **+1 FP White Jackalope - Emergent Lifeform (Connection 2)**
+  * `{python} contact("Piotr Krolik", connection=4, fp=1, type_name="NOLA Vory Borjevik", notes="SMH 2083-02 EggHunt at the Jackalope Ranch")`
+  * `{python} contact("Le Tigre", connection=5, fp=1, type_name="NOLA Epoch Model", notes="SMH 2083-02 EggHunt at the Jackalope Ranch")`
+  * `{python} contact("White Jackalope", connection=2, fp=1, type_name="Emergent Lifeform", notes="SMH 2083-02 EggHunt at the Jackalope Ranch")`
 * **Heat:** No heat (bribe to Oli / Leeta)
 * **Downtime Actions (2 Minor):**  
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
@@ -120,7 +205,7 @@ def inc_many(*args):
 * **GM:** JaGator  
 * **Rewards:** `{python} inc('Karma', 3)`, `{python} inc('Nuyen', 2600)`  
 * **Reputation:** `{python} add_rep('Seattle', 1)` (selling paydata and commcode for the port storage to the homeless)  
-* **Contacts:** +1 FP Big Louie Fixer (Connection 3) Male Troll, likes Jazz, works out of Matchsticks  
+* **Contacts:** `{python} contact("Big Louie", connection=3, fp=1, type_name="SEA Fixer", notes="CMP First Taste : Top Chef - Seattle")`  
 * **Heat:** No heat  
 * **Downtime Actions (2 Minor):**  
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
@@ -133,9 +218,9 @@ def inc_many(*args):
 * **GM:** JaGator  
 * **Rewards:** `{python} inc('Karma', 8)`, `{python} inc('Nuyen', 9000)`  
 * **Contacts:**
-  * +2 FP with Dominique Augustin of Wolverine Security (Wolverine Security, Connection 4) Female Human
-  * +1 FP with Daniel Fortune (Corporate, Connection 3) Human Male
-  * +3 FP with Renée Martin (League of Laveau Community Outreach, Connection 4) Male Troll  
+  * `{python} contact("Dominique Augustin", connection=4, fp=2, type_name="NOLA Wolverine Security", notes="2083-03 Unofficial Dunkelzahn Fan Club")`
+  * `{python} contact("Daniel Fortune", connection=3, fp=1, type_name="NOLA", notes="2083-03 Unofficial Dunkelzahn Fan Club")`
+  * `{python} contact("Renée Martin", connection=4, fp=3, type_name="NOLA League of Laveau Community Outreach", notes="2083-03 Unofficial Dunkelzahn Fan Club")`  
 * **Downtime Actions (1 Major & 1 Minor):**  
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
   * *Submersion - Sprite Symbiosis:* `{python} inc_many(('Karma', -11-Submersion_Grade), ('Submersion_Grade', 1))`
@@ -150,7 +235,7 @@ def inc_many(*args):
 * **Difficulty Level:** Veteran  
 * **Rewards:** `{python} inc('Karma', 7)`, `{python} inc('Nuyen', 12000)`  
 * **Reputation:** `{python} add_rep('AMS', 1)`  
-* **Contacts:** +1 FP with The Frisian (Crime Lord of the Dutch Penose syndicate, Connection 6)  
+* **Contacts:** `{python} contact("The Frisian", connection=6, fp=1, type_name="AMS Crime Lord of the Dutch Penose syndicate", notes="CMP 2081-09 Bring me Prince Charming")`  
 * **Heat:** ±0 (Roll: 2+5, Base +2 for Excessive Violence and Murder, -5 for Bribes by Bast, Mithral, P!X, Rei, Yuriko)  
   * `{python} inc('Nuyen', -1000)`  
 * **Downtime Actions (2 Minor):**  
@@ -166,8 +251,8 @@ def inc_many(*args):
 * **Rewards:** `{python} inc('Karma', 7)`, `{python} inc('Nuyen', 15000)`  
 * **Reputation:** 0 Reputation  
 * **Contacts:**
-  * +2 FP Ree "Dolly" Hacker, Connection 4, Talismonger and Racer, Female Elf
-  * +1 FP "Granny" Lady of the Autumn Wind: Siobhan Ceidwad Hydief Gwynt Connection 6 Fae Noble  
+  * `{python} contact("Ree 'Dolly' Hacker", connection=4, fp=2, type_name="KY Talismonger and Racer", notes="CMP 2081-18 Blue Kentucky Girl")`
+  * `{python} contact("Granny", connection=6, fp=1, type_name="KY Lady of the Autumn Wind", notes="CMP 2081-18 Blue Kentucky Girl")`  
 * **Heat:** 0  
 * **Downtime Actions (2 Minor):**  
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
@@ -184,8 +269,7 @@ def inc_many(*args):
 * **Rewards:** `{python} inc('Karma', 7)`, `{python} inc('Nuyen', 9500)`  
 * **Reputation:** ±0 Reputation  
 * **Contacts:**
-  * +2 FP with Kiara Shaw (Knight Errant Company Suit, Connection 4)  
-  * *(Only Robuki)* +1 FP with The Frisian (Crime Lord, Connection 6)  
+  * `{python} contact("Kiara Shaw", connection=4, fp=2, type_name="AMS Knight Errant Company Suit", notes="CMP 2081-10 A Diamond in The Rough")`  
 * **Heat:** ±0 (Roll: 5+2, Base +1 for Excessive violence, -3 for Bribes by Frostbyte, Rei, Yuriko)  
   * `{python} inc('Nuyen', -1000)`  
 * **Downtime Actions (2 Minor):**  
@@ -203,8 +287,8 @@ def inc_many(*args):
 * **Rewards:** `{python} inc('Karma', 8)`, `{python} inc('Nuyen', 9000)`  
 * **Reputation:** `{python} add_rep('AMS', 1)`  
 * **Contacts:**
-  * +2 FP with Simon Andrews (S-K Johnson, Connection 5)  
-  * +1 FP with Squint (Smuggler, Connection 2)  
+  * `{python} contact("Simon Andrews", connection=5, fp=2, type_name="AMS S-K Johnson", notes="CMP 2081-11 Paved with good intentions")`
+  * `{python} contact("Squint", connection=2, fp=1, type_name="AMS Smuggler", notes="CMP 2081-11 Paved with good intentions")`  
 * **Heat:** 0 (Roll: 1+6, Base: 0, Bribes: 0)  
 * **Downtime Actions (2 Minor):**  
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
@@ -220,8 +304,8 @@ def inc_many(*args):
 * **Rewards:** `{python} inc('Karma', 7)` (including Veteran bonuses and distributed sales), `{python} inc('Nuyen', 15500)`  
 * **Reputation:** `{python} add_rep('Kentucky', 2)`  
 * **Contacts:**
-  * +2 FP with Dr. Laureline Dodd, Arcano-Archaeologist, Spinrad Global Connection 5  
-  * +1 FP with Mr. Thaddeus CopperHead Naga Street Samurai Connection 3  
+  * `{python} contact("Dr. Laureline Dodd", connection=5, fp=2, type_name="KY Arcano-Archeologist", notes="CMP 2081-19 The Blue Moon of Kentucky")`
+  * `{python} contact("Thaddeus", connection=3, fp=1, type_name="KY Street Samurai", notes="CMP 2081-19 The Blue Moon of Kentucky")`  
 * **Heat:** No Heat (`{python} inc('Nuyen', -1000)` bribe to James Kon)  
 * **Downtime Actions (2 Minor):**  
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
@@ -238,8 +322,8 @@ def inc_many(*args):
 * **Rewards:** `{python} inc('Karma', 7)`, `{python} inc('Nuyen', 9500)`  
 * **Reputation:** `{python} add_rep('Seattle', 1)`  
 * **Contacts:**
-  * +1 FP Duan Yuhai (criminal connection 3)  
-  * +1 FP Xiong Giuyin (CORP Wuxing connection 4)  
+  * `{python} contact("Duan Yuhai", connection=3, fp=1, type_name="SEA Minor 88s Johnson", notes="SRM 2081-17 Framed in Blood")`
+  * `{python} contact("Xiong Giuyin", connection=4, fp=1, type_name="SEA Wuxing", notes="SRM 2081-17 Framed in Blood")`  
 * **Heat:** No heat (Bribes: Poe, Yuriko)  
 * **Downtime Actions (1 Major & 1 Minor):**  
   * *Submersion - Living Network:* `{python} inc_many(('Karma', -11-Submersion_Grade), ('Submersion_Grade', 1))`  
@@ -255,7 +339,12 @@ def inc_many(*args):
 * **Team:** Rei (Snowcrash), June (Hibiki), Frostbyte (Dreamwalker), Line (OliK), Yuriko  
 * **GM:** JaGator  
 * **Rewards:** `{python} inc('Karma', 9)`, `{python} inc('Nuyen', 11500)`  
-* **Reputation:** `{python} add_rep('Kentucky', 1)`, +1 Loyalty Siobhan, +1 FP Reilly Dragman, +1 Loyalty Reilly (Connection 2, 8-year old human female), +1 Loyalty Queen Brane (Connection 12, Seelie Queen), +1 FP Dolly (Rei), +1 FP Remy (June)  
+* **Reputation:** `{python} add_rep('Kentucky', 1)`
+* **Contacts:**
+  * `{python} contact("Granny", connection=6, fp=1, type_name="KY Lady of the Autumn Wind", notes="CMP 2081-20 In the Cold Kentucky Rain")`
+  * `{python} contact("Reilly Dragman", connection=1, fp=2, type_name="KY Child Heiress", notes="CMP 2081-20 In the Cold Kentucky Rain")`
+  * `{python} contact("Queen Brane", connection=12, fp=1, type_name="Seelie Queen", notes="CMP 2081-20 In the Cold Kentucky Rain")`
+
 * **Heat:** `{python} inc('Heat', 1)` (no one paid for reductions)  
 * **Downtime Actions (2 Minor):**  
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
@@ -270,7 +359,7 @@ def inc_many(*args):
 * **GM:** Medtec28  
 * **Rewards:** `{python} inc('Karma', 4)`, `{python} inc('Nuyen', 10500)`  
 * **Reputation:** `{python} add_rep('Seattle', 1)`  
-* **Contacts:** +2 FP Kirt Liger (C3 Body Mod/Engineering Cybercatman)  
+* **Contacts:** `{python} contact("Kirt Liger", connection=3, fp=2, type_name="SEA Body Mod/Engineering Cybercatman", notes="SRM 2081-21 Grudge Match Gladiators")`  
 * **Downtime Actions (1 Major & 1 Minor):**  
   * *Submersion - Transcendent Network:* `{python} inc_many(('Karma', -11-Submersion_Grade), ('Submersion_Grade', 1))`  
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
@@ -286,7 +375,7 @@ def inc_many(*args):
 * **Rewards:** `{python} inc('Karma', 6)`, `{python} inc('Nuyen', 8500)`  
 * **Reputation:** `{python} add_rep('Amsterdam', 1)`  
 * **Heat:** 0 (Bribes: Yuriko)  
-* **Contacts:** +4 FP Sigrûn/Marikka von Harbou (Shadowrunner)  
+* **Contacts:** `{python} contact("Sigrún", connection=5, fp=4, type_name="AMS Shadowrunner", notes="CMP 2081-12 Uneasy lies the head")`  
 * **Downtime Actions (2 Minor):**  
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
   * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
@@ -301,10 +390,10 @@ def inc_many(*args):
 * **Rewards**: `{python} inc('Karma', 7)`, `{python} inc('Nuyen', 12000)` + `{python} inc('Nuyen', 1000)` for sharing media
 * **Reputation**: `{python} add_rep('Mercenary', 1)`
 * **Heat**: No Heat
-* **Contacts**
-  * +2 FP Dixie L'Amina (C4 Naga) --> L1/F1
-  * +1 FP Ayanda Shieldbearer Matanugu (C3 Captain) --> L1
-  * +2 FP Ebon Abirahur (C1 Leviathan Dragon) --> L1/F1
+* **Contacts:**
+  * `{python} contact("Dixie L'Amin", connection=4, fp=2, type_name="DW Naga", notes="CMP 2083-14 A Day at the Beach")`
+  * `{python} contact("Ayanda 'Shieldbearer' Mahlangu", connection=3, fp=1, type_name="DW 'Mystic Edge' Producer", notes="CMP 2083-14 A Day at the Beach")`
+  * `{python} contact("Ebon Abirashur", connection=1, fp=2, type_name="DW Leviathan Dragon", notes="CMP 2083-14 A Day at the Beach")`
 * **Downtime Actions (2 Minor)**:
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
   * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
@@ -327,8 +416,8 @@ def inc_many(*args):
 * **Reputation:**: `{python} add_rep('Mercenary', 2)`
 * **Heat:** `{python} inc_many(('Heat', 4), ('Heat', -3))`
 * **Contacts:**
-  * +2 FP Col. Deborah Kentwell (C5 Thunder Corps Fixer) --> L1/F1
-  * +1 FP Polyphemous "Phil" Pellagious (C1 Desert Wars Background Actor)
+  * `{python} contact("Col. Deborah Kentwell", connection=5, fp=2, type_name="DW Thunder Corps Fixer", notes="CMP 2083-16 War Never Changes")`
+  * `{python} contact("Polyphemous 'Paul' Pellagios", connection=1, fp=1, type_name="DW Background Actor", notes="CMP 2083-16 War Never Changes")`
 * **Downtime Actions (2 Minor):**
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
   * Learn Complex Form: Puppeteer `{python} inc('Karma', -5)`
@@ -343,9 +432,9 @@ def inc_many(*args):
 * **Rewards:**: `{python} inc('Karma', 8)`, `{python} inc('Nuyen', 8500)` + `{python} inc('Nuyen', 5000)` bonus for saving NOLA 
 * **Reputation:**: `{python} add_rep('NOLA', 3)`
 * **Heat:**: No Heat
-* **Contacts:**: 
-  * +1 FP Fernand Anato (NOLA Kozlowski Capo) --> L1
-  * +3 FP * L1 Monsieur Johnson (C5) --> L2/F1
+* **Contacts:**
+  * `{python} contact("Fernand Anato", connection=1, fp=1, type_name="NOLA Kozlowski Capo", notes="SRM 2083-19 The Hallow Feast")`
+  * `{python} contact("Monsieur Johnson", connection=5, fp=3, type_name="NOLA Johnson", notes="SRM 2083-19 The Hallow Feast")`
 * **Downtime Actions (1 Minor):**
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
   * *Submersion - Overclocking:* `{python} inc_many(('Karma', -11-Submersion_Grade), ('Submersion_Grade', 1))`
@@ -362,10 +451,10 @@ def inc_many(*args):
 * **Reputation:** `{python} add_rep('Seattle', 2)`
 * **Heat:** ±0 (Roll: 6+4, Base +2, -4 for Bribes by Jolthead, Poe, Xiao, Yuriko)
 * **Contacts:**
-  * +1 FP Brynne Taggart (C4 Fixer)
-  * +3 FP Swango (C3 Musician) (includes +1 FP unique to Yuriko Star)
-  * +1 FP Toil (C4 Fixer)
-  * +1 FP Trubble (C1 Bodyguard)
+  * `{python} contact("Brynne Taggart", connection=4, fp=2, type_name="SEA Fixer", notes="SRM 2081-05 This is Renton")`
+  * `{python} contact("Swango", connection=3, fp=3, type_name="SEA Rapper", notes="SRM 2081-05 This is Renton")`
+  * `{python} contact("Toil", connection=4, fp=1, type_name="SEA Fixer", notes="SRM 2081-05 This is Renton")`
+  * `{python} contact("Trubble", connection=1, fp=1, type_name="SEA Bodyguard", notes="SRM 2081-05 This is Renton")`
 * **Downtime Actions (1 Major, 1 Minor):**
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
   * Learned Complex Form - Diffusion (Firewall): `{python} inc('Karma', -5)`
@@ -383,8 +472,9 @@ def inc_many(*args):
 * **Reputation:** 0
 * **Heat:** 0 
 * **Contacts:** 
-  * +1 FP Simon Andrews (Punk Lizard, S-K Fixer) Connection 5
-  * +1 FP SpiiniCop (NB Human, Penose Spider) Connection 2 (paid `{python} inc('Nuyen', -500)` from Yuriko)
+  * `{python} contact("Simon Andrews", connection=5, fp=1, type_name="AMS S-K Johnson", notes="CMP 2083-01 NONPLUSHED")`
+  * `{python} contact("SpiiniCop", connection=2, fp=1, type_name="AMS Penose Spider", notes="CMP 2083-01 NONPLUSHED")`
+
 * **Downtime Actions (2 Minor):**
   * Working for the People: `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
   * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
@@ -400,9 +490,9 @@ def inc_many(*args):
 * **Rewards:** `{python} inc('Karma', 6)`, `{python} inc('Nuyen', 6500)`
 * **Reputation:** `{python} add_rep('Seattle', 1)`
 * **Heat:** 0
-* **Contacts:** 
-  * +1 FP Eddie Wei (Triad/Johnson, Connection 4)
-  * +1 FP Julian Müntefering (Renraku Corpkid, Connection 1)
+* **Contacts:**
+  * `{python} contact("Eddie Wei", connection=4, fp=1, type_name="SEA Triad/Johnson", notes="SRM 2081-08 Child's Play")`
+  * `{python} contact("Julian Müntefering", connection=1, fp=1, type_name="SEA Renraku Corpokid", notes="SRM 2081-08 Child's Play")`
 * **Downtime Actions (3 Minors):**
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
   * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
@@ -420,9 +510,9 @@ def inc_many(*args):
 * **Reputation:** 0
 * **Heat:** 0
 * **Contacts:**
-  * +3 FP with Ni Ni Xiaolu (Johnson/Triad, Connection 3) Chinese Female Human
-  * +1 FP with Bookie (Ancients Bookie, Connection 3) Male Elf 
-  * +1 FP with Trudy (Cutter Lieutenant, Connection 2) Female Human Mage
+  * `{python} contact("Ni Ni Xiaolu", connection=3, fp=3, type_name="SEA Johnson/Triad", notes="SRM 2081-07 Bootleg Bliss")`
+  * `{python} contact("Bookie", connection=3, fp=1, type_name="SEA Ancients Bookie", notes="SRM 2081-07 Bootleg Bliss")`
+  * `{python} contact("Trudy", connection=2, fp=1, type_name="SEA Cutter Lieutenant", notes="SRM 2081-07 Bootleg Bliss")`
 * **Downtime Actions (3 Minor):**
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
   * *Submersion - Software Emulator:* `{python} inc_many(('Karma', -11-Submersion_Grade), ('Submersion_Grade', 1))`
@@ -442,9 +532,9 @@ def inc_many(*args):
 * **Reputation:** `{python} add_rep('Seattle', 1)`
 * **Heat:** +1 (spent `{python} inc('Nuyen', -1000)` pre roll, `{python} inc('Nuyen', -2000)` post-roll to negate)
 * **Contacts:**
-  * +3 FP Saint James (Fixer, Connection 8) --> L2
-  * +1 FP Jeanie Trudel (Bartender, Renton Hole in the Wall, Connection 1)
-  * +1 FP Kingston (Shadowrunner, Connection 2)
+  * `{python} contact("Saint James", connection=8, fp=3, type_name="SEA Fixer", notes="SRM 2081-06 Cutting Strings")`
+  * `{python} contact("Jeanie Trudel", connection=1, fp=1, type_name="SEA Bartender", notes="SRM 2081-06 Cutting Strings")`
+  * `{python} contact("Kingston", connection=2, fp=1, type_name="SEA Shadowrunner", notes="SRM 2081-06 Cutting Strings")`
 * **Downtime Actions (3 Minor):**
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
   * *Register Sprites:* `{python} add_sprite('Sprite-M20a', 7, 'Modular', 'Autosofts')`
@@ -461,15 +551,35 @@ def inc_many(*args):
 * **Reputation:** `{python} add_rep('UNL', 1)`
 * **Heat:** 0
 * **Contacts:**
-  * +2 FP with Sigrûn, (House Oranje-Nassau Johnson, Connection 5) Female Ork
-  * +1 FP with Simon Andrews (S-K Johnson, Connection 5) Male Awakened Lizard Punk 
-  * +1 FP with Kiara Shaw (KE Company Suit, Connection 4) Female Dwarf
-  * +1 FP Kaatje (Young Entertainer, Connection 2) early 20s human female (Mithral and Yuriko only)
+  * `{python} contact("Sigrún", connection=5, fp=2, type_name="AMS Shadowrunner", notes="CMP 2083-04 Hog Wild")`
+  * `{python} contact("Simon Andrews", connection=5, fp=1, type_name="AMS S-K Johnson", notes="CMP 2083-04 Hog Wild")`
+  * `{python} contact("Kiara Shaw", connection=4, fp=1, type_name="AMS Knight Errant Company Suit", notes="CMP 2083-04 Hog Wild")`
+  * `{python} contact("Kaatje", connection=2, fp=1, type_name="AMS Young Entertainer", notes="CMP 2083-04 Hog Wild")`
 * **Downtime Actions (2 Minor):**
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
   * *Register Sprites:* `{python} add_sprite('Sprite-M21', 7, 'Modular', 'Shield, Death Mark')`
 * **Other**: Learned 8 programs. 
 
+---
+
+### **2026-July-21: CMP 2083-05 | Precious Cargo** `{python} start_mission('CMP 2083-05')`
+
+* **Summary:** HK Police raided an abandoned Red Dragon Triad operation at Kwai Chung Container Port. Reports indicate a human trafficking operation was broken up by a small team of Shadowrunners (including a pixie and a wolf) before police arrived. Additionally, Liao Fa Ren got top marks on her paper, which was published in the school paper and picked up by local outlets.
+* **Team:** Medtec28, Jolthead, Lord Hattington, Yuriko Star (WarDoctor)
+* **Rewards:** `{python} inc('Karma', 7)`, `{python} inc('Nuyen', 6000)`
+* **Reputation:** `{python} add_rep('Southeast Asia', 2)`
+* **Contacts:**
+  * `{python} contact("Mr. Fa", connection=4, fp=2, type_name="HKB Corporate Middle Manager", region="HK", notes="CMP 2083-05 Precious Cargo")`
+  * `{python} contact("Liao Fa Ren", connection=3, fp=3, type_name="HK Rookie Journalist", region="HK", notes="CMP 2083-05 Precious Cargo")`
+  * `{python} contact("Ni Ni Xiaolu", fp=1, notes="CMP 2083-05 Precious Cargo")`
+* **Heat:** No heat
+* **Downtime Actions (2 Minor):**
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
+  * Modified new SEA Man-At-Arms Drone
+* **Other:**
+  * Bought souvenirs for Ni Ni Xiaolu: `{python} inc('Nuyen', -500)`
+  * Learned 5 programs
+  * *Registered one sprite during downtime:* `{python} add_sprite('Sprite-M22', 7, 'Modular', 'Autosofts')`
 ---
 
 ### Historical Gear Purchases
@@ -478,7 +588,6 @@ def inc_many(*args):
 
 * Monofilament Whip `{python} inc('Nuyen', -1500)`
   * Fingertip Cyberarm Compartment Mount
-
 * Krime Gloves `{python} inc('Nuyen', -1050)`
   * Personalized Grip
 * Ares Securetech SkinShield `{python} inc('Nuyen', -3000)`
@@ -499,7 +608,6 @@ def inc_many(*args):
 #### Matrix
 
 * M-TOC II `{python} inc('Nuyen', -65000)`
-  * Satellite Link `{python} inc('Nuyen', -500)`
 * Software Library
   * Basic Programs
     * Baby Monitor `{python} inc('Nuyen', -100)`
@@ -526,17 +634,17 @@ def inc_many(*args):
 * Autosofts
   * Biotech (R9) `{python} inc('Nuyen', -4500)`
   * **Clearsight (R9)** `{python} inc_many(('Nuyen', -4500),('Karma', -1))`
-  * Close Combat (R9) `{python} inc('Nuyen', -4500)`
+  * Close Combat (R9) `{python} inc_many(('Nuyen', -4500),('Karma', -1))`
   * Engineering (1, R9) `{python} inc('Nuyen', -4500)`
-  * Evasion (R9) `{python} inc('Nuyen', -4500)`
+  * Evasion (R9) `{python} inc_many(('Nuyen', -4500),('Karma', -1))`
   * Knowledge `{python} inc('Nuyen', -1500)`
   * Language (1, R5) `{python} inc('Nuyen', -2500)`
-  * Maneuvering (1, R9) `{python} inc('Nuyen', -4500)`
+  * Maneuvering (1, R9) `{python} inc_many(('Nuyen', -4500),('Karma', -1))`
   * Navigation (R9) `{python} inc('Nuyen', -4500)`
   * Performance (R9) `{python} inc('Nuyen', -4500)`
   * **Stealth (1, R9)** `{python} inc_many(('Nuyen', -4500),('Karma', -1))`
-  * Targeting (1, R9) `{python} inc('Nuyen', -4500)`
-  * Tracking (R9) `{python} inc('Nuyen', -4500)`
+  * Targeting (1, R9) `{python} inc_many(('Nuyen', -4500),('Karma', -1))`
+  * Tracking (R9) `{python} inc_many(('Nuyen', -4500),('Karma', -1))`
 * Tactical Software
    * Artillery Barrage `{python} inc('Nuyen', -200)`
    * ECM Warrior II `{python} inc('Nuyen', -200)`
@@ -555,7 +663,6 @@ def inc_many(*args):
   * Shopsoft x6 `{python} inc('Nuyen',-900)`
   * **Coding Facility** `{python} inc_many(('Nuyen',-5000),('Karma',-1))`
   
-
 1: For autosofts that are specific, the character programs her derivative own based on the original version she bought above. This process takes 8 hours for knowledge and language autosofts, and 12 hours for all other autosofts. The cost is 1 karma for each of the derivative autosofts.
 
 Software with karma costs have been learned via the **Software Emulator** echo.
@@ -571,6 +678,7 @@ Software with karma costs have been learned via the **Software Emulator** echo.
   * Secondary Propulsion (Rotor)
   * Increased Sensors 3
   * Retractible Skates x2
+  * Satellite Link
 * Shiawase Man-At-Arms `{python} inc('Nuyen', -4500*.9)`
   * Weapon Mount - Heavy
   * Pop-Out Concealment - Large `{python} inc('Nuyen', -4500/2)`
@@ -586,6 +694,13 @@ Software with karma costs have been learned via the **Software Emulator** echo.
   * Secondary Propulsion (Rotor): `{python} inc('Nuyen', -50000/2)`  
   * Increased Sensors 3 `{python} inc('Nuyen', -15000/2)`
   * Retractible Skates x2 `{python} inc('Nuyen',-500/2)`
+  * Satellite Link `{python} inc('Nuyen', -500/2)`
+* Shiawase Bi-Drone Butler `{python} inc('Nuyen', -3000*.9)`
+  * Retrans Unit `{python} inc('Nuyen', -7500/2)`
+  * Integrated Matrix Device `{python} inc('Nuyen', -800/2)`
+  * Realistic Features 1
+  * Retractible Skates x2 `{python} inc('Nuyen',-500/2)`
+  * Satellite Link `{python} inc('Nuyen', -500/2)`
 
 Drones mods include 50% discount on mods Yuriko installed herself (DC p. 120).
 
@@ -626,6 +741,7 @@ There is no cost for the Butler drone because it's less than the cost of the Man
   * **Kentucky:** +`{python} Reputation.get('Kentucky', 0)`
   * **Mercenary:** +`{python} Reputation.get('Mercenary', 0)`
   * **Amsterdam / UNL:** +`{python} Reputation.get('Amsterdam', 0) + Reputation.get('UNL', 0)`
+  * **Southeast Asia (SEA/HK):** +`{python} Reputation.get('Southeast Asia', 0)`
 
 ---
 
@@ -647,3 +763,32 @@ for s in active:
         m_name = s.get('registered_mission_name', f"Mission {s['registered_mission']}")
         print(f"| {s['name']} | R{s['level']} {s['type']} ({s['details']}) | {m_name} | {elapsed} / 3 | {status_str} |")
 ```
+
+```{python}
+#| echo: false
+#| include: false
+import yaml, os
+if Contacts:
+    yaml_path = os.path.abspath("yuriko_master.yaml")
+    if os.path.exists(yaml_path):
+        with open(yaml_path, "r", encoding="utf-8") as f:
+            mdata = yaml.safe_load(f) or {}
+        clist = []
+        for name, c in Contacts.items():
+            clist.append({
+                "name": name,
+                "connection": c["connection"],
+                "loyalty": c["loyalty"],
+                "favors": c["favors"],
+                "type": c["type"],
+                "archetype": c["type"],
+                "region": c.get("region", "GEN"),
+                "description": c["notes"]
+            })
+
+        mdata["contacts"] = clist
+        with open(yaml_path, "w", encoding="utf-8") as f:
+            yaml.dump(mdata, f, sort_keys=False, allow_unicode=True, indent=2)
+
+```
+

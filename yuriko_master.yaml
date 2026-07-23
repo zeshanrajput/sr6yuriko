@@ -1,14 +1,10 @@
-# Shadowrun 6th Edition Master Character Sheet: Yuriko Star
-# Single Source of Truth (SSOT)
-
 identity:
-  handle: "Yuriko Star"
-  real_name: "r31k0 Takahashi"
-  metatype: "AI-Pilot AI"
-  stream: "Technoshamans"
-  gender: "DIVERSE"
-  age: "~ 10"
-
+  handle: Yuriko Star
+  real_name: r31k0 Takahashi
+  metatype: AI-Pilot AI
+  stream: Technoshamans
+  gender: DIVERSE
+  age: ~ 10
 attributes:
   body: 5
   agility: 3
@@ -19,279 +15,646 @@ attributes:
   intuition: 2
   charisma: 4
   edge: 4
-
   resonance: 7
-
 living_persona:
   asdf_bonuses:
     firewall: 2
     sleaze: 1
     data_processing: 1
     attack: 3
-
 qualities:
   positive:
-    - name: "Natural Hacker"
-      ref: "natural_hacker"
-    - name: "Stream: Technoshamans"
-      ref: "technoshaman"
-    - name: "Designer"
-      ref: "designer"
-    - name: "Sensor Upgrade"
-      ref: "sensor_upgrade"
-    - name: "Pilot Origins"
-      ref: "pilot_origins"
+  - name: Natural Hacker
+    ref: natural_hacker
+  - name: 'Stream: Technoshamans'
+    ref: technoshaman
+  - name: Designer
+    ref: designer
+  - name: Sensor Upgrade
+    ref: sensor_upgrade
+  - name: Pilot Origins
+    ref: pilot_origins
   negative:
-    - name: "Buddy System"
-      ref: "buddy_system"
-    - name: "Sprite Bane"
-      ref: "sprite_bane"
-      choice: "Primal Sprite"
-    - name: "Hooder"
-      ref: "hooder"
-      rating: 2
-
+  - name: Buddy System
+    ref: buddy_system
+  - name: Sprite Bane
+    ref: sprite_bane
+    choice: Primal Sprite
+  - name: Hooder
+    ref: hooder
+    rating: 2
 skills:
-  - name: "Tasking"
-    id: "tasking"
-    attribute: "Resonance"
-    rating: 6
-    specialization: "Registering"
-  - name: "Cracking"
-    id: "cracking"
-    attribute: "Logic"
-    rating: 5
-    specialization: "Hacking"
-  - name: "Electronics"
-    id: "electronics"
-    attribute: "Logic"
-    rating: 5
-    specialization: "Software"
-  - name: "Influence"
-    id: "influence"
-    attribute: "Charisma"
-    rating: 1
-  - name: "Con"
-    id: "con"
-    attribute: "Charisma"
-    rating: 1
-  - name: "Native Language"
-    id: "language"
-    attribute: "Logic"
-    rating: 4
-
+- name: Tasking
+  id: tasking
+  attribute: Resonance
+  rating: 6
+  specialization: Registering
+- name: Cracking
+  id: cracking
+  attribute: Logic
+  rating: 5
+  specialization: Hacking
+- name: Electronics
+  id: electronics
+  attribute: Logic
+  rating: 5
+  specialization: Software
+- name: Influence
+  id: influence
+  attribute: Charisma
+  rating: 1
+- name: Con
+  id: con
+  attribute: Charisma
+  rating: 1
+- name: Native Language
+  id: language
+  attribute: Logic
+  rating: 4
 complex_forms:
-  - name: "Cleaner"
-    ref: "cleaner"
-    fading: 2
-    duration: "Permanent"
-  - name: "Diffusion"
-    ref: "diffusion"
-    target: "Firewall"
-    fading: 4
-    duration: "Sustained"
-  - name: "Technoregeneration"
-    ref: "technoregeneration"
-    fading: -1
-    duration: "Permanent"
-  - name: "Puppeteer"
-    ref: "puppeteer"
-    fading: 5
-    duration: "Sustained"
-
+- name: Cleaner
+  ref: cleaner
+  fading: 2
+  duration: Permanent
+- name: Diffusion
+  ref: diffusion
+  target: Firewall
+  fading: 4
+  duration: Sustained
+- name: Technoregeneration
+  ref: technoregeneration
+  fading: -1
+  duration: Permanent
+- name: Puppeteer
+  ref: puppeteer
+  fading: 5
+  duration: Sustained
 meta_echoes:
-  - name: "Hybrid Sprites"
-    ref: "hybrid_sprites"
-  - name: "New Sprite Type"
-    ref: "new_sprite_type"
-  - name: "Sprite Conduit"
-    ref: "sprite_conduit"
-  - name: "Sprite Symbiosis"
-    ref: "sprite_symbiosis"
-  - name: "Living Network"
-    ref: "living_network"
-  - name: "Transcendent Network"
-    ref: "transcendent_network"
-  - name: "Overclocking"
-    ref: "overclocking"
-  - name: "Software Emulator"
-    ref: "software_emulator"
-
+- name: Hybrid Sprites
+  ref: hybrid_sprites
+- name: New Sprite Type
+  ref: new_sprite_type
+- name: Sprite Conduit
+  ref: sprite_conduit
+- name: Sprite Symbiosis
+  ref: sprite_symbiosis
+- name: Living Network
+  ref: living_network
+- name: Transcendent Network
+  ref: transcendent_network
+- name: Overclocking
+  ref: overclocking
+- name: Software Emulator
+  ref: software_emulator
 drones:
-  - name: "Nissan Samurai"
-    ref: "nissansamurai"
-    body: 6
-    armor: 6
-    pilot: 3
-    sensor: 2
-    speed: 30
-    handling_on: 3
-    handling_off: 4
-    accel_on: 10
-    accel_off: 10
-    speed_interval_on: 10
-    page: "6WC 137"
-
-  - name: "MCT Gnat"
-    ref: "mctgnat"
-    body: 0
-    armor: 0
-    pilot: 2
-    sensor: 1
-    speed: 30
-    handling_on: 3
-    handling_off: 3
-    accel_on: 4
-    accel_off: 4
-    speed_interval_on: 10
-    page: "CRB 299"
-
-  - name: "FB Sky Commander"
-    ref: "boingskycommander"
-    body: 4
-    armor: 2
-    pilot: 4
-    sensor: 5
-    speed: 190
-    handling_on: 4
-    handling_off: 4
-    accel_on: 20
-    accel_off: 20
-    speed_interval_on: 30
-    page: "DC 116"
-
-  - name: "Shiawase Butler"
-    ref: "shiawasebdbutler"
-    body: 4
-    armor: 0
-    pilot: 2
-    sensor: 3
-    speed: 8
-    handling_on: 4
-    handling_off: 5
-    accel_on: 5
-    accel_off: 5
-    speed_interval_on: 5
-    page: "DC 116"
-    modifications:
-      - "Increased Structural Integrity 2"
-      - "Secondary Propulsion (Rotor)"
-      - "Increased Sensors 3"
-      - "Retractable Skates"
-
-  - name: "Shiawase Man-at-Arms"
-    ref: "shiawasebdmanatarms"
-    body: 10
-    armor: 8
-    pilot: 2
-    sensor: 2
-    speed: 10
-    handling_on: 3
-    handling_off: 3
-    accel_on: 5
-    accel_off: 5
-    speed_interval_on: 5
-    page: "DC 116"
-    modifications:
-      - "Weapon Mount (Heavy)"
-      - "Pop-Out Concealment (Large)"
-      - "Armor Increase 5"
-      - "Secondary Propulsion (Rotor)"
-      - "Increased Sensors 3"
-      - "Retractable Skates"
-
-
+- name: Nissan Samurai
+  ref: nissansamurai
+  body: 6
+  armor: 6
+  pilot: 3
+  sensor: 2
+  speed: 30
+  handling_on: 3
+  handling_off: 4
+  accel_on: 10
+  accel_off: 10
+  speed_interval_on: 10
+  page: 6WC 137
+- name: MCT Gnat
+  ref: mctgnat
+  body: 0
+  armor: 0
+  pilot: 2
+  sensor: 1
+  speed: 30
+  handling_on: 3
+  handling_off: 3
+  accel_on: 4
+  accel_off: 4
+  speed_interval_on: 10
+  page: CRB 299
+- name: FB Sky Commander
+  ref: boingskycommander
+  body: 4
+  armor: 2
+  pilot: 4
+  sensor: 5
+  speed: 190
+  handling_on: 4
+  handling_off: 4
+  accel_on: 20
+  accel_off: 20
+  speed_interval_on: 30
+  page: DC 116
+- name: Shiawase Butler
+  ref: shiawasebdbutler
+  body: 4
+  armor: 0
+  pilot: 2
+  sensor: 3
+  speed: 8
+  handling_on: 4
+  handling_off: 5
+  accel_on: 5
+  accel_off: 5
+  speed_interval_on: 5
+  page: DC 116
+  modifications:
+  - Increased Structural Integrity 2
+  - Secondary Propulsion (Rotor)
+  - Increased Sensors 3
+  - Retractable Skates
+- name: Shiawase Man-at-Arms
+  ref: shiawasebdmanatarms
+  body: 10
+  armor: 8
+  pilot: 2
+  sensor: 2
+  speed: 10
+  handling_on: 3
+  handling_off: 3
+  accel_on: 5
+  accel_off: 5
+  speed_interval_on: 5
+  page: DC 116
+  modifications:
+  - Weapon Mount (Heavy)
+  - Pop-Out Concealment (Large)
+  - Armor Increase 5
+  - Secondary Propulsion (Rotor)
+  - Increased Sensors 3
+  - Retractable Skates
 armors:
-  - name: "Ares Securetech SkinShield"
-    rating: 2
-    primary: true
-  - name: "SecureTech Invisi-Shield Armor"
-    rating: 2
-    primary: false
-
+- name: Ares Securetech SkinShield
+  rating: 2
+  primary: true
+- name: SecureTech Invisi-Shield Armor
+  rating: 2
+  primary: false
 weapons:
   ranged:
-    - name: "Ares Predator VI"
-      damage: "3P"
-      attack_rating: "11/11/8/-/-"
-      mode: "SA,BF"
-      ammo: "15(c)"
-      smartlink: true
-      personalized_grip: true
-      accessories:
-        - "Silencer"
-        - "Smartlink"
-        - "Personalized Grip"
-    - name: "Crimson Wasp"
-      damage: "5P"
-      attack_rating: "16/14/11/6/-"
-      mode: "SA"
-      ammo: "15(c)"
-      smartlink: true
-      is_vehicle_mounted: true
-      accessories:
-        - "Smartlink"
-        - "Drone Mount (+2 AR)"
-    - name: "Red Fox"
-      damage: "6P"
-      attack_rating: "14/16/16/9/-"
-      mode: "SA,BF"
-      ammo: "30(c)"
-      smartlink: true
-      is_vehicle_mounted: true
-      link_fired_count: 2
-      accessories:
-        - "Smartlink"
-        - "Drone Mount (+2 AR)"
-        - "Link-Fired (2x Wasps)"
-
+  - name: Ares Predator VI
+    damage: 3P
+    attack_rating: 11/11/8/-/-
+    mode: SA,BF
+    ammo: 15(c)
+    smartlink: true
+    personalized_grip: true
+    accessories:
+    - Silencer
+    - Smartlink
+    - Personalized Grip
+  - name: Crimson Wasp
+    damage: 5P
+    attack_rating: 16/14/11/6/-
+    mode: SA
+    ammo: 15(c)
+    smartlink: true
+    is_vehicle_mounted: true
+    accessories:
+    - Smartlink
+    - Drone Mount (+2 AR)
+  - name: Red Fox
+    damage: 6P
+    attack_rating: 14/16/16/9/-
+    mode: SA,BF
+    ammo: 30(c)
+    smartlink: true
+    is_vehicle_mounted: true
+    link_fired_count: 2
+    accessories:
+    - Smartlink
+    - Drone Mount (+2 AR)
+    - Link-Fired (2x Wasps)
+  - name: Tesla Coil
+    damage: 5S(e)
+    attack_rating: 8/10*/-/-/-
+    mode: SS
+    max_range: 20m
+    area_effect: Cone (Flamethrower rules)
+    is_vehicle_mounted: true
+    accessories:
+    - MAA Cyberarm Mount (+2 AR)
   close_combat:
-    - name: "Monofilament Whip"
-      damage: "6P"
-      attack_rating: "14/-/-/-/-"
-      is_vehicle_mounted: true
-      accessories:
-        - "Fingertip Cyberarm Mount (+2 AR)"
-
-    - name: "Dagger of the Sacred Rose (+1 Weapon Focus)"
-      damage: "2P"
-      attack_rating: "9/1/-/-/-"
-    - name: "Krime Gloves (Stun)"
-      damage: "4S(e)"
-      attack_rating: "5/-/-/-/-"
-      personalized_grip: true
-      accessories:
-        - "Personalized Grip"
-    - name: "Krime Gloves (Phys)"
-      damage: "3P"
-      attack_rating: "6/-/-/-/-"
-      personalized_grip: true
-      accessories:
-        - "Personalized Grip"
-
-
-
+  - name: Monofilament Whip
+    damage: 6P
+    attack_rating: 14/-/-/-/-
+    wireless_on: true
+    is_vehicle_mounted: true
+    accessories:
+    - Fingertip Cyberarm Mount (+2 AR)
+    - Wireless ON (+2 AR)
+  - name: Dagger of the Sacred Rose (+1 Weapon Focus)
+    damage: 2P
+    attack_rating: 9/1/-/-/-
+  - name: Krime Gloves (Stun)
+    damage: 4S(e)
+    attack_rating: 5/-/-/-/-
+    personalized_grip: true
+    accessories:
+    - Personalized Grip
+  - name: Krime Gloves (Phys)
+    damage: 3P
+    attack_rating: 6/-/-/-/-
+    personalized_grip: true
+    accessories:
+    - Personalized Grip
 matrix_devices:
   commlinks:
-    - name: "Hermes Ikon"
-      device_rating: 5
-      data_processing: 5
-      firewall: 4
-
+  - name: Hermes Ikon
+    device_rating: 5
+    data_processing: 5
+    firewall: 4
 sins:
-  - name: "Yuriko Star"
-    rating: 2
-
+- name: Yuriko Star
+  rating: 2
 licenses:
-  - name: "Drone License"
-    sin: "Yuriko Star"
-  - name: "Firearms License"
-    sin: "Yuriko Star"
-
+- name: Drone License
+  sin: Yuriko Star
+- name: Firearms License
+  sin: Yuriko Star
 lifestyles:
-  - name: "Low Lifestyle"
-    comfort: "low"
-    entertainment: "low"
-    necessities: "low"
-    neighborhood: "low"
-    security: "low"
+- name: Low Lifestyle
+  comfort: low
+  entertainment: low
+  necessities: low
+  neighborhood: low
+  security: low
+contacts:
+- name: Brynne Taggart
+  connection: 4
+  loyalty: 2
+  favors: 2
+  type: Fixer
+  archetype: Fixer
+  region: SEA
+  description: Character Creation | SRM 2081-05 This is Renton
+- name: Whiskey
+  connection: 2
+  loyalty: 4
+  favors: 0
+  type: Street Doc
+  archetype: Street Doc
+  region: SEA
+  description: Character Creation
+- name: Indomitable Will
+  connection: 3
+  loyalty: 3
+  favors: 0
+  type: River People Sysop
+  archetype: River People Sysop
+  region: NOLA
+  description: Character Creation
+- name: Roanoke
+  connection: 3
+  loyalty: 3
+  favors: 0
+  type: Ecological Activist
+  archetype: Ecological Activist
+  region: NOLA
+  description: Character Creation
+- name: Piotr Krolik
+  connection: 4
+  loyalty: 1
+  favors: 0
+  type: Vory Borjevik
+  archetype: Vory Borjevik
+  region: NOLA
+  description: SMH 2083-02 EggHunt at the Jackalope Ranch
+- name: Le Tigre
+  connection: 5
+  loyalty: 1
+  favors: 0
+  type: Epoch Model
+  archetype: Epoch Model
+  region: NOLA
+  description: SMH 2083-02 EggHunt at the Jackalope Ranch
+- name: White Jackalope
+  connection: 2
+  loyalty: 1
+  favors: 0
+  type: Emergent Lifeform
+  archetype: Emergent Lifeform
+  region: GEN
+  description: SMH 2083-02 EggHunt at the Jackalope Ranch
+- name: Big Louie
+  connection: 3
+  loyalty: 1
+  favors: 0
+  type: Fixer
+  archetype: Fixer
+  region: SEA
+  description: 'CMP First Taste : Top Chef - Seattle'
+- name: Dominique Augustin
+  connection: 4
+  loyalty: 1
+  favors: 1
+  type: Wolverine Security
+  archetype: Wolverine Security
+  region: NOLA
+  description: 2083-03 Unofficial Dunkelzahn Fan Club
+- name: Daniel Fortune
+  connection: 3
+  loyalty: 1
+  favors: 0
+  type: NOLA
+  archetype: NOLA
+  region: NOLA
+  description: 2083-03 Unofficial Dunkelzahn Fan Club
+- name: Renée Martin
+  connection: 4
+  loyalty: 2
+  favors: 0
+  type: League of Laveau Community Outreach
+  archetype: League of Laveau Community Outreach
+  region: NOLA
+  description: 2083-03 Unofficial Dunkelzahn Fan Club
+- name: The Frisian
+  connection: 6
+  loyalty: 1
+  favors: 0
+  type: Crime Lord of the Dutch Penose syndicate
+  archetype: Crime Lord of the Dutch Penose syndicate
+  region: AMS
+  description: CMP 2081-09 Bring me Prince Charming
+- name: Ree 'Dolly' Hacker
+  connection: 4
+  loyalty: 1
+  favors: 1
+  type: Talismonger and Racer
+  archetype: Talismonger and Racer
+  region: KY
+  description: CMP 2081-18 Blue Kentucky Girl
+- name: Granny
+  connection: 6
+  loyalty: 1
+  favors: 1
+  type: Lady of the Autumn Wind
+  archetype: Lady of the Autumn Wind
+  region: KY
+  description: CMP 2081-18 Blue Kentucky Girl | CMP 2081-20 In the Cold Kentucky Rain
+- name: Kiara Shaw
+  connection: 4
+  loyalty: 2
+  favors: 1
+  type: Knight Errant Company Suit
+  archetype: Knight Errant Company Suit
+  region: AMS
+  description: CMP 2081-10 A Diamond in The Rough | CMP 2083-04 Hog Wild
+- name: Simon Andrews
+  connection: 5
+  loyalty: 2
+  favors: 1
+  type: S-K Johnson
+  archetype: S-K Johnson
+  region: AMS
+  description: CMP 2081-11 Paved with good intentions | CMP 2083-01 NONPLUSHED | CMP
+    2083-04 Hog Wild
+- name: Squint
+  connection: 2
+  loyalty: 1
+  favors: 0
+  type: Smuggler
+  archetype: Smuggler
+  region: AMS
+  description: CMP 2081-11 Paved with good intentions
+- name: Dr. Laureline Dodd
+  connection: 5
+  loyalty: 1
+  favors: 1
+  type: Arcano-Archeologist
+  archetype: Arcano-Archeologist
+  region: KY
+  description: CMP 2081-19 The Blue Moon of Kentucky
+- name: Thaddeus
+  connection: 3
+  loyalty: 1
+  favors: 0
+  type: Street Samurai
+  archetype: Street Samurai
+  region: KY
+  description: CMP 2081-19 The Blue Moon of Kentucky
+- name: Duan Yuhai
+  connection: 3
+  loyalty: 1
+  favors: 0
+  type: Minor 88s Johnson
+  archetype: Minor 88s Johnson
+  region: SEA
+  description: SRM 2081-17 Framed in Blood
+- name: Xiong Giuyin
+  connection: 4
+  loyalty: 1
+  favors: 0
+  type: Wuxing
+  archetype: Wuxing
+  region: SEA
+  description: SRM 2081-17 Framed in Blood
+- name: Reilly Dragman
+  connection: 1
+  loyalty: 1
+  favors: 1
+  type: Child Heiress
+  archetype: Child Heiress
+  region: KY
+  description: CMP 2081-20 In the Cold Kentucky Rain
+- name: Queen Brane
+  connection: 12
+  loyalty: 1
+  favors: 0
+  type: Seelie Queen
+  archetype: Seelie Queen
+  region: GEN
+  description: CMP 2081-20 In the Cold Kentucky Rain
+- name: Kirt Liger
+  connection: 3
+  loyalty: 1
+  favors: 1
+  type: Body Mod/Engineering Cybercatman
+  archetype: Body Mod/Engineering Cybercatman
+  region: SEA
+  description: SRM 2081-21 Grudge Match Gladiators
+- name: Sigrún
+  connection: 5
+  loyalty: 3
+  favors: 1
+  type: Shadowrunner
+  archetype: Shadowrunner
+  region: AMS
+  description: CMP 2081-12 Uneasy lies the head | CMP 2083-04 Hog Wild
+- name: Dixie L'Amin
+  connection: 4
+  loyalty: 1
+  favors: 1
+  type: Naga
+  archetype: Naga
+  region: DW
+  description: CMP 2083-14 A Day at the Beach
+- name: Ayanda 'Shieldbearer' Mahlangu
+  connection: 3
+  loyalty: 1
+  favors: 0
+  type: '''Mystic Edge'' Producer'
+  archetype: '''Mystic Edge'' Producer'
+  region: DW
+  description: CMP 2083-14 A Day at the Beach
+- name: Ebon Abirashur
+  connection: 1
+  loyalty: 1
+  favors: 1
+  type: Leviathan Dragon
+  archetype: Leviathan Dragon
+  region: DW
+  description: CMP 2083-14 A Day at the Beach
+- name: Col. Deborah Kentwell
+  connection: 5
+  loyalty: 1
+  favors: 1
+  type: Thunder Corps Fixer
+  archetype: Thunder Corps Fixer
+  region: DW
+  description: CMP 2083-16 War Never Changes
+- name: Polyphemous 'Paul' Pellagios
+  connection: 1
+  loyalty: 1
+  favors: 0
+  type: Background Actor
+  archetype: Background Actor
+  region: DW
+  description: CMP 2083-16 War Never Changes
+- name: Fernand Anato
+  connection: 1
+  loyalty: 1
+  favors: 0
+  type: Kozlowski Capo
+  archetype: Kozlowski Capo
+  region: NOLA
+  description: SRM 2083-19 The Hallow Feast
+- name: Monsieur Johnson
+  connection: 5
+  loyalty: 2
+  favors: 0
+  type: Johnson
+  archetype: Johnson
+  region: NOLA
+  description: SRM 2083-19 The Hallow Feast
+- name: Swango
+  connection: 3
+  loyalty: 2
+  favors: 0
+  type: Rapper
+  archetype: Rapper
+  region: SEA
+  description: SRM 2081-05 This is Renton
+- name: Toil
+  connection: 4
+  loyalty: 1
+  favors: 0
+  type: Fixer
+  archetype: Fixer
+  region: SEA
+  description: SRM 2081-05 This is Renton
+- name: Trubble
+  connection: 1
+  loyalty: 1
+  favors: 0
+  type: Bodyguard
+  archetype: Bodyguard
+  region: SEA
+  description: SRM 2081-05 This is Renton
+- name: SpiiniCop
+  connection: 2
+  loyalty: 1
+  favors: 0
+  type: Penose Spider
+  archetype: Penose Spider
+  region: AMS
+  description: CMP 2083-01 NONPLUSHED
+- name: Eddie Wei
+  connection: 4
+  loyalty: 1
+  favors: 0
+  type: Triad/Johnson
+  archetype: Triad/Johnson
+  region: SEA
+  description: SRM 2081-08 Child's Play
+- name: Julian Müntefering
+  connection: 1
+  loyalty: 1
+  favors: 0
+  type: Renraku Corpokid
+  archetype: Renraku Corpokid
+  region: SEA
+  description: SRM 2081-08 Child's Play
+- name: Ni Ni Xiaolu
+  connection: 3
+  loyalty: 2
+  favors: 1
+  type: Johnson/Triad
+  archetype: Johnson/Triad
+  region: SEA
+  description: SRM 2081-07 Bootleg Bliss | CMP 2083-05 Precious Cargo
+- name: Bookie
+  connection: 3
+  loyalty: 1
+  favors: 0
+  type: Ancients Bookie
+  archetype: Ancients Bookie
+  region: SEA
+  description: SRM 2081-07 Bootleg Bliss
+- name: Trudy
+  connection: 2
+  loyalty: 1
+  favors: 0
+  type: Cutter Lieutenant
+  archetype: Cutter Lieutenant
+  region: SEA
+  description: SRM 2081-07 Bootleg Bliss
+- name: Saint James
+  connection: 8
+  loyalty: 2
+  favors: 0
+  type: Fixer
+  archetype: Fixer
+  region: SEA
+  description: SRM 2081-06 Cutting Strings
+- name: Jeanie Trudel
+  connection: 1
+  loyalty: 1
+  favors: 0
+  type: Bartender
+  archetype: Bartender
+  region: SEA
+  description: SRM 2081-06 Cutting Strings
+- name: Kingston
+  connection: 2
+  loyalty: 1
+  favors: 0
+  type: Shadowrunner
+  archetype: Shadowrunner
+  region: SEA
+  description: SRM 2081-06 Cutting Strings
+- name: Kaatje
+  connection: 2
+  loyalty: 1
+  favors: 0
+  type: Young Entertainer
+  archetype: Young Entertainer
+  region: AMS
+  description: CMP 2083-04 Hog Wild
+- name: Mr. Fa
+  connection: 4
+  loyalty: 1
+  favors: 1
+  type: HKB Corporate Middle Manager
+  archetype: HKB Corporate Middle Manager
+  region: HK
+  description: CMP 2083-05 Precious Cargo
+- name: Liao Fa Ren
+  connection: 3
+  loyalty: 2
+  favors: 0
+  type: HK Rookie Journalist
+  archetype: HK Rookie Journalist
+  region: HK
+  description: CMP 2083-05 Precious Cargo

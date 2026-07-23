@@ -44,6 +44,12 @@ book:
         - chapters/17 Sheets.md
         - chapters/18 The Geometry of a Sieve.md
         - chapters/19 Legacy Code.md
+        - chapters/20 The Price of Silk.md
+    - part: "Reference & Specifications"
+      chapters:
+        - reference/visual_anchors.md
+        - reference/river_people.md
+        - reference/narrative_standards.md
 
 format:
   html:

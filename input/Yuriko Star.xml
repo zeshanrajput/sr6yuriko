@@ -987,5 +987,14 @@ SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
       <reward date="2026-07-15T14:04:25.898-04:00" exp="-8">
          <title>CMP 2083-04: Learning Programs</title>
       </reward>
+      <reward date="2026-07-21T00:00:00.000-04:00" exp="7" money="6000">
+         <title>CMP 2083-05 | Precious Cargo</title>
+         <modifications>
+            <valmod ref="REPUTATION" set="AUGMENTED" type="ATTRIBUTE" value="2" when="ALLCREATE"/>
+         </modifications>
+      </reward>
+      <reward date="2026-07-21T00:00:00.000-04:00" exp="1" money="-2500">
+         <title>CMP 2083-05: Working for the People, Souvenirs</title>
+      </reward>
    </rewards>
 </sr6char>

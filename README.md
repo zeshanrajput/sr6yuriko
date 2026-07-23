@@ -18,7 +18,7 @@ The project is compiled into a polished, responsive book using **Quarto** and ho
 - `input/`: Pre-processed raw character exports (`Yuriko Star.xml`, `Yuriko Star.json` from Genesis/Commlink).
 - `output/`: Post-processed calculated artifacts (`character_sheet.txt`, `Yuriko Star.json`, `Yuriko Star.xml`) generated with true Karma, Nuyen, and career ledger data.
 - `rules_vault/`: Rules database containing text rules used by the parsing script.
-- `reference/`: Miscellaneous project reference docs, including [narrative_standards.md](file:///c:/GitHub/sr6yuriko/reference/narrative_standards.md) (the two-stage review framework and digital-native style conventions).
+- `reference/`: Miscellaneous project reference docs, including [visual_anchors.md](reference/visual_anchors.md) (master visual design anchors, key image links, and prompt templates), [narrative_standards.md](reference/narrative_standards.md) (review framework and digital-native conventions), and [river_people.md](reference/river_people.md) (faction dossier).
 
 ---
 

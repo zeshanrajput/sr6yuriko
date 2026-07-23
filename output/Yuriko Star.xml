@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<sr6char career="true" gender="DIVERSE" karmaI="162" meta="pilot-ai" nuyen="4550" karmaF="0">
+<sr6char career="true" gender="DIVERSE" karmaI="170" meta="pilot-ai" nuyen="1450" karmaF="3">
    <lifestyles>
       <lifestyle comfort="low" entert="low" lang="en" necess="low" neigh="low" ref="low" security="low" space="low" value="1" />
    </lifestyles>
@@ -41,159 +41,139 @@
       <sin name="Yuriko Star" quality="ROUGH_MATCH" uniqueid="59d9bf7c-436d-4fe6-9989-7a08504ec9e2" />
    </sins>
    <licenses>
-      <licenses name="Drone" rating="ROUGH_MATCH" sin="59d9bf7c-436d-4fe6-9989-7a08504ec9e2" uniqueid="2f9587eb-fc6f-4ae9-996c-fc40e5439429" />
-      <licenses name="Firearms" rating="ROUGH_MATCH" sin="59d9bf7c-436d-4fe6-9989-7a08504ec9e2" uniqueid="f55c56eb-36c7-4257-8072-4c861db8b5f7" />
+      <licenses name="Drone" rating="2" sin="59d9bf7c-436d-4fe6-9989-7a08504ec9e2" uniqueid="2f9587eb-fc6f-4ae9-996c-fc40e5439429" />
+      <licenses name="Firearms" rating="2" sin="59d9bf7c-436d-4fe6-9989-7a08504ec9e2" uniqueid="f55c56eb-36c7-4257-8072-4c861db8b5f7" />
    </licenses>
    <contacts>
-      <contact id="5b130c0a-b58c-43b8-8d5e-ec23e4deedbe" loy="2" name="Brynne Taggart" rat="4" type="CRIMINAL" typename="SEA Fixer">
-         <description>Character creation
-2081-05: +1 FP, +1 (Buying Favors)</description>
+      <contact id="5b130c0a-b58c-43b8-8d5e-ec23e4deedbe" loy="2" name="Brynne Taggart" rat="4" type="Fixer" typename="Fixer" favors="2">
+         <description>Character Creation | SRM 2081-05 This is Renton</description>
       </contact>
-      <contact id="756c7b18-3351-484f-806f-e4fc413dd4f6" loy="4" name="Whiskey" rat="2" type="MEDICAL" typename="SEA Street Doc">
+      <contact id="756c7b18-3351-484f-806f-e4fc413dd4f6" loy="4" name="Whiskey" rat="2" type="Street Doc" typename="Street Doc" favors="0">
          <description>Character Creation</description>
       </contact>
-      <contact id="33e9cde2-38fa-4624-96ab-79d0d3d153b6" loy="3" name="Indomitable Will" rat="3" type="CORPORATE" typename="NOLA River People Sysop">
-         <description>Character creation</description>
+      <contact id="33e9cde2-38fa-4624-96ab-79d0d3d153b6" loy="3" name="Indomitable Will" rat="3" type="River People Sysop" typename="River People Sysop" favors="0">
+         <description>Character Creation</description>
       </contact>
-      <contact id="bac29d55-ab5a-49d5-8c3d-017aadfb34d9" loy="3" name="Roanoke" rat="3" type="CRIMINAL" typename="NOLA Ecological Activist">
-         <description>Character creation</description>
+      <contact id="bac29d55-ab5a-49d5-8c3d-017aadfb34d9" loy="3" name="Roanoke" rat="3" type="Ecological Activist" typename="Ecological Activist" favors="0">
+         <description>Character Creation</description>
       </contact>
-      <contact id="af9ac2b6-3596-4dee-a6cc-4da6fa2a1931" loy="1" name="Piotr Krolik" rat="4" type="CRIMINAL" typename="NOLA Vory Borjevik">
-         <description>SMH 2083-02 EggHunt at the Jackalope Ranch: +1 FP -- L1</description>
+      <contact id="af9ac2b6-3596-4dee-a6cc-4da6fa2a1931" loy="1" name="Piotr Krolik" rat="4" type="Vory Borjevik" typename="Vory Borjevik" favors="0">
+         <description>SMH 2083-02 EggHunt at the Jackalope Ranch</description>
       </contact>
-      <contact id="9539ef93-6b90-4794-a7db-0ddcc2ebf353" loy="1" name="Le Tigre" rat="5" type="CORPORATE" typename="NOLA Epoch Model">
-         <description>SMH 2083-02 EggHunt at the Jackalope Ranch. +1 FP -- L1</description>
+      <contact id="9539ef93-6b90-4794-a7db-0ddcc2ebf353" loy="1" name="Le Tigre" rat="5" type="Epoch Model" typename="Epoch Model" favors="0">
+         <description>SMH 2083-02 EggHunt at the Jackalope Ranch</description>
       </contact>
-      <contact id="5d05bdd0-7587-404a-80c3-19487dfa5590" loy="1" name="White Jackalope" rat="2" type="MATRIX" typename="Emergent Lifeform">
-         <description>SMH 2083-02 EggHunt at the Jackalope Ranch. +1 FP -- L1</description>
+      <contact id="5d05bdd0-7587-404a-80c3-19487dfa5590" loy="1" name="White Jackalope" rat="2" type="Emergent Lifeform" typename="Emergent Lifeform" favors="0">
+         <description>SMH 2083-02 EggHunt at the Jackalope Ranch</description>
       </contact>
-      <contact id="a663f032-cdd7-472b-abc5-aa73ce0bd3b3" loy="1" name="Big Louie" rat="3" type="CRIMINAL" typename="SEA Fixer">
-         <description>CMP First Taste : Top Chef - Seattle. +1 FP -- L1. 
-
-Male Troll, likes Jazz, works out of Matchsticks
-</description>
+      <contact id="a663f032-cdd7-472b-abc5-aa73ce0bd3b3" loy="1" name="Big Louie" rat="3" type="Fixer" typename="Fixer" favors="0">
+         <description>CMP First Taste : Top Chef - Seattle</description>
       </contact>
-      <contact favors="1" id="10d4a058-30d0-405a-9c27-f529e12d39ba" loy="1" name="Dominique Augustin" rat="4" type="CORPORATE" typename="NOLA Wolverine Security">
-         <description>Human Female
-2083-03: Unofficial Dunkelzahn Fan Club. 2FP - 1FP + L1</description>
+      <contact favors="1" id="10d4a058-30d0-405a-9c27-f529e12d39ba" loy="1" name="Dominique Augustin" rat="4" type="Wolverine Security" typename="Wolverine Security">
+         <description>2083-03 Unofficial Dunkelzahn Fan Club</description>
       </contact>
-      <contact id="51988c8a-0bd0-46ee-a42e-07e9ec84e17c" loy="1" name="Daniel Fortune" rat="3" type="CORPORATE" typename="NOLA">
-         <description>Human Male
-2083-03: Unofficial Dunkelzahn Fan Club. 1FP -- L1</description>
+      <contact id="51988c8a-0bd0-46ee-a42e-07e9ec84e17c" loy="1" name="Daniel Fortune" rat="3" type="NOLA" typename="NOLA" favors="0">
+         <description>2083-03 Unofficial Dunkelzahn Fan Club</description>
       </contact>
-      <contact id="f3132127-8be7-4737-a7e4-fed4d912b72d" loy="2" name="Renée Martin" rat="4" type="MAGIC" typename="NOLA League of Laveau Community Outreach">
-         <description>Male Troll
-2083-03: Unofficial Dunkelzahn Fan Club. 3FP -- L2</description>
+      <contact id="f3132127-8be7-4737-a7e4-fed4d912b72d" loy="2" name="Renée Martin" rat="4" type="League of Laveau Community Outreach" typename="League of Laveau Community Outreach" favors="0">
+         <description>2083-03 Unofficial Dunkelzahn Fan Club</description>
       </contact>
-      <contact id="e0862e1d-7a49-4a3f-89a8-0c09329b59c7" loy="1" name="The Frisian" rat="6" type="CRIMINAL" typename="AMS Crime Lord of the Dutch Penose syndicate">
-         <description>Amsterdam
-CMP 2081-09 | Bring me Prince Charming: +1 FP -- L1</description>
+      <contact id="e0862e1d-7a49-4a3f-89a8-0c09329b59c7" loy="1" name="The Frisian" rat="6" type="Crime Lord of the Dutch Penose syndicate" typename="Crime Lord of the Dutch Penose syndicate" favors="0">
+         <description>CMP 2081-09 Bring me Prince Charming</description>
       </contact>
-      <contact favors="1" id="8db8c753-8b66-42e3-a9f4-a0c20f03efba" loy="1" name="Ree 'Dolly' Hacker" rat="4" type="MAGIC" typename="KY Talismonger and Racer">
-         <description>Female Elf
-CMP 2081-18: Blue Kentucky Girl: +2 FP -- L1/F1</description>
+      <contact favors="1" id="8db8c753-8b66-42e3-a9f4-a0c20f03efba" loy="1" name="Ree 'Dolly' Hacker" rat="4" type="Talismonger and Racer" typename="Talismonger and Racer">
+         <description>CMP 2081-18 Blue Kentucky Girl</description>
       </contact>
       <contact id="93ddb8d3-ba87-4f4f-a23b-81e38da6cdc3" loy="2" name="'Granny'" rat="6" type="MAGIC" typename="KY Lady of the Autumn Wind">
          <description>Fae Noble. RN: Siobhan Ceidwad Hydief Gwynt
 CMP 2081-18: Blue Kentucky Girl: +1 FP -- L1
 CMP 2081-20: In the Cold Kentucky Rain: +1L</description>
       </contact>
-      <contact id="611226de-d911-4875-823f-2f114e2354ac" loy="2" name="Kiara Shaw" rat="4" type="CORPORATE" typename="AMS Knight Errant Company Suit">
-         <description>(KE Company Suit, Connection 4) Female Dwarf
-CMP 2081-10 | A Diamond In The Rough - +2FP -- L1/FP1
-CMP 2083-04 | Hog Wild - +1 FP -- L2</description>
+      <contact id="611226de-d911-4875-823f-2f114e2354ac" loy="2" name="Kiara Shaw" rat="4" type="Knight Errant Company Suit" typename="Knight Errant Company Suit" favors="1">
+         <description>CMP 2081-10 A Diamond in The Rough | CMP 2083-04 Hog Wild</description>
       </contact>
-      <contact id="38378b7e-bf5d-46ab-b1a1-f56e23c6d1a2" loy="2" name="Simon Andrews" rat="5" type="CORPORATE" typename="AMS S-K Johnson">
-         <description>Male Awakened Lizard Punk. Likes Brit bands. Yuriko caught a concert with him.
-CMP 2081-11 | Paved with good intentions - +2FP -- L1/FP1
-CMP 2083-01: NONPLUSHED + 1FP
-CMP 2083-04 | Hog Wild: +1 FP -- L2/FP1</description>
+      <contact id="38378b7e-bf5d-46ab-b1a1-f56e23c6d1a2" loy="2" name="Simon Andrews" rat="5" type="S-K Johnson" typename="S-K Johnson" favors="1">
+         <description>CMP 2081-11 Paved with good intentions | CMP 2083-01 NONPLUSHED | CMP 2083-04 Hog Wild</description>
       </contact>
-      <contact id="ff9242f4-7f59-4007-9b66-12ed979ffece" loy="1" name="Squint" rat="2" type="CRIMINAL" typename="AMS Smuggler">
-         <description>CMP 2081-11 | Paved with good intentions - +1FP -- L1</description>
+      <contact id="ff9242f4-7f59-4007-9b66-12ed979ffece" loy="1" name="Squint" rat="2" type="Smuggler" typename="Smuggler" favors="0">
+         <description>CMP 2081-11 Paved with good intentions</description>
       </contact>
-      <contact favors="1" id="bab7a38b-3a7c-4ce5-89fa-16aeefeb5ebc" loy="1" name="Dr. Laureline Dodd" rat="5" typename="KY Arcano-Archeologist">
-         <description>Female Human, Arcano-Archaelogist, Spinrad Global Connection 5, CHA 7
-CMP 2081-19: The Blue Moon of Kentucky: +2 FP -- L1/FP1</description>
+      <contact favors="1" id="bab7a38b-3a7c-4ce5-89fa-16aeefeb5ebc" loy="1" name="Dr. Laureline Dodd" rat="5" typename="Arcano-Archeologist" type="Arcano-Archeologist">
+         <description>CMP 2081-19 The Blue Moon of Kentucky</description>
       </contact>
-      <contact id="392cea4f-b154-43c1-8044-8495cdce1279" loy="1" name="Thaddeus" rat="3" typename="KY Street Samurai">
-         <description>CopperHead Naga Street Samurai
-CMP 2081-19: The Blue Moon of Kentucky: +1 FP -- L1</description>
+      <contact id="392cea4f-b154-43c1-8044-8495cdce1279" loy="1" name="Thaddeus" rat="3" typename="Street Samurai" favors="0" type="Street Samurai">
+         <description>CMP 2081-19 The Blue Moon of Kentucky</description>
       </contact>
-      <contact id="7817cea0-6302-443f-86c3-a294a366a8a2" loy="1" name="Duan Yuhai" rat="3" type="CRIMINAL" typename="SEA Minor 88s Johnson">
-         <description>2081-17: +1 FP -- L1</description>
+      <contact id="7817cea0-6302-443f-86c3-a294a366a8a2" loy="1" name="Duan Yuhai" rat="3" type="Minor 88s Johnson" typename="Minor 88s Johnson" favors="0">
+         <description>SRM 2081-17 Framed in Blood</description>
       </contact>
-      <contact id="6e1f9db7-c177-40df-a206-635ed84a0804" loy="1" name="Xiong Giuyin" rat="4" type="CORPORATE" typename="SEA Wuxing">
-         <description>2081-17: +1FP -- L1</description>
+      <contact id="6e1f9db7-c177-40df-a206-635ed84a0804" loy="1" name="Xiong Giuyin" rat="4" type="Wuxing" typename="Wuxing" favors="0">
+         <description>SRM 2081-17 Framed in Blood</description>
       </contact>
-      <contact favors="1" id="473d22b6-c370-47d9-a9dd-fbc1da3f7f17" loy="1" name="Reilly Dragman" rat="1" type="CORPORATE" typename="KY Child Heiress">
-         <description>CMP 2081-20: In the Cold Kentucky Rain - +1L/+1FP</description>
+      <contact favors="1" id="473d22b6-c370-47d9-a9dd-fbc1da3f7f17" loy="1" name="Reilly Dragman" rat="1" type="Child Heiress" typename="Child Heiress">
+         <description>CMP 2081-20 In the Cold Kentucky Rain</description>
       </contact>
-      <contact id="85ce1b81-162a-4e97-9739-a25f1861eecb" loy="1" name="Queen Brane" rat="12" type="MAGIC" typename="Seelie Queen">
-         <description>CMP 2081-20: In the Cold Kentucky Rain: +1 L</description>
+      <contact id="85ce1b81-162a-4e97-9739-a25f1861eecb" loy="1" name="Queen Brane" rat="12" type="Seelie Queen" typename="Seelie Queen" favors="0">
+         <description>CMP 2081-20 In the Cold Kentucky Rain</description>
       </contact>
       <contact favors="3" id="a5339b43-ea6d-492a-82d2-50d40ae76bbf" loy="3" name="Sigrûn (Marikka von Harbou )" rat="5" type="GOVERNMENT" typename="AMS Shadowrunner">
          <description>House Oranje-Nassau Johnson, Connection 5. Female Ork
 CMP 2081-12 | Uneasy lies the head - +4FP -- L2 FP1
 CMP 2083-04 | Hog Wild - +2 FP -- L3</description>
       </contact>
-      <contact favors="1" id="0942baf1-7fa0-40d9-970c-45b5c07bf022" loy="1" name="Dixie L'Amin" rat="4" type="CORPORATE" typename="DW Naga">
-         <description>CMP 2083-14: +2 FP -- L1/FP1</description>
+      <contact favors="1" id="0942baf1-7fa0-40d9-970c-45b5c07bf022" loy="1" name="Dixie L'Amin" rat="4" type="Naga" typename="Naga">
+         <description>CMP 2083-14 A Day at the Beach</description>
       </contact>
       <contact id="3651f12b-80ad-43ba-83aa-2aed0580c039" loy="1" name="Ayanda “Shieldbearer”Mahlangu" rat="3" type="MEDIA" typename="DW 'Mystic Edge' Producer">
          <description>Wakyambi Elf Female. (Para Bellum pg. 15)
 CMP 2083-14: +1FP -- L1</description>
       </contact>
-      <contact favors="1" id="30d5c780-215a-4f4f-9df6-1633ec6a6a5f" loy="1" name="Ebon Abirashur" rat="1" type="MAGIC" typename="DW Leviathan Dragon">
-         <description>CMP 2083-14: +2FP -- L1 / FP1</description>
+      <contact favors="1" id="30d5c780-215a-4f4f-9df6-1633ec6a6a5f" loy="1" name="Ebon Abirashur" rat="1" type="Leviathan Dragon" typename="Leviathan Dragon">
+         <description>CMP 2083-14 A Day at the Beach</description>
       </contact>
-      <contact favors="1" id="d69b29a1-e151-4899-9ee0-b7c2e47a0e01" loy="1" name="Col. Deborah Kentwell" rat="5" type="CORPORATE" typename="DW Thunder Corps Fixer">
-         <description>CMP 2083-16: +2FP -- L1/FP1</description>
+      <contact favors="1" id="d69b29a1-e151-4899-9ee0-b7c2e47a0e01" loy="1" name="Col. Deborah Kentwell" rat="5" type="Thunder Corps Fixer" typename="Thunder Corps Fixer">
+         <description>CMP 2083-16 War Never Changes</description>
       </contact>
-      <contact id="2aa72801-de3e-40f1-b6c1-8b045dd101a9" loy="1" name="Polyphemous 'Paul' Pellagios" rat="1" type="CORPORATE" typename="DW Background Actor">
-         <description>CMP 2083-16: +1FP -- L1</description>
+      <contact id="2aa72801-de3e-40f1-b6c1-8b045dd101a9" loy="1" name="Polyphemous 'Paul' Pellagios" rat="1" type="Background Actor" typename="Background Actor" favors="0">
+         <description>CMP 2083-16 War Never Changes</description>
       </contact>
-      <contact id="51c12ad1-e1a0-4802-8095-925f4972d185" loy="1" name="Fernand Anato" rat="1" type="CRIMINAL" typename="NOLA Kozlowski Capo">
-         <description>SRM 2083-19: +1FP -- L1</description>
+      <contact id="51c12ad1-e1a0-4802-8095-925f4972d185" loy="1" name="Fernand Anato" rat="1" type="Kozlowski Capo" typename="Kozlowski Capo" favors="0">
+         <description>SRM 2083-19 The Hallow Feast</description>
       </contact>
-      <contact favors="1" id="e85e037c-fa9d-447c-a4fa-cd5ab557f1e5" loy="2" name="Monsieur Johnson" rat="5" typename="NOLA Johnson">
-         <description>SRM 2083-19: L1/FP3 -- L2/FP1</description>
+      <contact favors="0" id="e85e037c-fa9d-447c-a4fa-cd5ab557f1e5" loy="2" name="Monsieur Johnson" rat="5" typename="Johnson" type="Johnson">
+         <description>SRM 2083-19 The Hallow Feast</description>
       </contact>
-      <contact id="c143aec1-b72e-4f2f-843f-7a2e666c6b93" loy="2" name="Swango" rat="3" type="MEDIA" typename="SEA Rapper">
-         <description>SRM 2081-05: +3 FP -- L2</description>
+      <contact id="c143aec1-b72e-4f2f-843f-7a2e666c6b93" loy="2" name="Swango" rat="3" type="Rapper" typename="Rapper" favors="0">
+         <description>SRM 2081-05 This is Renton</description>
       </contact>
-      <contact id="7eeb0b36-62e0-4cf2-b3c6-d9c68794dd0b" loy="1" name="Toil" rat="4" type="STREET" typename="SEA Fixer">
-         <description>SRM 2081-05: +1 FP -- L1</description>
+      <contact id="7eeb0b36-62e0-4cf2-b3c6-d9c68794dd0b" loy="1" name="Toil" rat="4" type="Fixer" typename="Fixer" favors="0">
+         <description>SRM 2081-05 This is Renton</description>
       </contact>
-      <contact id="da714868-d1a7-4182-add6-4887b398ae46" loy="1" name="Trubble" rat="1" type="STREET" typename="SEA Bodyguard">
-         <description>SRM 2081-05: +1 FP -- L1</description>
+      <contact id="da714868-d1a7-4182-add6-4887b398ae46" loy="1" name="Trubble" rat="1" type="Bodyguard" typename="Bodyguard" favors="0">
+         <description>SRM 2081-05 This is Renton</description>
       </contact>
-      <contact id="22863313-368e-4c9f-875b-6ce4f26f3002" loy="1" name="SpiiniCop" rat="2" type="CRIMINAL" typename="AMS Penose Spider">
-         <description>NB Human
-CMP 2083-01: NONPLUSHED: +1 FP -- L1</description>
+      <contact id="22863313-368e-4c9f-875b-6ce4f26f3002" loy="1" name="SpiiniCop" rat="2" type="Penose Spider" typename="Penose Spider" favors="0">
+         <description>CMP 2083-01 NONPLUSHED</description>
       </contact>
-      <contact id="dc6e2c88-7056-450b-a075-b4a32c206207" loy="1" name="Eddie Wei" rat="4" type="CORPORATE" typename="SEA Triad/Johnson">
-         <description>SRM 2081-08 Child's Play: +1 FP -- L1</description>
+      <contact id="dc6e2c88-7056-450b-a075-b4a32c206207" loy="1" name="Eddie Wei" rat="4" type="Triad/Johnson" typename="Triad/Johnson" favors="0">
+         <description>SRM 2081-08 Child's Play</description>
       </contact>
-      <contact id="4542297c-d98c-486a-b46b-4b4ea6036685" loy="1" name="Julian Müntefering" rat="1" typename="SEA Renraku Corpokid">
-         <description>SRM 2081-08 Child's Play: +1 FP -- L1</description>
+      <contact id="4542297c-d98c-486a-b46b-4b4ea6036685" loy="1" name="Julian Müntefering" rat="1" typename="Renraku Corpokid" favors="0" type="Renraku Corpokid">
+         <description>SRM 2081-08 Child's Play</description>
       </contact>
-      <contact id="4a71a665-1027-468b-98b4-b8df136fbbd5" loy="2" name="Ni Ni Xiaolu" rat="3" type="CRIMINAL" typename="SEA Johnson/Triad">
-         <description>SRM 2081-07 | Bootleg Bliss: +3 FP -- 2L</description>
+      <contact id="4a71a665-1027-468b-98b4-b8df136fbbd5" loy="2" name="Ni Ni Xiaolu" rat="3" type="Johnson/Triad" typename="Johnson/Triad" favors="1">
+         <description>SRM 2081-07 Bootleg Bliss | CMP 2083-05 Precious Cargo</description>
       </contact>
-      <contact id="c1936bbb-d691-4300-985e-95bd22489dc7" loy="1" name="Bookie" rat="3" type="CRIMINAL" typename="SEA Ancients Bookie">
-         <description>SRM 2081-07 | Bootleg Bliss: +1 FP -- L1
-Male Elf</description>
+      <contact id="c1936bbb-d691-4300-985e-95bd22489dc7" loy="1" name="Bookie" rat="3" type="Ancients Bookie" typename="Ancients Bookie" favors="0">
+         <description>SRM 2081-07 Bootleg Bliss</description>
       </contact>
-      <contact id="3bf7c9db-2ebb-4328-be79-9de3e27b506a" loy="1" name="Trudy" rat="2" type="CRIMINAL" typename="SEA Cutter Lieutenant">
-         <description>Female Human Mage
-SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
+      <contact id="3bf7c9db-2ebb-4328-be79-9de3e27b506a" loy="1" name="Trudy" rat="2" type="Cutter Lieutenant" typename="Cutter Lieutenant" favors="0">
+         <description>SRM 2081-07 Bootleg Bliss</description>
       </contact>
-      <contact id="80480220-b85e-49ef-b4a6-68f25f297c6d" loy="1" name="Kaatje" rat="2" typename="AMS Young Entertainer">
-         <description>(Young Entertainer, Connection 2) early 20s human female
-2083-04 Hog Wild: +1 FP -- L1. (Was playing harmonica in a bar. Yuriko introduced her to Fuchs. Also met Kaatje's grandmother in a religious commune)</description>
+      <contact id="80480220-b85e-49ef-b4a6-68f25f297c6d" loy="1" name="Kaatje" rat="2" typename="Young Entertainer" favors="0" type="Young Entertainer">
+         <description>CMP 2083-04 Hog Wild</description>
       </contact>
-   </contacts>
+   <contact id="fd94343e-b1c6-49ce-914e-3999bf83760a" name="Granny" rat="6" loy="1" favors="1" type="Lady of the Autumn Wind" typename="Lady of the Autumn Wind"><description>CMP 2081-18 Blue Kentucky Girl | CMP 2081-20 In the Cold Kentucky Rain</description></contact><contact id="ef36110c-9b14-4bb0-a8df-7398215496c3" name="Kirt Liger" rat="3" loy="1" favors="1" type="Body Mod/Engineering Cybercatman" typename="Body Mod/Engineering Cybercatman"><description>SRM 2081-21 Grudge Match Gladiators</description></contact><contact id="0857d3cc-49de-4eeb-a492-509ffcccbebe" name="Sigrún" rat="5" loy="3" favors="1" type="Shadowrunner" typename="Shadowrunner"><description>CMP 2081-12 Uneasy lies the head | CMP 2083-04 Hog Wild</description></contact><contact id="bbd80efc-d736-43fa-a894-a01b9cbcdcba" name="Ayanda 'Shieldbearer' Mahlangu" rat="3" loy="1" favors="0" type="'Mystic Edge' Producer" typename="'Mystic Edge' Producer"><description>CMP 2083-14 A Day at the Beach</description></contact><contact id="e929a8e4-93df-4b93-888c-2dc71a07b25f" name="Saint James" rat="8" loy="2" favors="0" type="Fixer" typename="Fixer"><description>SRM 2081-06 Cutting Strings</description></contact><contact id="f0c4b259-c661-4b34-8c39-df53ffeac1e3" name="Jeanie Trudel" rat="1" loy="1" favors="0" type="Bartender" typename="Bartender"><description>SRM 2081-06 Cutting Strings</description></contact><contact id="162a636e-67a0-420f-9f0e-4799e6f53b4e" name="Kingston" rat="2" loy="1" favors="0" type="Shadowrunner" typename="Shadowrunner"><description>SRM 2081-06 Cutting Strings</description></contact><contact id="7830f5c6-bd42-405a-a92b-780ca60bb9bf" name="Mr. Fa" rat="4" loy="1" favors="1" type="HKB Corporate Middle Manager" typename="HKB Corporate Middle Manager"><description>CMP 2083-05 Precious Cargo</description></contact><contact id="99dbcd45-1d72-4062-b16d-ae9d068ce313" name="Liao Fa Ren" rat="3" loy="2" favors="0" type="HK Rookie Journalist" typename="HK Rookie Journalist"><description>CMP 2083-05 Precious Cargo</description></contact></contacts>
    <name>Yuriko Star</name>
    <datasets mode="ALL" />
    <rules>
@@ -215,9 +195,9 @@ SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
       <attributes id="LOGIC" start="4" value="4" />
       <attributes id="INTUITION" start="2" value="2" />
       <attributes id="CHARISMA" start="4" value="4" />
-      <attributes id="EDGE" start="5" value="5" />
+      <attributes id="EDGE" start="4" value="4" />
       <attributes id="MAGIC" value="0" />
-      <attributes id="RESONANCE" start="6" value="7" />
+      <attributes id="RESONANCE" start="7" value="7" />
       <attributes id="POWER_POINTS" value="0" />
    </attributes>
    <skills>
@@ -362,9 +342,8 @@ SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="sneak_sneak" slot="SOFTWARE" uuid="677568f7-6265-4159-a886-b6ab331d041e" />
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="artillery_barrage" slot="SOFTWARE" uuid="5ca61534-4a27-408a-b88d-9c10bc1a23c7" />
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="ecm_warrior_ii" slot="SOFTWARE" uuid="1cdd833d-6881-4c27-a083-bea18f834c53" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="mapsoft" slot="SOFTWARE" uuid="af663ff9-bcc0-4c1b-abe2-c1af1792d739">
-               <decision choice="47d1e468-6df7-43ce-9651-44485cc78bb8" value="SEA" />
-            </item>
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="target_artist" slot="SOFTWARE" uuid="af663ff9-bcc0-4c1b-abe2-c1af1792d739">
+               </item>
          </accessories>
          <flag>PRIMARY</flag>
       </item>
@@ -380,78 +359,77 @@ SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
       <item count="5" lang="en" mode="CARRIED" ref="ammo_battery_laser" uuid="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0" />
       <item lang="en" mode="VIRTUAL" ref="software_library" uuid="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979">
          <accessories>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="baby_monitor" slot="SOFTWARE" uuid="21252dd0-210b-47e1-a7b4-4ce367ef6878" variant="regular" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_biotech" slot="SOFTWARE" uuid="e3f035fe-bc96-4591-a98f-63f1fa769c36">
+            <item lang="en" mode="EMBEDDED" ref="baby_monitor" slot="SOFTWARE" uuid="21252dd0-210b-47e1-a7b4-4ce367ef6878" variant="regular" />
+            <item lang="en" mode="EMBEDDED" ref="soft_biotech" slot="SOFTWARE" uuid="e3f035fe-bc96-4591-a98f-63f1fa769c36">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
             </item>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="browse" slot="SOFTWARE" uuid="e205e19d-78e7-49f5-9e23-d699396157c8" variant="regular" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="clearsight" slot="SOFTWARE" uuid="c91e74d2-57c4-4a98-906a-0ca464d270c0">
+            <item lang="en" mode="EMBEDDED" ref="browse" slot="SOFTWARE" uuid="e205e19d-78e7-49f5-9e23-d699396157c8" variant="regular" />
+            <item lang="en" mode="EMBEDDED" ref="clearsight" slot="SOFTWARE" uuid="c91e74d2-57c4-4a98-906a-0ca464d270c0">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
             </item>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_close_combat" slot="SOFTWARE" uuid="f24395ce-c571-4180-a6d8-5371f1702dd0">
+            <item lang="en" mode="EMBEDDED" ref="soft_close_combat" slot="SOFTWARE" uuid="f24395ce-c571-4180-a6d8-5371f1702dd0">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
                <decision choice="2baf4c6e-417b-4d1a-943c-edfa816d50bf" value="katana" />
             </item>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="decryption" slot="SOFTWARE" uuid="4d84dc26-17b1-42b5-8905-35f188805983" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="defense_pods" slot="SOFTWARE" uuid="51cbd3dd-cc91-4bb0-9288-fab6edb1ac72" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="directional_shield" slot="SOFTWARE" uuid="3a774c61-6b50-4bea-9e06-a9412ddb6f04" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="edit" slot="SOFTWARE" uuid="aadac09a-608a-41be-819a-82ee7dc03a9e" variant="regular" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="evasion" slot="SOFTWARE" uuid="27ad6e49-f0b8-4e74-adf6-172339ff3589">
+            <item lang="en" mode="EMBEDDED" ref="decryption" slot="SOFTWARE" uuid="4d84dc26-17b1-42b5-8905-35f188805983" />
+            <item lang="en" mode="EMBEDDED" ref="defense_pods" slot="SOFTWARE" uuid="51cbd3dd-cc91-4bb0-9288-fab6edb1ac72" />
+            <item lang="en" mode="EMBEDDED" ref="directional_shield" slot="SOFTWARE" uuid="3a774c61-6b50-4bea-9e06-a9412ddb6f04" />
+            <item lang="en" mode="EMBEDDED" ref="edit" slot="SOFTWARE" uuid="aadac09a-608a-41be-819a-82ee7dc03a9e" variant="regular" />
+            <item lang="en" mode="EMBEDDED" ref="evasion" slot="SOFTWARE" uuid="27ad6e49-f0b8-4e74-adf6-172339ff3589">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
             </item>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="facial_scanner" slot="SOFTWARE" uuid="97443858-7100-42eb-8881-8c0265b466df" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="fork" slot="SOFTWARE" uuid="7df87e18-964b-4506-8096-133ea5c96fae" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="hitchhiker" slot="SOFTWARE" uuid="7f6b8dc3-af0c-44ea-a851-cbc94ab40b9e" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="maneuvering" slot="SOFTWARE" uuid="473ef775-1b2b-4c11-ac2a-0818947562b2">
+            <item lang="en" mode="EMBEDDED" ref="facial_scanner" slot="SOFTWARE" uuid="97443858-7100-42eb-8881-8c0265b466df" />
+            <item lang="en" mode="EMBEDDED" ref="fork" slot="SOFTWARE" uuid="7df87e18-964b-4506-8096-133ea5c96fae" />
+            <item lang="en" mode="EMBEDDED" ref="hitchhiker" slot="SOFTWARE" uuid="7f6b8dc3-af0c-44ea-a851-cbc94ab40b9e" />
+            <item lang="en" mode="EMBEDDED" ref="maneuvering" slot="SOFTWARE" uuid="473ef775-1b2b-4c11-ac2a-0818947562b2">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
                <decision choice="355a3a45-39fc-4376-8667-661c9873dfdb" value="shiawase_BD_butler" />
             </item>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="mannequin" slot="SOFTWARE" uuid="64de90de-7f43-4eff-a4fc-2a0937dbdf85" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="mefeed" slot="SOFTWARE" uuid="0683fd5d-e4be-4d7e-ad81-df8fe96f2163" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_navigation" slot="SOFTWARE" uuid="14c1be8f-e64e-44cc-895a-98cb7574d4b8">
+            <item lang="en" mode="EMBEDDED" ref="mannequin" slot="SOFTWARE" uuid="64de90de-7f43-4eff-a4fc-2a0937dbdf85" />
+            <item lang="en" mode="EMBEDDED" ref="mefeed" slot="SOFTWARE" uuid="0683fd5d-e4be-4d7e-ad81-df8fe96f2163" />
+            <item lang="en" mode="EMBEDDED" ref="soft_navigation" slot="SOFTWARE" uuid="14c1be8f-e64e-44cc-895a-98cb7574d4b8">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
             </item>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="nexus_protocol" slot="SOFTWARE" uuid="8f94b501-4110-45f4-8736-01bba8b0295d" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="overclock" slot="SOFTWARE" uuid="06cb217b-b846-4e39-acb1-a8552c505d80" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_con_performance" slot="SOFTWARE" uuid="b924ae64-35d4-4a69-957b-c2d80b8caca1">
+            <item lang="en" mode="EMBEDDED" ref="nexus_protocol" slot="SOFTWARE" uuid="8f94b501-4110-45f4-8736-01bba8b0295d" />
+            <item lang="en" mode="EMBEDDED" ref="overclock" slot="SOFTWARE" uuid="06cb217b-b846-4e39-acb1-a8552c505d80" />
+            <item lang="en" mode="EMBEDDED" ref="soft_con_performance" slot="SOFTWARE" uuid="b924ae64-35d4-4a69-957b-c2d80b8caca1">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
             </item>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="social_hud" slot="SOFTWARE" uuid="3a0803ad-69e3-4b7a-8ebf-88624c826b55" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="targeting" slot="SOFTWARE" uuid="5f0fba38-910f-4426-b54d-8320e6a681c2">
+            <item lang="en" mode="EMBEDDED" ref="social_hud" slot="SOFTWARE" uuid="3a0803ad-69e3-4b7a-8ebf-88624c826b55" />
+            <item lang="en" mode="EMBEDDED" ref="targeting" slot="SOFTWARE" uuid="5f0fba38-910f-4426-b54d-8320e6a681c2">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
                <decision choice="2baf4c6e-417b-4d1a-943c-edfa816d50bf" value="ares_predator_vi" />
             </item>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="trace" slot="SOFTWARE" uuid="87e4dda6-49fe-454f-a766-04b887b35adb" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_tracking" slot="SOFTWARE" uuid="366fea50-a623-439d-a28f-c6780212b88d">
+            <item lang="en" mode="EMBEDDED" ref="trace" slot="SOFTWARE" uuid="87e4dda6-49fe-454f-a766-04b887b35adb" />
+            <item lang="en" mode="EMBEDDED" ref="soft_tracking" slot="SOFTWARE" uuid="366fea50-a623-439d-a28f-c6780212b88d">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
             </item>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="thermal_mood_reading" slot="SOFTWARE" uuid="c92293c4-a0f5-4721-bc79-8ef121ae9e04" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="vocal_tension_detection" slot="SOFTWARE" uuid="f18e96ef-f57c-40f1-bc08-45161779c6a3" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_engineering" slot="SOFTWARE" uuid="5d8a8814-6ac9-49bc-b294-3a06dbdfe558">
+            <item lang="en" mode="EMBEDDED" ref="thermal_mood_reading" slot="SOFTWARE" uuid="c92293c4-a0f5-4721-bc79-8ef121ae9e04" />
+            <item lang="en" mode="EMBEDDED" ref="vocal_tension_detection" slot="SOFTWARE" uuid="f18e96ef-f57c-40f1-bc08-45161779c6a3" />
+            <item lang="en" mode="EMBEDDED" ref="soft_engineering" slot="SOFTWARE" uuid="5d8a8814-6ac9-49bc-b294-3a06dbdfe558">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
                <decision choice="712a1bb4-b761-48a7-b2ba-ae5d36f47166" value="engineering/industrial_mechanic" />
             </item>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="smart_rig" slot="SOFTWARE" uuid="c72e6196-a65a-4a86-8c3e-a755ace6b964" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_language" slot="SOFTWARE" uuid="7d04ba55-a99c-49c4-8710-b4f924ab0c9c">
+            <item lang="en" mode="EMBEDDED" ref="smart_rig" slot="SOFTWARE" uuid="c72e6196-a65a-4a86-8c3e-a755ace6b964" />
+            <item lang="en" mode="EMBEDDED" ref="soft_language" slot="SOFTWARE" uuid="7d04ba55-a99c-49c4-8710-b4f924ab0c9c">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="5" />
             </item>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_knowledge" slot="SOFTWARE" uuid="12d50f1e-ac93-410c-b691-c537a4def8b7" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="emulator" slot="SOFTWARE" uuid="0f38bf43-dfc0-4da6-bc70-ff46d68ba70b" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="p-ice_spines" slot="SOFTWARE" uuid="6ac6378b-d7b0-4e31-b963-589d3de2744a" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="personal_assistant" slot="SOFTWARE" uuid="c5e5ec5e-9c8e-4cd5-85bd-fd0ad8990726">
+            <item lang="en" mode="EMBEDDED" ref="soft_knowledge" slot="SOFTWARE" uuid="12d50f1e-ac93-410c-b691-c537a4def8b7"><decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="3" /></item>
+            <item lang="en" mode="EMBEDDED" ref="emulator" slot="SOFTWARE" uuid="0f38bf43-dfc0-4da6-bc70-ff46d68ba70b" />
+            <item lang="en" mode="EMBEDDED" ref="p-ice_spines" slot="SOFTWARE" uuid="6ac6378b-d7b0-4e31-b963-589d3de2744a" />
+            <item lang="en" mode="EMBEDDED" ref="personal_assistant" slot="SOFTWARE" uuid="c5e5ec5e-9c8e-4cd5-85bd-fd0ad8990726">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="6" />
             </item>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="toolbox" slot="SOFTWARE" uuid="300d3c6c-9042-40bc-8b01-d6cb0d1ebed7" variant="regular" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="encryption" slot="SOFTWARE" uuid="e02787fb-6703-42d5-8cae-8fed4ba35c1f" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="signal_scrubber" slot="SOFTWARE" uuid="215aa551-68ec-4854-8735-d59e342b53f9" variant="regular" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="virtual_machine" slot="SOFTWARE" uuid="b7ceba6e-c736-4e42-84f8-a058ba60babb" variant="regular" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="shopsoft" slot="SOFTWARE" uuid="11232734-9d02-40ae-803b-08205e458e09">
+            <item lang="en" mode="EMBEDDED" ref="toolbox" slot="SOFTWARE" uuid="300d3c6c-9042-40bc-8b01-d6cb0d1ebed7" variant="regular" />
+            <item lang="en" mode="EMBEDDED" ref="encryption" slot="SOFTWARE" uuid="e02787fb-6703-42d5-8cae-8fed4ba35c1f" />
+            <item lang="en" mode="EMBEDDED" ref="signal_scrubber" slot="SOFTWARE" uuid="215aa551-68ec-4854-8735-d59e342b53f9" variant="regular" />
+            <item lang="en" mode="EMBEDDED" ref="virtual_machine" slot="SOFTWARE" uuid="b7ceba6e-c736-4e42-84f8-a058ba60babb" variant="regular" />
+            <item lang="en" mode="EMBEDDED" ref="shopsoft" slot="SOFTWARE" uuid="11232734-9d02-40ae-803b-08205e458e09">
                <decision choice="47d1e468-6df7-43ce-9651-44485cc78bb8" value="Drones, SW, HW, Firearms, Armor, Demolitions" />
             </item>
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="mobile_medic" slot="SOFTWARE" uuid="9335def9-98ad-4852-9b9c-07fbd1b512d7" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="swarm_rig" slot="SOFTWARE" uuid="7d3e5678-e55a-49ca-9b89-da41613521b7" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="target_artist" slot="SOFTWARE" uuid="ccd718da-a362-4d43-bda9-8b6bf982eadb" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="stealth_auto" slot="SOFTWARE" uuid="5ad6833a-c2dd-4912-8e29-b1466ecb2945">
+            <item lang="en" mode="EMBEDDED" ref="mobile_medic" slot="SOFTWARE" uuid="9335def9-98ad-4852-9b9c-07fbd1b512d7" />
+            <item lang="en" mode="EMBEDDED" ref="swarm_rig" slot="SOFTWARE" uuid="7d3e5678-e55a-49ca-9b89-da41613521b7" />
+            <item lang="en" mode="EMBEDDED" ref="stealth_auto" slot="SOFTWARE" uuid="5ad6833a-c2dd-4912-8e29-b1466ecb2945">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
                <decision choice="355a3a45-39fc-4376-8667-661c9873dfdb" value="shiawase_BD_man_at_arms" />
             </item>
@@ -986,6 +964,15 @@ SRM 2081-07 | Bootleg Bliss: +1 FP -- L1</description>
       </reward>
       <reward date="2026-07-15T14:04:25.898-04:00" exp="-8">
          <title>CMP 2083-04: Learning Programs</title>
+      </reward>
+      <reward date="2026-07-21T00:00:00.000-04:00" exp="7" money="6000">
+         <title>CMP 2083-05 | Precious Cargo</title>
+         <modifications>
+            <valmod ref="REPUTATION" set="AUGMENTED" type="ATTRIBUTE" value="2" when="ALLCREATE" />
+         </modifications>
+      </reward>
+      <reward date="2026-07-21T00:00:00.000-04:00" exp="1" money="-3500">
+         <title>CMP 2083-05: Working for the People, Heat Bribe, Souvenirs</title>
       </reward>
    </rewards>
 </sr6char>
