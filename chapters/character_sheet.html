@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-6b004faca8ee0f94b3a5dd19405fa1b2.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-80d5c8aa686a4f1f03a54c5fc949acb7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-1ac3bea8477bd488c3532cf349a7d151.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -383,27 +383,54 @@ ul.task-list li input[type="checkbox"] {
 
 
 [ DRONE_COMMAND_ARRAY (COL 1) ]        | [ DRONE_COMMAND_ARRAY (COL 2) ]
-- MCT GNAT                             | - SHIAWASE MAN-AT-ARMS
-  HAN 3/3 ACC 4/4                      |   HAN 3/3 ACC 5/5
-  INT 10 SPD 30 BOD 0                  |   INT 5 SPD 10 BOD 10(15)
-  ARM 0  PIL 2  SEN 1 [2]              |   PIL 2 SEN 2 [6]  ARM 8[17] 
-                                       |     &gt; Pop-Out Concealment (Large)
-- SHIAWASE BUTLER                      |     &gt; Drone rack (Small)
-  HAN 4/5 ACC 5/5                      |     &gt; Anti-theft system (Rating 1)
-  INT 5 SPD 8 BOD 4(6)                 |     &gt; Sec Propulsion (Rotor)
-  PIL 2 SEN 3 [7]  ARM 0(10)           |     &gt; Incr Struct Integrity 5
-    &gt; Anti-theft system (Rating 1)     |     &gt; Realistic Features 4
-    &gt; Sec Propulsion (Winged)          |     &gt; Integrated Cyberarm
-    &gt; Incr Struct Integrity 2          |     &gt; Tesla coil
-    &gt; Drone rack (Small)               |     &gt; Fingertip compartment
-    &gt; Integrated Cyberarm              |     &gt; Implanted Heavy Pistol
-    &gt; Integrated Cyberarm              |     &gt; Integrated Cyberarm
-    &gt; Wrist shield [+4]                |     &gt; Wrist shield [+4]
-    &gt; Realistic Features 1             |     &gt; Armor increase 5
-    &gt; Enhanced Sensors 3               |     &gt; Weapon mount-Heavy
-                                       |     &gt; Hardpoint Small
-                                       |     &gt; Hardpoint Small
-                                       |     &gt; Enhanced Sensors 3
+- MCT GNAT                             | - SHIAWASE BUTLER
+  HAN 3/3 ACC 4/4                      |   HAN 4/5 ACC 5/5
+  INT 10 SPD 30 BOD 0                  |   INT 5 SPD 8 BOD 4(4/5)
+  ARM 0  PIL 2  SEN 1 [2]              |   PIL 2(7) SEN 3 [4]  ARM 0(10)
+                                       |     &gt; Anti-theft system (Rating 1)
+- SHIAWASE BUTLER                      |     &gt; Integrated Cyberarm
+  HAN 4/5 ACC 5/5                      |     &gt; Integrated Cyberarm
+  INT 5 SPD 8 BOD 4(6/7)               |     &gt; Realistic Features 1
+  PIL 2(7) SEN 3 [7]  ARM 0(10)        |     &gt; Satellite Link
+    &gt; Anti-theft system (Rating 1)     |     &gt; Retrans Unit
+    &gt; Sec Propulsion (Winged)          |     &gt; Retractable Skates
+    &gt; Incr Struct Integrity 2          |     &gt; Retractable Skates
+    &gt; Drone rack (Small)               |     &gt; Integrated Matrix Device Dock
+    &gt; Integrated Cyberarm              |
+    &gt; Integrated Cyberarm              |
+    &gt; Wrist shield [+4]                |
+    &gt; Realistic Features 1             |
+    &gt; Enhanced Sensors 3               |
+    &gt; Retractable Skates               |
+    &gt; Retractable Skates               |
+    &gt; Hardpoint Standard               |
+    &gt; Weapon Mount Small               |
+    &gt; Weapon Mount Small               |
+                                       |
+- SHIAWASE MAN-AT-ARMS                 |
+  HAN 3/3 ACC 5/5                      |
+  INT 5 SPD 10 BOD 10(15/16)           |
+  PIL 2(7) SEN 2 [6]  ARM 8[17]        |
+    &gt; Pop-Out Concealment (Large)      |
+    &gt; Drone rack (Small)               |
+    &gt; Anti-theft system (Rating 1)     |
+    &gt; Sec Propulsion (Rotor)           |
+    &gt; Incr Struct Integrity 5          |
+    &gt; Realistic Features 4             |
+    &gt; Integrated Cyberarm              |
+    &gt; Tesla coil                       |
+    &gt; Fingertip compartment            |
+    &gt; Integrated Cyberarm              |
+    &gt; Wrist shield [+4]                |
+    &gt; Armor increase 5                 |
+    &gt; Weapon mount-Heavy               |
+    &gt; Hardpoint Small                  |
+    &gt; Hardpoint Small                  |
+    &gt; Enhanced Sensors 3               |
+    &gt; Retractable Skates               |
+    &gt; Retractable Skates               |
+    &gt; Weapon Mount Small               |
+    &gt; Weapon Mount Small               |
 
 [ MATRIX_DEVICES ]                     |
 - AI NATIVE PROTOCOLS (VIRTUAL)        |
@@ -478,9 +505,12 @@ ul.task-list li input[type="checkbox"] {
                                        |   - RFID SOFTWARE TAGS x10
                                        |   - LASER JACK x10
                                        |   - CODING FACILITY
+                                       |   - ARES FIREBRAND
+                                       |   - ARES FIREBOLT x2
 
 [ COMBAT_WEAPONS_INVENTORY ]
-  - RED FOX ARRAY (LINK)  [10P/11P | 21/23/23/16/—] (SS/SA, 30c)  [MAA Mounted]
+  - FIREBRAND ARRAY (3X LINK) [10P/11P/12P | 25/23/19/13/—] (SS/SA/BF, 30c) [MAA Mounted]
+  - FIREBOLT ARRAY (2X LINK)  [7P/8P/9P    | 22/20/16/—/—]  (SS/SA/BF, 30c) [MAA Mounted]
   - TESLA COIL            [5S(e)   | 10/12*/—/—/—]  (SS, 20m Cone) [MAA Cyberarm]
   - ARES PREDATOR VI      [3P/4P/5P| 15/15/11/—/—]  (SS/SA/BF, 15c) [Both]
   - MONOFILAMENT WHIP     [6P      | 16/—/—/—/—]    (Melee)        [MAA Cyberarm]
