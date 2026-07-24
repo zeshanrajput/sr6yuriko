@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<sr6char career="true" gender="DIVERSE" karmaI="170" meta="pilot-ai" nuyen="1450" karmaF="3">
+<sr6char career="true" gender="DIVERSE" karmaF="3" karmaI="170" meta="pilot-ai" nuyen="1100">
    <lifestyles>
       <lifestyle comfort="low" entert="low" lang="en" necess="low" neigh="low" ref="low" security="low" space="low" value="1" />
    </lifestyles>
@@ -41,11 +41,11 @@
       <sin name="Yuriko Star" quality="ROUGH_MATCH" uniqueid="59d9bf7c-436d-4fe6-9989-7a08504ec9e2" />
    </sins>
    <licenses>
-      <licenses name="Drone" rating="2" sin="59d9bf7c-436d-4fe6-9989-7a08504ec9e2" uniqueid="2f9587eb-fc6f-4ae9-996c-fc40e5439429" />
-      <licenses name="Firearms" rating="2" sin="59d9bf7c-436d-4fe6-9989-7a08504ec9e2" uniqueid="f55c56eb-36c7-4257-8072-4c861db8b5f7" />
+      <licenses name="Drone" rating="ROUGH_MATCH" sin="59d9bf7c-436d-4fe6-9989-7a08504ec9e2" uniqueid="2f9587eb-fc6f-4ae9-996c-fc40e5439429" />
+      <licenses name="Firearms" rating="ROUGH_MATCH" sin="59d9bf7c-436d-4fe6-9989-7a08504ec9e2" uniqueid="f55c56eb-36c7-4257-8072-4c861db8b5f7" />
    </licenses>
    <contacts>
-      <contact id="5b130c0a-b58c-43b8-8d5e-ec23e4deedbe" loy="2" name="Brynne Taggart" rat="4" type="Fixer" typename="Fixer" favors="2">
+      <contact favors="2" id="5b130c0a-b58c-43b8-8d5e-ec23e4deedbe" loy="2" name="Brynne Taggart" rat="4" type="Fixer" typename="Fixer">
          <description>Character Creation | SRM 2081-05 This is Renton</description>
       </contact>
       <contact id="756c7b18-3351-484f-806f-e4fc413dd4f6" loy="4" name="Whiskey" rat="2" type="Street Doc" typename="Street Doc" favors="0">
@@ -89,19 +89,19 @@
 CMP 2081-18: Blue Kentucky Girl: +1 FP -- L1
 CMP 2081-20: In the Cold Kentucky Rain: +1L</description>
       </contact>
-      <contact id="611226de-d911-4875-823f-2f114e2354ac" loy="2" name="Kiara Shaw" rat="4" type="Knight Errant Company Suit" typename="Knight Errant Company Suit" favors="1">
+      <contact favors="1" id="611226de-d911-4875-823f-2f114e2354ac" loy="2" name="Kiara Shaw" rat="4" type="Knight Errant Company Suit" typename="Knight Errant Company Suit">
          <description>CMP 2081-10 A Diamond in The Rough | CMP 2083-04 Hog Wild</description>
       </contact>
-      <contact id="38378b7e-bf5d-46ab-b1a1-f56e23c6d1a2" loy="2" name="Simon Andrews" rat="5" type="S-K Johnson" typename="S-K Johnson" favors="1">
+      <contact favors="1" id="38378b7e-bf5d-46ab-b1a1-f56e23c6d1a2" loy="2" name="Simon Andrews" rat="5" type="S-K Johnson" typename="S-K Johnson">
          <description>CMP 2081-11 Paved with good intentions | CMP 2083-01 NONPLUSHED | CMP 2083-04 Hog Wild</description>
       </contact>
       <contact id="ff9242f4-7f59-4007-9b66-12ed979ffece" loy="1" name="Squint" rat="2" type="Smuggler" typename="Smuggler" favors="0">
          <description>CMP 2081-11 Paved with good intentions</description>
       </contact>
-      <contact favors="1" id="bab7a38b-3a7c-4ce5-89fa-16aeefeb5ebc" loy="1" name="Dr. Laureline Dodd" rat="5" typename="Arcano-Archeologist" type="Arcano-Archeologist">
+      <contact favors="1" id="bab7a38b-3a7c-4ce5-89fa-16aeefeb5ebc" loy="1" name="Dr. Laureline Dodd" rat="5" type="Arcano-Archeologist" typename="Arcano-Archeologist">
          <description>CMP 2081-19 The Blue Moon of Kentucky</description>
       </contact>
-      <contact id="392cea4f-b154-43c1-8044-8495cdce1279" loy="1" name="Thaddeus" rat="3" typename="Street Samurai" favors="0" type="Street Samurai">
+      <contact id="392cea4f-b154-43c1-8044-8495cdce1279" loy="1" name="Thaddeus" rat="3" type="Street Samurai" typename="Street Samurai" favors="0">
          <description>CMP 2081-19 The Blue Moon of Kentucky</description>
       </contact>
       <contact id="7817cea0-6302-443f-86c3-a294a366a8a2" loy="1" name="Duan Yuhai" rat="3" type="Minor 88s Johnson" typename="Minor 88s Johnson" favors="0">
@@ -140,7 +140,7 @@ CMP 2083-14: +1FP -- L1</description>
       <contact id="51c12ad1-e1a0-4802-8095-925f4972d185" loy="1" name="Fernand Anato" rat="1" type="Kozlowski Capo" typename="Kozlowski Capo" favors="0">
          <description>SRM 2083-19 The Hallow Feast</description>
       </contact>
-      <contact favors="0" id="e85e037c-fa9d-447c-a4fa-cd5ab557f1e5" loy="2" name="Monsieur Johnson" rat="5" typename="Johnson" type="Johnson">
+      <contact id="e85e037c-fa9d-447c-a4fa-cd5ab557f1e5" loy="2" name="Monsieur Johnson" rat="5" type="Johnson" typename="Johnson" favors="0">
          <description>SRM 2083-19 The Hallow Feast</description>
       </contact>
       <contact id="c143aec1-b72e-4f2f-843f-7a2e666c6b93" loy="2" name="Swango" rat="3" type="Rapper" typename="Rapper" favors="0">
@@ -158,10 +158,10 @@ CMP 2083-14: +1FP -- L1</description>
       <contact id="dc6e2c88-7056-450b-a075-b4a32c206207" loy="1" name="Eddie Wei" rat="4" type="Triad/Johnson" typename="Triad/Johnson" favors="0">
          <description>SRM 2081-08 Child's Play</description>
       </contact>
-      <contact id="4542297c-d98c-486a-b46b-4b4ea6036685" loy="1" name="Julian Müntefering" rat="1" typename="Renraku Corpokid" favors="0" type="Renraku Corpokid">
+      <contact id="4542297c-d98c-486a-b46b-4b4ea6036685" loy="1" name="Julian Müntefering" rat="1" type="Renraku Corpokid" typename="Renraku Corpokid" favors="0">
          <description>SRM 2081-08 Child's Play</description>
       </contact>
-      <contact id="4a71a665-1027-468b-98b4-b8df136fbbd5" loy="2" name="Ni Ni Xiaolu" rat="3" type="Johnson/Triad" typename="Johnson/Triad" favors="1">
+      <contact favors="1" id="4a71a665-1027-468b-98b4-b8df136fbbd5" loy="2" name="Ni Ni Xiaolu" rat="3" type="Johnson/Triad" typename="Johnson/Triad">
          <description>SRM 2081-07 Bootleg Bliss | CMP 2083-05 Precious Cargo</description>
       </contact>
       <contact id="c1936bbb-d691-4300-985e-95bd22489dc7" loy="1" name="Bookie" rat="3" type="Ancients Bookie" typename="Ancients Bookie" favors="0">
@@ -170,10 +170,37 @@ CMP 2083-14: +1FP -- L1</description>
       <contact id="3bf7c9db-2ebb-4328-be79-9de3e27b506a" loy="1" name="Trudy" rat="2" type="Cutter Lieutenant" typename="Cutter Lieutenant" favors="0">
          <description>SRM 2081-07 Bootleg Bliss</description>
       </contact>
-      <contact id="80480220-b85e-49ef-b4a6-68f25f297c6d" loy="1" name="Kaatje" rat="2" typename="Young Entertainer" favors="0" type="Young Entertainer">
+      <contact id="80480220-b85e-49ef-b4a6-68f25f297c6d" loy="1" name="Kaatje" rat="2" type="Young Entertainer" typename="Young Entertainer" favors="0">
          <description>CMP 2083-04 Hog Wild</description>
       </contact>
-   <contact id="13363840-b22d-4d4f-97ab-17540412d140" name="Granny" rat="6" loy="1" favors="1" type="Lady of the Autumn Wind" typename="Lady of the Autumn Wind"><description>CMP 2081-18 Blue Kentucky Girl | CMP 2081-20 In the Cold Kentucky Rain</description></contact><contact id="9b3dcc2e-7fdc-4cd0-be05-f3e98b2542d2" name="Kirt Liger" rat="3" loy="1" favors="1" type="Body Mod/Engineering Cybercatman" typename="Body Mod/Engineering Cybercatman"><description>SRM 2081-21 Grudge Match Gladiators</description></contact><contact id="495d9006-8062-4fb9-89a7-96a8d4028330" name="Sigrún" rat="5" loy="3" favors="1" type="Shadowrunner" typename="Shadowrunner"><description>CMP 2081-12 Uneasy lies the head | CMP 2083-04 Hog Wild</description></contact><contact id="cd15c86b-214f-4f32-8d7c-6cfc5556ed3d" name="Ayanda 'Shieldbearer' Mahlangu" rat="3" loy="1" favors="0" type="'Mystic Edge' Producer" typename="'Mystic Edge' Producer"><description>CMP 2083-14 A Day at the Beach</description></contact><contact id="522f3e27-921f-456a-a53a-726e4a8245e1" name="Saint James" rat="8" loy="2" favors="0" type="Fixer" typename="Fixer"><description>SRM 2081-06 Cutting Strings</description></contact><contact id="d6a1ee54-ddab-43b6-a68e-1be5f998a676" name="Jeanie Trudel" rat="1" loy="1" favors="0" type="Bartender" typename="Bartender"><description>SRM 2081-06 Cutting Strings</description></contact><contact id="801ce81d-29c6-43f0-a214-75bda292a7fe" name="Kingston" rat="2" loy="1" favors="0" type="Shadowrunner" typename="Shadowrunner"><description>SRM 2081-06 Cutting Strings</description></contact><contact id="33bccc55-bb67-4aab-be78-a447f9781d82" name="Mr. Fa" rat="4" loy="1" favors="1" type="HKB Corporate Middle Manager" typename="HKB Corporate Middle Manager"><description>CMP 2083-05 Precious Cargo</description></contact><contact id="9a2ce2e9-86e2-4cd3-95ca-2fe0eccec5c8" name="Liao Fa Ren" rat="3" loy="2" favors="0" type="HK Rookie Journalist" typename="HK Rookie Journalist"><description>CMP 2083-05 Precious Cargo</description></contact></contacts>
+      <contact favors="1" id="021d90c2-0122-4bc8-a6ab-eed99df95f60" loy="1" name="Granny" rat="6" type="Lady of the Autumn Wind" typename="Lady of the Autumn Wind">
+         <description>CMP 2081-18 Blue Kentucky Girl | CMP 2081-20 In the Cold Kentucky Rain</description>
+      </contact>
+      <contact favors="1" id="5028db0f-36dc-4bed-bc4f-382167aee882" loy="1" name="Kirt Liger" rat="3" type="Body Mod/Engineering Cybercatman" typename="Body Mod/Engineering Cybercatman">
+         <description>SRM 2081-21 Grudge Match Gladiators</description>
+      </contact>
+      <contact favors="1" id="2986e920-5d2d-4211-bd8c-c6fb5ce9fcc7" loy="3" name="Sigrún" rat="5" type="Shadowrunner" typename="Shadowrunner">
+         <description>CMP 2081-12 Uneasy lies the head | CMP 2083-04 Hog Wild</description>
+      </contact>
+      <contact id="c472aa5f-ec9a-46ae-9a93-58690f932609" loy="1" name="Ayanda 'Shieldbearer' Mahlangu" rat="3" type="'Mystic Edge' Producer" typename="'Mystic Edge' Producer" favors="0">
+         <description>CMP 2083-14 A Day at the Beach</description>
+      </contact>
+      <contact id="c2ca2d63-8351-4f5e-b8e9-c2e9b02244e2" loy="2" name="Saint James" rat="8" type="Fixer" typename="Fixer" favors="0">
+         <description>SRM 2081-06 Cutting Strings</description>
+      </contact>
+      <contact id="2b38e3fa-7120-4eb1-bef4-492fcce71aa1" loy="1" name="Jeanie Trudel" rat="1" type="Bartender" typename="Bartender" favors="0">
+         <description>SRM 2081-06 Cutting Strings</description>
+      </contact>
+      <contact id="b40451a0-02d0-4108-a8b7-cb1dcf35c168" loy="1" name="Kingston" rat="2" type="Shadowrunner" typename="Shadowrunner" favors="0">
+         <description>SRM 2081-06 Cutting Strings</description>
+      </contact>
+      <contact favors="1" id="30d1a0b6-f160-4c29-aa73-33e04afc2b38" loy="1" name="Mr. Fa" rat="4" type="HKB Corporate Middle Manager" typename="HKB Corporate Middle Manager">
+         <description>CMP 2083-05 Precious Cargo</description>
+      </contact>
+      <contact id="bb35b018-b334-403c-9a04-3a34bcee8c1f" loy="2" name="Liao Fa Ren" rat="3" type="HK Rookie Journalist" typename="HK Rookie Journalist" favors="0">
+         <description>CMP 2083-05 Precious Cargo</description>
+      </contact>
+   </contacts>
    <name>Yuriko Star</name>
    <datasets mode="ALL" />
    <rules>
@@ -237,6 +264,15 @@ CMP 2083-14: +1FP -- L1</description>
             <item lang="en" mode="EMBEDDED" ref="enhanced_sensors" slot="VEHICLE_ELECTRONICS" uuid="c079b5ed-e8f0-4986-9fa5-983537383ee4">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="3" />
             </item>
+            <item lang="en" mode="EMBEDDED" ref="retractable_skates" slot="CYBERLIMB_IMPLANT" uuid="e8b43fd4-bbe8-4ebe-8606-ff52375c2c11">
+               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170c" value="USED" />
+            </item>
+            <item lang="en" mode="EMBEDDED" ref="retractable_skates" slot="CYBERLIMB_IMPLANT" uuid="32612e27-7ea3-4be3-aa8d-e10d554c255e">
+               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170c" value="USED" />
+            </item>
+            <item lang="en" mode="EMBEDDED" ref="hardpoint_standard" slot="VEHICLE_CHASSIS" uuid="6351887b-762f-409b-8213-a0a5bf0f7b32" />
+            <item lang="en" mode="EMBEDDED" ref="weapon_mount_small" slot="VEHICLE_HARDPOINT" uuid="2f5d6ff5-6e0e-4dc8-b105-2c507ec4c2f5" />
+            <item lang="en" mode="EMBEDDED" ref="weapon_mount_small" slot="VEHICLE_HARDPOINT" uuid="ddff26d0-edeb-46d2-bba1-271d96d6a402" />
          </accessories>
          <accessoriesInFact>
             <item inFactoryItem="4f2a8d0b-381f-4464-b14b-ef5c6c6ef9bf" lang="en" mode="EMBEDDED" ref="cyberweapon_wrist_shield" slot="CYBERLIMB_IMPLANT" uuid="1c09ce2a-129d-4d4d-aebf-ca3f020c3fe7">
@@ -283,6 +319,18 @@ CMP 2083-14: +1FP -- L1</description>
             <item lang="en" mode="EMBEDDED" ref="enhanced_sensors" slot="VEHICLE_ELECTRONICS" uuid="81cffb5b-67fe-4b0f-816a-9faed6575ddc">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="3" />
             </item>
+            <item lang="en" mode="EMBEDDED" ref="retractable_skates" slot="CYBERLIMB_IMPLANT" uuid="c3b6262a-d97b-4324-93e7-d77c0487ef7b">
+               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170c" value="OMEGA" />
+            </item>
+            <item lang="en" mode="EMBEDDED" ref="retractable_skates" slot="CYBERLIMB_IMPLANT" uuid="83b82c2a-d299-41d3-b55f-98f441b86743">
+               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170c" value="USED" />
+            </item>
+            <item lang="en" mode="EMBEDDED" ref="weapon_mount_small" slot="VEHICLE_HARDPOINT" uuid="3354a977-f16f-4881-99b5-9007ec228a14" />
+            <item lang="en" mode="EMBEDDED" ref="weapon_mount_small" slot="VEHICLE_HARDPOINT" uuid="210528fd-172b-4811-9943-e9339df68052" />
+            <item lang="en" mode="EMBEDDED" ref="armor_increase" slot="CYBERLIMB_IMPLANT" uuid="e13ba9e4-5ea4-4c81-8443-ee2a8b8fa285">
+               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="5" />
+               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170c" value="USED" />
+            </item>
          </accessories>
          <accessoriesInFact>
             <item inFactoryItem="e6358fb9-51ab-48bb-9f7d-f073b08f2d2d" lang="en" mode="EMBEDDED" ref="cyberweapon_tesla_coil" slot="CYBERLIMB_IMPLANT" uuid="4089bd53-21f4-4bac-b517-694e35856aba">
@@ -291,14 +339,7 @@ CMP 2083-14: +1FP -- L1</description>
             <item inFactoryItem="e6358fb9-51ab-48bb-9f7d-f073b08f2d2d" lang="en" mode="EMBEDDED" ref="fingertip_compartment" slot="CYBERLIMB_IMPLANT" uuid="9373d82a-c752-4a93-8157-7ca4799ba0f2">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170c" value="USED" />
             </item>
-            <item inFactoryItem="e6358fb9-51ab-48bb-9f7d-f073b08f2d2d" lang="en" mode="EMBEDDED" ref="cyber_heavy_pistol" slot="CYBERLIMB_IMPLANT" uuid="88d83531-2a15-4a53-9084-aea68723f30e">
-               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170c" value="USED" />
-            </item>
             <item inFactoryItem="2a1dd5ab-475e-473e-9c45-7bd90f726f2b" lang="en" mode="EMBEDDED" ref="cyberweapon_wrist_shield" slot="CYBERLIMB_IMPLANT" uuid="b7d06471-84a2-41cd-a467-dd545f03b09c">
-               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170c" value="USED" />
-            </item>
-            <item inFactoryItem="2a1dd5ab-475e-473e-9c45-7bd90f726f2b" lang="en" mode="EMBEDDED" ref="armor_increase" slot="CYBERLIMB_IMPLANT" uuid="5460c21f-092c-494a-ab67-fb208bc776ad">
-               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="5" />
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170c" value="USED" />
             </item>
          </accessoriesInFact>
@@ -338,98 +379,116 @@ CMP 2083-14: +1FP -- L1</description>
       </item>
       <item lang="en" mode="CARRIED" ref="mtoc_mark2" uuid="8111bbf4-5fc7-449d-acaf-41402ee536b1">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="ELECTRONIC_ACCESSORY" uuid="14236071-919a-4a38-9073-f4e39982c2aa" />
+            <item count="2" lang="en" mode="EMBEDDED" ref="satellite_link" slot="ELECTRONIC_ACCESSORY" uuid="14236071-919a-4a38-9073-f4e39982c2aa" />
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="sneak_sneak" slot="SOFTWARE" uuid="677568f7-6265-4159-a886-b6ab331d041e" />
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="artillery_barrage" slot="SOFTWARE" uuid="5ca61534-4a27-408a-b88d-9c10bc1a23c7" />
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="ecm_warrior_ii" slot="SOFTWARE" uuid="1cdd833d-6881-4c27-a083-bea18f834c53" />
-            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="target_artist" slot="SOFTWARE" uuid="af663ff9-bcc0-4c1b-abe2-c1af1792d739">
-               </item>
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="mapsoft" slot="SOFTWARE" uuid="af663ff9-bcc0-4c1b-abe2-c1af1792d739">
+               <decision choice="47d1e468-6df7-43ce-9651-44485cc78bb8" value="SEA" />
+            </item>
          </accessories>
          <flag>PRIMARY</flag>
       </item>
       <item count="10" lang="en" mode="CARRIED" ref="rfid_software_tags" uuid="c3a11a88-9e56-4b11-9d41-9410ec852068" />
       <item count="10" lang="en" mode="CARRIED" ref="laser_jack" uuid="e5c07b07-fecf-4c7c-92c1-ab18da0d49e8" />
       <item lang="en" mode="CARRIED" ref="coding_facility" uuid="0e9776dc-0a7f-4f8b-ab1b-17bae92aa4c2" />
-      <item count="2" lang="en" mode="CARRIED" ref="crimson_wasp" uuid="cc9334cd-33cf-432f-8ba8-877c862c032d" />
-      <item lang="en" mode="CARRIED" ref="red_fox" uuid="9282fc9b-eafc-4953-ba72-e1aa4d0d1bee">
-         <enhancements>
-            <enhancement lang="en" ref="smartgun_system_mod" />
-         </enhancements>
+      <item changes="0,0,0" count="1" lang="en" mode="CARRIED" ref="shiawase_BD_butler" uuid="227c5aa8-b36c-436a-b759-18ea24ff300d">
+         <notes>Butler #2 (Retrans / Comms Support)</notes>
+         <accessories>
+            <item lang="en" mode="EMBEDDED" ref="anti_theft" slot="VEHICLE_ELECTRONICS" uuid="92dc5fa9-bb5c-4f40-a00a-f653a716e19e" variant="rating1">
+               <flag>AUTO_ADDED</flag>
+            </item>
+            <item lang="en" mode="EMBEDDED" ref="realistic_features" slot="VEHICLE_CHASSIS" uuid="b0787889-c714-4a24-9cd3-bf6af1e97fdb">
+               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="1" />
+            </item>
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="239cc6a1-215e-470a-89d3-5c48329607aa" />
+            <item lang="en" mode="EMBEDDED" ref="retrans_unit" slot="VEHICLE_ELECTRONICS" uuid="3cba562d-2b8b-4460-9b0d-b0c59101b6e6" />
+            <item lang="en" mode="EMBEDDED" ref="retractable_skates" slot="CYBERLIMB_IMPLANT" uuid="b6156882-a9d2-4a12-81d4-7475482a7657">
+               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170c" value="USED" />
+            </item>
+            <item lang="en" mode="EMBEDDED" ref="retractable_skates" slot="CYBERLIMB_IMPLANT" uuid="22781a07-b8bd-4e84-8532-0660c65833a5">
+               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170c" value="USED" />
+            </item>
+            <item lang="en" mode="EMBEDDED" ref="integrated_matrix_device" slot="VEHICLE_ELECTRONICS" uuid="bb33eb9a-d054-4fcc-9e3a-a24b6c8680f0" />
+         </accessories>
       </item>
-      <item count="5" lang="en" mode="CARRIED" ref="ammo_battery_laser" uuid="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0" />
+      <item lang="en" mode="CARRIED" ref="ares_firebrand" uuid="9da3b117-fa3b-4066-89b1-dfa449fcd711" />
+      <item count="2" lang="en" mode="CARRIED" ref="ares_firebolt" uuid="f1323988-ce51-4c7d-b2d1-b23c511752de" />
+      <item count="1" lang="en" mode="CARRIED" ref="ammo_battery_backpack" uuid="c93bba61-c7b5-4ef1-81e5-b2d20eb251f1" />
       <item lang="en" mode="VIRTUAL" ref="software_library" uuid="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="baby_monitor" slot="SOFTWARE" uuid="21252dd0-210b-47e1-a7b4-4ce367ef6878" variant="regular" />
-            <item lang="en" mode="EMBEDDED" ref="soft_biotech" slot="SOFTWARE" uuid="e3f035fe-bc96-4591-a98f-63f1fa769c36">
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="baby_monitor" slot="SOFTWARE" uuid="21252dd0-210b-47e1-a7b4-4ce367ef6878" variant="regular" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_biotech" slot="SOFTWARE" uuid="e3f035fe-bc96-4591-a98f-63f1fa769c36">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
             </item>
-            <item lang="en" mode="EMBEDDED" ref="browse" slot="SOFTWARE" uuid="e205e19d-78e7-49f5-9e23-d699396157c8" variant="regular" />
-            <item lang="en" mode="EMBEDDED" ref="clearsight" slot="SOFTWARE" uuid="c91e74d2-57c4-4a98-906a-0ca464d270c0">
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="browse" slot="SOFTWARE" uuid="e205e19d-78e7-49f5-9e23-d699396157c8" variant="regular" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="clearsight" slot="SOFTWARE" uuid="c91e74d2-57c4-4a98-906a-0ca464d270c0">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
             </item>
-            <item lang="en" mode="EMBEDDED" ref="soft_close_combat" slot="SOFTWARE" uuid="f24395ce-c571-4180-a6d8-5371f1702dd0">
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_close_combat" slot="SOFTWARE" uuid="f24395ce-c571-4180-a6d8-5371f1702dd0">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
                <decision choice="2baf4c6e-417b-4d1a-943c-edfa816d50bf" value="katana" />
             </item>
-            <item lang="en" mode="EMBEDDED" ref="decryption" slot="SOFTWARE" uuid="4d84dc26-17b1-42b5-8905-35f188805983" />
-            <item lang="en" mode="EMBEDDED" ref="defense_pods" slot="SOFTWARE" uuid="51cbd3dd-cc91-4bb0-9288-fab6edb1ac72" />
-            <item lang="en" mode="EMBEDDED" ref="directional_shield" slot="SOFTWARE" uuid="3a774c61-6b50-4bea-9e06-a9412ddb6f04" />
-            <item lang="en" mode="EMBEDDED" ref="edit" slot="SOFTWARE" uuid="aadac09a-608a-41be-819a-82ee7dc03a9e" variant="regular" />
-            <item lang="en" mode="EMBEDDED" ref="evasion" slot="SOFTWARE" uuid="27ad6e49-f0b8-4e74-adf6-172339ff3589">
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="decryption" slot="SOFTWARE" uuid="4d84dc26-17b1-42b5-8905-35f188805983" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="defense_pods" slot="SOFTWARE" uuid="51cbd3dd-cc91-4bb0-9288-fab6edb1ac72" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="directional_shield" slot="SOFTWARE" uuid="3a774c61-6b50-4bea-9e06-a9412ddb6f04" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="edit" slot="SOFTWARE" uuid="aadac09a-608a-41be-819a-82ee7dc03a9e" variant="regular" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="evasion" slot="SOFTWARE" uuid="27ad6e49-f0b8-4e74-adf6-172339ff3589">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
             </item>
-            <item lang="en" mode="EMBEDDED" ref="facial_scanner" slot="SOFTWARE" uuid="97443858-7100-42eb-8881-8c0265b466df" />
-            <item lang="en" mode="EMBEDDED" ref="fork" slot="SOFTWARE" uuid="7df87e18-964b-4506-8096-133ea5c96fae" />
-            <item lang="en" mode="EMBEDDED" ref="hitchhiker" slot="SOFTWARE" uuid="7f6b8dc3-af0c-44ea-a851-cbc94ab40b9e" />
-            <item lang="en" mode="EMBEDDED" ref="maneuvering" slot="SOFTWARE" uuid="473ef775-1b2b-4c11-ac2a-0818947562b2">
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="facial_scanner" slot="SOFTWARE" uuid="97443858-7100-42eb-8881-8c0265b466df" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="fork" slot="SOFTWARE" uuid="7df87e18-964b-4506-8096-133ea5c96fae" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="hitchhiker" slot="SOFTWARE" uuid="7f6b8dc3-af0c-44ea-a851-cbc94ab40b9e" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="maneuvering" slot="SOFTWARE" uuid="473ef775-1b2b-4c11-ac2a-0818947562b2">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
                <decision choice="355a3a45-39fc-4376-8667-661c9873dfdb" value="shiawase_BD_butler" />
             </item>
-            <item lang="en" mode="EMBEDDED" ref="mannequin" slot="SOFTWARE" uuid="64de90de-7f43-4eff-a4fc-2a0937dbdf85" />
-            <item lang="en" mode="EMBEDDED" ref="mefeed" slot="SOFTWARE" uuid="0683fd5d-e4be-4d7e-ad81-df8fe96f2163" />
-            <item lang="en" mode="EMBEDDED" ref="soft_navigation" slot="SOFTWARE" uuid="14c1be8f-e64e-44cc-895a-98cb7574d4b8">
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="mannequin" slot="SOFTWARE" uuid="64de90de-7f43-4eff-a4fc-2a0937dbdf85" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="mefeed" slot="SOFTWARE" uuid="0683fd5d-e4be-4d7e-ad81-df8fe96f2163" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_navigation" slot="SOFTWARE" uuid="14c1be8f-e64e-44cc-895a-98cb7574d4b8">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
             </item>
-            <item lang="en" mode="EMBEDDED" ref="nexus_protocol" slot="SOFTWARE" uuid="8f94b501-4110-45f4-8736-01bba8b0295d" />
-            <item lang="en" mode="EMBEDDED" ref="overclock" slot="SOFTWARE" uuid="06cb217b-b846-4e39-acb1-a8552c505d80" />
-            <item lang="en" mode="EMBEDDED" ref="soft_con_performance" slot="SOFTWARE" uuid="b924ae64-35d4-4a69-957b-c2d80b8caca1">
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="nexus_protocol" slot="SOFTWARE" uuid="8f94b501-4110-45f4-8736-01bba8b0295d" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="overclock" slot="SOFTWARE" uuid="06cb217b-b846-4e39-acb1-a8552c505d80" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_con_performance" slot="SOFTWARE" uuid="b924ae64-35d4-4a69-957b-c2d80b8caca1">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
             </item>
-            <item lang="en" mode="EMBEDDED" ref="social_hud" slot="SOFTWARE" uuid="3a0803ad-69e3-4b7a-8ebf-88624c826b55" />
-            <item lang="en" mode="EMBEDDED" ref="targeting" slot="SOFTWARE" uuid="5f0fba38-910f-4426-b54d-8320e6a681c2">
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="social_hud" slot="SOFTWARE" uuid="3a0803ad-69e3-4b7a-8ebf-88624c826b55" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="targeting" slot="SOFTWARE" uuid="5f0fba38-910f-4426-b54d-8320e6a681c2">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
                <decision choice="2baf4c6e-417b-4d1a-943c-edfa816d50bf" value="ares_predator_vi" />
             </item>
-            <item lang="en" mode="EMBEDDED" ref="trace" slot="SOFTWARE" uuid="87e4dda6-49fe-454f-a766-04b887b35adb" />
-            <item lang="en" mode="EMBEDDED" ref="soft_tracking" slot="SOFTWARE" uuid="366fea50-a623-439d-a28f-c6780212b88d">
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="trace" slot="SOFTWARE" uuid="87e4dda6-49fe-454f-a766-04b887b35adb" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_tracking" slot="SOFTWARE" uuid="366fea50-a623-439d-a28f-c6780212b88d">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
             </item>
-            <item lang="en" mode="EMBEDDED" ref="thermal_mood_reading" slot="SOFTWARE" uuid="c92293c4-a0f5-4721-bc79-8ef121ae9e04" />
-            <item lang="en" mode="EMBEDDED" ref="vocal_tension_detection" slot="SOFTWARE" uuid="f18e96ef-f57c-40f1-bc08-45161779c6a3" />
-            <item lang="en" mode="EMBEDDED" ref="soft_engineering" slot="SOFTWARE" uuid="5d8a8814-6ac9-49bc-b294-3a06dbdfe558">
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="thermal_mood_reading" slot="SOFTWARE" uuid="c92293c4-a0f5-4721-bc79-8ef121ae9e04" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="vocal_tension_detection" slot="SOFTWARE" uuid="f18e96ef-f57c-40f1-bc08-45161779c6a3" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_engineering" slot="SOFTWARE" uuid="5d8a8814-6ac9-49bc-b294-3a06dbdfe558">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
                <decision choice="712a1bb4-b761-48a7-b2ba-ae5d36f47166" value="engineering/industrial_mechanic" />
             </item>
-            <item lang="en" mode="EMBEDDED" ref="smart_rig" slot="SOFTWARE" uuid="c72e6196-a65a-4a86-8c3e-a755ace6b964" />
-            <item lang="en" mode="EMBEDDED" ref="soft_language" slot="SOFTWARE" uuid="7d04ba55-a99c-49c4-8710-b4f924ab0c9c">
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="smart_rig" slot="SOFTWARE" uuid="c72e6196-a65a-4a86-8c3e-a755ace6b964" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_language" slot="SOFTWARE" uuid="7d04ba55-a99c-49c4-8710-b4f924ab0c9c">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="5" />
             </item>
-            <item lang="en" mode="EMBEDDED" ref="soft_knowledge" slot="SOFTWARE" uuid="12d50f1e-ac93-410c-b691-c537a4def8b7"><decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="3" /></item>
-            <item lang="en" mode="EMBEDDED" ref="emulator" slot="SOFTWARE" uuid="0f38bf43-dfc0-4da6-bc70-ff46d68ba70b" />
-            <item lang="en" mode="EMBEDDED" ref="p-ice_spines" slot="SOFTWARE" uuid="6ac6378b-d7b0-4e31-b963-589d3de2744a" />
-            <item lang="en" mode="EMBEDDED" ref="personal_assistant" slot="SOFTWARE" uuid="c5e5ec5e-9c8e-4cd5-85bd-fd0ad8990726">
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_knowledge" slot="SOFTWARE" uuid="12d50f1e-ac93-410c-b691-c537a4def8b7" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="emulator" slot="SOFTWARE" uuid="0f38bf43-dfc0-4da6-bc70-ff46d68ba70b" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="p-ice_spines" slot="SOFTWARE" uuid="6ac6378b-d7b0-4e31-b963-589d3de2744a" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="personal_assistant" slot="SOFTWARE" uuid="c5e5ec5e-9c8e-4cd5-85bd-fd0ad8990726">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="6" />
             </item>
-            <item lang="en" mode="EMBEDDED" ref="toolbox" slot="SOFTWARE" uuid="300d3c6c-9042-40bc-8b01-d6cb0d1ebed7" variant="regular" />
-            <item lang="en" mode="EMBEDDED" ref="encryption" slot="SOFTWARE" uuid="e02787fb-6703-42d5-8cae-8fed4ba35c1f" />
-            <item lang="en" mode="EMBEDDED" ref="signal_scrubber" slot="SOFTWARE" uuid="215aa551-68ec-4854-8735-d59e342b53f9" variant="regular" />
-            <item lang="en" mode="EMBEDDED" ref="virtual_machine" slot="SOFTWARE" uuid="b7ceba6e-c736-4e42-84f8-a058ba60babb" variant="regular" />
-            <item lang="en" mode="EMBEDDED" ref="shopsoft" slot="SOFTWARE" uuid="11232734-9d02-40ae-803b-08205e458e09">
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="toolbox" slot="SOFTWARE" uuid="300d3c6c-9042-40bc-8b01-d6cb0d1ebed7" variant="regular" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="encryption" slot="SOFTWARE" uuid="e02787fb-6703-42d5-8cae-8fed4ba35c1f" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="signal_scrubber" slot="SOFTWARE" uuid="215aa551-68ec-4854-8735-d59e342b53f9" variant="regular" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="virtual_machine" slot="SOFTWARE" uuid="b7ceba6e-c736-4e42-84f8-a058ba60babb" variant="regular" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="shopsoft" slot="SOFTWARE" uuid="11232734-9d02-40ae-803b-08205e458e09">
                <decision choice="47d1e468-6df7-43ce-9651-44485cc78bb8" value="Drones, SW, HW, Firearms, Armor, Demolitions" />
             </item>
-            <item lang="en" mode="EMBEDDED" ref="mobile_medic" slot="SOFTWARE" uuid="9335def9-98ad-4852-9b9c-07fbd1b512d7" />
-            <item lang="en" mode="EMBEDDED" ref="swarm_rig" slot="SOFTWARE" uuid="7d3e5678-e55a-49ca-9b89-da41613521b7" />
-            <item lang="en" mode="EMBEDDED" ref="stealth_auto" slot="SOFTWARE" uuid="5ad6833a-c2dd-4912-8e29-b1466ecb2945">
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="mobile_medic" slot="SOFTWARE" uuid="9335def9-98ad-4852-9b9c-07fbd1b512d7" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="swarm_rig" slot="SOFTWARE" uuid="7d3e5678-e55a-49ca-9b89-da41613521b7" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="target_artist" slot="SOFTWARE" uuid="ccd718da-a362-4d43-bda9-8b6bf982eadb" />
+            <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="stealth_auto" slot="SOFTWARE" uuid="5ad6833a-c2dd-4912-8e29-b1466ecb2945">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
                <decision choice="355a3a45-39fc-4376-8667-661c9873dfdb" value="shiawase_BD_man_at_arms" />
             </item>
@@ -717,6 +776,27 @@ CMP 2083-14: +1FP -- L1</description>
       <valmod date="2026-07-20T21:49:36.764-04:00" id="5ad6833a-c2dd-4912-8e29-b1466ecb2945" ref="stealth_auto" set="AUGMENTED" type="CARRIED" value="0" />
       <valmod date="2026-07-20T23:09:48.603-04:00" id="81cffb5b-67fe-4b0f-816a-9faed6575ddc" ref="enhanced_sensors" set="AUGMENTED" type="CARRIED" value="15000" />
       <valmod date="2026-07-20T23:10:01.582-04:00" id="c079b5ed-e8f0-4986-9fa5-983537383ee4" ref="enhanced_sensors" set="AUGMENTED" type="CARRIED" value="15000" />
+      <valmod date="2026-07-23T19:01:37.749-04:00" id="3cba562d-2b8b-4460-9b0d-b0c59101b6e6" ref="retrans_unit" set="AUGMENTED" type="CARRIED" value="7000" />
+      <valmod date="2026-07-23T19:02:02.801-04:00" id="b6156882-a9d2-4a12-81d4-7475482a7657" ref="retractable_skates" set="AUGMENTED" type="CARRIED" value="125" />
+      <valmod date="2026-07-23T19:02:12.552-04:00" id="22781a07-b8bd-4e84-8532-0660c65833a5" ref="retractable_skates" set="AUGMENTED" type="CARRIED" value="125" />
+      <valmod date="2026-07-23T19:10:23.067-04:00" id="88d83531-2a15-4a53-9084-aea68723f30e" ref="cyber_heavy_pistol" set="AUGMENTED" type="CARRIED" value="-9000" />
+      <valmod date="2026-07-23T19:10:37.926-04:00" id="c3b6262a-d97b-4324-93e7-d77c0487ef7b" ref="retractable_skates" set="AUGMENTED" type="CARRIED" value="125" />
+      <valmod date="2026-07-23T19:10:48.829-04:00" id="83b82c2a-d299-41d3-b55f-98f441b86743" ref="retractable_skates" set="AUGMENTED" type="CARRIED" value="125" />
+      <valmod date="2026-07-23T19:11:07.393-04:00" id="3354a977-f16f-4881-99b5-9007ec228a14" ref="weapon_mount_small" set="AUGMENTED" type="CARRIED" value="1500" />
+      <valmod date="2026-07-23T19:11:13.039-04:00" id="210528fd-172b-4811-9943-e9339df68052" ref="weapon_mount_small" set="AUGMENTED" type="CARRIED" value="1500" />
+      <valmod date="2026-07-23T19:11:38.354-04:00" id="5460c21f-092c-494a-ab67-fb208bc776ad" ref="armor_increase" set="AUGMENTED" type="CARRIED" value="-1000" />
+      <valmod date="2026-07-23T19:11:48.371-04:00" id="e13ba9e4-5ea4-4c81-8443-ee2a8b8fa285" ref="armor_increase" set="AUGMENTED" type="CARRIED" value="12500" />
+      <valmod date="2026-07-23T19:18:16.229-04:00" id="e8b43fd4-bbe8-4ebe-8606-ff52375c2c11" ref="retractable_skates" set="AUGMENTED" type="CARRIED" value="125" />
+      <valmod date="2026-07-23T19:18:23.309-04:00" id="32612e27-7ea3-4be3-aa8d-e10d554c255e" ref="retractable_skates" set="AUGMENTED" type="CARRIED" value="125" />
+      <valmod date="2026-07-23T19:18:41.147-04:00" id="6351887b-762f-409b-8213-a0a5bf0f7b32" ref="hardpoint_standard" set="AUGMENTED" type="CARRIED" value="1500" />
+      <valmod date="2026-07-23T19:18:47.253-04:00" id="2f5d6ff5-6e0e-4dc8-b105-2c507ec4c2f5" ref="weapon_mount_small" set="AUGMENTED" type="CARRIED" value="1500" />
+      <valmod date="2026-07-23T19:18:52.633-04:00" id="ddff26d0-edeb-46d2-bba1-271d96d6a402" ref="weapon_mount_small" set="AUGMENTED" type="CARRIED" value="1500" />
+      <valmod date="2026-07-23T19:22:41.908-04:00" id="14236071-919a-4a38-9073-f4e39982c2aa" ref="satellite_link" set="AUGMENTED" type="CARRIED" value="0" />
+      <valmod date="2026-07-23T19:31:08.785-04:00" id="bb33eb9a-d054-4fcc-9e3a-a24b6c8680f0" ref="integrated_matrix_device" set="AUGMENTED" type="CARRIED" value="800" />
+      <valmod date="2026-07-23T19:35:52.033-04:00" id="9da3b117-fa3b-4066-89b1-dfa449fcd711" ref="ares_firebrand" set="AUGMENTED" type="CARRIED" value="2750" />
+      <valmod date="2026-07-23T19:35:56.919-04:00" id="f1323988-ce51-4c7d-b2d1-b23c511752de" ref="ares_firebolt" set="AUGMENTED" type="CARRIED" value="1250" />
+      <valmod date="2026-07-23T19:35:59.443-04:00" id="f1323988-ce51-4c7d-b2d1-b23c511752de" ref="ares_firebolt" set="AUGMENTED" type="CARRIED" value="1250" />
+      <valmod date="2026-07-23T19:37:19.570-04:00" id="c93bba61-c7b5-4ef1-81e5-b2d20eb251f1" ref="ammo_battery_backpack" set="AUGMENTED" type="CARRIED" value="2500" />
    </history>
    <rewards>
       <reward date="2026-04-20T00:00:00.000-04:00" exp="13">

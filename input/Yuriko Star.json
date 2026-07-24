@@ -425,14 +425,14 @@
       "primary": false
     },
     {
-      "name": "Crimson Wasp",
+      "name": "Ares Firebolt",
       "type": "Exotic Weapons",
       "subtype": "Special Weapons",
       "skill": null,
       "pool": 3,
       "damage": "5P",
-      "attackRating": "16/14/11/6/-",
-      "mode": "SA",
+      "attackRating": "16/14/10/-/-",
+      "mode": "SS,SA,BF",
       "ammunition": "15(c)",
       "wifi": [
         "Digital ammunition counter and an ARO that tells you the ammo type loaded. ",
@@ -444,14 +444,14 @@
       "primary": false
     },
     {
-      "name": "Red Fox",
+      "name": "Ares Firebrand",
       "type": "Exotic Weapons",
       "subtype": "Special Weapons",
       "skill": null,
       "pool": 3,
       "damage": "6P",
-      "attackRating": "14/16/16/9/-",
-      "mode": "SA,BF",
+      "attackRating": "18/16/12/6/-",
+      "mode": "SS,SA,BF",
       "ammunition": "30(c)",
       "wifi": [
         "Digital ammunition counter and an ARO that tells you the ammo type loaded. ",
@@ -693,8 +693,8 @@
       "description": ""
     },
     {
-      "name": "Battery for laser weapons",
-      "count": 5,
+      "name": "Power Backpack (80 Energy)",
+      "count": 1,
       "rating": 0,
       "type": "Ammunition \u0026 Explosives",
       "subType": "Ammunition, special",

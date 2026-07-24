@@ -1387,8 +1387,9 @@ def generate_ascii_sheet(char_data, verbose=False):
                         integrity_rating = int(m.group(1))
                 
                 augmented_body = base_body + integrity_rating
+                inhabited_body = augmented_body + 1
                 
-                bod_fn_desc = [f"BOD is {base_body}({augmented_body}), where increased structural integrity adds +{integrity_rating}."]
+                bod_fn_desc = [f"BOD is {base_body}({augmented_body}/{inhabited_body}), where increased structural integrity adds +{integrity_rating} and Home Device Tuning adds +1 when inhabited."]
                 
                 # Check for ceramic armor in character items
                 has_ceramic = False
@@ -1399,8 +1400,8 @@ def generate_ascii_sheet(char_data, verbose=False):
                 if has_ceramic:
                     bod_fn_desc.append("+2 vs dmg (ceramic armor)")
                 
-                bod_fn = fn_registry.add_footnote(f"S. Man-at-Arms BOD {base_body}({augmented_body})", bod_fn_desc)
-                bod_display = f"{base_body}({augmented_body}) {bod_fn}"
+                bod_fn = fn_registry.add_footnote(f"S. Man-at-Arms BOD {base_body}({augmented_body}/{inhabited_body})", bod_fn_desc)
+                bod_display = f"{base_body}({augmented_body}/{inhabited_body}) {bod_fn}"
                 
                 # Calculate augmented armor using drone's own accessories
                 base_armor = 8
@@ -1440,10 +1441,11 @@ def generate_ascii_sheet(char_data, verbose=False):
                     if m:
                         integrity_rating = int(m.group(1))
                 augmented_body = base_body + integrity_rating
+                inhabited_body = augmented_body + 1
                 
-                bod_fn_desc = [f"BOD is {base_body}({augmented_body}), where increased structural integrity adds +{integrity_rating}."]
-                bod_fn = fn_registry.add_footnote(f"S. Butler BOD {base_body}({augmented_body})", bod_fn_desc)
-                bod_display = f"{base_body}({augmented_body}) {bod_fn}"
+                bod_fn_desc = [f"BOD is {base_body}({augmented_body}/{inhabited_body}), where increased structural integrity adds +{integrity_rating} and Home Device Tuning adds +1 when inhabited."]
+                bod_fn = fn_registry.add_footnote(f"S. Butler BOD {base_body}({augmented_body}/{inhabited_body})", bod_fn_desc)
+                bod_display = f"{base_body}({augmented_body}/{inhabited_body}) {bod_fn}"
                 
                 # Butler armor calculation
                 base_armor = 0
@@ -1488,10 +1490,11 @@ def generate_ascii_sheet(char_data, verbose=False):
                 sen_display = str(base_sen)
 
             if "MAN-AT-ARMS" in d_name or "BUTLER" in d_name:
+                pil_display = f"{drn_pil}(7)"
                 lines.append(f"- {d_name[:22]}")
                 lines.append(f"  HAN {drn_han} ACC {drn_acc}")
                 lines.append(f"  INT {drn_interval} SPD {drn_max_spd} BOD {bod_display}")
-                lines.append(f"  PIL {drn_pil} SEN {sen_display}  ARM {arm_display}")
+                lines.append(f"  PIL {pil_display} SEN {sen_display}  ARM {arm_display}")
             else:
                 # Add extra spacing to standard drones for clean alignment
                 lines.append(f"- {d_name[:22]}")
@@ -1871,7 +1874,8 @@ def generate_ascii_sheet(char_data, verbose=False):
     # Dedicated Combat Weapons Inventory Section (Max width < 80 chars)
     weapons_lines = [
         "[ COMBAT_WEAPONS_INVENTORY ]",
-        "  - RED FOX ARRAY (LINK)  [10P/11P | 21/23/23/16/—] (SS/SA, 30c)  [MAA Mounted]",
+        "  - FIREBRAND ARRAY (3X LINK) [10P/11P/12P | 25/23/19/13/—] (SS/SA/BF, 30c) [MAA Mounted]",
+        "  - FIREBOLT ARRAY (2X LINK)  [7P/8P/9P    | 22/20/16/—/—]  (SS/SA/BF, 30c) [MAA Mounted]",
         "  - TESLA COIL            [5S(e)   | 10/12*/—/—/—]  (SS, 20m Cone) [MAA Cyberarm]",
         "  - ARES PREDATOR VI      [3P/4P/5P| 15/15/11/—/—]  (SS/SA/BF, 15c) [Both]",
         "  - MONOFILAMENT WHIP     [6P      | 16/—/—/—/—]    (Melee)        [MAA Cyberarm]",
@@ -2176,99 +2180,64 @@ def post_process_json(raw_json_path, log_totals, out_json_path):
         if "items" in data and isinstance(data["items"], list):
             fix_autosoft_ratings(data["items"])
 
-        # 6. Weapons: Formatted modes (SS/SA/BF), single damage codes, mod = 12, pool = 18
-        weapon_mods = {
-            "ares predator vi": {
+        # 6. Weapons: Report SS damage value only, pool = 18
+        data["longRangeWeapons"] = [
+            {
                 "name": "Ares Predator VI",
-                "mode": "SS/SA/BF",
+                "type": "Heavy Pistols",
+                "subtype": "Heavy Pistols",
+                "skill": "Firearms",
+                "mod": 12,
+                "pool": 18,
                 "damage": "3P",
                 "attackRating": "15/15/11/—/—",
+                "mode": "SS/SA/BF",
+                "ammunition": "15(c)",
+                "wifi": [],
+                "accessories": [],
+                "page": "Core Rulebook 253",
+                "description": "Hand-held heavy pistol sidearm. Internal Smartlink, Personalized Grip, Silencer.",
+                "primary": True
+            },
+            {
+                "name": "Ares Firebolt Array (2x Link-Fired)",
+                "type": "Exotic Weapons",
+                "subtype": "Special Weapons",
+                "skill": "Firearms",
                 "mod": 12,
                 "pool": 18,
-                "description": "Hand-held heavy pistol sidearm. Internal Smartlink, Personalized Grip, Silencer."
+                "damage": "7P",
+                "attackRating": "22/20/16/—/—",
+                "mode": "SS/SA/BF",
+                "ammunition": "30(c)",
+                "wifi": [],
+                "accessories": [],
+                "page": "Firing Squad 44",
+                "description": "Link-fired array with 2x Ares Firebolts (+2 DV array bonus, +1 AR for 2nd gun). Mounted on Shiawase Man-at-Arms.",
+                "primary": True
             },
-            "red fox": {
-                "name": "Red Fox Array (Link-Fired)",
-                "mode": "SS/SA",
+            {
+                "name": "Ares Firebrand Array (Link-Fired)",
+                "type": "Exotic Weapons",
+                "subtype": "Special Weapons",
+                "skill": "Firearms",
+                "mod": 12,
+                "pool": 18,
                 "damage": "10P",
-                "attackRating": "21/23/23/16/—",
-                "mod": 12,
-                "pool": 18,
-                "description": "Link-fired array with 2x Crimson Wasps. Mounted on Shiawase Man-at-Arms."
+                "attackRating": "25/23/19/13/—",
+                "mode": "SS/SA/BF",
+                "ammunition": "30(c)",
+                "wifi": [],
+                "accessories": [],
+                "page": "Firing Squad 44",
+                "description": "Link-fired array with 1x Ares Firebrand & 2x Ares Firebolts (+4 DV array bonus, +2 AR). Mounted on Shiawase Man-at-Arms.",
+                "primary": True
             },
-            "monofilament whip": {
-                "name": "Monofilament Whip",
-                "mode": "SS",
-                "damage": "6P",
-                "attackRating": "18/—/—/—/—",
-                "mod": 12,
-                "pool": 18,
-                "description": "Fingertip cyberarm compartment. Wireless ON (+2 AR)."
-            },
-            "tesla coil": {
-                "name": "Tesla Coil",
-                "mode": "SS",
-                "damage": "5S(e)",
-                "attackRating": "10/12*/—/—/—",
-                "mod": 12,
-                "pool": 18,
-                "description": "20m Cone Area Attack (Flamethrower rules). Integrated in Man-at-Arms Cyberarm."
-            },
-            "krime gloves (stun)": {
-                "name": "Krime Gloves (Stun)",
-                "mode": "SS",
-                "damage": "4S(e)",
-                "attackRating": "7/—/—/—/—",
-                "mod": 12,
-                "pool": 18,
-                "description": "Equipped on Shiawase Butler. Personalized Grip."
-            },
-            "krime gloves (phys)": {
-                "name": "Krime Gloves (Phys)",
-                "mode": "SS",
-                "damage": "3P",
-                "attackRating": "8/—/—/—/—",
-                "mod": 12,
-                "pool": 18,
-                "description": "Equipped on Shiawase Butler. Personalized Grip."
-            },
-            "dagger of the sacred rose": {
-                "name": "Dagger of the Sacred Rose (+1 Weapon Focus)",
-                "mode": "SS",
-                "damage": "3P",
-                "attackRating": "10/8/6/—/—",
-                "mod": 12,
-                "pool": 18,
-                "description": "+1 Weapon Focus."
-            }
-        }
-
-        # Remove standalone Crimson Wasp from longRangeWeapons if present, update weapons
-        if "longRangeWeapons" in data and isinstance(data["longRangeWeapons"], list):
-            data["longRangeWeapons"] = [w for w in data["longRangeWeapons"] if "crimson wasp" not in w.get("name", "").lower()]
-            for w in data["longRangeWeapons"]:
-                w["wifi"] = []
-                w_norm = w.get("name", "").lower().replace(" (+1 weapon focus)", "")
-                for key, mods in weapon_mods.items():
-                    if key in w_norm:
-                        w["name"] = mods["name"]
-                        w["mode"] = mods["mode"]
-                        w["damage"] = mods["damage"]
-                        w["attackRating"] = mods["attackRating"]
-                        w["mod"] = mods["mod"]
-                        w["pool"] = mods["pool"]
-                        w["description"] = mods["description"]
-
-        # Ensure Tesla Coil is in longRangeWeapons
-        has_tesla = any("tesla coil" in w.get("name", "").lower() for w in data.get("longRangeWeapons", []))
-        if not has_tesla:
-            if "longRangeWeapons" not in data:
-                data["longRangeWeapons"] = []
-            data["longRangeWeapons"].append({
+            {
                 "name": "Tesla Coil",
                 "type": "Exotic Weapons",
                 "subtype": "Special Weapons",
-                "skill": None,
+                "skill": "Firearms",
                 "mod": 12,
                 "pool": 18,
                 "damage": "5S(e)",
@@ -2280,24 +2249,153 @@ def post_process_json(raw_json_path, log_totals, out_json_path):
                 "page": "Firing Squad",
                 "description": "20m Cone Area Attack (Flamethrower rules). Integrated in Man-at-Arms Cyberarm.",
                 "primary": False
+            }
+        ]
+
+        data["closeCombatWeapons"] = [
+            {
+                "name": "Monofilament Whip",
+                "type": "Exotic Weapons",
+                "subtype": "Exotic Weapons",
+                "skill": "Close Combat",
+                "mod": 12,
+                "pool": 18,
+                "damage": "6P",
+                "attackRating": "18/—/—/—/—",
+                "mode": "SS",
+                "wifi": [],
+                "accessories": [],
+                "page": "Core Rulebook 247",
+                "description": "Fingertip cyberarm compartment (+2 AR) + Wireless ON (+2 AR).",
+                "primary": True
+            },
+            {
+                "name": "Krime Gloves (Stun)",
+                "type": "Unarmed",
+                "subtype": "Unarmed",
+                "skill": "Close Combat",
+                "mod": 12,
+                "pool": 18,
+                "damage": "4S(e)",
+                "attackRating": "7/—/—/—/—",
+                "mode": "SS",
+                "wifi": [],
+                "accessories": [],
+                "page": "Double Clutch",
+                "description": "Equipped on Shiawase Butler. Personalized Grip (+2 AR).",
+                "primary": False
+            },
+            {
+                "name": "Krime Gloves (Phys)",
+                "type": "Unarmed",
+                "subtype": "Unarmed",
+                "skill": "Close Combat",
+                "mod": 12,
+                "pool": 18,
+                "damage": "3P",
+                "attackRating": "8/—/—/—/—",
+                "mode": "SS",
+                "wifi": [],
+                "accessories": [],
+                "page": "Double Clutch",
+                "description": "Equipped on Shiawase Butler. Personalized Grip (+2 AR).",
+                "primary": False
+            },
+            {
+                "name": "Dagger of the Sacred Rose (+1 Weapon Focus)",
+                "type": "Blades",
+                "subtype": "Blades",
+                "skill": "Close Combat",
+                "mod": 12,
+                "pool": 18,
+                "damage": "3P",
+                "attackRating": "10/8/6/—/—",
+                "mode": "SS",
+                "wifi": [],
+                "accessories": [],
+                "page": "Street Lethal",
+                "description": "+1 Weapon Focus.",
+                "primary": False
+            }
+        ]
+
+        # 7. Kit update, Move Smile for the Camera to Qualities, M-TOC Target Artist
+        if "items" in data and isinstance(data["items"], list):
+            new_items = []
+            for item in data["items"]:
+                it_name = item.get("name", "").lower()
+                if "smile for the camera" in it_name:
+                    continue  # Move to qualities below
+                if it_name == "kit" or "engineering kit" in it_name:
+                    item["name"] = "Engineering Kit"
+                    item["subType"] = "Kit"
+                    item["description"] = "Kit for Engineering skills."
+                    if "decisions" in item:
+                        for dec in item.get("decisions", []):
+                            dec["value"] = "engineering"
+                elif "m-toc" in it_name:
+                    if "accessories" in item and isinstance(item["accessories"], list):
+                        for acc in item["accessories"]:
+                            if acc.get("name", "").lower() == "mapsoft":
+                                acc["name"] = "Target Artist"
+                                acc["subType"] = "TAC-Net Program"
+                                acc["description"] = "Attack without line of sight on painted targets."
+                new_items.append(item)
+            data["items"] = new_items
+
+        # Move Smile for the Camera to Qualities
+        if "qualities" not in data or not isinstance(data["qualities"], list):
+            data["qualities"] = []
+        if not any("smile for the camera" in q.get("name", "").lower() for q in data["qualities"]):
+            data["qualities"].append({
+                "name": "Smile for the Camera!",
+                "type": "Positive",
+                "karma": 10,
+                "description": "Shiawase sponsorship promotional deal (+10 Karma).",
+                "page": "Shiawase Corporate Sponsor"
             })
 
-        if "closeCombatWeapons" in data and isinstance(data["closeCombatWeapons"], list):
-            data["closeCombatWeapons"] = [w for w in data["closeCombatWeapons"] if w.get("name", "").lower() != "unarmed"]
-            for w in data["closeCombatWeapons"]:
-                w["wifi"] = []
-                w_norm = w.get("name", "").lower()
-                for key, mods in weapon_mods.items():
-                    if key in w_norm:
-                        w["name"] = mods["name"]
-                        w["mode"] = mods["mode"]
-                        w["damage"] = mods["damage"]
-                        w["attackRating"] = mods["attackRating"]
-                        w["mod"] = mods["mod"]
-                        w["pool"] = mods["pool"]
-                        w["description"] = mods["description"]
+        # 7b. Sprite Power Complex Forms (Harmonize, Phantom, Death Mark, Shield) with empty descriptions
+        sprite_powers = [
+            {
+                "name": "Harmonize (Sprite Power)",
+                "duration": "Sustained",
+                "fading": 3,
+                "influences": [],
+                "page": "Hack & Slash 65",
+                "description": ""
+            },
+            {
+                "name": "Phantom (Sprite Power)",
+                "duration": "Sustained",
+                "fading": 4,
+                "influences": [],
+                "page": "Hack & Slash 66",
+                "description": ""
+            },
+            {
+                "name": "Death Mark (Sprite Power)",
+                "duration": "Permanent",
+                "fading": 4,
+                "influences": [],
+                "page": "Hack & Slash 64",
+                "description": ""
+            },
+            {
+                "name": "Shield (Sprite Power)",
+                "duration": "Sustained",
+                "fading": 3,
+                "influences": [],
+                "page": "Hack & Slash 66",
+                "description": ""
+            }
+        ]
+        if "complexForms" not in data or not isinstance(data["complexForms"], list):
+            data["complexForms"] = []
+        for sp in sprite_powers:
+            if not any(sp["name"].lower() in cf.get("name", "").lower() for cf in data["complexForms"]):
+                data["complexForms"].append(sp)
 
-        # 7. M-TOC Optimization & Target Artist (replace Mapsoft)
         if "matrixItems" in data and isinstance(data["matrixItems"], list):
             for dev in data["matrixItems"]:
                 dev["wifi"] = []
@@ -2313,7 +2411,28 @@ def post_process_json(raw_json_path, log_totals, out_json_path):
                                 acc["subType"] = "TAC-Net Program"
                                 acc["description"] = "Attack without line of sight on painted targets."
 
-        # 8. Vehicles / Drones with base attributes and mod parameters
+        # 8. Sync Contacts from yuriko_master.yaml into JSON with influence & favors
+        if "contacts" in ydata and isinstance(ydata["contacts"], list):
+            json_contacts = []
+            for yc in ydata["contacts"]:
+                conn_val = yc.get("connection", yc.get("influence", 1))
+                json_contacts.append({
+                    "name": yc.get("name"),
+                    "connection": conn_val,
+                    "influence": conn_val,
+                    "loyalty": yc.get("loyalty", 1),
+                    "favors": yc.get("favors", 0),
+                    "type": yc.get("type", "Contact"),
+                    "archetype": yc.get("archetype", "Contact"),
+                    "region": yc.get("region", "Global"),
+                    "description": yc.get("description", "")
+                })
+            data["contacts"] = json_contacts
+
+        # 8b. Session logs omitted (refer to website)
+        data["sessionLogs"] = []
+
+        # 9. Vehicles / Drones with base attributes and mod parameters
         vehicles_list = []
         for d in ydata.get("drones", []):
             d_name = d.get("name", "")
@@ -2416,9 +2535,68 @@ def post_process_xml(raw_xml_path, log_totals, out_xml_path):
                 po_el = ET.Element("quality", {"lang": "en", "ref": "pilot_origins"})
                 qualities_el.append(po_el)
 
-        # 4. Licenses: Rating 2
+        # 4. Licenses: Rating 2 (Genesis FakeRating enum value for Rating 2 is 'ROUGH_MATCH')
         for lic in root.findall(".//licenses/licenses"):
-            lic.set("rating", "2")
+            if lic.get("rating") in ["2", None] or lic.get("rating") == "2":
+                lic.set("rating", "ROUGH_MATCH")
+
+        # 4a. Remove 'emulate' complex form
+        cf_container = root.find("complexforms")
+        if cf_container is not None:
+            for cf in list(cf_container.findall("complexforms")):
+                if cf.get("ref") == "emulate":
+                    cf_container.remove(cf)
+
+        # 4a2. Ensure 2nd Shiawase Bi-Drone Butler exists in XML items
+        items_el = root.find("items")
+        if items_el is not None:
+            butler_drones = [it for it in items_el.findall("item") if it.get("ref") == "shiawase_BD_butler"]
+            if len(butler_drones) < 2:
+                import uuid
+                b2_uuid = "227c5aa8-b36c-436a-b759-18ea24ff300d"
+                b2_el = ET.Element("item", {
+                    "changes": "0,0,0",
+                    "count": "1",
+                    "lang": "en",
+                    "mode": "CARRIED",
+                    "ref": "shiawase_BD_butler",
+                    "uuid": b2_uuid
+                })
+                notes_el = ET.Element("notes")
+                notes_el.text = "Butler #2 (Retrans / Comms Support)"
+                b2_el.append(notes_el)
+                
+                accs_el = ET.Element("accessories")
+                
+                # Anti-theft
+                at_el = ET.Element("item", {
+                    "lang": "en", "mode": "EMBEDDED", "ref": "anti_theft",
+                    "slot": "VEHICLE_ELECTRONICS", "uuid": str(uuid.uuid4()), "variant": "rating1"
+                })
+                flag_el = ET.Element("flag")
+                flag_el.text = "AUTO_ADDED"
+                at_el.append(flag_el)
+                accs_el.append(at_el)
+                
+                # Realistic features 1
+                rf_el = ET.Element("item", {
+                    "lang": "en", "mode": "EMBEDDED", "ref": "realistic_features",
+                    "slot": "VEHICLE_CHASSIS", "uuid": str(uuid.uuid4())
+                })
+                dec_rf = ET.Element("decision", {
+                    "choice": "c2d17c87-1cfe-4355-9877-a20fe09c170d", "value": "1"
+                })
+                rf_el.append(dec_rf)
+                accs_el.append(rf_el)
+                
+                # Satellite link
+                accs_el.append(ET.Element("item", {
+                    "lang": "en", "mode": "EMBEDDED", "ref": "satellite_link",
+                    "slot": "VEHICLE_ELECTRONICS", "uuid": str(uuid.uuid4())
+                }))
+                
+                b2_el.append(accs_el)
+                items_el.append(b2_el)
 
         # 4b. Sync full contacts into XML
         contacts_el = root.find("contacts")
@@ -2455,64 +2633,8 @@ def post_process_xml(raw_xml_path, log_totals, out_xml_path):
                 if item_ref == "kit":
                     for dec in item.findall("decision"):
                         dec.set("value", "engineering")
-                elif item_ref == "mtoc_mark2":
-                    accs_el = item.find("accessories")
-                    if accs_el is not None:
-                        for acc in accs_el.findall("item"):
-                            if acc.get("ref") == "mapsoft":
-                                acc.set("ref", "target_artist")
-                                for dec in acc.findall("decision"):
-                                    acc.remove(dec)
-                elif item_ref in ["shiawase_BD_butler", "shiawase_BD_man_at_arms"]:
-                    accs_el = item.find("accessories")
-                    if accs_el is not None:
-                        has_skates = any(acc.get("ref") == "skates" for acc in accs_el.findall("item"))
-                        if not has_skates:
-                            import uuid
-                            skate_el = ET.Element("item", {
-                                "lang": "en",
-                                "mode": "EMBEDDED",
-                                "ref": "skates",
-                                "slot": "VEHICLE_POWERTRAIN",
-                                "uuid": str(uuid.uuid4())
-                            })
-                elif item_ref == "software_library":
-                    accs_el = item.find("accessories")
-                    if accs_el is not None:
-                        for acc in accs_el.findall("item"):
-                            # Remove circular inFactoryItem attribute that causes Commlink cost calculation to treat all software as free
-                            if "inFactoryItem" in acc.attrib and acc.attrib["inFactoryItem"] == "8fc8c01e-3023-4ba6-9d02-99ba6fcd6979":
-                                del acc.attrib["inFactoryItem"]
-                            if acc.get("ref") == "soft_knowledge":
-                                has_rating = any(dec.get("choice") == "c2d17c87-1cfe-4355-9877-a20fe09c170d" for dec in acc.findall("decision"))
-                                if not has_rating:
-                                    dec_el = ET.Element("decision", {
-                                        "choice": "c2d17c87-1cfe-4355-9877-a20fe09c170d",
-                                        "value": "3"
-                                    })
-                                    acc.append(dec_el)
+        # End of post-processing
 
-        # 6. Deduplicate software items so each program ref exists in EXACTLY ONE container across the XML
-        seen_software = set()
-        if items_el is not None:
-            for item in items_el.findall("item"):
-                if item.get("ref") != "software_library":
-                    accs = item.find("accessories")
-                    if accs is not None:
-                        for acc in accs.findall("item"):
-                            if acc.get("slot") == "SOFTWARE" or "soft" in acc.get("ref", "") or acc.get("ref") in ["target_artist", "sneak_sneak", "artillery_barrage", "ecm_warrior_ii"]:
-                                seen_software.add(acc.get("ref"))
-            sw_lib = None
-            for item in items_el.findall("item"):
-                if item.get("ref") == "software_library":
-                    sw_lib = item
-                    break
-            if sw_lib is not None:
-                accs = sw_lib.find("accessories")
-                if accs is not None:
-                    for acc in list(accs.findall("item")):
-                        if acc.get("ref") in seen_software:
-                            accs.remove(acc)
 
 
 
