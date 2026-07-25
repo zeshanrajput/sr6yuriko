@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-6b004faca8ee0f94b3a5dd19405fa1b2.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-dab96f89d24d8a403d78413fa12f2c61.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1ac3bea8477bd488c3532cf349a7d151.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-703f62f34474d91d69a08ed3e3cdfc58.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -177,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/02 Color Blind Mathematics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>Color-Blind Mathematics</strong></span></a>
+  <a href="../chapters/02 Color Blind Mathematics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Color-Blind Mathematics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -187,22 +190,22 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/04 The War Crime.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>The War Crime</strong></span></a>
+  <a href="../chapters/04 The War Crime.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The War Crime</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/05 A SINner's Loan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>A SINner’s Loan</strong></span></a>
+  <a href="../chapters/05 A SINner's Loan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A SINner’s Loan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/06 The Ghost in the Ledger.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>The Ghost in the Ledger</strong></span></a>
+  <a href="../chapters/06 The Ghost in the Ledger.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Ghost in the Ledger</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/07 Sunday at r3sP@wn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>Sunday at r3sP@wn</strong></span></a>
+  <a href="../chapters/07 Sunday at r3sP@wn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sunday at r3sP@wn</span></a>
   </div>
 </li>
       </ul>
@@ -505,12 +508,10 @@ ul.task-list li input[type="checkbox"] {
                                        |   - RFID SOFTWARE TAGS x10
                                        |   - LASER JACK x10
                                        |   - CODING FACILITY
-                                       |   - ARES FIREBRAND
-                                       |   - ARES FIREBOLT x2
 
 [ COMBAT_WEAPONS_INVENTORY ]
-  - FIREBRAND ARRAY (3X LINK) [10P/11P/12P | 25/23/19/13/—] (SS/SA/BF, 30c) [MAA Mounted]
-  - FIREBOLT ARRAY (2X LINK)  [7P/8P/9P    | 22/20/16/—/—]  (SS/SA/BF, 30c) [MAA Mounted]
+  - RED FOX ARRAY (3X LINK)    [10P/11P/12P | 21/23/23/16/—] (SS/SA/BF, 30c) [MAA Mounted]
+  - CRIMSON WASP ARRAY (2X LINK) [7P/8P/9P    | 22/20/17/12/—] (SS/SA/BF, 30c) [MAA Mounted]
   - TESLA COIL            [5S(e)   | 10/12*/—/—/—]  (SS, 20m Cone) [MAA Cyberarm]
   - ARES PREDATOR VI      [3P/4P/5P| 15/15/11/—/—]  (SS/SA/BF, 15c) [Both]
   - MONOFILAMENT WHIP     [6P      | 16/—/—/—/—]    (Melee)        [MAA Cyberarm]

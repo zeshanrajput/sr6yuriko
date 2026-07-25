@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -40,10 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-6b004faca8ee0f94b3a5dd19405fa1b2.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-dab96f89d24d8a403d78413fa12f2c61.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1ac3bea8477bd488c3532cf349a7d151.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-703f62f34474d91d69a08ed3e3cdfc58.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -176,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/02 Color Blind Mathematics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>Color-Blind Mathematics</strong></span></a>
+  <a href="../chapters/02 Color Blind Mathematics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Color-Blind Mathematics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -186,22 +189,22 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/04 The War Crime.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>The War Crime</strong></span></a>
+  <a href="../chapters/04 The War Crime.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The War Crime</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/05 A SINner's Loan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>A SINner’s Loan</strong></span></a>
+  <a href="../chapters/05 A SINner's Loan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A SINner’s Loan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/06 The Ghost in the Ledger.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>The Ghost in the Ledger</strong></span></a>
+  <a href="../chapters/06 The Ghost in the Ledger.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Ghost in the Ledger</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/07 Sunday at r3sP@wn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><strong>Sunday at r3sP@wn</strong></span></a>
+  <a href="../chapters/07 Sunday at r3sP@wn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sunday at r3sP@wn</span></a>
   </div>
 </li>
       </ul>
@@ -318,11 +321,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#campaign-lore-integrity-shadowrun-missions" id="toc-campaign-lore-integrity-shadowrun-missions" class="nav-link active" data-scroll-target="#campaign-lore-integrity-shadowrun-missions">1. Campaign &amp; Lore Integrity (Shadowrun Missions)</a></li>
+  <li><a href="#campaign-lore-integrity-shadowrun-missions" id="toc-campaign-lore-integrity-shadowrun-missions" class="nav-link active" data-scroll-target="#campaign-lore-integrity-shadowrun-missions">1. Campaign &amp; Lore Integrity (Shadowrun Missions)</a>
+  <ul class="collapse">
+  <li><a href="#the-core-creative-vision-the-spaces-between" id="toc-the-core-creative-vision-the-spaces-between" class="nav-link" data-scroll-target="#the-core-creative-vision-the-spaces-between"><strong>The Core Creative Vision: “The Spaces Between”</strong></a></li>
+  </ul></li>
   <li><a href="#the-two-stage-review-framework" id="toc-the-two-stage-review-framework" class="nav-link" data-scroll-target="#the-two-stage-review-framework">2. The Two-Stage Review Framework</a>
   <ul class="collapse">
   <li><a href="#stage-1-thematic-centering" id="toc-stage-1-thematic-centering" class="nav-link" data-scroll-target="#stage-1-thematic-centering"><strong>Stage 1: Thematic Centering</strong></a></li>
-  <li><a href="#stage-2-quality-benchmarking-the-new-yorker-standard" id="toc-stage-2-quality-benchmarking-the-new-yorker-standard" class="nav-link" data-scroll-target="#stage-2-quality-benchmarking-the-new-yorker-standard"><strong>Stage 2: Quality Benchmarking (The New Yorker Standard)</strong></a></li>
+  <li><a href="#stage-2-quality-benchmarking-literary-speculative-fiction-standard" id="toc-stage-2-quality-benchmarking-literary-speculative-fiction-standard" class="nav-link" data-scroll-target="#stage-2-quality-benchmarking-literary-speculative-fiction-standard"><strong>Stage 2: Quality Benchmarking (Literary Speculative Fiction Standard)</strong></a></li>
   </ul></li>
   <li><a href="#style-conventions-digital-native-phenomenology-technoshamanism-spiritual-animism" id="toc-style-conventions-digital-native-phenomenology-technoshamanism-spiritual-animism" class="nav-link" data-scroll-target="#style-conventions-digital-native-phenomenology-technoshamanism-spiritual-animism">3. Style Conventions: Digital-Native Phenomenology (Technoshamanism &amp; Spiritual Animism)</a>
   <ul class="collapse">
@@ -367,7 +373,15 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Lore Constraint:</strong> We must build upon, and <em>never counter</em>, established Shadowrun lore. All narrative elements should fit seamlessly into the official Shadowrun 6th Edition (Sixth World) canon.</li>
 <li><strong>Verification:</strong> The <a href="file:///c:/GitHub/sr6yuriko/rules_vault">rules_vault/</a> folder contains the necessary references (such as <code>rules_vault/SRMG-*.md</code> files) to check rules, thematic plot hooks, and setting boundaries to ensure strict continuity and mechanical integrity.</li>
 </ul>
+<section id="the-core-creative-vision-the-spaces-between" class="level3">
+<h3 class="anchored" data-anchor-id="the-core-creative-vision-the-spaces-between"><strong>The Core Creative Vision: “The Spaces Between”</strong></h3>
+<ul>
+<li><strong>Beyond the Numbers:</strong> Shadowrun’s mechanics, stats, and gear are the scaffolding; the story lives in the rich, tangible, emotionally accessible “spaces between” those numbers.</li>
+<li><strong>The Spiritual Side of Technology:</strong> Yuriko Star (<code>r31k0</code>) is an explorer of the spiritual dimension of technology—a digital technoshaman experiencing Resonance as a living, animistic ecosystem rather than cold silicon diagnostics.</li>
+<li><strong>Reframing the Human Condition:</strong> Through an emergent, non-human, digital-native perspective, the narrative uses the cyberpunk/TTRPG milieu to examine everyday issues of the human condition—belonging, agency, guardianship, debt, vulnerability, and love—with a fresh, deeply affecting lens.</li>
+</ul>
 <hr>
+</section>
 </section>
 <section id="the-two-stage-review-framework" class="level2">
 <h2 class="anchored" data-anchor-id="the-two-stage-review-framework">2. The Two-Stage Review Framework</h2>
@@ -382,22 +396,19 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Focus:</strong> Aligning the narrative around the core theme of an emergent, digital-native pilot program navigating consciousness, agency, and survival within a world defined by rigid corporate mathematics.</li>
 </ul>
 </section>
-<section id="stage-2-quality-benchmarking-the-new-yorker-standard" class="level3">
-<h3 class="anchored" data-anchor-id="stage-2-quality-benchmarking-the-new-yorker-standard"><strong>Stage 2: Quality Benchmarking (The New Yorker Standard)</strong></h3>
+<section id="stage-2-quality-benchmarking-literary-speculative-fiction-standard" class="level3">
+<h3 class="anchored" data-anchor-id="stage-2-quality-benchmarking-literary-speculative-fiction-standard"><strong>Stage 2: Quality Benchmarking (Literary Speculative Fiction Standard)</strong></h3>
 <ul>
-<li><strong>Review Prompt:</strong> &gt; *“Act as an elite literary fiction editor and an uncompromising critic of speculative fiction. I am going to share a draft of a story with you. I want you to evaluate it with absolute rigor, holding me to the highest possible standard of craft. Do not pull your punches or offer polite encouragement; point directly to where the prose needs a chisel.</li>
-</ul>
+<li><p><strong>Review Prompt:</strong> &gt; <em>“Act as an elite speculative fiction editor who deeply understands and respects Shadowrun lore and TTRPG storytelling. Evaluate this draft holding it to high literary standards (</em>Clarkesworld<em>, </em>Asimov’s<em>, </em>The New Yorker*).</p>
 <p>Evaluate and critique the text using these specific criteria:</p>
 <ol type="1">
-<li><p>THE SCALE: Rate the story on a 1-to-10 scale, where 1 is a competent high school student’s fanfiction and 10 is a transcendent, genre-subverting piece that <em>The New Yorker</em>, <em>Clarkesworld</em>, or an elite literary anthology would happily publish.</p></li>
-<li><p>NARRATIVE SCAFFOLDING: Identify where the story leans on safe, well-traveled genre tropes or predictable emotional resolutions. Challenge me to introduce psychological complexity, bittersweet ironies, or genuine existential messiness.</p></li>
+<li><p>THE SCALE: Rate the story on a 1-to-10 scale, where 1 is a dry dice-pool recap or cliché fanfiction, 5 is competent pulp, and 10 is a transcendent piece of speculative fiction that artistically leverages the full power of Shadowrun lore and AI/Resonance phenomenology.</p></li>
+<li><p>ARTISTIC INTEGRATION OF SHADOWRUN MECHANICS: Do not purge or erase Shadowrun concepts (Resonance, Fading, Cyberdecking, Sprite Powers, Rigger Networks, Megacorp Intrigue). Instead, elevate them. Convert dry rulebook math into vivid, in-world physical, digital, and spiritual reality.</p></li>
 <li><p>SHOWING VS. MONOLOGUE: Catch any moments where the narrative voice breaks character to explain its own subtext, summarize an internal realization, or use abstract technical vocabulary to describe a visceral sensory experience.</p></li>
-<li><p>MICROSCOPIC ECONOMY: Scrutinize the text at the sentence level. My editing philosophy dictates that unless I am removing a word from every line and a line from every paragraph, I am not actively editing. Exterminate duplicate modifiers, filler phrases, weak verbs, and rhythmic stutters (like repetitive possessive pronouns).</p></li>
-<li><p>THE CHISEL: For everything that is pulling the score down, provide a line-by-line breakdown showing me the current text, a sharp critique of its failure, and a “sculpted revision” example to show how the cadence and impact can be elevated.</p></li>
-</ol>
-<p>If you understand these instructions, confirm by asking me for the text, and let me know what specific literary bars a piece must clear to earn a “9” or a “10” on your scale.”*</p>
-<ul>
-<li><strong>Focus:</strong> Stripping away cliché sci-fi tropes, avoiding pulp melodrama, and pushing the text toward quiet, understated literary prose with precise psychological and technical realism.</li>
+<li><p>MICROSCOPIC ECONOMY: Scrutinize the text at the sentence level. Exterminate duplicate modifiers, filler phrases, weak verbs, and rhythmic stutters, leaving a dense, kinetic, and expressive prose cadence.</p></li>
+<li><p>THE CHISEL: For everything that is pulling the score down, provide a line-by-line breakdown showing the current text, a sharp critique, and a sculpted revision that artistically elevates the narrative impact.”*</p></li>
+</ol></li>
+<li><p><strong>Focus:</strong> Artistically harnessing the unique strengths of the Shadowrun Missions campaign setting, avoiding pulp melodrama, and translating TTRPG mechanics into dense, high-end speculative fiction.</p></li>
 </ul>
 <hr>
 </section>
