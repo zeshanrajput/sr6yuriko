@@ -208,6 +208,7 @@
     - RENÉE MARTIN         League of Laveau Community ... C:4 L:2 F:0
     - FERNAND ANATO        Kozlowski Capo                 C:1 L:1 F:0
     - MONSIEUR JOHNSON     Johnson                        C:5 L:2 F:0
+    - ALOYSIUS SPRINGIN... Sound of Silence Music Shop... C:3 L:2 F:0
 
   -- AMSTERDAM / UNL (AMS) --
     - THE FRISIAN          Crime Lord of the Dutch Pen... C:6 L:1 F:0

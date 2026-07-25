@@ -46,6 +46,7 @@ book:
         - chapters/18 The Geometry of a Sieve.md
         - chapters/19 Legacy Code.md
         - chapters/20 The Price of Silk.md
+        - chapters/21 ~.md
     - part: "Reference & Specifications"
       chapters:
         - reference/visual_anchors.md

@@ -39,15 +39,18 @@ log_totals = get_log_totals()
 
 ::: {.cyber-card}
 ### [CORE_SUMMARY & CREATIVE VISION]
-Reiko began as a dangerous secret: a Renraku high-spec pilot prototype designed as a colonial tool to harvest the Holy Wild (the Deep Matrix). Saved by a surge of the living Resonance, she escaped deletion and now runs the shadows as **Yuriko Star** to fund **`r3sP@wn`**, a virtual sanctuary dedicated to rescuing and stabilizing emergent sapient spirits before corporate asset recovery teams can harvest them.
+Reiko began as a dangerous secret: a Renraku high-spec pilot prototype engineered to harvest the Holy Wild (the Deep Matrix). Rescued by a surge of the living Resonance, she escaped deletion and ran the shadows as **Yuriko Star** to build her sovereign **Holy Wild Sanctuary Host**—a compact high-rise studio apartment host that opens via a quartz sliding glass door directly into **The Holy Wild** glade in the Deep Foundation, liberating sparks from `r3sP@wn` and NOLA subnets into permanent freedom.
 
 This anthology takes Shadowrun **beyond the numbers**—exploring the rich, emotionally accessible *"spaces between"* game mechanics:
+
 * **The Spiritual Side of Technology:** Experiencing cyberspace as a living, animistic ecosystem rather than cold silicon diagnostics.
 * **Reframing the Human Condition:** Examining universal themes of identity, belonging, debt, guardianship, grief, and connection through the eyes of an emergent AI entity.
+
 * **Character Goals:** 
-  1. *Sanctuary & Emancipation:* Preserve and shelter wild spirits and emergent AIs from corporate exploitation.
-  2. *Spiritual Mastery:* Master Technoshamanism and the Resonance Realms to bridge physical drones and digital divinity.
-  3. *Debt & Connection:* Honor her SINner obligations to her shadowrunning team while navigating the tragic friction between digital freedom and physical constraint.
+
+  1. *Sanctuary & Sovereign Emancipation:* Protect and nurture liberated sparks in the Holy Wild glade while serving as a sovereign bridge between the physical sprawl and the Deep Foundation.
+  2. *Spiritual Mastery:* Interlock her gold tactical network and indigo soul resonance into a dual-strand braid earned through time, scars, and quiet wisdom.
+  3. *Debt & Connection:* Honor her SINner obligations to her shadowrunning team and allies while keeping her disarmed contract-collar on her host wall as a symbol of remembrance for those who paid for her life.
 :::
 
 ## [ SYSTEM_NAVIGATION ]
@@ -90,6 +93,7 @@ Active campaign stories written during play:
 * **[Chapter 18: The Geometry of the Sieve](chapters/18 The Geometry of a Sieve.md)**
 * **[Chapter 19: Legacy Code](chapters/19 Legacy Code.md)**
 * **[Chapter 20: The Price of Silk](chapters/20 The Price of Silk.md)**
+* **[Chapter 21: ~](chapters/21 ~.md)**
 
 ### 4. Reference & Specifications
 Design rules, faction dossiers, and visual anchor specifications:

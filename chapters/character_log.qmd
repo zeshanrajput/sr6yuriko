@@ -34,6 +34,19 @@ def add_rep(faction, amount=1):
 def add_sprite(name, level=7, type_name="Modular", details="", is_ally=False):
     mission_idx = globals()['Current_Mission']
     mission_name = Missions[mission_idx - 1] if 0 < mission_idx <= len(Missions) else f"Mission {mission_idx}"
+    
+    if not is_ally and not details:
+        types = ["Autosofts", "Shield, Death Mark"]
+        last_detail = None
+        for s in reversed(Sprites):
+            if not s.get("is_ally") and s.get("details") in types:
+                last_detail = s.get("details")
+                break
+        if last_detail == "Autosofts":
+            details = "Shield, Death Mark"
+        else:
+            details = "Autosofts"
+
     Sprites.append({
         "name": name,
         "level": level,
@@ -97,7 +110,7 @@ def detect_region(name, type_name, region_param="AUTO"):
         return "HK"
     if "SEA " in full or "SEATTLE" in full or name in ["Brynne Taggart", "Whiskey", "Big Louie", "Duan Yuhai", "Xiong Giuyin", "Swango", "Toil", "Trubble", "Eddie Wei", "Julian Müntefering", "Ni Ni Xiaolu", "Bookie", "Trudy", "Saint James", "Jeanie Trudel", "Kingston", "Kirt Liger"]:
         return "SEA"
-    if "NOLA " in full or "NOLA" in full or name in ["Indomitable Will", "Roanoke", "Piotr Krolik", "Le Tigre", "Dominique Augustin", "Daniel Fortune", "Renée Martin", "Fernand Anato", "Monsieur Johnson"]:
+    if "NOLA " in full or "NOLA" in full or name in ["Indomitable Will", "Roanoke", "Piotr Krolik", "Le Tigre", "Dominique Augustin", "Daniel Fortune", "Renée Martin", "Fernand Anato", "Monsieur Johnson", "Aloysius Springinsguth"]:
         return "NOLA"
     if "AMS " in full or "AMSTERDAM" in full or "DUTCH" in full or "PENOSE" in full or name in ["The Frisian", "Kiara Shaw", "Simon Andrews", "Squint", "Sigrún", "SpiiniCop", "Kaatje"]:
         return "AMS"
@@ -580,6 +593,31 @@ def contact(name, connection=1, fp=0, loyalty=None, favors=0, type_name="Contact
   * Bought souvenirs for Ni Ni Xiaolu: `{python} inc('Nuyen', -500)`
   * Learned 5 programs
   * *Registered one sprite during downtime:* `{python} add_sprite('Sprite-M22', 7, 'Modular', 'Autosofts')`
+
+---
+
+### **2026-July-24: SRM 2083-12 | When You're Smiling** `{python} start_mission('SRM 2083-12')`
+
+* **Summary:** NOLA Network News at 9 reported evidence linking Zobop / Red Tide Hitman, Mackenson “Mr. Smiley” Salomon to Blood Magic, Sacrifice, and murder was turned over to NOMS by a concerned citizen and member of the Koslowski family. Mr. Smiley seems to have departed the NOLA area.
+* **Team:** Jolthead, Lord Hattington, Dreamwalker, Silicon Mage, Yuriko Star (WarDoctor), Havoc (ShuiroHanaya1)
+* **GM:** JaGator
+* **Difficulty Level:** Veteran
+* **Rewards:** `{python} inc('Karma', 9)`, `{python} inc('Nuyen', 9000)` (Veteran bonuses included)
+* **Reputation:** `{python} add_rep('NOLA', 1)` (Kozlowski Family, NOLA)
+* **Contacts:**
+  * `{python} contact("Aloysius Springinsguth", connection=3, fp=3, type_name="NOLA Sound of Silence Music Shop Owner", notes="SRM 2083-12 When You're Smiling")`
+* **Heat:** No heat
+* **Downtime Actions (1 Major, 1 Minor):**
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
+  * *Setup Framework Host:* Configured Rating 2 Framework Host—The Holy Wild Sanctuary Host (Scale 1 Micro, Grade 2 Default, compact studio & glade portal architecture) acquired as a home and sanctuary for emergent sparks.
+* **Other:**
+  * Two sprites registered during 2 days of in-session downtime:
+    * `{python} add_sprite('Sprite-M23a')`
+    * `{python} add_sprite('Sprite-M23b')`
+* **Loot & Infrastructure:**
+  * **Framework Host:** Rating 2 Framework Host—The Holy Wild Sanctuary Host (Scale 1 Micro, Grade 2 Default, compact studio & glade portal architecture) acquired during the run.
+  * Rating 4 Commlinks available.
+
 ---
 
 ### Historical Gear Purchases

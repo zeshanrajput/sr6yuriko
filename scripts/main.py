@@ -2066,6 +2066,14 @@ def generate_ascii_sheet(char_data, verbose=False):
         
     return sheet_text
 
+def normalize_cname(name):
+    if not name:
+        return ""
+    n = name.strip("'\" ").replace("’", "'").replace("‘", "'")
+    if "(" in n:
+        n = n.split("(")[0].strip()
+    return n.strip()
+
 def post_process_json(raw_json_path, log_totals, out_json_path):
     if not os.path.exists(raw_json_path):
         return
@@ -2396,6 +2404,26 @@ def post_process_json(raw_json_path, log_totals, out_json_path):
             if not any(sp["name"].lower() in cf.get("name", "").lower() for cf in data["complexForms"]):
                 data["complexForms"].append(sp)
 
+        data["karmaI"] = log_totals.get("Lifetime_Karma", data.get("karmaI", 0))
+        data["karmaF"] = log_totals.get("Karma", data.get("karmaF", 0))
+        data["nuyen"] = log_totals.get("Nuyen", data.get("nuyen", 0))
+
+        yaml_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "yuriko_master.yaml")
+        ydata = {}
+        if os.path.exists(yaml_path):
+            with open(yaml_path, "r", encoding="utf-8") as yf:
+                ydata = yaml.safe_load(yf)
+
+        if "attributes" in data and isinstance(data["attributes"], dict):
+            yattrs = ydata.get("attributes", {})
+            for attr_id, val in yattrs.items():
+                attr_key = attr_id.upper()
+                if attr_key in data["attributes"]:
+                    if isinstance(data["attributes"][attr_key], dict):
+                        data["attributes"][attr_key]["value"] = val
+                    else:
+                        data["attributes"][attr_key] = val
+
         if "matrixItems" in data and isinstance(data["matrixItems"], list):
             for dev in data["matrixItems"]:
                 dev["wifi"] = []
@@ -2411,26 +2439,50 @@ def post_process_json(raw_json_path, log_totals, out_json_path):
                                 acc["subType"] = "TAC-Net Program"
                                 acc["description"] = "Attack without line of sight on painted targets."
 
-        # 8. Sync Contacts from yuriko_master.yaml into JSON with influence & favors
-        if "contacts" in ydata and isinstance(ydata["contacts"], list):
-            json_contacts = []
-            for yc in ydata["contacts"]:
-                conn_val = yc.get("connection", yc.get("influence", 1))
-                json_contacts.append({
-                    "name": yc.get("name"),
-                    "connection": conn_val,
-                    "influence": conn_val,
-                    "loyalty": yc.get("loyalty", 1),
-                    "favors": yc.get("favors", 0),
-                    "type": yc.get("type", "Contact"),
-                    "archetype": yc.get("archetype", "Contact"),
-                    "region": yc.get("region", "Global"),
-                    "description": yc.get("description", "")
-                })
-            data["contacts"] = json_contacts
+        # 8. Sync ALL Contacts into JSON (from character_log.qmd + yuriko_master.yaml)
+        json_contacts = []
+        seen_keys = set()
+        log_contacts = log_totals.get("Contacts", {})
+        
+        for cname, yc in log_contacts.items():
+            norm_k = normalize_cname(cname)
+            conn_val = yc.get("connection", 1)
+            json_contacts.append({
+                "name": cname.strip("'\" "),
+                "connection": conn_val,
+                "influence": conn_val,
+                "loyalty": yc.get("loyalty", 1),
+                "favors": yc.get("favors", 0),
+                "type": yc.get("type", "Contact"),
+                "archetype": yc.get("type", "Contact"),
+                "region": yc.get("region", "Global"),
+                "description": yc.get("notes", "")
+            })
+            seen_keys.add(norm_k)
 
-        # 8b. Session logs omitted (refer to website)
-        data["sessionLogs"] = []
+        if "contacts" in ydata and isinstance(ydata["contacts"], list):
+            for yc in ydata["contacts"]:
+                cname = yc.get("name")
+                norm_k = normalize_cname(cname)
+                if cname and norm_k not in seen_keys:
+                    conn_val = yc.get("connection", yc.get("influence", 1))
+                    json_contacts.append({
+                        "name": cname.strip("'\" "),
+                        "connection": conn_val,
+                        "influence": conn_val,
+                        "loyalty": yc.get("loyalty", 1),
+                        "favors": yc.get("favors", 0),
+                        "type": yc.get("type", "Contact"),
+                        "archetype": yc.get("archetype", "Contact"),
+                        "region": yc.get("region", "Global"),
+                        "description": yc.get("description", "")
+                    })
+                    seen_keys.add(norm_k)
+                    
+        data["contacts"] = json_contacts
+
+        # 8b. Session logs (full parsed list from character_log.qmd)
+        data["sessionLogs"] = log_totals.get("Session_Logs", [])
 
         # 9. Vehicles / Drones with base attributes and mod parameters
         vehicles_list = []
@@ -2491,9 +2543,6 @@ def post_process_json(raw_json_path, log_totals, out_json_path):
         import traceback
         traceback.print_exc()
         print(f"[*] Warning: Could not post-process JSON file: {e}")
-
-
-
 
 
 
@@ -2598,32 +2647,120 @@ def post_process_xml(raw_xml_path, log_totals, out_xml_path):
                 b2_el.append(accs_el)
                 items_el.append(b2_el)
 
-        # 4b. Sync full contacts into XML
+        # 4b. Sync ALL contacts into XML
         contacts_el = root.find("contacts")
-        if contacts_el is not None and "contacts" in ydata:
-            existing_c = {c.get("name"): c for c in contacts_el.findall("contact")}
+        if contacts_el is None:
+            contacts_el = ET.Element("contacts")
+            root.append(contacts_el)
+
+        existing_c = {}
+        for c in contacts_el.findall("contact"):
+            c_name = c.get("name")
+            if c_name:
+                norm_k = normalize_cname(c_name)
+                if norm_k not in existing_c:
+                    existing_c[norm_k] = c
+                else:
+                    contacts_el.remove(c)
+
+        log_contacts = log_totals.get("Contacts", {})
+        valid_keys = set()
+        
+        for cname, yc in log_contacts.items():
+            norm_k = normalize_cname(cname)
+            valid_keys.add(norm_k)
+            clean_display_name = cname.strip("'\" ")
+            c_el = existing_c.get(norm_k)
+            if c_el is None:
+                import uuid
+                c_el = ET.Element("contact", {"id": str(uuid.uuid4()), "name": clean_display_name})
+                contacts_el.append(c_el)
+                existing_c[norm_k] = c_el
+
+            c_el.set("name", clean_display_name)
+            c_el.set("rat", str(yc.get("connection", 1)))
+            c_el.set("loy", str(yc.get("loyalty", 1)))
+            c_el.set("favors", str(yc.get("favors", 0)))
+            if yc.get("type"):
+                c_el.set("type", yc["type"])
+                c_el.set("typename", yc["type"])
+                
+            desc_el = c_el.find("description")
+            if desc_el is None:
+                desc_el = ET.Element("description")
+                c_el.append(desc_el)
+            desc_el.text = yc.get("notes", "")
+
+        if "contacts" in ydata and isinstance(ydata["contacts"], list):
             for yc in ydata["contacts"]:
                 cname = yc.get("name")
-                c_el = existing_c.get(cname)
-                if c_el is None:
-                    import uuid
-                    c_el = ET.Element("contact", {"id": str(uuid.uuid4()), "name": cname})
-                    contacts_el.append(c_el)
-                
-                c_el.set("rat", str(yc.get("connection", 1)))
-                c_el.set("loy", str(yc.get("loyalty", 1)))
-                c_el.set("favors", str(yc.get("favors", 0)))
-                if yc.get("type"):
-                    c_el.set("type", yc["type"])
-                if yc.get("archetype"):
-                    c_el.set("typename", yc["archetype"])
-                
-                desc_el = c_el.find("description")
-                if desc_el is None:
-                    desc_el = ET.Element("description")
-                    c_el.append(desc_el)
-                desc_el.text = yc.get("description") or yc.get("notes", "")
+                if cname:
+                    norm_k = normalize_cname(cname)
+                    valid_keys.add(norm_k)
+                    clean_display_name = cname.strip("'\" ")
+                    c_el = existing_c.get(norm_k)
+                    if c_el is None:
+                        import uuid
+                        c_el = ET.Element("contact", {"id": str(uuid.uuid4()), "name": clean_display_name})
+                        contacts_el.append(c_el)
+                        existing_c[norm_k] = c_el
+                    c_el.set("name", clean_display_name)
+                    c_el.set("rat", str(yc.get("connection", 1)))
+                    c_el.set("loy", str(yc.get("loyalty", 1)))
+                    c_el.set("favors", str(yc.get("favors", 0)))
+                    if yc.get("type"):
+                        c_el.set("type", yc["type"])
+                    if yc.get("archetype"):
+                        c_el.set("typename", yc["archetype"])
 
+        # Remove any contact element that isn't in valid_keys
+        for c in list(contacts_el.findall("contact")):
+            if normalize_cname(c.get("name")) not in valid_keys:
+                contacts_el.remove(c)
+
+        # 4c. Sync ALL sessions into XML (<sessions> and <sessionlogs>)
+        sessions_el = root.find("sessions")
+        if sessions_el is None:
+            sessions_el = ET.Element("sessions")
+            root.append(sessions_el)
+        else:
+            sessions_el.clear()
+
+        sessionlogs_el = root.find("sessionlogs")
+        if sessionlogs_el is None:
+            sessionlogs_el = ET.Element("sessionlogs")
+            root.append(sessionlogs_el)
+        else:
+            sessionlogs_el.clear()
+
+        for s in log_totals.get("Session_Logs", []):
+            s_el = ET.Element("session", {
+                "name": s.get("title", ""),
+                "code": s.get("code", ""),
+                "date": s.get("date", ""),
+                "gm": s.get("gm", ""),
+                "karma": str(s.get("karma", 0)),
+                "nuyen": str(s.get("nuyen", 0))
+            })
+            if s.get("summary"):
+                sum_el = ET.Element("summary")
+                sum_el.text = s["summary"]
+                s_el.append(sum_el)
+            sessions_el.append(s_el)
+
+            slog_el = ET.Element("sessionlog", {
+                "name": s.get("title", ""),
+                "code": s.get("code", ""),
+                "date": s.get("date", ""),
+                "gm": s.get("gm", ""),
+                "karma": str(s.get("karma", 0)),
+                "nuyen": str(s.get("nuyen", 0))
+            })
+            if s.get("summary"):
+                sum_el = ET.Element("summary")
+                sum_el.text = s["summary"]
+                slog_el.append(sum_el)
+            sessionlogs_el.append(slog_el)
 
         # 5. Items: M-TOC Target Artist, Engineering Kit
         items_el = root.find("items")

@@ -271,10 +271,19 @@ Reiko's full Matrix defense pool when all of these elements are active is **`{py
     *   **Edge Defense Rating**: Device Rating considered 4 higher for the purpose of determining if opponents gain Edge against her AI persona [HnS p. 124].
 
 #### 2. Remote Node & Seattle Retrans Setup
-*   **Seattle Relay Node**: A basic Shiawase Butler drone parked in Seattle serves as the secure remote repository for Reiko's heavy digital assets: the **M-TOC II** and her software tags.
+*   **Seattle Relay Node**: A basic Shiawase Butler drone parked in Seattle serves as the secure remote repository for Reiko's heavy digital assets: the **M-TOC II**, her software tags, and **The Holy Wild Sanctuary Host** (Rating 2 Framework Host).
+*   **Framework Host Specs**:
+    *   **Name**: The Holy Wild Sanctuary Host
+    *   **Rating**: 2
+    *   **Scale**: 1 (Micro / Personal LAN - Single Optical Brick Cluster)
+    *   **Grade**: 2 (Default Security & IC Budget)
+    *   **ASDF Allocation**: Attack 2, Sleaze 2, Data Processing 3, Firewall 3 (Custom Framework Host allocation per *Hack & Slash* p. 154)
+    *   **IC & Defense Array**: Patrol IC (gilded paper-moth data-sprites filtering traffic loops and dead-letter proxy nests), Acid IC budget
+    *   **Host Architecture**: Compiled on the scale of a compact, high-rise studio apartment (capacity: 10 visitors max) with low-slung brushed teak/copper ceilings, narrow kitchenette counter with jasmine tea service, central worktable with Megalodon artillery cannon schematics, wall niche with disarmed contract-collar, and polished floorboards tracing compiled gold logic lines.
+    *   **Foundation Door (The Holy Wild Glade Portal)**: Spanning the back wall is a massive quartz sliding glass door framed in gold logic and indigo circuits. Sliding it open creates a permanent, un-insulated tear/conduit directly into the Deep Matrix / Foundation: **The Holy Wild** glade (fossilized directory trees, fractal willows, telemetry ferns, de-allocated address pools, sapphire moss where rescued sparks flourish).
 *   **Satellite Link Network**: Each of Reiko's drones is equipped with a **Satellite Link** to establish global Matrix connections without line-of-sight limits.
 *   **Retrans Unit Noise Cleaning**: The Seattle Butler is equipped with a **Retrans Unit** [Double Clutch p. 141], which rebroadcasts the signal and completely cleans the connection of Matrix noise up to that point.
-*   **Operational Flow**: Reiko operates locally inside her venue drone while connecting back over the satellite link to the Seattle Retrans node to access her M-TOC II programs and software tags without distance or noise penalties.
+*   **Operational Flow**: Reiko operates locally inside her venue drone while connecting back over the satellite link to the Seattle Retrans node to access her M-TOC II programs, software tags, and Framework Host without distance or noise penalties.
 
 #### 3. Ally Sprite Support (Taz)
 *   **Diagnostics Power**: Taz (Ally Crack Sprite) provides a **+3 Teamwork bonus** on all Electronics, Engineering, and Piloting tests.

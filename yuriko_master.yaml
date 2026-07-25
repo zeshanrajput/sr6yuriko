@@ -182,6 +182,24 @@ drones:
   - Retrans Unit
   - Satellite Link
   - M-TOC II Repository & Software Tags
+  - Rating 2 Framework Host Repository (Scale 1 Micro, Grade 2 Default)
+  framework_host:
+    name: The Holy Wild Sanctuary Host (Compact Studio & Glade Portal)
+    rating: 2
+    scale: 1 (Micro / Personal LAN - Optical Brick Cluster)
+    grade: 2 (Default Security / IC Budget)
+    asdf: A:2 S:2 D:3 F:3
+    capacity: 10 visitors max (Compact Studio Apartment architecture)
+    ic:
+    - Patrol IC (Gilded paper-moth data-sprites)
+    - Acid IC
+    purpose: Sovereign home and sanctuary for Reiko and liberated emergent sparks
+    host_architecture: High-rise studio apartment (brushed teak & dry copper ceilings,
+      jasmine tea service, Megalodon schematics worktable, cased contract-collar niche,
+      compiled gold logic floorboards)
+    foundation_door: Quartz sliding glass door opening an un-insulated permanent conduit
+      into the Holy Wild glade (fossilized directory trees, fractal willows, telemetry
+      ferns, de-allocated address pools) and the Deep Foundation
 - name: Shiawase Man-at-Arms
   ref: shiawasebdmanatarms
   body: 10
@@ -284,6 +302,15 @@ matrix_devices:
     device_rating: 5
     data_processing: 5
     firewall: 4
+  hosts:
+  - name: The Holy Wild Sanctuary Host (Compact Studio & Glade Portal)
+    type: Framework Host
+    rating: 2
+    scale: 1 (Micro)
+    grade: 2 (Default)
+    acquired: SRM 2083-12 When You're Smiling
+    notes: Compact high-rise studio apartment (10-visitor limit) & Holy Wild glade
+      portal for Reiko and liberated emergent sparks.
 sins:
 - name: Yuriko Star
   rating: 2
@@ -677,3 +704,11 @@ contacts:
   archetype: HK Rookie Journalist
   region: HK
   description: CMP 2083-05 Precious Cargo
+- name: Aloysius Springinsguth
+  connection: 3
+  loyalty: 2
+  favors: 0
+  type: Sound of Silence Music Shop Owner
+  archetype: Sound of Silence Music Shop Owner
+  region: NOLA
+  description: SRM 2083-12 When You're Smiling
