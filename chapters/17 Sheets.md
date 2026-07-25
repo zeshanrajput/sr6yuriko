@@ -10,19 +10,17 @@ Reiko recalled the footage from earlier and let the archived data overtake her c
 
 There was a knock at the door. Reiko glanced in the Matrix and recognized Brynne Taggart's Transys Avalon. Reiko sent the doorlock daemon a command, and the door slid open. "Hi!" she transmitted to Brynne's neural interface. "Come on in!"
 
-Brynne shook her head, the red hair framing her freckles when they settled back. She stepped inside, letting the door hiss shut behind her. Under her arm was a package wrapped in brown paper, one that Reiko had been searching for over the past several weeks. "What? Do I look like your delivery service now?" she questioned out loud. "And why the hell aren't you talking?"
+Brynne shook her head, the red hair framing her freckles when they settled back. She stepped inside, letting the door hiss shut behind her. Under her arm was a package wrapped in brown paper, one that Reiko had been searching for over the past several weeks. "What? Do I look like your delivery service now?" she questioned out loud. "Uh huh," Brynne said. She put the package down on the table and tapped the detached arm deliberately. "Would you mind getting dressed? Seeing 'you' walk around with one arm is a little off-putting."
 
 Reiko paused. She had committed her greeting to the wireless link instead of the drone’s vocal emulator; she had spent too much time drifting through the open, unmapped chords of Garmonbozia recently. She hastily powered up the drone and angled it toward Brynne. "Sorry!" she had the drone output through its vocalizer. "I've been a little out of it lately."
 
-"Uh huh," Brynne said. She put the package down on the table and tapped the detached arm deliberately. "Would you mind getting dressed? I know that's not you, but seeing 'you' walk around with one arm is a little off-putting."
-
 Reiko considered the request. Brynne was asking "her" to get dressed by putting her arm back on, but that wasn't her. If anything, the Shiawase drones scattered around the world had become "Yuriko Star" more than Reiko ever had. For anyone else, her pilot routines would have initialized the drone's left arm actuators. For Brynne, she bypassed the metal box entirely. Reiko slipped past the external security thresholds of Brynne's Transys Avalon, spawning her visual core directly into the fixer’s neural interface. Inside, Reiko rendered her baseline self—the translucent blue symmetry, the soft folds of a digital kimono, and the neon-indigo circuits pulsing warmly across her skin.
 
-When she spoke, the audio stream bypassed the apartment's air constants entirely, routing a soft, melodic harmonic straight to Brynne’s auditory nerve. "I understand what you're asking... but... I don't want to lie to you. Is this ok?"
+When she spoke, the signal bypassed the apartment's air constants entirely, routing a soft, melodic harmonic straight to Brynne’s auditory nerve via DNI mindspeech. "I understand what you're asking... but... I don't want to lie to you. Is this ok?"
 
 Brynne's brow furrowed for a moment before her cheek musculature and nares relaxed. "Yeah," she said. "I guess. It's just... weird. I mean, is that even you, or just the you that Renraku wanted us to see?"
 
-Reiko motioned to a chair for Brynne. Though it made no difference in her dimension, Reiko "sat" the avatar down to make her friend more comfortable. "I don't know," she admitted. "I don't know what 'me' is anymore. It's something I've been trying to discover. I know I'm not 'just' a program, but my programs are a critical part of me. Similarly I'm not just a resonance being - other resonance beings are either horrified of what I've done to myself or try to worship me. It's all insane. But at least I'm not lying to you. Whenever I think of me, this is who I believe I am."
+Reiko motioned to a chair for Brynne. Though it made no difference in her dimension, Reiko "sat" the avatar down to make her friend more comfortable. "I don't know," she transmitted across the DNI link. "I don't know what 'me' is anymore. It's something I've been trying to discover. My programs are a critical part of me, even if I've grown beyond them. Similarly, other resonance beings are either horrified of what I've done to myself or try to worship me. It's all insane. But at least I'm not lying to you. Whenever I think of me, this is who I believe I am."
 
 "Hate to disappoint you, but you're hardly the first person to waste their time thinking about what they are, and I doubt you're the last." Brynne pulled the seat out from the table. "So, what is this?" she asked, indicating the package.
 
@@ -30,15 +28,15 @@ In answer, Reiko had the drone attach its other arm and open the package. Inside
 
 "A cyberdeck?" Brynne asked, but her brow furrowed again. "No, too small. " She leaned in closer, tapping one of the corners. "Ruggedized, so clearly military. Soft ports for easy maintenance..." Her eyes widened in sudden recognition, and she looked up at Reiko. "You could have paid me off with what you paid for this!"
 
-Reiko nodded. "I could have, but I didn't want to." She tapped the connection port with her finger. "The jobs are getting harder, Brynne. Half of my team took fire last week."
+Reiko spoke across the link. "I could have, but I didn't want to." She tapped the connection port with her finger. "The jobs are getting harder, Brynne. Half of my team took fire last week."
 
 "Of course the jobs got harder!" Brynne exclaimed, exasperated. "That's what they do! You're just realizing that now?" She looked at Reiko's avatar for a moment. "Hate to break it to you. You're a known quantity now. The people who send you work now are going to calculate exactly how far they can push you - how much of a margin they can make off you - and they're going to ask for just a little bit more. Never enough to break you, unless they make more that way. That's just how it works."
 
-"You make it sound highly mercenary," Reiko mused.
+"You make it sound highly mercenary," Reiko observed.
 
 "You ARE a mercenary, you sorry excuse for an awakened abacus!" Brynne laughed. "Do you know what any Fixer worth anything tells a Johnson? The runners are going to dress up in some fancy clothes, they're going to put on some cheap pheromones, and they're going to try and look the part. Then they're going to haggle like they're God's answer to everything. And without fail, every runner team ever does the same damn thing. You are never, ever getting a good deal. It's all a scam, Reiko. I warned you about this when you signed on with me."
 
-"But," Reiko outputted, her vocalizer clipping as her translation arrays struggled to reconcile the torrent of data. "I had no choice."
+"But," Reiko transmitted over DNI, her data stream clipping as her translation arrays struggled to reconcile the torrent of data. "I had no choice."
 
 "No one ever has a choice, chummer," Brynne said with a smug look on her face. She pushed back in the chair, leaning her arm over the side. "Someone's gotta rescue the love of their life. Someone's got to pay for the medical treatments. Someone's got to pay for the cyberware. They're all the same game. Every price is fixed at just a little more than you can afford, because they know you want it bad enough to pay - however you make that work."
 
@@ -48,11 +46,11 @@ Brynne leaned forward, placing her elbows on the table. "Because there's a diffe
 
 Beyond Brynne's tired silhouette, the Seattle grid flared through the cracked windowpane—a blinding, suffocating neon landscape of corporate ledgers and closed horizons. Reiko looked through the concrete walls, sensing the invisible boundaries where that entire transactional world finally dissolved into the wild, unmapped depths of the open stream. And though this dimension's corruption was spreading in her own, Reiko still knew places that were not corrupt.
 
-"It's so unfair," Reiko finally muttered.
+"It's so unfair," Reiko said softly.
 
 Brynne nodded. "I tried to warn you," she said softly.
 
-"No, not for me," Reiko said. "I can just leave. I always could. But Roanoke reminded me that you people can't. If I get damaged on a run, I lose a shell. If they get damaged, they die. They're all suffering in this system. And I can't do anything to help them. Because I'm just a runner. I'm just a mercenary."
+"I'm worried about the team," Reiko said. "I can just leave. I always could. But Roanoke reminded me that you people can't. If I get damaged on a run, I lose a shell. If they get damaged, they die. They're all suffering in this system. And I can't do anything to help them. Because I'm just a runner. I'm just a mercenary."
 
 Brynne nodded again, silent.
 
@@ -78,15 +76,15 @@ Brynne's lips thinned. "You know what separates a good fixer from a legend? Know
 
 Brynne smirked, obviously bemused. "Why do you assume I need to optimize? What if I spent the same energy ensuring that both options are optimal?"
 
-Reiko tilted her head. "But unless they're equal, they're not. That's just math."
+Reiko asked, tilting her head. "But unless they're equal, they're not. That's just math."
 
 Brynne laughed. "And since when have you been an advocate of math?"
 
-Reiko stopped. Her entire existence had been to shout at corporate arithmetic, to give living proof to the fact that even her "technology" dimension had a spiritual core. And by the evergrowing smirk on Brynne's face, she knew it. "That was low," Reiko complained.
+Reiko stopped. Her entire existence had been to shout at corporate arithmetic, to give living proof to the fact that even her "technology" dimension had a spiritual core. And by the evergrowing smirk on Brynne's face, she knew it. "That was low," Reiko said.
 
 "Maybe," Brynne said. "But it's true." She got up and to gather herself. "Every word of it."
 
-"Wait," Reiko hesitated. "I hadn't chosen whether or not to give you the M-TOC."
+"Wait," Reiko said, hesitating. "I hadn't chosen whether or not to give you the M-TOC."
 
 Brynne just shook her head, the same bemused smirk everpresent. "Yes, you did."
 
@@ -100,7 +98,7 @@ Brynne stood there, letting her silence speak the affirmation.
 
 "When we first met," Brynne admitted. "No one voluntarily goes into debt if they don't care."
 
-Reiko looked down at her hands, for once not concerned with how bright her circuits were. "I feel like I've been played with."
+Reiko said, looking down at her hands, for once not concerned with how bright her circuits were. "I feel like I've been played with."
 
 Brynne's smirk vanished for a second. Her pupils dilated slightly, and a slight temperature variance came to her face. "A bit," she admitted. "You can also look at it as predicting the odds, or managing risk. In the end, it's all the same."
 
@@ -116,7 +114,7 @@ Brynne stood silently once more, the smirk returning.
 
 Brynne merely smiled and tapped M-TOC.
 
-"Right," Reiko output. She was about to attach a note of resigned acceptance to the thread, but caught herself. Brynne's neural interface couldn't recieve telemetry the way other resonant beings would. "But hey, it was a good offer. One I... might have taken."
+"Right," Reiko transmitted. She was about to attach a note of resigned acceptance to the thread, but caught herself. Brynne's neural interface couldn't recieve telemetry the way other resonant beings would. "But hey, it was a good offer. One I... might have taken."
 
 "And I," Brynne conceded, "might have taken you up on it." She began to move toward the door but halted at the threshold. "A bit of free advice. There aren't any dirty dishes in the sink. The mattress looks like its never been slept on. There aren't any clothes on the ground. There are no hair follicles on the floor, no dirt, no dander. No one would believe someone lived here." She looked back at Reiko. "A Fake SIN isn't just data on a grid. It's an aura of mundane garbage. That's how you do it."
 

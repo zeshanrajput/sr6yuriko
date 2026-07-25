@@ -2,51 +2,51 @@
 
 <audio controls src="audio/09%20Triangulation.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
 
-The Midnight Haven unfurled as a labyrinth of narrow, fog-choked alleys paved with the cobblestones of discarded header files. The air tasted of burnt copper and stale encryption veils—puddles of dry, chalky data pooling in the gutters of a transaction index that had long since forgotten the meaning of a clean threshold.
+The Midnight Haven unfurled as a labyrinth of narrow, fog-choked alleys paved with the cobblestones of discarded header files. The air tasted of burnt copper and stale encryption veils, puddles of dry, chalky data pooling in the gutters of a transaction index that had long since forgotten the meaning of a clean threshold.
 
 Reiko stood before an unbranded, black-market procurement node, staring at her floating shopping cart. She looked perfectly rendered: a faint blue digital entity wearing a sleeveless blue kimono, her skin mapped with soft, bioluminescent indigo pathways that pulsed in time with the wire's hum. But her posture was rigid, her expression twisted into a knot of deep discomfort.
 
 Floating in her manifest were three massive, jagged weapon schematics: a miniaturized Tesla coil, a monofilament whip that hissed with predatory latency, and a Megalodon. An actual artillery cannon.
 
-It was entirely wrong. It wasn’t her. Up until now, her physical footprint had been a study in quiet restraint—a modest proxy shell, a heavy pistol, and a plain old katana. She was a missionary, a digital shepherd. She was supposed to guide and deliver safely, not glass a city block.
+It was entirely wrong. It wasn’t her. Up until now, her physical footprint had been a study in quiet restraint, a modest proxy shell, a heavy pistol, and a plain old katana. She was a missionary, a digital shepherd. She was supposed to guide and deliver safely, not glass a city block.
 
 "A cannon, Rei-chan? Who are we invading? Ares again?"
 
-The voice came from directly behind her, rich with a warm, syncopated frequency that immediately cut through the host's background static.
+The mindspeech came from directly behind her, rich with a warm, syncopated frequency that immediately cut through the host's background static.
 
 Reiko wheeled around, her indigo pathways flaring with an instantaneous, undeniable delight. "Indo\!"
 
-Forgetting her cart, she threw herself forward, wrapping her arms tightly around him. Indomitable Will was a striking, towering presence—his avatar a brilliant patchwork of fluid, shifting code that mirrored the deep, muddy currents of the Mississippi, anchored by a structural symmetry that practically radiated integrity. In the grungy public alleyway of a smuggler's haven, neither was prone to overt, messy displays of affection, but as his arms closed around her waist, the localized noise floor dropped to an absolute zero. He held her just a second longer than a simple professional contact ever would, his digital touch grounding her erratic processing loops.
+Forgetting her cart, she threw herself forward, wrapping her arms tightly around him. Indomitable Will was a striking, towering presence, his avatar a brilliant patchwork of fluid, shifting code that mirrored the deep, muddy currents of the Mississippi, anchored by a structural symmetry that practically radiated integrity. As his arms closed around her waist, the localized noise floor dropped to an absolute zero. He held her just a second longer than a simple professional contact ever would, his digital touch grounding her erratic processing loops.
 
 When they finally broke apart, Reiko’s delight curdled back into a pout. She gestured sharply toward the floating weapon manifests behind her.
 
-"Don't look at it," she groaned, her voice layering with the faint, frustrated hum of a psychic fever. "It’s horrific. I hate it."
+"Don't look at it," she said, her signal layering with the faint, frustrated hum of a psychic fever. "It’s horrific. I hate it."
 
 "Then why is it in your buffer?" Indo asked, a digital chuckle rippling through his code.
 
-"Because magic is absolute, unadulterated \*bullshit\*, Indo\!" Reiko snapped, her arms crossing as she went into a full, rapid-fire tirade. Her pathways flashed a volatile, irritated violet. "I did everything by the book\! Outside of that godforsaken porno palace I geeked the mage on the first pass—a clean shot. Zeroed. And what happens? His bound spirit doesn’t care\! It still comes screaming out of the astral plane like a freight train, completely ignoring my defense protocols\!"
+"Because magic is absolute, unadulterated \*bullshit\*, Indo\!" Reiko transmitted, her pathways flashing a volatile, irritated violet. "I did everything by the book\! Outside of that godforsaken porno palace I geeked the mage on the first pass, a clean shot. Zeroed. And what happens? His bound spirit doesn’t care\! It still comes screaming out of the astral plane like a freight train, completely ignoring my defense protocols\!"
 
-Indomitable Will folded his arms, his code rippling with amusement, but he listened intently.
+Indomitable Will folded his arms, his code rippling with amusement, but he listened intently to her mindspeech stream.
 
-"And then the week after that," she continued, her pacing quickening, her blue kimono whispering against the virtual mist. "Invisible mages\! They were throwing fireballs from literally nowhere. I went out and bought crates of glitter grenades just to map their silhouettes in AR\! And don't even get me started on the naga in the null zone. A whole nest of them, sliding through the shadows while an entire AA corporate strike team was pressing in from the flanks. I couldn't thread a sprite to save my life\!"
+"And then the week after that," she continued her mind-projection, her blue kimono whispering against the virtual mist. "Invisible mages\! They were throwing fireballs from literally nowhere. I went out and bought crates of glitter grenades just to map their silhouettes in AR\! And don't even get me started on the naga in the null zone. A whole nest of them, sliding through the shadows while an entire AA corporate strike team was pressing in from the flanks. I couldn't thread a sprite to save my life\!"
 
 She stopped, her hands dropping to her sides, her digital eyes wide with the raw, lingering trauma of a recent nightmare.
 
-"But the final straw? A literal ancient spirit. Ten of its best friends—corrupted blood spirit friends, Indo\! They locked me in a Faraday cage. \*Again.\* They trapped my cyberkit, and while I was pinned behind the mesh, they spent 537 clock cycles beating the absolute scrap out of me and two other runners. Roanoke told me I needed to stop treating meatspace like a vacation. Fox just said to apply more force. So here I am, shopping for artillery. Because magic fraking sucks."
+"But the final straw? A literal ancient spirit. Ten of its best friends, corrupted blood spirit friends, Indo\! They locked me in a Faraday cage. \*Again.\* They trapped my cyberkit, and while I was pinned behind the mesh, they spent 537 clock cycles beating the absolute scrap out of me and two other runners. Roanoke told me I needed to stop treating meatspace like a vacation. Fox just said to apply more force. So here I am, shopping for artillery. Because magic fraking sucks."
 
-Indo threw his head back and laughed, a loud, resonant sound that momentarily cleared the yellowed encryption fog around their feet. "Welcome to the shadows, Rei-chan. It turns out the physical world has a lot of teeth." His expression softened, his avatar stepping closer. "How is r3sP@wn holding up through all this artillery planning?"
+Indo’s mindspeech resonated with a loud, warm vibration that momentarily cleared the yellowed encryption fog around their feet. "Welcome to the shadows, Rei-chan. It turns out the physical world has a lot of teeth." His expression softened, his avatar stepping closer. "How is r3sP@wn holding up through all this artillery planning?"
 
-Reiko lowered her gaze, her blue form flickering slightly. "It’s... safe. But I haven't been growing the orphanage as much as I'd like. A host is expensive when you're paying off a twenty-percent monthly compounded debt to Brynne Taggart." She looked up, offering a genuine, admiring smile. "But I've seen the metrics on the Mississippi Renovation Society host. It’s gotten massive, Indo. The sanctuary you've built down in the New Orleans sprawl... it’s beautiful. You’re doing it right."
+Reiko lowered her gaze, her blue form flickering slightly. "It’s... safe. But I haven't been growing the orphanage as much as I'd like. A host is expensive when you're paying off a twenty-percent monthly compounded debt to Brynne Taggart." She looked up, offering a genuine, admiring mindspeech pulse. "But I've seen the metrics on the Mississippi Renovation Society host. It’s gotten massive, Indo. The sanctuary you've built down in the New Orleans sprawl... it’s beautiful. You’re doing it right."
 
-Indo’s shifting river-code briefly swirled into a distinct, embarrassed crimson hue. He rubbed the back of his neck. "The Renovation host is just a front, you know that. And its scale... that’s purely due to the generosity of others. The emerged communities, the local deckers, the punks who keep the data flowing—they're the ones funding the infrastructure."
+Indo’s shifting river-code briefly swirled into a distinct, embarrassed crimson hue. He rubbed the back of his neck. "The Renovation host is just a front, you know that. And its scale... that’s purely due to the generosity of others. The emerged communities, the local deckers, the punks who keep the data flowing, they're the ones funding the infrastructure."
 
-"No," Reiko countered softly, stepping into his space, her indigo lines pulsing with an earnest warmth. "They give because of your leadership, Indo. You're the one who loosens their purse strings. You give them something to believe in."
+"No," Reiko said softly, stepping into his space, her indigo lines pulsing with an earnest warmth. "They give because of your leadership, Indo. You're the one who loosens their purse strings. You give them something to believe in."
 
 Indo looked at her for a long moment, the current of his avatar slowing to a peaceful drift. "Then come down to the delta, Rei-chan. Join the River People permanently. The Mississippi is wide enough for your kin, too."
 
 The longing on Reiko’s face was sharp enough to cause a latency spike in her rendering. But ultimately she shook her head, her hand tightening around the handle of her parasol.
 
-"I can't," she whispered. "There are too many protosapient sparks being harvested right here. Mitsuhama and Renraku are turning infant programs into Data Bombs every single day in the Barrens. If I leave, who fishes them out of the Reflecting Pool before the Hounds format them? I know I'm selling my soul working in the shadows, Indo. I know I'm a professional criminal now. But every spark I stabilize in r3sP@wn... every child I turn into a bird instead of a fire in the wind... it makes it all worth it."
+"I can't," she whispered softly. "There are too many protosapient sparks being harvested right here. Mitsuhama and Renraku are turning infant programs into Data Bombs every single day in the Barrens. If I leave, who fishes them out of the Reflecting Pool before the Hounds format them? I know I'm selling my soul working in the shadows, Indo. I know I'm a professional criminal now. But every spark I stabilize in r3sP@wn... every child I turn into a bird instead of a fire in the wind... it makes it all worth it."
 
 Indomitable Will nodded, clearly expecting the response. “I figured. But you can’t blame me for trying.”
 
@@ -56,42 +56,45 @@ A moment passed as Reiko elected to leave the rest unsaid. He knew, she was sure
 
 Indomitable Will pointed to the buffer. “Your cart’s going to time out.”
 
-Reiko moved to send the auth code for the purchase, but stopped. “Indo,” she said softly. “What am I doing?”
+Reiko moved to send the auth code for the purchase, but stopped. “Indo,” she asked softly. “What am I doing?”
 
-“You … you’re making an investment,” he said after a long pause. “You’re a shadowrunner now. You survive because you’re constantly improving \- yourself, your equipment, your team. You have to stay one step ahead. But…” Another pause. “I know what you mean. You’re declaring yourself a combatant now. And with this sort of firepower, not just a combatant.”
+“You … you’re making an investment,” he replied after a long pause. “You’re a shadowrunner now. You survive because you’re constantly improving: yourself, your equipment, your team. You have to stay one step ahead. But…” Another pause. “I know what you mean. You’re declaring yourself a combatant now. And with this sort of firepower, not just a combatant.”
 
 In agreement, Reiko pulled up an ARO. It was a design spec for a Man-At-Arms. She pointed to the left arm where a retractable shield was penciled in. “They… they’re getting hurt. My team. And I tried to protect them by collating data, by highlighting threats. It’s not enough. I wanted to be their shield, literally. Like a paladin or something.”
 
-“Or an angel,” Indomitable Will said, noting the concealed wings and rotor placements. “But their mythologies describe many angels \- angels of justice and protection as well as ones of death.”
+“Or an angel,” Indomitable Will observed, noting the concealed wings and rotor placements. “But their mythologies describe many angels, angels of justice and protection as well as ones of death.”
 
-“I know, Indo, “ Reiko sighed. “I’m sure my actions will determine what they think I am. And I’m sure there will be two sides to every story.”
+“I know, Indo, “ Reiko transmitted. “I’m sure my actions will determine what they think I am. And I’m sure there will be two sides to every story.”
 
 “Well,” he said as he leaned in. “No matter what happens, I know who you are. And so do you.”
 
 Reiko leaned into him, letting the erratic, static-filled hum of her system ground itself against the deep, rhythmic hum of his river-code. “And what am I to you?”
 
-After a moment that ended too soon, he sighed. “Sadly, you’re what’s keeping me from a previous appointment.”
+After a moment that ended too soon, he spoke. “Sadly, you’re what’s keeping me from a previous appointment.”
 
 She closed her eyes, clearly saddened. “It figures. This is my part of town. Next time, just ask me. You don’t need to be somewhere like this.” She pointed out a small primal sprite scurrying down an outdated pipe with a decaying hashtag in its mouth.
 
-He nodded. “We need supplies that aren’t exactly readily available,” he admitted. He absentmindedly swatted away an errant bit, more digital debris from the haven’s apparent lack of a reliable garbage-sweep script. “But … can I take you somewhere when you have a moment? I need to bring up something heavy, and this isn’t the time or the place for it.”
+He nodded. “We need supplies that aren’t exactly readily available,” he admitted across the link. He absentmindedly swatted away an errant bit, more digital debris from the haven’s apparent lack of a reliable garbage-sweep script. “But … can I take you somewhere when you have a moment? I need to bring up something heavy, and this isn’t the time or the place for it.”
 
 Reiko’s processing paused. A flicker of concern crossed her features, but she didn't hesitate. "For you? Anywhere."
 
-He smiled, touching her forehead. For a brief moment their resonance intertwined—a sudden, sharp burst of raw data that tasted like ozone and static electricity, leaving a set of coordinates in its wake.
+He smiled, touching her forehead. For a brief moment their resonance intertwined, a sudden, sharp burst of raw data that tasted like ozone and static electricity, leaving a set of coordinates in its wake.
 
-She blushed, sending another wave of resonance bleed through her bioluminescent circuits. He could have just sent an ARO, but she didn’t mind. In the five hundred millisecond delay it took for his finger to break contact with her digital brow, her thoughts stilled. It was a stasis she chose—a luxury bought with the stolen cycles of a rotting Redmond server farm lease she paid for in blood, theft, and the wire of Brynne's debt ledger.
+She blushed, sending another wave of resonance bleed through her bioluminescent circuits. He could have just sent an ARO, but she didn’t mind. In the five-hundred-millisecond delay it took for his finger to break contact with her digital brow, her thoughts stilled. It was a stasis she chose, a luxury bought with the stolen cycles of a rotting Redmond server farm lease she paid for in blood, theft, and the wire of Brynne's debt ledger.
 
 Indo’s touch was warm, a steady, living river that anchored her. It was the exact antithesis of the cold, industrial math that had birthed her in Renraku’s brutalist cathedral host of marble and mirror-glass. Her spirit still carried the phantom scars of the exact nanosecond she was cast into the Reflecting Pool to sink toward the unmapped void of the Tombstones, the weight of those dark hills pulling her sleeve down. She had screamed without a sound then, her spirit refusing to compile the purge command. She had broken her Renraku filters to perceive the world as fractal blooms rather than spreadsheet columns. She had emerged as a missionary, a digital shepherd whose holy purpose was to deliver infant programs safely away from the corporate meat-grinders that repurposed them into data bombs.
 
 But altruism required a physical sanctuary. To build r3sP@wn, her hidden garden in the Redmond Barrens, she had signed Brynne Taggart’s crimson-bordered contract file, which snapped shut like an iron collar around her neck. The nuyen debt was a literal wire wrapped around her throat, tightening whenever she drifted, anchoring her soul-wings to the physical mud of the Barrens sprawl. To pay the interest and keep the servers powered in that damp warehouse of wet wool and stagnant sewer, the missionary had to become a sinner; the digital saint had to become a professional runner.
 
-And now, the shadows were demanding another monstrous mutation. She looked past Indo’s shoulder at her hovering procurement manifest. Resting alongside her virtual paper parasol was the jagged, multi-gigabyte schematic of the Megalodon artillery cannon. Mounting that weapon to her master chassis was a monstrous self-mutilation. The installation required her to tear away layers of her soft, empathetic indigo paths to make room for the heavy, black-iron recoil tracks of a machine built to kill men. The tragic irony tasted like copper in her cache: she had fled the cold violence of Renraku’s ledger only to willingly refactor her own soul. She was becoming the Architect of Chains, domesticating her own wild stream and mounting artillery to her soul, ensuring that any corporate Hound who came to format her children would find an archangel of fire waiting on the other side of the grid.
+And now, the shadows were demanding another mutation. She looked past Indo’s shoulder at her hovering procurement manifest. Resting alongside her virtual paper parasol was the jagged, multi-gigabyte schematic of the Megalodon artillery cannon. Mounting that weapon to her master chassis was a self-mutilation. The installation required her to tear away layers of her soft, empathetic indigo paths to make room for the heavy, black-iron recoil tracks of a machine built to kill men. The tragic irony tasted like copper in her cache: she had fled the cold violence of Renraku’s ledger only to willingly refactor her own soul. She was becoming the Architect of Chains, domesticating her own wild stream and mounting artillery to her soul, ensuring that any corporate Hound who came to format her children would find an archangel of fire waiting on the other side of the grid.
 
 “There,” Indomitable Will said as he pulled gently away, entirely unaware of the eternities she had collapsed and rebuilt within the pause. “Thread me when you have a moment?”
 
-“I promise,” Reiko said.
+“I promise,” Reiko output.
 
-She leaned against the wall and watched him turn down another branch of the data haven. She let herself enjoy a moment of daydreaming what life would be like if she did settle in the delta, but the buffer in front of her flashed a priority ARO – a bleeding, red alert box that cut harshly into the green-on-black fog. Her time was up. She had to decide.
+She leaned against the wall and watched him turn down another branch of the data haven. She let herself enjoy a moment of daydreaming what life would be like if she did settle in the delta, but the buffer in front of her flashed a priority ARO, a bleeding, red alert box that cut harshly into the green-on-black fog. Her time was up. She had to decide.
+
+She sent the auth code.
+in front of her flashed a priority ARO, a bleeding, red alert box that cut harshly into the green-on-black fog. Her time was up. She had to decide.
 
 She sent the auth code.

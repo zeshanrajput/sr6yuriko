@@ -223,22 +223,20 @@ weapons:
     - Silencer
     - Smartlink
     - Personalized Grip
-  - name: Ares Firebolt Array (2x Link-Fired)
+  - name: Crimson Wasp Array (2x Link-Fired)
     damage: 5P
-    attack_rating: 16/14/10/-/-
-    mode: SS,SA,BF
-    ammo: 30(c)
+    attack_rating: 16/14/11/6/-
+    mode: SA
+    ammo: 15(c)
     smartlink: true
     is_vehicle_mounted: true
-    link_fired_count: 1
     accessories:
     - Smartlink
     - Drone Mount (+2 AR)
-    - Link-Fired (2x Firebolts)
-  - name: Ares Firebrand Array (Link-Fired)
+  - name: Red Fox Array (Link-Fired)
     damage: 6P
-    attack_rating: 18/16/12/6/-
-    mode: SS,SA,BF
+    attack_rating: 14/16/16/9/-
+    mode: SA,BF
     ammo: 30(c)
     smartlink: true
     is_vehicle_mounted: true
@@ -246,7 +244,7 @@ weapons:
     accessories:
     - Smartlink
     - Drone Mount (+2 AR)
-    - Link-Fired (Firebrand + 2x Firebolts)
+    - Link-Fired (2x Wasps)
   - name: Tesla Coil
     damage: 5S(e)
     attack_rating: 8/10*/-/-/-

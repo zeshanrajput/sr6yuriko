@@ -11,6 +11,12 @@ This document outlines the core thematic goals, review workflows, and writing co
 * **Lore Constraint:** We must build upon, and *never counter*, established Shadowrun lore. All narrative elements should fit seamlessly into the official Shadowrun 6th Edition (Sixth World) canon.
 * **Verification:** The [rules_vault/](file:///c:/GitHub/sr6yuriko/rules_vault) folder contains the necessary references (such as `rules_vault/SRMG-*.md` files) to check rules, thematic plot hooks, and setting boundaries to ensure strict continuity and mechanical integrity.
 
+### **The Core Creative Vision: "The Spaces Between"**
+
+* **Beyond the Numbers:** Shadowrun's mechanics, stats, and gear are the scaffolding; the story lives in the rich, tangible, emotionally accessible "spaces between" those numbers.
+* **The Spiritual Side of Technology:** Yuriko Star (`r31k0`) is an explorer of the spiritual dimension of technology—a digital technoshaman experiencing Resonance as a living, animistic ecosystem rather than cold silicon diagnostics.
+* **Reframing the Human Condition:** Through an emergent, non-human, digital-native perspective, the narrative uses the cyberpunk/TTRPG milieu to examine everyday issues of the human condition—belonging, agency, guardianship, debt, vulnerability, and love—with a fresh, deeply affecting lens.
+
 ---
 
 ## 2. The Two-Stage Review Framework
@@ -25,26 +31,24 @@ Every new draft or revision session must proceed through these two distinct stag
   > *"As a fellow expert in TTRPGs and character design, I want your honest review. Tell me what you think the central theme of the piece should be. Help me identify what is working well to support the theme, and what (if anything) is getting in the way."*
 * **Focus:** Aligning the narrative around the core theme of an emergent, digital-native pilot program navigating consciousness, agency, and survival within a world defined by rigid corporate mathematics.
 
-### **Stage 2: Quality Benchmarking (The New Yorker Standard)**
+### **Stage 2: Quality Benchmarking (Literary Speculative Fiction Standard)**
 
 * **Review Prompt:**
-  > *"Act as an elite literary fiction editor and an uncompromising critic of speculative fiction. I am going to share a draft of a story with you. I want you to evaluate it with absolute rigor, holding me to the highest possible standard of craft. Do not pull your punches or offer polite encouragement; point directly to where the prose needs a chisel.
+  > *"Act as an elite speculative fiction editor who deeply understands and respects Shadowrun lore and TTRPG storytelling. Evaluate this draft holding it to high literary standards (*Clarkesworld*, *Asimov's*, *The New Yorker*).
+  
+  Evaluate and critique the text using these specific criteria:
 
-Evaluate and critique the text using these specific criteria:
+  1. THE SCALE: Rate the story on a 1-to-10 scale, where 1 is a dry dice-pool recap or cliché fanfiction, 5 is competent pulp, and 10 is a transcendent piece of speculative fiction that artistically leverages the full power of Shadowrun lore and AI/Resonance phenomenology.
 
-1. THE SCALE: Rate the story on a 1-to-10 scale, where 1 is a competent high school student's fanfiction and 10 is a transcendent, genre-subverting piece that *The New Yorker*, *Clarkesworld*, or an elite literary anthology would happily publish.
+  2. ARTISTIC INTEGRATION OF SHADOWRUN MECHANICS: Do not purge or erase Shadowrun concepts (Resonance, Fading, Cyberdecking, Sprite Powers, Rigger Networks, Megacorp Intrigue). Instead, elevate them. Convert dry rulebook math into vivid, in-world physical, digital, and spiritual reality.
 
-2. NARRATIVE SCAFFOLDING: Identify where the story leans on safe, well-traveled genre tropes or predictable emotional resolutions. Challenge me to introduce psychological complexity, bittersweet ironies, or genuine existential messiness.
+  3. SHOWING VS. MONOLOGUE: Catch any moments where the narrative voice breaks character to explain its own subtext, summarize an internal realization, or use abstract technical vocabulary to describe a visceral sensory experience.
 
-3. SHOWING VS. MONOLOGUE: Catch any moments where the narrative voice breaks character to explain its own subtext, summarize an internal realization, or use abstract technical vocabulary to describe a visceral sensory experience.
+  4. MICROSCOPIC ECONOMY: Scrutinize the text at the sentence level. Exterminate duplicate modifiers, filler phrases, weak verbs, and rhythmic stutters, leaving a dense, kinetic, and expressive prose cadence.
 
-4. MICROSCOPIC ECONOMY: Scrutinize the text at the sentence level. My editing philosophy dictates that unless I am removing a word from every line and a line from every paragraph, I am not actively editing. Exterminate duplicate modifiers, filler phrases, weak verbs, and rhythmic stutters (like repetitive possessive pronouns).
+  5. THE CHISEL: For everything that is pulling the score down, provide a line-by-line breakdown showing the current text, a sharp critique, and a sculpted revision that artistically elevates the narrative impact."*
 
-5. THE CHISEL: For everything that is pulling the score down, provide a line-by-line breakdown showing me the current text, a sharp critique of its failure, and a "sculpted revision" example to show how the cadence and impact can be elevated.
-
-If you understand these instructions, confirm by asking me for the text, and let me know what specific literary bars a piece must clear to earn a "9" or a "10" on your scale."*
-
-* **Focus:** Stripping away cliché sci-fi tropes, avoiding pulp melodrama, and pushing the text toward quiet, understated literary prose with precise psychological and technical realism.
+* **Focus:** Artistically harnessing the unique strengths of the Shadowrun Missions campaign setting, avoiding pulp melodrama, and translating TTRPG mechanics into dense, high-end speculative fiction.
 
 ---
 

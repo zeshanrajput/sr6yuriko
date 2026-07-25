@@ -176,7 +176,7 @@ def get_processed_weapons() -> Dict[str, Any]:
             breakdown.append("Vehicle/Drone Mount: +2 AR (Halves burst AR penalty)")
             total_bonus += 2
         if link_count > 0:
-            breakdown.append(f"Link-Firing ({link_count}x Firebolts): +{link_count} AR")
+            breakdown.append(f"Link-Firing ({link_count}x Wasps): +{link_count} AR")
             total_bonus += link_count
             
         breakdown.append(f"Total AR Bonus: +{total_bonus} AR")
@@ -220,15 +220,15 @@ def get_processed_weapons() -> Dict[str, Any]:
             bf_dv_str = base_dv_str
 
         name_lower = w.get("name", "").lower()
-        if "firebrand" in name_lower or "red fox" in name_lower:
+        if "red fox" in name_lower or "firebrand" in name_lower:
             eff_modes = "SS, SA, BF (Link-Fired Array)"
-            mode_note = "Link-fired array with 2x Firebolts. Drone mount halves SA/BF AR penalties to -1/-2 AR."
+            mode_note = "Link-fired array with 2x Wasps. Drone mount halves SA/BF AR penalties to -1/-2 AR."
             ss_dv_str = "10P"
             sa_dv_str = "11P"
             bf_dv_str = "12P"
-        elif link_count > 0 or "firebolt" in name_lower:
+        elif link_count > 0 or "crimson wasp" in name_lower or "wasp" in name_lower or "firebolt" in name_lower:
             eff_modes = "SS, SA, BF (Link-Fired Array)"
-            mode_note = "Link-fired 2x Firebolts array (+2 DV array bonus). Drone mount halves SA/BF AR penalties to -1/-2 AR."
+            mode_note = "Link-fired 2x Wasps array (+2 DV array bonus). Drone mount halves SA/BF AR penalties to -1/-2 AR."
             ss_dv_str = "7P"
             sa_dv_str = "8P"
             bf_dv_str = "9P"
@@ -252,8 +252,24 @@ def get_processed_weapons() -> Dict[str, Any]:
         w_copy["total_ar_bonus"] = total_bonus
         w_copy["math_breakdown"] = breakdown
         w_copy["effective_modes"] = eff_modes
-        w_copy["mode_note"] = mode_note
         ranged_processed.append(w_copy)
+        if w_copy["name"] == "Red Fox Array (Link-Fired)":
+            alias = dict(w_copy)
+            alias["name"] = "Red Fox"
+            ranged_processed.append(alias)
+        elif w_copy["name"] == "Red Fox":
+            alias = dict(w_copy)
+            alias["name"] = "Red Fox Array (Link-Fired)"
+            ranged_processed.append(alias)
+
+        if w_copy["name"] == "Crimson Wasp Array (2x Link-Fired)":
+            alias = dict(w_copy)
+            alias["name"] = "Crimson Wasp"
+            ranged_processed.append(alias)
+        elif w_copy["name"] == "Crimson Wasp":
+            alias = dict(w_copy)
+            alias["name"] = "Crimson Wasp Array (2x Link-Fired)"
+            ranged_processed.append(alias)
 
 
     close_processed = []

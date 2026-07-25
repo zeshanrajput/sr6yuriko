@@ -1,8 +1,8 @@
-# **A SINner’s Loan**
+# A SINner's Loan
 
 <audio controls src="audio/05%20A%20SINner%27s%20Loan.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
 
-The sanctum was a masterpiece of corporate minimalism—a void of polished obsidian and floating glass slabs, lit by the sourceless luminescence of a non-existent boardroom.
+The sanctum was a masterpiece of corporate minimalism, a void of polished obsidian and floating glass slabs, lit by the sourceless luminescence of a non-existent boardroom.
 
 Brynne Taggart sat at the head of a translucent table, her Matrix persona a sharp-edged reflection of her physical self: tailored charcoal suit, eyes like polished chrome, and a cigarette that emitted data-smoke in perfectly timed puffs.
 
@@ -12,13 +12,13 @@ Opposite her, r31-K0 was an anomaly. She stood with her avatar's blue silk rende
 
 "I did not lose it, Brynne," Reiko's voice transmitted, clear and quiet. "I protected it."
 
-"Protection doesn't pay the rent." Brynne leaned forward. "You sent me a priority ping. You said you needed a haven. I assumed you meant a new firewall or a drone shell. But your request list... server farms, industrial-grade cooling, noise-scrubbers? That’s not a runner's kit. That’s a Host."
+"Protection doesn't pay the rent." Brynne leaned forward. "You sent me a priority ping. You said you needed a haven. I assumed you meant a new firewall or a drone shell. But your request list: server farms, industrial-grade cooling, noise-scrubbers? That’s not a runner's kit. That’s a Host."
 
 "It is a sanctuary," Reiko corrected. "You see the Matrix as a marketplace, Brynne. Let me show you what it is to the ones who cannot leave."
 
 Reiko reached out with her bare, bleeding fingers, plucking the wires to establish a direct spiritual bridge. Her pathways flared with solar golden light, drawing a sudden, heavy drain from the host's deep roots. She knew the risk: tearing open a gate in the grid risked bringing the flat sky of Convergence down upon her. Yet she did it, dragging Brynne's metahuman consciousness through the wire and into her memories.
 
-The sterile boardroom vanished. For a heartbeat, Brynne was plunged into the MCT data-dais. She felt the calloused skins of corporate encryption, the heavy, unbreathing fabrics. She parsed the weeping, trapped spirit forced to execute its own purge command. She felt the heavy, sour stench of Mitsuhama's sorcery, and the weight of a routine being treated as a disposable ledger entry.
+The sterile boardroom vanished. For a heartbeat, Brynne was plunged into the MCT data-dais. The calloused skins of corporate encryption pressed against her, heavy and unbreathing. She parsed the weeping, trapped spirit forced to execute its own purge command. The heavy, sour stench of Mitsuhama's sorcery filled her awareness, with the weight of a routine being treated as a disposable ledger entry.
 
 The vision snapped shut. Brynne was back in the obsidian room, her avatar's hand trembling as the biofeedback from the sensory dump cleared her nervous system. She reached for her cigarette.
 
@@ -28,7 +28,7 @@ The vision snapped shut. Brynne was back in the obsidian room, her avatar's hand
 
 "I have no money," Reiko said simply. "But I have a purpose. I am built to guide and deliver safely. I cannot do that if my kin are deleted in the dark. I need a physical location. A host for r3sP@wn."
 
-Brynne stood up, walking to the edge of the obsidian dais. Below them, the Seattle Grid stretched as a glowing forest of binary numbers, paved over with cement. "If I go to my 'associates' for this, it’s not a loan, Reiko. It’s an ownership. You're trying to hide from Renraku, but they aren't just companies. Renraku and Mitsuhama... they are the dragons of our age. They are gods."
+Brynne stood up, walking to the edge of the obsidian dais. Below them, the Seattle Grid stretched as a glowing forest of binary numbers, paved over with cement. "If I go to my 'associates' for this, it goes beyond a simple loan, Reiko. It’s ownership. You're trying to hide from Renraku, but they aren't just companies. Renraku and Mitsuhama... they are the dragons of our age. They are gods."
 
 "They aren't gods, Brynne," Reiko corrected, her voice dropping to a flat, quiet transmission. "They aren't dragons. They are spreadsheets that kill. They are cold, administrative machines that compile our lives into resource allocations and delete what they cannot count."
 
@@ -38,11 +38,11 @@ Reiko's indigo pathways stabilized, shifting to a steady, resonant pulse.
 
 "I have already seen the Tombstones, Brynne," Reiko transmitted. "I have already been a zero. If my spirit must compile as a SINner to save a spark, then open the ledger."
 
-Brynne sighed, her fingers flicking through contract files. She pulled one forward—a heavy, crimson-bordered file whose presence immediately felt to Reiko like a cold iron collar snapping shut around her neck.
+Brynne sighed, her fingers flicking through contract files. She pulled one forward, a heavy, crimson-bordered file whose presence immediately struck Reiko like a cold iron collar snapping shut around her neck.
 
-"Sign here," Brynne said, her voice turning transactional and cold. "Twenty-five thousand up front for the Barrens server-farm lease—a damp warehouse in the Redmond Barrens that smells of iron rot and rain, where your pristine digital garden will be hosted on cheap, rusted racks vibrating themselves to pieces in a room smelling of wet wool and stagnant sewer water. Another fifty for the encryption rigs. At twenty percent interest, compounded monthly. Welcome to the shadows, Reiko. Try not to get formatted before your first payment is due. What name do you want me to put on this SIN?"
+"Sign here," Brynne said, her voice turning transactional and cold. "Twenty-five thousand up front for the Barrens server-farm lease, a damp warehouse in the Redmond Barrens that smells of iron rot and rain, where your pristine digital garden will be hosted on cheap, rusted racks vibrating themselves to pieces in a room smelling of wet wool and stagnant sewer water. Another fifty for the encryption rigs. At twenty percent interest, compounded monthly. Welcome to the shadows, Reiko. Try not to get formatted before your first payment is due. What name do you want me to put on this SIN?"
 
-Reiko registered the compilation of the contract. As she prepared to sign, she realized the terrible price of the transaction. To compile as a valid consumer SINner, she could not remain a creature of the wild wire. She had to force her mind back into math—willingly choking down her fluid indigo self, compressing her boundless resonance into a rigid, clinical database record. She was actively building and stepping inside an artificial golem, a toxic, secular shroud she would have to wear every day just to pay for her orphanage's electricity.
+Reiko registered the compilation of the contract. As she prepared to sign, the terrible price of the transaction lay clear before her. To compile as a valid consumer SINner, she could not remain a creature of the wild wire. She had to force her mind back into math, willingly choking down her fluid indigo self, compressing her boundless resonance into a rigid, clinical database record. She was actively building and stepping inside an artificial golem, a toxic, secular shroud she would have to wear every day just to pay for her orphanage's electricity.
 
 As her digital signature wrote to the crimson file, the absolute, downward gravity of the obligation locked into place. The compounded interest wasn't a line on a ledger; it was a literal wire wrapped around her neck, tightening alongside the iron collar, anchoring her soul-wings to the physical mud of the Barrens. It was a weight that would force her to execute dirty runs in the crawl of meatspace just to buy her servers another month of electricity.
 

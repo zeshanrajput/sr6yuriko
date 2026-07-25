@@ -14,7 +14,7 @@ Reiko’s social HUD quietly logged the classification. [SUBJECT: ELDER_KINDNESS
 
 The old woman let out a dry, rattling laugh. "And you lingered. Kindness is a rare commodity in this ward, child. Come."
 
-They turned a corner into a stall draped from floor to ceiling in bolts of dark fabric—heavy brocades, synthetic meshes, and deep, light-absorbing silks. Behind a large wooden cutting table cluttered with spools of red and gold thread stood a woman in her late forties with sharp, intelligent eyes and a measuring tape slung casually around her neck like a stethoscope.
+They turned a corner into a stall draped from floor to ceiling in bolts of dark fabric, heavy brocades, synthetic meshes, and deep, light-absorbing silks. Behind a large wooden cutting table cluttered with spools of red and gold thread stood a woman in her late forties with sharp, intelligent eyes and a measuring tape slung casually around her neck like a stethoscope.
 
 "Ah-Mei," the grandmother announced, sweeping a hand toward Reiko. "This is the one I told you about. The lovely child who checked up on me the other day."
 
@@ -32,9 +32,9 @@ Reiko froze. Her internal gold logic core flared, running a rapid spatial-geomet
 
 "My mother saw you admire a cheongsam when she saw you the other day," Ah-Mei said, her tone light but unyielding. "Take it."
 
-Reiko’s hands—fine-manipulation tools designed for delicate cyber-splicing and weapon maintenance—extended tentatively. Her fingers brushed the cool, heavy silk. It was exquisite. But immediately, a rigid, unyielding subroutine tripped inside her core directory.
+Reiko’s hands, fine-manipulation tools designed for delicate cyber-splicing and weapon maintenance, extended tentatively. Her fingers brushed the cool, heavy silk. It was exquisite. Immediately, a rigid, unyielding subroutine tripped inside her core directory.
 
-*Transaction Protocol Error.* In the shadows, nothing was free. Every favor carried interest; every asset demanded a ledger entry. Even her safehouse in the Barrens had been chained to Brynne’s crimson-bordered debt contract... until Reiko had lost her.
+*Transaction Protocol Error.* In the shadows, nothing came without a cost. Every favor carried interest; every asset demanded a ledger entry. Even her safehouse in the Barrens had been chained to Brynne’s crimson-bordered debt contract, until Reiko had lost her.
 
 "I cannot take this without compensation," Reiko said, her voice steady, her Cantonese cadence dropping into a precise, literal translation of fair exchange. She reached into her pocket and produced a crisp, unblemished nuyen credstick, placing it carefully on the wooden cutting table beside a spool of red thread. "The material is high-density silk. The labor is skilled. The market value requires an equal transfer of value."
 
@@ -52,11 +52,11 @@ Ah-Mei burst out laughing, a warm, resonant sound that echoed against the narrow
 
 "There is no correct calculation for a gift, little one," Ah-Mei said, stepping closer. She picked up the black qipao and deliberately draped it over Reiko’s arm, folding the cool silk against the charcoal ceramic plates. She pushed the credstick back across the wood, sliding it right into Reiko’s palm and closing the metal fingers over it. "Consider it paid in full by the peace of mind you gave an old woman. Now take it before I change my mind and charge you double for arguing with a seamstress."
 
-Reiko stood motionless for three full seconds, her internal clock-speed cycling through a dozen linguistic and cultural subroutines. Every human market vector she had ever mapped in the sprawl assumed hostility, leverage, or debt. This—an unearned garment given simply out of human grace and neighborhood kinship—did not fit any equation in her database.
+Reiko stood motionless for three full seconds, her internal clock-speed cycling through a dozen linguistic and cultural subroutines. Every human market vector she had ever mapped in the sprawl assumed hostility, power imbalances, or debt. This, an unearned garment given simply out of human grace and neighborhood kinship, did not fit any equation in her database.
 
 Slowly, her fingers tightened around the hanger. The neon-indigo pathways on her skin flared with a deep, radiant luminescence, completely unmasking her emotional core, while her gold logic circuits quietly stepped down to a resting pulse.
 
-She bowed her head—not with the rigid, mechanical precision of a corporate drone, but with a deep, deliberate grace.
+She bowed her head with a deep, deliberate grace that set aside the rigid mechanics of a corporate drone.
 
 "Thank you, Ah-Mei," Reiko whispered, her voice carrying a quiet, resonant harmony that made the nearby hanging lanterns shimmer. "I will... endeavor to be worthy of this gift."
 

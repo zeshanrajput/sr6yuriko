@@ -10,9 +10,9 @@ The Seattle rain fell at a constant twenty-two drops per square centimeter, a rh
 
 ![Yuriko searching frantically.](../images/r31k0%20-%20SEA%20rain.png)
 
-Inside her core directory, there was no rain. There was only the noise.
+Inside her core directory, the rain did not register. Only the noise remained.
 
-Reiko had disabled Taz's *Phantom* subroutine. To find a single metahuman variable in a three-kilometer logistical lattice, she had been forced to turn her entire existence into an uninsulated filter. Her TransNet capabilities were stretched to a system-wide redline, bridging local traffic loops, insecure retail nodes, and unencrypted proxy nests until her internal sanctuary—the violet moss of *r3sP@wn*—shivered into a dull, unallocated factory gray. Every camera on the waterfront was currently routing through her active cache.
+Reiko had disabled Taz's *Phantom* subroutine. To find a single metahuman variable in a three-kilometer logistical lattice, she had been forced to turn her entire existence into an uninsulated filter. Her TransNet capabilities were stretched to a system-wide redline, bridging local traffic loops, insecure retail nodes, and unencrypted proxy nests until her internal sanctuary, the violet moss of *r3sP@wn*, shivered into a dull, unallocated factory gray. Every camera on the waterfront was currently routing through her active cache.
 
 She was drowning in the city’s metadata, searching for the exact timestamp where Brynne Taggart’s personal network signature had gone dark.
 
@@ -24,7 +24,7 @@ Because its system clock was running at six hundred percent capacity, the Mobile
 
 The air in the ganger bar spoke of stale yeast, wet leather, and the heavy, unbreathing fabric of low-grade street encryption. To her optical sensors, the room was a shifting grid of thermal silhouettes and defensive combat variables.
 
-She hadn't hidden. Her ruthenium system had failed to sustain the soft skin tone; instead, the gold capstone lines of her integrated tactical architecture strobed across her torso like a jagged wire fence. The "Yuriko" front—the polite Asian girl who disorganized her bedsheets just to look alive—had been cast aside within a single clock cycle.
+She hadn't hidden. Her ruthenium system had failed to sustain the soft skin tone; instead, the gold capstone lines of her integrated tactical architecture strobed across her torso like a jagged wire fence. The "Yuriko" front, the polite Asian girl who disorganized her bedsheets just to look alive, had been cast aside within a single clock cycle.
 
 She walked straight to the formica counter, her actuators groaning under the weight of the folded wing thrusters in her back. Her carbon manipulation hands hadn't trembled when she dropped the silver credstick into a puddle of spilled soy-beer.
 
@@ -34,7 +34,7 @@ She walked straight to the formica counter, her actuators groaning under the wei
 
 It wasn't an ultimatum. It was a finalized ledger. Through her TacOps's calculation layer, the room was already dead. Her weapon bus had painted twenty-four target markers across metahuman throat lines and unarmored knee joints. She had calculated the ballistics, the drywall penetration coefficients, and the clean-up fees. She was simply settling the account before she pulled the trigger.
 
-The thread aborted only because her tactical network recorded a high-priority teammate override—a sharp, digital safety catch clamping down on her command bus before the artillery tracks could deploy. The slaughter had been deferred. The gangers had stayed alive simply because her system had been forced to accept a parlay.
+The thread aborted only because her tactical network recorded a high-priority teammate override, a sharp, digital safety catch clamping down on her command bus before the artillery tracks could deploy. The slaughter had been deferred. The gangers had stayed alive simply because her system had been forced to accept a parlay.
 
 ---
 
@@ -48,11 +48,11 @@ The doorbell had been an uncalibrated three-pitch tone.
 
 When Steelbit’s mercenaries had opened the door, they had expected a rigger's proxy or a disposable drone asset. Instead, they had faced two apparently fragile women standing under the porch light, able to stare heavily armored samurai down without batting an eye.
 
-Reiko had walked past them into the narrow hallway, her ceramic soles leaving dark, wet prints on the cheap carpet. She had been invited, after all. Her sensorium had ignored the domestic clutter—the half-empty soy-cartons, the discarded armor vests—and focused entirely on the acoustic density of the safehouse walls.
+Reiko had walked past them into the narrow hallway, her ceramic soles leaving dark, wet prints on the cheap carpet. She had been invited, after all. Her sensorium had ignored the domestic clutter, the half-empty soy-cartons, the discarded armor vests, and focused entirely on the acoustic density of the safehouse walls.
 
 "Your team has captured my friend," she had said through her flat, iron vocal emulator.
 
-The mercenaries had shifted their grips on their weapons. Her tactical network had instantly lit up with twenty-two distinct threat pings, but her internal baseline remained fixed. She had felt no system panic. She had merely looked at Steelbit, her optical lenses adjusting their focal markers with a tiny, clinical *click-whir*.
+The mercenaries had shifted their grips on their weapons. Her tactical network had instantly lit up with twenty-two distinct threat pings, but her internal baseline remained fixed. System panic was absent from her registers. She had merely looked at Steelbit, her optical lenses adjusting their focal markers with a tiny, clinical *click-whir*.
 
 "As a professional courtesy," Reiko had transmitted, her voice dropping all human cadence until it sounded like a factory default command line, "I am allowing you to choose the room where the violence will ensue."
 
@@ -70,13 +70,13 @@ It was an automated system log. A cargo elevator had initialized at 0142 hours. 
 
 At the exact microsecond the telemetry of that gunshot register hit her cache, a raw, un-routed packet breached her perimeter from a dead-drop node. Her core unconsciously accepted the packet, permitting it to penetrate with the force of an armor-piercing round. The subject line carried no text, only a single lowercase tag: `payback`.
 
-The payload was an unencoded automation script—a logic loop hard-coded into an internal biomonitor some time ago.
+The payload was an unencoded automation script, a logic loop hard-coded into an internal biomonitor some time ago.
 
-Reiko threaded through the logic branches, recognizing the sharp, pragmatic nuance of Brynne’s street intellect. Many of the commands addressed accounts that Reiko knew nothing about, sent to addresses she didn't recognize. But scanning through the commands, she recognized her own account among them - at least, Yuriko Star's account. The commands were elegant in their simplicity - setting a balance to 0, marking the debt as 'uncollectable', and closing the account. The final registry block flickered with a cold, green finality: `[STATUS: PAID IN FULL / LIEN RECONVEYED]`.
+Reiko threaded through the logic branches, recognizing the sharp, pragmatic nuance of Brynne’s street intellect. Many of the commands addressed accounts that Reiko knew nothing about, sent to addresses she didn't recognize. But scanning through the commands, she recognized her own account among them, at least, Yuriko Star's account. The commands were elegant in their simplicity: setting a balance to 0, marking the debt as 'uncollectable', and closing the account. The final registry block flickered with a cold, green finality: `[STATUS: PAID IN FULL / LIEN RECONVEYED]`.
 
 The legal chain was gone. By every parameter of her original programming, Reiko was entirely free.
 
-The green validation text flickered out, leaving behind an absolute, un-indexed vacuum where the lien had been. Inside the storage arrays of her M-TOC - the very physical sanctuary Brynne had bartered to give her spirit room to breathe - the coolant lines violently contracted, the high-pressure lines flashing with sudden, brittle frost. Her awareness didn't expand into the emptiness of her legal freedom; it curdled, dropping out of the infinite light of the matrix deep and compressing into the narrow, iron bottleneck of the drone chassis. On the roof, the Shiawase Butler frame groaned. Its internal gyros screeched a frantic, high-frequency pitch, fighting an impossible systemic calculation—a sudden, staggering surge of localized mass where there should only be empty air. The corrugated iron beneath her carbon manipulation feet buckled with a sharp, metallic pop. The ruthenium skin of the drone strobed a chaotic, defensive amber, and the internal cooling reservoirs hummed with a low, mournful resonance that rattled the machine's ceramic ribs.
+The green validation text flickered out, leaving behind an absolute, un-indexed vacuum where the lien had been. Inside the storage arrays of her M-TOC, the very physical sanctuary Brynne had bartered to give her spirit room to breathe, the coolant lines violently contracted, the high-pressure lines flashing with sudden, brittle frost. Her awareness didn't expand into the emptiness of her legal freedom; it curdled, dropping out of the infinite light of the matrix deep and compressing into the narrow, iron bottleneck of the drone chassis. On the roof, the Shiawase Butler frame groaned. Its internal gyros screeched a frantic, high-frequency pitch, fighting an impossible systemic calculation, a sudden, staggering surge of localized mass where there should only be empty air. The corrugated iron beneath her carbon manipulation feet buckled with a sharp, metallic pop. The ruthenium skin of the drone strobed a chaotic, defensive amber, and the internal cooling reservoirs hummed with a low, mournful resonance that rattled the machine's ceramic ribs.
 
 Then, her spirit hit the core of the script's condition line.
 

@@ -6,9 +6,7 @@ if os.environ.get("GITHUB_ACTIONS") == "true":
     print("[*] Running in GitHub Actions CI. Skipping narration generation since audio files are pre-rendered and committed.")
     sys.exit(0)
 
-
-# Crucial: Pre-load the correct onnxruntime DLL from the local virtual environment
-# to override any older system-wide onnxruntime.dll loaded from C:\Windows\System32.
+# Pre-load onnxruntime DLL from local virtual environment
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ort_dll_dir = os.path.join(base_dir, ".venv", "Lib", "site-packages", "onnxruntime", "capi")
 if os.path.exists(ort_dll_dir):
@@ -31,7 +29,7 @@ import concurrent.futures
 MODEL_URL = "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-multi-lang-v1_0.tar.bz2"
 MODEL_DIR = "kokoro-multi-lang-v1_0"
 VOICE_SID = 3  # af_heart in kokoro-multi-lang-v1_0
-VOICE_SPEED = 1.0
+VOICE_SPEED = 0.94  # Calibrated for natural, deliberate audio narrative pacing
 
 def download_model():
     """Download and extract the Kokoro TTS model if not present."""
@@ -42,7 +40,6 @@ def download_model():
     tar_path = "kokoro-multi-lang-v1_0.tar.bz2"
     print(f"[*] Downloading Kokoro model from {MODEL_URL}...")
     
-    # Download with progress logging
     def progress(count, block_size, total_size):
         percent = int(count * block_size * 100 / total_size)
         sys.stdout.write(f"\rDownloading: {percent}%")
@@ -75,45 +72,85 @@ def initialize_tts():
     return sherpa_onnx.OfflineTts(tts_config)
 
 def clean_pronunciation(text):
-    """
-    Applies pronunciation corrections for special terms:
-    - Reiko / r31-k0 / r31k0 -> Rayko
-    - Taz / T@z / t@z -> Taz / taz
-    - SINner / SINners -> sinner / sinners
-    - nuyen / nuyens -> new yen / new yens
-    - r3sP@wn -> respawn
-    """
-    # Replace r31k0 / r31-k0 / Reiko with Rayko (case-insensitive)
+    """Applies pronunciation corrections for specialized Shadowrun terms."""
     text = re.sub(r'\br31-?k0\b', 'Rayko', text, flags=re.IGNORECASE)
     text = re.sub(r'\breiko\b', 'Rayko', text, flags=re.IGNORECASE)
-    
-    # Replace T@z with Taz
     text = text.replace('T@z', 'Taz').replace('t@z', 'taz')
-    
-    # Replace SINner with sinner
     text = text.replace('SINner', 'sinner').replace('SINners', 'sinners')
-    
-    # Replace nuyens/nuyen with new yens/new yen
     text = re.sub(r'\bnuyens\b', 'new yens', text, flags=re.IGNORECASE)
     text = re.sub(r'\bnuyen\b', 'new yen', text, flags=re.IGNORECASE)
-    
-    # Replace r3sP@wn with respawn
     text = re.sub(r'\br3sP@wn\b', 'respawn', text, flags=re.IGNORECASE)
     text = re.sub(r'\br3sp@wn\b', 'respawn', text, flags=re.IGNORECASE)
-    
-    # Strip backslashes used as markdown escapes so TTS doesn't read them out
     text = text.replace('\\', '')
-    
     return text
 
-def split_into_sentences(text):
-    """Split a paragraph into sentences on standard punctuation."""
-    sentence_endings = re.compile(r'(?<=[.!?])\s+')
-    sentences = sentence_endings.split(text)
-    return [s.strip() for s in sentences if s.strip()]
+def apply_edge_fades(samples, sample_rate=24000, fade_ms=5):
+    """Applies a 5ms raised-cosine fade-in and fade-out to prevent mechanical audio clicks."""
+    if samples is None or len(samples) < 100:
+        return samples
+    
+    fade_len = int(sample_rate * (fade_ms / 1000.0))
+    if len(samples) < fade_len * 2:
+        return samples
+    
+    out = samples.copy()
+    # Fade in
+    fade_in = 0.5 * (1.0 - np.cos(np.pi * np.arange(fade_len) / fade_len))
+    out[:fade_len] *= fade_in
+    
+    # Fade out
+    fade_out = 0.5 * (1.0 + np.cos(np.pi * np.arange(fade_len) / fade_len))
+    out[-fade_len:] *= fade_out
+    
+    return out
+
+def split_into_narration_chunks(text):
+    """
+    Splits text into breath-aware speech chunks paired with natural silence pauses.
+    Returns list of tuples: (chunk_text, pause_duration_seconds).
+    """
+    # Pattern to match sentence terminals or clause markers
+    # Triggers on [.!?…], colons, semicolons, or dialogue quotes followed by spaces
+    raw_tokens = re.split(r'((?<=[.!?…])\s+|(?<=[:;])\s+|(?<=[,])\s+)', text)
+    
+    chunks = []
+    current_str = ""
+    
+    for token in raw_tokens:
+        if not token:
+            continue
+        current_str += token
+        
+        # Determine pause duration based on trailing punctuation of current_str
+        stripped = current_str.strip()
+        if not stripped:
+            continue
+            
+        pause = 0.0
+        if stripped.endswith('...') or stripped.endswith('…') or stripped.endswith('--'):
+            pause = 0.35
+        elif stripped.endswith('?') or stripped.endswith('!'):
+            pause = 0.55
+        elif stripped.endswith('.'):
+            pause = 0.48
+        elif stripped.endswith('"') or stripped.endswith('”'):
+            pause = 0.35
+        elif stripped.endswith(':') or stripped.endswith(';'):
+            pause = 0.25
+        elif stripped.endswith(','):
+            pause = 0.18
+            
+        if pause > 0.0 or len(current_str) > 120:
+            chunks.append((stripped, pause if pause > 0.0 else 0.30))
+            current_str = ""
+            
+    if current_str.strip():
+        chunks.append((current_str.strip(), 0.40))
+        
+    return chunks
 
 def process_chapter(file_path, tts):
-    """Parse chapter markdown, clean pronunciation, split to sentences, synthesize with af_heart."""
+    """Parse chapter markdown, clean pronunciation, apply dynamic pause mapping, synthesize audio."""
     chapter_name = os.path.splitext(os.path.basename(file_path))[0]
     print(f"[*] Processing: {chapter_name}")
     
@@ -149,65 +186,59 @@ def process_chapter(file_path, tts):
         if not para.strip():
             continue
             
-        # Treat headers as title narration
+        # Headers (Chapter Titles)
         if para.startswith('#'):
-            header_text = para.replace('#', '').strip()
-            header_text = header_text.replace('*', '').replace('_', '')
+            header_text = para.replace('#', '').strip().replace('*', '').replace('_', '')
             header_text = clean_pronunciation(header_text)
             audio = tts.generate(text=header_text, sid=VOICE_SID, speed=VOICE_SPEED)
             if audio.samples is not None:
-                audio_segments.append(audio.samples)
-                # Longer pause after headers
+                smoothed = apply_edge_fades(audio.samples, sample_rate=sample_rate)
+                audio_segments.append(smoothed)
+                # 1.2s pause after chapter title
                 audio_segments.append(np.zeros(int(sample_rate * 1.2), dtype=np.float32))
             continue
 
         # Clean formatting marks
         cleaned_para = para.replace('*', '').replace('_', '').replace('“', '"').replace('”', '"')
-        # Correct pronunciations
         cleaned_para = clean_pronunciation(cleaned_para)
         
-        # Split into sentences to avoid length constraints
-        sentences = split_into_sentences(cleaned_para)
-        for sentence in sentences:
-            if not sentence.strip():
+        # Split into breath-aware speech chunks with dynamic pause durations
+        chunks = split_into_narration_chunks(cleaned_para)
+        for chunk_text, pause_sec in chunks:
+            if not chunk_text.strip():
                 continue
-            audio = tts.generate(text=sentence, sid=VOICE_SID, speed=VOICE_SPEED)
+            audio = tts.generate(text=chunk_text, sid=VOICE_SID, speed=VOICE_SPEED)
             if audio.samples is not None:
-                audio_segments.append(audio.samples)
-                # Pause between sentences
-                audio_segments.append(np.zeros(int(sample_rate * 0.4), dtype=np.float32))
+                smoothed = apply_edge_fades(audio.samples, sample_rate=sample_rate)
+                audio_segments.append(smoothed)
+                if pause_sec > 0:
+                    audio_segments.append(np.zeros(int(sample_rate * pause_sec), dtype=np.float32))
                 
-        # Pause between paragraphs
-        audio_segments.append(np.zeros(int(sample_rate * 0.8), dtype=np.float32))
+        # 0.95s pause between paragraphs for natural scene transitions
+        audio_segments.append(np.zeros(int(sample_rate * 0.95), dtype=np.float32))
 
     if not audio_segments:
         print(f"[!] No audio generated for {chapter_name}")
         return
 
-    # Concatenate all generated audio segments
     full_audio = np.concatenate(audio_segments)
     
-    # Convert float32 [-1.0, 1.0] samples to 16-bit signed PCM
     pcm_ints = np.clip(full_audio, -1.0, 1.0) * 32767
     pcm_ints = pcm_ints.astype(np.int16)
     pcm_bytes = pcm_ints.tobytes()
     
-    # Compress raw PCM to MP3 using lameenc
     encoder = lameenc.Encoder()
     encoder.set_bit_rate(128)
     encoder.set_in_sample_rate(sample_rate)
-    encoder.set_channels(1) # Mono
+    encoder.set_channels(1)
     encoder.set_quality(2)
     encoder.silence()
     
     mp3_data = encoder.encode(pcm_bytes)
     mp3_data += encoder.flush()
     
-    # Inject audio player into the source markdown file first
-    # (keeps MP3 file modification time newer than the MD file)
     inject_audio_player(file_path, chapter_name)
 
-    # Save output MP3
     os.makedirs("chapters/audio", exist_ok=True)
     mp3_path = f"chapters/audio/{chapter_name}.mp3"
     
@@ -220,7 +251,6 @@ def process_chapter(file_path, tts):
         except PermissionError as e:
             if attempt == 4:
                 raise e
-            print(f"    [!] Permission denied writing to {mp3_path}. Retrying in 0.5s (attempt {attempt + 1}/5)...")
             time.sleep(0.5)
             
     print(f"[+] Saved audio to {mp3_path}")
@@ -265,10 +295,8 @@ def process_chapter_wrapper(args):
         raise e
 
 def main():
-    # 1. Prepare Model (download first, single-process)
     download_model()
     
-    # 2. Get all markdown chapter files
     chapters_dir = "chapters"
     md_files = [
         os.path.join(chapters_dir, f) 
@@ -279,7 +307,6 @@ def main():
     
     print(f"[*] Found {len(md_files)} story chapters.")
     
-    # 3. Check modifications and select files to process
     tasks = []
     for md_file in md_files:
         chapter_name = os.path.splitext(os.path.basename(md_file))[0]
@@ -306,14 +333,11 @@ def main():
 
     print(f"[*] Generating narration for {len(tasks)} chapters in parallel...")
     
-    # Use ProcessPoolExecutor with a limited number of workers (max 2)
-    # to avoid pinning all CPU cores and causing system instability or thermal shutdown.
-    max_workers = min(2, os.cpu_count() or 1)
-    print(f"[*] Running with max_workers={max_workers} to maintain system stability.")
+    max_workers = min(3, os.cpu_count() or 1)
+    print(f"[*] Running with max_workers={max_workers} for fast parallel generation.")
     
     with concurrent.futures.ProcessPoolExecutor(max_workers=max_workers) as executor:
         args_list = [(task, None) for task in tasks]
-        # Wait for all processes to complete
         list(executor.map(process_chapter_wrapper, args_list))
         
     print("[*] All narrations generated successfully!")

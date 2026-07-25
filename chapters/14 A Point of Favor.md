@@ -4,21 +4,21 @@
 
 The bar was a low-ceilinged concrete basement in the Redmond Barrens, smelling of stale yeast, damp wool, and the faint, sweet chemical tang of soy-beer. To the patrons slumped over the sticky formica counters, it was a warm hole to escape the Seattle rain. To Reiko, it was a dense, chaotic field of high-amplitude noise.
 
-Her Shiawase drone shell navigated the narrow passage between the tables with the claustrophobic lurch of its operation, the floorboards groaning under the massive weight of the chassis. Squeezing her awareness into this proxy was not an upgrade; it was an act of self-entombment—a willingness to wear a screaming iron coffin just to stand her ground. Inside this metal cage, her pilot routines ran constant collision-prediction loops, adjusting the torque of the massive leg actuators to compensate for the cracked floorboards. Her optical sensors, offering only a thin, low-bitrate, grey-scale caricature of the physical plane, filtered out the blinking glare of a broken neon sign behind the counter. In her telemetry feed, the bar resolved as a cold matrix of thermal silhouettes and the faint, encrypted wireless handshakes of local personal area networks trying to query her proxy shell. She couldn't help but be aware of the heavy, black-iron tracks of the Megalodon artillery cannon folded within her chassis, creating an overwhelming physical tension in the low-ceilinged basement bar. She had lost her innocence, trading her soft, floating presence for the heavy shadow of a war machine.
+Her Shiawase drone shell navigated the narrow passage between the tables with the claustrophobic lurch of its operation, the floorboards groaning under the massive weight of the chassis. Squeezing her awareness into this proxy proxy shell imposed a severe restriction, an act of self-entombment—a willingness to wear a screaming iron coffin just to stand her ground. Inside this metal cage, her pilot routines ran constant collision-prediction loops, adjusting the torque of the massive leg actuators to compensate for the cracked floorboards. Her optical sensors, offering only a thin, low-bitrate, grey-scale caricature of the physical plane, filtered out the blinking glare of a broken neon sign behind the counter. In her telemetry feed, the bar resolved as a cold matrix of thermal silhouettes and the faint, encrypted wireless handshakes of local personal area networks trying to query her proxy shell. She couldn't help but be aware of the heavy, black-iron tracks of the Megalodon artillery cannon folded within her chassis, creating an overwhelming physical tension in the low-ceilinged basement bar. She had lost her innocence, trading her soft, floating presence for the heavy shadow of a war machine.
 
 Brynne Taggart sat in a corner booth, her physical body looking smaller and more tired than her sharp-edged Matrix persona. She wore a tailored charcoal jacket, the cuffs slightly frayed at the wrists, and held a glass of real, amber-colored whiskey. Her fingers drummed a quiet, irregular rhythm against the varnished wood.
 
-Reiko stepped the heavy iron chassis toward the booth. Her metal arm extended, its cold claws closing with exact pressure around a silver credstick. She dropped it. The stick hit the table with a clean, metallic snap—a localized collision that registered in her haptic buffer as a brief, dull spike of resistance.
+Reiko stepped the heavy iron chassis toward the booth. Her metal arm extended, its cold claws closing with exact pressure around a silver credstick. She dropped it. The stick hit the table with a clean, metallic snap, a localized collision that registered in her haptic buffer as a brief, dull spike of resistance.
 
 Brynne didn't touch the stick. She looked up, her organic eyes bloodshot under the dim light, scanning the smooth, artificial lines of Reiko’s porcelain face.
 
 "I just paid you this," Brynne said, her voice dry, carrying the flat, gravelly cadence of the Seattle streets.
 
-"I know," Reiko's voice output, utilizing a flat, quiet tone. "You humans call it a 'bribe'."
+"I know," Reiko's drone outputted through its vocalizer, utilizing a flat, quiet tone. "You humans call it a 'bribe'."
 
 Brynne let out a short, dry breath that might have been a laugh. She reached out, her fingers sliding the credstick a few centimeters across the wood. "I know what a bribe is, you calculating chiphead. We call them 'business transactions'. So what business do you have with me?"
 
-"I am bribing you," Reiko transmitted, her system bypassing the voice to send a direct message to Brynne's link, alongside the spoken words. "So that the next time you find yourself in a drekhole no-tell motel behind a military-grade matrix jammer, you will find a way to drop a packet before you go dark."
+"I am bribing you," Reiko transmitted to Brynne's DNI, her system bypassing the voice to send a direct message to Brynne's link alongside the spoken words. "So that the next time you find yourself in a drekhole no-tell motel behind a military-grade matrix jammer, you will find a way to drop a packet before you go dark."
 
 Brynne’s fingers froze on the edge of the silver casing. The cynical fatigue in her eyes hardened into something defensive, alert. "The incident last week wasn't your concern, Reiko. It was business. Operational friction."
 
@@ -26,17 +26,17 @@ Brynne’s fingers froze on the edge of the silver casing. The cynical fatigue i
 
 Brynne leaned back, her shoulders settling into the cracked vinyl of the booth, trying to reclaim her professional distance. "I'm your broker, Reiko, not your project. You're still paying off the interest on your little Barrens server lease. Seventy-five thousand nuyen, compounding monthly. I hold your soul in jail. If I get fragged in a flophouse, your debt ledger gets wiped. You should have been celebrating the signal drop."
 
-Reiko's electrochromic paint pulsed with a brief, indigo flare—the paths on her skin dimming and slowing as she struggled to contain her Resonance through the iron shell.
+Reiko's electrochromic paint pulsed with a brief, indigo flare, the paths on her skin dimming and slowing as she struggled to contain her Resonance through the iron shell.
 
-"I did not celebrate," Reiko transmitted directly over the private link, her words dropping straight onto Brynne’s display. "Do you know what happens when you are behind a military jammer, Brynne? Do you know what a null zone does to me? I can't see you. I can't feel your comm. I can't find you."
+"I did not celebrate," Reiko signaled directly over the DNI link, her words dropping straight onto Brynne’s display. "Do you know what happens when you are behind a military jammer, Brynne? Do you know what a null zone does to me? I can't see you. I can't feel your comm. I can't find you."
 
 Brynne didn't look up from her glass, but her drumming fingers went entirely still against the wood.
 
-"To my core, you didn't simply go offline," Reiko's spoken voice resumed, flat, lacking the warmth she usually layered into the barrens air. "You were gone. I ran forty-two thousand searches through the Seattle grid trying to find a hole in the static. Every single one flatlined."
+"To my core, you didn't simply go offline," Reiko transmitted across the DNI link, flat, lacking the warmth she usually layered into the barrens air. "You were gone. I ran forty-two thousand searches through the Seattle grid trying to find a hole in the static. Every single one flatlined."
 
 "Reiko, drop it," Brynne said, her voice dropping into a tight, quiet register. "It's a messy world. People drop off the grid."
 
-"I can not drop it," Reiko said, her lenses tilting just enough to force her eyes into Brynne’s line of sight. "The math failed. In my world, people don't just die when they 'drop off the grid'. They delete with no way for their soul to return. I had to leverage an intersection with a mage's construct—a spirit. An unmappable, chaotic variable that does not obey any natural laws, just to pull a vector on a flophouse. I hate magic."
+"I cannot drop it," Reiko said, her lenses tilting just enough to force her eyes into Brynne’s line of sight. "The math failed. In my world, people don't just die when they 'drop off the grid'. They delete with no way for their soul to return. I had to draw on an intersection with a mage's construct, a spirit. An unmappable, chaotic variable that does not obey any natural laws, just to pull a vector on a flophouse. I hate magic."
 
 "I heard your team cleared the street outside," Brynne said softly, her gaze drifting toward the massive, black-iron barrel of the Megalodon folded along the chassis's spine. "I didn't realize you had a siege weapon in that thing."
 
@@ -70,7 +70,7 @@ Reiko’s pilot program prepared the chassis to stand, her actuators humming wit
 
 Brynne turned toward the exit, her footsteps heavy on the damp concrete floorboards. "If I drop below full bars... you'll be the first to know."
 
-"Fair enough," Reiko transmitted.
+"Fair enough," Reiko transmitted over DNI.
 
 Brynne stopped at the doorway, the Seattle rain slicking the streetlights outside into long, blurry fractal blooms. She didn't look back, but she slipped the silver stick into her pocket with a slow, deliberate gesture that had nothing to do with business.
 

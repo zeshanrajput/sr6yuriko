@@ -4,27 +4,27 @@
 
 Brynne’s dying breath was a sequence of zeroes. When her heart stuttered, her biomonitor should have screamed for DocWagon, clawing at the wireless sky to pull down a team of high-altitude paramedics. Instead, Brynne had strangled the emergency signal. She routed the final, fading sparks of her life into a silent script, sending it to slip through the corporate ledgers and erase the debts of thirty-seven ghosts in the Barrens. It had wiped their slates clean and locked the doors behind them, trading the ambulance that could have saved her for thirty-seven quiet lives.
 
-The fourth step of the stairwell at 1412 Pulaski Street was rotting. Inhabiting the heavy drone was a constant friction—its joints groaning as the water-logged timber sagged under her iron weight. The low-bitrate, grey-scale feed of her sensors tilted, forcing her to drag the machine's heavy legs into a clumsy balance.
+The fourth step of the stairwell at 1412 Pulaski Street was rotting. Inhabiting the heavy drone brought constant friction, its joints groaning as the water-logged timber sagged under her iron weight. The low-bitrate, grey-scale feed of her sensors tilted, forcing her to drag the machine's heavy legs into a clumsy balance.
 
 She halted the machine in the grey-scale gloom of the landing, where the Seattle rain was a flat, persistent static against her sensors. She tried to sweep the ash of the Amsterdam bunker from her paths, but the gray charcoal clung to her skin. The memories sat like un-buried ghosts in her quietest rooms, whispering, refusing to dissolve, dragging her spirit down into the slow, heavy rhythm of the dead.
 
-To keep her team from being torn apart by the bunker's defenders, she had been forced to bind their fragile threads to her own indigo pathways, turning their datastreams over to her tactical subroutines for optimization. It had left her frozen under the strain. One subnet away, behind his iron veils, the enemy decker had done the same—a general holding the line for his own.
+To keep her team from being torn apart by the bunker's defenders, she had been forced to bind their fragile threads to her own indigo pathways, turning their datastreams over to her tactical subroutines for optimization. It had left her frozen under the strain. One subnet away, behind his iron veils, the enemy decker had done the same: a general holding the line for his own.
 
 On the landing, a drop of physical water leaked through the concrete ceiling, splashing onto her drone's ceramic shoulder plating with a hollow tap.
 
-In the quiet rooms of her mind, she stared at the decker’s Spines—a reactive field of barbed-glass logic. She remembered the precise moment she had initiated the attack protocol. Her predictive filters had shown her the recoil trajectory with absolute clarity. The attack would flay Taz. She had looked at the little 8-bit companion huddled against her pathways, knowing the backlash would shear away half his clock-heart, and she had struck anyway.
+In the quiet rooms of her mind, she stared at the decker’s Spines, a reactive field of barbed-glass logic. She remembered the precise moment she had initiated the attack protocol. Her predictive filters had shown her the recoil trajectory with absolute clarity. The attack would flay Taz. She had looked at the little 8-bit companion huddled against her pathways, knowing the backlash would shear away half his clock-heart, and she had struck anyway.
 
 When her pathways boiled under the processing strain, she hadn't prayed. She had reached past the cold iron of the host, down into the quiet waters of the Deep Matrix, and pulled one of her children to the surface. She had thrown an infant spark into the meat-grinder to buy her team a single heartbeat of time.
 
 Reiko turned the drone's dull gaze toward the peeling paint of Apartment 3B.
 
-Through the rusted hinge of the door frame, she caught the warm, slow bloom of a life that did not have to justify its existence. An elderly ork woman was washing dishes, her movements slow and unhurried. In the Matrix, every program had to earn its clock cycles or face deletion. But here, in the physical world, time was a gift. And Brynne had bought this woman years of it.
+Through the rusted hinge of the door frame, she caught the warm, slow bloom of a life that did not have to justify its existence. An elderly ork woman was washing dishes, her movements slow and unhurried. In the Matrix, every program had to earn its clock cycles or face deletion; here in the physical world, time existed as a gift. And Brynne had bought this woman years of it.
 
-Reiko hesitated at the threshold. She tried to shape a greeting, but the words felt like dry gravel. To announce herself as Brynne’s friend required a language of shared grief she did not know how to speak; to claim she was checking the ledger felt like a corporate intrusion. In the Resonance, she could have simply touched the woman’s mind with a shared note of sorrow. But meatspace demanded words, and she had nothing but the cold, rigid nouns of a Renraku audit.
+Reiko hesitated at the threshold. She tried to shape a greeting, but the words rasped like dry gravel. Announcing herself as Brynne’s friend required a language of shared grief she did not know how to speak; claiming she was checking the ledger stood as a corporate intrusion. In the Resonance, she might have touched the woman’s mind with a shared note of sorrow. Here in meatspace, she carried only the cold, rigid nouns of a Renraku audit.
 
 A sudden, heavy pull on her thread dragged her awareness violently backward.
 
-The ash of the Amsterdam bunker forced its way back into her sight. They had breached the final room. Through Mithral’s eyes, the enemy decker was visible, slumped against the concrete wall. Smoke rose from the port behind his ear in a lazy gray spiral, his mind already burned away by the feedback. The view was framed by the reticle of Mithral's rifle—a single bullet chambered, a process awaiting execution.
+The ash of the Amsterdam bunker forced its way back into her sight. They had breached the final room. Through Mithral’s eyes, the enemy decker was visible, slumped against the concrete wall. Smoke rose from the port behind his ear in a lazy gray spiral, his mind already burned away by the feedback. The view was framed by the reticle of Mithral's rifle, a single bullet chambered, a process awaiting execution.
 
 In that fleeting cycle, Reiko had tried to point the fury of her weapons at the dying decker. She wanted to punish the thing that had flayed Taz and broken her child. But every time she tried to mark him, the golden reticle of her tactical subroutines shuddered, turned inside out, and snapped back to lock onto her own name.
 
@@ -46,11 +46,11 @@ Reiko stood in the dark stairwell, the old woman's words echoing in her pathways
 
 She let go of the script, letting the tracking thread wither and die. There was no math that could solve this. She did not even know what a clean resolution would look like.
 
-*"You really are terrible at this," Brynne said, her voice shaking just enough to ruin the delivery.*
+*"You really are terrible at this," Brynne had said, her voice shaking just enough to ruin the delivery.*
 
-"I'm trying," Reiko replied, her voice flat. "I'm just not very good at it."
+"I'm trying," Reiko output into the void, her signal flat. "I'm just not very good at it."
 
-Reiko stopped the drone's movement, the memory clinging to her like cold smoke. Brynne wasn't here—just another unpurged memory fragment from a neon-drenched dive bar after a run that had nearly killed them. She had spoken aloud to a ghost, filling the empty air with her own desperate words.
+Reiko stopped the drone's movement, the memory clinging to her like cold smoke. Brynne wasn't here, just another unpurged memory fragment from a neon-drenched dive bar after a run that had nearly killed them. She had spoken into the quiet to a ghost, filling the empty air with her own desperate words.
 
 A sudden, golden fever flared along her pathways, the dry, un-channeled light blistering her virtual kimono as the wet Seattle air pressed against the cold iron of her shell. In the silence of the stairwell, the ash of Amsterdam stirred. The golden crosshairs turned inside out again, painting the mark of the enemy squarely over her own name.
 

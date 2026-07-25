@@ -1,8 +1,21 @@
-# Shadowrun 6e Portfolio - Yuriko Star
+# Shadowrun 6e Portfolio & Story Anthology — Yuriko Star
 
-This repository contains the interactive character dossier, downtime tracking system, rules cheatsheets, and narrative log for **Yuriko Star v9** (r31k0 Takahashi), an AI-Pilot character built for Shadowrun 6th Edition (Sixth World).
+This repository contains the interactive character dossier, downtime tracking system, rules cheatsheets, and narrative story anthology for **Yuriko Star v9** (`r31k0` Takahashi), an emergent AI-Pilot Technoshaman character built for Shadowrun 6th Edition (Sixth World) and active in **Shadowrun Missions** organized play.
 
 The project is compiled into a polished, responsive book using **Quarto** and hosted on GitHub Pages.
+
+---
+
+## The Creative Vision: "The Spaces Between"
+
+While this repository maintains 100% mechanical fidelity to Shadowrun 6th Edition rules, the fiction is written to look **beyond the numbers**—exploring the rich, tangible, emotionally accessible "spaces between" game statistics:
+
+* **Spiritual Technology:** Experiencing the Matrix and Resonance as a living, animistic ecosystem rather than cold silicon diagnostics.
+* **Reframing the Human Condition:** Examining universal human themes—identity, belonging, debt, guardianship, grief, and connection—through the fresh perspective of an emergent AI entity who must manually paint a smile to communicate with her human companions.
+* **Core Character Goals:**
+  1. **Sanctuary & Emancipation:** Fund and protect `r3sP@wn`, a virtual sanctuary dedicated to rescuing wild spirits and emergent AIs from corporate deletion and exploitation.
+  2. **Technoshamanism:** Master the Resonance Realms and bridge the gap between physical drone flight and digital divinity.
+  3. **Duty & Connection:** Pay off her team's debt while navigating the tragic friction between digital transcendence and physical vulnerability.
 
 ---
 

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<sr6char career="true" gender="DIVERSE" karmaF="3" karmaI="170" meta="pilot-ai" nuyen="1100">
+<sr6char career="true" gender="DIVERSE" karmaF="3" karmaI="170" meta="pilot-ai" nuyen="2550">
    <lifestyles>
       <lifestyle comfort="low" entert="low" lang="en" necess="low" neigh="low" ref="low" security="low" space="low" value="1" />
    </lifestyles>
@@ -412,9 +412,9 @@ CMP 2083-14: +1FP -- L1</description>
             <item lang="en" mode="EMBEDDED" ref="integrated_matrix_device" slot="VEHICLE_ELECTRONICS" uuid="bb33eb9a-d054-4fcc-9e3a-a24b6c8680f0" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="ares_firebrand" uuid="9da3b117-fa3b-4066-89b1-dfa449fcd711" />
-      <item count="2" lang="en" mode="CARRIED" ref="ares_firebolt" uuid="f1323988-ce51-4c7d-b2d1-b23c511752de" />
-      <item count="1" lang="en" mode="CARRIED" ref="ammo_battery_backpack" uuid="c93bba61-c7b5-4ef1-81e5-b2d20eb251f1" />
+      <item lang="en" mode="CARRIED" ref="red_fox" uuid="9282fc9b-eafc-4953-ba72-e1aa4d0d1bee" />
+      <item count="2" lang="en" mode="CARRIED" ref="crimson_wasp" uuid="cc9334cd-33cf-432f-8ba8-877c862c032d" />
+      <item count="5" lang="en" mode="CARRIED" ref="ammo_battery_laser" uuid="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0" />
       <item lang="en" mode="VIRTUAL" ref="software_library" uuid="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979">
          <accessories>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="baby_monitor" slot="SOFTWARE" uuid="21252dd0-210b-47e1-a7b4-4ce367ef6878" variant="regular" />
@@ -793,10 +793,14 @@ CMP 2083-14: +1FP -- L1</description>
       <valmod date="2026-07-23T19:18:52.633-04:00" id="ddff26d0-edeb-46d2-bba1-271d96d6a402" ref="weapon_mount_small" set="AUGMENTED" type="CARRIED" value="1500" />
       <valmod date="2026-07-23T19:22:41.908-04:00" id="14236071-919a-4a38-9073-f4e39982c2aa" ref="satellite_link" set="AUGMENTED" type="CARRIED" value="0" />
       <valmod date="2026-07-23T19:31:08.785-04:00" id="bb33eb9a-d054-4fcc-9e3a-a24b6c8680f0" ref="integrated_matrix_device" set="AUGMENTED" type="CARRIED" value="800" />
-      <valmod date="2026-07-23T19:35:52.033-04:00" id="9da3b117-fa3b-4066-89b1-dfa449fcd711" ref="ares_firebrand" set="AUGMENTED" type="CARRIED" value="2750" />
-      <valmod date="2026-07-23T19:35:56.919-04:00" id="f1323988-ce51-4c7d-b2d1-b23c511752de" ref="ares_firebolt" set="AUGMENTED" type="CARRIED" value="1250" />
-      <valmod date="2026-07-23T19:35:59.443-04:00" id="f1323988-ce51-4c7d-b2d1-b23c511752de" ref="ares_firebolt" set="AUGMENTED" type="CARRIED" value="1250" />
-      <valmod date="2026-07-23T19:37:19.570-04:00" id="c93bba61-c7b5-4ef1-81e5-b2d20eb251f1" ref="ammo_battery_backpack" set="AUGMENTED" type="CARRIED" value="2500" />
+      <valmod date="2026-07-23T19:35:52.033-04:00" id="9282fc9b-eafc-4953-ba72-e1aa4d0d1bee" ref="red_fox" set="AUGMENTED" type="CARRIED" value="2800" />
+      <valmod date="2026-07-23T19:35:56.919-04:00" id="cc9334cd-33cf-432f-8ba8-877c862c032d" ref="crimson_wasp" set="AUGMENTED" type="CARRIED" value="1500" />
+      <valmod date="2026-07-23T19:35:59.443-04:00" id="cc9334cd-33cf-432f-8ba8-877c862c032d" ref="crimson_wasp" set="AUGMENTED" type="CARRIED" value="1500" />
+      <valmod date="2026-07-23T19:37:19.570-04:00" id="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0" ref="ammo_battery_laser" set="AUGMENTED" type="CARRIED" value="100" />
+      <valmod date="2026-07-23T19:37:20.000-04:00" id="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0" ref="ammo_battery_laser" set="AUGMENTED" type="CARRIED" value="100" />
+      <valmod date="2026-07-23T19:37:21.000-04:00" id="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0" ref="ammo_battery_laser" set="AUGMENTED" type="CARRIED" value="100" />
+      <valmod date="2026-07-23T19:37:22.000-04:00" id="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0" ref="ammo_battery_laser" set="AUGMENTED" type="CARRIED" value="100" />
+      <valmod date="2026-07-23T19:37:23.000-04:00" id="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0" ref="ammo_battery_laser" set="AUGMENTED" type="CARRIED" value="100" />
    </history>
    <rewards>
       <reward date="2026-04-20T00:00:00.000-04:00" exp="13">

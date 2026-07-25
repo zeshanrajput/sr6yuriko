@@ -496,7 +496,7 @@ def contact(name, connection=1, fp=0, loyalty=None, favors=0, type_name="Contact
 * **Downtime Actions (3 Minors):**
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
   * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
-  * Modifying Man-At-Arms: Removing megalodon, adding Firebrand and two Firebolts
+  * Modifying Man-At-Arms: Removing megalodon, adding Red Fox and two Crimson Wasps
 * **Other bonuses:** 3 sprites registered during in-session downtime: `{python} add_sprite('Sprite-M18a', 7, 'Modular', 'Shield')`, `{python} add_sprite('Sprite-M18b', 7, 'Modular', 'Death Mark')`, `{python} add_sprite('Sprite-M18c', 7, 'Modular', 'Death Mark')`
 
 ---
@@ -599,10 +599,10 @@ def contact(name, connection=1, fp=0, loyalty=None, favors=0, type_name="Contact
   * Variable Ammunition System
   * 50 Explosive Rounds `{python} inc('Nuyen', -100)`
   * 50 Krime Self Defense Rounds `{python} inc('Nuyen', -100)`
-* Ares Firebolt x2 `{python} inc('Nuyen', -2500)`
-* Ares Firebrand `{python} inc('Nuyen', -2750)`
+* Crimson Wasp x2 `{python} inc('Nuyen', -3000)`
+* Red Fox `{python} inc('Nuyen', -2800)`
   * Smartgun System (Internal)
-  * Power Backpack (80 Energy Capacity) `{python} inc('Nuyen', -2500)`
+  * Peak-Discharge Laser Battery Clips x5 `{python} inc('Nuyen', -500)`
 * Glitter Grenades x10 `{python} inc('Nuyen', -1000)`
 
 #### Matrix
