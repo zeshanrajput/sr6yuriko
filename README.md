@@ -25,8 +25,14 @@ While this repository maintains 100% mechanical fidelity to Shadowrun 6th Editio
 - `chapters/`: The source files for the Quarto book:
   - `identity_core.qmd`: Metatype, stream, attributes, matrix, living persona stats, and skill matrix.
   - `character_sheet.qmd`: Embeds the generated plain-text VTT-formatted character sheet.
-  - `rules_and_downtime.qmd`: Fading calculations, rigger/decking shortcuts, and network setups.
-  - `character_log.qmd`: Complete run history, karma trackers, nuyen ledgers, and contact lists.
+  - `rules_and_downtime.qmd`: Landing hub for downtime protocols and quick stats.
+  - `rules_matrix.qmd`: ASDF attributes, action pools, decking cheat sheet, and remote host specs.
+  - `rules_sprites.qmd`: Complex forms, compiling/registering downtime formulas, and focus fading calculations.
+  - `rules_drones.qmd`: Drone stat blocks, action pools, rigger/remote attribute mapping, and sensor locks.
+  - `rules_combat.qmd`: Weapon attack tables, link-fired arrays, laser ammo, and Krime splash ammo.
+  - `character_totals.qmd`: Live dashboard for Karma/Nuyen balances, regional Reputation, and Active Sprite stable.
+  - `character_log.qmd`: Complete run history, mission briefs, GM notes, and campaign rewards.
+  - `character_purchases.qmd`: Itemized purchase ledgers for gear, software, drone mods, and SINs.
   - `dronomancy.md`: DI-to-DI guide on remote drone operation, casemodding, and rigging mechanics.
   - `twenty_questions.qmd`: Character questionnaire detailing personality and ethics.
   - Narrative Chapters (`01 The Weight of Zero.md`, etc.): Out-of-session narrative archives.

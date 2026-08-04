@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<sr6char career="true" gender="DIVERSE" karmaF="3" karmaI="170" meta="pilot-ai" nuyen="19750">
+<sr6char career="true" gender="DIVERSE" karmaF="4" karmaI="211" meta="pilot-ai" nuyen="27750">
    <lifestyles>
-      <lifestyle comfort="low" entert="low" lang="en" necess="low" neigh="low" ref="low" security="low" space="low" value="1"/>
+      <lifestyle comfort="low" entert="low" lang="en" necess="low" neigh="low" ref="low" security="low" sin="6f7ec488-0263-46a5-bd21-56389f9f3c34" space="low" value="1"/>
    </lifestyles>
    <asdfMap/>
    <chargenSettings>{&#x0022;characterPoints&#x0022;:100,&#x0022;cpBoughtSpecial&#x0022;:32,&#x0022;cpBoughtAttrib&#x0022;:40,&#x0022;cpToSkills&#x0022;:7,&#x0022;cpToResources&#x0022;:4,&#x0022;boughtPP&#x0022;:0,&#x0022;boughtSpells&#x0022;:0,&#x0022;boughtComplex&#x0022;:0,&#x0022;perAttrib&#x0022;:{&#x0022;BODY&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:4,&#x0022;points3&#x0022;:0},&#x0022;AGILITY&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:2,&#x0022;points3&#x0022;:0},&#x0022;REACTION&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:4,&#x0022;points3&#x0022;:0},&#x0022;STRENGTH&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:2,&#x0022;points3&#x0022;:0},&#x0022;WILLPOWER&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:5,&#x0022;points3&#x0022;:0},&#x0022;LOGIC&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:3,&#x0022;points3&#x0022;:0},&#x0022;INTUITION&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:1,&#x0022;points3&#x0022;:0},&#x0022;CHARISMA&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:3,&#x0022;points3&#x0022;:0},&#x0022;EDGE&#x0022;:{&#x0022;points1&#x0022;:4,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0},&#x0022;MAGIC&#x0022;:{&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0},&#x0022;RESONANCE&#x0022;:{&#x0022;points1&#x0022;:5,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0}},&#x0022;perSkill&#x0022;:{&#x0022;language/1ab9b4c2-b6d2-4d84-8c82-91920cbefe8b&#x0022;:{&#x0022;karmaSpec&#x0022;:0,&#x0022;pointSpec&#x0022;:0,&#x0022;points1&#x0022;:0,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0},&#x0022;tasking&#x0022;:{&#x0022;karmaSpec&#x0022;:0,&#x0022;pointSpec&#x0022;:1,&#x0022;points1&#x0022;:6,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0},&#x0022;electronics&#x0022;:{&#x0022;karmaSpec&#x0022;:0,&#x0022;pointSpec&#x0022;:1,&#x0022;points1&#x0022;:5,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0},&#x0022;cracking&#x0022;:{&#x0022;karmaSpec&#x0022;:0,&#x0022;pointSpec&#x0022;:1,&#x0022;points1&#x0022;:5,&#x0022;points2&#x0022;:0,&#x0022;points3&#x0022;:0}},&#x0022;perSpellPayedWithCP&#x0022;:{},&#x0022;perRitualPayedWithCP&#x0022;:{},&#x0022;perCFormPayedWithCP&#x0022;:{},&#x0022;ppCP&#x0022;:1,&#x0022;ppKarma&#x0022;:1,&#x0022;spellsCP&#x0022;:0,&#x0022;spellsKarma&#x0022;:0,&#x0022;cformsCP&#x0022;:2,&#x0022;cformsKarma&#x0022;:0,&#x0022;variant&#x0022;:&#x0022;STANDARD&#x0022;,&#x0022;mysticAdeptPowerPoints&#x0022;:0,&#x0022;toContacts&#x0022;:0,&#x0022;negQualities&#x0022;:29,&#x0022;initiation&#x0022;:36,&#x0022;toNuyen&#x0022;:0}</chargenSettings>
@@ -38,11 +38,13 @@
       <metaEcho lang="en" ref="software_emulator"/>
    </metaEchoes>
    <sins>
-      <sin name="Yuriko Star" quality="ROUGH_MATCH" uniqueid="59d9bf7c-436d-4fe6-9989-7a08504ec9e2"/>
+      <sin name="Yuriko Star" quality="SECOND_LIFE" uniqueid="6f7ec488-0263-46a5-bd21-56389f9f3c34"/>
    </sins>
    <licenses>
       <licenses name="Drone" rating="ROUGH_MATCH" sin="59d9bf7c-436d-4fe6-9989-7a08504ec9e2" uniqueid="2f9587eb-fc6f-4ae9-996c-fc40e5439429"/>
       <licenses name="Firearms" rating="ROUGH_MATCH" sin="59d9bf7c-436d-4fe6-9989-7a08504ec9e2" uniqueid="f55c56eb-36c7-4257-8072-4c861db8b5f7"/>
+      <licenses name="Drone" rating="SECOND_LIFE" sin="6f7ec488-0263-46a5-bd21-56389f9f3c34" uniqueid="73062531-2b86-484b-a205-6027c6fc350e"/>
+      <licenses name="Firearms" rating="SECOND_LIFE" sin="6f7ec488-0263-46a5-bd21-56389f9f3c34" uniqueid="dad54071-0922-42cf-96fd-a69941b9164b"/>
    </licenses>
    <contacts>
       <contact favors="2" id="5b130c0a-b58c-43b8-8d5e-ec23e4deedbe" loy="2" name="Brynne Taggart" rat="4" type="Fixer" typename="Fixer">
@@ -54,14 +56,14 @@
       <contact id="33e9cde2-38fa-4624-96ab-79d0d3d153b6" loy="3" name="Indomitable Will" rat="3" type="River People Sysop" typename="River People Sysop">
          <description>Character Creation</description>
       </contact>
-      <contact id="bac29d55-ab5a-49d5-8c3d-017aadfb34d9" loy="3" name="Roanoke" rat="3" type="Ecological Activist" typename="Ecological Activist">
-         <description>Character Creation</description>
+      <contact favors="1" id="bac29d55-ab5a-49d5-8c3d-017aadfb34d9" loy="3" name="Roanoke" rat="3" type="Ecological Activist" typename="Ecological Activist">
+         <description>Character Creation | SRM 2083-17 Haute Blooded | SRM 2083-20 The Fallacy of Plans</description>
       </contact>
       <contact id="af9ac2b6-3596-4dee-a6cc-4da6fa2a1931" loy="1" name="Piotr Krolik" rat="4" type="Vory Borjevik" typename="Vory Borjevik">
          <description>SMH 2083-02 EggHunt at the Jackalope Ranch</description>
       </contact>
-      <contact id="9539ef93-6b90-4794-a7db-0ddcc2ebf353" loy="1" name="Le Tigre" rat="5" type="Epoch Model" typename="Epoch Model">
-         <description>SMH 2083-02 EggHunt at the Jackalope Ranch</description>
+      <contact favors="1" id="9539ef93-6b90-4794-a7db-0ddcc2ebf353" loy="2" name="Le Tigre" rat="5" type="Epoch Model" typename="Epoch Model">
+         <description>SMH 2083-02 EggHunt at the Jackalope Ranch | SRM 2083-17 Haute Blooded | CMP 2083-15 | By Land, Sea, and Hair</description>
       </contact>
       <contact id="5d05bdd0-7587-404a-80c3-19487dfa5590" loy="1" name="White Jackalope" rat="2" type="Emergent Lifeform" typename="Emergent Lifeform">
          <description>SMH 2083-02 EggHunt at the Jackalope Ranch</description>
@@ -75,8 +77,8 @@
       <contact id="51988c8a-0bd0-46ee-a42e-07e9ec84e17c" loy="1" name="Daniel Fortune" rat="3" type="NOLA" typename="NOLA">
          <description>2083-03 Unofficial Dunkelzahn Fan Club</description>
       </contact>
-      <contact id="f3132127-8be7-4737-a7e4-fed4d912b72d" loy="2" name="Renée Martin" rat="4" type="League of Laveau Community Outreach" typename="League of Laveau Community Outreach">
-         <description>2083-03 Unofficial Dunkelzahn Fan Club</description>
+      <contact favors="1" id="f3132127-8be7-4737-a7e4-fed4d912b72d" loy="2" name="Renée Martin" rat="4" type="League of Laveau Liaison" typename="League of Laveau Liaison">
+         <description>2083-03 Unofficial Dunkelzahn Fan Club | SRM 2083-20 The Fallacy of Plans</description>
       </contact>
       <contact id="e0862e1d-7a49-4a3f-89a8-0c09329b59c7" loy="1" name="The Frisian" rat="6" type="Crime Lord of the Dutch Penose syndicate" typename="Crime Lord of the Dutch Penose syndicate">
          <description>CMP 2081-09 Bring me Prince Charming</description>
@@ -84,10 +86,8 @@
       <contact favors="1" id="8db8c753-8b66-42e3-a9f4-a0c20f03efba" loy="1" name="Ree 'Dolly' Hacker" rat="4" type="Talismonger and Racer" typename="Talismonger and Racer">
          <description>CMP 2081-18 Blue Kentucky Girl</description>
       </contact>
-      <contact id="93ddb8d3-ba87-4f4f-a23b-81e38da6cdc3" loy="2" name="'Granny'" rat="6" type="MAGIC" typename="KY Lady of the Autumn Wind">
-         <description>Fae Noble. RN: Siobhan Ceidwad Hydief Gwynt
-CMP 2081-18: Blue Kentucky Girl: +1 FP -- L1
-CMP 2081-20: In the Cold Kentucky Rain: +1L</description>
+      <contact favors="1" id="93ddb8d3-ba87-4f4f-a23b-81e38da6cdc3" loy="1" name="Granny" rat="6" type="Lady of the Autumn Wind" typename="Lady of the Autumn Wind">
+         <description>CMP 2081-18 Blue Kentucky Girl | CMP 2081-20 In the Cold Kentucky Rain</description>
       </contact>
       <contact favors="1" id="611226de-d911-4875-823f-2f114e2354ac" loy="2" name="Kiara Shaw" rat="4" type="Knight Errant Company Suit" typename="Knight Errant Company Suit">
          <description>CMP 2081-10 A Diamond in The Rough | CMP 2083-04 Hog Wild</description>
@@ -116,17 +116,8 @@ CMP 2081-20: In the Cold Kentucky Rain: +1L</description>
       <contact id="85ce1b81-162a-4e97-9739-a25f1861eecb" loy="1" name="Queen Brane" rat="12" type="Seelie Queen" typename="Seelie Queen">
          <description>CMP 2081-20 In the Cold Kentucky Rain</description>
       </contact>
-      <contact favors="3" id="a5339b43-ea6d-492a-82d2-50d40ae76bbf" loy="3" name="Sigrûn (Marikka von Harbou )" rat="5" type="GOVERNMENT" typename="AMS Shadowrunner">
-         <description>House Oranje-Nassau Johnson, Connection 5. Female Ork
-CMP 2081-12 | Uneasy lies the head - +4FP -- L2 FP1
-CMP 2083-04 | Hog Wild - +2 FP -- L3</description>
-      </contact>
       <contact favors="1" id="0942baf1-7fa0-40d9-970c-45b5c07bf022" loy="1" name="Dixie L'Amin" rat="4" type="Naga" typename="Naga">
          <description>CMP 2083-14 A Day at the Beach</description>
-      </contact>
-      <contact id="3651f12b-80ad-43ba-83aa-2aed0580c039" loy="1" name="Ayanda “Shieldbearer”Mahlangu" rat="3" type="MEDIA" typename="DW 'Mystic Edge' Producer">
-         <description>Wakyambi Elf Female. (Para Bellum pg. 15)
-CMP 2083-14: +1FP -- L1</description>
       </contact>
       <contact favors="1" id="30d5c780-215a-4f4f-9df6-1633ec6a6a5f" loy="1" name="Ebon Abirashur" rat="1" type="Leviathan Dragon" typename="Leviathan Dragon">
          <description>CMP 2083-14 A Day at the Beach</description>
@@ -173,9 +164,6 @@ CMP 2083-14: +1FP -- L1</description>
       <contact id="80480220-b85e-49ef-b4a6-68f25f297c6d" loy="1" name="Kaatje" rat="2" type="Young Entertainer" typename="Young Entertainer">
          <description>CMP 2083-04 Hog Wild</description>
       </contact>
-      <contact favors="1" id="021d90c2-0122-4bc8-a6ab-eed99df95f60" loy="1" name="Granny" rat="6" type="Lady of the Autumn Wind" typename="Lady of the Autumn Wind">
-         <description>CMP 2081-18 Blue Kentucky Girl | CMP 2081-20 In the Cold Kentucky Rain</description>
-      </contact>
       <contact favors="1" id="5028db0f-36dc-4bed-bc4f-382167aee882" loy="1" name="Kirt Liger" rat="3" type="Body Mod/Engineering Cybercatman" typename="Body Mod/Engineering Cybercatman">
          <description>SRM 2081-21 Grudge Match Gladiators</description>
       </contact>
@@ -199,6 +187,33 @@ CMP 2083-14: +1FP -- L1</description>
       </contact>
       <contact id="bb35b018-b334-403c-9a04-3a34bcee8c1f" loy="2" name="Liao Fa Ren" rat="3" type="HK Rookie Journalist" typename="HK Rookie Journalist">
          <description>CMP 2083-05 Precious Cargo</description>
+      </contact>
+      <contact id="b50b22c2-e985-4029-97e4-2a5d81b885f3" loy="2" name="Aloysius Springinsguth" rat="3" type="Sound of Silence Music Shop Owner" typename="Sound of Silence Music Shop Owner">
+         <description>SRM 2083-12 When You're Smiling</description>
+      </contact>
+      <contact id="55b49571-992d-4ba9-bc07-5d2aecf4cc17" loy="2" name="Jolene Price" rat="7" type="Riverboat Alliance Leader" typename="Riverboat Alliance Leader">
+         <description>SRM 2083-17 Haute Blooded</description>
+      </contact>
+      <contact favors="1" id="ba0fb8f6-b409-4834-886e-b0dc8f775077" loy="4" name="Coffin Girls" rat="3" type="Independent Courtesans Group" typename="Independent Courtesans Group">
+         <description>SRM 2083-18 Some Kind of Voodoo?</description>
+      </contact>
+      <contact id="3fb9622a-fb2b-4917-ad47-6a713acf3919" loy="1" name="Cedar" rat="3" type="Talismonger" typename="Talismonger">
+         <description>SRM 2083-20 The Fallacy of Plans</description>
+      </contact>
+      <contact id="190c6c22-1193-4f76-9249-2aed3ae2fb71" loy="2" name="Detective Remy LeBlanc" rat="3" type="Detective" typename="Detective">
+         <description>SRM 2083-20 The Fallacy of Plans</description>
+      </contact>
+      <contact id="146d00cb-3131-4393-b216-a0c592a330d6" loy="1" name="Claudette Laurier" rat="5" type="Order of the Golden Dawn Librarian" typename="Order of the Golden Dawn Librarian">
+         <description>SRM 2083-20 The Fallacy of Plans</description>
+      </contact>
+      <contact favors="1" id="21ea9e84-5746-423b-bd99-df6bdbeeca75" loy="3" name="League of Laveau" rat="6" type="Voodoo Organization" typename="Voodoo Organization">
+         <description>SRM 2083-18 Some Kind of Voodoo?</description>
+      </contact>
+      <contact favors="1" id="4c5426cd-d1a8-4442-812d-8f7851df3e15" loy="3" name="Zobop" rat="6" type="Voodoo Organization" typename="Voodoo Organization">
+         <description>SRM 2083-18 Some Kind of Voodoo?</description>
+      </contact>
+      <contact favors="1" id="dae04277-e0f2-43d2-930d-fbc558a54b40" loy="1" name="Col. Treylor" rat="3" type="Thunder Corps Fixer" typename="Thunder Corps Fixer">
+         <description>CMP 2083-15 | By Land, Sea, and Hair</description>
       </contact>
    </contacts>
    <name>Yuriko Star</name>
@@ -224,7 +239,7 @@ CMP 2083-14: +1FP -- L1</description>
       <attributes id="CHARISMA" start="4" value="4"/>
       <attributes id="EDGE" start="4" value="4"/>
       <attributes id="MAGIC" value="0"/>
-      <attributes id="RESONANCE" start="7" value="7"/>
+      <attributes id="RESONANCE" start="8" value="8"/>
       <attributes id="POWER_POINTS" value="0"/>
    </attributes>
    <skills>
@@ -368,15 +383,6 @@ CMP 2083-14: +1FP -- L1</description>
          <customName>&#x0022;Smile for the Camera!&#x0022; Quality (Shiawase)</customName>
       </item>
       <item lang="en" mode="CARRIED" ref="securetech_invisishield" uuid="26c35c3f-8533-46ea-9d17-e0b6eca54d1c"/>
-      <item lang="en" mode="CARRIED" ref="shock_gloves" uuid="aff32e21-314b-43ab-8c20-2c2361a9e3f7">
-         <enhancements>
-            <enhancement lang="en" ref="personalized_grip_melee"/>
-         </enhancements>
-         <customName>Krime Gloves (Stun)</customName>
-      </item>
-      <item lang="en" mode="CARRIED" ref="knucks" uuid="8c7102cc-68d5-4d45-b7c1-1786945be646">
-         <customName>Krime Gloves (Phys)</customName>
-      </item>
       <item lang="en" mode="CARRIED" ref="mtoc_mark2" uuid="8111bbf4-5fc7-449d-acaf-41402ee536b1">
          <accessories>
             <item count="2" lang="en" mode="EMBEDDED" ref="satellite_link" slot="ELECTRONIC_ACCESSORY" uuid="14236071-919a-4a38-9073-f4e39982c2aa"/>
@@ -386,37 +392,6 @@ CMP 2083-14: +1FP -- L1</description>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="mapsoft" slot="SOFTWARE" uuid="af663ff9-bcc0-4c1b-abe2-c1af1792d739">
                <decision choice="47d1e468-6df7-43ce-9651-44485cc78bb8" value="SEA"/>
             </item>
-         </accessories>
-         <flag>PRIMARY</flag>
-      </item>
-      <item count="10" lang="en" mode="CARRIED" ref="rfid_software_tags" uuid="c3a11a88-9e56-4b11-9d41-9410ec852068"/>
-      <item count="10" lang="en" mode="CARRIED" ref="laser_jack" uuid="e5c07b07-fecf-4c7c-92c1-ab18da0d49e8"/>
-      <item lang="en" mode="CARRIED" ref="coding_facility" uuid="0e9776dc-0a7f-4f8b-ab1b-17bae92aa4c2"/>
-      <item changes="0,0,0" count="1" lang="en" mode="CARRIED" ref="shiawase_BD_butler" uuid="227c5aa8-b36c-436a-b759-18ea24ff300d">
-         <notes>Butler #2 (Retrans / Comms Support)</notes>
-         <accessories>
-            <item lang="en" mode="EMBEDDED" ref="anti_theft" slot="VEHICLE_ELECTRONICS" uuid="92dc5fa9-bb5c-4f40-a00a-f653a716e19e" variant="rating1">
-               <flag>AUTO_ADDED</flag>
-            </item>
-            <item lang="en" mode="EMBEDDED" ref="realistic_features" slot="VEHICLE_CHASSIS" uuid="b0787889-c714-4a24-9cd3-bf6af1e97fdb">
-               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="1"/>
-            </item>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="239cc6a1-215e-470a-89d3-5c48329607aa"/>
-            <item lang="en" mode="EMBEDDED" ref="retrans_unit" slot="VEHICLE_ELECTRONICS" uuid="3cba562d-2b8b-4460-9b0d-b0c59101b6e6"/>
-            <item lang="en" mode="EMBEDDED" ref="retractable_skates" slot="CYBERLIMB_IMPLANT" uuid="b6156882-a9d2-4a12-81d4-7475482a7657">
-               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170c" value="USED"/>
-            </item>
-            <item lang="en" mode="EMBEDDED" ref="retractable_skates" slot="CYBERLIMB_IMPLANT" uuid="22781a07-b8bd-4e84-8532-0660c65833a5">
-               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170c" value="USED"/>
-            </item>
-            <item lang="en" mode="EMBEDDED" ref="integrated_matrix_device" slot="VEHICLE_ELECTRONICS" uuid="bb33eb9a-d054-4fcc-9e3a-a24b6c8680f0"/>
-         </accessories>
-      </item>
-      <item lang="en" mode="CARRIED" ref="red_fox" uuid="9282fc9b-eafc-4953-ba72-e1aa4d0d1bee"/>
-      <item count="2" lang="en" mode="CARRIED" ref="crimson_wasp" uuid="cc9334cd-33cf-432f-8ba8-877c862c032d"/>
-      <item count="5" lang="en" mode="CARRIED" ref="ammo_battery_laser" uuid="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0"/>
-      <item lang="en" mode="VIRTUAL" ref="software_library" uuid="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979">
-         <accessories>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="baby_monitor" slot="SOFTWARE" uuid="21252dd0-210b-47e1-a7b4-4ce367ef6878" variant="regular"/>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_biotech" slot="SOFTWARE" uuid="e3f035fe-bc96-4591-a98f-63f1fa769c36">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9"/>
@@ -493,7 +468,35 @@ CMP 2083-14: +1FP -- L1</description>
                <decision choice="355a3a45-39fc-4376-8667-661c9873dfdb" value="shiawase_BD_man_at_arms"/>
             </item>
          </accessories>
+         <flag>PRIMARY</flag>
       </item>
+      <item changes="0,0,0" count="1" lang="en" mode="CARRIED" ref="boing_sky_commander" uuid="e9d96a59-5f93-4f6a-9ff8-ee60f5614014">
+         <accessories>
+            <item lang="en" mode="EMBEDDED" ref="retrans_unit" slot="VEHICLE_ELECTRONICS" uuid="d7a65f49-14a5-4435-95c7-8a62094ec217"/>
+            <item lang="en" mode="EMBEDDED" ref="anti_theft" slot="VEHICLE_ELECTRONICS" uuid="d9d59c8f-e3f3-433b-8cc2-b2201873cb2f" variant="rating1">
+               <flag>AUTO_ADDED</flag>
+            </item>
+         </accessories>
+      </item>
+      <item lang="en" mode="CARRIED" ref="survival_knife" uuid="b9ce8695-7731-4128-8540-3ac7c5087b1c">
+         <enhancements>
+            <enhancement lang="en" ref="personalized_grip_melee"/>
+         </enhancements>
+         <customName>Amalgam Cestas</customName>
+      </item>
+      <item changes="0,0,0" count="1" lang="en" mode="CARRIED" ref="shiawase_BD_butler" uuid="227c5aa8-b36c-436a-b759-18ea24ff300d">
+         <notes>Butler #2 (Retrans / Comms Support)</notes>
+         <accessories>
+            <item lang="en" mode="EMBEDDED" ref="anti_theft" slot="VEHICLE_ELECTRONICS" uuid="c7cbf21b-7883-4cc5-8b9b-df8e82171983" variant="rating1">
+               <flag>AUTO_ADDED</flag>
+            </item>
+            <item lang="en" mode="EMBEDDED" ref="realistic_features" slot="VEHICLE_CHASSIS" uuid="8d4204f4-0026-47a6-be14-c05191ed3fd3">
+               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="1"/>
+            </item>
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="2dbd7fb2-2721-4db2-91f7-843888c3281b"/>
+         </accessories>
+      </item>
+      <item lang="en" mode="VIRTUAL" ref="software_library" uuid="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979"/>
    </items>
    <history>
       <itemmod date="2026-04-26T16:12:47.105-04:00" expCost="11" ref="new_sprite_type" type="METAECHO"/>
@@ -731,6 +734,7 @@ CMP 2083-14: +1FP -- L1</description>
       <valmod date="2026-06-30T19:46:48.236-04:00" id="aff32e21-314b-43ab-8c20-2c2361a9e3f7" ref="shock_gloves" set="AUGMENTED" type="CARRIED" value="790"/>
       <valmod date="2026-06-30T19:47:07.712-04:00" id="8c7102cc-68d5-4d45-b7c1-1786945be646" ref="knucks" set="AUGMENTED" type="CARRIED" value="100"/>
       <valmod date="2026-07-08T13:45:30.097-04:00" expCost="35" ref="RESONANCE" set="AUGMENTED" type="ATTRIBUTE" value="7"/>
+      <valmod date="2026-08-01T13:00:00.000-04:00" expCost="40" ref="RESONANCE" set="AUGMENTED" type="ATTRIBUTE" value="8"/>
       <valmod date="2026-07-08T15:24:53.524-04:00" id="3dc7227f-7292-40b3-9e7c-afa874a6abeb" ref="gas-vent_system" set="AUGMENTED" type="CARRIED" value="500"/>
       <valmod date="2026-07-09T21:18:21.485-04:00" id="8111bbf4-5fc7-449d-acaf-41402ee536b1" ref="mtoc_mark2" set="AUGMENTED" type="CARRIED" value="65000"/>
       <valmod date="2026-07-09T21:20:40.663-04:00" id="14236071-919a-4a38-9073-f4e39982c2aa" ref="satellite_link" set="AUGMENTED" type="CARRIED" value="500"/>
@@ -801,6 +805,9 @@ CMP 2083-14: +1FP -- L1</description>
       <valmod date="2026-07-23T19:37:21.000-04:00" id="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0" ref="ammo_battery_laser" set="AUGMENTED" type="CARRIED" value="100"/>
       <valmod date="2026-07-23T19:37:22.000-04:00" id="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0" ref="ammo_battery_laser" set="AUGMENTED" type="CARRIED" value="100"/>
       <valmod date="2026-07-23T19:37:23.000-04:00" id="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0" ref="ammo_battery_laser" set="AUGMENTED" type="CARRIED" value="100"/>
+      <valmod date="2026-08-03T21:49:20.907-04:00" id="e9d96a59-5f93-4f6a-9ff8-ee60f5614014" ref="boing_sky_commander" set="AUGMENTED" type="CARRIED" value="12500"/>
+      <valmod date="2026-08-03T21:49:29.343-04:00" id="d7a65f49-14a5-4435-95c7-8a62094ec217" ref="retrans_unit" set="AUGMENTED" type="CARRIED" value="7000"/>
+      <valmod date="2026-08-03T21:58:26.605-04:00" id="b9ce8695-7731-4128-8540-3ac7c5087b1c" ref="survival_knife" set="AUGMENTED" type="CARRIED" value="220"/>
    </history>
    <rewards>
       <reward date="2026-04-20T00:00:00.000-04:00" exp="13">
@@ -1057,6 +1064,57 @@ CMP 2083-14: +1FP -- L1</description>
       </reward>
       <reward date="2026-07-21T00:00:00.000-04:00" exp="1" money="-2500">
          <title>CMP 2083-05: Working for the People, Souvenirs</title>
+      </reward>
+      <reward date="2026-07-24T00:00:00.000-04:00" exp="10" money="9000">
+         <title>SRM 2083-12 | When You're Smiling</title>
+         <gamemaster>JaGator</gamemaster>
+         <modifications>
+            <valmod ref="HEAT" set="AUGMENTED" type="ATTRIBUTE" value="1" when="ALLCREATE"/>
+            <valmod ref="REPUTATION" set="AUGMENTED" type="ATTRIBUTE" value="1" when="ALLCREATE"/>
+         </modifications>
+      </reward>
+      <reward date="2026-07-24T00:00:00.000-04:00" exp="1" money="-2000">
+         <title>SRM 2083-12: Working for the People</title>
+      </reward>
+      <reward date="2026-07-30T00:00:00.000-04:00" exp="6" money="7450">
+         <title>SRM 2083-17 | Haute Blooded</title>
+         <gamemaster>Raven2049 (GenCon 2026)</gamemaster>
+         <modifications>
+            <valmod ref="REPUTATION" set="AUGMENTED" type="ATTRIBUTE" value="2" when="ALLCREATE"/>
+         </modifications>
+      </reward>
+      <reward date="2026-07-30T00:00:00.000-04:00" exp="1" money="-2000">
+         <title>SRM 2083-17: Working for the People</title>
+      </reward>
+      <reward date="2026-08-01T00:00:00.000-04:00" exp="8" money="7000">
+         <title>SRM 2083-20 | The Fallacy of Plans</title>
+         <gamemaster>(GenCon 2026 Sat 1pm slot)</gamemaster>
+         <modifications>
+            <valmod ref="REPUTATION" set="AUGMENTED" type="ATTRIBUTE" value="2" when="ALLCREATE"/>
+         </modifications>
+      </reward>
+      <reward date="2026-08-01T00:00:00.000-04:00" exp="1" money="-2000">
+         <title>SRM 2083-20: Working for the People</title>
+      </reward>
+      <reward date="2026-08-01T00:00:00.000-04:00" exp="7" money="10000">
+         <title>SRM 2083-18 | Some Kind of Voodoo?</title>
+         <gamemaster>August (GenCon 2026 Sat 6pm slot)</gamemaster>
+         <modifications>
+            <valmod ref="REPUTATION" set="AUGMENTED" type="ATTRIBUTE" value="1" when="ALLCREATE"/>
+         </modifications>
+      </reward>
+      <reward date="2026-08-01T00:00:00.000-04:00" exp="1" money="-2000">
+         <title>SRM 2083-18: Working for the People</title>
+      </reward>
+      <reward date="2026-08-01T00:00:00.000-04:00" exp="8" money="9500">
+         <title>CMP 2083-15 | By Land, Sea, and Hair</title>
+         <gamemaster>(GenCon 2026 Saturday 1pm slot)</gamemaster>
+         <modifications>
+            <valmod ref="REPUTATION" set="AUGMENTED" type="ATTRIBUTE" value="1" when="ALLCREATE"/>
+         </modifications>
+      </reward>
+      <reward date="2026-08-01T00:00:00.000-04:00" exp="1" money="-2000">
+         <title>CMP 2083-15: Working for the People</title>
       </reward>
    </rewards>
 </sr6char>

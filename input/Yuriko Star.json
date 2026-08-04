@@ -9,10 +9,10 @@
   "age": "~ 10",
   "gender": "DIVERSE",
   "heat": 0,
-  "reputation": 20,
-  "karma": 130,
-  "freeKarma": 0,
-  "nuyen": 37860,
+  "reputation": 22,
+  "karma": 215,
+  "freeKarma": 4,
+  "nuyen": 84020,
   "initiation": 0,
   "submersion": 7,
   "attributes": [
@@ -67,8 +67,8 @@
     {
       "name": "Edge",
       "id": "EDGE",
-      "points": 5,
-      "modifiedValue": 5
+      "points": 4,
+      "modifiedValue": 4
     },
     {
       "name": "Magic",
@@ -79,8 +79,8 @@
     {
       "name": "Resonance",
       "id": "RESONANCE",
-      "points": 7,
-      "modifiedValue": 7
+      "points": 8,
+      "modifiedValue": 8
     },
     {
       "name": "Power Points",
@@ -207,20 +207,20 @@
       "description": ""
     },
     {
-      "name": "Sensor Upgrade",
-      "id": "sensor_upgrade",
-      "choice": "",
-      "positive": true,
-      "rating": 0,
-      "page": "Hack\u0027n Slash 120",
-      "description": ""
-    },
-    {
       "name": "Pilot Origins",
       "id": "pilot_origins",
       "choice": "",
       "positive": true,
       "rating": 1,
+      "page": "Hack\u0027n Slash 120",
+      "description": ""
+    },
+    {
+      "name": "Sensor Upgrade",
+      "id": "sensor_upgrade",
+      "choice": "",
+      "positive": true,
+      "rating": 0,
       "page": "Hack\u0027n Slash 120",
       "description": ""
     }
@@ -423,44 +423,6 @@
       "page": "Core Rulebook 253",
       "description": "",
       "primary": false
-    },
-    {
-      "name": "Crimson Wasp",
-      "type": "Exotic Weapons",
-      "subtype": "Special Weapons",
-      "skill": null,
-      "pool": 3,
-      "damage": "5P",
-      "attackRating": "16/14/11/6/-",
-      "mode": "SA",
-      "ammunition": "15(c)",
-      "wifi": [
-        "Digital ammunition counter and an ARO that tells you the ammo type loaded. ",
-        "If equipped with DNI, you gain a bonus Minor Action any turn when you eject a clip (for weapons that have them) or change fire modes."
-      ],
-      "accessories": [],
-      "page": "Firing Squad 44",
-      "description": "",
-      "primary": false
-    },
-    {
-      "name": "Red Fox",
-      "type": "Exotic Weapons",
-      "subtype": "Special Weapons",
-      "skill": null,
-      "pool": 3,
-      "damage": "6P",
-      "attackRating": "14/16/16/9/-",
-      "mode": "SA,BF",
-      "ammunition": "30(c)",
-      "wifi": [
-        "Digital ammunition counter and an ARO that tells you the ammo type loaded. ",
-        "If equipped with DNI, you gain a bonus Minor Action any turn when you eject a clip (for weapons that have them) or change fire modes."
-      ],
-      "accessories": [],
-      "page": "Firing Squad 44",
-      "description": "",
-      "primary": false
     }
   ],
   "closeCombatWeapons": [
@@ -495,32 +457,18 @@
       "primary": false
     },
     {
-      "name": "Krime Gloves (Stun)",
+      "name": "Amalgam Cestas",
       "type": "Close Combat Weapons",
-      "subtype": "Unarmed",
-      "skill": null,
-      "pool": 2,
-      "damage": "4S(e)",
-      "attackRating": "10/-/-/-/-",
-      "wifi": [
-        "You gain a bonus Minor Action on a turn when you activate a charge. The shock gloves recharge by induction, regaining one charge per half hour of wireless-enabled time."
-      ],
-      "accessories": [],
-      "page": "Core Rulebook 249",
-      "description": "",
-      "primary": false
-    },
-    {
-      "name": "Krime Gloves (Phys)",
-      "type": "Close Combat Weapons",
-      "subtype": "Unarmed",
+      "subtype": "Blades",
       "skill": null,
       "pool": 2,
       "damage": "3P",
-      "attackRating": "8/-/-/-/-",
-      "wifi": [],
+      "attackRating": "13/2/-/-/-",
+      "wifi": [
+        "The knife displays an ARO of local maps and your GPS position, along with providing basic biomonitor data when in your hand."
+      ],
       "accessories": [],
-      "page": "Core Rulebook 249",
+      "page": "Core Rulebook 248",
       "description": "",
       "primary": false
     },
@@ -663,348 +611,13 @@
       "description": ""
     },
     {
-      "name": "Software Tag",
-      "count": 10,
-      "rating": 0,
-      "type": "Electronic",
-      "subType": "RFID",
-      "page": "Hack\u0027n Slash 43",
-      "accessories": [],
-      "description": ""
-    },
-    {
-      "name": "Laser Jack",
-      "count": 10,
-      "rating": 0,
-      "type": "Electronic",
-      "subType": "Communication",
-      "page": "Hack\u0027n Slash 41",
-      "accessories": [],
-      "description": ""
-    },
-    {
-      "name": "Coding facility",
-      "count": 1,
-      "rating": 0,
-      "type": "Tools",
-      "subType": "Tools",
-      "page": "Hack\u0027n Slash 56",
-      "accessories": [],
-      "description": ""
-    },
-    {
-      "name": "Power Backpack (80 Energy)",
-      "count": 1,
-      "rating": 0,
-      "type": "Ammunition \u0026 Explosives",
-      "subType": "Ammunition, special",
-      "page": "Firing Squad 47",
-      "accessories": [],
-      "description": ""
-    },
-    {
       "name": "Software Library",
       "count": 1,
       "rating": 0,
       "type": "Electronic",
       "subType": "Tools",
       "page": "Core Rulebook 271",
-      "accessories": [
-        {
-          "name": "Baby Monitor (Deck)",
-          "type": "Software",
-          "subType": "Basic programs",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Biotech",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Browse (Deck)",
-          "type": "Software",
-          "subType": "Basic programs",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Clearsight",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Close Combat",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Decryption",
-          "type": "Software",
-          "subType": "Hackingprograms",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Defense Pods",
-          "type": "Software",
-          "subType": "Hackingprograms",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Directional Shield",
-          "type": "Software",
-          "subType": "Hackingprograms",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Edit (Deck)",
-          "type": "Software",
-          "subType": "Basic programs",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Evasion",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Facial Scanner",
-          "type": "Software",
-          "subType": "Commlink Apps",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Fork",
-          "type": "Software",
-          "subType": "Hackingprograms",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Hitchhiker",
-          "type": "Software",
-          "subType": "Hackingprograms",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Maneuvering",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Mannequin",
-          "type": "Software",
-          "subType": "Commlink Apps",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "MeFeed",
-          "type": "Software",
-          "subType": "Commlink Apps",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Navigation",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Nexus Protocol Program",
-          "type": "Software",
-          "subType": "Hackingprograms",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Overclock",
-          "type": "Software",
-          "subType": "Hackingprograms",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Performance",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Social HUD",
-          "type": "Software",
-          "subType": "Commlink Apps",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Targeting",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Trace",
-          "type": "Software",
-          "subType": "Hackingprograms",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Tracking",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Thermal Mood Reading",
-          "type": "Software",
-          "subType": "Commlink Apps",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Vocal Tension Detection",
-          "type": "Software",
-          "subType": "Commlink Apps",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Engineering",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Smartsoft",
-          "type": "Software",
-          "subType": "Rigger Software",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Language",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Knowledge",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Emulator",
-          "type": "Software",
-          "subType": "Basic programs",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "P-ICE Spines",
-          "type": "Software",
-          "subType": "Commlink Apps",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Personal Assistant",
-          "type": "Software",
-          "subType": "Commlink Apps",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Toolbox (Deck)",
-          "type": "Software",
-          "subType": "Basic programs",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Encryption",
-          "type": "Software",
-          "subType": "Basic programs",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Signal Scrubber (Deck)",
-          "type": "Software",
-          "subType": "Basic programs",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Virtual Machine (Deck)",
-          "type": "Software",
-          "subType": "Basic programs",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Shopsoft",
-          "type": "Software",
-          "subType": "Other Programs",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Mobile Medic",
-          "type": "Software",
-          "subType": "TAC-Net Program",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Swarm",
-          "type": "Software",
-          "subType": "Rigger Software",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Target Artist",
-          "type": "Software",
-          "subType": "TAC-Net Program",
-          "rating": 0,
-          "description": ""
-        },
-        {
-          "name": "Stealth",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 0,
-          "description": ""
-        }
-      ],
+      "accessories": [],
       "description": ""
     }
   ],
@@ -1080,6 +693,26 @@
       "page": "Double Clutch 117",
       "accessories": null,
       "description": ""
+    },
+    {
+      "name": "Federated-Boeing Sky Commander",
+      "type": null,
+      "subtype": null,
+      "count": 1,
+      "handlOn": 4,
+      "handlOff": 4,
+      "accelOn": 20,
+      "accelOff": 20,
+      "speedIntOn": 30,
+      "speedIntOff": 30,
+      "speed": 190,
+      "body": 4,
+      "armor": 2,
+      "pilot": 4,
+      "sensor": 2,
+      "page": "Double Clutch 106",
+      "accessories": null,
+      "description": ""
     }
   ],
   "lifestyles": [
@@ -1103,15 +736,15 @@
   "contacts": [
     {
       "name": "Brynne Taggart",
-      "type": "SEA Fixer",
+      "type": "Fixer",
       "loyalty": 2,
       "influence": 4,
-      "description": "Character creation\n2081-05: +1 FP, +1 (Buying Favors)",
-      "favors": 0
+      "description": "Character Creation | SRM 2081-05 This is Renton",
+      "favors": 2
     },
     {
       "name": "Whiskey",
-      "type": "SEA Street Doc",
+      "type": "Street Doc",
       "loyalty": 4,
       "influence": 2,
       "description": "Character Creation",
@@ -1119,58 +752,58 @@
     },
     {
       "name": "Indomitable Will",
-      "type": "NOLA River People Sysop",
+      "type": "River People Sysop",
       "loyalty": 3,
       "influence": 3,
-      "description": "Character creation",
+      "description": "Character Creation",
       "favors": 0
     },
     {
       "name": "Roanoke",
-      "type": "NOLA Ecological Activist",
+      "type": "Ecological Activist",
       "loyalty": 3,
       "influence": 3,
-      "description": "Character creation",
-      "favors": 0
+      "description": "Character Creation | SRM 2083-17 Haute Blooded | SRM 2083-20 The Fallacy of Plans",
+      "favors": 1
     },
     {
       "name": "Piotr Krolik",
-      "type": "NOLA Vory Borjevik",
+      "type": "Vory Borjevik",
       "loyalty": 1,
       "influence": 4,
-      "description": "SMH 2083-02 EggHunt at the Jackalope Ranch: +1 FP -- L1",
+      "description": "SMH 2083-02 EggHunt at the Jackalope Ranch",
       "favors": 0
     },
     {
       "name": "Le Tigre",
-      "type": "NOLA Epoch Model",
+      "type": "Epoch Model",
       "loyalty": 1,
       "influence": 5,
-      "description": "SMH 2083-02 EggHunt at the Jackalope Ranch. +1 FP -- L1",
-      "favors": 0
+      "description": "SMH 2083-02 EggHunt at the Jackalope Ranch | SRM 2083-17 Haute Blooded",
+      "favors": 1
     },
     {
       "name": "White Jackalope",
       "type": "Emergent Lifeform",
       "loyalty": 1,
       "influence": 2,
-      "description": "SMH 2083-02 EggHunt at the Jackalope Ranch. +1 FP -- L1",
+      "description": "SMH 2083-02 EggHunt at the Jackalope Ranch",
       "favors": 0
     },
     {
       "name": "Big Louie",
-      "type": "SEA Fixer",
+      "type": "Fixer",
       "loyalty": 1,
       "influence": 3,
-      "description": "CMP First Taste : Top Chef - Seattle. +1 FP -- L1. \n\nMale Troll, likes Jazz, works out of Matchsticks\n",
+      "description": "CMP First Taste : Top Chef - Seattle",
       "favors": 0
     },
     {
       "name": "Dominique Augustin",
-      "type": "NOLA Wolverine Security",
+      "type": "Wolverine Security",
       "loyalty": 1,
       "influence": 4,
-      "description": "Human Female\n2083-03: Unofficial Dunkelzahn Fan Club. 2FP - 1FP + L1",
+      "description": "2083-03 Unofficial Dunkelzahn Fan Club",
       "favors": 1
     },
     {
@@ -1178,103 +811,103 @@
       "type": "NOLA",
       "loyalty": 1,
       "influence": 3,
-      "description": "Human Male\n2083-03: Unofficial Dunkelzahn Fan Club. 1FP -- L1",
+      "description": "2083-03 Unofficial Dunkelzahn Fan Club",
       "favors": 0
     },
     {
       "name": "Renée Martin",
-      "type": "NOLA League of Laveau Community Outreach",
+      "type": "League of Laveau Liaison",
       "loyalty": 2,
       "influence": 4,
-      "description": "Male Troll\n2083-03: Unofficial Dunkelzahn Fan Club. 3FP -- L2",
-      "favors": 0
+      "description": "2083-03 Unofficial Dunkelzahn Fan Club | SRM 2083-20 The Fallacy of Plans",
+      "favors": 1
     },
     {
       "name": "The Frisian",
-      "type": "AMS Crime Lord of the Dutch Penose syndicate",
+      "type": "Crime Lord of the Dutch Penose syndicate",
       "loyalty": 1,
       "influence": 6,
-      "description": "Amsterdam\nCMP 2081-09 | Bring me Prince Charming: +1 FP -- L1",
+      "description": "CMP 2081-09 Bring me Prince Charming",
       "favors": 0
     },
     {
       "name": "Ree \u0027Dolly\u0027 Hacker",
-      "type": "KY Talismonger and Racer",
+      "type": "Talismonger and Racer",
       "loyalty": 1,
       "influence": 4,
-      "description": "Female Elf\nCMP 2081-18: Blue Kentucky Girl: +2 FP -- L1/F1",
+      "description": "CMP 2081-18 Blue Kentucky Girl",
       "favors": 1
     },
     {
-      "name": "\u0027Granny\u0027",
-      "type": "KY Lady of the Autumn Wind",
-      "loyalty": 2,
+      "name": "Granny",
+      "type": "Lady of the Autumn Wind",
+      "loyalty": 1,
       "influence": 6,
-      "description": "Fae Noble. RN: Siobhan Ceidwad Hydief Gwynt\nCMP 2081-18: Blue Kentucky Girl: +1 FP -- L1\nCMP 2081-20: In the Cold Kentucky Rain: +1L",
-      "favors": 0
+      "description": "CMP 2081-18 Blue Kentucky Girl | CMP 2081-20 In the Cold Kentucky Rain",
+      "favors": 1
     },
     {
       "name": "Kiara Shaw",
-      "type": "AMS Knight Errant Company Suit",
+      "type": "Knight Errant Company Suit",
       "loyalty": 2,
       "influence": 4,
-      "description": "(KE Company Suit, Connection 4) Female Dwarf\nCMP 2081-10 | A Diamond In The Rough - +2FP -- L1/FP1\nCMP 2083-04 | Hog Wild - +1 FP -- L2",
-      "favors": 0
+      "description": "CMP 2081-10 A Diamond in The Rough | CMP 2083-04 Hog Wild",
+      "favors": 1
     },
     {
       "name": "Simon Andrews",
-      "type": "AMS S-K Johnson",
+      "type": "S-K Johnson",
       "loyalty": 2,
       "influence": 5,
-      "description": "Male Awakened Lizard Punk. Likes Brit bands. Yuriko caught a concert with him.\nCMP 2081-11 | Paved with good intentions - +2FP -- L1/FP1\nCMP 2083-01: NONPLUSHED + 1FP\nCMP 2083-04 | Hog Wild: +1 FP -- L2/FP1",
-      "favors": 0
+      "description": "CMP 2081-11 Paved with good intentions | CMP 2083-01 NONPLUSHED | CMP 2083-04 Hog Wild",
+      "favors": 1
     },
     {
       "name": "Squint",
-      "type": "AMS Smuggler",
+      "type": "Smuggler",
       "loyalty": 1,
       "influence": 2,
-      "description": "CMP 2081-11 | Paved with good intentions - +1FP -- L1",
+      "description": "CMP 2081-11 Paved with good intentions",
       "favors": 0
     },
     {
       "name": "Dr. Laureline Dodd",
-      "type": "KY Arcano-Archeologist",
+      "type": "Arcano-Archeologist",
       "loyalty": 1,
       "influence": 5,
-      "description": "Female Human, Arcano-Archaelogist, Spinrad Global Connection 5, CHA 7\nCMP 2081-19: The Blue Moon of Kentucky: +2 FP -- L1/FP1",
+      "description": "CMP 2081-19 The Blue Moon of Kentucky",
       "favors": 1
     },
     {
       "name": "Thaddeus",
-      "type": "KY Street Samurai",
+      "type": "Street Samurai",
       "loyalty": 1,
       "influence": 3,
-      "description": "CopperHead Naga Street Samurai\nCMP 2081-19: The Blue Moon of Kentucky: +1 FP -- L1",
+      "description": "CMP 2081-19 The Blue Moon of Kentucky",
       "favors": 0
     },
     {
       "name": "Duan Yuhai",
-      "type": "SEA Minor 88s Johnson",
+      "type": "Minor 88s Johnson",
       "loyalty": 1,
       "influence": 3,
-      "description": "2081-17: +1 FP -- L1",
+      "description": "SRM 2081-17 Framed in Blood",
       "favors": 0
     },
     {
       "name": "Xiong Giuyin",
-      "type": "SEA Wuxing",
+      "type": "Wuxing",
       "loyalty": 1,
       "influence": 4,
-      "description": "2081-17: +1FP -- L1",
+      "description": "SRM 2081-17 Framed in Blood",
       "favors": 0
     },
     {
       "name": "Reilly Dragman",
-      "type": "KY Child Heiress",
+      "type": "Child Heiress",
       "loyalty": 1,
       "influence": 1,
-      "description": "CMP 2081-20: In the Cold Kentucky Rain - +1L/+1FP",
+      "description": "CMP 2081-20 In the Cold Kentucky Rain",
       "favors": 1
     },
     {
@@ -1282,151 +915,279 @@
       "type": "Seelie Queen",
       "loyalty": 1,
       "influence": 12,
-      "description": "CMP 2081-20: In the Cold Kentucky Rain: +1 L",
+      "description": "CMP 2081-20 In the Cold Kentucky Rain",
       "favors": 0
-    },
-    {
-      "name": "Sigrûn (Marikka von Harbou )",
-      "type": "AMS Shadowrunner",
-      "loyalty": 3,
-      "influence": 5,
-      "description": "House Oranje-Nassau Johnson, Connection 5. Female Ork\nCMP 2081-12 | Uneasy lies the head - +4FP -- L2 FP1\nCMP 2083-04 | Hog Wild - +2 FP -- L3",
-      "favors": 3
     },
     {
       "name": "Dixie L\u0027Amin",
-      "type": "DW Naga",
+      "type": "Naga",
       "loyalty": 1,
       "influence": 4,
-      "description": "CMP 2083-14: +2 FP -- L1/FP1",
+      "description": "CMP 2083-14 A Day at the Beach",
       "favors": 1
     },
     {
-      "name": "Ayanda “Shieldbearer”Mahlangu",
-      "type": "DW \u0027Mystic Edge\u0027 Producer",
-      "loyalty": 1,
-      "influence": 3,
-      "description": "Wakyambi Elf Female. (Para Bellum pg. 15)\nCMP 2083-14: +1FP -- L1",
-      "favors": 0
-    },
-    {
       "name": "Ebon Abirashur",
-      "type": "DW Leviathan Dragon",
+      "type": "Leviathan Dragon",
       "loyalty": 1,
       "influence": 1,
-      "description": "CMP 2083-14: +2FP -- L1 / FP1",
+      "description": "CMP 2083-14 A Day at the Beach",
       "favors": 1
     },
     {
       "name": "Col. Deborah Kentwell",
-      "type": "DW Thunder Corps Fixer",
+      "type": "Thunder Corps Fixer",
       "loyalty": 1,
       "influence": 5,
-      "description": "CMP 2083-16: +2FP -- L1/FP1",
+      "description": "CMP 2083-16 War Never Changes",
       "favors": 1
     },
     {
       "name": "Polyphemous \u0027Paul\u0027 Pellagios",
-      "type": "DW Background Actor",
+      "type": "Background Actor",
       "loyalty": 1,
       "influence": 1,
-      "description": "CMP 2083-16: +1FP -- L1",
+      "description": "CMP 2083-16 War Never Changes",
       "favors": 0
     },
     {
       "name": "Fernand Anato",
-      "type": "NOLA Kozlowski Capo",
+      "type": "Kozlowski Capo",
       "loyalty": 1,
       "influence": 1,
-      "description": "SRM 2083-19: +1FP -- L1",
+      "description": "SRM 2083-19 The Hallow Feast",
       "favors": 0
     },
     {
       "name": "Monsieur Johnson",
-      "type": "NOLA Johnson",
+      "type": "Johnson",
       "loyalty": 2,
       "influence": 5,
-      "description": "SRM 2083-19: L1/FP3 -- L2/FP1",
-      "favors": 1
+      "description": "SRM 2083-19 The Hallow Feast",
+      "favors": 0
     },
     {
       "name": "Swango",
-      "type": "SEA Rapper",
+      "type": "Rapper",
       "loyalty": 2,
       "influence": 3,
-      "description": "SRM 2081-05: +3 FP -- L2",
+      "description": "SRM 2081-05 This is Renton",
       "favors": 0
     },
     {
       "name": "Toil",
-      "type": "SEA Fixer",
+      "type": "Fixer",
       "loyalty": 1,
       "influence": 4,
-      "description": "SRM 2081-05: +1 FP -- L1",
+      "description": "SRM 2081-05 This is Renton",
       "favors": 0
     },
     {
       "name": "Trubble",
-      "type": "SEA Bodyguard",
+      "type": "Bodyguard",
       "loyalty": 1,
       "influence": 1,
-      "description": "SRM 2081-05: +1 FP -- L1",
+      "description": "SRM 2081-05 This is Renton",
       "favors": 0
     },
     {
       "name": "SpiiniCop",
-      "type": "AMS Penose Spider",
+      "type": "Penose Spider",
       "loyalty": 1,
       "influence": 2,
-      "description": "NB Human\nCMP 2083-01: NONPLUSHED: +1 FP -- L1",
+      "description": "CMP 2083-01 NONPLUSHED",
       "favors": 0
     },
     {
       "name": "Eddie Wei",
-      "type": "SEA Triad/Johnson",
+      "type": "Triad/Johnson",
       "loyalty": 1,
       "influence": 4,
-      "description": "SRM 2081-08 Child\u0027s Play: +1 FP -- L1",
+      "description": "SRM 2081-08 Child\u0027s Play",
       "favors": 0
     },
     {
       "name": "Julian Müntefering",
-      "type": "SEA Renraku Corpokid",
+      "type": "Renraku Corpokid",
       "loyalty": 1,
       "influence": 1,
-      "description": "SRM 2081-08 Child\u0027s Play: +1 FP -- L1",
+      "description": "SRM 2081-08 Child\u0027s Play",
       "favors": 0
     },
     {
       "name": "Ni Ni Xiaolu",
-      "type": "SEA Johnson/Triad",
+      "type": "Johnson/Triad",
       "loyalty": 2,
       "influence": 3,
-      "description": "SRM 2081-07 | Bootleg Bliss: +3 FP -- 2L",
-      "favors": 0
+      "description": "SRM 2081-07 Bootleg Bliss | CMP 2083-05 Precious Cargo",
+      "favors": 1
     },
     {
       "name": "Bookie",
-      "type": "SEA Ancients Bookie",
+      "type": "Ancients Bookie",
       "loyalty": 1,
       "influence": 3,
-      "description": "SRM 2081-07 | Bootleg Bliss: +1 FP -- L1\nMale Elf",
+      "description": "SRM 2081-07 Bootleg Bliss",
       "favors": 0
     },
     {
       "name": "Trudy",
-      "type": "SEA Cutter Lieutenant",
+      "type": "Cutter Lieutenant",
       "loyalty": 1,
       "influence": 2,
-      "description": "Female Human Mage\nSRM 2081-07 | Bootleg Bliss: +1 FP -- L1",
+      "description": "SRM 2081-07 Bootleg Bliss",
       "favors": 0
     },
     {
       "name": "Kaatje",
-      "type": "AMS Young Entertainer",
+      "type": "Young Entertainer",
       "loyalty": 1,
       "influence": 2,
-      "description": "(Young Entertainer, Connection 2) early 20s human female\n2083-04 Hog Wild: +1 FP -- L1. (Was playing harmonica in a bar. Yuriko introduced her to Fuchs. Also met Kaatje\u0027s grandmother in a religious commune)",
+      "description": "CMP 2083-04 Hog Wild",
+      "favors": 0
+    },
+    {
+      "name": "Kirt Liger",
+      "type": "Body Mod/Engineering Cybercatman",
+      "loyalty": 1,
+      "influence": 3,
+      "description": "SRM 2081-21 Grudge Match Gladiators",
+      "favors": 1
+    },
+    {
+      "name": "Sigrún",
+      "type": "Shadowrunner",
+      "loyalty": 3,
+      "influence": 5,
+      "description": "CMP 2081-12 Uneasy lies the head | CMP 2083-04 Hog Wild",
+      "favors": 1
+    },
+    {
+      "name": "Ayanda \u0027Shieldbearer\u0027 Mahlangu",
+      "type": "\u0027Mystic Edge\u0027 Producer",
+      "loyalty": 1,
+      "influence": 3,
+      "description": "CMP 2083-14 A Day at the Beach",
+      "favors": 0
+    },
+    {
+      "name": "Saint James",
+      "type": "Fixer",
+      "loyalty": 2,
+      "influence": 8,
+      "description": "SRM 2081-06 Cutting Strings",
+      "favors": 0
+    },
+    {
+      "name": "Jeanie Trudel",
+      "type": "Bartender",
+      "loyalty": 1,
+      "influence": 1,
+      "description": "SRM 2081-06 Cutting Strings",
+      "favors": 0
+    },
+    {
+      "name": "Kingston",
+      "type": "Shadowrunner",
+      "loyalty": 1,
+      "influence": 2,
+      "description": "SRM 2081-06 Cutting Strings",
+      "favors": 0
+    },
+    {
+      "name": "Mr. Fa",
+      "type": "HKB Corporate Middle Manager",
+      "loyalty": 1,
+      "influence": 4,
+      "description": "CMP 2083-05 Precious Cargo",
+      "favors": 1
+    },
+    {
+      "name": "Liao Fa Ren",
+      "type": "HK Rookie Journalist",
+      "loyalty": 2,
+      "influence": 3,
+      "description": "CMP 2083-05 Precious Cargo",
+      "favors": 0
+    },
+    {
+      "name": "Aloysius Springinsguth",
+      "type": "Sound of Silence Music Shop Owner",
+      "loyalty": 2,
+      "influence": 3,
+      "description": "SRM 2083-12 When You\u0027re Smiling",
+      "favors": 0
+    },
+    {
+      "name": "Jolene Price",
+      "type": "Riverboat Alliance Leader",
+      "loyalty": 2,
+      "influence": 7,
+      "description": "SRM 2083-17 Haute Blooded",
+      "favors": 0
+    },
+    {
+      "name": "Coffin Girls",
+      "type": "Independent Courtesans Group",
+      "loyalty": 4,
+      "influence": 3,
+      "description": "SRM 2083-18 Some Kind of Voodoo?",
+      "favors": 1
+    },
+    {
+      "name": "Cedar",
+      "type": "Talismonger",
+      "loyalty": 1,
+      "influence": 3,
+      "description": "SRM 2083-20 The Fallacy of Plans",
+      "favors": 0
+    },
+    {
+      "name": "Detective Remy LeBlanc",
+      "type": "Detective",
+      "loyalty": 2,
+      "influence": 3,
+      "description": "SRM 2083-20 The Fallacy of Plans",
+      "favors": 0
+    },
+    {
+      "name": "Claudette Laurier",
+      "type": "Order of the Golden Dawn Librarian",
+      "loyalty": 1,
+      "influence": 5,
+      "description": "SRM 2083-20 The Fallacy of Plans",
+      "favors": 0
+    },
+    {
+      "name": "League of Laveau",
+      "type": "Voodoo Organization",
+      "loyalty": 3,
+      "influence": 6,
+      "description": "SRM 2083-18 Some Kind of Voodoo?",
+      "favors": 1
+    },
+    {
+      "name": "Zobop",
+      "type": "Voodoo Organization",
+      "loyalty": 3,
+      "influence": 6,
+      "description": "SRM 2083-18 Some Kind of Voodoo?",
+      "favors": 1
+    },
+    {
+      "name": "Col. Treylor",
+      "type": "Thunder Corps Fixer",
+      "loyalty": 1,
+      "influence": 3,
+      "description": "CMP 2083-15 | By Land, Sea, and Hair",
+      "favors": 1
+    },
+    {
+      "name": "Mr. Johnson",
+      "type": "Epoch Model",
+      "loyalty": 1,
+      "influence": 5,
+      "description": "CMP 2083-15 | By Land, Sea, and Hair",
       "favors": 0
     }
   ],
@@ -1491,9 +1252,352 @@
           "subType": "Other Programs",
           "rating": 0,
           "description": ""
+        },
+        {
+          "name": "Biotech",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Clearsight",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Close Combat",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Evasion",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Facial Scanner",
+          "type": "Software",
+          "subType": "Commlink Apps",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Maneuvering",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Mannequin",
+          "type": "Software",
+          "subType": "Commlink Apps",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "MeFeed",
+          "type": "Software",
+          "subType": "Commlink Apps",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Navigation",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Performance",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Social HUD",
+          "type": "Software",
+          "subType": "Commlink Apps",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Targeting",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Tracking",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Thermal Mood Reading",
+          "type": "Software",
+          "subType": "Commlink Apps",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Vocal Tension Detection",
+          "type": "Software",
+          "subType": "Commlink Apps",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Engineering",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Smartsoft",
+          "type": "Software",
+          "subType": "Rigger Software",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Language",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Knowledge",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "P-ICE Spines",
+          "type": "Software",
+          "subType": "Commlink Apps",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Personal Assistant",
+          "type": "Software",
+          "subType": "Commlink Apps",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Shopsoft",
+          "type": "Software",
+          "subType": "Other Programs",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Mobile Medic",
+          "type": "Software",
+          "subType": "TAC-Net Program",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Swarm",
+          "type": "Software",
+          "subType": "Rigger Software",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Target Artist",
+          "type": "Software",
+          "subType": "TAC-Net Program",
+          "rating": 0,
+          "description": ""
+        },
+        {
+          "name": "Stealth",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": ""
         }
       ],
-      "programs": [],
+      "programs": [
+        {
+          "name": "Baby Monitor (Deck)",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Basic programs",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Browse (Deck)",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Basic programs",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Decryption",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Hackingprograms",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Defense Pods",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Hackingprograms",
+          "page": "Hack\u0027n Slash 58",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Directional Shield",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Hackingprograms",
+          "page": "Hack\u0027n Slash 58",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Edit (Deck)",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Basic programs",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Fork",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Hackingprograms",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Hitchhiker",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Hackingprograms",
+          "page": "Hack\u0027n Slash 139",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Nexus Protocol Program",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Hackingprograms",
+          "page": "Hack\u0027n Slash 142",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Overclock",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Hackingprograms",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Trace",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Hackingprograms",
+          "page": "Core Rulebook 185",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Emulator",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Basic programs",
+          "page": "Hack\u0027n Slash 57",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Toolbox (Deck)",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Basic programs",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Encryption",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Basic programs",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Signal Scrubber (Deck)",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Basic programs",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Virtual Machine (Deck)",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Basic programs",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        }
+      ],
       "description": ""
     }
   ],

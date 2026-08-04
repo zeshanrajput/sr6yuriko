@@ -6,7 +6,7 @@
 [ CORE_ATTRIBUTES ]                          | [ DERIVED_STATUS ]
   MAT | ATK [03] SLZ [05] DPR [03] FWL [05]  |   INIT (VR)  : 9 +4D6
   MNT | WIL [06] LOG [04] INT [02] CHA [04]  |   ATK RATING : 15 (ATK+SLZ)
-  SPP | EDG [04] RES [07] SPK [06] SUB [07]  |   DEF RATING : 16 (DPR+FWL)
+  SPP | EDG [04] RES [08] SPK [06] SUB [07]  |   DEF RATING : 16 (DPR+FWL)
                                              |   COMPOSURE  : 10
 [ LIVING_PERSONA_ACTIVE_ASDF ]               |   JUDGE INT  : 8
   ATK [06]  SLZ [09]  DPR [07]  FWL [09]     | Def (Bio): WIL + FWL (15)
@@ -17,23 +17,23 @@
 
 [ SKILL_MATRICES ]
   CON                   : 01                   -> Pool: 05
-  CRACKING              : 05 (Hacking +2)      -> Pool: 20 / 22
-  ELECTRONICS           : 05 (Software +2)     -> Mtx:  20 / 22
+  CRACKING              : 05 (Hacking +2)      -> Pool: 21 / 23
+  ELECTRONICS           : 05 (Software +2)     -> Mtx:  21 / 23
                                                   Log:  13 / 15
   INFLUENCE             : 01                   -> Pool: 05
   NATIVE LANGUAGE       : 04                   -> Pool: 08
-  TASKING               : 06 (Registering +2)  -> Pool: 17 / 19
+  TASKING               : 06 (Registering +2)  -> Pool: 18 / 20
 
 [ COMPLEX_FORMS ]
-  - CLEANER (FV 2)                      -> Pool: 20  [Fading Resist: 10]
-  - DIFFUSION (FV 4)                    -> Pool: 20  [Fading Resist: 10]
-  - TECHNOREGENERATION (FV Hits)        -> Pool: 20  [Fading Resist: 10]
-  - PUPPETEER (FV 5)                    -> Pool: 20  [Fading Resist: 10]
+  - CLEANER (FV 2)                      -> Pool: 21  [Fading Resist: 10]
+  - DIFFUSION (FV 4)                    -> Pool: 21  [Fading Resist: 10]
+  - TECHNOREGENERATION (FV Hits)        -> Pool: 21  [Fading Resist: 10]
+  - PUPPETEER (FV 5)                    -> Pool: 21  [Fading Resist: 10]
 
 [ ECHOES & SUBMERSION ]                | [ RESONANCE_QUICK_ACTIONS ]
-  - HYBRID SPRITES                     |   - COMPILING   -> Pool: 17 (17 v. FV-2)
-  - NEW SPRITE TYPE                    |   - REGISTERING -> Pool: 19 (17 v. FV)
-  - SPRITE CONDUIT                     |   - DECOMPILING -> Pool: 17 (10 v. FV-2)
+  - HYBRID SPRITES                     |   - COMPILING   -> Pool: 18 (17 v. FV-2)
+  - NEW SPRITE TYPE                    |   - REGISTERING -> Pool: 20 (17 v. FV)
+  - SPRITE CONDUIT                     |   - DECOMPILING -> Pool: 18 (10 v. FV-2)
   - SPRITE SYMBIOSIS                   |
   - LIVING NETWORK                     |
   - TRANSCENDENT NETWORK               |
@@ -42,25 +42,25 @@
 
 
 [ DRONE_COMMAND_ARRAY (COL 1) ]        | [ DRONE_COMMAND_ARRAY (COL 2) ]
-- MCT GNAT                             | - SHIAWASE BUTLER
-  HAN 3/3 ACC 4/4                      |   HAN 4/5 ACC 5/5
-  INT 10 SPD 30 BOD 0                  |   INT 5 SPD 8 BOD 4(4/5)
-  ARM 0  PIL 2  SEN 1 [2]              |   PIL 2(7) SEN 3 [4]  ARM 0(10)
+- MCT GNAT                             | - FB SKY COMMANDER
+  HAN 3/3 ACC 4/4                      |   HAN 4/4 ACC 20/20
+  INT 10 SPD 30 BOD 0                  |   INT 30 SPD 190 BOD 4
+  ARM 0  PIL 2  SEN 1 [2]              |   ARM 2  PIL 4   SEN 5 [9]
                                        |     > Anti-theft system (Rating 1)
-- SHIAWASE BUTLER                      |     > Integrated Cyberarm
-  HAN 4/5 ACC 5/5                      |     > Integrated Cyberarm
-  INT 5 SPD 8 BOD 4(6/7)               |     > Realistic Features 1
-  PIL 2(7) SEN 3 [7]  ARM 0(10)        |     > Satellite Link
-    > Anti-theft system (Rating 1)     |     > Retrans Unit [+1]
-    > Sec Propulsion (Winged)          |     > Retractable Skates
-    > Incr Struct Integrity 2          |     > Retractable Skates
-    > Drone rack (Small)               |     > Integrated Matrix Device Dock
-    > Integrated Cyberarm              |
-    > Integrated Cyberarm              |
-    > Wrist shield [+4]                |
-    > Realistic Features 1             |
-    > Enhanced Sensors 3               |
-    > Retractable Skates               |
+- SHIAWASE BUTLER                      |     > RAM Plating 4
+  HAN 4/5 ACC 5/5                      |     > Enhanced Sensors 3
+  INT 5 SPD 8 BOD 4(6/7)               |     > ECM 6
+  PIL 2(7) SEN 3 [7]  ARM 0(10)        |     > Retrans Unit [+1]
+    > Anti-theft system (Rating 1)     |
+    > Sec Propulsion (Winged)          | - SHIAWASE BUTLER
+    > Incr Struct Integrity 2          |   HAN 4/5 ACC 5/5
+    > Drone rack (Small)               |   INT 5 SPD 8 BOD 4(4/5)
+    > Integrated Cyberarm              |   PIL 2(7) SEN 3 [4]  ARM 0(10)
+    > Integrated Cyberarm              |     > Anti-theft system (Rating 1)
+    > Wrist shield [+4]                |     > Integrated Cyberarm
+    > Realistic Features 1             |     > Integrated Cyberarm
+    > Enhanced Sensors 3               |     > Realistic Features 1
+    > Retractable Skates               |     > Satellite Link
     > Retractable Skates               |
     > Hardpoint Standard [+2]          |
     > Weapon Mount Small               |
@@ -100,6 +100,11 @@
   ATK 00 SLZ 00 DPR 06 FWL 05          |
   > Satellite link                     |
   > Mapsoft                            |
+  > Nexus Protocol                     |
+  > Thermal Mood Reading               |
+  > Smartsoft                          |
+  > Shopsoft                           |
+  > Swarm Rig                          |
   Opt ASDF: 00 00 08 09                |
   Def: FWLx2 (18)                      |
   Res: FWL (09)
@@ -126,10 +131,6 @@
   - EMULATOR                 (Basic)        // Run comm apps. Slots = Dev Rtg.
   - ENCRYPTION               (Basic)        // +2 Encrypt File
   - MOBILE MEDIC             (TacApp)       // +DR/2 to First Aid DP, or +1 to Medkit rating
-  - NEXUS PROTOCOL           (Basic)        // Upgrades hot-sim to UV for hitchhikers
-  - SHOPSOFT                 (Other)        // Drones, SW, Firearms, Armor, Demolitions, HW
-  - SWARM RIG (Basi)
-  - THERMAL MOOD READING     (Basic)        // +1 Edge: Judge Intentions
   - TOOLBOX                  (Basic)        // +1 Data Processing
   - VIRTUAL MACHINE          (Basic)        // +2 slots, +1 Matrix damage
   - FACIAL SCANNER           (Comm)         // Pair with public dbase to ID tgts
@@ -148,7 +149,6 @@
   - OVERCLOCK                (Hack)         // +2 dice (1 wild) to Matrix action.
   - SIGNAL SCRUBBER          (Hack)         // -2 Noise
   - TRACE                    (Hack)         // +1 Edge on Trace Icon; Sleaze.
-  - SMARTSOFT                (Rig)          // Share Target Lock with PAN Drones
 
 [ QUALITIES ]                          | [ PHYSICAL_EQUIPMENT_MANIFEST ]
   > NATURAL HACKER                     |   - RESONANCE FOCUS (R4)
@@ -161,9 +161,7 @@
   > SENSOR UPGRADE                     |   - BROACH OF THE SEELIE COURT (+2 POWER FOCUS)
                                        |   - "SMILE FOR THE CAMERA!" QUALITY (SHIAWASE) [+10]
                                        |   - SECURETECH INVISI-SHIELD ARMOR [+2]
-                                       |   - RFID SOFTWARE TAGS x10
-                                       |   - LASER JACK x10
-                                       |   - CODING FACILITY
+                                       |   - AMALGAM CESTAS
 
 [ COMBAT_WEAPONS_INVENTORY ]
   - RED FOX ARRAY (3X LINK)    [10P/11P/12P | 21/23/23/16/—] (SS/SA/BF, 30c) [MAA Mounted]
@@ -200,15 +198,22 @@
 
   -- NEW ORLEANS (NOLA) --
     - INDOMITABLE WILL     River People Sysop             C:3 L:3 F:0
-    - ROANOKE              Ecological Activist            C:3 L:3 F:0
+    - ROANOKE              Ecological Activist            C:3 L:3 F:1
     - PIOTR KROLIK         Vory Borjevik                  C:4 L:1 F:0
-    - LE TIGRE             Epoch Model                    C:5 L:1 F:0
+    - LE TIGRE             Epoch Model                    C:5 L:2 F:1
     - DOMINIQUE AUGUSTIN   Wolverine Security             C:4 L:1 F:1
     - DANIEL FORTUNE       NOLA                           C:3 L:1 F:0
-    - RENÉE MARTIN         League of Laveau Community ... C:4 L:2 F:0
+    - RENÉE MARTIN         League of Laveau Liaison       C:4 L:2 F:1
     - FERNAND ANATO        Kozlowski Capo                 C:1 L:1 F:0
     - MONSIEUR JOHNSON     Johnson                        C:5 L:2 F:0
     - ALOYSIUS SPRINGIN... Sound of Silence Music Shop... C:3 L:2 F:0
+    - JOLENE PRICE         Riverboat Alliance Leader      C:7 L:2 F:0
+    - COFFIN GIRLS         Independent Courtesans Group   C:3 L:4 F:1
+    - CEDAR                Talismonger                    C:3 L:1 F:0
+    - DETECTIVE REMY LE... Detective                      C:3 L:2 F:0
+    - CLAUDETTE LAURIER    Order of the Golden Dawn Li... C:5 L:1 F:0
+    - LEAGUE OF LAVEAU     Voodoo Organization            C:6 L:3 F:1
+    - ZOBOP                Voodoo Organization            C:6 L:3 F:1
 
   -- AMSTERDAM / UNL (AMS) --
     - THE FRISIAN          Crime Lord of the Dutch Pen... C:6 L:1 F:0
@@ -232,15 +237,18 @@
     - EBON ABIRASHUR       Leviathan Dragon               C:1 L:1 F:1
     - COL. DEBORAH KENT... Thunder Corps Fixer            C:5 L:1 F:1
     - POLYPHEMOUS 'PAUL... Background Actor               C:1 L:1 F:0
+    - COL. TREYLOR         Thunder Corps Fixer            C:3 L:1 F:1
 
   -- GENERAL / MATRIX / OTHER (GEN) --
     - WHITE JACKALOPE      Emergent Lifeform              C:2 L:1 F:0
     - QUEEN BRANE          Seelie Queen                   C:12 L:1 F:0
 
 [ REGISTERED_IDENTITIES ]
-  - SIN: Yuriko Star                    [Rating 2]
+  - SIN: Yuriko Star                    [Rating 6]
   - LIC: Drone                          [ROUGH_MATCH]
   - LIC: Firearms                       [ROUGH_MATCH]
+  - LIC: Drone                          [SECOND_LIFE]
+  - LIC: Firearms                       [SECOND_LIFE]
 
 [ CAREER_LOG ]
   DATE         | KARMA |    NUYEN | EVENT
@@ -299,6 +307,16 @@
   2026-07-15   |    -8 |        0 | CMP 2083-04: Learning Programs
   2026-07-21   |    +7 |    +6000 | CMP 2083-05 | Precious Cargo
   2026-07-21   |    +1 |    -2500 | CMP 2083-05: Working for the People, Souvenirs
+  2026-07-24   |   +10 |    +9000 | SRM 2083-12 | When You're Smi... (GM: JaGator)
+  2026-07-24   |    +1 |    -2000 | SRM 2083-12: Working for the People
+  2026-07-30   |    +6 |    +7450 | SRM 2083-17 |... (GM: Raven2049 (GenCon 2026))
+  2026-07-30   |    +1 |    -2000 | SRM 2083-17: Working for the People
+  2026-08-01   |    +8 |    +9500 | CMP 2... (GM: (GenCon 2026 Saturday 1pm slot))
+  2026-08-01   |    +1 |    -2000 | CMP 2083-15: Working for the People
+  2026-08-01   |    +7 |   +10000 | SRM... (GM: August (GenCon 2026 Sat 6pm slot))
+  2026-08-01   |    +1 |    -2000 | SRM 2083-18: Working for the People
+  2026-08-01   |    +8 |    +7000 | SRM 2083-2... (GM: (GenCon 2026 Sat 1pm slot))
+  2026-08-01   |    +1 |    -2000 | SRM 2083-20: Working for the People
   ---------------------------------------------------------------------------
 
 ___________________________________________________________________________

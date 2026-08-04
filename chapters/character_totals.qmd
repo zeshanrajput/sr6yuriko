@@ -1,0 +1,70 @@
+# Character Career Totals & Active Sprites
+
+This dashboard displays Reiko's live career totals, regional faction reputation breakdown, active registered sprite status, and contact registry sync.
+
+---
+
+## Current Totals
+
+* **Lifetime Karma:** `{python} Lifetime_Karma`
+* **Available Karma:** `{python} Karma`
+* **Total Nuyen:** ¥`{python} f"{Nuyen:,}"`
+* **Submersion Grade:** `{python} Submersion_Grade`
+* **Resonance:** `{python} Resonance`
+* **Current Heat:** `{python} Heat`
+* **Total Reputation:** `{python} sum(Reputation.values())`
+  * **Seattle (SEA):** +`{python} Reputation.get('Seattle', 0)`
+  * **NOLA:** +`{python} Reputation.get('NOLA', 0)`
+  * **Vory:** +`{python} Reputation.get('Vory', 0)`
+  * **Kentucky:** +`{python} Reputation.get('Kentucky', 0)`
+  * **Mercenary / Desert Wars (DW):** +`{python} Reputation.get('Mercenary', 0) + Reputation.get('DW', 0)`
+  * **Amsterdam / UNL:** +`{python} Reputation.get('Amsterdam', 0) + Reputation.get('UNL', 0)`
+  * **Southeast Asia (HK):** +`{python} Reputation.get('Southeast Asia', 0)`
+
+---
+
+## Active Sprite Stable
+
+```{python}
+#| echo: false
+#| output: asis
+active = get_active_sprites()
+print("| Sprite Name | Rating & Type | Registered During | Full Missions Active | Status |")
+print("| ----------- | --- | --- | --- | --- |")
+for s in active:
+    if s.get("is_ally"):
+        print(f"| {s['name']} | R{s['level']} {s['type']} | Character Creation | Permanent | Active (Ally) |")
+    else:
+        elapsed = Current_Mission - s['registered_mission']
+        rem = 3 - elapsed
+        status_str = f"Active ({rem} mission{'s' if rem != 1 else ''} remaining)"
+        m_name = s.get('registered_mission_name', f"Mission {s['registered_mission']}")
+        print(f"| {s['name']} | R{s['level']} {s['type']} ({s['details']}) | {m_name} | {elapsed} / 3 | {status_str} |")
+```
+
+```{python}
+#| echo: false
+#| include: false
+import yaml, os
+if Contacts:
+    yaml_path = os.path.abspath("yuriko_master.yaml")
+    if os.path.exists(yaml_path):
+        with open(yaml_path, "r", encoding="utf-8") as f:
+            mdata = yaml.safe_load(f) or {}
+        clist = []
+        for name, c in Contacts.items():
+            clist.append({
+                "name": name,
+                "connection": c["connection"],
+                "loyalty": c["loyalty"],
+                "favors": c["favors"],
+                "type": c["type"],
+                "archetype": c["type"],
+                "region": c.get("region", "GEN"),
+                "description": c["notes"]
+            })
+
+        mdata["contacts"] = clist
+        with open(yaml_path, "w", encoding="utf-8") as f:
+            yaml.dump(mdata, f, sort_keys=False, allow_unicode=True, indent=2)
+```

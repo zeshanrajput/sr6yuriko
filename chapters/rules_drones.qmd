@@ -1,0 +1,135 @@
+# Drones & Rigging Protocols
+
+```{python}
+#| echo: false
+#| include: false
+import sys
+import os
+sys.path.extend([os.path.abspath("scripts"), os.path.abspath("../scripts")])
+from char_engine import get_character_stats, get_living_persona, get_resonance_focus_rating
+
+stats = get_character_stats()
+lp = get_living_persona()
+
+RESONANCE = stats["Resonance"]
+ACTIVE_A = lp["active"]["A"]
+ACTIVE_S = lp["active"]["S"]
+ACTIVE_D = lp["active"]["D"]
+ACTIVE_F = lp["active"]["F"]
+
+SPRITE_SYMBIOSIS = 4
+ALLY_SPRITE_TEAMWORK = 4
+
+BUTLER_BOD_BASE = 4
+BUTLER_BOD_AUG = 6
+BUTLER_BOD_INHABITED = 7
+BUTLER_ARM_BASE = 0
+BUTLER_ARM_AUG = 10
+BUTLER_PLT_OVERRIDE = 7
+BUTLER_SEN_BASE = 3
+BUTLER_SEN_AUG = 7
+
+MAA_BOD_BASE = 10
+MAA_BOD_AUG = 15
+MAA_BOD_INHABITED = 16
+MAA_ARM_BASE = 8
+MAA_ARM_AUG = 17
+MAA_PLT_OVERRIDE = 7
+MAA_SEN_BASE = 2
+MAA_SEN_AUG = 6
+
+GNAT_SEN_BASE = 1
+GNAT_SEN_AUG = 2
+```
+
+This reference details Reiko's active drone profiles, drone action pools, AI attribute mapping for Jumped-In vs Remote operation, and Sensor Lock mechanics.
+
+---
+
+## Drone Stat Blocks & Augmented Profiles
+
+Stat blocks list active drones in official **SR6 Vehicle/Drone Stat Block Order** (Handling, Acceleration, Speed, Body, Armor, Pilot, Sensor).
+
+### 1. Shiawase Butler (Anthrodrone)
+
+| SR6 Attribute | Rating / Value | Applied Modifiers Math & Notes |
+| :--- | :---: | :--- |
+| **Handling (HND)** | **4 / 5** (Ground) \| **5** (Rotor) | On/Off-Road Ground Handling / Rotor Assembly Handling |
+| **Acceleration (ACC)** | **5 / 5** (Ground) \| **10** (Rotor) | On/Off-Road Ground Accel / Rotor Assembly Accel |
+| **Top Speed (SPD) / Interval** | **8 / 5m** (Ground) \| **120 / 20m** (Rotor) | Ground Speed & Interval / Rotor Flight Speed & Interval |
+| **Body (BOD)** | **`{python} BUTLER_BOD_AUG` (`{python} BUTLER_BOD_INHABITED`)** | Base 4 + Structural (+2) \| **`{python} BUTLER_BOD_INHABITED`** when inhabited (Home Device Tuning +1 Body) |
+| **Armor (ARM)** | **`{python} BUTLER_ARM_AUG`** | Base 0 + SkinShield (+2) + RACS (+2) + InvisiShield (+2) + Wrist Shield (+4) |
+| **Pilot (PLT)** | **2 (`{python} BUTLER_PLT_OVERRIDE`)** | Base 2 *(Designer +1 = 3)* \| **`{python} BUTLER_PLT_OVERRIDE`** when inhabited (Sprite Power *Override* = RES `{python} RESONANCE`) |
+| **Sensor (SEN)** | **`{python} BUTLER_SEN_AUG`** | Base 3 + Enhanced Sensors 3 (+3) + Network Sensor Upgrade (+1) |
+
+### 2. Shiawase Man-at-Arms (Anthrodrone)
+
+| SR6 Attribute | Rating / Value | Applied Modifiers Math & Notes |
+| :--- | :---: | :--- |
+| **Handling (HND)** | **3 / 3** (Ground) \| **5** (Rotor) | On/Off-Road Ground Handling / Rotor Assembly Handling |
+| **Acceleration (ACC)** | **5 / 5** (Ground) \| **10** (Rotor) | On/Off-Road Ground Accel / Rotor Assembly Accel |
+| **Top Speed (SPD) / Interval** | **10 / 5m** (Ground) \| **120 / 20m** (Rotor) | Ground Speed & Interval / Rotor Flight Speed & Interval |
+| **Body (BOD)** | **`{python} MAA_BOD_AUG` (`{python} MAA_BOD_INHABITED`)** | Base 10 + Structural (+5) \| **`{python} MAA_BOD_INHABITED`** when inhabited (Home Device Tuning +1 Body) |
+| **Armor (ARM)** | **`{python} MAA_ARM_AUG`** | Base 8 + Armor Increase 5 (+5) + Wrist Shield (+4) |
+| **Pilot (PLT)** | **2 (`{python} MAA_PLT_OVERRIDE`)** | Base 2 *(Designer +1 = 3)* \| **`{python} MAA_PLT_OVERRIDE`** when inhabited (Sprite Power *Override* = RES `{python} RESONANCE`) |
+| **Sensor (SEN)** | **`{python} MAA_SEN_AUG`** | Base 2 + Enhanced Sensors 3 (+3) + Network Sensor Upgrade (+1) |
+
+### 3. MCT Gnat (Microdrone)
+
+| SR6 Attribute | Rating / Value | Applied Modifiers Math & Notes |
+| :--- | :---: | :--- |
+| **Handling (HND)** | **3 / 3** | Base On/Off-Road Handling |
+| **Acceleration (ACC)** | **4 / 4** | Base On/Off-Road Acceleration |
+| **Top Speed (SPD) / Interval** | **30 / 10m** | Base Top Speed / Interval |
+| **Body (BOD)** | **0** | Microdrone chassis |
+| **Armor (ARM)** | **0** | Unarmored |
+| **Pilot (PLT)** | **2** | Base 2 Pilot Autosoft |
+| **Sensor (SEN)** | **`{python} GNAT_SEN_AUG`** | Base 1 + Network Sensor Upgrade (+1) |
+
+### Retractable Skates Alternate Movement
+Both Shiawase anthrodrones feature **Retractable Skates** [Double Clutch]:
+* **Activation**: Extending or retracting skates takes a **Minor Action**.
+* **Movement Rules**: Uses metahuman movement rules: **Walking 10m/rnd**, **Sprinting 30m/rnd**, **+2m per net hit** on Sprinting tests.
+
+---
+
+## Standardized Drone Action Pools
+
+| Drone Action / Test | Base Skill & Attributes | Applied Modifiers Math | Final Dice Pool |
+| :--- | :---: | :--- | :---: |
+| **Drone Piloting / Maneuvering** | Maneuvering (7) + Sleaze (`{python} ACTIVE_S`) = **`{python} 7 + ACTIVE_S`d6** | Base (`{python} 7 + ACTIVE_S`) + Sprite Symbiosis (+`{python} SPRITE_SYMBIOSIS`) | **`{python} 7 + ACTIVE_S + SPRITE_SYMBIOSIS`d6** |
+| **Drone Weapon Attack (Gunnery)** | Targeting (7) + Data Processing (`{python} ACTIVE_D`) = **`{python} 7 + ACTIVE_D`d6** | Base (`{python} 7 + ACTIVE_D`) + Sprite Symbiosis (+`{python} SPRITE_SYMBIOSIS`) | **`{python} 7 + ACTIVE_D + SPRITE_SYMBIOSIS`d6** |
+| **Drone Evasion (Defense Test)** | Evasion (7) + Sleaze (`{python} ACTIVE_S`) = **`{python} 7 + ACTIVE_S`d6** | Base (`{python} 7 + ACTIVE_S`) + Sprite Symbiosis (+`{python} SPRITE_SYMBIOSIS`) | **`{python} 7 + ACTIVE_S + SPRITE_SYMBIOSIS`d6** |
+| **Drone Perception Test** | Clearsight (7) + Sensor (6) = **13d6** | Base (13) + Sensor Upgrade (+1) | **14d6** |
+| **Drone Stealth Test** | Stealth (7) + Data Processing (`{python} ACTIVE_D`) = **`{python} 7 + ACTIVE_D`d6** | Base (`{python} 7 + ACTIVE_D`) + Tactical Soft Sneak-Sneak (+2) | **`{python} 7 + ACTIVE_D + 2`d6** |
+
+---
+
+## Controlling Drones Protocols & Rules
+
+AI characters with **Pilot Origins** [HnS p. 119] operate drones using two distinct methods:
+
+### 1. Jumped-In Operation (Rigging)
+* **Control Rig Bonus**: Pilot Origins grants control rig benefits [HnS p. 119].
+* **Mental Attribute Substitution**: Jumped-in rigger uses mental attributes instead of physical ones [SR6 Core p. 198]:
+  * Piloting: **Piloting + Intuition**
+  * Gunnery: **Firearms + Logic**
+  * Defense: **Intuition + Willpower**
+
+### 2. Remote Control / Un-jumped Operation
+* **Matrix Equivalent Attributes**: When controlling drones remotely without jumping in, physical attributes map to ASDF [HnS p. 118]:
+  * Body → Firewall (`{python} ACTIVE_F`)
+  * Agility → Data Processing (`{python} ACTIVE_D`)
+  * Reaction → Sleaze (`{python} ACTIVE_S`)
+  * Strength → Attack (`{python} ACTIVE_A`)
+* **Remote Tests**:
+  * Piloting: **Piloting + Sleaze** (`{python} ACTIVE_S`)
+  * Gunnery: **Firearms + Data Processing** (`{python} ACTIVE_D`)
+
+---
+
+## Sensor Locks
+
+* **Establishing**: Electronics + Logic (or Sensor + Clearsight) vs. Reaction + Piloting (or Pilot + Evasion) (Major Action).
+* **Locked On Status**: Target cannot spend Edge while defending against attacks originating from the vehicle that established lock. Lasts until Cover IV is achieved or ended by Break Sensor Lock.
+* **Break Sensor Lock**: Reaction + Piloting (or Intuition + Reaction) vs. Electronics + Intuition (or Clearsight + Sensor) (Major Action).

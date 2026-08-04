@@ -61,8 +61,14 @@ Use the sidebar or the indexes below to traverse the sub-grids of this portfolio
 * **[Identity Core](chapters/identity_core.qmd)**: Detailed background history and lore.
 * **[Character Build (Point Buy)](chapters/character_build_point_buy.qmd)**: The character build process description (Point Buy).
 * **[Character Sheet](chapters/character_sheet.qmd)**: The dynamically compiled Shadowrun character sheet.
-* **[Rules & Downtime Protocols](chapters/rules_and_downtime.qmd)**: Compiling/registering formulas, cheat sheets, and active network configurations.
-* **[Career Log](chapters/character_log.qmd)**: Full database of past runs, GMs, nuyen payouts, and Karma adjustments.
+* **[Rules & Downtime Protocols](chapters/rules_and_downtime.qmd)**: Overview landing hub and domain protocols directory.
+  * **[Matrix & Network Protocols](chapters/rules_matrix.qmd)**: ASDF attributes, action pools, decking cheat sheet, remote host architecture.
+  * **[Sprites & Resonance Protocols](chapters/rules_sprites.qmd)**: Complex forms, compiling/registering downtime formulas, focus fading math.
+  * **[Drones & Rigging Protocols](chapters/rules_drones.qmd)**: Drone stat blocks, drone action pools, rigger/remote attribute mapping, sensor locks.
+  * **[Weapons & Tactical Protocols](chapters/rules_combat.qmd)**: Weapon attack tables, link-fired arrays, laser ammo, Krime splash table.
+* **[Career Totals & Active Sprites](chapters/character_totals.qmd)**: Live dashboard of Karma, Nuyen, Heat, Submersion grade, regional Reputation, and Active Sprite stable.
+* **[Session Chronicles](chapters/character_log.qmd)**: Full database of past campaign runs, GMs, nuyen payouts, and Karma adjustments.
+* **[Historical Purchases](chapters/character_purchases.qmd)**: Itemized gear, matrix software, autosofts, drone mods, and SIN purchase ledgers.
 * **[Twenty Questions](chapters/twenty_questions.qmd)**: Standard character questionnaire defining personality, quirks, and ethics.
 * **[A Drone in Every Port](chapters/dronomancy.md)**: A DI-to-DI guide on remote drone operation, casemodding, and rigging mechanics.
 
@@ -94,6 +100,7 @@ Active campaign stories written during play:
 * **[Chapter 19: Legacy Code](chapters/19 Legacy Code.md)**
 * **[Chapter 20: The Price of Silk](chapters/20 The Price of Silk.md)**
 * **[Chapter 21: ~](chapters/21 ~.md)**
+* **[Chapter 22: C Sharp](chapters/22 C Sharp.md)**
 
 ### 4. Reference & Specifications
 Design rules, faction dossiers, and visual anchor specifications:

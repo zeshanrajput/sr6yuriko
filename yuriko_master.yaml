@@ -15,10 +15,10 @@ attributes:
   intuition: 2
   charisma: 4
   edge: 4
-  resonance: 7
+  resonance: 8
 living_persona:
   asdf_bonuses:
-    firewall: 2
+    firewall: 3
     sleaze: 1
     data_processing: 1
     attack: 3
@@ -165,22 +165,26 @@ drones:
   - Increased Sensors 3
   - Retractable Skates
   - Satellite Link
-- name: Shiawase Butler (Seattle Retrans Relay)
-  ref: shiawasebdbutler_seattle
-  body: 4
+- name: Federated-Boeing Sky Commander (Seattle Retrans Relay)
+  ref: federatedboeingskycommander_seattle
+  body: 3
   armor: 0
-  pilot: 2
+  pilot: 3
   sensor: 3
-  speed: 8
+  speed: 120
   handling_on: 4
-  handling_off: 5
-  accel_on: 5
-  accel_off: 5
-  speed_interval_on: 5
-  page: DC 116
+  handling_off: 4
+  accel_on: 10
+  accel_off: 10
+  speed_interval_on: 20
+  page: 6WB 288 / DC 122
   modifications:
   - Retrans Unit
   - Satellite Link
+  - RAM Plating 4
+  - Enhanced Sensors 3
+  - ECM 6
+  - Integrated Matrix Device Dock
   - M-TOC II Repository & Software Tags
   - Rating 2 Framework Host Repository (Scale 1 Micro, Grade 2 Default)
   framework_host:
@@ -284,18 +288,20 @@ weapons:
   - name: Dagger of the Sacred Rose (+1 Weapon Focus)
     damage: 2P
     attack_rating: 9/1/-/-/-
-  - name: Krime Gloves (Stun)
+  - name: Amalgam Cestas (Stun)
     damage: 4S(e)
     attack_rating: 5/-/-/-/-
     personalized_grip: true
     accessories:
     - Personalized Grip
-  - name: Krime Gloves (Phys)
+    notes: Amalgam Tech Cestas; overrides magical immunity to normal weapons
+  - name: Amalgam Cestas (Phys)
     damage: 3P
     attack_rating: 6/-/-/-/-
     personalized_grip: true
     accessories:
     - Personalized Grip
+    notes: Amalgam Tech Cestas; overrides magical immunity to normal weapons
 matrix_devices:
   commlinks:
   - name: Hermes Ikon
@@ -354,11 +360,12 @@ contacts:
 - name: Roanoke
   connection: 3
   loyalty: 3
-  favors: 0
+  favors: 1
   type: Ecological Activist
   archetype: Ecological Activist
   region: NOLA
-  description: Character Creation
+  description: Character Creation | SRM 2083-17 Haute Blooded | SRM 2083-20 The Fallacy
+    of Plans
 - name: Piotr Krolik
   connection: 4
   loyalty: 1
@@ -369,12 +376,13 @@ contacts:
   description: SMH 2083-02 EggHunt at the Jackalope Ranch
 - name: Le Tigre
   connection: 5
-  loyalty: 1
-  favors: 0
+  loyalty: 2
+  favors: 1
   type: Epoch Model
   archetype: Epoch Model
   region: NOLA
-  description: SMH 2083-02 EggHunt at the Jackalope Ranch
+  description: SMH 2083-02 EggHunt at the Jackalope Ranch | SRM 2083-17 Haute Blooded
+    | CMP 2083-15 | By Land, Sea, and Hair
 - name: White Jackalope
   connection: 2
   loyalty: 1
@@ -410,11 +418,12 @@ contacts:
 - name: Renée Martin
   connection: 4
   loyalty: 2
-  favors: 0
-  type: League of Laveau Community Outreach
-  archetype: League of Laveau Community Outreach
+  favors: 1
+  type: League of Laveau Liaison
+  archetype: League of Laveau Liaison
   region: NOLA
-  description: 2083-03 Unofficial Dunkelzahn Fan Club
+  description: 2083-03 Unofficial Dunkelzahn Fan Club | SRM 2083-20 The Fallacy of
+    Plans
 - name: The Frisian
   connection: 6
   loyalty: 1
@@ -712,3 +721,67 @@ contacts:
   archetype: Sound of Silence Music Shop Owner
   region: NOLA
   description: SRM 2083-12 When You're Smiling
+- name: Jolene Price
+  connection: 7
+  loyalty: 2
+  favors: 0
+  type: Riverboat Alliance Leader
+  archetype: Riverboat Alliance Leader
+  region: NOLA
+  description: SRM 2083-17 Haute Blooded
+- name: Coffin Girls
+  connection: 3
+  loyalty: 4
+  favors: 1
+  type: Independent Courtesans Group
+  archetype: Independent Courtesans Group
+  region: NOLA
+  description: SRM 2083-18 Some Kind of Voodoo?
+- name: Cedar
+  connection: 3
+  loyalty: 1
+  favors: 0
+  type: Talismonger
+  archetype: Talismonger
+  region: NOLA
+  description: SRM 2083-20 The Fallacy of Plans
+- name: Detective Remy LeBlanc
+  connection: 3
+  loyalty: 2
+  favors: 0
+  type: Detective
+  archetype: Detective
+  region: NOLA
+  description: SRM 2083-20 The Fallacy of Plans
+- name: Claudette Laurier
+  connection: 5
+  loyalty: 1
+  favors: 0
+  type: Order of the Golden Dawn Librarian
+  archetype: Order of the Golden Dawn Librarian
+  region: NOLA
+  description: SRM 2083-20 The Fallacy of Plans
+- name: League of Laveau
+  connection: 6
+  loyalty: 3
+  favors: 1
+  type: Voodoo Organization
+  archetype: Voodoo Organization
+  region: NOLA
+  description: SRM 2083-18 Some Kind of Voodoo?
+- name: Zobop
+  connection: 6
+  loyalty: 3
+  favors: 1
+  type: Voodoo Organization
+  archetype: Voodoo Organization
+  region: NOLA
+  description: SRM 2083-18 Some Kind of Voodoo?
+- name: Col. Treylor
+  connection: 3
+  loyalty: 1
+  favors: 1
+  type: Thunder Corps Fixer
+  archetype: Thunder Corps Fixer
+  region: DW
+  description: CMP 2083-15 | By Land, Sea, and Hair

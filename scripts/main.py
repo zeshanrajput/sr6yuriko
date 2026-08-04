@@ -2278,7 +2278,7 @@ def post_process_json(raw_json_path, log_totals, out_json_path):
                 "primary": True
             },
             {
-                "name": "Krime Gloves (Stun)",
+                "name": "Amalgam Cestas (Stun)",
                 "type": "Unarmed",
                 "subtype": "Unarmed",
                 "skill": "Close Combat",
@@ -2290,11 +2290,11 @@ def post_process_json(raw_json_path, log_totals, out_json_path):
                 "wifi": [],
                 "accessories": [],
                 "page": "Double Clutch",
-                "description": "Equipped on Shiawase Butler. Personalized Grip (+2 AR).",
+                "description": "Equipped on Shiawase Butler. Personalized Grip (+2 AR). Amalgam Tech Cestas; overrides magical immunity to normal weapons.",
                 "primary": False
             },
             {
-                "name": "Krime Gloves (Phys)",
+                "name": "Amalgam Cestas (Phys)",
                 "type": "Unarmed",
                 "subtype": "Unarmed",
                 "skill": "Close Combat",
@@ -2306,7 +2306,7 @@ def post_process_json(raw_json_path, log_totals, out_json_path):
                 "wifi": [],
                 "accessories": [],
                 "page": "Double Clutch",
-                "description": "Equipped on Shiawase Butler. Personalized Grip (+2 AR).",
+                "description": "Equipped on Shiawase Butler. Personalized Grip (+2 AR). Amalgam Tech Cestas; overrides magical immunity to normal weapons.",
                 "primary": False
             },
             {
@@ -2584,10 +2584,7 @@ def post_process_xml(raw_xml_path, log_totals, out_xml_path):
                 po_el = ET.Element("quality", {"lang": "en", "ref": "pilot_origins"})
                 qualities_el.append(po_el)
 
-        # 4. Licenses: Rating 2 (Genesis FakeRating enum value for Rating 2 is 'ROUGH_MATCH')
-        for lic in root.findall(".//licenses/licenses"):
-            if lic.get("rating") in ["2", None] or lic.get("rating") == "2":
-                lic.set("rating", "ROUGH_MATCH")
+
 
         # 4a. Remove 'emulate' complex form
         cf_container = root.find("complexforms")
@@ -2718,49 +2715,11 @@ def post_process_xml(raw_xml_path, log_totals, out_xml_path):
             if normalize_cname(c.get("name")) not in valid_keys:
                 contacts_el.remove(c)
 
-        # 4c. Sync ALL sessions into XML (<sessions> and <sessionlogs>)
-        sessions_el = root.find("sessions")
-        if sessions_el is None:
-            sessions_el = ET.Element("sessions")
-            root.append(sessions_el)
-        else:
-            sessions_el.clear()
-
-        sessionlogs_el = root.find("sessionlogs")
-        if sessionlogs_el is None:
-            sessionlogs_el = ET.Element("sessionlogs")
-            root.append(sessionlogs_el)
-        else:
-            sessionlogs_el.clear()
-
-        for s in log_totals.get("Session_Logs", []):
-            s_el = ET.Element("session", {
-                "name": s.get("title", ""),
-                "code": s.get("code", ""),
-                "date": s.get("date", ""),
-                "gm": s.get("gm", ""),
-                "karma": str(s.get("karma", 0)),
-                "nuyen": str(s.get("nuyen", 0))
-            })
-            if s.get("summary"):
-                sum_el = ET.Element("summary")
-                sum_el.text = s["summary"]
-                s_el.append(sum_el)
-            sessions_el.append(s_el)
-
-            slog_el = ET.Element("sessionlog", {
-                "name": s.get("title", ""),
-                "code": s.get("code", ""),
-                "date": s.get("date", ""),
-                "gm": s.get("gm", ""),
-                "karma": str(s.get("karma", 0)),
-                "nuyen": str(s.get("nuyen", 0))
-            })
-            if s.get("summary"):
-                sum_el = ET.Element("summary")
-                sum_el.text = s["summary"]
-                slog_el.append(sum_el)
-            sessionlogs_el.append(slog_el)
+        # 4c. Remove non-Genesis elements (<sessions> and <sessionlogs>) to ensure strict Genesis schema compliance
+        for tag_to_remove in ["sessions", "sessionlogs"]:
+            el = root.find(tag_to_remove)
+            if el is not None:
+                root.remove(el)
 
         # 5. Items: M-TOC Target Artist, Engineering Kit
         items_el = root.find("items")
@@ -2835,6 +2794,10 @@ def main():
         
     out_json = os.path.join(out_dir, "Yuriko Star.json")
     out_xml = os.path.join(out_dir, "Yuriko Star.xml")
+    out_takahashi = os.path.join(out_dir, "r31k0_Takahashi.txt")
+    
+    with open(out_takahashi, "w", encoding="utf-8") as tf:
+        tf.write(sheet_text)
     
     post_process_json(raw_json, log_totals, out_json)
     post_process_xml(raw_xml, log_totals, out_xml)

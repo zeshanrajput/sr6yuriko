@@ -1,0 +1,105 @@
+# Sprites & Resonance Protocols
+
+```{python}
+#| echo: false
+#| include: false
+import sys
+import os
+sys.path.extend([os.path.abspath("scripts"), os.path.abspath("../scripts")])
+from char_engine import get_character_stats, get_resonance_focus_rating
+from log_engine import get_log_totals
+
+stats = get_character_stats()
+log_totals = get_log_totals()
+
+RESONANCE = stats["Resonance"]
+WILLPOWER = stats["Willpower"]
+CHARISMA = stats["Charisma"]
+LOGIC = stats["Logic"]
+TASKING = stats["Tasking"]
+REGISTERING = TASKING + 2
+RESONANCE_FOCUS = get_resonance_focus_rating()
+SUBMERSION_GRADE = log_totals["Submersion_Grade"]
+
+SPRITE_LEVEL = 7
+SPRITE_SYMBIOSIS = 4
+
+compiling_pool = TASKING + RESONANCE + RESONANCE_FOCUS
+compiling_hits = compiling_pool // 4
+sprite_def_pool = SPRITE_LEVEL * 2
+sprite_def_hits = sprite_def_pool // 4
+net_compiling_hits = compiling_hits - sprite_def_hits
+compiling_fade_fv = sprite_def_hits
+compiling_fade_mitigated = max(0, compiling_fade_fv - 2)
+fade_res_pool = WILLPOWER + CHARISMA + SUBMERSION_GRADE
+fade_res_hits = fade_res_pool // 4
+
+registering_pool = REGISTERING + RESONANCE + RESONANCE_FOCUS
+registering_hits = registering_pool // 4
+registering_fade_fv = sprite_def_hits * 2
+net_registering_hits = registering_hits - sprite_def_hits
+total_services = net_compiling_hits + 1 + net_registering_hits
+registering_damage = max(0, registering_fade_fv - fade_res_hits)
+
+focus_fade_fv = RESONANCE_FOCUS // 2
+focus_fade_res_pool = WILLPOWER + LOGIC
+focus_fade_res_hits = focus_fade_res_pool // 4
+focus_fade_damage = max(0, focus_fade_fv - focus_fade_res_hits)
+```
+
+This reference details Reiko's Complex Forms, sprite compiling and registering downtime protocols, and Resonance Focus fading calculations.
+
+---
+
+## Complex Forms
+
+* **Sprite Symbiosis Bonus**: +`{python} SPRITE_SYMBIOSIS`
+* **Resonance Focus Bonus**: +`{python} RESONANCE_FOCUS` (Fading Value: 2 for activation)
+
+| Complex Form | Status / Session |
+| :--- | :--- |
+| **Technoregeneration** | Character Creation |
+| **Cleaner** | Character Creation |
+| **Diffusion (Firewall)** | SRM 2081-17 |
+| **Puppeteer** | CMP 2083-16 |
+| **Threat Analyzer** | Pending |
+| **Smartgun Amplifier** | Pending |
+| **Enhance Autosofts** | Pending |
+| **Resonance Wires** | Pending |
+| **Cyber Spike** | Pending |
+| **Resonance Spike** | Pending |
+
+---
+
+## Registering Sprites{#registering-sprites}
+
+* **Minor Downtime Action**: Register up to 8 levels of sprites (up to Rating `{python} SPRITE_LEVEL` sprite).
+* **Schedule**: 1 per night's rest (7 hours registering, 3 hours restoration). Buying hits per SRMG p. 19.
+* **Standard Outcome**: Level `{python} SPRITE_LEVEL` Modular Sprite with `{python} total_services` services/powers for 3 missions.
+
+### 1. Compiling Phase
+
+* **Compiling Dice Pool**: Tasking (`{python} TASKING`) + RES (`{python} RESONANCE`) + Resonance Focus (`{python} RESONANCE_FOCUS`) = **`{python} compiling_pool`d6** → **`{python} compiling_hits` Bought Hits**.
+* **Sprite Defense Pool**: Level `{python} SPRITE_LEVEL` × 2 = **`{python} sprite_def_pool`d6** → **`{python} sprite_def_hits` Bought Hits**.
+* **Net Hits**: `{python} compiling_hits` - `{python} sprite_def_hits` = `{python} net_compiling_hits` net hit (**1 base service**).
+* **Technoshaman Stream Bonus**: +1 additional service on successful compiling. Total compiled services = **`{python} net_compiling_hits + 1` services/powers**.
+* **Fading Value (FV)**: Equal to sprite defense hits = **`{python} compiling_fade_fv` FV**.
+* **Technoshaman Mitigation**: Reduces compiling fade by 2 (`{python} compiling_fade_fv` - 2 = **`{python} compiling_fade_mitigated` FV**).
+* **Fading Resistance**: Willpower (`{python} WILLPOWER`) + Charisma (`{python} CHARISMA`) + Submersion Grade / Sprite Conduit (`{python} SUBMERSION_GRADE`) = **`{python} fade_res_pool`d6** → **`{python} fade_res_hits` Bought Hits**.
+* **Compiling Damage Taken**: `{python} compiling_fade_mitigated` FV - `{python} fade_res_hits` hits = **0 Damage**.
+
+### 2. Registering Phase
+
+* **Registering Dice Pool**: Registering (`{python} REGISTERING`) + RES (`{python} RESONANCE`) + RES Focus (`{python} RESONANCE_FOCUS`) = **`{python} registering_pool`d6** → **`{python} registering_hits` Bought Hits**.
+* **Sprite Defense Pool**: Level `{python} SPRITE_LEVEL` × 2 = **`{python} sprite_def_pool`d6** → **`{python} sprite_def_hits` Bought Hits**.
+* **Net Hits**: `{python} registering_hits` - `{python} sprite_def_hits` = **`{python} net_registering_hits` net hits** (`{python} net_registering_hits` registered services).
+* **Combined Total Services**: 2 (compiled) + `{python} net_registering_hits` (registered) = **`{python} total_services` total services/powers**.
+* **Fading Value (FV)**: Twice sprite defense hits (`{python} sprite_def_hits` × 2 = **`{python} registering_fade_fv` FV**).
+* **Fading Resistance**: Willpower (`{python} WILLPOWER`) + Charisma (`{python} CHARISMA`) + Submersion Grade (`{python} SUBMERSION_GRADE`) = **`{python} fade_res_pool`d6** → **`{python} fade_res_hits` Bought Hits**.
+* **Registering Damage Taken**: `{python} registering_fade_fv` FV - `{python} fade_res_hits` hits = **`{python} registering_damage` boxes of Stun damage**.
+
+### 3. Resonance Focus Standalone Fading
+
+* **Focus Fading FV**: Resonance Focus rating / 2 (`{python} RESONANCE_FOCUS` / 2 = **`{python} focus_fade_fv` FV**).
+* **Focus Fading Pool**: WIL (`{python} WILLPOWER`) + LOG (`{python} LOGIC`) = **`{python} focus_fade_res_pool`d6** → **`{python} focus_fade_res_hits` Bought Hits**.
+* **Damage Taken**: `{python} focus_fade_fv` FV - `{python} focus_fade_res_hits` hits = **`{python} focus_fade_damage` Damage**.

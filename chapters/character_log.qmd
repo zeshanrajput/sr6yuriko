@@ -110,13 +110,13 @@ def detect_region(name, type_name, region_param="AUTO"):
         return "HK"
     if "SEA " in full or "SEATTLE" in full or name in ["Brynne Taggart", "Whiskey", "Big Louie", "Duan Yuhai", "Xiong Giuyin", "Swango", "Toil", "Trubble", "Eddie Wei", "Julian Müntefering", "Ni Ni Xiaolu", "Bookie", "Trudy", "Saint James", "Jeanie Trudel", "Kingston", "Kirt Liger"]:
         return "SEA"
-    if "NOLA " in full or "NOLA" in full or name in ["Indomitable Will", "Roanoke", "Piotr Krolik", "Le Tigre", "Dominique Augustin", "Daniel Fortune", "Renée Martin", "Fernand Anato", "Monsieur Johnson", "Aloysius Springinsguth"]:
+    if "NOLA " in full or "New Orleans" in full or name in ["Indomitable Will", "Roanoke", "Piotr Krolik", "Le Tigre", "Dominique Augustin", "Daniel Fortune", "Renée Martin", "Fernand Anato", "Monsieur Johnson", "Aloysius Springinsguth", "Jolene Price", "Cedar", "Detective Remy LeBlanc", "Claudette Laurier", "Coffin Girls", "League of Laveau", "Zobop"]:
         return "NOLA"
     if "AMS " in full or "AMSTERDAM" in full or "DUTCH" in full or "PENOSE" in full or name in ["The Frisian", "Kiara Shaw", "Simon Andrews", "Squint", "Sigrún", "SpiiniCop", "Kaatje"]:
         return "AMS"
     if "KY " in full or "KENTUCKY" in full or name in ["Ree 'Dolly' Hacker", "Granny", "Dr. Laureline Dodd", "Thaddeus", "Reilly Dragman"]:
         return "KY"
-    if "DW " in full or "DENVER" in full or name in ["Dixie L'Amin", "Ayanda 'Shieldbearer' Mahlangu", "Ebon Abirashur", "Col. Deborah Kentwell", "Polyphemous 'Paul' Pellagios"]:
+    if "DW " in full or "DESERT WARS" in full or name in ["Dixie L'Amin", "Ayanda 'Shieldbearer' Mahlangu", "Ebon Abirashur", "Col. Deborah Kentwell", "Polyphemous 'Paul' Pellagios", "Col. Treylor"]:
         return "DW"
     return "GEN"
 
@@ -340,7 +340,7 @@ def contact(name, connection=1, fp=0, loyalty=None, favors=0, type_name="Contact
 * **Heat:** No heat (Bribes: Poe, Yuriko)  
 * **Downtime Actions (1 Major & 1 Minor):**  
   * *Submersion - Living Network:* `{python} inc_many(('Karma', -11-Submersion_Grade), ('Submersion_Grade', 1))`  
-  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
+  * *Rent & Working for the People (Hooder):* `{python} inc_many(('Karma', 1), ('Nuyen', -4000))`  
 * **Other**
   * Three additional registered sprites compiled during game downtime (3 nights): `{python} add_sprite('Sprite-M9a', 7, 'Modular', 'Downtime 3 nights')`, `{python} add_sprite('Sprite-M9b', 7, 'Modular', 'Downtime 3 nights')`, `{python} add_sprite('Sprite-M9c', 7, 'Modular', 'Downtime 3 nights')`
   * Ally Sprite code recompiled to R7 crack ally sprite. `{python} inc('Karma', -28)`
@@ -449,7 +449,7 @@ def contact(name, connection=1, fp=0, loyalty=None, favors=0, type_name="Contact
   * `{python} contact("Fernand Anato", connection=1, fp=1, type_name="NOLA Kozlowski Capo", notes="SRM 2083-19 The Hallow Feast")`
   * `{python} contact("Monsieur Johnson", connection=5, fp=3, type_name="NOLA Johnson", notes="SRM 2083-19 The Hallow Feast")`
 * **Downtime Actions (1 Minor):**
-  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
+  * *Rent & Working for the People (Hooder):* `{python} inc_many(('Karma', 1), ('Nuyen', -4000))`
   * *Submersion - Overclocking:* `{python} inc_many(('Karma', -11-Submersion_Grade), ('Submersion_Grade', 1))`
 
 ---
@@ -507,7 +507,7 @@ def contact(name, connection=1, fp=0, loyalty=None, favors=0, type_name="Contact
   * `{python} contact("Eddie Wei", connection=4, fp=1, type_name="SEA Triad/Johnson", notes="SRM 2081-08 Child's Play")`
   * `{python} contact("Julian Müntefering", connection=1, fp=1, type_name="SEA Renraku Corpokid", notes="SRM 2081-08 Child's Play")`
 * **Downtime Actions (3 Minors):**
-  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
+  * *Rent & Working for the People (Hooder):* `{python} inc_many(('Karma', 1), ('Nuyen', -4000))`
   * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
   * Modifying Man-At-Arms: Removing megalodon, adding Red Fox and two Crimson Wasps
 * **Other bonuses:** 3 sprites registered during in-session downtime: `{python} add_sprite('Sprite-M18a', 7, 'Modular', 'Shield')`, `{python} add_sprite('Sprite-M18b', 7, 'Modular', 'Death Mark')`, `{python} add_sprite('Sprite-M18c', 7, 'Modular', 'Death Mark')`
@@ -549,7 +549,7 @@ def contact(name, connection=1, fp=0, loyalty=None, favors=0, type_name="Contact
   * `{python} contact("Jeanie Trudel", connection=1, fp=1, type_name="SEA Bartender", notes="SRM 2081-06 Cutting Strings")`
   * `{python} contact("Kingston", connection=2, fp=1, type_name="SEA Shadowrunner", notes="SRM 2081-06 Cutting Strings")`
 * **Downtime Actions (3 Minor):**
-  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
+  * *Rent & Working for the People (Hooder):* `{python} inc_many(('Karma', 1), ('Nuyen', -4000))`
   * *Register Sprites:* `{python} add_sprite('Sprite-M20a', 7, 'Modular', 'Autosofts')`
   * *Register Sprites:* `{python} add_sprite('Sprite-M20b', 7, 'Modular', 'Autosofts')`
 
@@ -620,223 +620,84 @@ def contact(name, connection=1, fp=0, loyalty=None, favors=0, type_name="Contact
 
 ---
 
-### Historical Gear Purchases
+### **2026-Jul-30: SRM 2083-17 | Haute Blooded** `{python} start_mission('SRM 2083-17')`
 
-#### Combat
-
-* Monofilament Whip `{python} inc('Nuyen', -1500)`
-  * Fingertip Cyberarm Compartment Mount
-* Krime Gloves `{python} inc('Nuyen', -1050)`
-  * Personalized Grip
-* Ares Securetech SkinShield `{python} inc('Nuyen', -3000)`
-* SecureTech Invisi-Shield `{python} inc('Nuyen', -5000)`
-* Ares Predator VI `{python} inc('Nuyen', -1450)`
-  * Silencer
-  * Personalized Grip
-  * Smartgun System
-  * Variable Ammunition System
-  * 50 Explosive Rounds `{python} inc('Nuyen', -100)`
-  * 50 Krime Self Defense Rounds `{python} inc('Nuyen', -100)`
-* Crimson Wasp x2 `{python} inc('Nuyen', -3000)`
-* Red Fox `{python} inc('Nuyen', -2800)`
-  * Smartgun System (Internal)
-  * Peak-Discharge Laser Battery Clips x5 `{python} inc('Nuyen', -500)`
-* Glitter Grenades x10 `{python} inc('Nuyen', -1000)`
-
-#### Matrix
-
-* M-TOC II `{python} inc('Nuyen', -65000)`
-* Software Library
-  * Basic Programs
-    * Baby Monitor `{python} inc('Nuyen', -100)`
-    * Browse `{python} inc('Nuyen', -100)`
-    * Edit `{python} inc('Nuyen', -100)`
-    * **Emulator** `{python} inc_many(('Nuyen', -100),('Karma', -1))`
-    * Encryption `{python} inc('Nuyen', -100)`
-    * Signal Scrubber `{python} inc('Nuyen', -100)`
-    * **Toolbox** `{python} inc_many(('Nuyen', -100),('Karma', -1))`
-    * **Virtual Machine** `{python} inc_many(('Nuyen', -100),('Karma', -1))`
-  * Hacking Programs
-    * Decryption `{python} inc('Nuyen', -200)`
-    * Defense Pods `{python} inc('Nuyen', -200)`
-    * **Directional Shields** `{python} inc_many(('Nuyen', -200),('Karma', -1))`
-    * Fork `{python} inc('Nuyen', -200)`
-    * Hitchhiker `{python} inc('Nuyen', -200)`
-    * **Nexus Protocol** `{python} inc_many(('Nuyen', -1000),('Karma', -1))`
-    * Overclock `{python} inc('Nuyen', -200)`
-    * Trace `{python} inc('Nuyen', -200)`
- * Rigger Programs
-   * Smartsoft `{python} inc('Nuyen', -250)`  
-   * Swarm `{python} inc('Nuyen', -250)`
-   * Encryption (Rigger) `{python} inc('Nuyen', -250)`
-* Autosofts
-  * Biotech (R9) `{python} inc('Nuyen', -4500)`
-  * **Clearsight (R9)** `{python} inc_many(('Nuyen', -4500),('Karma', -1))`
-  * Close Combat (R9) `{python} inc_many(('Nuyen', -4500),('Karma', -1))`
-  * Engineering (1, R9) `{python} inc('Nuyen', -4500)`
-  * Evasion (R9) `{python} inc_many(('Nuyen', -4500),('Karma', -1))`
-  * Knowledge `{python} inc('Nuyen', -1500)`
-  * Language (1, R5) `{python} inc('Nuyen', -2500)`
-  * Maneuvering (1, R9) `{python} inc_many(('Nuyen', -4500),('Karma', -1))`
-  * Navigation (R9) `{python} inc('Nuyen', -4500)`
-  * Performance (R9) `{python} inc('Nuyen', -4500)`
-  * **Stealth (1, R9)** `{python} inc_many(('Nuyen', -4500),('Karma', -1))`
-  * Targeting (1, R9) `{python} inc_many(('Nuyen', -4500),('Karma', -1))`
-  * Tracking (R9) `{python} inc_many(('Nuyen', -4500),('Karma', -1))`
-* Tactical Software
-   * Artillery Barrage `{python} inc('Nuyen', -200)`
-   * ECM Warrior II `{python} inc('Nuyen', -200)`
-   * Mobile Medic `{python} inc('Nuyen', -200)`
-   * Sneak-Sneak `{python} inc('Nuyen', -200)`
-   * Target Artist `{python} inc('Nuyen', -200)`
-* Commlink Apps
-  * Facial Scanner `{python} inc('Nuyen', -750)`
-  * P-ICE Spines `{python} inc('Nuyen', -500)`
-  * Personal Assistant (R6) `{python} inc('Nuyen', -600)`
-  * Social HUD (R6) `{python} inc('Nuyen', -700)`
-  * Thermal Mood Reading `{python} inc('Nuyen', -700)`
-  * Vocal Tension Detection `{python} inc('Nuyen', -700)`
-* Other
-  * Mapsoft x4 `{python} inc('Nuyen', -400)`
-  * Shopsoft x6 `{python} inc('Nuyen',-900)`
-  * **Coding Facility** `{python} inc_many(('Nuyen',-5000),('Karma',-1))`
-  
-1: For autosofts that are specific, the character programs her derivative own based on the original version she bought above. This process takes 8 hours for knowledge and language autosofts, and 12 hours for all other autosofts. The cost is 1 karma for each of the derivative autosofts.
-
-Software with karma costs have been learned via the **Software Emulator** echo.
-
-#### Vehicles
-
-* MCT Gnat x5 `{python} inc('Nuyen', -4000)`
-  * Realistic Features 4
-  * Laser Jack
-* Shiawase Bi-Drone Butler 
-  * Drone Rack (Small) 
-  * Wrist Shield 
-  * Realistic Features 1
-  * Increased Structural Integrity 2 
-  * Secondary Propulsion (Rotor)
-  * Increased Sensors 3
-  * Retractible Skates x2
-  * Hardpoint Small x2
-  * Accessories
-    * Satellite Link
-    * Laser Jack
-* Shiawase Man-At-Arms `{python} inc('Nuyen', -4500*.9)`
-  * Weapon Mount - Heavy
-  * Pop-Out Concealment - Large `{python} inc('Nuyen', -4500/2)`
-  * Drone Rack (Small) `{python} inc('Nuyen', -3000/2)`
-  * Tesla Coil `{python} inc('Nuyen', -15000/2)`
-  * Fingertip Compartment `{python} inc('Nuyen', -3000/2)`
-  * Wrist Shield `{python} inc('Nuyen', -2000/2)`
-  * Armor Increase 5 `{python} inc('Nuyen', -25000/2)`
-  * Increased Structural Integrity 5 `{python} inc('Nuyen', -25000/2)`
-  * Realistic Features 4 `{python} inc('Nuyen', -10000/2)`
-  * Hardpoint Small x2 `{python} inc('Nuyen', -1500/2)`
-  * Small Weapon Mount x2 `{python} inc('Nuyen', -800/2)`
-  * Secondary Propulsion (Rotor): `{python} inc('Nuyen', -50000/2)`  
-  * Increased Sensors 3 `{python} inc('Nuyen', -15000/2)`
-  * Retractible Skates x2 `{python} inc('Nuyen',-500/2)`
-  * Accessories
-    * Satellite Link
-    * Laser Jack
-* Shiawase Bi-Drone Butler `{python} inc('Nuyen', -3000*.9)`
-  * Retrans Unit `{python} inc('Nuyen', -7500/2)`
-  * Integrated Matrix Device `{python} inc('Nuyen', -800/2)`
-  * Realistic Features 1
-  * Retractible Skates x2 `{python} inc('Nuyen',-500/2)`
-  * Accessories
-    * Satellite Link
-    * Laser Jack
-
-Drones mods include 50% discount on mods Yuriko installed herself (DC p. 120). Cyberware is purchased as used/omegaware (50% discount again). 
-
-Shiawase drones include 10% discount (Smile at the Camera).
-
-There is no cost for the Butler drone because it's less than the cost of the Man-At-Arms drone and I only use one or the other for difficulty mode adjustment.
-
-#### Electronics
-
-* Software Tag x10 `{python} inc('Nuyen', -1000)`
-* Laser Jack x10 `{python} inc('Nuyen', -1000)`
-* Satellite Link x2 `{python} inc('Nuyen', -1000)`
-
-#### Other
-
-* Engineering Kit `{python} inc('Nuyen', -500)`
-* Medkit R1 `{python} inc('Nuyen', -250)`
-
-#### SINs
-
-* Yuriko Star (R2) `{python} inc('Nuyen', -5000)`
-  * Drone License `{python} inc('Nuyen', -400)`
-  * Firearms License `{python} inc('Nuyen', -400)`
+* **Summary:** Jolene Price asked us to investigate the Crescent City Creative Culture Expo and get dirt on both Aurelian and Enoch. We then sabotaged Aurelian so that investments in Enoch skyrocketed.
+* **Team:** Griz, Deckeyon, Mustang Sally, Jeeves, Yuriko
+* **GM:** Raven2049 (GenCon 2026)
+* **Rewards:** `{python} inc('Nuyen', 7450)`, `{python} inc('Karma', 6)` (normal difficulty)
+* **Reputation:** `{python} add_rep('NOLA', 2)`
+* **Heat:** 0
+* **Contacts:**
+  * `{python} contact("Jolene Price", connection=7, fp=3, type_name="NOLA Riverboat Alliance Leader", notes="SRM 2083-17 Haute Blooded")`
+  * `{python} contact("Le Tigre", connection=5, fp=1, type_name="NOLA Epoch Model", notes="SRM 2083-17 Haute Blooded")`
+  * `{python} contact("Roanoke", connection=3, fp=1, type_name="NOLA Ecological Activist", notes="SRM 2083-17 Haute Blooded")`
+* **Downtime Actions (1 Major & 1 Minor):**
+  * *Earn Favor (Coffin Girls):* `{python} contact("Coffin Girls", connection=3, loyalty=3, fp=1, type_name="NOLA Independent Courtesans Group")`
+  * *Rent & Working for the People (Hooder):* `{python} inc_many(('Karma', 1), ('Nuyen', -4000))`
+* **Other:**
+  * Lost JP Chakraborty as a contact
 
 ---
 
-### **Current Totals**
+### **2026-Aug-01: SRM 2083-20 | The Fallacy of Plans** `{python} start_mission('SRM 2083-20')`
 
-* **Lifetime Karma:** `{python} Lifetime_Karma`
-* **Available Karma:** `{python} Karma`
-* **Total Nuyen:** ¥`{python} f"{Nuyen:,}"`
-* **Submersion Grade:** `{python} Submersion_Grade`
-* **Resonance:** `{python} Resonance`
-* **Current Heat:** `{python} Heat`
-* **Total Reputation:** `{python} sum(Reputation.values())`
-  * **Seattle (SEA):** +`{python} Reputation.get('Seattle', 0)`
-  * **NOLA:** +`{python} Reputation.get('NOLA', 0)`
-  * **Vory:** +`{python} Reputation.get('Vory', 0)`
-  * **Kentucky:** +`{python} Reputation.get('Kentucky', 0)`
-  * **Mercenary:** +`{python} Reputation.get('Mercenary', 0)`
-  * **Amsterdam / UNL:** +`{python} Reputation.get('Amsterdam', 0) + Reputation.get('UNL', 0)`
-  * **Southeast Asia (SEA/HK):** +`{python} Reputation.get('Southeast Asia', 0)`
+* **Summary:** NOLA Detective Remy LeBlanc is framed for the serial killings of the Ghoul of Gentilly. Renée asked Yuriko and her team to secure the detective. We also rescued a few other 'notable' people who were kidnapped by the Ghoul during the op.
+* **Team:** Sersha, Colin, Samurai Jack, John Mick, Sammy, Yuriko
+* **GM:** (GenCon 2026 Sat 1pm slot)
+* **Rewards:** `{python} inc('Nuyen', 7000)`, `{python} inc('Karma', 8)` (normal difficulty)
+* **Reputation:** `{python} add_rep('NOLA', 2)` (1 with League of Laveau, 1 with Order of Golden Dawn)
+* **Heat:** 0
+* **Contacts:**
+  * `{python} contact("Cedar", connection=3, fp=1, type_name="NOLA Talismonger", notes="SRM 2083-20 The Fallacy of Plans")`
+  * `{python} contact("Roanoke", connection=3, fp=1, type_name="NOLA Ecological Activist", notes="SRM 2083-20 The Fallacy of Plans")`
+  * `{python} contact("Renée Martin", connection=4, fp=1, type_name="NOLA League of Laveau Liaison", notes="SRM 2083-20 The Fallacy of Plans")`
+  * `{python} contact("Detective Remy LeBlanc", connection=3, fp=3, type_name="NOLA Detective", notes="SRM 2083-20 The Fallacy of Plans")`
+  * `{python} contact("Claudette Laurier", connection=5, fp=1, type_name="NOLA Order of the Golden Dawn Librarian", notes="SRM 2083-20 The Fallacy of Plans")`
+* **Downtime Actions (1 Major & 1 Minor):**
+  * *Earn Favor (Coffin Girls):* `{python} contact("Coffin Girls", fp=1)`
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
 
 ---
 
-### **Active Sprite Stable**
+### **2026-Aug-01: SRM 2083-18 | Some Kind of Voodoo?** `{python} start_mission('SRM 2083-18')`
 
-```{python}
-#| echo: false
-#| output: asis
-active = get_active_sprites()
-print("| Sprite Name | Rating & Type | Registered During | Full Missions Active | Status |")
-print("| ----------- | --- | --- | --- | --- |")
-for s in active:
-    if s.get("is_ally"):
-        print(f"| {s['name']} | R{s['level']} {s['type']} | Character Creation | Permanent | Active (Ally) |")
-    else:
-        elapsed = Current_Mission - s['registered_mission']
-        rem = 3 - elapsed
-        status_str = f"Active ({rem} mission{'s' if rem != 1 else ''} remaining)"
-        m_name = s.get('registered_mission_name', f"Mission {s['registered_mission']}")
-        print(f"| {s['name']} | R{s['level']} {s['type']} ({s['details']}) | {m_name} | {elapsed} / 3 | {status_str} |")
-```
+* **Summary:** Voodoo practitioners in NOLA were going missing. Renée Martin and The Old Man asked Yuriko to investigate. 
+* **Team:** Fast Eddie, Rocky Robadeau, Harold Goodlaner, Technoviking, Gung Ho, Yuriko
+* **GM:** August (GenCon 2026 Sat 6pm slot)
+* **Rewards:** `{python} inc('Nuyen', 10000)`, `{python} inc('Karma', 7)` (normal difficulty)
+* **Reputation:** `{python} add_rep('NOLA', 1)` (League of Laveau, Zobop, Coffin Girls)
+* **Heat:** 0
+* **Contacts:**
+  * `{python} contact("Coffin Girls", connection=3, loyalty=3, fp=1, type_name="NOLA Independent Courtesans Group", notes="SRM 2083-18 Some Kind of Voodoo?")`
+  * `{python} contact("League of Laveau", connection=6, loyalty=3, fp=1, type_name="NOLA Voodoo Organization", notes="SRM 2083-18 Some Kind of Voodoo?")`
+  * `{python} contact("Zobop", connection=6, loyalty=3, fp=1, type_name="NOLA Voodoo Organization", notes="SRM 2083-18 Some Kind of Voodoo?")`
+* **Downtime Actions (1 Major & 1 Minor):**
+  * *Earn Favor (Coffin Girls):* `{python} contact("Coffin Girls", fp=1)`
+  * *Rent & Working for the People (Hooder):* `{python} inc_many(('Karma', 1), ('Nuyen', -4000))`
+* **Other:**
+  * Arranged for an apprenticeship with the Coffin Girls
+  * The Bone Man (Seneschal of Baron Samedi, Ewa of Secrets and Trading) intimated that Yuriko has a soul he had his eye on
+  * Obtained a pair of Amalgam Tech Cestas
+    * I don't have stats for these yet.
+    * Pending publication, I will treat them as 3P weapons that override magical immunity to normal weapons
 
-```{python}
-#| echo: false
-#| include: false
-import yaml, os
-if Contacts:
-    yaml_path = os.path.abspath("yuriko_master.yaml")
-    if os.path.exists(yaml_path):
-        with open(yaml_path, "r", encoding="utf-8") as f:
-            mdata = yaml.safe_load(f) or {}
-        clist = []
-        for name, c in Contacts.items():
-            clist.append({
-                "name": name,
-                "connection": c["connection"],
-                "loyalty": c["loyalty"],
-                "favors": c["favors"],
-                "type": c["type"],
-                "archetype": c["type"],
-                "region": c.get("region", "GEN"),
-                "description": c["notes"]
-            })
+---
 
-        mdata["contacts"] = clist
-        with open(yaml_path, "w", encoding="utf-8") as f:
-            yaml.dump(mdata, f, sort_keys=False, allow_unicode=True, indent=2)
+### **2026-Aug-01: CMP 2083-15 | By Land, Sea, and Hair** `{python} start_mission('CMP 2083-15')`
 
-```
+* **Summary:** Thunder Corps lost contact with an airplane carrying precious cargo. So they arranged for air-to-air insertion for Yuriko and her team.
+* **Team:** Colin, John Mick, Samurai Jack, Eidolon, TSF, Brick House, Yuriko, Zeid
+* **GM:** (GenCon 2026 Saturday 1pm slot)
+* **Rewards:** `{python} inc('Nuyen', 11000)`, `{python} inc('Karma', 6)` (normal difficulty)
+* **Reputation:** `{python} add_rep('DW', 2)` (Mercenary Community)
+* **Heat:** 0
+* **Contacts:**
+  * `{python} contact("Col. Treylor", connection=3, fp=2, type_name="DW Thunder Corps Fixer", notes="CMP 2083-15 | By Land, Sea, and Hair")`
+  * `{python} contact("Le Tigre", connection=5, fp=1, type_name="NOLA Epoch Model", notes="CMP 2083-15 | By Land, Sea, and Hair")`
+* **Downtime Actions (2 Minor):**
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
+  * *Register Sprites:* `{python} add_sprite('Sprite-M27', 8, 'Modular')`
+* **Other:**
+  * Increased Resonance to 8: `{python} inc_many(('Karma', -40), ('Resonance', 1))`
 

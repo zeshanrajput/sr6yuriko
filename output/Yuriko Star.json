@@ -9,10 +9,10 @@
   "age": "~ 10",
   "gender": "DIVERSE",
   "heat": 1,
-  "reputation": 25,
-  "karma": 180,
-  "freeKarma": 13,
-  "nuyen": 9550.0,
+  "reputation": 32,
+  "karma": 211,
+  "freeKarma": 4,
+  "nuyen": 21550.0,
   "initiation": 0,
   "submersion": 7,
   "attributes": [
@@ -79,8 +79,8 @@
     {
       "name": "Resonance",
       "id": "RESONANCE",
-      "points": 7,
-      "modifiedValue": 7
+      "points": 8,
+      "modifiedValue": 8
     },
     {
       "name": "Power Points",
@@ -207,20 +207,20 @@
       "description": ""
     },
     {
-      "name": "Sensor Upgrade",
-      "id": "sensor_upgrade",
-      "choice": "",
-      "positive": true,
-      "rating": 0,
-      "page": "Hack'n Slash 120",
-      "description": ""
-    },
-    {
       "name": "Pilot Origins",
       "id": "pilot_origins",
       "choice": "",
       "positive": true,
       "rating": 1,
+      "page": "Hack'n Slash 120",
+      "description": ""
+    },
+    {
+      "name": "Sensor Upgrade",
+      "id": "sensor_upgrade",
+      "choice": "",
+      "positive": true,
+      "rating": 0,
       "page": "Hack'n Slash 120",
       "description": ""
     },
@@ -527,7 +527,7 @@
       "primary": true
     },
     {
-      "name": "Krime Gloves (Stun)",
+      "name": "Amalgam Cestas (Stun)",
       "type": "Unarmed",
       "subtype": "Unarmed",
       "skill": "Close Combat",
@@ -539,11 +539,11 @@
       "wifi": [],
       "accessories": [],
       "page": "Double Clutch",
-      "description": "Equipped on Shiawase Butler. Personalized Grip (+2 AR).",
+      "description": "Equipped on Shiawase Butler. Personalized Grip (+2 AR). Amalgam Tech Cestas; overrides magical immunity to normal weapons.",
       "primary": false
     },
     {
-      "name": "Krime Gloves (Phys)",
+      "name": "Amalgam Cestas (Phys)",
       "type": "Unarmed",
       "subtype": "Unarmed",
       "skill": "Close Combat",
@@ -555,7 +555,7 @@
       "wifi": [],
       "accessories": [],
       "page": "Double Clutch",
-      "description": "Equipped on Shiawase Butler. Personalized Grip (+2 AR).",
+      "description": "Equipped on Shiawase Butler. Personalized Grip (+2 AR). Amalgam Tech Cestas; overrides magical immunity to normal weapons.",
       "primary": false
     },
     {
@@ -698,394 +698,13 @@
       "wifi": []
     },
     {
-      "name": "Software Tag",
-      "count": 10,
-      "rating": 0,
-      "type": "Electronic",
-      "subType": "RFID",
-      "page": "Hack'n Slash 43",
-      "accessories": [],
-      "description": "",
-      "wifi": []
-    },
-    {
-      "name": "Laser Jack",
-      "count": 10,
-      "rating": 0,
-      "type": "Electronic",
-      "subType": "Communication",
-      "page": "Hack'n Slash 41",
-      "accessories": [],
-      "description": "",
-      "wifi": []
-    },
-    {
-      "name": "Coding facility",
-      "count": 1,
-      "rating": 0,
-      "type": "Tools",
-      "subType": "Tools",
-      "page": "Hack'n Slash 56",
-      "accessories": [],
-      "description": "",
-      "wifi": []
-    },
-    {
-      "name": "Power Backpack (80 Energy)",
-      "count": 1,
-      "rating": 0,
-      "type": "Ammunition & Explosives",
-      "subType": "Ammunition, special",
-      "page": "Firing Squad 47",
-      "accessories": [],
-      "description": "",
-      "wifi": []
-    },
-    {
       "name": "Software Library",
       "count": 1,
       "rating": 0,
       "type": "Electronic",
       "subType": "Tools",
       "page": "Core Rulebook 271",
-      "accessories": [
-        {
-          "name": "Baby Monitor (Deck)",
-          "type": "Software",
-          "subType": "Basic programs",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Biotech",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 9,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Browse (Deck)",
-          "type": "Software",
-          "subType": "Basic programs",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Clearsight",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 9,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Close Combat",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 9,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Decryption",
-          "type": "Software",
-          "subType": "Hackingprograms",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Defense Pods",
-          "type": "Software",
-          "subType": "Hackingprograms",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Directional Shield",
-          "type": "Software",
-          "subType": "Hackingprograms",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Edit (Deck)",
-          "type": "Software",
-          "subType": "Basic programs",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Evasion",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 9,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Facial Scanner",
-          "type": "Software",
-          "subType": "Commlink Apps",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Fork",
-          "type": "Software",
-          "subType": "Hackingprograms",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Hitchhiker",
-          "type": "Software",
-          "subType": "Hackingprograms",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Maneuvering",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 9,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Mannequin",
-          "type": "Software",
-          "subType": "Commlink Apps",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "MeFeed",
-          "type": "Software",
-          "subType": "Commlink Apps",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Navigation",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 9,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Nexus Protocol Program",
-          "type": "Software",
-          "subType": "Hackingprograms",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Overclock",
-          "type": "Software",
-          "subType": "Hackingprograms",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Performance",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 9,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Social HUD",
-          "type": "Software",
-          "subType": "Commlink Apps",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Targeting",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 9,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Trace",
-          "type": "Software",
-          "subType": "Hackingprograms",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Tracking",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 9,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Thermal Mood Reading",
-          "type": "Software",
-          "subType": "Commlink Apps",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Vocal Tension Detection",
-          "type": "Software",
-          "subType": "Commlink Apps",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Engineering",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 9,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Smartsoft",
-          "type": "Software",
-          "subType": "Rigger Software",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Language",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 5,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Knowledge",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 3,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Emulator",
-          "type": "Software",
-          "subType": "Basic programs",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "P-ICE Spines",
-          "type": "Software",
-          "subType": "Commlink Apps",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Personal Assistant",
-          "type": "Software",
-          "subType": "Commlink Apps",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Toolbox (Deck)",
-          "type": "Software",
-          "subType": "Basic programs",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Encryption",
-          "type": "Software",
-          "subType": "Basic programs",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Signal Scrubber (Deck)",
-          "type": "Software",
-          "subType": "Basic programs",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Virtual Machine (Deck)",
-          "type": "Software",
-          "subType": "Basic programs",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Shopsoft",
-          "type": "Software",
-          "subType": "Other Programs",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Mobile Medic",
-          "type": "Software",
-          "subType": "TAC-Net Program",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Swarm",
-          "type": "Software",
-          "subType": "Rigger Software",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Target Artist",
-          "type": "Software",
-          "subType": "TAC-Net Program",
-          "rating": 0,
-          "description": "",
-          "wifi": []
-        },
-        {
-          "name": "Stealth",
-          "type": "Software",
-          "subType": "Autosofts",
-          "rating": 9,
-          "description": "",
-          "wifi": []
-        }
-      ],
+      "accessories": [],
       "description": "",
       "wifi": []
     }
@@ -1157,20 +776,20 @@
       "description": "Anthrodrone. Small Internal Drone Bay, Secondary Propulsion (Rotor: HND 5, ACC 10, SPD 120 / 20m), Retractable Skates (Minor Action: Walk 10m / Sprint 30m), Realistic Features 1, Integrated Cyberarms x2, Wrist Shield (+4 Armor)."
     },
     {
-      "name": "Shiawase Butler (Seattle Retrans Relay)",
-      "body": 4,
-      "bodyMod": 2,
+      "name": "Federated-Boeing Sky Commander (Seattle Retrans Relay)",
+      "body": 3,
+      "bodyMod": 0,
       "armor": 0,
-      "armorMod": 10,
-      "pilot": 2,
-      "pilotMod": 5,
+      "armorMod": 0,
+      "pilot": 3,
+      "pilotMod": 4,
       "sensor": 3,
-      "sensorMod": 4,
-      "speed": 8,
+      "sensorMod": 0,
+      "speed": 120,
       "handling": 4,
-      "accel": 5,
+      "accel": 10,
       "wifi": [],
-      "description": "Anthrodrone. Small Internal Drone Bay, Secondary Propulsion (Rotor: HND 5, ACC 10, SPD 120 / 20m), Retractable Skates (Minor Action: Walk 10m / Sprint 30m), Realistic Features 1, Integrated Cyberarms x2, Wrist Shield (+4 Armor)."
+      "description": ""
     },
     {
       "name": "Shiawase Man-at-Arms",
@@ -1249,6 +868,26 @@
       "page": "Double Clutch 117",
       "accessories": null,
       "description": ""
+    },
+    {
+      "name": "Federated-Boeing Sky Commander",
+      "type": null,
+      "subtype": null,
+      "count": 1,
+      "handlOn": 4,
+      "handlOff": 4,
+      "accelOn": 20,
+      "accelOff": 20,
+      "speedIntOn": 30,
+      "speedIntOff": 30,
+      "speed": 190,
+      "body": 4,
+      "armor": 2,
+      "pilot": 4,
+      "sensor": 2,
+      "page": "Double Clutch 106",
+      "accessories": null,
+      "description": ""
     }
   ],
   "lifestyles": [
@@ -1308,11 +947,11 @@
       "connection": 3,
       "influence": 3,
       "loyalty": 3,
-      "favors": 0,
+      "favors": 1,
       "type": "Ecological Activist",
       "archetype": "Ecological Activist",
       "region": "NOLA",
-      "description": "Character Creation"
+      "description": "Character Creation | SRM 2083-17 Haute Blooded | SRM 2083-20 The Fallacy of Plans"
     },
     {
       "name": "Piotr Krolik",
@@ -1329,12 +968,12 @@
       "name": "Le Tigre",
       "connection": 5,
       "influence": 5,
-      "loyalty": 1,
-      "favors": 0,
+      "loyalty": 2,
+      "favors": 1,
       "type": "Epoch Model",
       "archetype": "Epoch Model",
       "region": "NOLA",
-      "description": "SMH 2083-02 EggHunt at the Jackalope Ranch"
+      "description": "SMH 2083-02 EggHunt at the Jackalope Ranch | SRM 2083-17 Haute Blooded | CMP 2083-15 | By Land, Sea, and Hair"
     },
     {
       "name": "White Jackalope",
@@ -1385,11 +1024,11 @@
       "connection": 4,
       "influence": 4,
       "loyalty": 2,
-      "favors": 0,
-      "type": "League of Laveau Community Outreach",
-      "archetype": "League of Laveau Community Outreach",
+      "favors": 1,
+      "type": "League of Laveau Liaison",
+      "archetype": "League of Laveau Liaison",
       "region": "NOLA",
-      "description": "2083-03 Unofficial Dunkelzahn Fan Club"
+      "description": "2083-03 Unofficial Dunkelzahn Fan Club | SRM 2083-20 The Fallacy of Plans"
     },
     {
       "name": "The Frisian",
@@ -1797,6 +1436,94 @@
       "archetype": "Sound of Silence Music Shop Owner",
       "region": "NOLA",
       "description": "SRM 2083-12 When You're Smiling"
+    },
+    {
+      "name": "Jolene Price",
+      "connection": 7,
+      "influence": 7,
+      "loyalty": 2,
+      "favors": 0,
+      "type": "Riverboat Alliance Leader",
+      "archetype": "Riverboat Alliance Leader",
+      "region": "NOLA",
+      "description": "SRM 2083-17 Haute Blooded"
+    },
+    {
+      "name": "Coffin Girls",
+      "connection": 3,
+      "influence": 3,
+      "loyalty": 4,
+      "favors": 1,
+      "type": "Independent Courtesans Group",
+      "archetype": "Independent Courtesans Group",
+      "region": "NOLA",
+      "description": "SRM 2083-18 Some Kind of Voodoo?"
+    },
+    {
+      "name": "Cedar",
+      "connection": 3,
+      "influence": 3,
+      "loyalty": 1,
+      "favors": 0,
+      "type": "Talismonger",
+      "archetype": "Talismonger",
+      "region": "NOLA",
+      "description": "SRM 2083-20 The Fallacy of Plans"
+    },
+    {
+      "name": "Detective Remy LeBlanc",
+      "connection": 3,
+      "influence": 3,
+      "loyalty": 2,
+      "favors": 0,
+      "type": "Detective",
+      "archetype": "Detective",
+      "region": "NOLA",
+      "description": "SRM 2083-20 The Fallacy of Plans"
+    },
+    {
+      "name": "Claudette Laurier",
+      "connection": 5,
+      "influence": 5,
+      "loyalty": 1,
+      "favors": 0,
+      "type": "Order of the Golden Dawn Librarian",
+      "archetype": "Order of the Golden Dawn Librarian",
+      "region": "NOLA",
+      "description": "SRM 2083-20 The Fallacy of Plans"
+    },
+    {
+      "name": "League of Laveau",
+      "connection": 6,
+      "influence": 6,
+      "loyalty": 3,
+      "favors": 1,
+      "type": "Voodoo Organization",
+      "archetype": "Voodoo Organization",
+      "region": "NOLA",
+      "description": "SRM 2083-18 Some Kind of Voodoo?"
+    },
+    {
+      "name": "Zobop",
+      "connection": 6,
+      "influence": 6,
+      "loyalty": 3,
+      "favors": 1,
+      "type": "Voodoo Organization",
+      "archetype": "Voodoo Organization",
+      "region": "NOLA",
+      "description": "SRM 2083-18 Some Kind of Voodoo?"
+    },
+    {
+      "name": "Col. Treylor",
+      "connection": 3,
+      "influence": 3,
+      "loyalty": 1,
+      "favors": 1,
+      "type": "Thunder Corps Fixer",
+      "archetype": "Thunder Corps Fixer",
+      "region": "DW",
+      "description": "CMP 2083-15 | By Land, Sea, and Hair"
     }
   ],
   "licenses": [
@@ -1865,9 +1592,378 @@
           "rating": 0,
           "description": "Attack without line of sight on painted targets.",
           "wifi": []
+        },
+        {
+          "name": "Biotech",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Clearsight",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Close Combat",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Evasion",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Facial Scanner",
+          "type": "Software",
+          "subType": "Commlink Apps",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Maneuvering",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Mannequin",
+          "type": "Software",
+          "subType": "Commlink Apps",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "MeFeed",
+          "type": "Software",
+          "subType": "Commlink Apps",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Navigation",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Performance",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Social HUD",
+          "type": "Software",
+          "subType": "Commlink Apps",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Targeting",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Tracking",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Thermal Mood Reading",
+          "type": "Software",
+          "subType": "Commlink Apps",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Vocal Tension Detection",
+          "type": "Software",
+          "subType": "Commlink Apps",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Engineering",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Smartsoft",
+          "type": "Software",
+          "subType": "Rigger Software",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Language",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Knowledge",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "P-ICE Spines",
+          "type": "Software",
+          "subType": "Commlink Apps",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Personal Assistant",
+          "type": "Software",
+          "subType": "Commlink Apps",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Shopsoft",
+          "type": "Software",
+          "subType": "Other Programs",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Mobile Medic",
+          "type": "Software",
+          "subType": "TAC-Net Program",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Swarm",
+          "type": "Software",
+          "subType": "Rigger Software",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Target Artist",
+          "type": "Software",
+          "subType": "TAC-Net Program",
+          "rating": 0,
+          "description": "",
+          "wifi": []
+        },
+        {
+          "name": "Stealth",
+          "type": "Software",
+          "subType": "Autosofts",
+          "rating": 0,
+          "description": "",
+          "wifi": []
         }
       ],
-      "programs": [],
+      "programs": [
+        {
+          "name": "Baby Monitor (Deck)",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Basic programs",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Browse (Deck)",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Basic programs",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Decryption",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Hackingprograms",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Defense Pods",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Hackingprograms",
+          "page": "Hack'n Slash 58",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Directional Shield",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Hackingprograms",
+          "page": "Hack'n Slash 58",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Edit (Deck)",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Basic programs",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Fork",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Hackingprograms",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Hitchhiker",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Hackingprograms",
+          "page": "Hack'n Slash 139",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Nexus Protocol Program",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Hackingprograms",
+          "page": "Hack'n Slash 142",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Overclock",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Hackingprograms",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Trace",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Hackingprograms",
+          "page": "Core Rulebook 185",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Emulator",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Basic programs",
+          "page": "Hack'n Slash 57",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Toolbox (Deck)",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Basic programs",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Encryption",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Basic programs",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Signal Scrubber (Deck)",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Basic programs",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        },
+        {
+          "name": "Virtual Machine (Deck)",
+          "count": 1,
+          "rating": 0,
+          "type": "Software",
+          "subType": "Basic programs",
+          "page": "Core Rulebook 184",
+          "accessories": [],
+          "description": ""
+        }
+      ],
       "description": "",
       "wifi": []
     }
@@ -1875,8 +1971,8 @@
   "martialArts": [],
   "signatureManeuvers": [],
   "notes": null,
-  "karmaI": 180,
-  "karmaF": 13,
+  "karmaI": 211,
+  "karmaF": 4,
   "sessionLogs": [
     {
       "code": "SMH 2083-02 EggHunt at the Jackalope Ranch",
@@ -2001,7 +2097,7 @@
         "Duan Yuhai",
         "Xiong Giuyin"
       ],
-      "notes": "### **2026-June-03: SRM 2081-17: Framed in Blood** `{python} start_mission('SRM 2081-17')`\n\n* **Summary:** Duan Yuhai hired the team to eliminate a rival triad's leader, David Guo. David and his team had been invested by blood spirits tracing back to blood sacrifice rituals in Central America hundreds of years ago.  \n* **Team:** Poe (Dreamwalker), Caitlin/Artemis (Kira Capalu), Yuriko Star  \n* **GM:** Oli K  \n* **Rewards:** `{python} inc('Karma', 7)`, `{python} inc('Nuyen', 9500)`  \n* **Reputation:** `{python} add_rep('Seattle', 1)`  \n* **Contacts:**\n  * `{python} contact(\"Duan Yuhai\", connection=3, fp=1, type_name=\"SEA Minor 88s Johnson\", notes=\"SRM 2081-17 Framed in Blood\")`\n  * `{python} contact(\"Xiong Giuyin\", connection=4, fp=1, type_name=\"SEA Wuxing\", notes=\"SRM 2081-17 Framed in Blood\")`  \n* **Heat:** No heat (Bribes: Poe, Yuriko)  \n* **Downtime Actions (1 Major & 1 Minor):**  \n  * *Submersion - Living Network:* `{python} inc_many(('Karma', -11-Submersion_Grade), ('Submersion_Grade', 1))`  \n  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  \n* **Other**\n  * Three additional registered sprites compiled during game downtime (3 nights): `{python} add_sprite('Sprite-M9a', 7, 'Modular', 'Downtime 3 nights')`, `{python} add_sprite('Sprite-M9b', 7, 'Modular', 'Downtime 3 nights')`, `{python} add_sprite('Sprite-M9c', 7, 'Modular', 'Downtime 3 nights')`\n  * Ally Sprite code recompiled to R7 crack ally sprite. `{python} inc('Karma', -28)`\n\n---"
+      "notes": "### **2026-June-03: SRM 2081-17: Framed in Blood** `{python} start_mission('SRM 2081-17')`\n\n* **Summary:** Duan Yuhai hired the team to eliminate a rival triad's leader, David Guo. David and his team had been invested by blood spirits tracing back to blood sacrifice rituals in Central America hundreds of years ago.  \n* **Team:** Poe (Dreamwalker), Caitlin/Artemis (Kira Capalu), Yuriko Star  \n* **GM:** Oli K  \n* **Rewards:** `{python} inc('Karma', 7)`, `{python} inc('Nuyen', 9500)`  \n* **Reputation:** `{python} add_rep('Seattle', 1)`  \n* **Contacts:**\n  * `{python} contact(\"Duan Yuhai\", connection=3, fp=1, type_name=\"SEA Minor 88s Johnson\", notes=\"SRM 2081-17 Framed in Blood\")`\n  * `{python} contact(\"Xiong Giuyin\", connection=4, fp=1, type_name=\"SEA Wuxing\", notes=\"SRM 2081-17 Framed in Blood\")`  \n* **Heat:** No heat (Bribes: Poe, Yuriko)  \n* **Downtime Actions (1 Major & 1 Minor):**  \n  * *Submersion - Living Network:* `{python} inc_many(('Karma', -11-Submersion_Grade), ('Submersion_Grade', 1))`  \n  * *Rent & Working for the People (Hooder):* `{python} inc_many(('Karma', 1), ('Nuyen', -4000))`  \n* **Other**\n  * Three additional registered sprites compiled during game downtime (3 nights): `{python} add_sprite('Sprite-M9a', 7, 'Modular', 'Downtime 3 nights')`, `{python} add_sprite('Sprite-M9b', 7, 'Modular', 'Downtime 3 nights')`, `{python} add_sprite('Sprite-M9c', 7, 'Modular', 'Downtime 3 nights')`\n  * Ally Sprite code recompiled to R7 crack ally sprite. `{python} inc('Karma', -28)`\n\n---"
     },
     {
       "code": "2026-June-06: CMP 2081-20: In the Cold Kentucky Rain",
@@ -2085,7 +2181,7 @@
         "Fernand Anato",
         "Monsieur Johnson"
       ],
-      "notes": "### **2026-June-20: SRM 2083-19 | The Hallow Feast** `{python} start_mission('SRM 2083-19')`\n\n* **Summary:**: Hired by Monsieur Johnson to ascertain the whereabouts of Snaggletooth. Ultimately found him long since dead and possessed by a spirit attempting to destroy the world. \n* **Team:**: Eris Pomme, Ice Lily, Jolee, Bob, Yuriko\n* **GM:** Morgan\n* **Rewards:**: `{python} inc('Karma', 8)`, `{python} inc('Nuyen', 8500)` + `{python} inc('Nuyen', 5000)` bonus for saving NOLA \n* **Reputation:**: `{python} add_rep('NOLA', 3)`\n* **Heat:**: No Heat\n* **Contacts:**\n  * `{python} contact(\"Fernand Anato\", connection=1, fp=1, type_name=\"NOLA Kozlowski Capo\", notes=\"SRM 2083-19 The Hallow Feast\")`\n  * `{python} contact(\"Monsieur Johnson\", connection=5, fp=3, type_name=\"NOLA Johnson\", notes=\"SRM 2083-19 The Hallow Feast\")`\n* **Downtime Actions (1 Minor):**\n  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`\n  * *Submersion - Overclocking:* `{python} inc_many(('Karma', -11-Submersion_Grade), ('Submersion_Grade', 1))`\n\n---"
+      "notes": "### **2026-June-20: SRM 2083-19 | The Hallow Feast** `{python} start_mission('SRM 2083-19')`\n\n* **Summary:**: Hired by Monsieur Johnson to ascertain the whereabouts of Snaggletooth. Ultimately found him long since dead and possessed by a spirit attempting to destroy the world. \n* **Team:**: Eris Pomme, Ice Lily, Jolee, Bob, Yuriko\n* **GM:** Morgan\n* **Rewards:**: `{python} inc('Karma', 8)`, `{python} inc('Nuyen', 8500)` + `{python} inc('Nuyen', 5000)` bonus for saving NOLA \n* **Reputation:**: `{python} add_rep('NOLA', 3)`\n* **Heat:**: No Heat\n* **Contacts:**\n  * `{python} contact(\"Fernand Anato\", connection=1, fp=1, type_name=\"NOLA Kozlowski Capo\", notes=\"SRM 2083-19 The Hallow Feast\")`\n  * `{python} contact(\"Monsieur Johnson\", connection=5, fp=3, type_name=\"NOLA Johnson\", notes=\"SRM 2083-19 The Hallow Feast\")`\n* **Downtime Actions (1 Minor):**\n  * *Rent & Working for the People (Hooder):* `{python} inc_many(('Karma', 1), ('Nuyen', -4000))`\n  * *Submersion - Overclocking:* `{python} inc_many(('Karma', -11-Submersion_Grade), ('Submersion_Grade', 1))`\n\n---"
     },
     {
       "code": "2026-June-25: SRM 2081-05 | This is Renton",
@@ -2129,7 +2225,7 @@
         "Eddie Wei",
         "Julian M\u00fcntefering"
       ],
-      "notes": "### **2026-July-07: SRM 2081-08 Child's Play** `{python} start_mission('SRM 2081-08')`\n\n* **Summary:**: Hired by a CorpoKid to bodyguard him while he developed and sold a new neural interface for drones. A corp tried to steal it, but they failed. \n* **Team:**: Rei, Jolthead, Yuriko, Poe, Jack Diamond, Panda\n* **GM:** JaGator\n* **Rewards:** `{python} inc('Karma', 6)`, `{python} inc('Nuyen', 6500)`\n* **Reputation:** `{python} add_rep('Seattle', 1)`\n* **Heat:** 0\n* **Contacts:**\n  * `{python} contact(\"Eddie Wei\", connection=4, fp=1, type_name=\"SEA Triad/Johnson\", notes=\"SRM 2081-08 Child's Play\")`\n  * `{python} contact(\"Julian M\u00fcntefering\", connection=1, fp=1, type_name=\"SEA Renraku Corpokid\", notes=\"SRM 2081-08 Child's Play\")`\n* **Downtime Actions (3 Minors):**\n  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`\n  * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)\n  * Modifying Man-At-Arms: Removing megalodon, adding Red Fox and two Crimson Wasps\n* **Other bonuses:** 3 sprites registered during in-session downtime: `{python} add_sprite('Sprite-M18a', 7, 'Modular', 'Shield')`, `{python} add_sprite('Sprite-M18b', 7, 'Modular', 'Death Mark')`, `{python} add_sprite('Sprite-M18c', 7, 'Modular', 'Death Mark')`\n\n---"
+      "notes": "### **2026-July-07: SRM 2081-08 Child's Play** `{python} start_mission('SRM 2081-08')`\n\n* **Summary:**: Hired by a CorpoKid to bodyguard him while he developed and sold a new neural interface for drones. A corp tried to steal it, but they failed. \n* **Team:**: Rei, Jolthead, Yuriko, Poe, Jack Diamond, Panda\n* **GM:** JaGator\n* **Rewards:** `{python} inc('Karma', 6)`, `{python} inc('Nuyen', 6500)`\n* **Reputation:** `{python} add_rep('Seattle', 1)`\n* **Heat:** 0\n* **Contacts:**\n  * `{python} contact(\"Eddie Wei\", connection=4, fp=1, type_name=\"SEA Triad/Johnson\", notes=\"SRM 2081-08 Child's Play\")`\n  * `{python} contact(\"Julian M\u00fcntefering\", connection=1, fp=1, type_name=\"SEA Renraku Corpokid\", notes=\"SRM 2081-08 Child's Play\")`\n* **Downtime Actions (3 Minors):**\n  * *Rent & Working for the People (Hooder):* `{python} inc_many(('Karma', 1), ('Nuyen', -4000))`\n  * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)\n  * Modifying Man-At-Arms: Removing megalodon, adding Red Fox and two Crimson Wasps\n* **Other bonuses:** 3 sprites registered during in-session downtime: `{python} add_sprite('Sprite-M18a', 7, 'Modular', 'Shield')`, `{python} add_sprite('Sprite-M18b', 7, 'Modular', 'Death Mark')`, `{python} add_sprite('Sprite-M18c', 7, 'Modular', 'Death Mark')`\n\n---"
     },
     {
       "code": "2026-July-09: SRM 2081-07 | Bootleg Bliss",
@@ -2159,7 +2255,7 @@
         "Jeanie Trudel",
         "Kingston"
       ],
-      "notes": "### **2026-July-10: SRM 2081-06 | Cutting Strings** `{python} start_mission('SRM 2081-06')`\n\n* **Summary:** Hired by a Johnson to find a friend.\n* **Team:** Poe, Baakfu, Yuriko, He-nu, Jolthead, Georges Baptiste, Babel, Havoc, Marcon\n* **GM:** Kira Capalu\n* **Rewards:** `{python} inc('Karma', 6)`, `{python} inc('Nuyen', 8000)`\n* **Reputation:** `{python} add_rep('Seattle', 1)`\n* **Heat:** +1 (spent `{python} inc('Nuyen', -1000)` pre roll, `{python} inc('Nuyen', -2000)` post-roll to negate)\n* **Contacts:**\n  * `{python} contact(\"Saint James\", connection=8, fp=3, type_name=\"SEA Fixer\", notes=\"SRM 2081-06 Cutting Strings\")`\n  * `{python} contact(\"Jeanie Trudel\", connection=1, fp=1, type_name=\"SEA Bartender\", notes=\"SRM 2081-06 Cutting Strings\")`\n  * `{python} contact(\"Kingston\", connection=2, fp=1, type_name=\"SEA Shadowrunner\", notes=\"SRM 2081-06 Cutting Strings\")`\n* **Downtime Actions (3 Minor):**\n  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`\n  * *Register Sprites:* `{python} add_sprite('Sprite-M20a', 7, 'Modular', 'Autosofts')`\n  * *Register Sprites:* `{python} add_sprite('Sprite-M20b', 7, 'Modular', 'Autosofts')`\n\n---"
+      "notes": "### **2026-July-10: SRM 2081-06 | Cutting Strings** `{python} start_mission('SRM 2081-06')`\n\n* **Summary:** Hired by a Johnson to find a friend.\n* **Team:** Poe, Baakfu, Yuriko, He-nu, Jolthead, Georges Baptiste, Babel, Havoc, Marcon\n* **GM:** Kira Capalu\n* **Rewards:** `{python} inc('Karma', 6)`, `{python} inc('Nuyen', 8000)`\n* **Reputation:** `{python} add_rep('Seattle', 1)`\n* **Heat:** +1 (spent `{python} inc('Nuyen', -1000)` pre roll, `{python} inc('Nuyen', -2000)` post-roll to negate)\n* **Contacts:**\n  * `{python} contact(\"Saint James\", connection=8, fp=3, type_name=\"SEA Fixer\", notes=\"SRM 2081-06 Cutting Strings\")`\n  * `{python} contact(\"Jeanie Trudel\", connection=1, fp=1, type_name=\"SEA Bartender\", notes=\"SRM 2081-06 Cutting Strings\")`\n  * `{python} contact(\"Kingston\", connection=2, fp=1, type_name=\"SEA Shadowrunner\", notes=\"SRM 2081-06 Cutting Strings\")`\n* **Downtime Actions (3 Minor):**\n  * *Rent & Working for the People (Hooder):* `{python} inc_many(('Karma', 1), ('Nuyen', -4000))`\n  * *Register Sprites:* `{python} add_sprite('Sprite-M20a', 7, 'Modular', 'Autosofts')`\n  * *Register Sprites:* `{python} add_sprite('Sprite-M20b', 7, 'Modular', 'Autosofts')`\n\n---"
     },
     {
       "code": "CMP 2083-04 | Hog Wild",
@@ -2198,34 +2294,76 @@
       "date": "",
       "gm": "JaGator",
       "karma": 10,
-      "nuyen": -157750,
+      "nuyen": 9000,
       "summary": "NOLA Network News at 9 reported evidence linking Zobop / Red Tide Hitman, Mackenson \u201cMr. Smiley\u201d Salomon to Blood Magic, Sacrifice, and murder was turned over to NOMS by a concerned citizen and member of the Koslowski family. Mr. Smiley seems to have departed the NOLA area.",
       "contacts": [
         "Aloysius Springinsguth"
       ],
-      "notes": "### **2026-July-24: SRM 2083-12 | When You're Smiling** `{python} start_mission('SRM 2083-12')`\n\n* **Summary:** NOLA Network News at 9 reported evidence linking Zobop / Red Tide Hitman, Mackenson \u201cMr. Smiley\u201d Salomon to Blood Magic, Sacrifice, and murder was turned over to NOMS by a concerned citizen and member of the Koslowski family. Mr. Smiley seems to have departed the NOLA area.\n* **Team:** Jolthead, Lord Hattington, Dreamwalker, Silicon Mage, Yuriko Star (WarDoctor), Havoc (ShuiroHanaya1)\n* **GM:** JaGator\n* **Difficulty Level:** Veteran\n* **Rewards:** `{python} inc('Karma', 9)`, `{python} inc('Nuyen', 9000)` (Veteran bonuses included)\n* **Reputation:** `{python} add_rep('NOLA', 1)` (Kozlowski Family, NOLA)\n* **Contacts:**\n  * `{python} contact(\"Aloysius Springinsguth\", connection=3, fp=3, type_name=\"NOLA Sound of Silence Music Shop Owner\", notes=\"SRM 2083-12 When You're Smiling\")`\n* **Heat:** No heat\n* **Downtime Actions (1 Major, 1 Minor):**\n  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`\n  * *Setup Framework Host:* Configured Rating 2 Framework Host\u2014The Holy Wild Sanctuary Host (Scale 1 Micro, Grade 2 Default, compact studio & glade portal architecture) acquired as a home and sanctuary for emergent sparks.\n* **Other:**\n  * Two sprites registered during 2 days of in-session downtime:\n    * `{python} add_sprite('Sprite-M23a')`\n    * `{python} add_sprite('Sprite-M23b')`\n* **Loot & Infrastructure:**\n  * **Framework Host:** Rating 2 Framework Host\u2014The Holy Wild Sanctuary Host (Scale 1 Micro, Grade 2 Default, compact studio & glade portal architecture) acquired during the run.\n  * Rating 4 Commlinks available.\n\n---\n\n### Historical Gear Purchases\n\n#### Combat\n\n* Monofilament Whip `{python} inc('Nuyen', -1500)`\n  * Fingertip Cyberarm Compartment Mount\n* Krime Gloves `{python} inc('Nuyen', -1050)`\n  * Personalized Grip\n* Ares Securetech SkinShield `{python} inc('Nuyen', -3000)`\n* SecureTech Invisi-Shield `{python} inc('Nuyen', -5000)`\n* Ares Predator VI `{python} inc('Nuyen', -1450)`\n  * Silencer\n  * Personalized Grip\n  * Smartgun System\n  * Variable Ammunition System\n  * 50 Explosive Rounds `{python} inc('Nuyen', -100)`\n  * 50 Krime Self Defense Rounds `{python} inc('Nuyen', -100)`\n* Crimson Wasp x2 `{python} inc('Nuyen', -3000)`\n* Red Fox `{python} inc('Nuyen', -2800)`\n  * Smartgun System (Internal)\n  * Peak-Discharge Laser Battery Clips x5 `{python} inc('Nuyen', -500)`\n* Glitter Grenades x10 `{python} inc('Nuyen', -1000)`\n\n#### Matrix\n\n* M-TOC II `{python} inc('Nuyen', -65000)`\n* Software Library\n  * Basic Programs\n    * Baby Monitor `{python} inc('Nuyen', -100)`\n    * Browse `{python} inc('Nuyen', -100)`\n    * Edit `{python} inc('Nuyen', -100)`\n    * **Emulator** `{python} inc_many(('Nuyen', -100),('Karma', -1))`\n    * Encryption `{python} inc('Nuyen', -100)`\n    * Signal Scrubber `{python} inc('Nuyen', -100)`\n    * **Toolbox** `{python} inc_many(('Nuyen', -100),('Karma', -1))`\n    * **Virtual Machine** `{python} inc_many(('Nuyen', -100),('Karma', -1))`\n  * Hacking Programs\n    * Decryption `{python} inc('Nuyen', -200)`\n    * Defense Pods `{python} inc('Nuyen', -200)`\n    * **Directional Shields** `{python} inc_many(('Nuyen', -200),('Karma', -1))`\n    * Fork `{python} inc('Nuyen', -200)`\n    * Hitchhiker `{python} inc('Nuyen', -200)`\n    * **Nexus Protocol** `{python} inc_many(('Nuyen', -1000),('Karma', -1))`\n    * Overclock `{python} inc('Nuyen', -200)`\n    * Trace `{python} inc('Nuyen', -200)`\n * Rigger Programs\n   * Smartsoft `{python} inc('Nuyen', -250)`  \n   * Swarm `{python} inc('Nuyen', -250)`\n   * Encryption (Rigger) `{python} inc('Nuyen', -250)`\n* Autosofts\n  * Biotech (R9) `{python} inc('Nuyen', -4500)`\n  * **Clearsight (R9)** `{python} inc_many(('Nuyen', -4500),('Karma', -1))`\n  * Close Combat (R9) `{python} inc_many(('Nuyen', -4500),('Karma', -1))`\n  * Engineering (1, R9) `{python} inc('Nuyen', -4500)`\n  * Evasion (R9) `{python} inc_many(('Nuyen', -4500),('Karma', -1))`\n  * Knowledge `{python} inc('Nuyen', -1500)`\n  * Language (1, R5) `{python} inc('Nuyen', -2500)`\n  * Maneuvering (1, R9) `{python} inc_many(('Nuyen', -4500),('Karma', -1))`\n  * Navigation (R9) `{python} inc('Nuyen', -4500)`\n  * Performance (R9) `{python} inc('Nuyen', -4500)`\n  * **Stealth (1, R9)** `{python} inc_many(('Nuyen', -4500),('Karma', -1))`\n  * Targeting (1, R9) `{python} inc_many(('Nuyen', -4500),('Karma', -1))`\n  * Tracking (R9) `{python} inc_many(('Nuyen', -4500),('Karma', -1))`\n* Tactical Software\n   * Artillery Barrage `{python} inc('Nuyen', -200)`\n   * ECM Warrior II `{python} inc('Nuyen', -200)`\n   * Mobile Medic `{python} inc('Nuyen', -200)`\n   * Sneak-Sneak `{python} inc('Nuyen', -200)`\n   * Target Artist `{python} inc('Nuyen', -200)`\n* Commlink Apps\n  * Facial Scanner `{python} inc('Nuyen', -750)`\n  * P-ICE Spines `{python} inc('Nuyen', -500)`\n  * Personal Assistant (R6) `{python} inc('Nuyen', -600)`\n  * Social HUD (R6) `{python} inc('Nuyen', -700)`\n  * Thermal Mood Reading `{python} inc('Nuyen', -700)`\n  * Vocal Tension Detection `{python} inc('Nuyen', -700)`\n* Other\n  * Mapsoft x4 `{python} inc('Nuyen', -400)`\n  * Shopsoft x6 `{python} inc('Nuyen',-900)`\n  * **Coding Facility** `{python} inc_many(('Nuyen',-5000),('Karma',-1))`\n  \n1: For autosofts that are specific, the character programs her derivative own based on the original version she bought above. This process takes 8 hours for knowledge and language autosofts, and 12 hours for all other autosofts. The cost is 1 karma for each of the derivative autosofts.\n\nSoftware with karma costs have been learned via the **Software Emulator** echo.\n\n#### Vehicles\n\n* MCT Gnat x5 `{python} inc('Nuyen', -4000)`\n  * Realistic Features 4\n  * Laser Jack\n* Shiawase Bi-Drone Butler \n  * Drone Rack (Small) \n  * Wrist Shield \n  * Realistic Features 1\n  * Increased Structural Integrity 2 \n  * Secondary Propulsion (Rotor)\n  * Increased Sensors 3\n  * Retractible Skates x2\n  * Hardpoint Small x2\n  * Accessories\n    * Satellite Link\n    * Laser Jack\n* Shiawase Man-At-Arms `{python} inc('Nuyen', -4500*.9)`\n  * Weapon Mount - Heavy\n  * Pop-Out Concealment - Large `{python} inc('Nuyen', -4500/2)`\n  * Drone Rack (Small) `{python} inc('Nuyen', -3000/2)`\n  * Tesla Coil `{python} inc('Nuyen', -15000/2)`\n  * Fingertip Compartment `{python} inc('Nuyen', -3000/2)`\n  * Wrist Shield `{python} inc('Nuyen', -2000/2)`\n  * Armor Increase 5 `{python} inc('Nuyen', -25000/2)`\n  * Increased Structural Integrity 5 `{python} inc('Nuyen', -25000/2)`\n  * Realistic Features 4 `{python} inc('Nuyen', -10000/2)`\n  * Hardpoint Small x2 `{python} inc('Nuyen', -1500/2)`\n  * Small Weapon Mount x2 `{python} inc('Nuyen', -800/2)`\n  * Secondary Propulsion (Rotor): `{python} inc('Nuyen', -50000/2)`  \n  * Increased Sensors 3 `{python} inc('Nuyen', -15000/2)`\n  * Retractible Skates x2 `{python} inc('Nuyen',-500/2)`\n  * Accessories\n    * Satellite Link\n    * Laser Jack\n* Shiawase Bi-Drone Butler `{python} inc('Nuyen', -3000*.9)`\n  * Retrans Unit `{python} inc('Nuyen', -7500/2)`\n  * Integrated Matrix Device `{python} inc('Nuyen', -800/2)`\n  * Realistic Features 1\n  * Retractible Skates x2 `{python} inc('Nuyen',-500/2)`\n  * Accessories\n    * Satellite Link\n    * Laser Jack\n\nDrones mods include 50% discount on mods Yuriko installed herself (DC p. 120). Cyberware is purchased as used/omegaware (50% discount again). \n\nShiawase drones include 10% discount (Smile at the Camera).\n\nThere is no cost for the Butler drone because it's less than the cost of the Man-At-Arms drone and I only use one or the other for difficulty mode adjustment.\n\n#### Electronics\n\n* Software Tag x10 `{python} inc('Nuyen', -1000)`\n* Laser Jack x10 `{python} inc('Nuyen', -1000)`\n* Satellite Link x2 `{python} inc('Nuyen', -1000)`\n\n#### Other\n\n* Engineering Kit `{python} inc('Nuyen', -500)`\n* Medkit R1 `{python} inc('Nuyen', -250)`\n\n#### SINs\n\n* Yuriko Star (R2) `{python} inc('Nuyen', -5000)`\n  * Drone License `{python} inc('Nuyen', -400)`\n  * Firearms License `{python} inc('Nuyen', -400)`\n\n---"
+      "notes": "### **2026-July-24: SRM 2083-12 | When You're Smiling** `{python} start_mission('SRM 2083-12')`\n\n* **Summary:** NOLA Network News at 9 reported evidence linking Zobop / Red Tide Hitman, Mackenson \u201cMr. Smiley\u201d Salomon to Blood Magic, Sacrifice, and murder was turned over to NOMS by a concerned citizen and member of the Koslowski family. Mr. Smiley seems to have departed the NOLA area.\n* **Team:** Jolthead, Lord Hattington, Dreamwalker, Silicon Mage, Yuriko Star (WarDoctor), Havoc (ShuiroHanaya1)\n* **GM:** JaGator\n* **Difficulty Level:** Veteran\n* **Rewards:** `{python} inc('Karma', 9)`, `{python} inc('Nuyen', 9000)` (Veteran bonuses included)\n* **Reputation:** `{python} add_rep('NOLA', 1)` (Kozlowski Family, NOLA)\n* **Contacts:**\n  * `{python} contact(\"Aloysius Springinsguth\", connection=3, fp=3, type_name=\"NOLA Sound of Silence Music Shop Owner\", notes=\"SRM 2083-12 When You're Smiling\")`\n* **Heat:** No heat\n* **Downtime Actions (1 Major, 1 Minor):**\n  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`\n  * *Setup Framework Host:* Configured Rating 2 Framework Host\u2014The Holy Wild Sanctuary Host (Scale 1 Micro, Grade 2 Default, compact studio & glade portal architecture) acquired as a home and sanctuary for emergent sparks.\n* **Other:**\n  * Two sprites registered during 2 days of in-session downtime:\n    * `{python} add_sprite('Sprite-M23a')`\n    * `{python} add_sprite('Sprite-M23b')`\n* **Loot & Infrastructure:**\n  * **Framework Host:** Rating 2 Framework Host\u2014The Holy Wild Sanctuary Host (Scale 1 Micro, Grade 2 Default, compact studio & glade portal architecture) acquired during the run.\n  * Rating 4 Commlinks available.\n\n---"
     },
     {
-      "code": "Current Totals",
-      "title": "Current Totals",
-      "date": "",
-      "gm": "",
-      "karma": 0,
-      "nuyen": 0,
-      "summary": "",
-      "contacts": [],
-      "notes": "### **Current Totals**\n\n* **Lifetime Karma:** `{python} Lifetime_Karma`\n* **Available Karma:** `{python} Karma`\n* **Total Nuyen:** \u00a5`{python} f\"{Nuyen:,}\"`\n* **Submersion Grade:** `{python} Submersion_Grade`\n* **Resonance:** `{python} Resonance`\n* **Current Heat:** `{python} Heat`\n* **Total Reputation:** `{python} sum(Reputation.values())`\n  * **Seattle (SEA):** +`{python} Reputation.get('Seattle', 0)`\n  * **NOLA:** +`{python} Reputation.get('NOLA', 0)`\n  * **Vory:** +`{python} Reputation.get('Vory', 0)`\n  * **Kentucky:** +`{python} Reputation.get('Kentucky', 0)`\n  * **Mercenary:** +`{python} Reputation.get('Mercenary', 0)`\n  * **Amsterdam / UNL:** +`{python} Reputation.get('Amsterdam', 0) + Reputation.get('UNL', 0)`\n  * **Southeast Asia (SEA/HK):** +`{python} Reputation.get('Southeast Asia', 0)`\n\n---"
+      "code": "SRM 2083-17 | Haute Blooded",
+      "title": "SRM 2083-17 | Haute Blooded",
+      "date": "2026-Jul-30",
+      "gm": "Raven2049 (GenCon 2026)",
+      "karma": 7,
+      "nuyen": 7450,
+      "summary": "Jolene Price asked us to investigate the Crescent City Creative Culture Expo and get dirt on both Aurelian and Enoch. We then sabotaged Aurelian so that investments in Enoch skyrocketed.",
+      "contacts": [
+        "Jolene Price",
+        "Le Tigre",
+        "Roanoke",
+        "Coffin Girls"
+      ],
+      "notes": "### **2026-Jul-30: SRM 2083-17 | Haute Blooded** `{python} start_mission('SRM 2083-17')`\n\n* **Summary:** Jolene Price asked us to investigate the Crescent City Creative Culture Expo and get dirt on both Aurelian and Enoch. We then sabotaged Aurelian so that investments in Enoch skyrocketed.\n* **Team:** Griz, Deckeyon, Mustang Sally, Jeeves, Yuriko\n* **GM:** Raven2049 (GenCon 2026)\n* **Rewards:** `{python} inc('Nuyen', 7450)`, `{python} inc('Karma', 6)` (normal difficulty)\n* **Reputation:** `{python} add_rep('NOLA', 2)`\n* **Heat:** 0\n* **Contacts:**\n  * `{python} contact(\"Jolene Price\", connection=7, fp=3, type_name=\"NOLA Riverboat Alliance Leader\", notes=\"SRM 2083-17 Haute Blooded\")`\n  * `{python} contact(\"Le Tigre\", connection=5, fp=1, type_name=\"NOLA Epoch Model\", notes=\"SRM 2083-17 Haute Blooded\")`\n  * `{python} contact(\"Roanoke\", connection=3, fp=1, type_name=\"NOLA Ecological Activist\", notes=\"SRM 2083-17 Haute Blooded\")`\n* **Downtime Actions (1 Major & 1 Minor):**\n  * *Earn Favor (Coffin Girls):* `{python} contact(\"Coffin Girls\", connection=3, loyalty=3, fp=1, type_name=\"NOLA Independent Courtesans Group\")`\n  * *Rent & Working for the People (Hooder):* `{python} inc_many(('Karma', 1), ('Nuyen', -4000))`\n* **Other:**\n  * Lost JP Chakraborty as a contact\n\n---"
     },
     {
-      "code": "Active Sprite Stable",
-      "title": "Active Sprite Stable",
-      "date": "",
-      "gm": "",
-      "karma": 0,
-      "nuyen": 0,
-      "summary": "",
-      "contacts": [],
-      "notes": "### **Active Sprite Stable**\n\n```{python}\n#| echo: false\n#| output: asis\nactive = get_active_sprites()\nprint(\"| Sprite Name | Rating & Type | Registered During | Full Missions Active | Status |\")\nprint(\"| ----------- | --- | --- | --- | --- |\")\nfor s in active:\n    if s.get(\"is_ally\"):\n        print(f\"| {s['name']} | R{s['level']} {s['type']} | Character Creation | Permanent | Active (Ally) |\")\n    else:\n        elapsed = Current_Mission - s['registered_mission']\n        rem = 3 - elapsed\n        status_str = f\"Active ({rem} mission{'s' if rem != 1 else ''} remaining)\"\n        m_name = s.get('registered_mission_name', f\"Mission {s['registered_mission']}\")\n        print(f\"| {s['name']} | R{s['level']} {s['type']} ({s['details']}) | {m_name} | {elapsed} / 3 | {status_str} |\")\n```\n\n```{python}\n#| echo: false\n#| include: false\nimport yaml, os\nif Contacts:\n    yaml_path = os.path.abspath(\"yuriko_master.yaml\")\n    if os.path.exists(yaml_path):\n        with open(yaml_path, \"r\", encoding=\"utf-8\") as f:\n            mdata = yaml.safe_load(f) or {}\n        clist = []\n        for name, c in Contacts.items():\n            clist.append({\n                \"name\": name,\n                \"connection\": c[\"connection\"],\n                \"loyalty\": c[\"loyalty\"],\n                \"favors\": c[\"favors\"],\n                \"type\": c[\"type\"],\n                \"archetype\": c[\"type\"],\n                \"region\": c.get(\"region\", \"GEN\"),\n                \"description\": c[\"notes\"]\n            })\n\n        mdata[\"contacts\"] = clist\n        with open(yaml_path, \"w\", encoding=\"utf-8\") as f:\n            yaml.dump(mdata, f, sort_keys=False, allow_unicode=True, indent=2)\n\n```"
+      "code": "SRM 2083-20 | The Fallacy of Plans",
+      "title": "SRM 2083-20 | The Fallacy of Plans",
+      "date": "2026-Aug-01",
+      "gm": "(GenCon 2026 Sat 1pm slot)",
+      "karma": 9,
+      "nuyen": 7000,
+      "summary": "NOLA Detective Remy LeBlanc is framed for the serial killings of the Ghoul of Gentilly. Ren\u00e9e asked Yuriko and her team to secure the detective. We also rescued a few other 'notable' people who were kidnapped by the Ghoul during the op.",
+      "contacts": [
+        "Cedar",
+        "Roanoke",
+        "Ren\u00e9e Martin",
+        "Detective Remy LeBlanc",
+        "Claudette Laurier",
+        "Coffin Girls"
+      ],
+      "notes": "### **2026-Aug-01: SRM 2083-20 | The Fallacy of Plans** `{python} start_mission('SRM 2083-20')`\n\n* **Summary:** NOLA Detective Remy LeBlanc is framed for the serial killings of the Ghoul of Gentilly. Ren\u00e9e asked Yuriko and her team to secure the detective. We also rescued a few other 'notable' people who were kidnapped by the Ghoul during the op.\n* **Team:** Sersha, Colin, Samurai Jack, John Mick, Sammy, Yuriko\n* **GM:** (GenCon 2026 Sat 1pm slot)\n* **Rewards:** `{python} inc('Nuyen', 7000)`, `{python} inc('Karma', 8)` (normal difficulty)\n* **Reputation:** `{python} add_rep('NOLA', 2)` (1 with League of Laveau, 1 with Order of Golden Dawn)\n* **Heat:** 0\n* **Contacts:**\n  * `{python} contact(\"Cedar\", connection=3, fp=1, type_name=\"NOLA Talismonger\", notes=\"SRM 2083-20 The Fallacy of Plans\")`\n  * `{python} contact(\"Roanoke\", connection=3, fp=1, type_name=\"NOLA Ecological Activist\", notes=\"SRM 2083-20 The Fallacy of Plans\")`\n  * `{python} contact(\"Ren\u00e9e Martin\", connection=4, fp=1, type_name=\"NOLA League of Laveau Liaison\", notes=\"SRM 2083-20 The Fallacy of Plans\")`\n  * `{python} contact(\"Detective Remy LeBlanc\", connection=3, fp=3, type_name=\"NOLA Detective\", notes=\"SRM 2083-20 The Fallacy of Plans\")`\n  * `{python} contact(\"Claudette Laurier\", connection=5, fp=1, type_name=\"NOLA Order of the Golden Dawn Librarian\", notes=\"SRM 2083-20 The Fallacy of Plans\")`\n* **Downtime Actions (1 Major & 1 Minor):**\n  * *Earn Favor (Coffin Girls):* `{python} contact(\"Coffin Girls\", fp=1)`\n  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`\n\n---"
+    },
+    {
+      "code": "SRM 2083-18 | Some Kind of Voodoo?",
+      "title": "SRM 2083-18 | Some Kind of Voodoo?",
+      "date": "2026-Aug-01",
+      "gm": "August (GenCon 2026 Sat 6pm slot)",
+      "karma": 8,
+      "nuyen": 10000,
+      "summary": "Voodoo practitioners in NOLA were going missing. Ren\u00e9e Martin and The Old Man asked Yuriko to investigate.",
+      "contacts": [
+        "Coffin Girls",
+        "League of Laveau",
+        "Zobop",
+        "Coffin Girls"
+      ],
+      "notes": "### **2026-Aug-01: SRM 2083-18 | Some Kind of Voodoo?** `{python} start_mission('SRM 2083-18')`\n\n* **Summary:** Voodoo practitioners in NOLA were going missing. Ren\u00e9e Martin and The Old Man asked Yuriko to investigate. \n* **Team:** Fast Eddie, Rocky Robadeau, Harold Goodlaner, Technoviking, Gung Ho, Yuriko\n* **GM:** August (GenCon 2026 Sat 6pm slot)\n* **Rewards:** `{python} inc('Nuyen', 10000)`, `{python} inc('Karma', 7)` (normal difficulty)\n* **Reputation:** `{python} add_rep('NOLA', 1)` (League of Laveau, Zobop, Coffin Girls)\n* **Heat:** 0\n* **Contacts:**\n  * `{python} contact(\"Coffin Girls\", connection=3, loyalty=3, fp=1, type_name=\"NOLA Independent Courtesans Group\", notes=\"SRM 2083-18 Some Kind of Voodoo?\")`\n  * `{python} contact(\"League of Laveau\", connection=6, loyalty=3, fp=1, type_name=\"NOLA Voodoo Organization\", notes=\"SRM 2083-18 Some Kind of Voodoo?\")`\n  * `{python} contact(\"Zobop\", connection=6, loyalty=3, fp=1, type_name=\"NOLA Voodoo Organization\", notes=\"SRM 2083-18 Some Kind of Voodoo?\")`\n* **Downtime Actions (1 Major & 1 Minor):**\n  * *Earn Favor (Coffin Girls):* `{python} contact(\"Coffin Girls\", fp=1)`\n  * *Rent & Working for the People (Hooder):* `{python} inc_many(('Karma', 1), ('Nuyen', -4000))`\n* **Other:**\n  * Arranged for an apprenticeship with the Coffin Girls\n  * The Bone Man (Seneschal of Baron Samedi, Ewa of Secrets and Trading) intimated that Yuriko has a soul he had his eye on\n  * Obtained a pair of Amalgam Tech Cestas\n    * I don't have stats for these yet.\n    * Pending publication, I will treat them as 3P weapons that override magical immunity to normal weapons\n\n---"
+    },
+    {
+      "code": "CMP 2083-15 | By Land, Sea, and Hair",
+      "title": "CMP 2083-15 | By Land, Sea, and Hair",
+      "date": "2026-Aug-01",
+      "gm": "(GenCon 2026 Saturday 1pm slot)",
+      "karma": -33,
+      "nuyen": -154700,
+      "summary": "Thunder Corps lost contact with an airplane carrying precious cargo. So they arranged for air-to-air insertion for Yuriko and her team.",
+      "contacts": [
+        "Col. Treylor",
+        "Le Tigre"
+      ],
+      "notes": "### **2026-Aug-01: CMP 2083-15 | By Land, Sea, and Hair** `{python} start_mission('CMP 2083-15')`\n\n* **Summary:** Thunder Corps lost contact with an airplane carrying precious cargo. So they arranged for air-to-air insertion for Yuriko and her team.\n* **Team:** Colin, John Mick, Samurai Jack, Eidolon, TSF, Brick House, Yuriko, Zeid\n* **GM:** (GenCon 2026 Saturday 1pm slot)\n* **Rewards:** `{python} inc('Nuyen', 11000)`, `{python} inc('Karma', 6)` (normal difficulty)\n* **Reputation:** `{python} add_rep('DW', 2)` (Mercenary Community)\n* **Heat:** 0\n* **Contacts:**\n  * `{python} contact(\"Col. Treylor\", connection=3, fp=2, type_name=\"DW Thunder Corps Fixer\", notes=\"CMP 2083-15 | By Land, Sea, and Hair\")`\n  * `{python} contact(\"Le Tigre\", connection=5, fp=1, type_name=\"NOLA Epoch Model\", notes=\"CMP 2083-15 | By Land, Sea, and Hair\")`\n* **Downtime Actions (2 Minor):**\n  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`\n  * *Register Sprites:* `{python} add_sprite('Sprite-M27', 8, 'Modular')`\n* **Other:**\n  * Increased Resonance to 8: `{python} inc_many(('Karma', -40), ('Resonance', 1))`\n\n\n\n# Equipment Ledger\n\n### Combat\n\n* Monofilament Whip `{python} inc('Nuyen', -1500)`\n  * Fingertip Cyberarm Compartment Mount\n* Amalgam Cestas (obtained in SRM 2083-18)\n  * Personalized Grip\n* Ares Securetech SkinShield `{python} inc('Nuyen', -3000)`\n* SecureTech Invisi-Shield `{python} inc('Nuyen', -5000)`\n* Ares Predator VI `{python} inc('Nuyen', -1450)`\n  * Silencer\n  * Personalized Grip\n  * Smartgun System\n  * Variable Ammunition System\n  * 50 Explosive Rounds `{python} inc('Nuyen', -100)`\n  * 50 Krime Self Defense Rounds `{python} inc('Nuyen', -100)`\n* Crimson Wasp x2 `{python} inc('Nuyen', -3000)`\n* Red Fox `{python} inc('Nuyen', -2800)`\n  * Smartgun System (Internal)\n  * Peak-Discharge Laser Battery Clips x5 `{python} inc('Nuyen', -500)`\n* Glitter Grenades x10 `{python} inc('Nuyen', -1000)`\n\n### Matrix\n\n* M-TOC II `{python} inc('Nuyen', -65000)`\n* Software Library\n  * Basic Programs\n    * Baby Monitor `{python} inc('Nuyen', -100)`\n    * Browse `{python} inc('Nuyen', -100)`\n    * Edit `{python} inc('Nuyen', -100)`\n    * **Emulator** `{python} inc_many(('Nuyen', -100),('Karma', -1))`\n    * Encryption `{python} inc('Nuyen', -100)`\n    * Signal Scrubber `{python} inc('Nuyen', -100)`\n    * **Toolbox** `{python} inc_many(('Nuyen', -100),('Karma', -1))`\n    * **Virtual Machine** `{python} inc_many(('Nuyen', -100),('Karma', -1))`\n  * Hacking Programs\n    * Decryption `{python} inc('Nuyen', -200)`\n    * Defense Pods `{python} inc('Nuyen', -200)`\n    * **Directional Shields** `{python} inc_many(('Nuyen', -200),('Karma', -1))`\n    * Fork `{python} inc('Nuyen', -200)`\n    * Hitchhiker `{python} inc('Nuyen', -200)`\n    * **Nexus Protocol** `{python} inc_many(('Nuyen', -1000),('Karma', -1))`\n    * Overclock `{python} inc('Nuyen', -200)`\n    * Trace `{python} inc('Nuyen', -200)`\n * Rigger Programs\n   * Smartsoft `{python} inc('Nuyen', -250)`  \n   * Swarm `{python} inc('Nuyen', -250)`\n   * Encryption (Rigger) `{python} inc('Nuyen', -250)`\n* Autosofts\n  * Biotech (R9) `{python} inc('Nuyen', -4500)`\n  * **Clearsight (R9)** `{python} inc_many(('Nuyen', -4500),('Karma', -1))`\n  * **Close Combat (R9)** `{python} inc_many(('Nuyen', -4500),('Karma', -1))`\n  * Engineering (1, R9) `{python} inc('Nuyen', -4500)`\n  * **Evasion (R9)** `{python} inc_many(('Nuyen', -4500),('Karma', -1))`\n  * Knowledge `{python} inc('Nuyen', -1500)`\n  * Language (1, R5) `{python} inc('Nuyen', -2500)`\n  * **Maneuvering (1, R9)** `{python} inc_many(('Nuyen', -4500),('Karma', -1))`\n  * Navigation (R9) `{python} inc('Nuyen', -4500)`\n  * Performance (R9) `{python} inc('Nuyen', -4500)`\n  * **Stealth (1, R9)** `{python} inc_many(('Nuyen', -4500),('Karma', -1))`\n  * **Targeting (1, R9)** `{python} inc_many(('Nuyen', -4500),('Karma', -1))`\n  * **Tracking (R9)** `{python} inc_many(('Nuyen', -4500),('Karma', -1))`\n* Tactical Software\n   * Artillery Barrage `{python} inc('Nuyen', -200)`\n   * ECM Warrior II `{python} inc('Nuyen', -200)`\n   * Mobile Medic `{python} inc('Nuyen', -200)`\n   * Sneak-Sneak `{python} inc('Nuyen', -200)`\n   * Target Artist `{python} inc('Nuyen', -200)`\n* Commlink Apps\n  * Facial Scanner `{python} inc('Nuyen', -750)`\n  * P-ICE Spines `{python} inc('Nuyen', -500)`\n  * Personal Assistant (R6) `{python} inc('Nuyen', -600)`\n  * Social HUD (R6) `{python} inc('Nuyen', -700)`\n  * Thermal Mood Reading `{python} inc('Nuyen', -700)`\n  * Vocal Tension Detection `{python} inc('Nuyen', -700)`\n* Other\n  * Mapsoft x4 `{python} inc('Nuyen', -400)`\n  * Shopsoft x6 `{python} inc('Nuyen',-900)`\n  * **Coding Facility** `{python} inc_many(('Nuyen',-5000),('Karma',-1))`\n\nFor autosofts that are specific, the character programs her derivative own based on the original version she bought above. This process takes 8 hours for knowledge and language autosofts, and 12 hours for all other autosofts. The cost is 1 karma for each of the derivative autosofts.\n\nSoftware with karma costs have been learned via the **Software Emulator** echo.\n\n### Vehicles & Drones\n\n* MCT Gnat x5 `{python} inc('Nuyen', -4000)`\n  * Realistic Features 4\n  * Laser Jack\n* Shiawase Bi-Drone Butler \n  * Drone Rack (Small) \n  * Wrist Shield \n  * Realistic Features 1\n  * Increased Structural Integrity 2 \n  * Secondary Propulsion (Rotor)\n  * Increased Sensors 3\n  * Retractible Skates x2\n  * Hardpoint Small x2\n  * Accessories\n    * Satellite Link\n    * Laser Jack\n* Shiawase Man-At-Arms `{python} inc('Nuyen', -4500*.9)`\n  * Weapon Mount - Heavy\n  * Pop-Out Concealment - Large `{python} inc('Nuyen', -4500/2)`\n  * Drone Rack (Small) `{python} inc('Nuyen', -3000/2)`\n  * Tesla Coil `{python} inc('Nuyen', -15000/2)`\n  * Fingertip Compartment `{python} inc('Nuyen', -3000/2)`\n  * Wrist Shield `{python} inc('Nuyen', -2000/2)`\n  * Armor Increase 5 `{python} inc('Nuyen', -25000/2)`\n  * Increased Structural Integrity 5 `{python} inc('Nuyen', -25000/2)`\n  * Realistic Features 4 `{python} inc('Nuyen', -10000/2)`\n  * Hardpoint Small x2 `{python} inc('Nuyen', -1500/2)`\n  * Small Weapon Mount x2 `{python} inc('Nuyen', -800/2)`\n  * Secondary Propulsion (Rotor): `{python} inc('Nuyen', -50000/2)`  \n  * Increased Sensors 3 `{python} inc('Nuyen', -15000/2)`\n  * Retractible Skates x2 `{python} inc('Nuyen',-500/2)`\n  * Accessories\n    * Satellite Link\n    * Laser Jack\n\n\nDrone mods include a 50% discount on mods Yuriko installed herself (DC p. 120). Cyberware is purchased as used/omegaware (50% discount). Shiawase drones include a 10% discount (Smile for the Camera!).\n\n### Electronics\n\n* Software Tag x10 `{python} inc('Nuyen', -1000)`\n* Laser Jack x10 `{python} inc('Nuyen', -1000)`\n* Satellite Link x2 `{python} inc('Nuyen', -1000)`\n\n### Other Supplies\n\n* Engineering Kit `{python} inc('Nuyen', -500)`\n* Medkit R1 `{python} inc('Nuyen', -250)`\n\n### SINs & Licenses\n\n* Yuriko Star (R6) `{python} inc_many(('Nuyen', -5000), ('Nuyen', -10000))`\n  * Drone License (R6) `{python} inc_many(('Nuyen', -400), ('Nuyen', -800))`\n  * Firearms License (R6) `{python} inc_many(('Nuyen', -400), ('Nuyen', -800))`\n\n\n# Character Career Totals & Active Sprites\n\nThis dashboard displays Reiko's live career totals, regional faction reputation breakdown, active registered sprite status, and contact registry sync.\n\n---\n\n## Current Totals\n\n* **Lifetime Karma:** `{python} Lifetime_Karma`\n* **Available Karma:** `{python} Karma`\n* **Total Nuyen:** \u00a5`{python} f\"{Nuyen:,}\"`\n* **Submersion Grade:** `{python} Submersion_Grade`\n* **Resonance:** `{python} Resonance`\n* **Current Heat:** `{python} Heat`\n* **Total Reputation:** `{python} sum(Reputation.values())`\n  * **Seattle (SEA):** +`{python} Reputation.get('Seattle', 0)`\n  * **NOLA:** +`{python} Reputation.get('NOLA', 0)`\n  * **Vory:** +`{python} Reputation.get('Vory', 0)`\n  * **Kentucky:** +`{python} Reputation.get('Kentucky', 0)`\n  * **Mercenary / Desert Wars (DW):** +`{python} Reputation.get('Mercenary', 0) + Reputation.get('DW', 0)`\n  * **Amsterdam / UNL:** +`{python} Reputation.get('Amsterdam', 0) + Reputation.get('UNL', 0)`\n  * **Southeast Asia (HK):** +`{python} Reputation.get('Southeast Asia', 0)`\n\n---\n\n## Active Sprite Stable\n\n```{python}\n#| echo: false\n#| output: asis\nactive = get_active_sprites()\nprint(\"| Sprite Name | Rating & Type | Registered During | Full Missions Active | Status |\")\nprint(\"| ----------- | --- | --- | --- | --- |\")\nfor s in active:\n    if s.get(\"is_ally\"):\n        print(f\"| {s['name']} | R{s['level']} {s['type']} | Character Creation | Permanent | Active (Ally) |\")\n    else:\n        elapsed = Current_Mission - s['registered_mission']\n        rem = 3 - elapsed\n        status_str = f\"Active ({rem} mission{'s' if rem != 1 else ''} remaining)\"\n        m_name = s.get('registered_mission_name', f\"Mission {s['registered_mission']}\")\n        print(f\"| {s['name']} | R{s['level']} {s['type']} ({s['details']}) | {m_name} | {elapsed} / 3 | {status_str} |\")\n```\n\n```{python}\n#| echo: false\n#| include: false\nimport yaml, os\nif Contacts:\n    yaml_path = os.path.abspath(\"yuriko_master.yaml\")\n    if os.path.exists(yaml_path):\n        with open(yaml_path, \"r\", encoding=\"utf-8\") as f:\n            mdata = yaml.safe_load(f) or {}\n        clist = []\n        for name, c in Contacts.items():\n            clist.append({\n                \"name\": name,\n                \"connection\": c[\"connection\"],\n                \"loyalty\": c[\"loyalty\"],\n                \"favors\": c[\"favors\"],\n                \"type\": c[\"type\"],\n                \"archetype\": c[\"type\"],\n                \"region\": c.get(\"region\", \"GEN\"),\n                \"description\": c[\"notes\"]\n            })\n\n        mdata[\"contacts\"] = clist\n        with open(yaml_path, \"w\", encoding=\"utf-8\") as f:\n            yaml.dump(mdata, f, sort_keys=False, allow_unicode=True, indent=2)\n```"
     }
   ]
 }

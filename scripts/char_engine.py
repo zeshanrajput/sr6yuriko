@@ -66,7 +66,7 @@ def get_living_persona() -> Dict[str, Any]:
     base_atk = get_attribute("Strength", 3)
     
     asdf_b = data.get("living_persona", {}).get("asdf_bonuses", {})
-    res_fwl = asdf_b.get("firewall", 2)
+    res_fwl = asdf_b.get("firewall", 3)
     res_slz = asdf_b.get("sleaze", 1)
     res_dpr = asdf_b.get("data_processing", 1)
     res_atk = asdf_b.get("attack", 3)
@@ -76,7 +76,7 @@ def get_living_persona() -> Dict[str, Any]:
     sym_dpr = 2
     sym_atk = 0
     
-    prg_fwl = 1  # Encryption program
+    prg_fwl = 0  # Unslotted Encryption/RCC Firewall (replaced by 8th Resonance point)
     prg_slz = 0
     prg_dpr = 1  # Toolbox program
     prg_atk = 0
@@ -310,6 +310,13 @@ def get_processed_weapons() -> Dict[str, Any]:
         w_copy["effective_modes"] = "Melee (Close)"
         w_copy["mode_note"] = "Close Combat Attack."
         close_processed.append(w_copy)
+        if w_copy["name"] == "Amalgam Cestas (Phys)":
+            alias = dict(w_copy)
+            alias["name"] = "Amalgam Cestas"
+            close_processed.append(alias)
+            alias_old = dict(w_copy)
+            alias_old["name"] = "Krime Gloves"
+            close_processed.append(alias_old)
 
 
     return {

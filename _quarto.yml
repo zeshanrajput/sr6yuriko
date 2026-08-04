@@ -18,10 +18,18 @@ book:
         - chapters/identity_core.qmd
         - chapters/character_build_point_buy.qmd
         - chapters/character_sheet.qmd
-        - chapters/rules_and_downtime.qmd
+        - chapters/character_totals.qmd
         - chapters/character_log.qmd
+        - chapters/character_purchases.qmd
         - chapters/twenty_questions.qmd
         - chapters/dronomancy.md
+    - part: "Rules & Downtime Protocols"
+      chapters:
+        - chapters/rules_and_downtime.qmd
+        - chapters/rules_matrix.qmd
+        - chapters/rules_sprites.qmd
+        - chapters/rules_drones.qmd
+        - chapters/rules_combat.qmd
     - part: "Background Stories"
       chapters:
         - chapters/01 The Weight of Zero.md
@@ -47,6 +55,7 @@ book:
         - chapters/19 Legacy Code.md
         - chapters/20 The Price of Silk.md
         - chapters/21 ~.md
+        - chapters/22 C Sharp.md
     - part: "Reference & Specifications"
       chapters:
         - reference/visual_anchors.md

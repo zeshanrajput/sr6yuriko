@@ -1,13 +1,34 @@
 import re
 import os
 
-def get_log_totals(log_path="chapters/character_log.qmd"):
-    if not os.path.exists(log_path):
-        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        log_path = os.path.join(base_dir, "chapters", "character_log.qmd")
-        
-    with open(log_path, "r", encoding="utf-8") as f:
-        content = f.read()
+def get_log_totals(log_path=None):
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+    if log_path is None or (isinstance(log_path, str) and (log_path == "chapters/character_log.qmd" or log_path.endswith(os.path.join("chapters", "character_log.qmd")) or os.path.basename(log_path) == "character_log.qmd")):
+        target_files = [
+            os.path.join(base_dir, "chapters", "character_log.qmd"),
+            os.path.join(base_dir, "chapters", "character_purchases.qmd"),
+            os.path.join(base_dir, "chapters", "character_totals.qmd")
+        ]
+        files = [p for p in target_files if os.path.exists(p)]
+        if not files:
+            files = [os.path.join(base_dir, "chapters", "character_log.qmd")]
+    elif isinstance(log_path, list):
+        files = log_path
+    else:
+        if not os.path.exists(log_path):
+            alt_path = os.path.join(base_dir, "chapters", os.path.basename(log_path))
+            if os.path.exists(alt_path):
+                log_path = alt_path
+        files = [log_path]
+
+    contents = []
+    for fpath in files:
+        if os.path.exists(fpath):
+            with open(fpath, "r", encoding="utf-8") as f:
+                contents.append(f.read())
+
+    content = "\n\n".join(contents)
 
     env = {}
 

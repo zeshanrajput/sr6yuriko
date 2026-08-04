@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<sr6char career="true" gender="DIVERSE" karmaF="13" karmaI="180" meta="pilot-ai" nuyen="9550">
+<sr6char career="true" gender="DIVERSE" karmaF="4" karmaI="211" meta="pilot-ai" nuyen="21550">
    <lifestyles>
-      <lifestyle comfort="low" entert="low" lang="en" necess="low" neigh="low" ref="low" security="low" space="low" value="1" />
+      <lifestyle comfort="low" entert="low" lang="en" necess="low" neigh="low" ref="low" security="low" sin="6f7ec488-0263-46a5-bd21-56389f9f3c34" space="low" value="1" />
    </lifestyles>
    <asdfMap />
    <chargenSettings>{"characterPoints":100,"cpBoughtSpecial":32,"cpBoughtAttrib":40,"cpToSkills":7,"cpToResources":4,"boughtPP":0,"boughtSpells":0,"boughtComplex":0,"perAttrib":{"BODY":{"points1":0,"points2":4,"points3":0},"AGILITY":{"points1":0,"points2":2,"points3":0},"REACTION":{"points1":0,"points2":4,"points3":0},"STRENGTH":{"points1":0,"points2":2,"points3":0},"WILLPOWER":{"points1":0,"points2":5,"points3":0},"LOGIC":{"points1":0,"points2":3,"points3":0},"INTUITION":{"points1":0,"points2":1,"points3":0},"CHARISMA":{"points1":0,"points2":3,"points3":0},"EDGE":{"points1":4,"points2":0,"points3":0},"MAGIC":{"points1":0,"points2":0,"points3":0},"RESONANCE":{"points1":5,"points2":0,"points3":0}},"perSkill":{"language/1ab9b4c2-b6d2-4d84-8c82-91920cbefe8b":{"karmaSpec":0,"pointSpec":0,"points1":0,"points2":0,"points3":0},"tasking":{"karmaSpec":0,"pointSpec":1,"points1":6,"points2":0,"points3":0},"electronics":{"karmaSpec":0,"pointSpec":1,"points1":5,"points2":0,"points3":0},"cracking":{"karmaSpec":0,"pointSpec":1,"points1":5,"points2":0,"points3":0}},"perSpellPayedWithCP":{},"perRitualPayedWithCP":{},"perCFormPayedWithCP":{},"ppCP":1,"ppKarma":1,"spellsCP":0,"spellsKarma":0,"cformsCP":2,"cformsKarma":0,"variant":"STANDARD","mysticAdeptPowerPoints":0,"toContacts":0,"negQualities":29,"initiation":36,"toNuyen":0}</chargenSettings>
@@ -38,11 +38,13 @@
       <metaEcho lang="en" ref="software_emulator" />
    </metaEchoes>
    <sins>
-      <sin name="Yuriko Star" quality="ROUGH_MATCH" uniqueid="59d9bf7c-436d-4fe6-9989-7a08504ec9e2" />
+      <sin name="Yuriko Star" quality="SECOND_LIFE" uniqueid="6f7ec488-0263-46a5-bd21-56389f9f3c34" />
    </sins>
    <licenses>
       <licenses name="Drone" rating="ROUGH_MATCH" sin="59d9bf7c-436d-4fe6-9989-7a08504ec9e2" uniqueid="2f9587eb-fc6f-4ae9-996c-fc40e5439429" />
       <licenses name="Firearms" rating="ROUGH_MATCH" sin="59d9bf7c-436d-4fe6-9989-7a08504ec9e2" uniqueid="f55c56eb-36c7-4257-8072-4c861db8b5f7" />
+      <licenses name="Drone" rating="SECOND_LIFE" sin="6f7ec488-0263-46a5-bd21-56389f9f3c34" uniqueid="73062531-2b86-484b-a205-6027c6fc350e" />
+      <licenses name="Firearms" rating="SECOND_LIFE" sin="6f7ec488-0263-46a5-bd21-56389f9f3c34" uniqueid="dad54071-0922-42cf-96fd-a69941b9164b" />
    </licenses>
    <contacts>
       <contact favors="2" id="5b130c0a-b58c-43b8-8d5e-ec23e4deedbe" loy="2" name="Brynne Taggart" rat="4" type="Fixer" typename="Fixer">
@@ -54,14 +56,14 @@
       <contact id="33e9cde2-38fa-4624-96ab-79d0d3d153b6" loy="3" name="Indomitable Will" rat="3" type="River People Sysop" typename="River People Sysop" favors="0">
          <description>Character Creation</description>
       </contact>
-      <contact id="bac29d55-ab5a-49d5-8c3d-017aadfb34d9" loy="3" name="Roanoke" rat="3" type="Ecological Activist" typename="Ecological Activist" favors="0">
-         <description>Character Creation</description>
+      <contact favors="1" id="bac29d55-ab5a-49d5-8c3d-017aadfb34d9" loy="3" name="Roanoke" rat="3" type="Ecological Activist" typename="Ecological Activist">
+         <description>Character Creation | SRM 2083-17 Haute Blooded | SRM 2083-20 The Fallacy of Plans</description>
       </contact>
       <contact id="af9ac2b6-3596-4dee-a6cc-4da6fa2a1931" loy="1" name="Piotr Krolik" rat="4" type="Vory Borjevik" typename="Vory Borjevik" favors="0">
          <description>SMH 2083-02 EggHunt at the Jackalope Ranch</description>
       </contact>
-      <contact id="9539ef93-6b90-4794-a7db-0ddcc2ebf353" loy="1" name="Le Tigre" rat="5" type="Epoch Model" typename="Epoch Model" favors="0">
-         <description>SMH 2083-02 EggHunt at the Jackalope Ranch</description>
+      <contact favors="1" id="9539ef93-6b90-4794-a7db-0ddcc2ebf353" loy="2" name="Le Tigre" rat="5" type="Epoch Model" typename="Epoch Model">
+         <description>SMH 2083-02 EggHunt at the Jackalope Ranch | SRM 2083-17 Haute Blooded | CMP 2083-15 | By Land, Sea, and Hair</description>
       </contact>
       <contact id="5d05bdd0-7587-404a-80c3-19487dfa5590" loy="1" name="White Jackalope" rat="2" type="Emergent Lifeform" typename="Emergent Lifeform" favors="0">
          <description>SMH 2083-02 EggHunt at the Jackalope Ranch</description>
@@ -75,8 +77,8 @@
       <contact id="51988c8a-0bd0-46ee-a42e-07e9ec84e17c" loy="1" name="Daniel Fortune" rat="3" type="NOLA" typename="NOLA" favors="0">
          <description>2083-03 Unofficial Dunkelzahn Fan Club</description>
       </contact>
-      <contact id="f3132127-8be7-4737-a7e4-fed4d912b72d" loy="2" name="Renée Martin" rat="4" type="League of Laveau Community Outreach" typename="League of Laveau Community Outreach" favors="0">
-         <description>2083-03 Unofficial Dunkelzahn Fan Club</description>
+      <contact favors="1" id="f3132127-8be7-4737-a7e4-fed4d912b72d" loy="2" name="Renée Martin" rat="4" type="League of Laveau Liaison" typename="League of Laveau Liaison">
+         <description>2083-03 Unofficial Dunkelzahn Fan Club | SRM 2083-20 The Fallacy of Plans</description>
       </contact>
       <contact id="e0862e1d-7a49-4a3f-89a8-0c09329b59c7" loy="1" name="The Frisian" rat="6" type="Crime Lord of the Dutch Penose syndicate" typename="Crime Lord of the Dutch Penose syndicate" favors="0">
          <description>CMP 2081-09 Bring me Prince Charming</description>
@@ -84,7 +86,7 @@
       <contact favors="1" id="8db8c753-8b66-42e3-a9f4-a0c20f03efba" loy="1" name="Ree 'Dolly' Hacker" rat="4" type="Talismonger and Racer" typename="Talismonger and Racer">
          <description>CMP 2081-18 Blue Kentucky Girl</description>
       </contact>
-      <contact id="93ddb8d3-ba87-4f4f-a23b-81e38da6cdc3" loy="1" name="Granny" rat="6" type="Lady of the Autumn Wind" typename="Lady of the Autumn Wind" favors="1">
+      <contact favors="1" id="93ddb8d3-ba87-4f4f-a23b-81e38da6cdc3" loy="1" name="Granny" rat="6" type="Lady of the Autumn Wind" typename="Lady of the Autumn Wind">
          <description>CMP 2081-18 Blue Kentucky Girl | CMP 2081-20 In the Cold Kentucky Rain</description>
       </contact>
       <contact favors="1" id="611226de-d911-4875-823f-2f114e2354ac" loy="2" name="Kiara Shaw" rat="4" type="Knight Errant Company Suit" typename="Knight Errant Company Suit">
@@ -186,7 +188,34 @@
       <contact id="bb35b018-b334-403c-9a04-3a34bcee8c1f" loy="2" name="Liao Fa Ren" rat="3" type="HK Rookie Journalist" typename="HK Rookie Journalist" favors="0">
          <description>CMP 2083-05 Precious Cargo</description>
       </contact>
-   <contact id="a73fc2bd-09ee-4cff-8706-f67a03cb5969" name="Aloysius Springinsguth" rat="3" loy="2" favors="0" type="Sound of Silence Music Shop Owner" typename="Sound of Silence Music Shop Owner"><description>SRM 2083-12 When You're Smiling</description></contact></contacts>
+      <contact id="b50b22c2-e985-4029-97e4-2a5d81b885f3" loy="2" name="Aloysius Springinsguth" rat="3" type="Sound of Silence Music Shop Owner" typename="Sound of Silence Music Shop Owner" favors="0">
+         <description>SRM 2083-12 When You're Smiling</description>
+      </contact>
+      <contact id="55b49571-992d-4ba9-bc07-5d2aecf4cc17" loy="2" name="Jolene Price" rat="7" type="Riverboat Alliance Leader" typename="Riverboat Alliance Leader" favors="0">
+         <description>SRM 2083-17 Haute Blooded</description>
+      </contact>
+      <contact favors="1" id="ba0fb8f6-b409-4834-886e-b0dc8f775077" loy="4" name="Coffin Girls" rat="3" type="Independent Courtesans Group" typename="Independent Courtesans Group">
+         <description>SRM 2083-18 Some Kind of Voodoo?</description>
+      </contact>
+      <contact id="3fb9622a-fb2b-4917-ad47-6a713acf3919" loy="1" name="Cedar" rat="3" type="Talismonger" typename="Talismonger" favors="0">
+         <description>SRM 2083-20 The Fallacy of Plans</description>
+      </contact>
+      <contact id="190c6c22-1193-4f76-9249-2aed3ae2fb71" loy="2" name="Detective Remy LeBlanc" rat="3" type="Detective" typename="Detective" favors="0">
+         <description>SRM 2083-20 The Fallacy of Plans</description>
+      </contact>
+      <contact id="146d00cb-3131-4393-b216-a0c592a330d6" loy="1" name="Claudette Laurier" rat="5" type="Order of the Golden Dawn Librarian" typename="Order of the Golden Dawn Librarian" favors="0">
+         <description>SRM 2083-20 The Fallacy of Plans</description>
+      </contact>
+      <contact favors="1" id="21ea9e84-5746-423b-bd99-df6bdbeeca75" loy="3" name="League of Laveau" rat="6" type="Voodoo Organization" typename="Voodoo Organization">
+         <description>SRM 2083-18 Some Kind of Voodoo?</description>
+      </contact>
+      <contact favors="1" id="4c5426cd-d1a8-4442-812d-8f7851df3e15" loy="3" name="Zobop" rat="6" type="Voodoo Organization" typename="Voodoo Organization">
+         <description>SRM 2083-18 Some Kind of Voodoo?</description>
+      </contact>
+      <contact favors="1" id="dae04277-e0f2-43d2-930d-fbc558a54b40" loy="1" name="Col. Treylor" rat="3" type="Thunder Corps Fixer" typename="Thunder Corps Fixer">
+         <description>CMP 2083-15 | By Land, Sea, and Hair</description>
+      </contact>
+   </contacts>
    <name>Yuriko Star</name>
    <datasets mode="ALL" />
    <rules>
@@ -210,7 +239,7 @@
       <attributes id="CHARISMA" start="4" value="4" />
       <attributes id="EDGE" start="4" value="4" />
       <attributes id="MAGIC" value="0" />
-      <attributes id="RESONANCE" start="7" value="7" />
+      <attributes id="RESONANCE" start="8" value="8" />
       <attributes id="POWER_POINTS" value="0" />
    </attributes>
    <skills>
@@ -354,15 +383,6 @@
          <customName>"Smile for the Camera!" Quality (Shiawase)</customName>
       </item>
       <item lang="en" mode="CARRIED" ref="securetech_invisishield" uuid="26c35c3f-8533-46ea-9d17-e0b6eca54d1c" />
-      <item lang="en" mode="CARRIED" ref="shock_gloves" uuid="aff32e21-314b-43ab-8c20-2c2361a9e3f7">
-         <enhancements>
-            <enhancement lang="en" ref="personalized_grip_melee" />
-         </enhancements>
-         <customName>Krime Gloves (Stun)</customName>
-      </item>
-      <item lang="en" mode="CARRIED" ref="knucks" uuid="8c7102cc-68d5-4d45-b7c1-1786945be646">
-         <customName>Krime Gloves (Phys)</customName>
-      </item>
       <item lang="en" mode="CARRIED" ref="mtoc_mark2" uuid="8111bbf4-5fc7-449d-acaf-41402ee536b1">
          <accessories>
             <item count="2" lang="en" mode="EMBEDDED" ref="satellite_link" slot="ELECTRONIC_ACCESSORY" uuid="14236071-919a-4a38-9073-f4e39982c2aa" />
@@ -372,37 +392,6 @@
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="mapsoft" slot="SOFTWARE" uuid="af663ff9-bcc0-4c1b-abe2-c1af1792d739">
                <decision choice="47d1e468-6df7-43ce-9651-44485cc78bb8" value="SEA" />
             </item>
-         </accessories>
-         <flag>PRIMARY</flag>
-      </item>
-      <item count="10" lang="en" mode="CARRIED" ref="rfid_software_tags" uuid="c3a11a88-9e56-4b11-9d41-9410ec852068" />
-      <item count="10" lang="en" mode="CARRIED" ref="laser_jack" uuid="e5c07b07-fecf-4c7c-92c1-ab18da0d49e8" />
-      <item lang="en" mode="CARRIED" ref="coding_facility" uuid="0e9776dc-0a7f-4f8b-ab1b-17bae92aa4c2" />
-      <item changes="0,0,0" count="1" lang="en" mode="CARRIED" ref="shiawase_BD_butler" uuid="227c5aa8-b36c-436a-b759-18ea24ff300d">
-         <notes>Butler #2 (Retrans / Comms Support)</notes>
-         <accessories>
-            <item lang="en" mode="EMBEDDED" ref="anti_theft" slot="VEHICLE_ELECTRONICS" uuid="92dc5fa9-bb5c-4f40-a00a-f653a716e19e" variant="rating1">
-               <flag>AUTO_ADDED</flag>
-            </item>
-            <item lang="en" mode="EMBEDDED" ref="realistic_features" slot="VEHICLE_CHASSIS" uuid="b0787889-c714-4a24-9cd3-bf6af1e97fdb">
-               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="1" />
-            </item>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="239cc6a1-215e-470a-89d3-5c48329607aa" />
-            <item lang="en" mode="EMBEDDED" ref="retrans_unit" slot="VEHICLE_ELECTRONICS" uuid="3cba562d-2b8b-4460-9b0d-b0c59101b6e6" />
-            <item lang="en" mode="EMBEDDED" ref="retractable_skates" slot="CYBERLIMB_IMPLANT" uuid="b6156882-a9d2-4a12-81d4-7475482a7657">
-               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170c" value="USED" />
-            </item>
-            <item lang="en" mode="EMBEDDED" ref="retractable_skates" slot="CYBERLIMB_IMPLANT" uuid="22781a07-b8bd-4e84-8532-0660c65833a5">
-               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170c" value="USED" />
-            </item>
-            <item lang="en" mode="EMBEDDED" ref="integrated_matrix_device" slot="VEHICLE_ELECTRONICS" uuid="bb33eb9a-d054-4fcc-9e3a-a24b6c8680f0" />
-         </accessories>
-      </item>
-      <item lang="en" mode="CARRIED" ref="red_fox" uuid="9282fc9b-eafc-4953-ba72-e1aa4d0d1bee" />
-      <item count="2" lang="en" mode="CARRIED" ref="crimson_wasp" uuid="cc9334cd-33cf-432f-8ba8-877c862c032d" />
-      <item count="5" lang="en" mode="CARRIED" ref="ammo_battery_laser" uuid="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0" />
-      <item lang="en" mode="VIRTUAL" ref="software_library" uuid="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979">
-         <accessories>
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="baby_monitor" slot="SOFTWARE" uuid="21252dd0-210b-47e1-a7b4-4ce367ef6878" variant="regular" />
             <item inFactoryItem="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" lang="en" mode="EMBEDDED" ref="soft_biotech" slot="SOFTWARE" uuid="e3f035fe-bc96-4591-a98f-63f1fa769c36">
                <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="9" />
@@ -479,7 +468,35 @@
                <decision choice="355a3a45-39fc-4376-8667-661c9873dfdb" value="shiawase_BD_man_at_arms" />
             </item>
          </accessories>
+         <flag>PRIMARY</flag>
       </item>
+      <item changes="0,0,0" count="1" lang="en" mode="CARRIED" ref="boing_sky_commander" uuid="e9d96a59-5f93-4f6a-9ff8-ee60f5614014">
+         <accessories>
+            <item lang="en" mode="EMBEDDED" ref="retrans_unit" slot="VEHICLE_ELECTRONICS" uuid="d7a65f49-14a5-4435-95c7-8a62094ec217" />
+            <item lang="en" mode="EMBEDDED" ref="anti_theft" slot="VEHICLE_ELECTRONICS" uuid="d9d59c8f-e3f3-433b-8cc2-b2201873cb2f" variant="rating1">
+               <flag>AUTO_ADDED</flag>
+            </item>
+         </accessories>
+      </item>
+      <item lang="en" mode="CARRIED" ref="survival_knife" uuid="b9ce8695-7731-4128-8540-3ac7c5087b1c">
+         <enhancements>
+            <enhancement lang="en" ref="personalized_grip_melee" />
+         </enhancements>
+         <customName>Amalgam Cestas</customName>
+      </item>
+      <item changes="0,0,0" count="1" lang="en" mode="CARRIED" ref="shiawase_BD_butler" uuid="227c5aa8-b36c-436a-b759-18ea24ff300d">
+         <notes>Butler #2 (Retrans / Comms Support)</notes>
+         <accessories>
+            <item lang="en" mode="EMBEDDED" ref="anti_theft" slot="VEHICLE_ELECTRONICS" uuid="c7cbf21b-7883-4cc5-8b9b-df8e82171983" variant="rating1">
+               <flag>AUTO_ADDED</flag>
+            </item>
+            <item lang="en" mode="EMBEDDED" ref="realistic_features" slot="VEHICLE_CHASSIS" uuid="8d4204f4-0026-47a6-be14-c05191ed3fd3">
+               <decision choice="c2d17c87-1cfe-4355-9877-a20fe09c170d" value="1" />
+            </item>
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="2dbd7fb2-2721-4db2-91f7-843888c3281b" />
+         </accessories>
+      </item>
+      <item lang="en" mode="VIRTUAL" ref="software_library" uuid="8fc8c01e-3023-4ba6-9d02-99ba6fcd6979" />
    </items>
    <history>
       <itemmod date="2026-04-26T16:12:47.105-04:00" expCost="11" ref="new_sprite_type" type="METAECHO" />
@@ -717,6 +734,7 @@
       <valmod date="2026-06-30T19:46:48.236-04:00" id="aff32e21-314b-43ab-8c20-2c2361a9e3f7" ref="shock_gloves" set="AUGMENTED" type="CARRIED" value="790" />
       <valmod date="2026-06-30T19:47:07.712-04:00" id="8c7102cc-68d5-4d45-b7c1-1786945be646" ref="knucks" set="AUGMENTED" type="CARRIED" value="100" />
       <valmod date="2026-07-08T13:45:30.097-04:00" expCost="35" ref="RESONANCE" set="AUGMENTED" type="ATTRIBUTE" value="7" />
+      <valmod date="2026-08-01T13:00:00.000-04:00" expCost="40" ref="RESONANCE" set="AUGMENTED" type="ATTRIBUTE" value="8" />
       <valmod date="2026-07-08T15:24:53.524-04:00" id="3dc7227f-7292-40b3-9e7c-afa874a6abeb" ref="gas-vent_system" set="AUGMENTED" type="CARRIED" value="500" />
       <valmod date="2026-07-09T21:18:21.485-04:00" id="8111bbf4-5fc7-449d-acaf-41402ee536b1" ref="mtoc_mark2" set="AUGMENTED" type="CARRIED" value="65000" />
       <valmod date="2026-07-09T21:20:40.663-04:00" id="14236071-919a-4a38-9073-f4e39982c2aa" ref="satellite_link" set="AUGMENTED" type="CARRIED" value="500" />
@@ -787,6 +805,9 @@
       <valmod date="2026-07-23T19:37:21.000-04:00" id="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0" ref="ammo_battery_laser" set="AUGMENTED" type="CARRIED" value="100" />
       <valmod date="2026-07-23T19:37:22.000-04:00" id="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0" ref="ammo_battery_laser" set="AUGMENTED" type="CARRIED" value="100" />
       <valmod date="2026-07-23T19:37:23.000-04:00" id="e44de4d4-5f5a-4d5c-9f67-c54e04e3fdd0" ref="ammo_battery_laser" set="AUGMENTED" type="CARRIED" value="100" />
+      <valmod date="2026-08-03T21:49:20.907-04:00" id="e9d96a59-5f93-4f6a-9ff8-ee60f5614014" ref="boing_sky_commander" set="AUGMENTED" type="CARRIED" value="12500" />
+      <valmod date="2026-08-03T21:49:29.343-04:00" id="d7a65f49-14a5-4435-95c7-8a62094ec217" ref="retrans_unit" set="AUGMENTED" type="CARRIED" value="7000" />
+      <valmod date="2026-08-03T21:58:26.605-04:00" id="b9ce8695-7731-4128-8540-3ac7c5087b1c" ref="survival_knife" set="AUGMENTED" type="CARRIED" value="220" />
    </history>
    <rewards>
       <reward date="2026-04-20T00:00:00.000-04:00" exp="13">
@@ -1044,5 +1065,56 @@
       <reward date="2026-07-21T00:00:00.000-04:00" exp="1" money="-2500">
          <title>CMP 2083-05: Working for the People, Souvenirs</title>
       </reward>
+      <reward date="2026-07-24T00:00:00.000-04:00" exp="10" money="9000">
+         <title>SRM 2083-12 | When You're Smiling</title>
+         <gamemaster>JaGator</gamemaster>
+         <modifications>
+            <valmod ref="HEAT" set="AUGMENTED" type="ATTRIBUTE" value="1" when="ALLCREATE" />
+            <valmod ref="REPUTATION" set="AUGMENTED" type="ATTRIBUTE" value="1" when="ALLCREATE" />
+         </modifications>
+      </reward>
+      <reward date="2026-07-24T00:00:00.000-04:00" exp="1" money="-2000">
+         <title>SRM 2083-12: Working for the People</title>
+      </reward>
+      <reward date="2026-07-30T00:00:00.000-04:00" exp="6" money="7450">
+         <title>SRM 2083-17 | Haute Blooded</title>
+         <gamemaster>Raven2049 (GenCon 2026)</gamemaster>
+         <modifications>
+            <valmod ref="REPUTATION" set="AUGMENTED" type="ATTRIBUTE" value="2" when="ALLCREATE" />
+         </modifications>
+      </reward>
+      <reward date="2026-07-30T00:00:00.000-04:00" exp="1" money="-2000">
+         <title>SRM 2083-17: Working for the People</title>
+      </reward>
+      <reward date="2026-08-01T00:00:00.000-04:00" exp="8" money="7000">
+         <title>SRM 2083-20 | The Fallacy of Plans</title>
+         <gamemaster>(GenCon 2026 Sat 1pm slot)</gamemaster>
+         <modifications>
+            <valmod ref="REPUTATION" set="AUGMENTED" type="ATTRIBUTE" value="2" when="ALLCREATE" />
+         </modifications>
+      </reward>
+      <reward date="2026-08-01T00:00:00.000-04:00" exp="1" money="-2000">
+         <title>SRM 2083-20: Working for the People</title>
+      </reward>
+      <reward date="2026-08-01T00:00:00.000-04:00" exp="7" money="10000">
+         <title>SRM 2083-18 | Some Kind of Voodoo?</title>
+         <gamemaster>August (GenCon 2026 Sat 6pm slot)</gamemaster>
+         <modifications>
+            <valmod ref="REPUTATION" set="AUGMENTED" type="ATTRIBUTE" value="1" when="ALLCREATE" />
+         </modifications>
+      </reward>
+      <reward date="2026-08-01T00:00:00.000-04:00" exp="1" money="-2000">
+         <title>SRM 2083-18: Working for the People</title>
+      </reward>
+      <reward date="2026-08-01T00:00:00.000-04:00" exp="8" money="9500">
+         <title>CMP 2083-15 | By Land, Sea, and Hair</title>
+         <gamemaster>(GenCon 2026 Saturday 1pm slot)</gamemaster>
+         <modifications>
+            <valmod ref="REPUTATION" set="AUGMENTED" type="ATTRIBUTE" value="1" when="ALLCREATE" />
+         </modifications>
+      </reward>
+      <reward date="2026-08-01T00:00:00.000-04:00" exp="1" money="-2000">
+         <title>CMP 2083-15: Working for the People</title>
+      </reward>
    </rewards>
-<sessions><session name="SMH 2083-02 EggHunt at the Jackalope Ranch" code="SMH 2083-02 EggHunt at the Jackalope Ranch" date="2026-Apr-24" gm="JaGator" karma="1" nuyen="9000" /><session name="CMP First Taste : Top Chef - Seattle" code="CMP First Taste : Top Chef - Seattle" date="2026-Apr-25" gm="JaGator" karma="4" nuyen="2600" /><session name="SRM 2083-03: Unofficial Dunkelzahn Fan Club" code="SRM 2083-03: Unofficial Dunkelzahn Fan Club" date="2026-Apr-29" gm="JaGator" karma="9" nuyen="9000" /><session name="CMP 2081-09 | Bring me Prince Charming" code="CMP 2081-09 | Bring me Prince Charming" date="2026-May-02" gm="CDT Agent Kira Capalu" karma="8" nuyen="11000"><summary>The team met their Johnson duo, Baby Face and The Butcher, at Mama Appeltaart in Amsterdam and took on the job to kidnap the Vory Líder Grisha Semyonovich who basically never leaves the Vory controlled hookah bar "Sasha Lounge". After some scouting the team just entered as guests, found Grisha and convinced him to look at their car and maybe come along for a ride. Soon after that, a tranq patch sealed the deal. The team went to the safehouse as instructed, only to learn that a hostile armada was heading their way. Even though 7 players led to 35 gangers, they tore through their ranks via stun grenades and burst fire, leaving only few of them still somewhat alive by the time of the reinforcements. The cavalry at round 5 proved unnecessary. They assured that Grisha would leave the chat as alive as promised and left before the execution of the traitor happened.</summary></session><session name="CMP 2081-18 | Blue Kentucky Girl" code="CMP 2081-18 | Blue Kentucky Girl" date="2026-May-13" gm="JaGator" karma="8" nuyen="15000" /><session name="CMP 2081-10 | A Diamond in The Rough" code="CMP 2081-10 | A Diamond in The Rough" date="2026-May-14" gm="CDT Agent Kira Capalu" karma="8" nuyen="8500"><summary>After getting hired by "Ms. Johnson" alias Kiara Shaw in the restaurant "Le GastroGnome" high in the "Space Needle-like" Europort Mast, the team travelled from Europort to Antwerp to enter the historical sewers of the Ruien and find a forgotten back door into the archives of a local security firm, Sinjoor Incorporated. After passing by some locals and hiring two former shadowrunners as guides, the team got ambushed by the rats living close to the door, but blasted through them. Gotten to the archives, their hacker took care of the host and all of the security features, making the copying of the data go swimmingly. The team got back to their Ms. Johnson, but did take a look at the plans and got a hunch of something bigger: they did copy security plans of the shops in Antwerp where the Queen of the United Netherlands, Amalia, got the ring for her daughter and her upcoming wedding.</summary></session><session name="CMP 2081-11 | Paved with good intentions" code="CMP 2081-11 | Paved with good intentions" date="2026-May-25" gm="CDT Agent Kira Capalu" karma="9" nuyen="9000"><summary>The group met S-K Johnson Simon Andrews in an all-yellow interior bar at Utrecht and took on the mission to steal some crates off a secured convoy. They rescued an informant out of a soccer bar, learned some details and went about the heist as the vehicles got stuck in traffic. Using an Ares Scylla, they fried the convoy, got the stuff and left as quickly as they came.</summary></session><session name="CMP 2081-19: The Blue Moon of Kentucky" code="CMP 2081-19: The Blue Moon of Kentucky" date="2026-May-30" gm="JaGator" karma="8" nuyen="14500"><summary>Dr Laureline Dodd discovered a lost city of T'In'Abula from the 4th age of the Dawn of Civilization. She protected the discovery, with help from the Governor, KSP, the artist sometimes known as Fox, and the local Naga Pit, from an incursion by Global Security.</summary></session><session name="2026-June-03: SRM 2081-17: Framed in Blood" code="2026-June-03: SRM 2081-17: Framed in Blood" date="" gm="Oli K" karma="-20" nuyen="9500"><summary>Duan Yuhai hired the team to eliminate a rival triad's leader, David Guo. David and his team had been invested by blood spirits tracing back to blood sacrifice rituals in Central America hundreds of years ago.</summary></session><session name="2026-June-06: CMP 2081-20: In the Cold Kentucky Rain" code="2026-June-06: CMP 2081-20: In the Cold Kentucky Rain" date="" gm="JaGator" karma="10" nuyen="9500" /><session name="2026-June-07: SRM 2081-21: Grudge Match Gladiators" code="2026-June-07: SRM 2081-21: Grudge Match Gladiators" date="" gm="Medtec28" karma="5" nuyen="10500" /><session name="2026-June-12: CMP 2081-12 | Uneasy lies the head" code="2026-June-12: CMP 2081-12 | Uneasy lies the head" date="" gm="Kira Capalu" karma="7" nuyen="8500"><summary>While the talk about and protests against the engagement of crown princess Emma reached their boiling point, the team got called by the orkish shadowrunner Sigrûn to The Hague's Noordeinde Paleis, where she reveals herself to be princess Emma's personal bodyguard and hires them to protect two palace officials during a trip through the city. As they tricked their way through a group of protesters they found out that the trip was about creating a chemsniffer primed on the chemical that's supposed to be used on an upcoming terrorist attack.</summary></session><session name="2026-June-19: CMP 2083-14 | A Day at the Beach" code="2026-June-19: CMP 2083-14 | A Day at the Beach" date="" gm="Nick" karma="-27" nuyen="13000"><summary>: Arrived in Malta and asked by Thunder Corps to ensure that the demonstration of an the 'Silent Knight' Experimental Submarine went off without sabotage during a war game. After locating the submarine, we discovered a Leviathan attacking it. We were able to free the Leviathan from being controlled and rescued the submarine. Yuriko was yet again without matrix activity (due to being under a km of sea water and forced to inhabit a submarine).</summary></session><session name="2026-June-20: CMP 2083-16 | War Never Changes" code="2026-June-20: CMP 2083-16 | War Never Changes" date="" gm="Hal &quot;SSDR&quot;" karma="2" nuyen="12500"><summary>: Hired by Col. Deborah Kentwell (Thunder Corps) to infiltrate Hardwater Security Svcs and procure evidence of cheating. Later re-hired to win the final War Game (CTF). Yuriko was forced to inhabit an Ares ShadowDancer WarMech (Deadly Arts).</summary></session><session name="2026-June-20: SRM 2083-19 | The Hallow Feast" code="2026-June-20: SRM 2083-19 | The Hallow Feast" date="" gm="Morgan" karma="9" nuyen="13500"><summary>: Hired by Monsieur Johnson to ascertain the whereabouts of Snaggletooth. Ultimately found him long since dead and possessed by a spirit attempting to destroy the world.</summary></session><session name="2026-June-25: SRM 2081-05 | This is Renton" code="2026-June-25: SRM 2081-05 | This is Renton" date="" gm="CDT Agent Kira Capalu" karma="4" nuyen="11500"><summary>The team was hired by upcoming rapper Swango to investigate death threats, discovering that her previous fixer, Brynne Taggart, had gone missing. While a summoned spirit tracked Brynne, the team traced the messages to a used electronics store in a mall hangout for the Night Hunters gang. Intimidating a member revealed their employer: a retired LoneStar captain leading the local Neighborhood Watch. Following the spirit's lead to a shabby hotel, the runners located Brynne, who confirmed their findings. Forewarned of an approaching hit squad, the team easily repelled them. Swango then hired them as concert security. During the performance, they repelled a frontal gang assault, and one runner took a bullet to protect Swango from a backstage assassin.</summary></session><session name="2026-June-30: CMP 2083-01: NONPLUSHED" code="2026-June-30: CMP 2083-01: NONPLUSHED" date="" gm="" karma="7" nuyen="9500"><summary>Hired to locate and return a missing convoy of S-K trucks. Simon called, asking for information on why they were stolen. Trucks located, liberated, and returned. Lost two Johnsons on this one - Simon's looking into it.</summary></session><session name="2026-July-07: SRM 2081-08 Child's Play" code="2026-July-07: SRM 2081-08 Child's Play" date="" gm="JaGator" karma="7" nuyen="6500"><summary>: Hired by a CorpoKid to bodyguard him while he developed and sold a new neural interface for drones. A corp tried to steal it, but they failed.</summary></session><session name="2026-July-09: SRM 2081-07 | Bootleg Bliss" code="2026-July-09: SRM 2081-07 | Bootleg Bliss" date="" gm="JaGator" karma="7" nuyen="8000"><summary>Hired by Ni Ni to eliminate a fool who was pawning off poor quality illicit drugs as Triad goods.</summary></session><session name="2026-July-10: SRM 2081-06 | Cutting Strings" code="2026-July-10: SRM 2081-06 | Cutting Strings" date="" gm="Kira Capalu" karma="7" nuyen="5000"><summary>Hired by a Johnson to find a friend.</summary></session><session name="CMP 2083-04 | Hog Wild" code="CMP 2083-04 | Hog Wild" date="2026-Jul-14" gm="JaGator" karma="8" nuyen="9500"><summary>Sigs asked us to track someone down for her and bring them back.</summary></session><session name="2026-July-21: CMP 2083-05 | Precious Cargo" code="2026-July-21: CMP 2083-05 | Precious Cargo" date="" gm="" karma="8" nuyen="5500"><summary>HK Police raided an abandoned Red Dragon Triad operation at Kwai Chung Container Port. Reports indicate a human trafficking operation was broken up by a small team of Shadowrunners (including a pixie and a wolf) before police arrived. Additionally, Liao Fa Ren got top marks on her paper, which was published in the school paper and picked up by local outlets.</summary></session><session name="2026-July-24: SRM 2083-12 | When You're Smiling" code="2026-July-24: SRM 2083-12 | When You're Smiling" date="" gm="JaGator" karma="10" nuyen="-157750"><summary>NOLA Network News at 9 reported evidence linking Zobop / Red Tide Hitman, Mackenson “Mr. Smiley” Salomon to Blood Magic, Sacrifice, and murder was turned over to NOMS by a concerned citizen and member of the Koslowski family. Mr. Smiley seems to have departed the NOLA area.</summary></session><session name="Current Totals" code="Current Totals" date="" gm="" karma="0" nuyen="0" /><session name="Active Sprite Stable" code="Active Sprite Stable" date="" gm="" karma="0" nuyen="0" /></sessions><sessionlogs><sessionlog name="SMH 2083-02 EggHunt at the Jackalope Ranch" code="SMH 2083-02 EggHunt at the Jackalope Ranch" date="2026-Apr-24" gm="JaGator" karma="1" nuyen="9000" /><sessionlog name="CMP First Taste : Top Chef - Seattle" code="CMP First Taste : Top Chef - Seattle" date="2026-Apr-25" gm="JaGator" karma="4" nuyen="2600" /><sessionlog name="SRM 2083-03: Unofficial Dunkelzahn Fan Club" code="SRM 2083-03: Unofficial Dunkelzahn Fan Club" date="2026-Apr-29" gm="JaGator" karma="9" nuyen="9000" /><sessionlog name="CMP 2081-09 | Bring me Prince Charming" code="CMP 2081-09 | Bring me Prince Charming" date="2026-May-02" gm="CDT Agent Kira Capalu" karma="8" nuyen="11000"><summary>The team met their Johnson duo, Baby Face and The Butcher, at Mama Appeltaart in Amsterdam and took on the job to kidnap the Vory Líder Grisha Semyonovich who basically never leaves the Vory controlled hookah bar "Sasha Lounge". After some scouting the team just entered as guests, found Grisha and convinced him to look at their car and maybe come along for a ride. Soon after that, a tranq patch sealed the deal. The team went to the safehouse as instructed, only to learn that a hostile armada was heading their way. Even though 7 players led to 35 gangers, they tore through their ranks via stun grenades and burst fire, leaving only few of them still somewhat alive by the time of the reinforcements. The cavalry at round 5 proved unnecessary. They assured that Grisha would leave the chat as alive as promised and left before the execution of the traitor happened.</summary></sessionlog><sessionlog name="CMP 2081-18 | Blue Kentucky Girl" code="CMP 2081-18 | Blue Kentucky Girl" date="2026-May-13" gm="JaGator" karma="8" nuyen="15000" /><sessionlog name="CMP 2081-10 | A Diamond in The Rough" code="CMP 2081-10 | A Diamond in The Rough" date="2026-May-14" gm="CDT Agent Kira Capalu" karma="8" nuyen="8500"><summary>After getting hired by "Ms. Johnson" alias Kiara Shaw in the restaurant "Le GastroGnome" high in the "Space Needle-like" Europort Mast, the team travelled from Europort to Antwerp to enter the historical sewers of the Ruien and find a forgotten back door into the archives of a local security firm, Sinjoor Incorporated. After passing by some locals and hiring two former shadowrunners as guides, the team got ambushed by the rats living close to the door, but blasted through them. Gotten to the archives, their hacker took care of the host and all of the security features, making the copying of the data go swimmingly. The team got back to their Ms. Johnson, but did take a look at the plans and got a hunch of something bigger: they did copy security plans of the shops in Antwerp where the Queen of the United Netherlands, Amalia, got the ring for her daughter and her upcoming wedding.</summary></sessionlog><sessionlog name="CMP 2081-11 | Paved with good intentions" code="CMP 2081-11 | Paved with good intentions" date="2026-May-25" gm="CDT Agent Kira Capalu" karma="9" nuyen="9000"><summary>The group met S-K Johnson Simon Andrews in an all-yellow interior bar at Utrecht and took on the mission to steal some crates off a secured convoy. They rescued an informant out of a soccer bar, learned some details and went about the heist as the vehicles got stuck in traffic. Using an Ares Scylla, they fried the convoy, got the stuff and left as quickly as they came.</summary></sessionlog><sessionlog name="CMP 2081-19: The Blue Moon of Kentucky" code="CMP 2081-19: The Blue Moon of Kentucky" date="2026-May-30" gm="JaGator" karma="8" nuyen="14500"><summary>Dr Laureline Dodd discovered a lost city of T'In'Abula from the 4th age of the Dawn of Civilization. She protected the discovery, with help from the Governor, KSP, the artist sometimes known as Fox, and the local Naga Pit, from an incursion by Global Security.</summary></sessionlog><sessionlog name="2026-June-03: SRM 2081-17: Framed in Blood" code="2026-June-03: SRM 2081-17: Framed in Blood" date="" gm="Oli K" karma="-20" nuyen="9500"><summary>Duan Yuhai hired the team to eliminate a rival triad's leader, David Guo. David and his team had been invested by blood spirits tracing back to blood sacrifice rituals in Central America hundreds of years ago.</summary></sessionlog><sessionlog name="2026-June-06: CMP 2081-20: In the Cold Kentucky Rain" code="2026-June-06: CMP 2081-20: In the Cold Kentucky Rain" date="" gm="JaGator" karma="10" nuyen="9500" /><sessionlog name="2026-June-07: SRM 2081-21: Grudge Match Gladiators" code="2026-June-07: SRM 2081-21: Grudge Match Gladiators" date="" gm="Medtec28" karma="5" nuyen="10500" /><sessionlog name="2026-June-12: CMP 2081-12 | Uneasy lies the head" code="2026-June-12: CMP 2081-12 | Uneasy lies the head" date="" gm="Kira Capalu" karma="7" nuyen="8500"><summary>While the talk about and protests against the engagement of crown princess Emma reached their boiling point, the team got called by the orkish shadowrunner Sigrûn to The Hague's Noordeinde Paleis, where she reveals herself to be princess Emma's personal bodyguard and hires them to protect two palace officials during a trip through the city. As they tricked their way through a group of protesters they found out that the trip was about creating a chemsniffer primed on the chemical that's supposed to be used on an upcoming terrorist attack.</summary></sessionlog><sessionlog name="2026-June-19: CMP 2083-14 | A Day at the Beach" code="2026-June-19: CMP 2083-14 | A Day at the Beach" date="" gm="Nick" karma="-27" nuyen="13000"><summary>: Arrived in Malta and asked by Thunder Corps to ensure that the demonstration of an the 'Silent Knight' Experimental Submarine went off without sabotage during a war game. After locating the submarine, we discovered a Leviathan attacking it. We were able to free the Leviathan from being controlled and rescued the submarine. Yuriko was yet again without matrix activity (due to being under a km of sea water and forced to inhabit a submarine).</summary></sessionlog><sessionlog name="2026-June-20: CMP 2083-16 | War Never Changes" code="2026-June-20: CMP 2083-16 | War Never Changes" date="" gm="Hal &quot;SSDR&quot;" karma="2" nuyen="12500"><summary>: Hired by Col. Deborah Kentwell (Thunder Corps) to infiltrate Hardwater Security Svcs and procure evidence of cheating. Later re-hired to win the final War Game (CTF). Yuriko was forced to inhabit an Ares ShadowDancer WarMech (Deadly Arts).</summary></sessionlog><sessionlog name="2026-June-20: SRM 2083-19 | The Hallow Feast" code="2026-June-20: SRM 2083-19 | The Hallow Feast" date="" gm="Morgan" karma="9" nuyen="13500"><summary>: Hired by Monsieur Johnson to ascertain the whereabouts of Snaggletooth. Ultimately found him long since dead and possessed by a spirit attempting to destroy the world.</summary></sessionlog><sessionlog name="2026-June-25: SRM 2081-05 | This is Renton" code="2026-June-25: SRM 2081-05 | This is Renton" date="" gm="CDT Agent Kira Capalu" karma="4" nuyen="11500"><summary>The team was hired by upcoming rapper Swango to investigate death threats, discovering that her previous fixer, Brynne Taggart, had gone missing. While a summoned spirit tracked Brynne, the team traced the messages to a used electronics store in a mall hangout for the Night Hunters gang. Intimidating a member revealed their employer: a retired LoneStar captain leading the local Neighborhood Watch. Following the spirit's lead to a shabby hotel, the runners located Brynne, who confirmed their findings. Forewarned of an approaching hit squad, the team easily repelled them. Swango then hired them as concert security. During the performance, they repelled a frontal gang assault, and one runner took a bullet to protect Swango from a backstage assassin.</summary></sessionlog><sessionlog name="2026-June-30: CMP 2083-01: NONPLUSHED" code="2026-June-30: CMP 2083-01: NONPLUSHED" date="" gm="" karma="7" nuyen="9500"><summary>Hired to locate and return a missing convoy of S-K trucks. Simon called, asking for information on why they were stolen. Trucks located, liberated, and returned. Lost two Johnsons on this one - Simon's looking into it.</summary></sessionlog><sessionlog name="2026-July-07: SRM 2081-08 Child's Play" code="2026-July-07: SRM 2081-08 Child's Play" date="" gm="JaGator" karma="7" nuyen="6500"><summary>: Hired by a CorpoKid to bodyguard him while he developed and sold a new neural interface for drones. A corp tried to steal it, but they failed.</summary></sessionlog><sessionlog name="2026-July-09: SRM 2081-07 | Bootleg Bliss" code="2026-July-09: SRM 2081-07 | Bootleg Bliss" date="" gm="JaGator" karma="7" nuyen="8000"><summary>Hired by Ni Ni to eliminate a fool who was pawning off poor quality illicit drugs as Triad goods.</summary></sessionlog><sessionlog name="2026-July-10: SRM 2081-06 | Cutting Strings" code="2026-July-10: SRM 2081-06 | Cutting Strings" date="" gm="Kira Capalu" karma="7" nuyen="5000"><summary>Hired by a Johnson to find a friend.</summary></sessionlog><sessionlog name="CMP 2083-04 | Hog Wild" code="CMP 2083-04 | Hog Wild" date="2026-Jul-14" gm="JaGator" karma="8" nuyen="9500"><summary>Sigs asked us to track someone down for her and bring them back.</summary></sessionlog><sessionlog name="2026-July-21: CMP 2083-05 | Precious Cargo" code="2026-July-21: CMP 2083-05 | Precious Cargo" date="" gm="" karma="8" nuyen="5500"><summary>HK Police raided an abandoned Red Dragon Triad operation at Kwai Chung Container Port. Reports indicate a human trafficking operation was broken up by a small team of Shadowrunners (including a pixie and a wolf) before police arrived. Additionally, Liao Fa Ren got top marks on her paper, which was published in the school paper and picked up by local outlets.</summary></sessionlog><sessionlog name="2026-July-24: SRM 2083-12 | When You're Smiling" code="2026-July-24: SRM 2083-12 | When You're Smiling" date="" gm="JaGator" karma="10" nuyen="-157750"><summary>NOLA Network News at 9 reported evidence linking Zobop / Red Tide Hitman, Mackenson “Mr. Smiley” Salomon to Blood Magic, Sacrifice, and murder was turned over to NOMS by a concerned citizen and member of the Koslowski family. Mr. Smiley seems to have departed the NOLA area.</summary></sessionlog><sessionlog name="Current Totals" code="Current Totals" date="" gm="" karma="0" nuyen="0" /><sessionlog name="Active Sprite Stable" code="Active Sprite Stable" date="" gm="" karma="0" nuyen="0" /></sessionlogs></sr6char>
+</sr6char>
