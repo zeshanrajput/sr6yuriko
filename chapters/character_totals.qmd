@@ -1,5 +1,31 @@
 # Character Career Totals & Active Sprites
 
+```{python}
+#| echo: false
+#| include: false
+if "Lifetime_Karma" not in globals():
+    import sys, os
+    sys.path.extend([os.path.abspath("scripts"), os.path.abspath("../scripts")])
+    from log_engine import get_log_totals
+    from char_engine import get_character_stats
+
+    _totals = get_log_totals()
+    _stats = get_character_stats()
+
+    Lifetime_Karma = _totals["Lifetime_Karma"]
+    Karma = _totals["Karma"]
+    Nuyen = _totals["Nuyen"]
+    Submersion_Grade = _totals["Submersion_Grade"]
+    Resonance = _stats["Resonance"]
+    Heat = _totals["Heat"]
+    Reputation = _totals["Reputation"]
+    Contacts = _totals["Contacts"]
+    Current_Mission = len(_totals["Missions"])
+
+    def get_active_sprites():
+        return _totals["Active_Sprites"]
+```
+
 This dashboard displays Reiko's live career totals, regional faction reputation breakdown, active registered sprite status, and contact registry sync.
 
 ---
