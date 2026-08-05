@@ -190,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/rules_sprites.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sprites &amp; Resonance Protocols</span></a>
+  <a href="../chapters/rules_sprites.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Emergence</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -374,16 +374,15 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#matrix-attributes" id="toc-matrix-attributes" class="nav-link active" data-scroll-target="#matrix-attributes">Matrix Attributes</a></li>
-  <li><a href="#standardized-matrix-action-pools" id="toc-standardized-matrix-action-pools" class="nav-link" data-scroll-target="#standardized-matrix-action-pools">Standardized Matrix Action Pools</a></li>
+  <li><a href="#standardized-matrix-action-pools" id="toc-standardized-matrix-action-pools" class="nav-link" data-scroll-target="#standardized-matrix-action-pools">Standardized Matrix Action Pools</a>
+  <ul class="collapse">
+  <li><a href="#programming" id="toc-programming" class="nav-link" data-scroll-target="#programming">Programming</a></li>
+  </ul></li>
   <li><a href="#network-benefits" id="toc-network-benefits" class="nav-link" data-scroll-target="#network-benefits">Network Benefits</a></li>
   <li><a href="#learned-programs" id="toc-learned-programs" class="nav-link" data-scroll-target="#learned-programs">Learned Programs</a>
   <ul class="collapse">
   <li><a href="#cmp-2083-04-hog-wild-2026-jul-15" id="toc-cmp-2083-04-hog-wild-2026-jul-15" class="nav-link" data-scroll-target="#cmp-2083-04-hog-wild-2026-jul-15">CMP 2083-04 | Hog Wild (2026-Jul-15)</a></li>
   <li><a href="#cmp-2083-05-precious-cargo-2026-jul-21" id="toc-cmp-2083-05-precious-cargo-2026-jul-21" class="nav-link" data-scroll-target="#cmp-2083-05-precious-cargo-2026-jul-21">CMP 2083-05 | Precious Cargo (2026-Jul-21)</a></li>
-  </ul></li>
-  <li><a href="#full-matrix-defense-breakdown" id="toc-full-matrix-defense-breakdown" class="nav-link" data-scroll-target="#full-matrix-defense-breakdown">Full Matrix Defense Breakdown</a>
-  <ul class="collapse">
-  <li><a href="#dice-pool-breakdown" id="toc-dice-pool-breakdown" class="nav-link" data-scroll-target="#dice-pool-breakdown">Dice Pool Breakdown</a></li>
   </ul></li>
   <li><a href="#home-device-remote-network-protocols" id="toc-home-device-remote-network-protocols" class="nav-link" data-scroll-target="#home-device-remote-network-protocols">Home Device &amp; Remote Network Protocols</a>
   <ul class="collapse">
@@ -392,7 +391,15 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#decking-protocols-cheat-sheet" id="toc-decking-protocols-cheat-sheet" class="nav-link" data-scroll-target="#decking-protocols-cheat-sheet">Decking Protocols Cheat Sheet</a>
   <ul class="collapse">
-  <li><a href="#matrix-edge-actions" id="toc-matrix-edge-actions" class="nav-link" data-scroll-target="#matrix-edge-actions">Matrix Edge Actions</a></li>
+  <li><a href="#cracking-tests-cracking-res" id="toc-cracking-tests-cracking-res" class="nav-link" data-scroll-target="#cracking-tests-cracking-res">1. Cracking Tests (Cracking + RES)</a></li>
+  <li><a href="#electronics-tests-electronics-res" id="toc-electronics-tests-electronics-res" class="nav-link" data-scroll-target="#electronics-tests-electronics-res">2. Electronics Tests (Electronics + RES)</a></li>
+  <li><a href="#matrix-edge-actions" id="toc-matrix-edge-actions" class="nav-link" data-scroll-target="#matrix-edge-actions">3. Matrix Edge Actions</a></li>
+  </ul></li>
+  <li><a href="#foundation-rules" id="toc-foundation-rules" class="nav-link" data-scroll-target="#foundation-rules">Foundation Rules</a>
+  <ul class="collapse">
+  <li><a href="#base-foundation-rules" id="toc-base-foundation-rules" class="nav-link" data-scroll-target="#base-foundation-rules">Base Foundation Rules</a></li>
+  <li><a href="#nexus-protocol-rules" id="toc-nexus-protocol-rules" class="nav-link" data-scroll-target="#nexus-protocol-rules">Nexus Protocol Rules</a></li>
+  <li><a href="#reikos-foundation-form" id="toc-reikos-foundation-form" class="nav-link" data-scroll-target="#reikos-foundation-form">Reiko’s Foundation Form</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -425,10 +432,10 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="matrix-attributes">Matrix Attributes</h2>
 <ul>
 <li><strong>Base ASDF</strong>: 03 05 03 05</li>
-<li><strong>Sprite Symbiosis (Crack Sprite)</strong>: 00 03 02 01 → 03 08 05 06</li>
-<li><strong>Programs (Toolbox)</strong>: 00 00 01 00 → 03 08 06 06</li>
-<li><strong>Resonance Point Allocation (+8 RES)</strong>: 03 01 01 03 → 06 09 07 09</li>
-<li><strong>Active Matrix Attributes</strong>: 06 09 07 09</li>
+<li><strong>Sprite Symbiosis (Assassin Sprite)</strong>: 03 02 01 00 → 06 07 04 05</li>
+<li><strong>Programs (Toolbox &amp; Encryption)</strong>: 00 00 01 01 → 06 07 05 06</li>
+<li><strong>Resonance Point Allocation (+8 RES)</strong>: 01 02 02 03 → 07 09 07 09</li>
+<li><strong>Active Matrix Attributes</strong>: 07 09 07 09</li>
 </ul>
 <hr>
 </section>
@@ -454,36 +461,70 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><strong>Offensive Matrix Actions</strong><br><em>(Brute Force, Data Spike, Control Device)</em></td>
-<td style="text-align: center;">Cracking (5) + RES (8) = <strong>13d6</strong></td>
-<td style="text-align: left;">Base (13) + Natural Hacker (RES Sub) + Focus (+4) + Overclock (+2, 1 wild) + Ally Teamwork (+4) + ECM Warrior II (+2)</td>
-<td style="text-align: center;"><strong>25d6</strong> (1 wild)</td>
+<td style="text-align: left;"><strong>Offensive Cracking: Hacking</strong><br></td>
+<td style="text-align: center;">Cracking (Hacking: 7) + RES (8) = <strong>15d6</strong></td>
+<td style="text-align: left;">Base (15) + Natural Hacker (RES Sub) + Focus (+4) + Overclock (+2, 1 wild) + Ally Teamwork (+4) + ECM Warrior II (+2)</td>
+<td style="text-align: center;"><strong>27d6</strong> (1 wild)</td>
 <td style="text-align: center;"><strong>6 Hits</strong></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Full Matrix Defense Test</strong><br><em>(Opposed Hostile Matrix Attacks)</em></td>
+<td style="text-align: left;"><strong>Offensive Cracking</strong><br><em>(Cybercombat &amp; Electronic Warfare Tests)</em></td>
+<td style="text-align: center;">Cracking (5) + RES (8) = <strong>13d6</strong></td>
+<td style="text-align: left;">Base (13) + Natural Hacker (RES Sub) + Focus (+4) + Overclock (+2, 1 wild) + Ally Teamwork &amp; ECM Warrior II (Max +5 cap: Ally +4, ECM +1)</td>
+<td style="text-align: center;"><strong>24d6</strong> (1 wild)</td>
+<td style="text-align: center;"><strong>6 Hits</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Full Matrix Defense Test</strong><br></td>
 <td style="text-align: center;">RES (8) + FW (9) = <strong>17d6</strong></td>
-<td style="text-align: left;">Base (17) + PA App R6 (+6) + Directional Shield (+7) + Focus (+4)</td>
+<td style="text-align: left;">Base (17) + Personal Assistant App R6 (+6) + Directional Shield (+7) + Focus (+4)</td>
 <td style="text-align: center;"><strong>34d6</strong></td>
 <td style="text-align: center;"><strong>8 Hits</strong></td>
 </tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Electronics: Software Tests</strong><br></td>
+<td style="text-align: center;">Electronics (Software: 7) + RES (8) = <strong>15d6</strong></td>
+<td style="text-align: left;">Base (15) + Focus (+4) + Ally Teamwork (+4)</td>
+<td style="text-align: center;"><strong>23d6</strong></td>
+<td style="text-align: center;"><strong>5 Hits</strong></td>
+</tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Matrix Perception &amp; Search</strong><br><em>(Identify SINs, Facial Scan, Search)</em></td>
+<td style="text-align: left;"><strong>Electronics</strong><br><em>(Computer, Hardware &amp; Complex Forms)</em></td>
 <td style="text-align: center;">Electronics (5) + RES (8) = <strong>13d6</strong></td>
-<td style="text-align: left;">Base (13) + Focus (+4)</td>
-<td style="text-align: center;"><strong>17d6</strong></td>
-<td style="text-align: center;"><strong>4 Hits</strong></td>
+<td style="text-align: left;">Base (13) + Focus (+4) + Ally Teamwork (+4)</td>
+<td style="text-align: center;"><strong>21d6</strong></td>
+<td style="text-align: center;"><strong>5 Hits</strong></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Downtime Buying Gear Test</strong><br><em>(Matrix Purchasing / Legwork)</em></td>
+<td style="text-align: left;"><strong>Downtime Buying Gear Test</strong><br></td>
 <td style="text-align: center;">Electronics (5) + RES (8) = <strong>13d6</strong></td>
 <td style="text-align: left;">Base (13) + Focus (+4) + Overclock (+1) + Shopsoft (+1) + Ally Teamwork (+4)</td>
 <td style="text-align: center;"><strong>23d6</strong></td>
 <td style="text-align: center;"><strong>5 Hits</strong></td>
 </tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Programming / Coding Tests</strong><br></td>
+<td style="text-align: center;">Electronics (Software: 7) + RES (8) = <strong>15d6</strong></td>
+<td style="text-align: left;">Base (15) + Focus (+4) + Ally Teamwork (+4)<br></td>
+<td style="text-align: center;"><strong>23d6</strong></td>
+<td style="text-align: center;"><strong>5 Hits</strong></td>
+</tr>
 </tbody>
 </table>
+<section id="programming" class="level3">
+<h3 class="anchored" data-anchor-id="programming">Programming</h3>
+<ul>
+<li>Interval: 8 / 2 = 4 hrs (Coding Facility), Threshold = 2x Rating/Avail</li>
+<li>Ratings for commonly programmed items
+<ul>
+<li>Knowsofts: Rating 3</li>
+<li>Linguasofts: Rating 5</li>
+<li>Autosoft: Programmed to Rating 8</li>
+</ul></li>
+<li>Cost: 1 karma per 4,000¥</li>
+</ul>
 <hr>
+</section>
 </section>
 <section id="network-benefits" class="level2">
 <h2 class="anchored" data-anchor-id="network-benefits">Network Benefits</h2>
@@ -502,7 +543,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Encryption</strong>: +1 threshold for all incoming Cracking tests against network.</li>
 <li><strong>Tactical Software Apps</strong>:
 <ul>
-<li><em>Artillery Barrage</em>: +1 to Launchers, no rifle/mg/cannon penalties.</li>
+<li><em>Artillery Barrage</em>: +1 to Launchers.</li>
 <li><em>ECM Warrior II</em>: +2 Offensive Cracking tests.</li>
 <li><em>Sneak-Sneak</em>: +2 Stealth.</li>
 <li><em>Target Artist</em>: Attack without LOS on painted targets.</li>
@@ -546,65 +587,6 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 </section>
-<section id="full-matrix-defense-breakdown" class="level2">
-<h2 class="anchored" data-anchor-id="full-matrix-defense-breakdown">Full Matrix Defense Breakdown</h2>
-<p>ASDF: 06 09 07 09</p>
-<section id="dice-pool-breakdown" class="level3">
-<h3 class="anchored" data-anchor-id="dice-pool-breakdown">Dice Pool Breakdown</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Component</th>
-<th style="text-align: center;">Rating / Bonus</th>
-<th style="text-align: center;">Cumulative Dice</th>
-<th style="text-align: left;">Rules Source</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Resonance (Mental Sub via Natural Hacker)</td>
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">8</td>
-<td style="text-align: left;">[HnS, p.&nbsp;84]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Firewall Attribute</td>
-<td style="text-align: center;">9</td>
-<td style="text-align: center;">17</td>
-<td style="text-align: left;">[6WB, p.&nbsp;180]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Personal Assistant App (R6)</td>
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">23</td>
-<td style="text-align: left;">[HnS, p.&nbsp;56]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Data Processing (Directional Shield)</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">30</td>
-<td style="text-align: left;">[HnS, p.&nbsp;56]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Resonance Focus (R4)</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">34</td>
-<td style="text-align: left;">Active Focus</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Total Full Matrix Defense Pool</strong></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><strong>34 Dice</strong></td>
-<td style="text-align: left;">Bought Hits: 8</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><strong>Shield Sprite Power</strong>: Adds sprite RES (7, see <a href="../chapters/rules_sprites.html#registering-sprites">Sprite Protocols</a>) to Matrix defense and opposed complex form / sprite power tests for up to RES icons under protection [HnS p.&nbsp;74].</li>
-</ul>
-<hr>
-</section>
-</section>
 <section id="home-device-remote-network-protocols" class="level2">
 <h2 class="anchored" data-anchor-id="home-device-remote-network-protocols">Home Device &amp; Remote Network Protocols</h2>
 <section id="home-device-configuration-active-venue-drone" class="level3">
@@ -624,7 +606,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Framework Host Specs (Reiko’s Apartment)</strong>:
 <ul>
 <li>Rating 2, Scale 1 (Micro/Personal LAN), Grade 2.</li>
-<li>ASDF: Attack 2, Sleaze 2, Data Processing 3, Firewall 3 [HnS p.&nbsp;154].</li>
+<li>ASDF: Attack 2, Sleaze 3, Data Processing 4, Firewall 5 [HnS p.&nbsp;154].</li>
 <li>Defense: Patrol IC, Acid IC budget.</li>
 <li>Foundation Door: Quartz sliding glass door framed in gold logic/indigo circuits leading directly into the Deep Matrix <strong>Kernel Panic</strong> glade.</li>
 </ul></li>
@@ -634,50 +616,85 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="decking-protocols-cheat-sheet" class="level2">
 <h2 class="anchored" data-anchor-id="decking-protocols-cheat-sheet">Decking Protocols Cheat Sheet</h2>
+<p>Standardized action categorization grouped strictly by Skill &amp; Specialization:</p>
+<section id="cracking-tests-cracking-res" class="level3">
+<h3 class="anchored" data-anchor-id="cracking-tests-cracking-res">1. Cracking Tests (Cracking + RES)</h3>
 <ul>
-<li><strong>Legal Actions</strong>: Electronics + Logic (exceptions noted)</li>
-<li><strong>Illegal Actions</strong>: Cracking + Logic (+1 OS, <code>*</code> indicates specialized action)</li>
+<li><strong>Hacking Specialization</strong>: Backdoor Entry, Crack File, Delayed Command, Garbage In / Garbage Out, Known Exploit, Metahuman in the Middle, Probe, Puppet Cyberware, Spoof Command.</li>
+<li><strong>Cybercombat Specialization</strong>: Brute Force, Crash Program, Data Spike, Device Lock, Disarm Data Bomb, Resonance Spike, Tar Pit.</li>
+<li><strong>Electronic Warfare Specialization</strong>: Calibration, Check OS, Hide, Jam Signals, Masquerade, Popup, Snoop, Watchdog.</li>
 </ul>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Access Level</th>
-<th style="text-align: left;">Legal Actions (Electronics + LOG)</th>
-<th style="text-align: left;">Illegal Actions (Cracking + LOG)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong>Outsider / No Access</strong></td>
-<td style="text-align: left;">• Enter Host (Minor)<br>• Switch Interface Mode (Minor)<br>• Toggle Silent Running (Minor)<br>• Reconfigure Matrix Attribute (Minor)<br>• *Jack out (Elec + WIL)<br>• Matrix Perception (Elec + INT)<br>• Matrix Search (Elec + INT)<br>• Send Message (Minor)<br>• Full Matrix Defense<br>• Virtual Aim (Minor) / Threat Analysis</td>
-<td style="text-align: left;">• Brute Force / <em>Probe<br>• </em>Backdoor Entry / <em>Known Exploit<br>• Masquerade / </em>Metahuman in Middle<br>• <em>Delayed Command / Popup / </em>Spoof Command<br>• Device Lock / Squelch (Elec + LOG)<br>• Denial of Service (Elec + LOG)<br>• Data Spike / Tarpit<br>• Hide</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>User Access</strong><br><em>(+1 OS/rnd if forced)</em></td>
-<td style="text-align: left;">• Change Icon (Minor)<br>• Edit File / Encrypt File<br>• Hash Check (Elec + LOG)</td>
-<td style="text-align: left;">• <em>Crack File<br>• </em>Control Device<br>• Erase Matrix Signature (Elec + LOG)<br>• *Garbage In/Out / Watchdog (Minor)<br>• Disarm Data Bomb (Crack + LOG)<br>• Calibration (Crack + LOG)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Admin Access</strong><br><em>(+3 OS/rnd if forced)</em></td>
-<td style="text-align: left;">• Check OS / Crash Program<br>• Modify Icon (Elec + LOG)</td>
-<td style="text-align: left;">• <em>Format Device / </em>Reboot Device<br>• Snoop / <em>Puppet Cyberware (Minor)<br>• </em>Set Data Bomb (Elec + LOG)<br>• *Trace Icon (Elec + INT)<br>• Subvert Infrastructure (Elec + LOG)</td>
-</tr>
-</tbody>
-</table>
+</section>
+<section id="electronics-tests-electronics-res" class="level3">
+<h3 class="anchored" data-anchor-id="electronics-tests-electronics-res">2. Electronics Tests (Electronics + RES)</h3>
+<ul>
+<li><strong>Software Specialization</strong>: Control Device, Format Device, Jack Out, Jump into Rigged Device, Reboot Device, Set Data Bomb, Trace Icon.</li>
+<li><strong>Computer Specialization</strong>: Edit File, Encrypt File, Erase Matrix Signature, Hash Check, Matrix Perception, Matrix Search, Modify Icon, Threat Analysis.</li>
+<li><strong>Hardware Specialization</strong>: Denial of Service, Squelch, Subvert Infrastructure, Turning off Wireless, removing headjammer, keycard copier, tag eraser, bug scanner.</li>
+<li><strong>Complex Forms</strong>: Any complex form requiring an Electronics test.</li>
+</ul>
+</section>
 <section id="matrix-edge-actions" class="level3">
-<h3 class="anchored" data-anchor-id="matrix-edge-actions">Matrix Edge Actions</h3>
+<h3 class="anchored" data-anchor-id="matrix-edge-actions">3. Matrix Edge Actions</h3>
 <ul>
-<li><strong>1 Edge</strong>: Batch Exec, Emergency Boost, Paint Target</li>
-<li><strong>2 Edge</strong>: Technobabble (CHA instead of LOG), Intervene, Hog, Signal Scream</li>
-<li><strong>3 Edge</strong>: Under the Radar (Action does not increase OS)</li>
+<li><strong>1 Edge</strong>: Batch Exec, Emergency Boost, Paint Target.</li>
+<li><strong>2 Edge</strong>: Technobabble (CHA instead of LOG), Intervene, Hog, Signal Scream.</li>
+<li><strong>3 Edge</strong>: Under the Radar (Action does not increase OS).</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="foundation-rules" class="level2">
+<h2 class="anchored" data-anchor-id="foundation-rules">Foundation Rules</h2>
+<section id="base-foundation-rules" class="level3">
+<h3 class="anchored" data-anchor-id="base-foundation-rules">Base Foundation Rules</h3>
+<p>[HnS p.&nbsp;141]</p>
+<ul>
+<li>Social Tests: Cracking [Hacking]</li>
+<li>Perception/Physical/Piloting: Electronics [Computer]</li>
+<li>Combat: Cracking [Cybercombat]</li>
+<li>Technical tests: Electronics [Software] or Cracking [Electronic Warfare]</li>
+<li>Physical Attributes follow the <a href="../chapters/rules_drones.html#matrix-equivalent-attributes">Matrix Equivalent Attributes</a></li>
+<li>All damage is 3P or 3S</li>
+</ul>
+</section>
+<section id="nexus-protocol-rules" class="level3">
+<h3 class="anchored" data-anchor-id="nexus-protocol-rules">Nexus Protocol Rules</h3>
+<p>[HnS p.&nbsp;142]</p>
+<ul>
+<li>Characters with an Electronics or Cracking skill also gain a pool of bonus dice to use. This pool is equal to the higher skill rating and refreshes each combat round. Outside of combat, a maximum of half the pool can be added to a test.</li>
+<li>Hitchhikers gain +1 to their highest-rating skill and attribute.</li>
+</ul>
+</section>
+<section id="reikos-foundation-form" class="level3">
+<h3 class="anchored" data-anchor-id="reikos-foundation-form">Reiko’s Foundation Form</h3>
+<section id="attributes" class="level4">
+<h4 class="anchored" data-anchor-id="attributes">Attributes</h4>
+<ul>
+<li>Body → Firewall (9)</li>
+<li>Agility → Data Processing (7)</li>
+<li>Reaction → Sleaze (9)</li>
+<li>Strength → Attack (7)</li>
+<li>Willpower (6)</li>
+<li>Logic (4)</li>
+<li>Intuition (2)</li>
+<li>Charisma (4)</li>
+<li>Edge (5)</li>
+<li>Resonance (Highest Attribute) = 9</li>
+</ul>
+</section>
+<section id="skills" class="level4">
+<h4 class="anchored" data-anchor-id="skills">Skills</h4>
+<ul>
+<li>Tasking (Highest Skill) = 7</li>
+<li>Social Tests: 27</li>
+<li>Perception/Physical/Piloting: 25</li>
+<li>Combat: 24</li>
+<li>Technical tests: 27</li>
 </ul>
 
 
+</section>
 </section>
 </section>
 
@@ -1089,8 +1106,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/rules_sprites.html" class="pagination-link" aria-label="Sprites &amp; Resonance Protocols">
-        <span class="nav-page-text"><span class="chapter-title">Sprites &amp; Resonance Protocols</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/rules_sprites.html" class="pagination-link" aria-label="Emergence">
+        <span class="nav-page-text"><span class="chapter-title">Emergence</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
