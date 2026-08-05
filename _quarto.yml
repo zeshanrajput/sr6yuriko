@@ -17,7 +17,6 @@ book:
         - chapters/identity_core.qmd
         - chapters/character_build_point_buy.qmd
         - chapters/character_sheet.qmd
-        - chapters/dossier_appendix.qmd
         - chapters/character_totals.qmd
         - chapters/character_log.qmd
         - chapters/character_purchases.qmd

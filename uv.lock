@@ -1877,7 +1877,7 @@ wheels = [
 [[package]]
 name = "sr6-core"
 version = "0.1.0"
-source = { git = "https://github.com/zeshanrajput/sr6-core.git?branch=master#3cd8bee813235a0de3f9d6f97e3235158f51a5b4" }
+source = { git = "https://github.com/zeshanrajput/sr6-core.git?branch=master#61ee88ea4b1c8c9f5c3b89fb7b11ba34bd6cfb28" }
 dependencies = [
     { name = "google-genai" },
     { name = "pydantic" },
