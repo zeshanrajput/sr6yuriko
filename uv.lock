@@ -1877,22 +1877,13 @@ wheels = [
 [[package]]
 name = "sr6-core"
 version = "0.1.0"
-source = { editable = "../sr6-core" }
+source = { git = "https://github.com/zeshanrajput/sr6-core.git?branch=master#3cd8bee813235a0de3f9d6f97e3235158f51a5b4" }
 dependencies = [
     { name = "google-genai" },
     { name = "pydantic" },
     { name = "python-dotenv" },
     { name = "pyyaml" },
     { name = "requests" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "google-genai", specifier = ">=0.1.0" },
-    { name = "pydantic", specifier = ">=2.0.0" },
-    { name = "python-dotenv", specifier = ">=1.0.0" },
-    { name = "pyyaml", specifier = ">=6.0" },
-    { name = "requests", specifier = ">=2.28.0" },
 ]
 
 [[package]]
@@ -1925,7 +1916,7 @@ requires-dist = [
     { name = "python-fasthtml", specifier = ">=0.14.11" },
     { name = "pyyaml", specifier = ">=6.0.3" },
     { name = "sherpa-onnx" },
-    { name = "sr6-core", editable = "../sr6-core" },
+    { name = "sr6-core", git = "https://github.com/zeshanrajput/sr6-core.git?branch=master" },
 ]
 
 [[package]]

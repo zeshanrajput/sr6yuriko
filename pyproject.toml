@@ -19,4 +19,4 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-sr6-core = { path = "../sr6-core", editable = true }
+sr6-core = { git = "https://github.com/zeshanrajput/sr6-core.git", branch = "master" }
