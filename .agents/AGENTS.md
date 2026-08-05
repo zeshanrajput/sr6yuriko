@@ -3,13 +3,15 @@
 ## Shadowrun 6e Rules & Mechanics Verification
 
 When answering rules questions, updating character dossier files (`chapters/*.qmd`), auditing Karma/Nuyen ledgers, or verifying matrix/drone combat mechanics:
-- Trigger the `sr6-rules` skill or run `python C:\github\sr6rag\query_rules.py "<query>"` to consult the authoritative Shadowrun 6e Gemini RAG vault.
+
+- Trigger rules lookups using `sr6 search "<item>"` or `sr6 rag query "<query>"`.
 - Ensure all rules assertions follow the SRM 4-level authority hierarchy (Level 1 SRM Exception > Level 2 Supplements > Level 3 Core > Level 4 Homebrew).
 - Provide explicit book and page citations wherever applicable.
 
 ## Writing & Narrative Anti-Slop (No AI Slop)
 
 When writing or editing prose, narrative chapters (`chapters/*.md`), character questionnaire answers (`twenty_questions.qmd`), or user-facing summaries:
+
 - Trigger or adhere to the `no-ai-slop` skill instructions (`.agents/skills/no-ai-slop/SKILL.md`).
 - Avoid banned words (`delve`, `foster`, `leverage`, `robust`, `tapestry`, `realm`, `beacon`, `multifaceted`, `paradigm shift`, `cutting-edge`, `ever-evolving`).
 - Eliminate AI writing patterns: binary contrasts ("not X, but Y"), colon reveals, fake-profound kickers, summary recaps, and throat-clearing openers.
@@ -19,6 +21,7 @@ When writing or editing prose, narrative chapters (`chapters/*.md`), character q
 ## Literary Analysis & Prose Refactoring
 
 When evaluating, scoring, or refactoring narrative chapters (`chapters/*.md`):
+
 - Trigger the `literary-analysis` skill (`.agents/skills/literary-analysis/SKILL.md`).
 - Execute sub-skills as required:
   1. `stage1_thematic_centering` for moral axis, SRM lore alignment, and exploring "the spaces between" (human condition via digital/spiritual phenomenology).
@@ -29,12 +32,8 @@ When evaluating, scoring, or refactoring narrative chapters (`chapters/*.md`):
 
 ## Workspace Diagnostic & Automation Utilities
 
-Before completing edits or reviewing narrative/character updates, run the corresponding python utilities:
-- **Prose & Markdown Linter:** Run `python scripts/prose_linter.py "chapters/<file>.md"` to get instant diagnostics on markdownlint syntax formatting, em-dash density, cognitive verbs, banned words, and sentence length cadence.
-- **Continuity Engine:** Run `python scripts/continuity_engine.py` or trigger `continuity-tracker` to index character relationships, sprite states, locations, and narrative heatmaps into `reference/story_continuity.md`.
-- **Dossier & Ledger Auditor:** Run `python scripts/audit_dossier.py` to verify Karma/Nuyen balance consistency, Submersion grade calculations, and registered sprite limits against SRM rules.
+Before completing edits or reviewing narrative/character updates, run the corresponding `sr6` CLI subcommands:
 
-
-
-
-
+- **Prose & Markdown Linter:** Run `sr6 lint "chapters/<file>.qmd"` to get instant diagnostics on markdownlint syntax formatting, em-dash density, cognitive verbs, banned words, and sentence length cadence.
+- **Continuity Engine:** Run `sr6 continuity .` to index character relationships, sprite states, locations, and narrative heatmaps into `reference/story_continuity.md`.
+- **Dossier & Ledger Auditor:** Run `sr6 characters audit yuriko` or `sr6 sync-all` to verify Karma/Nuyen balance consistency, Submersion grade calculations, and registered sprite limits against SRM rules.

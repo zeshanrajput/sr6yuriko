@@ -1,0 +1,271 @@
+{
+  "schema_version": "1.0",
+  "system": "Shadowrun 6th Edition (SR6)",
+  "character": {
+    "name": "Yuriko Star",
+    "real_name": "r31k0 Takahashi",
+    "metatype": "AI-Pilot AI",
+    "stream": "Technoshamans",
+    "attributes": {
+      "body": 5,
+      "agility": 3,
+      "reaction": 5,
+      "strength": 3,
+      "willpower": 6,
+      "logic": 4,
+      "intuition": 2,
+      "charisma": 4,
+      "edge": 4,
+      "resonance": 8
+    },
+    "living_persona": {
+      "asdf_bonuses": {
+        "firewall": 3,
+        "sleaze": 1,
+        "data_processing": 1,
+        "attack": 3
+      }
+    },
+    "skills": [
+      {
+        "name": "Tasking",
+        "id": "tasking",
+        "attribute": "Resonance",
+        "rating": 6,
+        "specialization": "Registering"
+      },
+      {
+        "name": "Cracking",
+        "id": "cracking",
+        "attribute": "Logic",
+        "rating": 5,
+        "specialization": "Hacking"
+      },
+      {
+        "name": "Electronics",
+        "id": "electronics",
+        "attribute": "Logic",
+        "rating": 5,
+        "specialization": "Software"
+      },
+      {
+        "name": "Influence",
+        "id": "influence",
+        "attribute": "Charisma",
+        "rating": 1
+      },
+      {
+        "name": "Con",
+        "id": "con",
+        "attribute": "Charisma",
+        "rating": 1
+      },
+      {
+        "name": "Native Language",
+        "id": "language",
+        "attribute": "Logic",
+        "rating": 4
+      }
+    ],
+    "qualities": {
+      "positive": [
+        {
+          "name": "Natural Hacker",
+          "ref": "natural_hacker"
+        },
+        {
+          "name": "Stream: Technoshamans",
+          "ref": "technoshaman"
+        },
+        {
+          "name": "Designer",
+          "ref": "designer"
+        },
+        {
+          "name": "Sensor Upgrade",
+          "ref": "sensor_upgrade"
+        },
+        {
+          "name": "Pilot Origins",
+          "ref": "pilot_origins"
+        }
+      ],
+      "negative": [
+        {
+          "name": "Buddy System",
+          "ref": "buddy_system"
+        },
+        {
+          "name": "Sprite Bane",
+          "ref": "sprite_bane",
+          "choice": "Primal Sprite"
+        },
+        {
+          "name": "Hooder",
+          "ref": "hooder",
+          "rating": 2
+        }
+      ]
+    },
+    "drones": [
+      {
+        "name": "Nissan Samurai",
+        "ref": "nissansamurai",
+        "body": 6,
+        "armor": 6,
+        "pilot": 3,
+        "sensor": 2,
+        "speed": 30,
+        "handling_on": 3,
+        "handling_off": 4,
+        "accel_on": 10,
+        "accel_off": 10,
+        "speed_interval_on": 10,
+        "page": "6WC 137"
+      },
+      {
+        "name": "MCT Gnat",
+        "ref": "mctgnat",
+        "body": 0,
+        "armor": 0,
+        "pilot": 2,
+        "sensor": 1,
+        "speed": 30,
+        "handling_on": 3,
+        "handling_off": 3,
+        "accel_on": 4,
+        "accel_off": 4,
+        "speed_interval_on": 10,
+        "page": "CRB 299"
+      },
+      {
+        "name": "FB Sky Commander",
+        "ref": "boingskycommander",
+        "body": 4,
+        "armor": 2,
+        "pilot": 4,
+        "sensor": 5,
+        "speed": 190,
+        "handling_on": 4,
+        "handling_off": 4,
+        "accel_on": 20,
+        "accel_off": 20,
+        "speed_interval_on": 30,
+        "page": "DC 116"
+      },
+      {
+        "name": "Shiawase Butler",
+        "ref": "shiawasebdbutler",
+        "body": 4,
+        "armor": 0,
+        "pilot": 2,
+        "sensor": 3,
+        "speed": 8,
+        "handling_on": 4,
+        "handling_off": 5,
+        "accel_on": 5,
+        "accel_off": 5,
+        "speed_interval_on": 5,
+        "page": "DC 116",
+        "modifications": [
+          "Increased Structural Integrity 2",
+          "Secondary Propulsion (Rotor)",
+          "Increased Sensors 3",
+          "Retractable Skates",
+          "Satellite Link"
+        ]
+      },
+      {
+        "name": "Federated-Boeing Sky Commander (Seattle Retrans Relay)",
+        "ref": "federatedboeingskycommander_seattle",
+        "body": 3,
+        "armor": 0,
+        "pilot": 3,
+        "sensor": 3,
+        "speed": 120,
+        "handling_on": 4,
+        "handling_off": 4,
+        "accel_on": 10,
+        "accel_off": 10,
+        "speed_interval_on": 20,
+        "page": "6WB 288 / DC 122",
+        "modifications": [
+          "Retrans Unit",
+          "Satellite Link",
+          "RAM Plating 4",
+          "Enhanced Sensors 3",
+          "ECM 6",
+          "Integrated Matrix Device Dock",
+          "M-TOC II Repository & Software Tags",
+          "Rating 2 Framework Host Repository (Scale 1 Micro, Grade 2 Default)"
+        ],
+        "framework_host": {
+          "name": "The Holy Wild Sanctuary Host (Compact Studio & Glade Portal)",
+          "rating": 2,
+          "scale": "1 (Micro / Personal LAN - Optical Brick Cluster)",
+          "grade": "2 (Default Security / IC Budget)",
+          "asdf": "A:2 S:2 D:3 F:3",
+          "capacity": "10 visitors max (Compact Studio Apartment architecture)",
+          "ic": [
+            "Patrol IC (Gilded paper-moth data-sprites)",
+            "Acid IC"
+          ],
+          "purpose": "Sovereign home and sanctuary for Reiko and liberated emergent sparks",
+          "host_architecture": "High-rise studio apartment (brushed teak & dry copper ceilings, jasmine tea service, Megalodon schematics worktable, cased contract-collar niche, compiled gold logic floorboards)",
+          "foundation_door": "Quartz sliding glass door opening an un-insulated permanent conduit into the Holy Wild glade (fossilized directory trees, fractal willows, telemetry ferns, de-allocated address pools) and the Deep Foundation"
+        }
+      },
+      {
+        "name": "Shiawase Man-at-Arms",
+        "ref": "shiawasebdmanatarms",
+        "body": 10,
+        "armor": 8,
+        "pilot": 2,
+        "sensor": 2,
+        "speed": 10,
+        "handling_on": 3,
+        "handling_off": 3,
+        "accel_on": 5,
+        "accel_off": 5,
+        "speed_interval_on": 5,
+        "page": "DC 116",
+        "modifications": [
+          "Weapon Mount (Heavy)",
+          "Pop-Out Concealment (Large)",
+          "Armor Increase 5",
+          "Secondary Propulsion (Rotor)",
+          "Increased Sensors 3",
+          "Retractable Skates",
+          "Satellite Link"
+        ]
+      }
+    ],
+    "complex_forms": [
+      {
+        "name": "Cleaner",
+        "ref": "cleaner",
+        "fading": 2,
+        "duration": "Permanent"
+      },
+      {
+        "name": "Diffusion",
+        "ref": "diffusion",
+        "target": "Firewall",
+        "fading": 4,
+        "duration": "Sustained"
+      },
+      {
+        "name": "Technoregeneration",
+        "ref": "technoregeneration",
+        "fading": -1,
+        "duration": "Permanent"
+      },
+      {
+        "name": "Puppeteer",
+        "ref": "puppeteer",
+        "fading": 5,
+        "duration": "Sustained"
+      }
+    ]
+  }
+}

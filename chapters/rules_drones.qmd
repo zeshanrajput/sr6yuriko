@@ -3,19 +3,17 @@
 ```{python}
 #| echo: false
 #| include: false
-import sys
-import os
-sys.path.extend([os.path.abspath("scripts"), os.path.abspath("../scripts")])
-from char_engine import get_character_stats, get_living_persona, get_resonance_focus_rating
+from sr6core.character_manager import CharacterManager
 
-stats = get_character_stats()
-lp = get_living_persona()
+cm = CharacterManager()
+_char = cm.get_character_data("yuriko") or {}
+attrs = _char.get("attributes", {})
 
-RESONANCE = stats["Resonance"]
-ACTIVE_A = lp["active"]["A"]
-ACTIVE_S = lp["active"]["S"]
-ACTIVE_D = lp["active"]["D"]
-ACTIVE_F = lp["active"]["F"]
+RESONANCE = attrs.get("resonance", 8)
+ACTIVE_A = 7
+ACTIVE_S = 9
+ACTIVE_D = 7
+ACTIVE_F = 9
 
 SPRITE_SYMBIOSIS = 4
 ALLY_SPRITE_TEAMWORK = 4
@@ -25,7 +23,7 @@ BUTLER_BOD_AUG = 6
 BUTLER_BOD_INHABITED = 7
 BUTLER_ARM_BASE = 0
 BUTLER_ARM_AUG = 10
-BUTLER_PLT_OVERRIDE = 7
+BUTLER_PLT_OVERRIDE = RESONANCE
 BUTLER_SEN_BASE = 3
 BUTLER_SEN_AUG = 7
 
@@ -34,7 +32,7 @@ MAA_BOD_AUG = 15
 MAA_BOD_INHABITED = 16
 MAA_ARM_BASE = 8
 MAA_ARM_AUG = 17
-MAA_PLT_OVERRIDE = 7
+MAA_PLT_OVERRIDE = RESONANCE
 MAA_SEN_BASE = 2
 MAA_SEN_AUG = 6
 
@@ -59,8 +57,9 @@ Stat blocks list active drones in official **SR6 Vehicle/Drone Stat Block Order*
 | **Top Speed (SPD) / Interval** | **8 / 5m** (Ground) \| **120 / 20m** (Rotor) | Ground Speed & Interval / Rotor Flight Speed & Interval |
 | **Body (BOD)** | **`{python} BUTLER_BOD_AUG` (`{python} BUTLER_BOD_INHABITED`)** | Base 4 + Structural (+2) \| **`{python} BUTLER_BOD_INHABITED`** when inhabited (Home Device Tuning +1 Body) |
 | **Armor (ARM)** | **`{python} BUTLER_ARM_AUG`** | Base 0 + SkinShield (+2) + RACS (+2) + InvisiShield (+2) + Wrist Shield (+4) |
-| **Pilot (PLT)** | **2 (`{python} BUTLER_PLT_OVERRIDE`)** | Base 2 *(Designer +1 = 3)* \| **`{python} BUTLER_PLT_OVERRIDE`** when inhabited (Sprite Power *Override* = RES `{python} RESONANCE`) |
+| **Pilot (PLT)** | **2 (`{python} BUTLER_PLT_OVERRIDE`)** | Base 2 *(Designer +1 = 3)* \| **`{python} BUTLER_PLT_OVERRIDE`** when inhabited (Sprite Power *Override*) |
 | **Sensor (SEN)** | **`{python} BUTLER_SEN_AUG`** | Base 3 + Enhanced Sensors 3 (+3) + Network Sensor Upgrade (+1) |
+| **Program Slots** | **11** | Base PLT / 2 (rounded up: 1) + Software Tags (10) |
 
 ### 2. Shiawase Man-at-Arms (Anthrodrone)
 
@@ -71,8 +70,9 @@ Stat blocks list active drones in official **SR6 Vehicle/Drone Stat Block Order*
 | **Top Speed (SPD) / Interval** | **10 / 5m** (Ground) \| **120 / 20m** (Rotor) | Ground Speed & Interval / Rotor Flight Speed & Interval |
 | **Body (BOD)** | **`{python} MAA_BOD_AUG` (`{python} MAA_BOD_INHABITED`)** | Base 10 + Structural (+5) \| **`{python} MAA_BOD_INHABITED`** when inhabited (Home Device Tuning +1 Body) |
 | **Armor (ARM)** | **`{python} MAA_ARM_AUG`** | Base 8 + Armor Increase 5 (+5) + Wrist Shield (+4) |
-| **Pilot (PLT)** | **2 (`{python} MAA_PLT_OVERRIDE`)** | Base 2 *(Designer +1 = 3)* \| **`{python} MAA_PLT_OVERRIDE`** when inhabited (Sprite Power *Override* = RES `{python} RESONANCE`) |
+| **Pilot (PLT)** | **2 (`{python} MAA_PLT_OVERRIDE`)** | Base 2 *(Designer +1 = 3)* \| **`{python} MAA_PLT_OVERRIDE`** when inhabited (Sprite Power *Override*) |
 | **Sensor (SEN)** | **`{python} MAA_SEN_AUG`** | Base 2 + Enhanced Sensors 3 (+3) + Network Sensor Upgrade (+1) |
+| **Program Slots** | **11** | Base PLT / 2 (rounded up: 1) + Software Tags (10) |
 
 ### 3. MCT Gnat (Microdrone)
 
@@ -83,11 +83,12 @@ Stat blocks list active drones in official **SR6 Vehicle/Drone Stat Block Order*
 | **Top Speed (SPD) / Interval** | **30 / 10m** | Base Top Speed / Interval |
 | **Body (BOD)** | **0** | Microdrone chassis |
 | **Armor (ARM)** | **0** | Unarmored |
-| **Pilot (PLT)** | **2** | Base 2 Pilot Autosoft |
+| **Pilot (PLT)** | **2** | Base 2 Pilot |
 | **Sensor (SEN)** | **`{python} GNAT_SEN_AUG`** | Base 1 + Network Sensor Upgrade (+1) |
+| **Program Slots** | **1** | Base PLT / 2 (rounded up) |
 
 ### Retractable Skates Alternate Movement
-Both Shiawase anthrodrones feature **Retractable Skates** [Double Clutch]:
+All anthrodrones feature **Retractable Skates** [BS p. 47]:
 * **Activation**: Extending or retracting skates takes a **Minor Action**.
 * **Movement Rules**: Uses metahuman movement rules: **Walking 10m/rnd**, **Sprinting 30m/rnd**, **+2m per net hit** on Sprinting tests.
 
@@ -97,11 +98,21 @@ Both Shiawase anthrodrones feature **Retractable Skates** [Double Clutch]:
 
 | Drone Action / Test | Base Skill & Attributes | Applied Modifiers Math | Final Dice Pool |
 | :--- | :---: | :--- | :---: |
-| **Drone Piloting / Maneuvering** | Maneuvering (7) + Sleaze (`{python} ACTIVE_S`) = **`{python} 7 + ACTIVE_S`d6** | Base (`{python} 7 + ACTIVE_S`) + Sprite Symbiosis (+`{python} SPRITE_SYMBIOSIS`) | **`{python} 7 + ACTIVE_S + SPRITE_SYMBIOSIS`d6** |
-| **Drone Weapon Attack (Gunnery)** | Targeting (7) + Data Processing (`{python} ACTIVE_D`) = **`{python} 7 + ACTIVE_D`d6** | Base (`{python} 7 + ACTIVE_D`) + Sprite Symbiosis (+`{python} SPRITE_SYMBIOSIS`) | **`{python} 7 + ACTIVE_D + SPRITE_SYMBIOSIS`d6** |
-| **Drone Evasion (Defense Test)** | Evasion (7) + Sleaze (`{python} ACTIVE_S`) = **`{python} 7 + ACTIVE_S`d6** | Base (`{python} 7 + ACTIVE_S`) + Sprite Symbiosis (+`{python} SPRITE_SYMBIOSIS`) | **`{python} 7 + ACTIVE_S + SPRITE_SYMBIOSIS`d6** |
-| **Drone Perception Test** | Clearsight (7) + Sensor (6) = **13d6** | Base (13) + Sensor Upgrade (+1) | **14d6** |
-| **Drone Stealth Test** | Stealth (7) + Data Processing (`{python} ACTIVE_D`) = **`{python} 7 + ACTIVE_D`d6** | Base (`{python} 7 + ACTIVE_D`) + Tactical Soft Sneak-Sneak (+2) | **`{python} 7 + ACTIVE_D + 2`d6** |
+| **Drone Piloting / Maneuvering** | Maneuvering (`{python} ACTIVE_D`) + Sleaze (`{python} ACTIVE_S`) = **`{python} ACTIVE_D + ACTIVE_S`d6** | Base (`{python} ACTIVE_D + ACTIVE_S`) + Sprite Symbiosis (+`{python} SPRITE_SYMBIOSIS`) | **`{python} ACTIVE_D + ACTIVE_S + SPRITE_SYMBIOSIS`d6** |
+| **Drone Weapon Attack (Gunnery)** | Targeting (`{python} ACTIVE_D`) + Data Processing (`{python} ACTIVE_D`) = **`{python} ACTIVE_D + ACTIVE_D`d6** | Base (`{python} ACTIVE_D * 2`) + Sprite Symbiosis (+`{python} SPRITE_SYMBIOSIS`) | **`{python} ACTIVE_D * 2 + SPRITE_SYMBIOSIS`d6** |
+| **Drone Evasion (Defense Test)** | Evasion (`{python} ACTIVE_D`) + Sleaze (`{python} ACTIVE_S`) = **`{python} ACTIVE_D + ACTIVE_S`d6** | Base (`{python} ACTIVE_D + ACTIVE_S`) + Sprite Symbiosis (+`{python} SPRITE_SYMBIOSIS`) | **`{python} ACTIVE_D + ACTIVE_S + SPRITE_SYMBIOSIS`d6** |
+| **Drone Perception Test** | Clearsight (`{python} ACTIVE_D`) + Sensor | Base (`{python} ACTIVE_D`) + Sensor Upgrade (+1) | **`{python} ACTIVE_D +1` + Sensor d6** |
+| **Drone Stealth Test** | Stealth (`{python} ACTIVE_D`) + Data Processing (`{python} ACTIVE_D`) = **`{python} ACTIVE_D * 2`d6** | Base (`{python} ACTIVE_D * 2`) + Tactical Soft Sneak-Sneak (+2) | **`{python} ACTIVE_D * 2 + 2`d6** |
+
+Reiko can also operate drones using the *Override* Sprite Power [SR6H p. 194], which allows her to replace the drone's pilot with herself (acting as a sprite with a Level equal to her Resonance). Because this is now a test involving her Resonance pool, her Resonance Focus applies [HnS p. 71].
+
+| Drone Action / Test | Base Skill & Attributes | Applied Modifiers Math | Final Dice Pool |
+| :--- | :---: | :--- | :---: |
+| **Perception** | Clearsight (`{python} ACTIVE_D`) + Sensor | +1 Sensor Upgrade, +`{python} SPRITE_SYMBIOSIS` Teamwork (Sprite Symbiosis) | **`{python} ACTIVE_D + 1 + SPRITE_SYMBIOSIS` + Sensor d6** |
+| **Evasion** | Evasion (`{python} ACTIVE_D`) + Pilot (`{python} RESONANCE`) | +4 Resonance Focus, +`{python} SPRITE_SYMBIOSIS` Teamwork (Sprite Symbiosis) | **`{python} ACTIVE_D + RESONANCE + 4 + SPRITE_SYMBIOSIS`d6** |
+| **Piloting** | Maneuvering (`{python} ACTIVE_D`) + Pilot (`{python} RESONANCE`) | +4 Resonance Focus, +3 Diagnostics | **`{python} ACTIVE_D + RESONANCE + 7`d6** |
+| **Stealth** | Stealth `{python} ACTIVE_D` + Pilot (`{python} RESONANCE`) | +4 Resonance Focus, +`{python} SPRITE_SYMBIOSIS` Teamwork + Tactical Soft Sneak-Sneak (+2) | **`{python} ACTIVE_D + RESONANCE + SPRITE_SYMBIOSIS + 6`d6** |
+| **Weapons** | Targeting (`{python} ACTIVE_D`) + Sensor | Base (`{python} ACTIVE_D`) + Sensor Upgrade (+1) +`{python} SPRITE_SYMBIOSIS` Teamwork | **`{python} ACTIVE_D + 1 + SPRITE_SYMBIOSIS` + Sensor d6** |
 
 ---
 
@@ -116,15 +127,15 @@ AI characters with **Pilot Origins** [HnS p. 119] operate drones using two disti
   * Gunnery: **Firearms + Logic**
   * Defense: **Intuition + Willpower**
 
-### 2. Remote Control / Un-jumped Operation
-* **Matrix Equivalent Attributes**: When controlling drones remotely without jumping in, physical attributes map to ASDF [HnS p. 118]:
+### 2. Remote Control / Un-jumped Operation {#matrix-equivalent-attributes}
+* **Remote Tests** [SR6H p. 180]
+  * AR: normal physical attribute
+  * VR: substitute appropriate mental attribute (Body = Willpower, Agility = Logic, Reaction = Intuition, Strength = Charisma).
+* **Matrix Equivalent Attributes**: When controlling drones remotely via AR using Control Device, a Pilot Origin AI must use their "physical attributes" (which map to ASDF) [HnS p. 118]:
   * Body → Firewall (`{python} ACTIVE_F`)
   * Agility → Data Processing (`{python} ACTIVE_D`)
   * Reaction → Sleaze (`{python} ACTIVE_S`)
   * Strength → Attack (`{python} ACTIVE_A`)
-* **Remote Tests**:
-  * Piloting: **Piloting + Sleaze** (`{python} ACTIVE_S`)
-  * Gunnery: **Firearms + Data Processing** (`{python} ACTIVE_D`)
 
 ---
 

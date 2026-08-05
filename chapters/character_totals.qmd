@@ -3,27 +3,26 @@
 ```{python}
 #| echo: false
 #| include: false
-if "Lifetime_Karma" not in globals():
-    import sys, os
-    sys.path.extend([os.path.abspath("scripts"), os.path.abspath("../scripts")])
-    from log_engine import get_log_totals
-    from char_engine import get_character_stats
+from sr6core.log_engine import get_log_totals
+from sr6core.character_manager import CharacterManager
 
-    _totals = get_log_totals()
-    _stats = get_character_stats()
+_totals = get_log_totals(["chapters/character_log.qmd", "chapters/character_purchases.qmd"])
+cm = CharacterManager()
+_char = cm.get_character_data("yuriko") or {}
+_attrs = _char.get("attributes", {})
 
-    Lifetime_Karma = _totals["Lifetime_Karma"]
-    Karma = _totals["Karma"]
-    Nuyen = _totals["Nuyen"]
-    Submersion_Grade = _totals["Submersion_Grade"]
-    Resonance = _stats["Resonance"]
-    Heat = _totals["Heat"]
-    Reputation = _totals["Reputation"]
-    Contacts = _totals["Contacts"]
-    Current_Mission = len(_totals["Missions"])
+Lifetime_Karma = _totals.get("Lifetime_Karma", 0)
+Karma = _totals.get("Karma", 0)
+Nuyen = _totals.get("Nuyen", 0)
+Submersion_Grade = _totals.get("Submersion_Grade", 0)
+Resonance = _attrs.get("resonance", 6)
+Heat = _totals.get("Heat", 0)
+Reputation = _totals.get("Reputation", {})
+Contacts = _totals.get("Contacts", {})
+Current_Mission = len(_totals.get("Missions", []))
 
-    def get_active_sprites():
-        return _totals["Active_Sprites"]
+def get_active_sprites():
+    return _totals.get("Active_Sprites", [])
 ```
 
 This dashboard displays Reiko's live career totals, regional faction reputation breakdown, active registered sprite status, and contact registry sync.
@@ -68,29 +67,4 @@ for s in active:
         print(f"| {s['name']} | R{s['level']} {s['type']} ({s['details']}) | {m_name} | {elapsed} / 3 | {status_str} |")
 ```
 
-```{python}
-#| echo: false
-#| include: false
-import yaml, os
-if Contacts:
-    yaml_path = os.path.abspath("yuriko_master.yaml")
-    if os.path.exists(yaml_path):
-        with open(yaml_path, "r", encoding="utf-8") as f:
-            mdata = yaml.safe_load(f) or {}
-        clist = []
-        for name, c in Contacts.items():
-            clist.append({
-                "name": name,
-                "connection": c["connection"],
-                "loyalty": c["loyalty"],
-                "favors": c["favors"],
-                "type": c["type"],
-                "archetype": c["type"],
-                "region": c.get("region", "GEN"),
-                "description": c["notes"]
-            })
 
-        mdata["contacts"] = clist
-        with open(yaml_path, "w", encoding="utf-8") as f:
-            yaml.dump(mdata, f, sort_keys=False, allow_unicode=True, indent=2)
-```

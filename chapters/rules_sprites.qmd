@@ -1,24 +1,23 @@
-# Sprites & Resonance Protocols
+# Emergence
 
 ```{python}
 #| echo: false
 #| include: false
-import sys
-import os
-sys.path.extend([os.path.abspath("scripts"), os.path.abspath("../scripts")])
-from char_engine import get_character_stats, get_resonance_focus_rating
-from log_engine import get_log_totals
+from sr6core.log_engine import get_log_totals
+from sr6core.character_manager import CharacterManager
 
-stats = get_character_stats()
-log_totals = get_log_totals()
+cm = CharacterManager()
+_char = cm.get_character_data("yuriko") or {}
+attrs = _char.get("attributes", {})
+log_totals = get_log_totals("chapters/character_log.qmd")
 
-RESONANCE = stats["Resonance"]
-WILLPOWER = stats["Willpower"]
-CHARISMA = stats["Charisma"]
-LOGIC = stats["Logic"]
-TASKING = stats["Tasking"]
+RESONANCE = attrs.get("resonance", 8)
+WILLPOWER = attrs.get("willpower", 6)
+CHARISMA = attrs.get("charisma", 4)
+LOGIC = attrs.get("logic", 4)
+TASKING = 6
 REGISTERING = TASKING + 2
-RESONANCE_FOCUS = get_resonance_focus_rating()
+RESONANCE_FOCUS = 4
 SUBMERSION_GRADE = log_totals["Submersion_Grade"]
 
 SPRITE_LEVEL = 7

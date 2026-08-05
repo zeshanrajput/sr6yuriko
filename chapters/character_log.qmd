@@ -9,181 +9,32 @@ This log chronicles out-of-session missions, downtime decisions, Karma expenditu
 ```{python}
 #| echo: false
 #| include: false
-# Initial values
-Karma = 1
-Lifetime_Karma = 1
-Nuyen = 90000 # Nuyen from Chargen. I couldn't figure out how to separate what was bought then vs. later.
-Submersion_Grade = 2
-Resonance = 6
-Heat = 0
-Current_Mission = 0
+from sr6core.log_engine import (
+    inc, inc_many, contact, add_rep, add_sprite, 
+    start_mission, get_active_sprites, state, assign
+)
 
-Missions = []
-Reputation = {}
-Sprites = []
+# Initial baseline values
+assign("Karma", 1)
+assign("Lifetime_Karma", 1)
+assign("Nuyen", 90000) # Nuyen from Chargen
+assign("Submersion_Grade", 2) # Submersion Grade at Chargen
+assign("Resonance", 6)
+assign("Heat", 0)
+assign("Current_Mission", 0)
 
-def start_mission(name=""):
-    globals()['Current_Mission'] += 1
-    Missions.append(name if name else f"Mission {globals()['Current_Mission']}")
-    return f"{name}"
-
-def add_rep(faction, amount=1):
-    Reputation[faction] = Reputation.get(faction, 0) + amount
-    return f"+{amount} Rep {faction}"
-
-def add_sprite(name, level=7, type_name="Modular", details="", is_ally=False):
-    mission_idx = globals()['Current_Mission']
-    mission_name = Missions[mission_idx - 1] if 0 < mission_idx <= len(Missions) else f"Mission {mission_idx}"
-    
-    if not is_ally and not details:
-        types = ["Autosofts", "Shield, Death Mark"]
-        last_detail = None
-        for s in reversed(Sprites):
-            if not s.get("is_ally") and s.get("details") in types:
-                last_detail = s.get("details")
-                break
-        if last_detail == "Autosofts":
-            details = "Shield, Death Mark"
-        else:
-            details = "Autosofts"
-
-    Sprites.append({
-        "name": name,
-        "level": level,
-        "type": type_name,
-        "registered_mission": mission_idx,
-        "registered_mission_name": mission_name,
-        "is_ally": is_ally,
-        "details": details
-    })
-    return f"Registered {name} (R{level} {type_name})"
-
-def get_active_sprites():
-    curr = globals()['Current_Mission']
-    active = []
-    for s in Sprites:
-        if s.get("is_ally") or (curr <= s["registered_mission"] + 3):
-            active.append(s)
-    return active
-
-def inc(name, amount=1):
-    globals()[name] += amount
-    if name == 'Karma' and amount > 0:
-        globals()['Lifetime_Karma'] += amount
-    op = "+=" if amount >= 0 else "-="
-    return f"{name} {op} {abs(amount)}"
-
-def assign(name, value):
-    globals()[name] = value
-    return f"{name} = {value}"
-
-def inc_many(*args):
-    if len(args) == 1 and isinstance(args[0], (list, tuple)):
-        pairs = args[0]
-    elif len(args) > 0 and isinstance(args[0], (list, tuple)):
-        pairs = args
-    elif len(args) % 2 == 0:
-        pairs = [(args[i], args[i+1]) for i in range(0, len(args), 2)]
-    else:
-        pairs = args
-
-    res = []
-    for item in pairs:
-        if isinstance(item, (list, tuple)) and len(item) == 2:
-            name, amount = item
-        else:
-            continue
-        globals()[name] += amount
-        if name == 'Karma' and amount > 0:
-            globals()['Lifetime_Karma'] += amount
-        op = "+=" if amount >= 0 else "-="
-        res.append(f"{name} {op} {abs(amount)}")
-    return ", ".join(res)
-
-Contacts = {}
-
-def detect_region(name, type_name, region_param="AUTO"):
-    if region_param and region_param != "AUTO":
-        return region_param
-    full = (type_name + " " + name).upper()
-    if "HK" in full or "HONG KONG" in full or "HKB" in full or name in ["Mr. Fa", "Liao Fa Ren", "Fa Ren"]:
-        return "HK"
-    if "SEA " in full or "SEATTLE" in full or name in ["Brynne Taggart", "Whiskey", "Big Louie", "Duan Yuhai", "Xiong Giuyin", "Swango", "Toil", "Trubble", "Eddie Wei", "Julian Müntefering", "Ni Ni Xiaolu", "Bookie", "Trudy", "Saint James", "Jeanie Trudel", "Kingston", "Kirt Liger"]:
-        return "SEA"
-    if "NOLA " in full or "New Orleans" in full or name in ["Indomitable Will", "Roanoke", "Piotr Krolik", "Le Tigre", "Dominique Augustin", "Daniel Fortune", "Renée Martin", "Fernand Anato", "Monsieur Johnson", "Aloysius Springinsguth", "Jolene Price", "Cedar", "Detective Remy LeBlanc", "Claudette Laurier", "Coffin Girls", "League of Laveau", "Zobop"]:
-        return "NOLA"
-    if "AMS " in full or "AMSTERDAM" in full or "DUTCH" in full or "PENOSE" in full or name in ["The Frisian", "Kiara Shaw", "Simon Andrews", "Squint", "Sigrún", "SpiiniCop", "Kaatje"]:
-        return "AMS"
-    if "KY " in full or "KENTUCKY" in full or name in ["Ree 'Dolly' Hacker", "Granny", "Dr. Laureline Dodd", "Thaddeus", "Reilly Dragman"]:
-        return "KY"
-    if "DW " in full or "DESERT WARS" in full or name in ["Dixie L'Amin", "Ayanda 'Shieldbearer' Mahlangu", "Ebon Abirashur", "Col. Deborah Kentwell", "Polyphemous 'Paul' Pellagios", "Col. Treylor"]:
-        return "DW"
-    return "GEN"
-
-def contact(name, connection=1, fp=0, loyalty=None, favors=0, type_name="Contact", region="AUTO", notes=""):
-    reg = detect_region(name, type_name, region)
-    
-    clean_type = type_name
-    for prefix in ["SEA ", "NOLA ", "AMS ", "KY ", "DW "]:
-        if clean_type.startswith(prefix):
-            clean_type = clean_type[len(prefix):]
-            break
-
-    if name not in Contacts:
-        start_loyalty = loyalty if loyalty is not None else 0
-        Contacts[name] = {
-            "name": name,
-            "connection": connection,
-            "loyalty": start_loyalty,
-            "favors": favors,
-            "fp_acc": 0,
-            "type": clean_type,
-            "raw_type": type_name,
-            "region": reg,
-            "notes": notes
-        }
-    else:
-        if connection > Contacts[name]["connection"]:
-            Contacts[name]["connection"] = connection
-        if loyalty is not None and loyalty > Contacts[name]["loyalty"]:
-            Contacts[name]["loyalty"] = loyalty
-        if clean_type and clean_type != "Contact":
-            Contacts[name]["type"] = clean_type
-        if reg != "GEN":
-            Contacts[name]["region"] = reg
-        if notes:
-            if Contacts[name]["notes"]:
-                Contacts[name]["notes"] += f" | {notes}"
-            else:
-                Contacts[name]["notes"] = notes
-
-    c = Contacts[name]
-    if fp > 0:
-        c["fp_acc"] += fp
-        if c["loyalty"] == 0 and c["fp_acc"] >= 1:
-            c["loyalty"] = 1
-            c["fp_acc"] -= 1
-        while c["fp_acc"] >= (c["loyalty"] + 1):
-            c["fp_acc"] -= (c["loyalty"] + 1)
-            c["loyalty"] += 1
-
-    if favors > 0 and c["favors"] < favors:
-        c["favors"] = favors
-    elif c["fp_acc"] > 0 and c["favors"] == 0:
-        c["favors"] = c["fp_acc"]
-
-    fp_str = f" (+{fp} FP)" if fp > 0 else ""
-    reg_badge = f"[{c['region']}] " if c['region'] != "GEN" else ""
-    return f"**{name}** ({reg_badge}{c['type']}, C:{c['connection']} L:{c['loyalty']} F:{c['favors']}{fp_str})"
+Missions = state["Missions"]
+Reputation = state["Reputation"]
+Sprites = state["Sprites"]
+Contacts = state["Contacts"]
+Submersion_Grade = state["Submersion_Grade"]
 ```
-
-```
-
 
 ### Build-A-Runner
 
 * **GM**: WarDoctor /# 1077
 * **Rewards:** `{python} inc_many(('Karma', 1), ('Nuyen', 1000))`
+* **Chargen Submersions:** Starting Submersion Grade 2 (Sprite Symbiosis & Hybrid Sprites via Technoshaman Stream)
 * **Chargen Contacts:**
   * `{python} contact("Brynne Taggart", connection=4, loyalty=2, type_name="SEA Fixer", notes="Character Creation")`
   * `{python} contact("Whiskey", connection=2, loyalty=4, type_name="SEA Street Doc", notes="Character Creation")`
@@ -209,7 +60,7 @@ def contact(name, connection=1, fp=0, loyalty=None, favors=0, type_name="Contact
   * *Compiling and Registering Taz (Rank 1 Crack Ally Sprite):* `{python} inc('Karma', -6)`  
     * *Writing Code:* Software + RES (Natural Hacker) + RES Focus = 7 + 6 + 4 = 17 (4 Bought Hits)  
     * Compiling and Registering per Downtime Template
-  * `{python} add_sprite('Taz', 7, 'Crack Ally', 'Ally Sprite', is_ally=True)`
+  * `{python} add_sprite('Taz', 7, 'Assassin', 'Ally Sprite', is_ally=True)`
 
 ---
 
@@ -637,6 +488,7 @@ def contact(name, connection=1, fp=0, loyalty=None, favors=0, type_name="Contact
   * *Rent & Working for the People (Hooder):* `{python} inc_many(('Karma', 1), ('Nuyen', -4000))`
 * **Other:**
   * Lost JP Chakraborty as a contact
+  * *Register Sprites:* `{python} add_sprite('Sprite-M24', 7, 'Modular')`
 
 ---
 
@@ -657,6 +509,8 @@ def contact(name, connection=1, fp=0, loyalty=None, favors=0, type_name="Contact
 * **Downtime Actions (1 Major & 1 Minor):**
   * *Earn Favor (Coffin Girls):* `{python} contact("Coffin Girls", fp=1)`
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
+* **Other**
+  * *Register Sprites:* `{python} add_sprite('Sprite-M25', 7, 'Modular')`
 
 ---
 
@@ -681,6 +535,7 @@ def contact(name, connection=1, fp=0, loyalty=None, favors=0, type_name="Contact
   * Obtained a pair of Amalgam Tech Cestas
     * I don't have stats for these yet.
     * Pending publication, I will treat them as 3P weapons that override magical immunity to normal weapons
+  * *Register Sprites:* `{python} add_sprite('Sprite-M26', 7, 'Modular')`
 
 ---
 
@@ -697,7 +552,7 @@ def contact(name, connection=1, fp=0, loyalty=None, favors=0, type_name="Contact
   * `{python} contact("Le Tigre", connection=5, fp=1, type_name="NOLA Epoch Model", notes="CMP 2083-15 | By Land, Sea, and Hair")`
 * **Downtime Actions (2 Minor):**
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
-  * *Register Sprites:* `{python} add_sprite('Sprite-M27', 8, 'Modular')`
+  * *Register Sprites:* `{python} add_sprite('Sprite-M27', 7, 'Modular')`
 * **Other:**
   * Increased Resonance to 8: `{python} inc_many(('Karma', -40), ('Resonance', 1))`
 

@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -27,7 +29,9 @@ jobs:
           enable-cache: true
 
       - name: Install dependencies
-        run: uv sync
+        run: |
+          uv sync
+          echo "${{ github.workspace }}/.venv/bin" >> $GITHUB_PATH
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2

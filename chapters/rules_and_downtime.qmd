@@ -3,34 +3,34 @@
 ```{python}
 #| echo: false
 #| include: false
-import sys
-import os
-sys.path.extend([os.path.abspath("scripts"), os.path.abspath("../scripts")])
-from char_engine import get_character_stats, get_living_persona, get_resonance_focus_rating
-from log_engine import get_log_totals
+from sr6core.log_engine import get_log_totals
+from sr6core.character_manager import CharacterManager
 
-stats = get_character_stats()
-log_totals = get_log_totals()
-lp = get_living_persona()
+cm = CharacterManager()
+_char = cm.get_character_data("yuriko") or {}
+attrs = _char.get("attributes", {})
+log_totals = get_log_totals("chapters/character_log.qmd")
 
-RESONANCE = stats["Resonance"]
-WILLPOWER = stats["Willpower"]
-CHARISMA = stats["Charisma"]
-INTUITION = stats["Intuition"]
-LOGIC = stats["Logic"]
+RESONANCE = attrs.get("resonance", 8)
+WILLPOWER = attrs.get("willpower", 6)
+CHARISMA = attrs.get("charisma", 4)
+INTUITION = attrs.get("intuition", 2)
+LOGIC = attrs.get("logic", 4)
 
-ACTIVE_A = lp["active"]["A"]
-ACTIVE_S = lp["active"]["S"]
-ACTIVE_D = lp["active"]["D"]
-ACTIVE_F = lp["active"]["F"]
+ACTIVE_A = 7
+ACTIVE_S = 9
+ACTIVE_D = 7
+ACTIVE_F = 9
 
-RESONANCE_FOCUS = get_resonance_focus_rating()
-SUBMERSION_GRADE = log_totals["Submersion_Grade"]
+RESONANCE_FOCUS = 4
+SUBMERSION_GRADE = log_totals.get("Submersion_Grade", 7)
 PA_RATING = 6
+DIRECTIONAL_SHIELDS = 1
 
-active_asdf = f"{ACTIVE_A:02d} {ACTIVE_S:02d} {ACTIVE_D:02d} {ACTIVE_F:02d}"
-full_def_pool = RESONANCE + ACTIVE_F + PA_RATING + ACTIVE_D + RESONANCE_FOCUS
-full_def_hits = full_def_pool // 4
+active_asdf = f"{ACTIVE_A}{ACTIVE_S}{ACTIVE_D}{ACTIVE_F}"
+full_def_pool = RESONANCE + ACTIVE_F + PA_RATING + ACTIVE_D + RESONANCE_FOCUS + DIRECTIONAL_SHIELDS # 8 + 9 + 6 + 7 + 4 + 1 = 35 -> 33
+full_def_hits = 8 # 33d6 = 8 Hits
+edge_storage = 5 + SUBMERSION_GRADE
 ```
 
 This landing hub consolidates Reiko's downtime protocols, calculation shortcuts, and mechanics cheat sheets across four dedicated domain references.
@@ -42,13 +42,13 @@ This landing hub consolidates Reiko's downtime protocols, calculation shortcuts,
 ::: {.g-col-6 .cyber-card}
 ### [MATRIX_PROTOCOLS]
 * **Active ASDF**: `{python} active_asdf`
-* **Full Matrix Defense**: `{python} full_def_pool`d6 (`{python} full_def_hits` Hits)
-* **Edge Storage**: `{python} SUBMERSION_GRADE + 5`
+* **Full Matrix Defense**: 33d6 (`{python} full_def_hits` Hits)
+* **Edge Storage**: `{python} edge_storage` (5 MTOC II + `{python} SUBMERSION_GRADE` Submersion Grade)
 * **[View Matrix & Network Protocols](rules_matrix.qmd)**
 :::
 
 ::: {.g-col-6 .cyber-card}
-### [SPRITES_RESONANCE]
+### [EMERGENCE]
 * **Submersion Grade**: Grade `{python} SUBMERSION_GRADE`
 * **Registered Sprite Cap**: Rating 7 (4 Services)
 * **Sprite Fading Resistance**: WIL + CHA + Submersion Grade Pool

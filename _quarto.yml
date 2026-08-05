@@ -4,8 +4,7 @@ project:
   resources:
     - chapters/audio/
   pre-render:
-    - uv run python scripts/main.py "input/Yuriko Star.xml" --output "output/character_sheet.txt"
-    - uv run python scripts/generate_narration.py
+    - uv run sr6 export yuriko --format=vtt
 
 book:
   title: "REIKO // Yuriko Star Portfolio"
@@ -18,6 +17,7 @@ book:
         - chapters/identity_core.qmd
         - chapters/character_build_point_buy.qmd
         - chapters/character_sheet.qmd
+        - chapters/dossier_appendix.qmd
         - chapters/character_totals.qmd
         - chapters/character_log.qmd
         - chapters/character_purchases.qmd
@@ -70,3 +70,7 @@ format:
     toc: true
     number-sections: false
     code-copy: true
+
+execute:
+  engine: jupyter
+  python: .venv/Scripts/python.exe

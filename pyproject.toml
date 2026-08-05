@@ -1,7 +1,7 @@
 [project]
 name = "sr6sheet"
 version = "0.1.0"
-description = "Add your description here"
+description = "Shadowrun 6e Character Portfolio & Story Anthology — Yuriko Star"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -14,5 +14,9 @@ dependencies = [
     "lameenc",
     "numpy",
     "onnxruntime",
+    "python-fasthtml>=0.14.11",
+    "sr6-core",
 ]
 
+[tool.uv.sources]
+sr6-core = { path = "../sr6-core", editable = true }

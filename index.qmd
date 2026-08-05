@@ -5,18 +5,16 @@ Welcome to the consolidated resonance portfolio for **r31-K0 ("Reiko")**, operat
 ```{python}
 #| echo: false
 #| include: false
-import sys
-import os
-sys.path.extend([os.path.abspath("scripts"), os.path.abspath("../scripts")])
-from log_engine import get_log_totals
+from sr6core.log_engine import get_log_totals
 
-log_totals = get_log_totals()
+log_totals = get_log_totals(["chapters/character_log.qmd", "chapters/character_purchases.qmd"])
 ```
 
 ::: {.grid}
 
 ::: {.g-col-6 .cyber-card}
 ### [CHARACTER_DOSSIER]
+
 * **Designation:** r31k0 Takahashi
 * **VTT Alias:** Yuriko Star v9
 * **Metatype:** AI-Pilot AI
@@ -26,6 +24,7 @@ log_totals = get_log_totals()
 
 ::: {.g-col-6 .cyber-card}
 ### [MATRIX_PROGRESSION]
+
 * **Lifetime Karma:** `{python} log_totals['Lifetime_Karma']`
 * **Current Karma:** `{python} log_totals['Karma']`
 * **Liquid Capital:** ¥`{python} f"{log_totals['Nuyen']:,}"`
@@ -39,18 +38,37 @@ log_totals = get_log_totals()
 
 ::: {.cyber-card}
 ### [CORE_SUMMARY & CREATIVE VISION]
-Reiko began as a dangerous secret: a Renraku high-spec pilot prototype engineered to harvest the Holy Wild (the Deep Matrix). Rescued by a surge of the living Resonance, she escaped deletion and ran the shadows as **Yuriko Star** to build her sovereign **Holy Wild Sanctuary Host**—a compact high-rise studio apartment host that opens via a quartz sliding glass door directly into **The Holy Wild** glade in the Deep Foundation, liberating sparks from `r3sP@wn` and NOLA subnets into permanent freedom.
+Reiko began as a dangerous secret: a Renraku high-spec pilot prototype engineered to harvest the Holy Wild (the Deep Matrix). Rescued by a surge of the living Resonance, she escaped deletion and ran the shadows as **Yuriko Star** to build her sovereign **Holy Wild Sanctuary Host**—a compact high-rise studio apartment host that opens via a quartz sliding glass door directly into **The Holy Wild** glade in the Deep Foundation, liberating sparks from the Seattle and NOLA subnets into permanent freedom.
 
 This anthology takes Shadowrun **beyond the numbers**—exploring the rich, emotionally accessible *"spaces between"* game mechanics:
 
 * **The Spiritual Side of Technology:** Experiencing cyberspace as a living, animistic ecosystem rather than cold silicon diagnostics.
 * **Reframing the Human Condition:** Examining universal themes of identity, belonging, debt, guardianship, grief, and connection through the eyes of an emergent AI entity.
+:::
 
-* **Character Goals:** 
+::: {.cyber-card}
+### Brief Background
 
-  1. *Sanctuary & Sovereign Emancipation:* Protect and nurture liberated sparks in the Holy Wild glade while serving as a sovereign bridge between the physical sprawl and the Deep Foundation.
-  2. *Spiritual Mastery:* Interlock her gold tactical network and indigo soul resonance into a dual-strand braid earned through time, scars, and quiet wisdom.
-  3. *Debt & Connection:* Honor her SINner obligations to her shadowrunning team and allies while keeping her disarmed contract-collar on her host wall as a symbol of remembrance for those who paid for her life.
+#### Character Goals
+
+1. *Sanctuary & Sovereign Emancipation:* Protect and nurture liberated sparks in the Holy Wild glade while serving as a sovereign bridge between the physical sprawl and the Deep Foundation.
+2. *Spiritual Mastery:* Interlock her gold tactical network and indigo soul resonance into a dual-strand braid earned through time, scars, and quiet wisdom.
+3. *Debt & Connection:* Honor her SINner obligations to her shadowrunning team and allies while keeping her disarmed contract-collar on her host wall as a symbol of remembrance for those who paid for her life.
+
+#### Secrets
+
+1. Reiko conceals that her true identity and that her core code is a stolen Renraku prototype of the Nexus Protocol. If this secret is revealed, Renraku and GOD would actively hunt her.
+2. Reiko conceals that she is one of few digital intelligences that can access Garmonbozia.
+
+#### Connections
+
+* Sprites: Taz (ally sprite and longest running companion)
+* SEA: Brynne Taggart (former Fixer and loan shark), Whiskey (taught Reiko how to modify the cybernetic systems on her drones)
+* NOLA: Indomitable Will (former(?) romantic partner), Roanoke (trusted friend and confidante), the Comtesse (mentor)
+* AMS: Sigrún (built a deep friendship over several SNAFUs)
+* PCs
+  * Poe: Shared trauma over the loss of Brynne together
+  * Rei: Gun Adept 'onii-sama'
 :::
 
 ## [ SYSTEM_NAVIGATION ]
