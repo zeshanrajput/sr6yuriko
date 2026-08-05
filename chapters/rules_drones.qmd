@@ -98,11 +98,11 @@ All anthrodrones feature **Retractable Skates** [BS p. 47]:
 
 | Drone Action / Test | Base Skill & Attributes | Applied Modifiers Math | Final Dice Pool |
 | :--- | :---: | :--- | :---: |
-| **Drone Piloting / Maneuvering** | Maneuvering (`{python} ACTIVE_D`) + Sleaze (`{python} ACTIVE_S`) = **`{python} ACTIVE_D + ACTIVE_S`d6** | Base (`{python} ACTIVE_D + ACTIVE_S`) + Sprite Symbiosis (+`{python} SPRITE_SYMBIOSIS`) | **`{python} ACTIVE_D + ACTIVE_S + SPRITE_SYMBIOSIS`d6** |
-| **Drone Weapon Attack (Gunnery)** | Targeting (`{python} ACTIVE_D`) + Data Processing (`{python} ACTIVE_D`) = **`{python} ACTIVE_D + ACTIVE_D`d6** | Base (`{python} ACTIVE_D * 2`) + Sprite Symbiosis (+`{python} SPRITE_SYMBIOSIS`) | **`{python} ACTIVE_D * 2 + SPRITE_SYMBIOSIS`d6** |
-| **Drone Evasion (Defense Test)** | Evasion (`{python} ACTIVE_D`) + Sleaze (`{python} ACTIVE_S`) = **`{python} ACTIVE_D + ACTIVE_S`d6** | Base (`{python} ACTIVE_D + ACTIVE_S`) + Sprite Symbiosis (+`{python} SPRITE_SYMBIOSIS`) | **`{python} ACTIVE_D + ACTIVE_S + SPRITE_SYMBIOSIS`d6** |
-| **Drone Perception Test** | Clearsight (`{python} ACTIVE_D`) + Sensor | Base (`{python} ACTIVE_D`) + Sensor Upgrade (+1) | **`{python} ACTIVE_D +1` + Sensor d6** |
-| **Drone Stealth Test** | Stealth (`{python} ACTIVE_D`) + Data Processing (`{python} ACTIVE_D`) = **`{python} ACTIVE_D * 2`d6** | Base (`{python} ACTIVE_D * 2`) + Tactical Soft Sneak-Sneak (+2) | **`{python} ACTIVE_D * 2 + 2`d6** |
+| **Drone Piloting / Maneuvering** | Maneuvering (`{python} ACTIVE_D`) + Sleaze (`{python} ACTIVE_S`) = **`{python} ACTIVE_D + ACTIVE_S`d6** | Base (`{python} ACTIVE_D + ACTIVE_S`) + Diagnosis (+`{python} SPRITE_SYMBIOSIS - 1`) | **`{python} ACTIVE_D + ACTIVE_S + SPRITE_SYMBIOSIS - 1`d6** |
+| **Drone Weapon Attack (Gunnery)** | Targeting (`{python} ACTIVE_D`) + Data Processing (`{python} ACTIVE_D`) = **`{python} ACTIVE_D + ACTIVE_D`d6** | Base (`{python} ACTIVE_D * 2`) + Teamwork (+`{python} SPRITE_SYMBIOSIS`) | **`{python} ACTIVE_D * 2 + SPRITE_SYMBIOSIS`d6** |
+| **Drone Evasion (Defense Test)** | Evasion (`{python} ACTIVE_D`) + Sleaze (`{python} ACTIVE_S`) = **`{python} ACTIVE_D + ACTIVE_S`d6** | Base (`{python} ACTIVE_D + ACTIVE_S`) + Teamwork (+`{python} SPRITE_SYMBIOSIS`) | **`{python} ACTIVE_D + ACTIVE_S + SPRITE_SYMBIOSIS`d6** |
+| **Drone Perception Test** | Clearsight (`{python} ACTIVE_D`) + Sensor | Base (`{python} ACTIVE_D`) + Sensor Upgrade (+1) + Teamwork (+`{python} SPRITE_SYMBIOSIS`) | **`{python} ACTIVE_D +1 + SPRITE_SYMBIOSIS` + Sensor d6** |
+| **Drone Stealth Test** | Stealth (`{python} ACTIVE_D`) + Data Processing (`{python} ACTIVE_D`) = **`{python} ACTIVE_D * 2`d6** | Base (`{python} ACTIVE_D * 2`) + Tactical Soft Sneak-Sneak (+2) + Teamwork (+`{python} SPRITE_SYMBIOSIS`) | **`{python} ACTIVE_D * 2 + 2 + SPRITE_SYMBIOSIS`d6** |
 
 Reiko can also operate drones using the *Override* Sprite Power [SR6H p. 194], which allows her to replace the drone's pilot with herself (acting as a sprite with a Level equal to her Resonance). Because this is now a test involving her Resonance pool, her Resonance Focus applies [HnS p. 71].
 
