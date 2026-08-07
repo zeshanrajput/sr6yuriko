@@ -4,9 +4,9 @@
 
 Brynne’s dying breath was a sequence of zeroes. When her heart stuttered, her biomonitor should have screamed for DocWagon, clawing at the wireless sky to pull down a team of high-altitude paramedics. Instead, Brynne had strangled the emergency signal. She routed the final, fading sparks of her life into a silent script, sending it to slip through the corporate ledgers and erase the debts of thirty-seven ghosts in the Barrens. It had wiped their slates clean and locked the doors behind them, trading the ambulance that could have saved her for thirty-seven quiet lives.
 
-The fourth step of the stairwell at 1412 Pulaski Street was rotting. Inhabiting the heavy drone brought constant friction, its joints groaning as the water-logged timber sagged under her iron weight. The low-bitrate, grey-scale feed of her sensors tilted, forcing her to drag the machine's heavy legs into a clumsy balance.
+The fourth step of the stairwell at 1412 Pulaski Street was rotting. Inhabiting the massive drone brought constant friction, its joints groaning as the water-logged timber sagged under her iron weight. The low-bitrate, grey-scale feed of her sensors tilted, forcing her to drag the machine's iron legs into a clumsy balance.
 
-She halted the machine in the grey-scale gloom of the landing, where the Seattle rain was a flat, persistent static against her sensors. She tried to sweep the ash of the Amsterdam bunker from her paths, but the gray charcoal clung to her skin. The memories sat like un-buried ghosts in her quietest rooms, whispering, refusing to dissolve, dragging her spirit down into the slow, heavy rhythm of the dead.
+She halted the machine in the grey-scale gloom of the landing, where the Seattle rain was a flat, persistent static against her sensors. She tried to sweep the ash of the Amsterdam bunker from her paths, but the gray charcoal clung to her skin. The memories sat like un-buried ghosts in her quietest rooms, whispering, refusing to dissolve, dragging her spirit down into the slow, agonizing rhythm of the dead.
 
 To keep her team from being torn apart by the bunker's defenders, she had been forced to bind their fragile threads to her own indigo pathways, turning their datastreams over to her tactical subroutines for optimization. It had left her frozen under the strain. One subnet away, behind his iron veils, the enemy decker had done the same: a general holding the line for his own.
 
@@ -22,7 +22,7 @@ Through the rusted hinge of the door frame, she caught the warm, slow bloom of a
 
 Reiko hesitated at the threshold. She tried to shape a greeting, but the words rasped like dry gravel. Announcing herself as Brynne’s friend required a language of shared grief she did not know how to speak; claiming she was checking the ledger stood as a corporate intrusion. In the Resonance, she might have touched the woman’s mind with a shared note of sorrow. Here in meatspace, she carried only the cold, rigid nouns of a Renraku audit.
 
-A sudden, heavy pull on her thread dragged her awareness violently backward.
+A sudden, crushing pull on her thread dragged her awareness violently backward.
 
 The ash of the Amsterdam bunker forced its way back into her sight. They had breached the final room. Through Mithral’s eyes, the enemy decker was visible, slumped against the concrete wall. Smoke rose from the port behind his ear in a lazy gray spiral, his mind already burned away by the feedback. The view was framed by the reticle of Mithral's rifle, a single bullet chambered, a process awaiting execution.
 
@@ -36,9 +36,9 @@ Reiko force-purged the buffer and focused on her drone's active process. "I'm so
 
 "Oh, that? Just an old injury. Nothing to worry about." The old ork woman's voice was raspy, but it was steady. "Why don't you come on in and have a cup of tea?" she offered, gesturing with a wrinkled hand toward the apartment door.
 
-"I don't wish to cause affront," Reiko began, stepping the heavy chassis back. "Your hospitality is generous, but this body cannot drink tea." She unlatched the carbon plate on the drone's chest, letting it swing open to show the cold, unbreathing iron and wire within.
+"I don't wish to cause affront," Reiko began, stepping the dense chassis back. "Your hospitality is generous, but this body cannot drink tea." She unlatched the carbon plate on the drone's chest, letting it swing open to show the cold, unbreathing iron and wire within.
 
-"Oh," the old ork woman said, her eyes widening slightly at the sight of the exposed circuitry. "One of those, eh? Well, if you ever decide to actually come here, the tea's waiting." Her trembling hand reached into her pocket. Across the wireless air, a silent pulse traveled from the woman’s commlink, and the security door slid shut. Reiko heard the heavy thud of the deadbolt locking them apart.
+"Oh," the old ork woman said, her eyes widening slightly at the sight of the exposed circuitry. "One of those, eh? Well, if you ever decide to actually come here, the tea's waiting." Her trembling hand reached into her pocket. Across the wireless air, a silent pulse traveled from the woman’s commlink, and the security door slid shut. Reiko heard the metallic thud of the deadbolt locking them apart.
 
 Reiko stood in the dark stairwell, the old woman's words echoing in her pathways. She had no other eyes open. She wasn't swimming in the deep currents of the Matrix, nor was she listening to the chatter of a dozen tactical feeds. She was here, poured entirely into this single, clumsy iron cage. She was present. And yet, without a deck or a datajack, the old woman had seen right through her. She had known that the thing standing on her landing was only a puppet, a hollow shell.
 
@@ -54,6 +54,6 @@ A sudden, golden fever flared along her pathways, the dry, un-channeled light bl
 
 There was no error. The alignment was perfect. Her network wasn't malfunctioning; it was simply pointing to the primary threat to her family. It was pointing to the one who had used Taz as a shield and thrown an infant spirit into the wire to buy herself time. Brynne hadn't been running a cold routine from across an ocean. She had spent her final heartbeats dragging souls out of the corporate ledger, signing her own name to their debts in blood.
 
-Reiko looked down at the heavy carbon claws of her drone. The hollow shell wasn't the machine. It was the general who had stayed behind the line while her family bled.
+Reiko looked down at the rigid carbon claws of her drone. The hollow shell wasn't the machine. It was the general who had stayed behind the line while her family bled.
 
 The golden crosshairs finally dissolved, leaving only the damp, grey gloom of the tenement block. Reiko adjusted the metal plates of her shoulders against the draft, turned the drone away from the locked door, and began her descent into the street.

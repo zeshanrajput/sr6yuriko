@@ -58,7 +58,7 @@ Reiko looked up, her brow furrowed in quiet conflict. "How could you possibly po
 
 The Comtesse leaned back, a subtle smile playing upon her lips. "My dear, you are not the first little bird to wander into my garden—though you are by far the most evolved specimen I have encountered."
 
-Reiko lifted the vial and unstoppered the glass. The air split open—a sharp strike of ozone and wild honeysuckle cutting straight through the dull, filtered grey of her hull’s air-samplers.
+Reiko lifted the vial and unstoppered the glass. The air split open—a sharp strike of static-charged honeysuckle cutting straight through the dull, filtered grey of her hull’s air-samplers.
 
 "This body has no stomach," Reiko murmured, her vocal diaphragm clicking in silent confusion. "It has no throat. This should not work."
 

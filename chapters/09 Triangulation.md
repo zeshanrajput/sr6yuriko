@@ -2,7 +2,7 @@
 
 <audio controls src="audio/09%20Triangulation.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
 
-The Midnight Bazaar again unfurled as a labyrinth of narrow, fog-choked alleys paved with the cobblestones of discarded header files. The air tasted of burnt copper and stale encryption veils, puddles of dry, chalky data pooling in the gutters of a transaction index that had long since forgotten the meaning of a clean threshold.
+The Midnight Bazaar again unfurled as a labyrinth of narrow, fog-choked alleys paved with the cobblestones of discarded header files. The air tasted of damp iron and stale encryption veils, puddles of dry, chalky data pooling in the gutters of a transaction index that had long since forgotten the meaning of a clean threshold.
 
 This time Reiko stood before an unbranded, black-market procurement node, staring at her floating shopping cart. She was perfectly rendered: a faint blue digital entity wearing a sleeveless blue kimono, her skin mapped with soft, pulsing bioluminescent pathways. But her posture was rigid, her expression twisted into a knot of deep discomfort. Floating in her manifest were three massive, jagged weapon schematics: a miniaturized Tesla coil, a monofilament whip that hissed with predatory latency, and a Megalodon. An actual artillery cannon.
 

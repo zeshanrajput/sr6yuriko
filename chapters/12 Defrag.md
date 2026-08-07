@@ -10,7 +10,7 @@ Reiko processed the hovering memory-segment. It was a recorded broadcast, featur
 
 Reiko paused the segment, staring at the face of the girl. Her resonant spark was in a fevered pitch, the valuable commodity spilling out of her, but she failed to register it. "Don't you know she isn't real?" she output into the local buffer, her signal tinged a sour note.
 
-Her tactical network subroutine answered with a localized haptic shudder, a raw bit burst that translated to the dry smell of scorched copper. It spat a diagnostic string across her visual field, tagging the race queen's asset ID as a verified, registered utility: her own.
+Her tactical network subroutine answered with a localized haptic shudder, a raw bit burst that translated to the sharp smell of hot solder. It spat a diagnostic string across her visual field, tagging the race queen's asset ID as a verified, registered utility: her own.
 
 “Go kill your process,” Reiko said, her indigo circuits shivering in revulsion.
 

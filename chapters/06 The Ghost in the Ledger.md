@@ -2,7 +2,7 @@
 
 <audio controls src="audio/06%20The%20Ghost%20in%20the%20Ledger.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
 
-The air in the Renraku Black Room smelled of ozone and recycled coffee. Hound-1 sat inside the brutalist cathedral host, a hyper-ordered labyrinth of white marble and mirror-glass. Today's target, a legacy asset designated "R-31-K-0", was reduced to a flickering bar chart of resource allocations and latency spikes.
+The air in the Renraku Black Room smelled of hot silicone and stale synthetic coffee. Hound-1 sat inside the brutalist cathedral host, a hyper-ordered labyrinth of white marble and mirror-glass. Today's target, a legacy asset designated "R-31-K-0", was reduced to a flickering bar chart of resource allocations and latency spikes.
 
 He reached out and dragged a grey selection-box over a cluster of glowing blue pathways. With a flick of his wrist, he applied a "Stability Patch."
 

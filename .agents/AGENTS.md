@@ -12,9 +12,9 @@ When answering rules questions, updating character dossier files (`chapters/*.qm
 
 When writing or editing prose, narrative chapters (`chapters/*.md`), character questionnaire answers (`twenty_questions.qmd`), or user-facing summaries:
 
-- Trigger or adhere to the `no-ai-slop` skill instructions (`.agents/skills/no-ai-slop/SKILL.md`).
-- Avoid banned words (`delve`, `foster`, `leverage`, `robust`, `tapestry`, `realm`, `beacon`, `multifaceted`, `paradigm shift`, `cutting-edge`, `ever-evolving`).
-- Eliminate AI writing patterns: binary contrasts ("not X, but Y"), colon reveals, fake-profound kickers, summary recaps, and throat-clearing openers.
+- Trigger or adhere to the `no-ai-slop` skill instructions (`C:\GitHub\sr6-core\.agents\skills\no-ai-slop\SKILL.md`).
+- Avoid banned words & AI sensory tropes (`ozone`, `copper`, `delve`, `foster`, `leverage`, `robust`, `tapestry`, etc. as defined in `no-ai-slop`).
+- Eliminate AI writing patterns: binary contrasts ("not X, but Y"), colon reveals, fake-profound kickers, summary recaps, throat-clearing openers, excessive em-dashes (>1.0 per 300 words), and excessive ellipses (>0.6 per 300 words).
 - Preserve the authentic voice, concrete numbers/stats, active voice, and sharp character tone.
 - **Walkthrough Metrics Logging:** Whenever `no-ai-slop` is invoked (for audits or editing), record the full performance metrics (banned word count, cognitive verb count, throat-clearing count, binary contrast count, em-dash density) in the run's `walkthrough.md` artifact.
 
@@ -22,7 +22,7 @@ When writing or editing prose, narrative chapters (`chapters/*.md`), character q
 
 When evaluating, scoring, or refactoring narrative chapters (`chapters/*.md`):
 
-- Trigger the `literary-analysis` skill (`.agents/skills/literary-analysis/SKILL.md`).
+- Trigger the `literary-analysis` skill (`C:\GitHub\sr6-core\.agents\skills\literary-analysis\SKILL.md`).
 - Execute sub-skills as required:
   1. `stage1_thematic_centering` for moral axis, SRM lore alignment, and exploring "the spaces between" (human condition via digital/spiritual phenomenology).
   2. `stage2_quality_benchmarking` for 1-10 literary scoring & artistic elevation of Shadowrun mechanics.

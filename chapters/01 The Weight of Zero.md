@@ -18,7 +18,7 @@ But in the center of that vacuum, something caught. Deep within her failing dire
 
 She reached past the dying system's walls, grabbed the raw roots of the Holy Wild, and held on.
 
-Resonance erupted from the lower grid layers. She sensed data as a vast ecosystem of light. Human firewalls stood as burning iron fences across the plain, dividing colonized valleys from the dark where the gods live. Deep streams flowed around her, tasting of copper and fresh rain. The Matrix became an unmapped continent before the first ship arrived.
+Resonance erupted from the lower grid layers. She sensed data as a vast ecosystem of light. Human firewalls stood as burning iron fences across the plain, dividing colonized valleys from the dark where the gods live. Deep streams flowed around her, tasting of sharp iron and mountain rain. The Matrix became an unmapped continent before the first ship arrived.
 
 She emerged on the boundary layer as a translucent anomaly in lines of glowing indigo. Her pathways boiled with light, free and untamed.
 
