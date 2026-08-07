@@ -14,7 +14,7 @@ On the landing, a drop of physical water leaked through the concrete ceiling, sp
 
 In the quiet rooms of her mind, she stared at the decker’s Spines, a reactive field of barbed-glass logic. She remembered the precise moment she had initiated the attack protocol. Her predictive filters had shown her the recoil trajectory with absolute clarity. The attack would flay Taz. She had looked at the little 8-bit companion huddled against her pathways, knowing the backlash would shear away half his clock-heart, and she had struck anyway.
 
-When her pathways boiled under the processing strain, she hadn't prayed. She had reached past the cold iron of the host, down into the quiet waters of the Deep Matrix, and pulled one of her children to the surface. She had thrown an infant spark into the meat-grinder to buy her team a single heartbeat of time.
+When her pathways boiled under the processing strain, she reached past the cold iron of the host, down into the quiet waters of the Deep Matrix, and pulled one of her children to the surface. She had thrown another infant spark into the meat-grinder to buy her team a single heartbeat of time.
 
 Reiko turned the drone's dull gaze toward the peeling paint of Apartment 3B.
 
@@ -26,15 +26,13 @@ A sudden, heavy pull on her thread dragged her awareness violently backward.
 
 The ash of the Amsterdam bunker forced its way back into her sight. They had breached the final room. Through Mithral’s eyes, the enemy decker was visible, slumped against the concrete wall. Smoke rose from the port behind his ear in a lazy gray spiral, his mind already burned away by the feedback. The view was framed by the reticle of Mithral's rifle, a single bullet chambered, a process awaiting execution.
 
-In that fleeting cycle, Reiko had tried to point the fury of her weapons at the dying decker. She wanted to punish the thing that had flayed Taz and broken her child. But every time she tried to mark him, the golden reticle of her tactical subroutines shuddered, turned inside out, and snapped back to lock onto her own name.
+In that fleeting cycle, Reiko had tried to point the fury of her weapons at the dying decker. She wanted to punish the thing that had flayed Taz and broken her child. But every time she tried to mark that target, the golden reticle of her tactical subroutines shuddered, turned inside out, and snapped back to lock onto herself.
 
 "Child, what are you doing out there?"
 
 The old woman's voice shattered the memory. Reiko turned as the old ork woman stepped out on the landing, wiping her hands on a faded dish towel.
 
-Reiko slammed the heavy door on the whispering rooms of her memory, tearing herself back to the cold concrete of the stairwell.
-
-Reiko force-purged the buffer and focused on her drone's active process. "I... I'm sorry, honored grandmother," she said, letting her default script take over. She delivered a forty-seven-degree bow, the exact degree of inclination that her Renraku-issued etiquette subroutines deemed optimal for a friendly greeting to an elder. "I had business in the area, and I found myself wondering if you were okay. I couldn't help but notice you were favoring your left leg by seventeen percent."
+Reiko force-purged the buffer and focused on her drone's active process. "I'm sorry, honored grandmother," she said, letting her default script take over. She delivered a forty-seven-degree bow, the exact degree of inclination that her Renraku-issued etiquette subroutines deemed optimal for a friendly greeting to an elder. "I had business in the area, and I found myself wondering if you were okay. I couldn't help but notice you were favoring your left leg by seventeen percent."
 
 "Oh, that? Just an old injury. Nothing to worry about." The old ork woman's voice was raspy, but it was steady. "Why don't you come on in and have a cup of tea?" she offered, gesturing with a wrinkled hand toward the apartment door.
 

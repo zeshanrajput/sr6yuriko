@@ -16,11 +16,11 @@ The old woman let out a dry, rattling laugh. "And you lingered. Kindness is a ra
 
 They turned a corner into a stall draped from floor to ceiling in bolts of dark fabric, heavy brocades, synthetic meshes, and deep, light-absorbing silks. Behind a large wooden cutting table cluttered with spools of red and gold thread stood a woman in her late forties with sharp, intelligent eyes and a measuring tape slung casually around her neck like a stethoscope.
 
-"Ah-Mei," the grandmother announced, sweeping a hand toward Reiko. "This is the one I told you about. The lovely child who checked up on me the other day."
+"Ah-Mei," the grandmother announced, waving a hand toward Reiko. "This is the one I told you about. The lovely child who checked up on me the other day."
 
-Ah-Mei looked up from a half-finished hem, her gaze sweeping over Reiko’s porcelain face, the smooth sweep of her Shiawase collar, and the subtle, breathing pulse of the indigo circuits beneath her skin. A knowing, amused curve touched the seamstress's lips.
+Ah-Mei looked up from a half-finished hem, her gaze taking in Reiko’s porcelain face, the smooth sweep of her Shiawase collar, and the subtle, breathing pulse of the indigo circuits beneath her skin. A knowing, amused curve touched the seamstress's lips.
 
-"The one who looked at my mother's window as if she were inspecting a military bunker?" Ah-Mei asked, though her eyes were kind. She set down her shears. "My mother has talked of nothing else. Sit, child. Or stand, if your joints prefer it."
+"The one who looked through my mother's window as if she were inspecting a military bunker?" Ah-Mei asked, though her eyes were kind. She set down her shears. "My mother has talked of nothing else. Sit, child. Or stand, if your joints prefer it."
 
 "This body requires no rest," Reiko murmured politely, stepping further into the stall.
 
@@ -48,7 +48,7 @@ Ah-Mei burst out laughing, a warm, resonant sound that echoed against the narrow
 
 "Listen to her," the grandmother beamed, patting Reiko’s ceramic arm. "She talks like a little bank clerk."
 
-"I am not a clerk," Reiko murmured, though the indigo circuits on her cheeks flushed with a soft, self-deprecating warmth. "I am... learning to participate correctly."
+"I am not a clerk," Reiko murmured, though the indigo circuits on her cheeks flushed with a soft, self-deprecating warmth. "I am learning to participate correctly."
 
 "There is no correct calculation for a gift, little one," Ah-Mei said, stepping closer. She picked up the black qipao and deliberately draped it over Reiko’s arm, folding the cool silk against the charcoal ceramic plates. She pushed the credstick back across the wood, sliding it right into Reiko’s palm and closing the metal fingers over it. "Consider it paid in full by the peace of mind you gave an old woman. Now take it before I change my mind and charge you double for arguing with a seamstress."
 
@@ -58,7 +58,7 @@ Slowly, her fingers tightened around the hanger. The neon-indigo pathways on her
 
 She bowed her head with a deep, deliberate grace that set aside the rigid mechanics of a corporate drone.
 
-"Thank you, Ah-Mei," Reiko whispered, her voice carrying a quiet, resonant harmony that made the nearby hanging lanterns shimmer. "I will... endeavor to be worthy of this gift."
+"Thank you, Ah-Mei," Reiko whispered, her voice carrying a quiet, resonant harmony that made the nearby hanging lanterns shimmer. "I will endeavor to be worthy of this gift."
 
 As she turned to leave the stall, she held the black silk against her shoulder like a badge of an entirely different kind of citizenship.
 

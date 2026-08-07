@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<sr6char gender="DIVERSE" meta="ai-pilot ai" karmaF="24" karmaI="187" nuyen="4800">
+<sr6char gender="DIVERSE" meta="ai-pilot ai" karmaF="4" karmaI="207" nuyen="4800">
    <name>Yuriko Star</name>
    <realName>r31k0 Takahashi</realName>
    <attributes>
@@ -15,48 +15,48 @@
       <attributes id="RESONANCE" value="8" />
    </attributes>
    <qualities>
-      <quality lang="en" ref="natural_hacker" uuid="4462ad92-3a3b-4d3b-8b1f-b7684ddaded9" />
-      <quality lang="en" ref="technoshaman" uuid="5bba37f2-4477-4340-9e24-89dbc8aae2a4" />
-      <quality lang="en" ref="designer" uuid="da8f0506-ef36-431f-9026-035ff4c1f926" />
-      <quality lang="en" ref="sensor_upgrade" uuid="2f54dc47-b57e-4bcc-a1fd-e7cf874c861d" />
-      <quality lang="en" ref="pilot_origins" uuid="d10f6e3a-490e-4575-bbe1-27a815d5c90f" />
-      <quality lang="en" ref="buddy_system" uuid="44b7d713-caf8-4ac8-ad92-c1d18810df93" />
-      <quality lang="en" ref="sprite_bane" uuid="1e9dcf03-bed9-4fec-b1ae-4b66ff30bc47">
-         <decision choice="add1901a-2a92-4728-8fad-c6c81ef005fb" value="Primal Sprite" />
+      <quality lang="en" ref="natural_hacker" uuid="ef070028-14b5-4969-a6fa-507863a02cb3" />
+      <quality lang="en" ref="technoshaman" uuid="aa648b5a-874f-4b3a-967b-bd874f674b9a" />
+      <quality lang="en" ref="designer" uuid="69e24fd5-ccb7-4e06-ade6-36a5001334a5" />
+      <quality lang="en" ref="sensor_upgrade" uuid="737cdcd7-687e-4178-9f81-849d6abfdb77" />
+      <quality lang="en" ref="pilot_origins" uuid="bbc7fb97-2849-45d3-87a2-6e57bc833642" />
+      <quality lang="en" ref="buddy_system" uuid="07bc7789-8e07-41c3-87a0-39324424d0ca" />
+      <quality lang="en" ref="sprite_bane" uuid="95d34a6a-666f-4d75-86d5-15e698e201f6">
+         <decision choice="2e477d1b-785c-481e-a711-5ad3bf9514c3" value="Primal Sprite" />
       </quality>
-      <quality lang="en" ref="hooder" uuid="d348c71a-a8a0-46ab-b051-cb8706629806" value="2" />
+      <quality lang="en" ref="hooder" uuid="73da3af9-fe9f-43f0-b472-babcc4898f1d" value="2" />
    </qualities>
    <skills>
-      <skill lang="en" ref="tasking" uuid="4ae64d4b-235e-4f4b-9259-6dcd841aa74b" value="6">
-         <decision choice="3e12f0e7-b984-45b4-88b0-8bfb87d34995" value="Registering" />
+      <skill lang="en" ref="tasking" uuid="81a7fde4-7667-409a-bd1d-a6a576e8f326" value="6">
+         <decision choice="96ca2b69-7adc-4431-9160-94f43c2d554b" value="Registering" />
       </skill>
-      <skill lang="en" ref="cracking" uuid="88ef3426-276e-45e5-ac10-2f0d8b1af6f8" value="5">
-         <decision choice="5790e4ea-28b7-41d0-a2e9-fc13757c1a81" value="Hacking" />
+      <skill lang="en" ref="cracking" uuid="b8ec0405-a86f-4ee2-9bc6-218ed481b377" value="5">
+         <decision choice="af59b32b-8ba0-4973-98ff-df03bba84433" value="Hacking" />
       </skill>
-      <skill lang="en" ref="electronics" uuid="6569f860-5249-4aaa-86ac-522757ed05d1" value="5">
-         <decision choice="a4e7f9fa-7bb3-4919-b4bc-8fb7c30523fe" value="Software" />
+      <skill lang="en" ref="electronics" uuid="4d7ebb05-0c2d-4683-abe2-96d779a8a0e9" value="5">
+         <decision choice="2f519e00-745b-40c3-aae2-d1d247042311" value="Software" />
       </skill>
-      <skill lang="en" ref="influence" uuid="c22b7f60-9608-4964-a8e5-2dd3b768a71a" value="1" />
-      <skill lang="en" ref="con" uuid="b35da1ad-d69d-4ab5-b0f9-dac5a3d5e6e2" value="1" />
-      <skill lang="en" ref="language" uuid="d47a2a09-53d3-44cd-b1a8-0fe8df1483d2" value="4" />
+      <skill lang="en" ref="influence" uuid="71caada8-2fa6-462b-ba5a-ffca3eac88ed" value="1" />
+      <skill lang="en" ref="con" uuid="08e302ac-c2b6-4d43-8f1e-15022e077591" value="1" />
+      <skill lang="en" ref="language" uuid="fdb1b01f-1a7f-4f09-bd32-99ee6c435514" value="4" />
    </skills>
    <items>
-      <item lang="en" mode="CARRIED" ref="nissansamurai" uuid="82450ec0-6b2e-4151-a7da-0e137021594c" />
-      <item lang="en" mode="CARRIED" ref="mctgnat" uuid="54f1c4eb-564a-4f61-991c-a0fefefdccf3" />
-      <item lang="en" mode="CARRIED" ref="boingskycommander" uuid="7f2ca4d5-02fd-4a21-aab0-c87b9398d463" />
-      <item lang="en" mode="CARRIED" ref="shiawasebdbutler" uuid="0344c2b2-ff4a-41e8-8463-9e48ee7eac5e">
+      <item lang="en" mode="CARRIED" ref="nissansamurai" uuid="1c759202-780d-4258-aa03-2c6597bcb370" />
+      <item lang="en" mode="CARRIED" ref="mctgnat" uuid="ba172e4d-9fac-4712-a8e5-761409f0b495" />
+      <item lang="en" mode="CARRIED" ref="boingskycommander" uuid="c5e8e103-b442-475d-a817-a307ad444b68" />
+      <item lang="en" mode="CARRIED" ref="shiawasebdbutler" uuid="baade988-30fc-462a-a9d2-99415af4ee3d">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="d4cfc13e-0522-4669-8d13-83fbed07a725" />
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="008d7385-6a9e-4979-a3f5-bbc0cbf2da99" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="federatedboeingskycommander_seattle" uuid="5faccdf4-9b88-4ddd-838a-1915590d0d8f">
+      <item lang="en" mode="CARRIED" ref="federatedboeingskycommander_seattle" uuid="46e60872-7cf6-4493-b75c-d023383fc26e">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="11ed44ad-7da6-4f5e-a6b5-a81a9a6a7fff" />
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="5de6f060-2169-46ff-a2bf-b7a1b24652c3" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="shiawasebdmanatarms" uuid="5b67cfe6-04fe-4fbd-82b7-c0f37cc43ea9">
+      <item lang="en" mode="CARRIED" ref="shiawasebdmanatarms" uuid="603e0d11-6f7a-4cd0-8b3a-1892127a4849">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="e1ca1ddf-4869-4f09-9a37-a48e461cb94e" />
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="b298acbf-c534-42db-9353-c247e5d7231f" />
          </accessories>
       </item>
    </items>

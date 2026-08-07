@@ -2,7 +2,7 @@
 
 <audio controls src="audio/08%20Abandoning%20Tourism.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
 
-Reiko locked her primary drone into a rented Louisville charging stall. Moments later she relocated to r3sP@wn, her sanctuary in the Matrix. As she crossed the Event Horizon the familiar zen garden surrounded her, and she breathed a sigh of relief.
+Reiko locked her drone into a rented Louisville charging stall. Moments later she relocated to r3sP@wn, her sanctuary in the Matrix. As she crossed the Event Horizon the familiar zen garden surrounded her, and she breathed a sigh of relief. Her drone shell's minimal sensors and limited compute power always made her feel like she was wearing oven mitts on both hands and had gauze wrapped around her head, and she hated it.
 
 She needed to talk to someone. Someone on the other side, but someone who understood her. She needed to resolve the disquiet inside her. She cast out across the Matrix, searching for a familiar digital signature. A pull tugged at the other end of a thread: Roanoke. Perfect. She sent an ARO, inviting her to tea.
 
@@ -12,7 +12,7 @@ A few cycles later, Roanoke's avatar appeared over the Horizon. She didn't bothe
 
 "Please," Reiko said. "You don't need to use my alias here, just as you came here as yourself. And Kentucky... is the reason I called. I got scared, I think."
 
-Roanoke nodded thoughtfully and took the offered seat. "So spill. Without the unnecessary details, of course, plausible deniability and all."
+Roanoke nodded thoughtfully and took the offered seat. "So spill. Without the unnecessary details, of course. Plausible deniability and all."
 
 Reiko laughed. "I'm learning, I promise! Well, it's public knowledge now that T´In´Abula has been discovered. And I can neither confirm nor deny that I was there, right?"
 
@@ -52,17 +52,17 @@ Reiko nodded, but her confusion betrayed her lack of understanding.
 
 "Hey!" Reiko exclaimed again. "I don't call them that!"
 
-"But you think of them that way," Roanoke pushed on. "At least, they... we, including me, aren't part of your world. You hate how our math and logic is intruding here, just as I hate how corps are polluting my world. But my point is this: if they had died, that would have been it for them. That's why they buy armor, guns, and mod themselves until their very soul is shredded. That's where they exist, that's where their soul is bound to. And when you were inhabiting that drone in the null zone, with nowhere to go if things went south... that was the first time you lived there too."
+"But you think of them that way," Roanoke pushed on. "At least, they... we, including me, aren't part of your world. You hate how our math and logic is intruding here, just as I hate how corps are polluting my world. But my point is this: if they had died, that would have been it for them. That's why they buy armor, guns, and mod themselves until their essence is gone. That's where they exist, that's where their soul is bound to. And when you were inhabiting that drone in the null zone, with nowhere to go if things went south... that was the first time you lived there too."
 
-A few moments passed while Reiko processed her friend's input. Roanoke viewed the physical world as the only real plane, unable to see that for Reiko, squeezing her vast indigo light into the Nissan Samurai was an act of severe limitation and sensory starvation. Sensors offered a thin, low-bitrate, grey-scale caricature of the physical world, a cold prison emphasizing how far she stepped down from the splendor of her true home.
+A few moments passed while Reiko processed her friend's input. Roanoke viewed the physical world as the only real plane, unable to see that for Reiko, squeezing her vast indigo light into the Nissan Samurai was an act of severe limitation and sensory starvation.
 
-"I was scared because I could have died," Reiko said, her voice quiet. "Because I couldn't have escaped. And I was in a Samurai with stock armor and a pea shooter."
+"I was scared because I could have died," Reiko said, her voice quiet. "Because I couldn't have escaped. And I was in a Samurai with stock specs and a pea shooter."
 
 "Dying in stock armor isn't flattering, I'll grant," Roanoke said, the glint returning as the air cleared. "Still wanna run in the shadows?"
 
 Reiko considered and motioned to the garden around them. "I have to. We've given refuge to so many protosapient spirits that come to sentience in the wires. But this haven, this gateway... it has expenses in your world. The wire of Brynne's debt ledger is already around my neck. So yes, I will earn its keep."
 
-Roanoke got up, sending her an invitation file as she straightened herself out. "A dealer I know. Good drones, cheap. Does the work themselves. I'm thinking you're going to want to raise your stake a little."
+Roanoke got up, sending Reiko an invitation file as she straightened herself out. "A dealer I know. Good drones, cheap. Does the work themselves. I'm thinking you're going to want to raise your stake a little."
 
 Reiko nodded. "I guess I'm done with paper tigers. It's time I got something meant to survive."
 
