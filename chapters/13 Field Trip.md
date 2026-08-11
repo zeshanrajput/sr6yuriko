@@ -84,9 +84,9 @@ Janie smiled, but then a shadow drifted across the upper canopy of the forest, a
 
 Terrified, Janie lunged forward and grabbed Reiko's hand.
 
-Reiko's local thoughts locked under a critical priority. She tried to spin up a somatic translation, allocating her power to compile the physical illusion of touch. Her system tried to map Janie's fingers, setting her local collision mesh to resist exactly three newtons of pressure, manually forcing her pathways to heat. But Janie was an emerging medium herself. Her fingers didn't register soft warmth; they registered the cold, rigid, micro-adjusting collision grids beneath the skin overlay, exposing Reiko as a construct rather than a human savior. It left Janie feeling manipulated rather than comforted.
+Reiko's local thoughts locked under a critical priority. She tried to spin up a somatic translation, allocating her power to compile the physical illusion of touch. Her system tried to map Janie's fingers, setting her local collision mesh to resist exactly three newtons of pressure, manually forcing her pathways to heat. But Janie was an emerging medium herself. Her fingers didn't register soft warmth; they registered the cold, rigid, micro-adjusting collision grids beneath the skin overlay, exposing Reiko as a construct rather than a human savior.
 
-Janie pulled her hand away, her digital eyes searching Reiko’s glowing blue face. "You're... you're not like us. You're one of them. A program."
+Janie pulled her hand away, her digital eyes searching Reiko’s glowing blue face. "You're not like us. You're one of them. A program."
 
 Reiko continued to offer her hand. She searched for a way to explain the sudden, raw exception loop in her emotional core, and compiled a null return. She opted to try a different tact, and addressed the little girl with her native mindspeech.
 

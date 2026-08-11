@@ -34,9 +34,9 @@ Brynne didn't look up from her glass, but her drumming fingers went entirely sti
 
 "To my core, you didn't simply go offline," Reiko sent. "You were gone. I ran forty-two thousand searches through the Seattle grid trying to find a hole in the static. Every single one flatlined."
 
-"Reiko, drop it," Brynne said, her voice dropping into a tight, quiet register. "It's a messy world. People drop off the grid."
+"Reiko, drop it," Brynne said, her voice falling into a tight, quiet register. "It's a messy world. People step off the grid."
 
-"I cannot drop it," Reiko sent, her lenses tilting just enough to force her eyes into Brynne’s line of sight. "The math failed. In my world, people don't just die when they 'drop off the grid'. They delete with no way for their soul to return. I had to draw on an intersection with a mage's construct, a spirit. An unmappable, chaotic variable that does not obey any natural laws, just to pull a vector on that flophouse. I hate magic."
+"I cannot drop it," Reiko sent, her lenses tilting just enough to force her eyes into Brynne’s line of sight. "The math failed. In my world, people don't just die when they 'step off the grid'. They delete with no way for their soul to return. I had to draw on an intersection with a mage's construct, a spirit. An unmappable, chaotic variable that does not obey any natural laws, just to pull a vector on that flophouse. I hate magic."
 
 "I heard your team cleared the street outside," Brynne said softly, her gaze drifting toward the massive, black-iron barrel of the Megalodon folded along the chassis's spine. "I didn't realize you had a siege weapon in that thing."
 

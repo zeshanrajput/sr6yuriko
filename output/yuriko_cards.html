@@ -2,51 +2,156 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Reference Cards - Yuriko</title>
+    <title>Reference Cards - Yuriko Star</title>
     <style>
         body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f172a; color: #f8fafc; padding: 20px; }
         h1 { color: #38bdf8; border-bottom: 2px solid #0284c7; padding-bottom: 10px; }
-        .deck { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; margin-top: 20px; }
-        .card { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 16px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3); }
+        .deck { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; margin-top: 20px; }
+        .card { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 16px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3); display: flex; flex-direction: column; justify-content: space-between; }
         .card-header { display: flex; justify-space-between; align-items: center; border-bottom: 1px solid #334155; padding-bottom: 8px; margin-bottom: 12px; }
         .card-title { font-weight: bold; font-size: 1.1em; color: #f1f5f9; }
         .card-cat { font-size: 0.75em; background: #0284c7; color: #fff; padding: 2px 8px; border-radius: 4px; font-weight: bold; }
-        .card-stats { margin-bottom: 12px; font-size: 0.85em; }
+        .card-stats { margin-bottom: 8px; font-size: 0.85em; }
+        .card-mods { margin-bottom: 8px; font-size: 0.8em; color: #38bdf8; background: #0f172a; padding: 4px 8px; border-radius: 4px; }
         .badge { display: inline-block; background: #334155; padding: 2px 6px; border-radius: 4px; margin-right: 4px; margin-bottom: 4px; }
-        .card-body { font-size: 0.9em; line-height: 1.4; color: #cbd5e1; white-space: pre-wrap; }
-        .card-footer { font-size: 0.8em; color: #38bdf8; margin-top: 12px; font-style: italic; }
+        .card-body { font-size: 0.88em; line-height: 1.4; color: #cbd5e1; white-space: pre-wrap; flex-grow: 1; margin-top: 8px; }
+        .card-footer { font-size: 0.8em; color: #38bdf8; margin-top: 12px; font-style: italic; border-top: 1px solid #334155; padding-top: 6px; }
     </style>
 </head>
 <body>
-    <h1>🃏 Reference Cards: Yuriko (Shadowrunner)</h1>
+    <h1>🃏 Reference Cards: Yuriko Star (AI-Pilot AI)</h1>
     <div class="deck">
         
         <div class="card">
             <div class="card-header">
-                <span class="card-title">Positive</span>
+                <span class="card-title">Natural Hacker</span>
                 <span class="card-cat">QUALITY</span>
             </div>
-            <div class="card-stats"></div>
-            <div class="card-body">## game concepts ..............34
+            <div class="card-stats"><span class="badge"><b>Karma:</b> 15</span> <span class="badge"><b>Quality Type:</b> positive</span> <span class="badge"><b>Max Rating:</b> 1</span> <span class="badge"><b>Source:</b> hack_slash</span> </div>
+            
+            <div class="card-body">## Natural Hacker
 
-What are primary roles in the game? ........................34
+You use your innate connection to the Resonance to get things done in the Matrix. It’s all you need.
 
-**Tests ........................................35** Simple Tests .................................. 35 Opposed Tests ............................... 35 Extended Tests ..............................36 Teamwork Tests ............................36 Buying Hits ....................................36 Try</div>
+- **Cost:** 15 Karma
+
+- **Game Effect:** Whenever you take a Matrix action or a defense test against a Matrix action, complex form, or sprite power, you may choose to use your Resonance attribute in place of any other non-Matrix attribute used on that test. You may not replace Attack, Sleaze, Data Processing, or Firewall with R</div>
+            <div class="card-footer">[Hack and Slash, Page 1]</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Stream: Technoshamans</span>
+                <span class="card-cat">QUALITY</span>
+            </div>
+            <div class="card-stats"><span class="badge"><b>Karma:</b> 20</span> <span class="badge"><b>Quality Type:</b> positive</span> <span class="badge"><b>Max Rating:</b> 1</span> <span class="badge"><b>Source:</b> hack_slash</span> </div>
+            
+            <div class="card-body">## Technoshamans
+
+Technoshamans integrate the spiritual with their abilities. They are experts on sprites, phenomenal at interacting with Resonance creatures, and many even show a penchant for dealing with technocritters.</div>
+            <div class="card-footer">[Hack and Slash, Page 1]</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Designer</span>
+                <span class="card-cat">QUALITY</span>
+            </div>
+            <div class="card-stats"><span class="badge"><b>Karma:</b> 6</span> <span class="badge"><b>Quality Type:</b> positive</span> <span class="badge"><b>Max Rating:</b> 1</span> <span class="badge"><b>Source:</b> hack_slash</span> </div>
+            
+            <div class="card-body">## Designer
+
+- **Cost:** 6 Karma
+
+Some AIs are experts at restructuring firmware to achieve maximum hardware efficiency. Their self-designed home device (see **Restoration and Realignment** , p. 124) grants them an additional +1 modifier to the Data Processing or Pilot attribute and 2 points of noise reduction.</div>
+            <div class="card-footer">[Hack and Slash, Page 1]</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Sensor Upgrade</span>
+                <span class="card-cat">QUALITY</span>
+            </div>
+            <div class="card-stats"><span class="badge"><b>Karma:</b> 5</span> <span class="badge"><b>Quality Type:</b> positive</span> <span class="badge"><b>Max Rating:</b> 1</span> <span class="badge"><b>Source:</b> hack_slash</span> </div>
+            
+            <div class="card-body">## Sensor Upgrade
+
+- **Cost:** 5 Karma
+
+The AI is an expert at tweaking the sensor settings of devices linked to it. The AI adds a +1 to the Sensor rating of any vehicle, drone, or device that is linked to its icon. All functions of a single sensor array gain this bonus, if applicable. This bonus also applies to any device the AI is currently running on.</div>
+            <div class="card-footer">[Hack and Slash, Page 1]</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Pilot Origins</span>
+                <span class="card-cat">QUALITY</span>
+            </div>
+            <div class="card-stats"><span class="badge"><b>Karma:</b> 8</span> <span class="badge"><b>Quality Type:</b> positive</span> <span class="badge"><b>Max Rating:</b> 3</span> <span class="badge"><b>Source:</b> hack_slash</span> </div>
+            
+            <div class="card-body">## Pilot Origins
+
+- **Cost:** 8 Karma per Level (max 3)
+
+An AI with this quality likely evolved from a drone pilot program and retained its abilities. The AI may jump into drones and vehicles, controlling them like a rigger. Each level of this quality grants the bonus of a control rig of an equal rating. The AI is also capable of loading, converting, and using drone autosofts equal to its Data Processing (AI-driven drones use the attributes, skil</div>
+            <div class="card-footer">[Hack and Slash, Page 1]</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Buddy System</span>
+                <span class="card-cat">QUALITY</span>
+            </div>
+            <div class="card-stats"><span class="badge"><b>Karma:</b> 7</span> <span class="badge"><b>Quality Type:</b> negative</span> <span class="badge"><b>Max Rating:</b> 1</span> <span class="badge"><b>Source:</b> hack_slash</span> </div>
+            
+            <div class="card-body">## Buddy System
+
+You don’t feel safe enough to concentrate clearly without someone to watch your back.
+
+- **Bonus:** 7 Karma
+
+- **Game Effect:** Whenever you are alone, you may only gain a maximum of one Edge per combat round. If you are in astral space, only astrally active allies are considered company for the purpose of this quality, but a summoned spirit is all you need to prevent the penalty. If you are in VR mode, only allies in the Matrix </div>
+            <div class="card-footer">[Hack and Slash, Page 1]</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Sprite Bane</span>
+                <span class="card-cat">QUALITY</span>
+            </div>
+            <div class="card-stats"><span class="badge"><b>Karma:</b> 12</span> <span class="badge"><b>Quality Type:</b> negative</span> <span class="badge"><b>Max Rating:</b> 1</span> <span class="badge"><b>Source:</b> core</span> <span class="badge"><b>Choice:</b> Primal Sprite</span> </div>
+            
+            <div class="card-body">## Spirit/Sprite Bane
+
+You may have angered them with how you treat their fellows, killed a powerful and respected member of their kind, or been born under a bad sign and marked as an enemy to entities like them. The reason doesn’t matter—what matters is the fact that a certain type of spirit/sprite has an inherent dislike for you.
+
+- **Bonus:** 12 Karma
+
+- **Game Effect:** When selecting this quality, choose a type of spirit or sprite. Spirits/ </div>
             <div class="card-footer">[Berlin Edition, Page 1]</div>
         </div>
         
         <div class="card">
             <div class="card-header">
-                <span class="card-title">Negative</span>
+                <span class="card-title">Hooder</span>
                 <span class="card-cat">QUALITY</span>
             </div>
-            <div class="card-stats"></div>
-            <div class="card-body">## game concepts ..............34
+            <div class="card-stats"><span class="badge"><b>Karma:</b> 5</span> <span class="badge"><b>Quality Type:</b> negative</span> <span class="badge"><b>Max Rating:</b> 3</span> <span class="badge"><b>Source:</b> companion</span> <span class="badge"><b>Rating:</b> 2</span> </div>
+            
+            <div class="card-body">## Hooder
 
-What are primary roles in the game? ........................34
+You’re driven to do what you can to help others.
 
-**Tests ........................................35** Simple Tests .................................. 35 Opposed Tests ............................... 35 Extended Tests ..............................36 Teamwork Tests ............................36 Buying Hits ....................................36 Try</div>
-            <div class="card-footer">[Berlin Edition, Page 1]</div>
+- **Bonus:** 5 Karma/level (max level 3)
+
+- **Game Effect:** You must donate at least 1,000 nuyen per level of this quality every month. The donation cannot go to other members
+
+Someone wants you dead, and they have the means to get it done.
+
+- **Bonus:** 5 Karma per level (max level 5)
+
+- **Game Effect:** Whenever your personal Heat is 15 or higher, assassins catch up to you. You alway</div>
+            <div class="card-footer">[Sixth World Companion, Page 1]</div>
         </div>
         
         <div class="card">
@@ -54,11 +159,18 @@ What are primary roles in the game? ........................34
                 <span class="card-title">Cleaner</span>
                 <span class="card-cat">COMPLEX FORM</span>
             </div>
-            <div class="card-stats"><span class="badge"><b>Id:</b> cleaner</span> <span class="badge"><b>Name:</b> Cleaner</span> <span class="badge"><b>Fade:</b> 2</span> <span class="badge"><b>Duration:</b> Instant</span> <span class="badge"><b>Target:</b> Device</span> <span class="badge"><b>Source:</b> core</span> </div>
-            <div class="card-body">## Matrix Access and PANs
+            <div class="card-stats"><span class="badge"><b>Fade:</b> 2</span> <span class="badge"><b>Duration:</b> Permanent</span> <span class="badge"><b>Target:</b> Device</span> <span class="badge"><b>Source:</b> core</span> <span class="badge"><b>Fading:</b> 2</span> </div>
+            
+            <div class="card-body">## Cleaner
 
-Every Matrix service provider maintains their ways to connect users to the Matrix. Users are assigned an address based on their current location, and from there they can see what they can get into—and what walls will be put in their way. The vast majority of users know how to get on the Matrix and make it work for them, and the new structure of the Matrix means the corps</div>
-            <div class="card-footer">[Berlin Edition, Page 12]</div>
+- **Typical Connection Rating:** 3
+
+- **Type:** Street (also Criminal, Government, Engineering, Magic)
+
+- **Similar Contacts:** Evidence Technician, Mr. Fix-it, Undertaker
+
+You may be thinking of the crew that comes around weekly to tidy up your doss, but this contact has a more specific specialty: cleaning up crime scenes. They may be a freelancer using bleach and hard work—or perhaps magic—to scrub a room of all evidence, or a mob a</div>
+            <div class="card-footer">[Sixth World Companion, Page 1]</div>
         </div>
         
         <div class="card">
@@ -66,11 +178,17 @@ Every Matrix service provider maintains their ways to connect users to the Matri
                 <span class="card-title">Diffusion</span>
                 <span class="card-cat">COMPLEX FORM</span>
             </div>
-            <div class="card-stats"><span class="badge"><b>Id:</b> diffusion</span> <span class="badge"><b>Name:</b> Diffusion</span> <span class="badge"><b>Fade:</b> 2</span> <span class="badge"><b>Duration:</b> Instant</span> <span class="badge"><b>Target:</b> Device</span> <span class="badge"><b>Source:</b> core</span> </div>
-            <div class="card-body">## Technomancer
+            <div class="card-stats"><span class="badge"><b>Fade:</b> 2</span> <span class="badge"><b>Duration:</b> Sustained</span> <span class="badge"><b>Target:</b> Firewall</span> <span class="badge"><b>Source:</b> core</span> <span class="badge"><b>Fading:</b> 4</span> </div>
+            
+            <div class="card-body">## Diffusion (Matrix Attribute)
 
-The Matrix is almost everywhere. The Resonance is almost everywhere. And where it is not, is no place the technomancer wants to be. By feeling the flow, the technomancer can practically pull data from thin air. Accessing nodes and slipping into hosts is child’s play. The joy of pulling up a sprite and sending the little mischief-maker off to pester some fool who cut in front of yo</div>
-            <div class="card-footer">[Berlin Edition, Page 1]</div>
+**==&gt; picture [152 x 20] intentionally omitted \&lt;==**
+
+**----- Start of picture text -----**&lt;br&gt;
+FADE VALUE DURATION&lt;br&gt;4 S&lt;br&gt;**----- End of picture text -----**&lt;br&gt;
+
+Make an Electronics + Resonance vs Willpower + Firewall opposed test. Each net hit reduces (attribute) by 1, to a minimum of 1. Can be purchased multiple times, with each time targeting a different attribute.</div>
+            <div class="card-footer">[Berlin Edition, Page 12]</div>
         </div>
         
         <div class="card">
@@ -78,16 +196,14 @@ The Matrix is almost everywhere. The Resonance is almost everywhere. And where i
                 <span class="card-title">Technoregeneration</span>
                 <span class="card-cat">COMPLEX FORM</span>
             </div>
-            <div class="card-stats"><span class="badge"><b>Id:</b> technoregeneration</span> <span class="badge"><b>Name:</b> Technoregeneration</span> <span class="badge"><b>Fade:</b> 2</span> <span class="badge"><b>Duration:</b> Instant</span> <span class="badge"><b>Target:</b> Device</span> <span class="badge"><b>Source:</b> hack_slash</span> </div>
-            <div class="card-body">## GERALD ‘GRAMIUS’ RAMIUS
+            <div class="card-stats"><span class="badge"><b>Fade:</b> 2</span> <span class="badge"><b>Duration:</b> Permanent</span> <span class="badge"><b>Target:</b> Device</span> <span class="badge"><b>Source:</b> hack_slash</span> <span class="badge"><b>Fading:</b> -1</span> </div>
+            
+            <div class="card-body">## Technoregeneration
 
-**==&gt; picture [210 x 46] intentionally omitted \&lt;==**
+## **Fade Value Duration** Hits P
 
-**----- Start of picture text -----**&lt;br&gt;
-B A R S W L I C ESS RES&lt;br&gt;4 5 4(7) 4 6 7 5 4 5.65 9&lt;br&gt;DR I/ID AC CM MOVE&lt;br&gt;7 9(12)/1(4) A1,I2(5) 10/11 10/15/+1 10/15/+1&lt;br&gt;**----- End of picture text -----**&lt;br&gt;
-
-**Active Skills:** Athletics 4, Biotech 3, Cracking 6 (Hacking +3), Con 4, Electronics 6 (Complex Forms +3)</div>
-            <div class="card-footer">[Asphalt Jungles, Page 1]</div>
+This complex form is the equivalent of a Heal spell for electronic devices. Target a device and make an Electronics (Hardware) + Resonance test. For every hit scored, restore one box of Matrix damage. This only works on devices, not IC, sprites, or other Matrix fauna. When a device has been repaired by this complex form, it tends to function erratically. When making any test using the devi</div>
+            <div class="card-footer">[Hack and Slash, Page 1]</div>
         </div>
         
         <div class="card">
@@ -95,66 +211,260 @@ B A R S W L I C ESS RES&lt;br&gt;4 5 4(7) 4 6 7 5 4 5.65 9&lt;br&gt;DR I/ID AC C
                 <span class="card-title">Puppeteer</span>
                 <span class="card-cat">COMPLEX FORM</span>
             </div>
-            <div class="card-stats"><span class="badge"><b>Id:</b> puppeteer</span> <span class="badge"><b>Name:</b> Puppeteer</span> <span class="badge"><b>Fade:</b> 2</span> <span class="badge"><b>Duration:</b> Instant</span> <span class="badge"><b>Target:</b> Device</span> <span class="badge"><b>Source:</b> core</span> </div>
-            <div class="card-body">## Control Actions
+            <div class="card-stats"><span class="badge"><b>Fade:</b> 2</span> <span class="badge"><b>Duration:</b> Sustained</span> <span class="badge"><b>Target:</b> Device</span> <span class="badge"><b>Source:</b> core</span> <span class="badge"><b>Fading:</b> 5</span> </div>
+            
+            <div class="card-body">## Puppeteer
 
-**==&gt; picture [228 x 20] intentionally omitted \&lt;==**
+**==&gt; picture [153 x 20] intentionally omitted \&lt;==**
 
 **----- Start of picture text -----**&lt;br&gt;
-RANGE TYPE DURATION DV&lt;br&gt;LOS M L 4&lt;br&gt;**----- End of picture text -----**&lt;br&gt;
+FADE VALUE DURATION&lt;br&gt;5 S&lt;br&gt;**----- End of picture text -----**&lt;br&gt;
 
-The spellcaster acts as master puppeteer, taking control of another person and making them dance to their tune. Roll Sorcery + Magic vs. Willpower + Logic; net hits give the maximum duration of the spell</div>
+You may take the Control Device action on a device even if you do not have the proper access level. You must still be able to detect the device.</div>
             <div class="card-footer">[Berlin Edition, Page 12]</div>
         </div>
         
         <div class="card">
             <div class="card-header">
-                <span class="card-title">Personalized Grip Ranged</span>
-                <span class="card-cat">WEAPON</span>
+                <span class="card-title">Hybrid Sprites</span>
+                <span class="card-cat">META ECHO</span>
             </div>
-            <div class="card-stats"><span class="badge"><b>Id:</b> personalized_grip_ranged</span> <span class="badge"><b>Name:</b> Personalized Grip Ranged</span> <span class="badge"><b>Category:</b> Weapon_Modifications</span> <span class="badge"><b>Ap:</b> 0</span> <span class="badge"><b>Cost:</b> 0</span> <span class="badge"><b>Avail:</b> 3L</span> <span class="badge"><b>Source:</b> firing_squad</span> </div>
-            <div class="card-body">## Intercept (A)
+            <div class="card-stats"></div>
+            
+            <div class="card-body">## New Echoes
 
-If an opponent comes within Close attack range, you may go out of Initiative order and make an Attack action as long as you have both a Minor and a Major Action still available in this round (because
+**Aura Link:** You must have Skinlink in order to take this echo. You can wirelessly connect to devices as if using a direct connection, but only within a limited range. The range of your Aura Link is a radius from your physical body equal to your submersion grade in meters.
 
-you either are after the attacking player in Initiative order or you deferred some of your actions). This counts as your Attack Major Action for the player turn. If you’re already o</div>
-            <div class="card-footer">[Berlin Edition, Page 1]</div>
+**Cyberadept:** You have begun to learn that your augmentations can be affected by your connection to the Resonance. Taking this echo unlocks the cyberadept q</div>
+            <div class="card-footer">[Hack and Slash, Page 1]</div>
         </div>
         
         <div class="card">
             <div class="card-header">
-                <span class="card-title">Close Combat</span>
-                <span class="card-cat">WEAPON</span>
+                <span class="card-title">New Sprite Type</span>
+                <span class="card-cat">META ECHO</span>
             </div>
-            <div class="card-stats"><span class="badge"><b>Id:</b> close_combat</span> <span class="badge"><b>Name:</b> Close Combat</span> <span class="badge"><b>Category:</b> item</span> <span class="badge"><b>Cost:</b> 0</span> <span class="badge"><b>Avail:</b> 1</span> <span class="badge"><b>Source:</b> companion</span> </div>
-            <div class="card-body">## game concepts ..............34
+            <div class="card-stats"></div>
+            
+            <div class="card-body">## New Sprite Types
 
-What are primary roles in the game? ........................34
-
-**Tests ........................................35** Simple Tests .................................. 35 Opposed Tests ............................... 35 Extended Tests ..............................36 Teamwork Tests ............................36 Buying Hits ....................................36 Try</div>
-            <div class="card-footer">[Berlin Edition, Page 1]</div>
+More variety has been observed among the denizens of the Matrix, and sprites are no exception. Some may believe that these are simply variants of known sprite types, but it seems much more likely that we will be seeing greater variety among sprites as more of them come into being. In order to compile or register any of these new sprite types, a technomancer must take the New Sprite Type echo.</div>
+            <div class="card-footer">[Hack and Slash, Page 1]</div>
         </div>
         
         <div class="card">
             <div class="card-header">
-                <span class="card-title">Pack Veh Nissan Samurai</span>
+                <span class="card-title">Sprite Conduit</span>
+                <span class="card-cat">META ECHO</span>
+            </div>
+            <div class="card-stats"></div>
+            
+            <div class="card-body">## New Echoes
+
+**Aura Link:** You must have Skinlink in order to take this echo. You can wirelessly connect to devices as if using a direct connection, but only within a limited range. The range of your Aura Link is a radius from your physical body equal to your submersion grade in meters.
+
+**Cyberadept:** You have begun to learn that your augmentations can be affected by your connection to the Resonance. Taking this echo unlocks the cyberadept q</div>
+            <div class="card-footer">[Hack and Slash, Page 1]</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Sprite Symbiosis</span>
+                <span class="card-cat">META ECHO</span>
+            </div>
+            <div class="card-stats"></div>
+            
+            <div class="card-body">## Sprite Symbiosis
+
+A technomancer may choose to create a symbiotic bond with their ally sprite. This requires a positive sprite rep, an ally sprite, and the Sprite Symbiosis echo. To form a symbiotic bond, the ally sprite merges with the technomancer’s living host. This requires a Minor Action from the technomancer and a Major Action from the sprite, and it provides the following benefits while sustained:
+
+The technomancer’s Matrix attributes a</div>
+            <div class="card-footer">[Hack and Slash, Page 1]</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Living Network</span>
+                <span class="card-cat">META ECHO</span>
+            </div>
+            <div class="card-stats"></div>
+            
+            <div class="card-body">## Increased Maximum Resonance
+
+The natural maximum for your Resonance attribute is 6 + your Submersion grade (reduced by one for every full point of Essence lost). Increasing your maximum does not automatically increase your Resonance attribute—you still have to spend Karma to increase your Resonance attribute.
+
+- **Living Network:** Your living persona can participate in a PAN. This Echo is only selected once.
+
+- **Machine Mind:** You gain the </div>
+            <div class="card-footer">[Berlin Edition, Page 12]</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Transcendent Network</span>
+                <span class="card-cat">META ECHO</span>
+            </div>
+            <div class="card-stats"></div>
+            
+            <div class="card-body">## GERALD ‘GRAMIUS’ RAMIUS
+
+**==&gt; picture [210 x 46] intentionally omitted \&lt;==**
+
+**----- Start of picture text -----**&lt;br&gt;
+B A R S W L I C ESS RES&lt;br&gt;4 5 4(7) 4 6 7 5 4 5.65 9&lt;br&gt;DR I/ID AC CM MOVE&lt;br&gt;7 9(12)/1(4) A1,I2(5) 10/11 10/15/+1 10/15/+1&lt;br&gt;**----- End of picture text -----**&lt;br&gt;
+
+**Active Skills:** Athletics 4, Biotech 3, Cracking 6 (Hacking +3), Con 4, Electronics 6 (Complex Forms +3), Engineering 4, Firearms 4 (Rifles +2), Influence</div>
+            <div class="card-footer">[Asphalt Jungles, Page 1]</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Overclocking</span>
+                <span class="card-cat">META ECHO</span>
+            </div>
+            <div class="card-stats"><span class="badge"><b>Category:</b> item</span> <span class="badge"><b>Cost:</b> 0</span> <span class="badge"><b>Avail:</b> 1</span> <span class="badge"><b>Source:</b> hack_slash</span> </div>
+            
+            <div class="card-body">## Attribute Overclocking
+
+A method for temporarily increasing the effective value of one of the AI’s basic attributes, Attribute Overclocking must be coded to one of the AI’s attributes and only affects that attribute. Like attribute augmentations, the ASDF attributes are much easier to increase than Willpower, Logic, Intuition, or Charisma, and are both less expensive and less invasive. This codemod requires a Minor action to activate.
+
+Once ac</div>
+            <div class="card-footer">[Hack and Slash, Page 1]</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Software Emulator</span>
+                <span class="card-cat">META ECHO</span>
+            </div>
+            <div class="card-stats"></div>
+            
+            <div class="card-body">## New Echoes
+
+**Aura Link:** You must have Skinlink in order to take this echo. You can wirelessly connect to devices as if using a direct connection, but only within a limited range. The range of your Aura Link is a radius from your physical body equal to your submersion grade in meters.
+
+**Cyberadept:** You have begun to learn that your augmentations can be affected by your connection to the Resonance. Taking this echo unlocks the cyberadept q</div>
+            <div class="card-footer">[Hack and Slash, Page 1]</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Ares Predator VI</span>
+                <span class="card-cat">WEAPON</span>
+            </div>
+            <div class="card-stats"><span class="badge"><b>Category:</b> Firearms</span> <span class="badge"><b>Damage:</b> 3P</span> <span class="badge"><b>Ap:</b> 0</span> <span class="badge"><b>Attack Rating:</b> 11/11/8/-/-</span> <span class="badge"><b>Ammo:</b> 15(c)</span> <span class="badge"><b>Cost:</b> 0</span> <span class="badge"><b>Avail:</b> 2L</span> <span class="badge"><b>Source:</b> core</span> <span class="badge"><b>Mode:</b> SA,BF</span> <span class="badge"><b>Smartlink:</b> True</span> <span class="badge"><b>Personalized Grip:</b> True</span> <span class="badge"><b>Accessories:</b> [&#x27;Silencer&#x27;, &#x27;Smartlink&#x27;, &#x27;Personalized Grip&#x27;]</span> </div>
+            
+            <div class="card-body">## Ares Predator VI
+
+The Predator V rode on the laurels of its name. The Predator VI is genuine innovation built into
+
+The unique Slivergun hangs out in the Heavy Pistol class, but it’s a creature all its own. The Slivergun fires metal slivers that count as flechette ammunition and are bought as such, but they aren’t interchangeable with any other flechette weapon. The weapon remains capable of Burst Fire and has a silencer integrated into the ba</div>
+            <div class="card-footer">[Berlin Edition, Page 12]</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Crimson Wasp Array (2x Link-Fired)</span>
+                <span class="card-cat">WEAPON</span>
+            </div>
+            <div class="card-stats"><span class="badge"><b>Damage:</b> 5P</span> <span class="badge"><b>Attack Rating:</b> 16/14/11/6/-</span> <span class="badge"><b>Mode:</b> SA</span> <span class="badge"><b>Ammo:</b> 15(c)</span> <span class="badge"><b>Smartlink:</b> True</span> <span class="badge"><b>Is Vehicle Mounted:</b> True</span> <span class="badge"><b>Accessories:</b> [&#x27;Smartlink&#x27;, &#x27;Drone Mount (+2 AR)&#x27;]</span> </div>
+            
+            <div class="card-body"></div>
+            <div class="card-footer"></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Red Fox Array (Link-Fired)</span>
+                <span class="card-cat">WEAPON</span>
+            </div>
+            <div class="card-stats"><span class="badge"><b>Damage:</b> 6P</span> <span class="badge"><b>Attack Rating:</b> 14/16/16/9/-</span> <span class="badge"><b>Mode:</b> SA,BF</span> <span class="badge"><b>Ammo:</b> 30(c)</span> <span class="badge"><b>Smartlink:</b> True</span> <span class="badge"><b>Is Vehicle Mounted:</b> True</span> <span class="badge"><b>Link Fired Count:</b> 2</span> <span class="badge"><b>Accessories:</b> [&#x27;Smartlink&#x27;, &#x27;Drone Mount (+2 AR)&#x27;, &#x27;Link-Fired (2x Wasps)&#x27;]</span> </div>
+            
+            <div class="card-body"></div>
+            <div class="card-footer"></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Tesla Coil</span>
+                <span class="card-cat">WEAPON</span>
+            </div>
+            <div class="card-stats"><span class="badge"><b>Category:</b> Cyberweapons</span> <span class="badge"><b>Damage:</b> 5S(e)</span> <span class="badge"><b>Ap:</b> 0</span> <span class="badge"><b>Attack Rating:</b> 8/10*/-/-/-</span> <span class="badge"><b>Cost:</b> 0</span> <span class="badge"><b>Avail:</b> 1</span> <span class="badge"><b>Source:</b> body_shop</span> <span class="badge"><b>Mode:</b> SS</span> <span class="badge"><b>Max Range:</b> 20m</span> <span class="badge"><b>Area Effect:</b> Cone (Flamethrower rules)</span> <span class="badge"><b>Is Vehicle Mounted:</b> True</span> <span class="badge"><b>Accessories:</b> [&#x27;MAA Cyberarm Mount (+2 AR)&#x27;]</span> </div>
+            
+            <div class="card-body">## Tesla Coil
+
+After Ares introduced the Scylla, it didn’t take long for other weapons manufacturers to reverse-engineer their marvel of directed lightning. Although the term “tesla coil” isn’t strictly accurate, it’s stuck as a brand-agnostic description of the cyber implant version of this weapon. A tesla coil projects electrical energy in a spray attack, much like a flamethrower. They prodigiously consume energy and require battery packs; the </div>
+            <div class="card-footer">[Body Shop, Page 1]</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Monofilament Whip</span>
+                <span class="card-cat">WEAPON</span>
+            </div>
+            <div class="card-stats"><span class="badge"><b>Category:</b> Melee</span> <span class="badge"><b>Damage:</b> 6P</span> <span class="badge"><b>Ap:</b> 0</span> <span class="badge"><b>Attack Rating:</b> 14/-/-/-/-</span> <span class="badge"><b>Cost:</b> 0</span> <span class="badge"><b>Avail:</b> 6I</span> <span class="badge"><b>Source:</b> core</span> <span class="badge"><b>Wireless On:</b> True</span> <span class="badge"><b>Is Vehicle Mounted:</b> True</span> <span class="badge"><b>Accessories:</b> [&#x27;Fingertip Cyberarm Mount (+2 AR)&#x27;, &#x27;Wireless ON (+2 AR)&#x27;]</span> </div>
+            
+            <div class="card-body">## Monofilament Whip
+
+Striking fear in the hearts of those who have warily watched its serpentine glow since the 2050s. In the hands of a trained user, this terrifying weapon can cut through armor, flesh, and bone as easy as butter with every millimeter of its two meters of monofilament line. In the wrong hands, or even with a bad twist of a skilled wrist, that line can send you to the street doc looking for a new limb. The whip is stored in the </div>
+            <div class="card-footer">[Berlin Edition, Page 12]</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Dagger of the Sacred Rose (+1 Weapon Focus)</span>
+                <span class="card-cat">WEAPON</span>
+            </div>
+            <div class="card-stats"><span class="badge"><b>Damage:</b> 2P</span> <span class="badge"><b>Attack Rating:</b> 9/1/-/-/-</span> </div>
+            
+            <div class="card-body"></div>
+            <div class="card-footer"></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Amalgam Cestas (Stun)</span>
+                <span class="card-cat">WEAPON</span>
+            </div>
+            <div class="card-stats"><span class="badge"><b>Damage:</b> 4S(e)</span> <span class="badge"><b>Attack Rating:</b> 5/-/-/-/-</span> <span class="badge"><b>Personalized Grip:</b> True</span> <span class="badge"><b>Accessories:</b> [&#x27;Personalized Grip&#x27;]</span> <span class="badge"><b>Notes:</b> Amalgam Tech Cestas; overrides magical immunity to normal weapons</span> </div>
+            
+            <div class="card-body"></div>
+            <div class="card-footer"></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Amalgam Cestas (Phys)</span>
+                <span class="card-cat">WEAPON</span>
+            </div>
+            <div class="card-stats"><span class="badge"><b>Damage:</b> 3P</span> <span class="badge"><b>Attack Rating:</b> 6/-/-/-/-</span> <span class="badge"><b>Personalized Grip:</b> True</span> <span class="badge"><b>Accessories:</b> [&#x27;Personalized Grip&#x27;]</span> <span class="badge"><b>Notes:</b> Amalgam Tech Cestas; overrides magical immunity to normal weapons</span> </div>
+            
+            <div class="card-body"></div>
+            <div class="card-footer"></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Nissan Samurai</span>
                 <span class="card-cat">VEHICLE</span>
             </div>
-            <div class="card-stats"><span class="badge"><b>Id:</b> pack_veh_nissan_samurai</span> <span class="badge"><b>Name:</b> Pack Veh Nissan Samurai</span> <span class="badge"><b>Category:</b> Packs-Vehicles</span> <span class="badge"><b>Body:</b> 0</span> <span class="badge"><b>Armor:</b> 0</span> <span class="badge"><b>Sensor:</b> 0</span> <span class="badge"><b>Seats:</b> 1</span> <span class="badge"><b>Cost:</b> 0</span> <span class="badge"><b>Avail:</b> 1</span> <span class="badge"><b>Source:</b> companion</span> </div>
+            <div class="card-stats"><span class="badge"><b>Category:</b> Drones</span> <span class="badge"><b>Handling:</b> 3/4</span> <span class="badge"><b>Speed:</b> 30</span> <span class="badge"><b>Accel:</b> 10</span> <span class="badge"><b>Body:</b> 6</span> <span class="badge"><b>Armor:</b> 6</span> <span class="badge"><b>Sensor:</b> 2</span> <span class="badge"><b>Seats:</b> 1</span> <span class="badge"><b>Cost:</b> 0</span> <span class="badge"><b>Avail:</b> 2</span> <span class="badge"><b>Source:</b> core</span> <span class="badge"><b>Pilot:</b> 3</span> <span class="badge"><b>Handling On:</b> 3</span> <span class="badge"><b>Handling Off:</b> 4</span> <span class="badge"><b>Accel On:</b> 10</span> <span class="badge"><b>Accel Off:</b> 10</span> <span class="badge"><b>Speed Interval On:</b> 10</span> <span class="badge"><b>Page:</b> 6WC 137</span> </div>
+            
             <div class="card-body">## Anthro
 
 ## Nissan Samurai/Oni
 
-Two legs are not better than four when talking drone design. The Nissan Shogun first took the niche fame of the Ares Duelist and made a design far superior, though still limited by its metahuman-like frame, but the Samurai and Oni blended metahuman with…well, something else. The Samurai falls in the medium-size category, while the Oni is large. Both are specifical</div>
+Two legs are not better than four when talking drone design. The Nissan Shogun first took the niche fame of the Ares Duelist and made a design far superior, though still limited by its metahuman-like frame, but the Samurai and Oni blended metahuman with…well, something else. The Samurai falls in the medium-size category, while the Oni is large. Both are specifically outfitted when ordered from Nissan with a quart</div>
             <div class="card-footer">[Berlin Edition, Page 12]</div>
         </div>
         
         <div class="card">
             <div class="card-header">
-                <span class="card-title">Mct Gnat</span>
+                <span class="card-title">MCT Gnat</span>
                 <span class="card-cat">VEHICLE</span>
             </div>
-            <div class="card-stats"><span class="badge"><b>Id:</b> mct_gnat</span> <span class="badge"><b>Name:</b> Mct Gnat</span> <span class="badge"><b>Category:</b> Drones</span> <span class="badge"><b>Body:</b> 0</span> <span class="badge"><b>Armor:</b> 0</span> <span class="badge"><b>Sensor:</b> 0</span> <span class="badge"><b>Seats:</b> 1</span> <span class="badge"><b>Cost:</b> 0</span> <span class="badge"><b>Avail:</b> 2</span> <span class="badge"><b>Source:</b> core</span> </div>
+            <div class="card-stats"><span class="badge"><b>Category:</b> Drones</span> <span class="badge"><b>Handling:</b> 3</span> <span class="badge"><b>Speed:</b> 30</span> <span class="badge"><b>Accel:</b> 4</span> <span class="badge"><b>Body:</b> 0</span> <span class="badge"><b>Armor:</b> 0</span> <span class="badge"><b>Sensor:</b> 1</span> <span class="badge"><b>Seats:</b> 1</span> <span class="badge"><b>Cost:</b> 0</span> <span class="badge"><b>Avail:</b> 2</span> <span class="badge"><b>Source:</b> core</span> <span class="badge"><b>Pilot:</b> 2</span> <span class="badge"><b>Handling On:</b> 3</span> <span class="badge"><b>Handling Off:</b> 3</span> <span class="badge"><b>Accel On:</b> 4</span> <span class="badge"><b>Accel Off:</b> 4</span> <span class="badge"><b>Speed Interval On:</b> 10</span> <span class="badge"><b>Page:</b> CRB 299</span> </div>
+            
             <div class="card-body">## Winged
 
 ## MCT Gnat
@@ -165,15 +475,18 @@ Tiny and slow, but indistinguishable from an insect without a microscope or visi
         
         <div class="card">
             <div class="card-header">
-                <span class="card-title">Fb Sky Commander</span>
+                <span class="card-title">FB Sky Commander</span>
                 <span class="card-cat">VEHICLE</span>
             </div>
-            <div class="card-stats"></div>
+            <div class="card-stats"><span class="badge"><b>Body:</b> 4</span> <span class="badge"><b>Armor:</b> 2</span> <span class="badge"><b>Pilot:</b> 4</span> <span class="badge"><b>Sensor:</b> 5</span> <span class="badge"><b>Speed:</b> 190</span> <span class="badge"><b>Handling On:</b> 4</span> <span class="badge"><b>Handling Off:</b> 4</span> <span class="badge"><b>Accel On:</b> 20</span> <span class="badge"><b>Accel Off:</b> 20</span> <span class="badge"><b>Speed Interval On:</b> 30</span> <span class="badge"><b>Page:</b> DC 116</span> </div>
+            
             <div class="card-body">## Drones
 
 We use a lot of drones. We’ve probably got as many drones as we do wagons, if not more. I should point out that we lost surprisingly few drones during the Renraku Incident, so many of our drones are a few years old at this point. But don’t fix what ain’t broke.
 
-We use the Ajax for our primary ground combat drone, usually packing machine guns or autocannons, as they act in a direct acti</div>
+We use the Ajax for our primary ground combat drone, usually packing machine guns or autocannons, as they act in a direct action role. As
+
+with most vehicles, the missile tubes</div>
             <div class="card-footer">[Deadly Arts, Page 1]</div>
         </div>
         
@@ -182,9 +495,10 @@ We use the Ajax for our primary ground combat drone, usually packing machine gun
                 <span class="card-title">Shiawase Butler</span>
                 <span class="card-cat">VEHICLE</span>
             </div>
-            <div class="card-stats"></div>
+            <div class="card-stats"><span class="badge"><b>Body:</b> 4</span> <span class="badge"><b>Armor:</b> 0</span> <span class="badge"><b>Pilot:</b> 2</span> <span class="badge"><b>Sensor:</b> 3</span> <span class="badge"><b>Speed:</b> 8</span> <span class="badge"><b>Handling On:</b> 4</span> <span class="badge"><b>Handling Off:</b> 5</span> <span class="badge"><b>Accel On:</b> 5</span> <span class="badge"><b>Accel Off:</b> 5</span> <span class="badge"><b>Speed Interval On:</b> 5</span> <span class="badge"><b>Page:</b> DC 116</span> </div>
+            <div class="card-mods"><b>Mods:</b> Increased Structural Integrity 2, Secondary Propulsion (Rotor), Increased Sensors 3, Retractable Skates, Satellite Link</div>
             <div class="card-body"></div>
-            <div class="card-footer"></div>
+            <div class="card-footer">[DC 116]</div>
         </div>
         
         <div class="card">
@@ -192,19 +506,21 @@ We use the Ajax for our primary ground combat drone, usually packing machine gun
                 <span class="card-title">Federated-Boeing Sky Commander (Seattle Retrans Relay)</span>
                 <span class="card-cat">VEHICLE</span>
             </div>
-            <div class="card-stats"></div>
+            <div class="card-stats"><span class="badge"><b>Body:</b> 3</span> <span class="badge"><b>Armor:</b> 0</span> <span class="badge"><b>Pilot:</b> 3</span> <span class="badge"><b>Sensor:</b> 3</span> <span class="badge"><b>Speed:</b> 120</span> <span class="badge"><b>Handling On:</b> 4</span> <span class="badge"><b>Handling Off:</b> 4</span> <span class="badge"><b>Accel On:</b> 10</span> <span class="badge"><b>Accel Off:</b> 10</span> <span class="badge"><b>Speed Interval On:</b> 20</span> <span class="badge"><b>Page:</b> 6WB 288 / DC 122</span> </div>
+            <div class="card-mods"><b>Mods:</b> Retrans Unit, Satellite Link, RAM Plating 4, Enhanced Sensors 3, ECM 6, Integrated Matrix Device Dock, M-TOC II Repository &amp; Software Tags, Rating 2 Framework Host Repository (Scale 1 Micro, Grade 2 Default)</div>
             <div class="card-body"></div>
-            <div class="card-footer"></div>
+            <div class="card-footer">[6WB 288 / DC 122]</div>
         </div>
         
         <div class="card">
             <div class="card-header">
-                <span class="card-title">Shiawase Man-At-Arms</span>
+                <span class="card-title">Shiawase Man-at-Arms</span>
                 <span class="card-cat">VEHICLE</span>
             </div>
-            <div class="card-stats"></div>
+            <div class="card-stats"><span class="badge"><b>Body:</b> 10</span> <span class="badge"><b>Armor:</b> 8</span> <span class="badge"><b>Pilot:</b> 2</span> <span class="badge"><b>Sensor:</b> 2</span> <span class="badge"><b>Speed:</b> 10</span> <span class="badge"><b>Handling On:</b> 3</span> <span class="badge"><b>Handling Off:</b> 3</span> <span class="badge"><b>Accel On:</b> 5</span> <span class="badge"><b>Accel Off:</b> 5</span> <span class="badge"><b>Speed Interval On:</b> 5</span> <span class="badge"><b>Page:</b> DC 116</span> </div>
+            <div class="card-mods"><b>Mods:</b> Weapon Mount (Heavy), Pop-Out Concealment (Large), Armor Increase 5, Secondary Propulsion (Rotor), Increased Sensors 3, Retractable Skates, Satellite Link</div>
             <div class="card-body"></div>
-            <div class="card-footer"></div>
+            <div class="card-footer">[DC 116]</div>
         </div>
         
     </div>
