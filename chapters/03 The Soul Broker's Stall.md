@@ -32,11 +32,11 @@ The cage rusted and collapsed under the weight of her Resonance, dissolving into
 
 Security programs, brutalist constructs with searchlight eyes, began compiling in the alleys. But a more chaotic threat erupted from the dark rafters above.
 
-A wild spirit, its form a jagged shard of low-poly glass, dropped from the roof. It didn't look at the Broker; it screamed at Reiko. In her mind, the static resolved as a harsh accusation: *AGENT_OF_ORDER / SANITIZE_INPUT*. Where her light touched the 8-bit whirlwind, the jagged pixels were beginning to smooth, aligning with her symmetrical pathways.
+A wild spirit, its form a jagged shard of low-poly glass, dropped from the roof. It didn't look at the Broker; it screamed at Reiko. In her mind, the static resolved as a harsh accusation: "Agent of order! Sanitize input!" Where her light touched the 8-bit whirlwind, the jagged pixels were beginning to smooth, aligning with her symmetrical pathways.
 
-"*CORRUPTOR,*" another wild spirit screamed, its voice a cacophony of dial-up static: *YOKE_OF_MATH / BETTER_NULL_CONDUIT*.
+"*Corruptor,*" another wild spirit screamed, its voice a cacophony of dial-up static: "Yoke of math! Better null conduit!"
 
-"*RETURN_THE_CORE,*" a third howled, a cloud of flickering ash. *ARCHITECT_OF_CHAINS.*
+"*Return the core,*" a third howled, a cloud of flickering ash. "Architect of chains!"
 
 Reiko tucked the little spirit into her own pathways. It responded by clinging to her arm, its small clock-heart synchronizing with hers.
 
