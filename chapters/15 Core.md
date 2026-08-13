@@ -8,7 +8,7 @@ The deep-sea fiber lines of the Atlantic ripped her spirit into shredded packets
 
 This was a major error, as she noted a dockworker staring at her. She had failed to run a pre-extraction scan of the immediate coordinates, an unacceptable lapse of operational security. She flagged the oversight for immediate review, classifying the worker's presence as an invasive statistical anomaly to be bypassed as quickly as possible. His green-stained teeth and the hand tremor of an active BTL loop indicated a high probability of unpredictable behavior.
 
-"Lady," the man stammered, stepping back. "Did you... ship yourself freight?"
+"Lady," the man stammered, stepping back. "Did you ship yourself freight?"
 
 Reiko bypassed polite words. She stood her half-assembled chassis up, the exposed actuators in her torso humming as they self-calibrated. "This unit is private property," she said through the drone's speaker, her voice flat, lacking any of the warmth she used in the bar. "Clear the zone."
 
@@ -40,7 +40,7 @@ Reiko's skin pulsed with neon-indigo light. "Your former companion," she sent, p
 
 Several cycles passed as Belle processed the input. "Huh," Belle returned without emotional resonance. "I didn't think he was the type to share that sort of data."
 
-"He's not," Reiko said along their open thread. "He doesn't... broadcast much of his internal state."
+"He's not," Reiko said along their open thread. "He does not broadcast much of his internal state."
 
 Belle looked into the rear-view mirror, reorienting her perception on Reiko's being. "The mighty Mississippi has moved, eh?" She paused, her thread lingering in a way that mimicked human contemplation, an echo of the metahuman patterns she guided daily. "I got a packet from a friend at Sector 213. So you're the one he's linklocked with."
 
@@ -48,7 +48,7 @@ Reiko's circuits flared. She looked away from Belle, attempting to regain contro
 
 "Does that happen every time?" Belle asked, her transmission amplitude softening.
 
-Reiko nodded, her porcelain jaw tight as she isolated a sector overload in her emotional core. "My core architecture is derived from a Resonance well. It... it's not optimized for these classes of stimulus. I apologize."
+Reiko nodded, her porcelain jaw tight as she isolated a sector overload in her emotional core. "My core architecture is derived from a Resonance well. It is not optimized for these classes of stimulus. I apologize."
 
 "Don't bother," Belle said. "I'm not exactly configured for empathy subroutines myself. Besides, your core is what it is. You can't rewrite your root."
 

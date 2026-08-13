@@ -104,7 +104,7 @@ Janie looked at their joined hands, her brow furrowed. She didn't smile, nor did
 
 "Only if you have clean data," Reiko said, but the playfulness had drained from her voice.
 
-Janie slowly released Reiko's hand. The warmth vanished instantly, her virtual skin cooling to the clearing's default registry. Across Reiko’s vision, Janie’s bio-telemetry spiked, erratic neural pulses leaking from her physical body three miles away. "Miss Reiko... We have to go back, don't we?" she asked, her voice small. "To the alley. To the rain."
+Janie slowly released Reiko's hand. The warmth vanished instantly, her virtual skin cooling to the clearing's default registry. Across Reiko’s vision, Janie’s bio-telemetry spiked, erratic neural pulses leaking from her physical body three miles away. "Miss Reiko, we have to go back, don't we?" she asked, her voice small. "To the alley. To the rain."
 
 "Yes," Reiko transmitted with a tag of sorrow. "The River People and I cannot sustain this forever."
 

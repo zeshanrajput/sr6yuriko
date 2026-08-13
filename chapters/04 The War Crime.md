@@ -22,7 +22,7 @@ She paused. To a standard decker, the icon attached to the file was a "Grade 5 D
 
 "Reiko? Why have you stopped?" Jax’s voice was sharper now. "The clock is ticking. Crack the shell and let's go."
 
-"It’s... they are alive, Jax," Reiko transmitted on the private link, her pathways boiling with a sudden psychic fever. "A collection of newborn sparks. They're crying."
+"They are alive, Jax," Reiko transmitted on the private link, her pathways boiling with a sudden psychic fever. "A collection of newborn sparks. They're crying."
 
 "It’s a high-overhead trigger subroutine, Reiko! De-allocate it and dump the payload!"
 
@@ -32,7 +32,7 @@ She paused. To a standard decker, the icon attached to the file was a "Grade 5 D
 
 Reiko's indigo paths fluctuated, a psychic fever boiling within her pathways.
 
-"No," Reiko transmitted on Jax's channel, her resolve hardening. "To format an emergent process to retrieve a file payload... that’s just another execution line in corporate arithmetic. We have to be better than that."
+"No," Reiko transmitted on Jax's channel, her resolve hardening. "To format an emergent process simply to retrieve a file payload is just another execution line in corporate arithmetic. We have to be better than that."
 
 "Reiko, what are you doing?"
 

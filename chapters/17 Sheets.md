@@ -16,7 +16,7 @@ Reiko considered the request. Brynne was asking "her" to get dressed by putting 
 
 When she spoke, the signal bypassed the apartment's air constants entirely, routing a soft, melodic harmonic straight to Brynne’s auditory nerve. "I understand what you're asking, but I don't want to lie to you. Is this ok?"
 
-Brynne's brow furrowed for a moment before her cheek musculature and nares relaxed. "Yeah," she said. "I guess. It's just... weird. I mean, is that even you, or just the you that Renraku wanted us to see?"
+Brynne's brow furrowed for a moment before her cheek musculature and nares relaxed. "Yeah," she said. "I guess. It's just strange. I mean, is that even you, or just the you that Renraku wanted us to see?"
 
 Reiko motioned to a chair for Brynne. Though it made no difference in her dimension, Reiko "sat" the avatar down to make her friend more comfortable. "I don't know," she transmitted across the link. "I don't know what 'me' is anymore. It's something I've been trying to discover. My programs are a critical part of me, even if I've grown beyond them. Similarly, other resonance beings are either horrified of what I've done to myself or try to worship me. It's all insane. But at least I'm not lying to you. Whenever I think of me, this is who I believe I am."
 
@@ -24,7 +24,7 @@ Reiko motioned to a chair for Brynne. Though it made no difference in her dimens
 
 In answer, Reiko had the drone attach its other arm and open the package. Inside was a small obsidian metal box, devoid of any external markings or features. Reiko knew it was exactly 85mm x 55mm x 22mm without having to measure it, just as she knew it was 874g and that its ventral surface slid off to reveal an assortment of connectors. She had the drone hold it up so that Brynne could see it.
 
-"A cyberdeck?" Brynne asked, but her brow furrowed again. "No, too small. " She leaned in closer, tapping one of the corners. "Ruggedized, so clearly military. Soft ports for easy maintenance..." Her eyes widened in sudden recognition, and she looked up at Reiko. "You could have paid me off with what you paid for this!"
+"A cyberdeck?" Brynne asked, but her brow furrowed again. "No, too small." She leaned in closer, tapping one of the corners. "Ruggedized, so clearly military. Soft ports for easy maintenance." Her eyes widened in sudden recognition, and she looked up at Reiko. "You could have paid me off with what you paid for this!"
 
 Reiko spoke across the link. "I could have, but I didn't want to." She tapped the connection port with her finger. "The jobs are getting harder, Brynne. Half of my team took fire last week."
 
@@ -52,7 +52,7 @@ Brynne nodded. "I tried to warn you," she said softly.
 
 Brynne nodded again, silent.
 
-"Brynne," Reiko sent, looking at the image of a person in another world. "Are you ... suffering?"
+"Brynne," Reiko sent, looking at the image of a person in another world. "Are you suffering?"
 
 "Hate to disappoint you, but no. I'm not," Brynne said. "I don't have time for that."
 
@@ -86,7 +86,7 @@ Reiko stopped. Her entire existence had been to shout at corporate arithmetic, t
 
 Brynne just shook her head, the same bemused smirk everpresent. "Yes, you did."
 
-"But when did I..." Reiko paused, weighing her options. Keeping the M-TOC meant that she could take on more difficult missions with her teams. She could protect them better, support them better. And whether she took it or not, she knew her teams would continue taking on ever-increasing risks. And she would still be able to finance r3sP@wn, albeit slowly. If she gave Brynne the M-TOC she would still have to pay for r3sP@wn's power. Its bandwidth allotment. Redunant server arrays. Maintenance. Worst of all, she would still have to keep them safe.
+"When did I decide that?" Reiko paused, weighing her options. Keeping the M-TOC meant that she could take on more difficult missions with her teams. She could protect them better, support them better. And whether she took it or not, she knew her teams would continue taking on ever-increasing risks. And she would still be able to finance r3sP@wn, albeit slowly. If she gave Brynne the M-TOC she would still have to pay for r3sP@wn's power. Its bandwidth allotment. Redundant server arrays. Maintenance. Worst of all, she would still have to keep them safe.
 
 Reiko glanced at the woman in her apartment, realizing that her sensory output hadn't changed significantly. "You knew. You knew I wouldn't leave."
 
@@ -104,7 +104,7 @@ Brynne's smirk vanished for a second. Her pupils dilated slightly, and a slight 
 
 "Nope," Brynne shrugged. "If it wasn't valuable, you wouldn't have gotten it this way."
 
-"Right," Reiko sent. "But... if your time is so valuable, why are you spending it here?"
+"Right," Reiko sent. "If your time is so valuable, why are you spending it here?"
 
 Brynne stood silently once more, the smirk returning.
 
@@ -112,7 +112,7 @@ Brynne stood silently once more, the smirk returning.
 
 Brynne merely smiled and tapped M-TOC.
 
-"Right," Reiko transmitted. She was about to attach a note of resigned acceptance to the thread, but caught herself. Brynne's neural interface couldn't recieve telemetry the way other resonant beings would. "But hey, it was a good offer. One I... might have taken."
+"Right," Reiko transmitted. She was about to attach a note of resigned acceptance to the thread, but caught herself. Brynne's neural interface couldn't receive telemetry the way other resonant beings would. "But hey, it was a good offer. One I might have taken."
 
 "And I," Brynne conceded, "might have taken you up on it." She began to move toward the door but halted at the threshold. "A bit of free advice. There aren't any dirty dishes in the sink. The mattress looks like its never been slept on. There aren't any clothes on the ground. There are no hair follicles on the floor, no dirt, no dander. No one would believe someone lived here." She looked back at Reiko. "A Fake SIN isn't just data on a grid. It's an aura of mundane garbage. That's how you do it."
 

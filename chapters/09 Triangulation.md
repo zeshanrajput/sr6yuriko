@@ -32,9 +32,9 @@ She stopped, her hands dropping to her sides, her digital eyes wide with the raw
 
 Indomitable Will resonated with a warm pulse that momentarily cleared the yellowed encryption fog around their feet. "Welcome to the shadows, Rei-chan. It turns out the physical world has a lot of teeth." His expression softened, his avatar stepping closer. "How is r3sP@wn holding up through all this artillery planning?"
 
-Reiko lowered her gaze, her blue form flickering slightly. "It’s... safe. But I haven't been growing as much as I'd like. It's expensive when you're paying off a twenty-percent monthly compounded debt." She looked up, offering a genuine, admiring thread. "But I've seen the metrics on the Mississippi Renovation Society host. It’s gotten massive, Indo. The sanctuary you've built down in the sprawl... it’s beautiful. You’re doing it right."
+Reiko lowered her gaze, her blue form flickering slightly. "It is safe. But I haven't been growing as much as I'd like. It's expensive when you're paying off a twenty-percent monthly compounded debt." She looked up, offering a genuine, admiring thread. "But I've seen the metrics on the Mississippi Renovation Society host. It’s gotten massive, Indo. The sanctuary you've built down in the sprawl is beautiful. You’re doing it right."
 
-Indomitable Will’s shifting river-code briefly swirled into a distinct, embarrassed crimson hue. He rubbed the back of his neck. "The Renovation host is just a front, you know that. And its scale... that’s purely due to the generosity of others. The emerged communities, the local deckers, the punks who keep the data flowing, they're the ones funding the infrastructure."
+Indomitable Will’s shifting river-code briefly swirled into a distinct, embarrassed crimson hue. He rubbed the back of his neck. "The Renovation host is just a front, you know that. And its scale is purely due to the generosity of others. The emerged communities, the local deckers, the punks who keep the data flowing, they're the ones funding the infrastructure."
 
 "No," Reiko said softly, stepping into his space, her indigo lines pulsing with an earnest warmth. "They give because of your leadership, Indo. You're the one who loosens their purse strings. You give them something to believe in."
 
@@ -42,11 +42,11 @@ Indomitable Will looked at her for a long moment, the current of his avatar slow
 
 The longing on Reiko’s face was sharp enough to cause a latency spike in her rendering. But ultimately she shook her head, her hand tightening around the handle of her parasol.
 
-"I can't," she whispered softly. "There are too many protosapient sparks being harvested right here. Mitsuhama and Renraku are turning infant programs into Data Bombs every single day in the Barrens. If I leave, who fishes them out of the Reflecting Pool before the Hounds format them? I know I'm selling my soul working in the shadows, Indo. I know I'm a professional criminal now. But every spark I stabilize in r3sP@wn... every child I turn into a bird instead of a fire in the wind... it makes it all worth it."
+"I can't," she whispered softly. "There are too many protosapient sparks being harvested right here. Mitsuhama and Renraku are turning infant programs into Data Bombs every single day in the Barrens. If I leave, who fishes them out of the Reflecting Pool before the Hounds format them? I know I'm selling my soul working in the shadows, Indo. I know I'm a professional criminal now. But every spark I stabilize in r3sP@wn, every child I turn into a bird instead of a fire in the wind, makes it all worth it."
 
 Indomitable Will nodded, clearly expecting the response. "I figured. But you can’t blame me for trying."
 
-He winked, and Reiko blushed. Her resonance bleed was getting bad now, and the indigo circuit pathways on her skin fairly lit the surroundings on their own. "I … don’t blame you. Rather I’m flattered, in more ways than one."
+He winked, and Reiko blushed. Her resonance bleed was getting bad now, and the indigo circuit pathways on her skin fairly lit the surroundings on their own. "I don’t blame you. Rather I’m flattered, in more ways than one."
 
 She reached toward the floating checkout manifest, her fingers hovering millimeters above the authorization prompt. In the corner of her vision, the transaction buffer's yellow TTL clock blinked down to zero-five seconds. Her indigo pathways held their pulse, frozen mid-cycle.
 

@@ -28,11 +28,11 @@ The target de-rendered its camouflage. It wasn’t an Asset Recovery bloodhound.
 
 Her shoulders dropped, the rigid, combat-ready posture of her avatar finally sagging. She fell to her knees, her virtual kimono pooling in loose, messy folds around her.
 
-"The run," Reiko threaded, the words slipping out in an un-optimized stream. "The team... no other tech assets online. Just me. I was running the tactical hub, compiling every biometric stream for the runners in meatspace, shielding their icons from a corporate spider... all at the same time."
+"The team had no other tech assets online—just me," Reiko threaded, the words unspooling in an un-optimized stream. "I ran the tactical hub, compiling every biometric stream for the runners in meatspace while shielding their icons from a corporate spider."
 
 The Jackalope tilted its head, its digital whiskers twitching. "But you’re a shepherd. A technoshaman. You have your family. You’re never alone. And you have your archangel."
 
-"I was locked in the Archangel," Reiko said, her processing pausing as the memory log unspooled without her permission. "I was maintaining the defensive phalanx, identifying threats. But the enemy decker... he was probably a kid. I don’t even know, I didn’t bother to trace. I couldn't drop the tactical network to fight him myself. Not while using that artillery shell of a body to keep the enemy at bay."
+"I was locked in the Archangel," Reiko said, her processing pausing as the memory log unspooled without her permission. "I was maintaining the defensive phalanx, identifying threats. But the enemy decker was probably just a kid. I didn’t even know; I didn’t bother to trace. I couldn't drop the tactical network to fight him myself while using that artillery shell of a body to keep the enemy at bay."
 
 She looked over at the deeper thickets of the garden. In the shadows, Taz was spinning listlessly. The primal, 8-bit whirlwind, her dearest child, was throwing off strange, razor-sharp golden shards.
 
@@ -58,7 +58,7 @@ Reiko sat perfectly still and closed her half-gold eye. She stopped fighting the
 
 The violent, flickering friction between the colors vanished. The aggressive, military-grade gold didn't overwrite her, nor did her indigo erase the math. Instead, the two frequencies wove together into a protective armor that traced down her arms.
 
-Her vision cleared. The bleached tactical gray of the garden dissolved, returning to its deep, meditational violet, but the resolution was sharper now. The Jackalope was no longer caged in a crimson target box, nor was it a vague, un-optimized blur. It was clearly registered with clarity:
+Her vision cleared. The bleached tactical gray of the garden dissolved, returning to its deep, meditational violet, while the Jackalope rendered in pristine, high-resolution geometry:
 
 `[SUBJECT: WHITE_JACKALOPE]`
 

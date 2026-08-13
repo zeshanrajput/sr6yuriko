@@ -15,48 +15,48 @@
       <attributes id="RESONANCE" value="8" />
    </attributes>
    <qualities>
-      <quality lang="en" ref="natural_hacker" uuid="5ccf1d4c-73ac-4cb4-9531-a814418cc07c" />
-      <quality lang="en" ref="technoshaman" uuid="028dec1a-3723-446c-b5ea-9e57c4893669" />
-      <quality lang="en" ref="designer" uuid="8ff2ba87-4ec1-473e-8809-8dbd56b69a4c" />
-      <quality lang="en" ref="sensor_upgrade" uuid="84b1a394-8cfe-4ca3-9ab1-25847ad1361f" />
-      <quality lang="en" ref="pilot_origins" uuid="1c685ea7-ffb2-4d49-826a-f63f76de94a1" />
-      <quality lang="en" ref="buddy_system" uuid="a297e9de-dd7b-46b4-8e51-0bb40e33ee12" />
-      <quality lang="en" ref="sprite_bane" uuid="f1436c2c-fa9f-4768-832d-ab63102306a2">
-         <decision choice="db7e1d8e-0286-446a-9e7f-6d3abf4e445f" value="Primal Sprite" />
+      <quality lang="en" ref="natural_hacker" uuid="ee426fa4-c3f4-454c-a93a-ea4b0254348c" />
+      <quality lang="en" ref="technoshaman" uuid="bbd5489d-3f07-44ba-bbc3-c69d156ed8f0" />
+      <quality lang="en" ref="designer" uuid="74586d37-a262-48ce-b6b5-927a4813840a" />
+      <quality lang="en" ref="sensor_upgrade" uuid="418cdcd8-a139-46a7-a53a-fb3445cb3d14" />
+      <quality lang="en" ref="pilot_origins" uuid="215f8483-014a-4acf-82c3-e17329775921" />
+      <quality lang="en" ref="buddy_system" uuid="d6e6bdf9-a2ab-4674-8b43-1552e7e3e01b" />
+      <quality lang="en" ref="sprite_bane" uuid="0c579c96-4587-4a6e-b34d-399908a431d1">
+         <decision choice="db67545b-01bc-4069-8127-d71b5bba989c" value="Primal Sprite" />
       </quality>
-      <quality lang="en" ref="hooder" uuid="421d585a-e6ac-4b79-a256-3922313a9c3b" value="2" />
+      <quality lang="en" ref="hooder" uuid="8f5c3ffc-26d3-40b1-ad8c-c74ec54a94a5" value="2" />
    </qualities>
    <skills>
-      <skill lang="en" ref="tasking" uuid="88e332fa-0aed-484f-810d-60c7f7cac042" value="6">
-         <decision choice="5831308b-a085-4578-a23b-ba04b0584b26" value="Registering" />
+      <skill lang="en" ref="tasking" uuid="b997ec9a-9f9f-4440-a39f-9b3134d99377" value="6">
+         <decision choice="bbcbc756-4923-4449-9a45-a3e47d850a20" value="Registering" />
       </skill>
-      <skill lang="en" ref="cracking" uuid="1c734938-5c12-4912-a346-6131737db5f1" value="5">
-         <decision choice="0d332c25-3535-4bbd-a695-53ae5c7c927c" value="Hacking" />
+      <skill lang="en" ref="cracking" uuid="50f12afb-d5a3-4fa6-a23b-e7236ef8c987" value="5">
+         <decision choice="2d0eb86a-aaff-414c-9932-b305dbea1109" value="Hacking" />
       </skill>
-      <skill lang="en" ref="electronics" uuid="db225a39-2226-4ddf-9f4c-5eae7adbe67c" value="5">
-         <decision choice="511d219c-f408-483d-b3d6-195110f105c8" value="Software" />
+      <skill lang="en" ref="electronics" uuid="3ce88aa3-f1ee-4666-8b6e-5bcfd435f778" value="5">
+         <decision choice="23292fa0-6e2f-470f-a320-eaa60c5f1fee" value="Software" />
       </skill>
-      <skill lang="en" ref="influence" uuid="61a6a8ce-a3b3-4068-a7de-3ce0f3f35a27" value="1" />
-      <skill lang="en" ref="con" uuid="8cd6de4a-df20-43d6-944c-71976f6bc35a" value="1" />
-      <skill lang="en" ref="language" uuid="0956b6ab-44a2-4949-a7be-7ee598c847ed" value="4" />
+      <skill lang="en" ref="influence" uuid="17a6b39f-5366-4b50-af80-a4ed57f603ad" value="1" />
+      <skill lang="en" ref="con" uuid="5b03929e-c239-4472-b39d-722b024eb49d" value="1" />
+      <skill lang="en" ref="language" uuid="7316e412-e213-471e-bc63-17668d01211f" value="4" />
    </skills>
    <items>
-      <item lang="en" mode="CARRIED" ref="nissansamurai" uuid="04fd49ea-648e-4ef2-9ff4-2fd041e9688e" />
-      <item lang="en" mode="CARRIED" ref="mctgnat" uuid="1aa43b4d-6ca9-4b70-8aa7-530a00244b88" />
-      <item lang="en" mode="CARRIED" ref="boingskycommander" uuid="824a9f15-a8c1-40d5-b7a9-1a7db2b600b0" />
-      <item lang="en" mode="CARRIED" ref="shiawasebdbutler" uuid="f4056a50-11da-45b0-838c-7e7a1f71565c">
+      <item lang="en" mode="CARRIED" ref="nissansamurai" uuid="0e829466-b535-4a48-8c97-d461173a033b" />
+      <item lang="en" mode="CARRIED" ref="mctgnat" uuid="c7902aac-cb21-4ea9-9b34-201de0149986" />
+      <item lang="en" mode="CARRIED" ref="boingskycommander" uuid="e7067e83-8dd6-4527-8adb-3fa2a313b905" />
+      <item lang="en" mode="CARRIED" ref="shiawasebdbutler" uuid="763154cc-7bf1-49ee-9bc7-1e20b124a12c">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="1a6942a9-9b23-484f-92bf-ec9db41010fe" />
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="7d937cc7-5d74-4883-9149-c7729bd98653" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="federatedboeingskycommander_seattle" uuid="fb097cfa-ba68-4abb-bd48-b8e0d4d495f5">
+      <item lang="en" mode="CARRIED" ref="federatedboeingskycommander_seattle" uuid="8a29dbc9-33d1-4224-b41e-997b39eb69db">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="6aa2823c-5583-4679-a510-c6f9e259ec19" />
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="5ff97170-f832-42fe-9aa6-fd73b3017dd0" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="shiawasebdmanatarms" uuid="4883f5cf-d75a-443e-96ba-c5aae85225ae">
+      <item lang="en" mode="CARRIED" ref="shiawasebdmanatarms" uuid="58e02ecd-3ca7-4949-8c58-397ee6424dc7">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="00d6786c-d0ad-486a-89c2-0c781a20c58d" />
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="64239a70-78ad-4307-bd2b-46502467b99d" />
          </accessories>
       </item>
    </items>

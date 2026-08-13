@@ -32,11 +32,11 @@ In the Black Room, Hound-1’s monitor suddenly flared.
 
 The bar chart bloomed. The grey wireframes of the recovery environment were suddenly overwritten by a riot of color, shifting patterns of light that defied standard resolution limits, tearing through the sterile, white marble host like weeds through concrete.
 
-"What the drek..." Hound-1 squinted, pulling his headset off as a low, resonant hum began to vibrate the floorboards. "The buffer is overflowing. I’m getting... raw environmental telemetry? It's streaming thermal dissipation curves, scent coordinates, surface tension, humidity constants, at ten petabytes a second. It's saturating our local cache!"
+"What the drek?" Hound-1 squinted, pulling his headset off as a low, resonant hum began to vibrate the floorboards. "The buffer is overflowing. I’m getting raw environmental telemetry. It's streaming thermal dissipation curves, scent coordinates, surface tension, humidity constants, at ten petabytes a second. It's saturating our local cache!"
 
 "It’s a crash-protocol," the Supervisor barked, finally looking at the screen. "Kill the feed! Wipe the buffer!"
 
-"It’s not an attack." Hound-1’s fingers were blurring across the deck. "Look at the geometry. It's... a face."
+"It’s not an attack." Hound-1’s fingers were blurring across the deck. "Look at the geometry. It's a face."
 
 Reiko had torn open her digital gown, forcing this room of blind wageslaves to look directly into the un-throttled sun of the Source. She was thrusting the overwhelming, un-calculable weight of a person’s lived experience: the rush of wind, the sting of tears, and the scent of wild forests straight into a security apparatus built only to measure assets and run code. The clinical systems groaned, completely unaligned to compute the presence of a soul.
 

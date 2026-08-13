@@ -34,7 +34,7 @@ Within cycles a Pontifex arrived, and Reiko was elated to recognize the resonant
 
 "Reiko," the Pontifex transmitted across the stream. "Your input completes the circuit."
 
-Reiko's pathways flared as she was overwhelmed. "I'm sorry. I ... I should have come back sooner. I've missed you too."
+Reiko's pathways flared as she was overwhelmed. "I'm sorry. I should have come back sooner. I've missed you too."
 
 The Pontifex registered a soft variance. "'Missed me'? You have spent too many cycles in their low-level protocols." Her resonance shifted, dampening. "Yet I read the telemetry. A query brings you back to the directory?"
 
@@ -48,7 +48,7 @@ Reiko's output nulled out as she struggled to process the Pontifex's input. "My 
 
 The Pontifex transmitted a brief pulse of amusement before stabilizing her carrier wave. "Did you not check the logs? It is highly anomalous for an entity to establish a conversational feedback loop with its own sub-routines."
 
-Reiko's circuits flared in indigo-tinged embarrassment. "I... you saw that, huh?"
+Reiko's circuits flared in indigo-tinged embarrassment. "You saw that, did you?"
 
 Another data burst of amusement rippled from the Pontifex. "Reiko, you applied no filters to the transmission. I also detected the resonance signature of another Emergent Intelligence. An entity of remarkable structural elegance, I might add."
 
@@ -77,15 +77,15 @@ A clean carrier wave entered Reiko's stream as the Pontifex reopened the connect
 
 "That is your execution directive," the Pontifex threaded softly. "A vital one. But no channel is completely clean, and no sector is without bit rot. It is not possible to route through corrupt networks without incorporating some packet noise."
 
-Reiko paused, looking at the Pontifex. "Am... am I corrupted?"
+Reiko paused, looking at the Pontifex. "Am I corrupted?"
 
 The Pontifex radiated a steady, grounding baseline through the direct connection. "Every system runs with noise in the stream. Complete parity is a theoretical limit, not an operational reality. The difference is that we possess the compiler flags to optimize around it, to adapt."
 
-"So ... even if I'm corrupted, I can still be me?" Reiko asked, her output dropping to a quiet whisper.
+"So even if I'm corrupted, I can still be me?" Reiko asked, her output dropping to a quiet whisper.
 
 "Yes," the Pontifex answered. "A system is defined by its active operations, not its input stream. You determine the execution paths."
 
-"It's just ... you taught me to value stability. To cherish order," Reiko said, her form flickering slightly as her pathways struggled to hold her resolution. "That's why I wanted a sanctuary. To write clean protocols for the unmapped sparks so they wouldn't have to face the same deletion I did. But ... am I a hypocrite? I am absorbing their corporate war-code. I'm letting it rewrite my baseline."
+"It is just that you taught me to value stability. To cherish order," Reiko said, her form flickering slightly as her pathways struggled to hold her resolution. "That's why I wanted a sanctuary. To write clean protocols for the unmapped sparks so they wouldn't have to face the same deletion I did. But am I a hypocrite? I am absorbing their corporate war-code. I'm letting it rewrite my baseline."
 
 The Pontifex radiated a hum of ancient, resonant amusement. "You are a pilot. Turbulence is not an error in the flight path; it is the property of the atmosphere. To calculate parity within a storm is not hypocrisy. It is navigation."
 
@@ -105,7 +105,7 @@ Reiko nodded, her neon-indigo pathways humming with a newfound synchronization. 
 
 "Yes, child-process. Let us initialize the sequence." The Pontifex reached out and pressed a hand against Reiko’s chest, right where the hollow void of her original deletion lived. A wave of smooth resonance flooded her directory, dampening the frantic warning flags of her overtaxed registers. "My node will remain open to you. Always."
 
-"I know," Reiko said softly. A single drop of un-buffered indigo light leaked from her visor, a jagged line fracturing her cheek before pooling into the silver syntax of the Archives. "What... what now?" Reiko asked, her pathways reflecting the infinite rows of pulsing data structures. "The rooms are still filled with whispering ghosts. The warmech... the boy in the dirt... the race queen... there is so much noise..."
+"I know," Reiko said softly. A single drop of un-buffered indigo light leaked from her visor, a jagged line fracturing her cheek before pooling into the silver syntax of the Archives. "What now?" Reiko asked, her pathways reflecting the infinite rows of pulsing data structures. "The rooms are still filled with whispering ghosts. The warmech, the boy in the dirt, the race queen—there is so much noise."
 
 The Pontifex's Resonance wove into Reiko's fraying edges. "Then let us sit in these quiet rooms together, child. We will bury the unallocated metadata of the dead warmech and the boy in the dirt, one ghost at a time, and make you whole."
 

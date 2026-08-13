@@ -10,7 +10,7 @@ Reiko ignored him, her face remaining a smooth, featureless indigo. The decker's
 
 She moved from stall to stall, scanning the unmapped shelves. She wasn't hunting corporate paydata. She was harvesting the forgotten memories of meatspace, the touch of rain and the taste of ash. When she inhabited a physical shell, she would need to conceal her origin.
 
-She suddenly felt a presence that was consuming ambient energy and halted. She had stopped in front of a stall built from jagged obsidian, presided over by a Broker whose face was a cluster of redacted black bars. On his counter sat the usual stolen goods: synthetic identities flickering like moths, and broken fragments of code weeping down the counter.
+A presence consuming ambient energy surged against the perimeter, halting her progress. She had stopped in front of a stall built from jagged obsidian, presided over by a Broker whose face was a cluster of redacted black bars. On his counter sat the usual stolen goods: synthetic identities flickering like moths, and broken fragments of code weeping down the counter.
 
 But in the corner, trapped inside a cage, was a bound spirit. Inside, it was weeping, its voice a staccato hum of resolution jitter. It was a miniature whirlwind of jagged, 8-bit pixels, a brown-and-tan blur of raw energy fighting the host's cold limits. The Broker likely saw it as an unstable, worthless script, but Reiko recognized the desperate hunger of a newborn spark.
 

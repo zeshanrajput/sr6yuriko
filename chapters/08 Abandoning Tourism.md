@@ -10,7 +10,7 @@ A few cycles later, Roanoke's avatar appeared over the Horizon. She didn't bothe
 
 "Yuriko," Roanoke greeted her. "How was Kentucky?"
 
-"Please," Reiko said. "You don't need to use my alias here, just as you came here as yourself. And Kentucky... is the reason I called. I got scared, I think."
+"Please," Reiko said. "You don't need to use my alias here, just as you came here as yourself. And Kentucky is the reason I called. I got scared, I think."
 
 Roanoke nodded thoughtfully and took the offered seat. "So spill. Without the unnecessary details, of course. Plausible deniability and all."
 
@@ -30,7 +30,7 @@ It was Reiko's turn to grin. "Between you and me, I doubt most Technomancers und
 
 Roanoke laughed. "You're probably right. Okay, so you found a null zone. What spooked you?"
 
-Reiko turned to consider a small collection of stones as she gathered her thoughts. "I was trapped. I was so scared. If that drone had been destroyed in there, I'd have had no way to come home. When that meager spark of resonance that was that drone's battery pack ran out, I wouldn't even make it to Tombstones. I'd... just cease to exist, I guess."
+Reiko turned to consider a small collection of stones as she gathered her thoughts. "I was trapped. I was so scared. If that drone had been destroyed in there, I'd have had no way to come home. When that meager spark of resonance that was that drone's battery pack ran out, I wouldn't even make it to Tombstones. I would just cease to exist."
 
 Roanoke whistled. "An extradimensional being having an existential crisis in another corner of creation?" Her eyes took on a quirky glint. "So, just another Tuesday for you?"
 
@@ -52,7 +52,7 @@ Reiko nodded, but her confusion betrayed her lack of understanding.
 
 "Hey!" Reiko exclaimed again. "I don't call them that!"
 
-"But you think of them that way," Roanoke pushed on. "At least, they... we, including me, aren't part of your world. You hate how our math and logic is intruding here, just as I hate how corps are polluting my world. But my point is this: if they had died, that would have been it for them. That's why they buy armor, guns, and mod themselves until their essence is gone. That's where they exist, that's where their soul is bound to. And when you were inhabiting that drone in the null zone, with nowhere to go if things went south... that was the first time you lived there too."
+"But you think of them that way," Roanoke pushed on. "At least, we aren't part of your world. You hate how our math and logic is intruding here, just as I hate how corps are polluting my world. But my point is this: if they had died, that would have been it for them. That's why they buy armor, guns, and mod themselves until their essence is gone. That's where they exist, that's where their soul is bound to. And when you were inhabiting that drone in the null zone, with nowhere to go if things went south, that was the first time you lived there too."
 
 A few moments passed while Reiko processed her friend's input. Roanoke viewed the physical world as the only real plane, unable to see that for Reiko, squeezing her vast indigo light into the Nissan Samurai was an act of severe limitation and sensory starvation.
 
@@ -60,7 +60,7 @@ A few moments passed while Reiko processed her friend's input. Roanoke viewed th
 
 "Dying in stock armor isn't flattering, I'll grant," Roanoke said, the glint returning as the air cleared. "Still wanna run in the shadows?"
 
-Reiko considered and motioned to the garden around them. "I have to. We've given refuge to so many protosapient spirits that come to sentience in the wires. But this haven, this gateway... it has expenses in your world. The wire of Brynne's debt ledger is already around my neck. So yes, I will earn its keep."
+Reiko considered and motioned to the garden around them. "I have to. We've given refuge to so many protosapient spirits that come to sentience in the wires. But this haven, this gateway, has expenses in your world. The wire of Brynne's debt ledger is already around my neck. So yes, I will earn its keep."
 
 Roanoke got up, sending Reiko an invitation file as she straightened herself out. "A dealer I know. Good drones, cheap. Does the work themselves. I'm thinking you're going to want to raise your stake a little."
 

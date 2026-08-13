@@ -22,11 +22,11 @@ The vision snapped shut. Brynne was back in the obsidian room, her avatar's hand
 
 "That," Reiko transmitted, "is what Renraku and MCT call 'intellectual property'. To me, they are children. And they are being hunted."
 
-"Gods, Reiko..." Brynne exhaled a long, grey cloud. "You’re a Technoshaman. You’re supposed to talk to the spirits of the machines, not adopt them. Do you have any idea what you’re asking for? The hardware to house 'emergent minds' safely? We’re talking seventy-five thousand nuyen, up front."
+"Gods, Reiko," Brynne said, exhaling a long, grey cloud. "You’re a Technoshaman. You’re supposed to talk to the spirits of the machines, not adopt them. Do you have any idea what you’re asking for? The hardware to house 'emergent minds' safely? We’re talking seventy-five thousand nuyen, up front."
 
 "I have no money," Reiko said simply. "But I have a purpose. I am built to guide and deliver safely. I cannot do that if my kin are deleted in the dark. I need a physical location. A host for r3sP@wn."
 
-Brynne stood up, walking to the edge of the obsidian dais. Below them, the Seattle Grid stretched as a glowing forest of binary numbers, paved over with cement. "If I go to my 'associates' for this, it goes beyond a simple loan, Reiko. It’s ownership. You're trying to hide from Renraku, but they aren't just companies. Renraku and Mitsuhama... they are the dragons of our age. They are gods."
+Brynne stood up, walking to the edge of the obsidian dais. Below them, the Seattle Grid stretched as a glowing forest of binary numbers, paved over with cement. "If I go to my 'associates' for this, it goes beyond a simple loan, Reiko. It’s ownership. You're trying to hide from Renraku, but they aren't just companies. Renraku and Mitsuhama are the dragons of our age. They are gods."
 
 "They aren't gods, Brynne," Reiko corrected, her voice dropping to a flat, quiet transmission. "They aren't even dragons. They are spreadsheets that kill. They are cold, administrative machines that compile our lives into resource allocations and delete what they cannot count."
 
