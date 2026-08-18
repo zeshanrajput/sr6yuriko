@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-dab96f89d24d8a403d78413fa12f2c61.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-703f62f34474d91d69a08ed3e3cdfc58.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-2207aed4506930202bc6cfd5e58b1d36.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -139,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/character_sheet.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Character Sheet</span></a>
+  <a href="../chapters/character_sheet.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Character Dossier &amp; Modular Sheets</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -400,7 +400,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#mct-gnat-microdrone" id="toc-mct-gnat-microdrone" class="nav-link" data-scroll-target="#mct-gnat-microdrone">3. MCT Gnat (Microdrone)</a></li>
   <li><a href="#retractable-skates-alternate-movement" id="toc-retractable-skates-alternate-movement" class="nav-link" data-scroll-target="#retractable-skates-alternate-movement">Retractable Skates Alternate Movement</a></li>
   </ul></li>
-  <li><a href="#standardized-drone-action-pools" id="toc-standardized-drone-action-pools" class="nav-link" data-scroll-target="#standardized-drone-action-pools">Standardized Drone Action Pools</a></li>
+  <li><a href="#standardized-drone-action-pools" id="toc-standardized-drone-action-pools" class="nav-link" data-scroll-target="#standardized-drone-action-pools">Standardized Drone Action Pools</a>
+  <ul class="collapse">
+  <li><a href="#remote-ar-operation-control-device-via-ai-asdf" id="toc-remote-ar-operation-control-device-via-ai-asdf" class="nav-link" data-scroll-target="#remote-ar-operation-control-device-via-ai-asdf">1. Remote AR Operation (Control Device via AI ASDF)</a></li>
+  <li><a href="#inhabited-override-operation-sprite-power-override" id="toc-inhabited-override-operation-sprite-power-override" class="nav-link" data-scroll-target="#inhabited-override-operation-sprite-power-override">2. Inhabited Override Operation (Sprite Power <em>Override</em>)</a></li>
+  </ul></li>
   <li><a href="#controlling-drones-protocols-rules" id="toc-controlling-drones-protocols-rules" class="nav-link" data-scroll-target="#controlling-drones-protocols-rules">Controlling Drones Protocols &amp; Rules</a>
   <ul class="collapse">
   <li><a href="#jumped-in-operation-rigging" id="toc-jumped-in-operation-rigging" class="nav-link" data-scroll-target="#jumped-in-operation-rigging">1. Jumped-In Operation (Rigging)</a></li>
@@ -439,189 +443,30 @@ ul.task-list li input[type="checkbox"] {
 <p>Stat blocks list active drones in official <strong>SR6 Vehicle/Drone Stat Block Order</strong> (Handling, Acceleration, Speed, Body, Armor, Pilot, Sensor).</p>
 <section id="shiawase-butler-anthrodrone" class="level3">
 <h3 class="anchored" data-anchor-id="shiawase-butler-anthrodrone">1. Shiawase Butler (Anthrodrone)</h3>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 30%">
-<col style="width: 38%">
-<col style="width: 30%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">SR6 Attribute</th>
-<th style="text-align: center;">Rating / Value</th>
-<th style="text-align: left;">Applied Modifiers Math &amp; Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong>Handling (HND)</strong></td>
-<td style="text-align: center;"><strong>4 / 5</strong> (Ground) | <strong>5</strong> (Rotor)</td>
-<td style="text-align: left;">On/Off-Road Ground Handling / Rotor Assembly Handling</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Acceleration (ACC)</strong></td>
-<td style="text-align: center;"><strong>5 / 5</strong> (Ground) | <strong>10</strong> (Rotor)</td>
-<td style="text-align: left;">On/Off-Road Ground Accel / Rotor Assembly Accel</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Top Speed (SPD) / Interval</strong></td>
-<td style="text-align: center;"><strong>8 / 5m</strong> (Ground) | <strong>120 / 20m</strong> (Rotor)</td>
-<td style="text-align: left;">Ground Speed &amp; Interval / Rotor Flight Speed &amp; Interval</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Body (BOD)</strong></td>
-<td style="text-align: center;"><strong>6 (7)</strong></td>
-<td style="text-align: left;">Base 4 + Structural (+2) | <strong>7</strong> when inhabited (Home Device Tuning +1 Body)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Armor (ARM)</strong></td>
-<td style="text-align: center;"><strong>10</strong></td>
-<td style="text-align: left;">Base 0 + SkinShield (+2) + RACS (+2) + InvisiShield (+2) + Wrist Shield (+4)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Pilot (PLT)</strong></td>
-<td style="text-align: center;"><strong>2 (8)</strong></td>
-<td style="text-align: left;">Base 2 <em>(Designer +1 = 3)</em> | <strong>8</strong> when inhabited (Sprite Power <em>Override</em>)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Sensor (SEN)</strong></td>
-<td style="text-align: center;"><strong>7</strong></td>
-<td style="text-align: left;">Base 3 + Enhanced Sensors 3 (+3) + Network Sensor Upgrade (+1)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Program Slots</strong></td>
-<td style="text-align: center;"><strong>11</strong></td>
-<td style="text-align: left;">Base PLT / 2 (rounded up: 1) + Software Tags (10)</td>
-</tr>
-</tbody>
-</table>
+<p><em>(Drone ‘butler’ not found in character dossier)</em></p>
 </section>
 <section id="shiawase-man-at-arms-anthrodrone" class="level3">
 <h3 class="anchored" data-anchor-id="shiawase-man-at-arms-anthrodrone">2. Shiawase Man-at-Arms (Anthrodrone)</h3>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 30%">
-<col style="width: 38%">
-<col style="width: 30%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">SR6 Attribute</th>
-<th style="text-align: center;">Rating / Value</th>
-<th style="text-align: left;">Applied Modifiers Math &amp; Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong>Handling (HND)</strong></td>
-<td style="text-align: center;"><strong>3 / 3</strong> (Ground) | <strong>5</strong> (Rotor)</td>
-<td style="text-align: left;">On/Off-Road Ground Handling / Rotor Assembly Handling</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Acceleration (ACC)</strong></td>
-<td style="text-align: center;"><strong>5 / 5</strong> (Ground) | <strong>10</strong> (Rotor)</td>
-<td style="text-align: left;">On/Off-Road Ground Accel / Rotor Assembly Accel</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Top Speed (SPD) / Interval</strong></td>
-<td style="text-align: center;"><strong>10 / 5m</strong> (Ground) | <strong>120 / 20m</strong> (Rotor)</td>
-<td style="text-align: left;">Ground Speed &amp; Interval / Rotor Flight Speed &amp; Interval</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Body (BOD)</strong></td>
-<td style="text-align: center;"><strong>15 (16)</strong></td>
-<td style="text-align: left;">Base 10 + Structural (+5) | <strong>16</strong> when inhabited (Home Device Tuning +1 Body)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Armor (ARM)</strong></td>
-<td style="text-align: center;"><strong>17</strong></td>
-<td style="text-align: left;">Base 8 + Armor Increase 5 (+5) + Wrist Shield (+4)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Pilot (PLT)</strong></td>
-<td style="text-align: center;"><strong>2 (8)</strong></td>
-<td style="text-align: left;">Base 2 <em>(Designer +1 = 3)</em> | <strong>8</strong> when inhabited (Sprite Power <em>Override</em>)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Sensor (SEN)</strong></td>
-<td style="text-align: center;"><strong>6</strong></td>
-<td style="text-align: left;">Base 2 + Enhanced Sensors 3 (+3) + Network Sensor Upgrade (+1)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Program Slots</strong></td>
-<td style="text-align: center;"><strong>11</strong></td>
-<td style="text-align: left;">Base PLT / 2 (rounded up: 1) + Software Tags (10)</td>
-</tr>
-</tbody>
-</table>
+<p><em>(Drone ‘man-at-arms’ not found in character dossier)</em></p>
 </section>
 <section id="mct-gnat-microdrone" class="level3">
 <h3 class="anchored" data-anchor-id="mct-gnat-microdrone">3. MCT Gnat (Microdrone)</h3>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 30%">
-<col style="width: 38%">
-<col style="width: 30%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">SR6 Attribute</th>
-<th style="text-align: center;">Rating / Value</th>
-<th style="text-align: left;">Applied Modifiers Math &amp; Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong>Handling (HND)</strong></td>
-<td style="text-align: center;"><strong>3 / 3</strong></td>
-<td style="text-align: left;">Base On/Off-Road Handling</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Acceleration (ACC)</strong></td>
-<td style="text-align: center;"><strong>4 / 4</strong></td>
-<td style="text-align: left;">Base On/Off-Road Acceleration</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Top Speed (SPD) / Interval</strong></td>
-<td style="text-align: center;"><strong>30 / 10m</strong></td>
-<td style="text-align: left;">Base Top Speed / Interval</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Body (BOD)</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: left;">Microdrone chassis</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Armor (ARM)</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: left;">Unarmored</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Pilot (PLT)</strong></td>
-<td style="text-align: center;"><strong>2</strong></td>
-<td style="text-align: left;">Base 2 Pilot</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Sensor (SEN)</strong></td>
-<td style="text-align: center;"><strong>2</strong></td>
-<td style="text-align: left;">Base 1 + Network Sensor Upgrade (+1)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Program Slots</strong></td>
-<td style="text-align: center;"><strong>1</strong></td>
-<td style="text-align: left;">Base PLT / 2 (rounded up)</td>
-</tr>
-</tbody>
-</table>
+<p><em>(Drone ‘gnat’ not found in character dossier)</em></p>
 </section>
 <section id="retractable-skates-alternate-movement" class="level3">
 <h3 class="anchored" data-anchor-id="retractable-skates-alternate-movement">Retractable Skates Alternate Movement</h3>
-<p>All anthrodrones feature <strong>Retractable Skates</strong> [BS p.&nbsp;47]: * <strong>Activation</strong>: Extending or retracting skates takes a <strong>Minor Action</strong>. * <strong>Movement Rules</strong>: Uses metahuman movement rules: <strong>Walking 10m/rnd</strong>, <strong>Sprinting 30m/rnd</strong>, <strong>+2m per net hit</strong> on Sprinting tests.</p>
+<p>All anthrodrones feature <strong>Retractable Skates</strong> [BS p.&nbsp;47]:</p>
+<ul>
+<li><strong>Activation</strong>: Extending or retracting skates takes a <strong>Minor Action</strong>.</li>
+<li><strong>Movement Rules</strong>: Uses metahuman movement rules: <strong>Walking 10m/rnd</strong>, <strong>Sprinting 30m/rnd</strong>, <strong>+2m per net hit</strong> on Sprinting tests.</li>
+</ul>
 <hr>
 </section>
 </section>
 <section id="standardized-drone-action-pools" class="level2">
 <h2 class="anchored" data-anchor-id="standardized-drone-action-pools">Standardized Drone Action Pools</h2>
+<section id="remote-ar-operation-control-device-via-ai-asdf" class="level3">
+<h3 class="anchored" data-anchor-id="remote-ar-operation-control-device-via-ai-asdf">1. Remote AR Operation (Control Device via AI ASDF)</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 22%">
@@ -640,37 +485,40 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><strong>Drone Piloting / Maneuvering</strong></td>
-<td style="text-align: center;">Maneuvering (7) + Sleaze (9) = <strong>16d6</strong></td>
-<td style="text-align: left;">Base (16) + Diagnosis (+3)</td>
-<td style="text-align: center;"><strong>19d6</strong></td>
+<td style="text-align: center;">Maneuvering + Pilot</td>
+<td style="text-align: left;">Maneuvering 6 + Sleaze/REA 8 + Taz Diagnosis 3 = 17d6</td>
+<td style="text-align: center;"><strong>17d6</strong></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Drone Weapon Attack (Gunnery)</strong></td>
-<td style="text-align: center;">Targeting (7) + Data Processing (7) = <strong>14d6</strong></td>
-<td style="text-align: left;">Base (14) + Teamwork (+4)</td>
-<td style="text-align: center;"><strong>18d6</strong></td>
+<td style="text-align: center;">Targeting + Sensor/DP</td>
+<td style="text-align: left;">Targeting 6 + Data Proc/AGI 6 + Taz Symbiosis 4 = 16d6</td>
+<td style="text-align: center;"><strong>16d6</strong></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Drone Evasion (Defense Test)</strong></td>
-<td style="text-align: center;">Evasion (7) + Sleaze (9) = <strong>16d6</strong></td>
-<td style="text-align: left;">Base (16) + Teamwork (+4)</td>
-<td style="text-align: center;"><strong>20d6</strong></td>
+<td style="text-align: center;">Evasion + Pilot/Sleaze</td>
+<td style="text-align: left;">Evasion 6 + Sleaze/REA 8 + Taz Symbiosis 4 = 18d6</td>
+<td style="text-align: center;"><strong>18d6</strong></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Drone Perception Test</strong></td>
-<td style="text-align: center;">Clearsight (7) + Sensor</td>
-<td style="text-align: left;">Base (7) + Sensor Upgrade (+1) + Teamwork (+4)</td>
-<td style="text-align: center;"><strong>12 + Sensor d6</strong></td>
+<td style="text-align: center;">Clearsight + Sensor</td>
+<td style="text-align: left;">Clearsight 6 + Sensor 2 + Taz Symbiosis 4 = 12d6</td>
+<td style="text-align: center;"><strong>12d6</strong></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Drone Stealth Test</strong></td>
-<td style="text-align: center;">Stealth (7) + Data Processing (7) = <strong>14d6</strong></td>
-<td style="text-align: left;">Base (14) + Tactical Soft Sneak-Sneak (+2) + Teamwork (+4)</td>
-<td style="text-align: center;"><strong>20d6</strong></td>
+<td style="text-align: center;">Stealth + Pilot/DP</td>
+<td style="text-align: left;">Stealth 6 + Data Proc/AGI 6 + Taz Symbiosis 4 + Tactical Soft 2 = 18d6</td>
+<td style="text-align: center;"><strong>18d6</strong></td>
 </tr>
 </tbody>
 </table>
-<p>Reiko can also operate drones using the <em>Override</em> Sprite Power [SR6H p.&nbsp;194], which allows her to replace the drone’s pilot with herself (acting as a sprite with a Level equal to her Resonance). Because this is now a test involving her Resonance pool, her Resonance Focus applies [HnS p.&nbsp;71].</p>
+</section>
+<section id="inhabited-override-operation-sprite-power-override" class="level3">
+<h3 class="anchored" data-anchor-id="inhabited-override-operation-sprite-power-override">2. Inhabited Override Operation (Sprite Power <em>Override</em>)</h3>
+<p>Reiko can also operate drones using the <em>Override</em> Sprite Power [SR6H p.&nbsp;194], which allows her to replace the drone’s pilot with herself (acting as a sprite with a Level equal to her Resonance). Because this is now a test involving her Resonance pool, her Resonance Focus applies [HnS p.&nbsp;71], alongside Taz’s Assassin Sprite Symbiosis and Diagnosis support.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 22%">
@@ -688,38 +536,39 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><strong>Perception</strong></td>
-<td style="text-align: center;">Clearsight (7) + Sensor</td>
-<td style="text-align: left;">+1 Sensor Upgrade, +4 Teamwork (Sprite Symbiosis)</td>
-<td style="text-align: center;"><strong>12 + Sensor d6</strong></td>
+<td style="text-align: left;"><strong>Drone Piloting / Maneuvering</strong></td>
+<td style="text-align: center;">Maneuvering + Pilot</td>
+<td style="text-align: left;">Maneuvering 6 + Pilot/RES 8 + Focus 4 + Taz Diagnosis 3 = 21d6</td>
+<td style="text-align: center;"><strong>21d6</strong></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Evasion</strong></td>
-<td style="text-align: center;">Evasion (7) + Pilot (8)</td>
-<td style="text-align: left;">+4 Resonance Focus, +4 Teamwork (Sprite Symbiosis)</td>
-<td style="text-align: center;"><strong>23d6</strong></td>
+<td style="text-align: left;"><strong>Drone Weapon Attack (Gunnery)</strong></td>
+<td style="text-align: center;">Targeting + Sensor/DP</td>
+<td style="text-align: left;">Targeting 6 + Pilot/RES 8 + Focus 4 + Taz Symbiosis 4 = 22d6</td>
+<td style="text-align: center;"><strong>22d6</strong></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Piloting</strong></td>
-<td style="text-align: center;">Maneuvering (7) + Pilot (8)</td>
-<td style="text-align: left;">+4 Resonance Focus, +3 Diagnostics</td>
+<td style="text-align: left;"><strong>Drone Evasion (Defense Test)</strong></td>
+<td style="text-align: center;">Evasion + Pilot/Sleaze</td>
+<td style="text-align: left;">Evasion 6 + Pilot/RES 8 + Focus 4 + Taz Symbiosis 4 = 22d6</td>
 <td style="text-align: center;"><strong>22d6</strong></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Stealth</strong></td>
-<td style="text-align: center;">Stealth 7 + Pilot (8)</td>
-<td style="text-align: left;">+4 Resonance Focus, +4 Teamwork + Tactical Soft Sneak-Sneak (+2)</td>
-<td style="text-align: center;"><strong>25d6</strong></td>
+<td style="text-align: left;"><strong>Drone Perception Test</strong></td>
+<td style="text-align: center;">Clearsight + Sensor</td>
+<td style="text-align: left;">Clearsight 6 + Sensor 2 + Taz Symbiosis 4 = 12d6</td>
+<td style="text-align: center;"><strong>12d6</strong></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Weapons</strong></td>
-<td style="text-align: center;">Targeting (7) + Sensor</td>
-<td style="text-align: left;">Base (7) + Sensor Upgrade (+1) +4 Teamwork</td>
-<td style="text-align: center;"><strong>12 + Sensor d6</strong></td>
+<td style="text-align: left;"><strong>Drone Stealth Test</strong></td>
+<td style="text-align: center;">Stealth + Pilot/DP</td>
+<td style="text-align: left;">Stealth 6 + Pilot/RES 8 + Focus 4 + Taz Symbiosis 4 + Tactical Soft Sneak-Sneak 2 = 24d6</td>
+<td style="text-align: center;"><strong>24d6</strong></td>
 </tr>
 </tbody>
 </table>
 <hr>
+</section>
 </section>
 <section id="controlling-drones-protocols-rules" class="level2">
 <h2 class="anchored" data-anchor-id="controlling-drones-protocols-rules">Controlling Drones Protocols &amp; Rules</h2>
@@ -746,10 +595,10 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li><strong>Matrix Equivalent Attributes</strong>: When controlling drones remotely via AR using Control Device, a Pilot Origin AI must use their “physical attributes” (which map to ASDF) [HnS p.&nbsp;118]:
 <ul>
-<li>Body → Firewall (9)</li>
-<li>Agility → Data Processing (7)</li>
-<li>Reaction → Sleaze (9)</li>
-<li>Strength → Attack (7)</li>
+<li>Body → Firewall (6)</li>
+<li>Agility → Data Processing (6)</li>
+<li>Reaction → Sleaze (8)</li>
+<li>Strength → Attack (4)</li>
 </ul></li>
 </ul>
 <hr>
@@ -758,9 +607,9 @@ ul.task-list li input[type="checkbox"] {
 <section id="sensor-locks" class="level2">
 <h2 class="anchored" data-anchor-id="sensor-locks">Sensor Locks</h2>
 <ul>
-<li><strong>Establishing</strong>: Electronics + Logic (or Sensor + Clearsight) vs.&nbsp;Reaction + Piloting (or Pilot + Evasion) (Major Action).</li>
-<li><strong>Locked On Status</strong>: Target cannot spend Edge while defending against attacks originating from the vehicle that established lock. Lasts until Cover IV is achieved or ended by Break Sensor Lock.</li>
-<li><strong>Break Sensor Lock</strong>: Reaction + Piloting (or Intuition + Reaction) vs.&nbsp;Electronics + Intuition (or Clearsight + Sensor) (Major Action).</li>
+<li><p><strong>Establishing</strong>: Electronics + Logic (or Sensor + Clearsight) vs.&nbsp;Reaction + Piloting (or Pilot + Evasion) (Major Action).</p></li>
+<li><p><strong>Locked On Status</strong>: Target cannot spend Edge while defending against attacks originating from the vehicle that established lock. Lasts until Cover IV is achieved or ended by Break Sensor Lock.</p></li>
+<li><p><strong>Break Sensor Lock</strong>: Reaction + Piloting (or Intuition + Reaction) vs.&nbsp;Electronics + Intuition (or Clearsight + Sensor) (Major Action).</p></li>
 </ul>
 
 

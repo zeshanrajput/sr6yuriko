@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-dab96f89d24d8a403d78413fa12f2c61.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-703f62f34474d91d69a08ed3e3cdfc58.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-2207aed4506930202bc6cfd5e58b1d36.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -139,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/character_sheet.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Character Sheet</span></a>
+  <a href="../chapters/character_sheet.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Character Dossier &amp; Modular Sheets</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -450,13 +450,67 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 <section id="matrix-attributes" class="level2">
 <h2 class="anchored" data-anchor-id="matrix-attributes">Matrix Attributes</h2>
-<ul>
-<li><strong>Base ASDF</strong>: 03 05 03 05</li>
-<li><strong>Sprite Symbiosis (Assassin Sprite)</strong>: 03 02 01 00 → 06 07 04 05</li>
-<li><strong>Programs (Toolbox &amp; Encryption)</strong>: 00 00 01 01 → 06 07 05 06</li>
-<li><strong>Resonance Point Allocation (+8 RES)</strong>: 01 02 02 03 → 07 09 07 09</li>
-<li><strong>Active Matrix Attributes</strong>: 07 09 07 09</li>
-</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Matrix Attribute</th>
+<th style="text-align: center;">Base Value</th>
+<th style="text-align: center;">Sprite Symbiosis</th>
+<th style="text-align: center;">Running Programs</th>
+<th style="text-align: center;">Resonance Tuning</th>
+<th style="text-align: center;">Clamped Augmentation</th>
+<th style="text-align: center;">Final Active ASDF</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Attack (ATT)</strong></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">+3 (Assassin)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">+1</td>
+<td style="text-align: center;"><strong>+4</strong> (AI/EI +4 Cap)</td>
+<td style="text-align: center;"><strong>7</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Sleaze (SLZ)</strong></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">+2 (Assassin)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">+2</td>
+<td style="text-align: center;"><strong>+4</strong> (AI/EI +4 Cap)</td>
+<td style="text-align: center;"><strong>9</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Data Processing (DP)</strong></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">+1 (Assassin)</td>
+<td style="text-align: center;">+1 (Toolbox)</td>
+<td style="text-align: center;">+2</td>
+<td style="text-align: center;"><strong>+4</strong> (AI/EI +4 Cap)</td>
+<td style="text-align: center;"><strong>7</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Firewall (FW)</strong></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">+0 (Assassin)</td>
+<td style="text-align: center;">+1 (Encryption)</td>
+<td style="text-align: center;">+3</td>
+<td style="text-align: center;"><strong>+4</strong> (AI/EI +4 Cap)</td>
+<td style="text-align: center;"><strong>9</strong></td>
+</tr>
+</tbody>
+</table>
+<p><em>Note on Augmented ASDF Limits</em>: Under SR6 AI rules (<em>Hack &amp; Slash</em> pp.&nbsp;116–120), Matrix ASDF attributes represent the intrinsic physical and mental characteristics of Artificial Intelligences (AI) and Emergent Intelligences (EI), making them subject to the standard <strong>+4 Augmented Attribute Limit</strong>. Unlike metahuman deckers (who use cyberdeck hardware arrays) or metahuman technomancers (who derive persona stats from mental attributes and can exceed +4 via complex forms), an AI/EI’s ASDF is capped at +4 above natural base scores.</p>
 <hr>
 </section>
 <section id="standardized-matrix-action-pools" class="level2">
@@ -481,51 +535,51 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><strong>Offensive Cracking: Hacking</strong><br></td>
+<td style="text-align: left;"><strong>Offensive Cracking: Hacking</strong></td>
 <td style="text-align: center;">Cracking (Hacking: 7) + RES (8) = <strong>15d6</strong></td>
-<td style="text-align: left;">Base (15) + Natural Hacker (RES Sub) + Focus (+4) + Overclock (+2, 1 wild) + Ally Teamwork (+4) + ECM Warrior II (+2)</td>
+<td style="text-align: left;">Base (15) + Focus (+4) + Hacking (+2) + Ally Teamwork (+4) + Overclock (+2, 1 wild) + ECM Warrior II (+2)</td>
 <td style="text-align: center;"><strong>27d6</strong> (1 wild)</td>
 <td style="text-align: center;"><strong>6 Hits</strong></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Offensive Cracking</strong><br><em>(Cybercombat &amp; Electronic Warfare Tests)</em></td>
+<td style="text-align: left;"><strong>Offensive Cracking</strong><br><em>Cybercombat &amp; Electronic Warfare Tests</em></td>
 <td style="text-align: center;">Cracking (5) + RES (8) = <strong>13d6</strong></td>
-<td style="text-align: left;">Base (13) + Natural Hacker (RES Sub) + Focus (+4) + Overclock (+2, 1 wild) + Ally Teamwork &amp; ECM Warrior II (Max +5 cap: Ally +4, ECM +1)</td>
+<td style="text-align: left;">Base (13) + Focus (+4) + Ally Teamwork (+4) + Overclock (+2, 1 wild) + ECM Warrior II (+1)</td>
 <td style="text-align: center;"><strong>24d6</strong> (1 wild)</td>
 <td style="text-align: center;"><strong>6 Hits</strong></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Full Matrix Defense Test</strong><br></td>
-<td style="text-align: center;">RES (8) + FW (9) = <strong>17d6</strong></td>
-<td style="text-align: left;">Base (17) + Personal Assistant App R6 (+6) + Directional Shield (+7) + Focus (+4)</td>
-<td style="text-align: center;"><strong>34d6</strong></td>
-<td style="text-align: center;"><strong>8 Hits</strong></td>
+<td style="text-align: left;"><strong>Full Matrix Defense Test</strong></td>
+<td style="text-align: center;">RES (8) + FW (6) = <strong>14d6</strong></td>
+<td style="text-align: left;">Base (14) + Focus (+4) + Personal Assistant App R6 (+6) + Directional Shield (Active DP) (+6)</td>
+<td style="text-align: center;"><strong>30d6</strong></td>
+<td style="text-align: center;"><strong>7 Hits</strong></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Electronics: Software Tests</strong><br></td>
+<td style="text-align: left;"><strong>Electronics: Software Tests</strong></td>
 <td style="text-align: center;">Electronics (Software: 7) + RES (8) = <strong>15d6</strong></td>
-<td style="text-align: left;">Base (15) + Focus (+4) + Ally Teamwork (+4)</td>
+<td style="text-align: left;">Base (15) + Focus (+4) + Software (+2) + Ally Teamwork (+4)</td>
 <td style="text-align: center;"><strong>23d6</strong></td>
 <td style="text-align: center;"><strong>5 Hits</strong></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Electronics</strong><br><em>(Computer, Hardware &amp; Complex Forms)</em></td>
+<td style="text-align: left;"><strong>Electronics</strong><br><em>Computer, Hardware &amp; Complex Forms</em></td>
 <td style="text-align: center;">Electronics (5) + RES (8) = <strong>13d6</strong></td>
 <td style="text-align: left;">Base (13) + Focus (+4) + Ally Teamwork (+4)</td>
 <td style="text-align: center;"><strong>21d6</strong></td>
 <td style="text-align: center;"><strong>5 Hits</strong></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Downtime Buying Gear Test</strong><br></td>
+<td style="text-align: left;"><strong>Downtime Buying Gear Test</strong></td>
 <td style="text-align: center;">Electronics (5) + RES (8) = <strong>13d6</strong></td>
-<td style="text-align: left;">Base (13) + Focus (+4) + Overclock (+1) + Shopsoft (+1) + Ally Teamwork (+4)</td>
+<td style="text-align: left;">Base (13) + Focus (+4) + Ally Teamwork (+4) + Overclock (+1) + Shopsoft (+1)</td>
 <td style="text-align: center;"><strong>23d6</strong></td>
 <td style="text-align: center;"><strong>5 Hits</strong></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Programming / Coding Tests</strong><br></td>
+<td style="text-align: left;"><strong>Programming / Coding Tests</strong></td>
 <td style="text-align: center;">Electronics (Software: 7) + RES (8) = <strong>15d6</strong></td>
-<td style="text-align: left;">Base (15) + Focus (+4) + Ally Teamwork (+4)<br></td>
+<td style="text-align: left;">Base (15) + Focus (+4) + Software (+2) + Ally Teamwork (+4)</td>
 <td style="text-align: center;"><strong>23d6</strong></td>
 <td style="text-align: center;"><strong>5 Hits</strong></td>
 </tr>
@@ -691,10 +745,10 @@ ul.task-list li input[type="checkbox"] {
 <section id="attributes" class="level4">
 <h4 class="anchored" data-anchor-id="attributes">Attributes</h4>
 <ul>
-<li>Body → Firewall (9)</li>
-<li>Agility → Data Processing (7)</li>
-<li>Reaction → Sleaze (9)</li>
-<li>Strength → Attack (7)</li>
+<li>Body → Firewall (6)</li>
+<li>Agility → Data Processing (6)</li>
+<li>Reaction → Sleaze (8)</li>
+<li>Strength → Attack (4)</li>
 <li>Willpower (6)</li>
 <li>Logic (4)</li>
 <li>Intuition (2)</li>
