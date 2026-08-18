@@ -5,11 +5,20 @@
 #| include: false
 from sr6core.log_engine import get_log_totals
 from sr6core.character_manager import CharacterManager
+from sr6core.rules_engine import get_matrix_action_table, get_matrix_protocols_summary
+from sr6core.modifiers import ModifierEngine
 
 cm = CharacterManager()
 _char = cm.get_character_data("yuriko") or {}
 attrs = _char.get("attributes", {})
 log_totals = get_log_totals("chapters/character_log.qmd")
+
+matrix_summary = get_matrix_protocols_summary("yuriko")
+active_asdf = matrix_summary.get("asdf", {})
+ACTIVE_A = active_asdf.get("attack", 7)
+ACTIVE_S = active_asdf.get("sleaze", 9)
+ACTIVE_D = active_asdf.get("data_processing", 7)
+ACTIVE_F = active_asdf.get("firewall", 9)
 
 RESONANCE = attrs.get("resonance", 8)
 WILLPOWER = attrs.get("willpower", 6)
@@ -18,73 +27,19 @@ INTUITION = attrs.get("intuition", 2)
 LOGIC = attrs.get("logic", 4)
 EDGE = attrs.get("edge", 5)
 
-BASE_ATTACK = 3
-BASE_SLEAZE = 5
-BASE_DATA_PROCESSING = 3
-BASE_FIREWALL = 5
-
-SYMBIOSIS_A = 3
-SYMBIOSIS_S = 2
-SYMBIOSIS_D = 1
-SYMBIOSIS_F = 0
-
-PROGRAMS_A = 0
-PROGRAMS_S = 0
-PROGRAMS_D = 1
-PROGRAMS_F = 1
-
-RESONANCE_A = 1
-RESONANCE_S = 2
-RESONANCE_D = 2
-RESONANCE_F = 3
-
-ACTIVE_A = BASE_ATTACK + SYMBIOSIS_A + PROGRAMS_A + RESONANCE_A # 3+3+0+1 = 7
-ACTIVE_S = BASE_SLEAZE + SYMBIOSIS_S + PROGRAMS_S + RESONANCE_S # 5+2+0+2 = 9
-ACTIVE_D = BASE_DATA_PROCESSING + SYMBIOSIS_D + PROGRAMS_D + RESONANCE_D # 3+1+1+2 = 7
-ACTIVE_F = BASE_FIREWALL + SYMBIOSIS_F + PROGRAMS_F + RESONANCE_F # 5+0+1+3 = 9
-
-ELECTRONICS = attrs.get("skills", {}).get("electronics", 7) if isinstance(attrs.get("skills"), dict) else 7
-CRACKING = attrs.get("skills", {}).get("cracking", 7) if isinstance(attrs.get("skills"), dict) else 7
-RESONANCE_FOCUS = 4
-SUBMERSION_GRADE = log_totals["Submersion_Grade"]
-
-PA_RATING = 6
-OVERCLOCK_BUY = 1
-SHOPPING_SOFTWARE = 1
-OVERCLOCK_MATRIX = 2
-ALLY_SPRITE_TEAMWORK = 4
-SPRITE_LEVEL = 7
-
-base_asdf = f"{BASE_ATTACK:02d} {BASE_SLEAZE:02d} {BASE_DATA_PROCESSING:02d} {BASE_FIREWALL:02d}"
-symbiosis_asdf = f"{BASE_ATTACK + SYMBIOSIS_A:02d} {BASE_SLEAZE + SYMBIOSIS_S:02d} {BASE_DATA_PROCESSING + SYMBIOSIS_D:02d} {BASE_FIREWALL + SYMBIOSIS_F:02d}"
-programs_asdf = f"{BASE_ATTACK + SYMBIOSIS_A + PROGRAMS_A:02d} {BASE_SLEAZE + SYMBIOSIS_S + PROGRAMS_S:02d} {BASE_DATA_PROCESSING + SYMBIOSIS_D + PROGRAMS_D:02d} {BASE_FIREWALL + SYMBIOSIS_F + PROGRAMS_F:02d}"
-resonance_asdf = f"{ACTIVE_A:02d} {ACTIVE_S:02d} {ACTIVE_D:02d} {ACTIVE_F:02d}"
-
+SUBMERSION_GRADE = log_totals.get("Submersion_Grade", 7)
 edge_storage_mtoc = 5
 edge_storage_total = SUBMERSION_GRADE + edge_storage_mtoc
 
-CRACKING_HACKING = 7 # 5 skill + 2 specialization
+matrix_pools = ModifierEngine.get_matrix_action_pools(_char)
+cracking_hacking_pool = matrix_pools["cracking_hacking"].total_pool
+cracking_other_pool = matrix_pools["cracking_other"].total_pool
+electronics_software_pool = matrix_pools["electronics_software"].total_pool
+electronics_other_pool = matrix_pools["electronics_other"].total_pool
+CRACKING_HACKING = 7
 CRACKING_OTHER = 5
-ELECTRONICS_SOFTWARE = 7 # 5 skill + 2 specialization
-ELECTRONICS_OTHER = 5
-
-cracking_hacking_pool = CRACKING_HACKING + RESONANCE + RESONANCE_FOCUS + OVERCLOCK_MATRIX + ALLY_SPRITE_TEAMWORK + 2 # 7+8+4+2+4+2 = 27
-cracking_hacking_hits = cracking_hacking_pool // 4 # 27//4 = 6
-
-cracking_other_pool = CRACKING_OTHER + RESONANCE + RESONANCE_FOCUS + OVERCLOCK_MATRIX + ALLY_SPRITE_TEAMWORK + 1 # 5+8+4+2+4+1 = 24 (capped at 5 teamwork dice from Ally + ECM Warrior II)
-cracking_other_hits = cracking_other_pool // 4 # 24//4 = 6
-
-electronics_software_pool = ELECTRONICS_SOFTWARE + RESONANCE + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK # 7+8+4+4 = 23
-electronics_software_hits = electronics_software_pool // 4 # 23//4 = 5
-
-electronics_other_pool = ELECTRONICS_OTHER + RESONANCE + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK # 5+8+4+4 = 21
-electronics_other_hits = electronics_other_pool // 4 # 21//4 = 5
-
-programming_pool = ELECTRONICS_SOFTWARE + RESONANCE + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK # 7+8+4+4 = 23
-programming_hits = programming_pool // 4 # 23//4 = 5
-
-buy_gear_pool = ELECTRONICS_OTHER + RESONANCE + RESONANCE_FOCUS + OVERCLOCK_BUY + SHOPPING_SOFTWARE + ALLY_SPRITE_TEAMWORK
-buy_gear_hits = buy_gear_pool // 4
+RESONANCE_FOCUS = 4
+ALLY_SPRITE_TEAMWORK = 4
 ```
 
 This reference details Reiko's Matrix attributes, action pool breakdowns, network benefits, learned programs, defense math, remote node network architecture, and decking cheat sheet.
@@ -93,11 +48,15 @@ This reference details Reiko's Matrix attributes, action pool breakdowns, networ
 
 ## Matrix Attributes{#matrix-attributes}
 
-* **Base ASDF**: `{python} base_asdf`
-* **Sprite Symbiosis (Assassin Sprite)**: `{python} f"{SYMBIOSIS_A:02d} {SYMBIOSIS_S:02d} {SYMBIOSIS_D:02d} {SYMBIOSIS_F:02d}"` → `{python} symbiosis_asdf`
-* **Programs (Toolbox & Encryption)**: `{python} f"{PROGRAMS_A:02d} {PROGRAMS_S:02d} {PROGRAMS_D:02d} {PROGRAMS_F:02d}"` → `{python} programs_asdf`
-* **Resonance Point Allocation (+`{python} RESONANCE` RES)**: `{python} f"{RESONANCE_A:02d} {RESONANCE_S:02d} {RESONANCE_D:02d} {RESONANCE_F:02d}"` → `{python} resonance_asdf`
-* **Active Matrix Attributes**: `{python} resonance_asdf`
+```{python}
+#| echo: false
+#| output: asis
+from sr6core.rules_engine import get_matrix_asdf_derivation_table
+
+print(get_matrix_asdf_derivation_table("yuriko"))
+```
+
+*Note on Augmented ASDF Limits*: Under SR6 AI rules (*Hack & Slash* pp. 116–120), Matrix ASDF attributes represent the intrinsic physical and mental characteristics of Artificial Intelligences (AI) and Emergent Intelligences (EI), making them subject to the standard **+4 Augmented Attribute Limit**. Unlike metahuman deckers (who use cyberdeck hardware arrays) or metahuman technomancers (who derive persona stats from mental attributes and can exceed +4 via complex forms), an AI/EI's ASDF is capped at +4 above natural base scores.
 
 ---
 
@@ -105,15 +64,11 @@ This reference details Reiko's Matrix attributes, action pool breakdowns, networ
 
 Transparent breakdown of base attributes, applied modifiers math (Natural Hacker, Resonance Focus, Overclocking, Teamwork, Tactical Software), and total effective dice pools for Matrix operations.
 
-| Action Category / Test | Base Stat + Skill | Applied Modifiers Math | Final Dice Pool | Bought Hits |
-| :--- | :---: | :--- | :---: | :---: |
-| **Offensive Cracking: Hacking**<br> | Cracking (Hacking: `{python} CRACKING_HACKING`) + RES (`{python} RESONANCE`) = **`{python} CRACKING_HACKING + RESONANCE`d6** | Base (`{python} CRACKING_HACKING + RESONANCE`) + Natural Hacker (RES Sub) + Focus (+`{python} RESONANCE_FOCUS`) + Overclock (+`{python} OVERCLOCK_MATRIX`, 1 wild) + Ally Teamwork (+`{python} ALLY_SPRITE_TEAMWORK`) + ECM Warrior II (+2) | **`{python} cracking_hacking_pool`d6** (1 wild) | **`{python} cracking_hacking_hits` Hits** |
-| **Offensive Cracking**<br>*(Cybercombat & Electronic Warfare Tests)* | Cracking (`{python} CRACKING_OTHER`) + RES (`{python} RESONANCE`) = **`{python} CRACKING_OTHER + RESONANCE`d6** | Base (`{python} CRACKING_OTHER + RESONANCE`) + Natural Hacker (RES Sub) + Focus (+`{python} RESONANCE_FOCUS`) + Overclock (+`{python} OVERCLOCK_MATRIX`, 1 wild) + Ally Teamwork & ECM Warrior II (Max +5 cap: Ally +4, ECM +1) | **`{python} cracking_other_pool`d6** (1 wild) | **`{python} cracking_other_hits` Hits** |
-| **Full Matrix Defense Test**<br> | RES (`{python} RESONANCE`) + FW (`{python} ACTIVE_F`) = **`{python} RESONANCE + ACTIVE_F`d6** | Base (`{python} RESONANCE + ACTIVE_F`) + Personal Assistant App R6 (+`{python} PA_RATING`) + Directional Shield (+`{python} ACTIVE_D`) + Focus (+`{python} RESONANCE_FOCUS`) | **`{python} RESONANCE + ACTIVE_F + PA_RATING + ACTIVE_D + RESONANCE_FOCUS`d6** | **`{python} (RESONANCE + ACTIVE_F + PA_RATING + ACTIVE_D + RESONANCE_FOCUS) // 4` Hits** |
-| **Electronics: Software Tests**<br> | Electronics (Software: `{python} ELECTRONICS_SOFTWARE`) + RES (`{python} RESONANCE`) = **`{python} ELECTRONICS_SOFTWARE + RESONANCE`d6** | Base (`{python} ELECTRONICS_SOFTWARE + RESONANCE`) + Focus (+`{python} RESONANCE_FOCUS`) + Ally Teamwork (+`{python} ALLY_SPRITE_TEAMWORK`) | **`{python} electronics_software_pool`d6** | **`{python} electronics_software_hits` Hits** |
-| **Electronics**<br>*(Computer, Hardware & Complex Forms)* | Electronics (`{python} ELECTRONICS_OTHER`) + RES (`{python} RESONANCE`) = **`{python} ELECTRONICS_OTHER + RESONANCE`d6** | Base (`{python} ELECTRONICS_OTHER + RESONANCE`) + Focus (+`{python} RESONANCE_FOCUS`) + Ally Teamwork (+`{python} ALLY_SPRITE_TEAMWORK`) | **`{python} electronics_other_pool`d6** | **`{python} electronics_other_hits` Hits** |
-| **Downtime Buying Gear Test**<br> | Electronics (`{python} ELECTRONICS_OTHER`) + RES (`{python} RESONANCE`) = **`{python} ELECTRONICS_OTHER + RESONANCE`d6** | Base (`{python} ELECTRONICS_OTHER + RESONANCE`) + Focus (+`{python} RESONANCE_FOCUS`) + Overclock (+`{python} OVERCLOCK_BUY`) + Shopsoft (+`{python} SHOPPING_SOFTWARE`) + Ally Teamwork (+`{python} ALLY_SPRITE_TEAMWORK`) | **`{python} buy_gear_pool`d6** | **`{python} buy_gear_hits` Hits** |
-| **Programming / Coding Tests**<br> | Electronics (Software: `{python} ELECTRONICS_SOFTWARE`) + RES (`{python} RESONANCE`) = **`{python} ELECTRONICS_SOFTWARE + RESONANCE`d6** | Base (`{python} ELECTRONICS_SOFTWARE + RESONANCE`) + Focus (+`{python} RESONANCE_FOCUS`) + Ally Teamwork (+`{python} ALLY_SPRITE_TEAMWORK`)<br> | **`{python} programming_pool`d6** | **`{python} programming_hits` Hits** |
+```{python}
+#| echo: false
+#| output: asis
+print(get_matrix_action_table("yuriko"))
+```
 
 ### Programming
 
@@ -202,26 +157,30 @@ Transparent breakdown of base attributes, applied modifiers math (Natural Hacker
 Standardized action categorization grouped strictly by Skill & Specialization:
 
 ### 1. Cracking Tests (Cracking + RES)
+
 * **Hacking Specialization**: Backdoor Entry, Crack File, Delayed Command, Garbage In / Garbage Out, Known Exploit, Metahuman in the Middle, Probe, Puppet Cyberware, Spoof Command.
 * **Cybercombat Specialization**: Brute Force, Crash Program, Data Spike, Device Lock, Disarm Data Bomb, Resonance Spike, Tar Pit.
 * **Electronic Warfare Specialization**: Calibration, Check OS, Hide, Jam Signals, Masquerade, Popup, Snoop, Watchdog.
 
 ### 2. Electronics Tests (Electronics + RES)
+
 * **Software Specialization**: Control Device, Format Device, Jack Out, Jump into Rigged Device, Reboot Device, Set Data Bomb, Trace Icon.
 * **Computer Specialization**: Edit File, Encrypt File, Erase Matrix Signature, Hash Check, Matrix Perception, Matrix Search, Modify Icon, Threat Analysis.
 * **Hardware Specialization**: Denial of Service, Squelch, Subvert Infrastructure, Turning off Wireless, removing headjammer, keycard copier, tag eraser, bug scanner.
 * **Complex Forms**: Any complex form requiring an Electronics test.
 
 ### 3. Matrix Edge Actions
+
 * **1 Edge**: Batch Exec, Emergency Boost, Paint Target.
 * **2 Edge**: Technobabble (CHA instead of LOG), Intervene, Hog, Signal Scream.
 * **3 Edge**: Under the Radar (Action does not increase OS).
 
---- 
+---
 
 ## Foundation Rules
 
 ### Base Foundation Rules
+
 [HnS p. 141]
 
 * Social Tests: Cracking [Hacking]

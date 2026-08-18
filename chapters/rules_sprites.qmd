@@ -5,6 +5,8 @@
 #| include: false
 from sr6core.log_engine import get_log_totals
 from sr6core.character_manager import CharacterManager
+from sr6core.modifiers import ModifierEngine
+from sr6core.rules_engine import get_sprite_action_table, get_sprite_commands_table
 
 cm = CharacterManager()
 _char = cm.get_character_data("yuriko") or {}
@@ -18,32 +20,33 @@ LOGIC = attrs.get("logic", 4)
 TASKING = 6
 REGISTERING = TASKING + 2
 RESONANCE_FOCUS = 4
-SUBMERSION_GRADE = log_totals["Submersion_Grade"]
+SUBMERSION_GRADE = log_totals.get("Submersion_Grade", 7)
 
 SPRITE_LEVEL = 7
 SPRITE_SYMBIOSIS = 4
 
-compiling_pool = TASKING + RESONANCE + RESONANCE_FOCUS
-compiling_hits = compiling_pool // 4
-sprite_def_pool = SPRITE_LEVEL * 2
-sprite_def_hits = sprite_def_pool // 4
-net_compiling_hits = compiling_hits - sprite_def_hits
-compiling_fade_fv = sprite_def_hits
+sp_downtime = ModifierEngine.get_sprite_downtime_pools(_char, sprite_level=SPRITE_LEVEL)
+compiling_pool = sp_downtime["compiling_pool"]
+compiling_hits = sp_downtime["compiling_hits"]
+sprite_def_pool = sp_downtime["sprite_def_pool"]
+sprite_def_hits = sp_downtime["sprite_def_hits"]
+net_compiling_hits = sp_downtime["net_compiling_hits"]
+compiling_fade_fv = sp_downtime["compiling_fade_fv"]
 compiling_fade_mitigated = max(0, compiling_fade_fv - 2)
-fade_res_pool = WILLPOWER + CHARISMA + SUBMERSION_GRADE
-fade_res_hits = fade_res_pool // 4
+fade_res_pool = sp_downtime["fade_res_pool"]
+fade_res_hits = sp_downtime["fade_res_hits"]
 
-registering_pool = REGISTERING + RESONANCE + RESONANCE_FOCUS
-registering_hits = registering_pool // 4
-registering_fade_fv = sprite_def_hits * 2
-net_registering_hits = registering_hits - sprite_def_hits
-total_services = net_compiling_hits + 1 + net_registering_hits
-registering_damage = max(0, registering_fade_fv - fade_res_hits)
+registering_pool = sp_downtime["registering_pool"]
+registering_hits = sp_downtime["registering_hits"]
+registering_fade_fv = sp_downtime["registering_fade_fv"]
+net_registering_hits = sp_downtime["net_registering_hits"]
+total_services = sp_downtime["total_services"]
+registering_damage = sp_downtime["registering_damage"]
 
-focus_fade_fv = RESONANCE_FOCUS // 2
-focus_fade_res_pool = WILLPOWER + LOGIC
-focus_fade_res_hits = focus_fade_res_pool // 4
-focus_fade_damage = max(0, focus_fade_fv - focus_fade_res_hits)
+focus_fade_fv = sp_downtime["focus_fade_fv"]
+focus_fade_res_pool = sp_downtime["focus_fade_res_pool"]
+focus_fade_res_hits = sp_downtime["focus_fade_res_hits"]
+focus_fade_damage = sp_downtime["focus_fade_damage"]
 ```
 
 This reference details Reiko's Complex Forms, sprite compiling and registering downtime protocols, and Resonance Focus fading calculations.
@@ -71,6 +74,12 @@ This reference details Reiko's Complex Forms, sprite compiling and registering d
 ---
 
 ## Registering Sprites{#registering-sprites}
+
+```{python}
+#| echo: false
+#| output: asis
+print(get_sprite_action_table("yuriko", sprite_level=SPRITE_LEVEL))
+```
 
 * **Minor Downtime Action**: Register up to 8 levels of sprites (up to Rating `{python} SPRITE_LEVEL` sprite).
 * **Schedule**: 1 per night's rest (7 hours registering, 3 hours restoration). Buying hits per SRMG p. 19.
@@ -102,3 +111,15 @@ This reference details Reiko's Complex Forms, sprite compiling and registering d
 * **Focus Fading FV**: Resonance Focus rating / 2 (`{python} RESONANCE_FOCUS` / 2 = **`{python} focus_fade_fv` FV**).
 * **Focus Fading Pool**: WIL (`{python} WILLPOWER`) + LOG (`{python} LOGIC`) = **`{python} focus_fade_res_pool`d6** → **`{python} focus_fade_res_hits` Bought Hits**.
 * **Damage Taken**: `{python} focus_fade_fv` FV - `{python} focus_fade_res_hits` hits = **`{python} focus_fade_damage` Damage**.
+
+---
+
+## Sprite Commands & Tactical Orders{#sprite-commands}
+
+All of these commands are available from Reiko's pool of registered Modular Sprites at a cost of **1 task per use**. In SRMG, these commands function as Teamwork tests (except where modified by the SRM Guide FAQ):
+
+```{python}
+#| echo: false
+#| output: asis
+print(get_sprite_commands_table("yuriko", sprite_level=SPRITE_LEVEL))
+```

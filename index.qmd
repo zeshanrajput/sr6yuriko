@@ -75,22 +75,24 @@ This anthology takes Shadowrun **beyond the numbers**—exploring the rich, emot
 
 Use the sidebar or the indexes below to traverse the sub-grids of this portfolio:
 
-### 1. Core Profile
+### 1. Core Character Profile
 * **[Identity Core](chapters/identity_core.qmd)**: Detailed background history and lore.
-* **[Character Build (Point Buy)](chapters/character_build_point_buy.qmd)**: The character build process description (Point Buy).
-* **[Character Sheet](chapters/character_sheet.qmd)**: The dynamically compiled Shadowrun character sheet.
-* **[Rules & Downtime Protocols](chapters/rules_and_downtime.qmd)**: Overview landing hub and domain protocols directory.
-  * **[Matrix & Network Protocols](chapters/rules_matrix.qmd)**: ASDF attributes, action pools, decking cheat sheet, remote host architecture.
-  * **[Sprites & Resonance Protocols](chapters/rules_sprites.qmd)**: Complex forms, compiling/registering downtime formulas, focus fading math.
-  * **[Drones & Rigging Protocols](chapters/rules_drones.qmd)**: Drone stat blocks, drone action pools, rigger/remote attribute mapping, sensor locks.
-  * **[Weapons & Tactical Protocols](chapters/rules_combat.qmd)**: Weapon attack tables, link-fired arrays, laser ammo, Krime splash table.
+* **[Character Build (Point Buy)](chapters/character_build_point_buy.qmd)**: Character creation point buy allocation.
+* **[Character Dossier & Modular Sheets](chapters/character_sheet.qmd)**: Full character sheet and dedicated modular sheets (Base, Combat, Vehicles, Inventory, Powers, Contacts) plus PDF and VTT downloads.
 * **[Career Totals & Active Sprites](chapters/character_totals.qmd)**: Live dashboard of Karma, Nuyen, Heat, Submersion grade, regional Reputation, and Active Sprite stable.
 * **[Session Chronicles](chapters/character_log.qmd)**: Full database of past campaign runs, GMs, nuyen payouts, and Karma adjustments.
 * **[Historical Purchases](chapters/character_purchases.qmd)**: Itemized gear, matrix software, autosofts, drone mods, and SIN purchase ledgers.
 * **[Twenty Questions](chapters/twenty_questions.qmd)**: Standard character questionnaire defining personality, quirks, and ethics.
 * **[A Drone in Every Port](chapters/dronomancy.md)**: A DI-to-DI guide on remote drone operation, casemodding, and rigging mechanics.
 
-### 2. Background Stories
+### 2. Rules & Downtime Protocols
+* **[Rules & Downtime Landing Hub](chapters/rules_and_downtime.qmd)**: Consolidated protocol hub and calculation shortcuts.
+* **[Matrix & Network Protocols](chapters/rules_matrix.qmd)**: ASDF attributes, action pools, decking cheat sheet, remote host architecture.
+* **[Sprites & Resonance Protocols](chapters/rules_sprites.qmd)**: Complex forms, compiling/registering downtime formulas, focus fading math.
+* **[Drones & Rigging Protocols](chapters/rules_drones.qmd)**: Drone stat blocks, drone action pools, rigger/remote attribute mapping, sensor locks.
+* **[Weapons & Tactical Protocols](chapters/rules_combat.qmd)**: Weapon attack tables, link-fired arrays, laser ammo, Krime splash table.
+
+### 3. Background Stories
 Chronological records of Reiko's backstory before the campaign:
 
 * **[Chapter 01: The Weight of Zero](chapters/01 The Weight of Zero.md)**
@@ -101,7 +103,7 @@ Chronological records of Reiko's backstory before the campaign:
 * **[Chapter 06: The Ghost in the Ledger](chapters/06 The Ghost in the Ledger.md)**
 * **[Chapter 07: Sunday at r3sP@wn](chapters/07 Sunday at r3sP@wn.md)**
 
-### 3. Out-of-Session Narratives
+### 4. Out-of-Session Narratives
 Active campaign stories written during play:
 
 * **[Chapter 08: Abandoning Tourism](chapters/08 Abandoning Tourism.md)**
@@ -119,6 +121,10 @@ Active campaign stories written during play:
 * **[Chapter 20: The Price of Silk](chapters/20 The Price of Silk.md)**
 * **[Chapter 21: ~](chapters/21 ~.md)**
 * **[Chapter 22: C Sharp](chapters/22 C Sharp.md)**
+* **[Chapter 23: Tea with a Ghost](chapters/23 Tea with a Ghost.md)**
+* **[Chapter 24: Symlink](chapters/24 Symlink.md)**
+* **[Chapter 25: Renraku's Edge](chapters/25 Renraku's Edge.md)**
+* **[Chapter 26: Leaving the Nest](chapters/26 Leaving the Nest.md)**
 
 ### 4. Reference & Specifications
 Design rules, faction dossiers, and visual anchor specifications:

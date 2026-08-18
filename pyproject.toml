@@ -14,14 +14,15 @@ dependencies = [
     "numpy<2.5",
     "torch",
     "torchaudio",
-    "f5-tts",
+    "kokoro",
     "soundfile",
+    "mutagen>=1.47.0",
     "python-fasthtml>=0.14.11",
     "sr6-core",
 ]
 
 [tool.uv.sources]
-sr6-core = { git = "https://github.com/zeshanrajput/sr6-core.git", branch = "master" }
+sr6-core = { path = "../sr6-core", editable = true }
 torch = { index = "pytorch-cu124" }
 torchaudio = { index = "pytorch-cu124" }
 

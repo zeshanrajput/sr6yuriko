@@ -17,67 +17,9 @@ Breakdown of base weapon statistics, applied modifiers (Smartlink, Network Smart
 ```{python}
 #| echo: false
 #| output: asis
-import re
-from sr6core.rules_engine import get_weapon_stats
+from sr6core.rules_engine import get_weapon_attack_table
 
-fox = get_weapon_stats("red_fox") or {"dv": "6P", "ar": [14, 16, 16, 9]}
-wasp = get_weapon_stats("crimson_wasp") or {"dv": "5P", "ar": [16, 14, 11, 6]}
-pred = get_weapon_stats("ares_predator_vi") or {"dv": "3P", "ar": [10, 10, 8]}
-whip = get_weapon_stats("monofilament_whip") or {"dv": "6P", "ar": [14]}
-
-def parse_dv_num(dv_str: str) -> int:
-    return int(re.sub(r"[^\d]", "", dv_str)) if re.search(r"\d", dv_str) else 0
-
-fox_base_dv = parse_dv_num(fox["dv"])
-wasp_base_dv = parse_dv_num(wasp["dv"])
-pred_base_dv = parse_dv_num(pred["dv"])
-whip_base_dv = parse_dv_num(whip["dv"])
-
-def calc_ar_str(base_ar: list, ar_bonus: int, burst_penalty: int = 0) -> str:
-    res = []
-    for i in range(5):
-        val = base_ar[i] if i < len(base_ar) and base_ar[i] is not None else None
-        if val is not None:
-            res.append(str(val + ar_bonus - burst_penalty))
-        else:
-            res.append("—")
-    return " / ".join(res)
-
-# Red Fox Array (1x Red Fox + 2x Crimson Wasps: +4 DV array bonus, +2 AR)
-fox_ss_ar = calc_ar_str(fox["ar"], ar_bonus=7, burst_penalty=0)
-fox_sa_ar = calc_ar_str(fox["ar"], ar_bonus=7, burst_penalty=1)
-fox_bf_ar = calc_ar_str(fox["ar"], ar_bonus=7, burst_penalty=2)
-
-# Crimson Wasp Array (2x Crimson Wasps: +2 DV array bonus, +1 AR)
-wasp_ss_ar = calc_ar_str(wasp["ar"], ar_bonus=6, burst_penalty=0)
-wasp_sa_ar = calc_ar_str(wasp["ar"], ar_bonus=6, burst_penalty=1)
-wasp_bf_ar = calc_ar_str(wasp["ar"], ar_bonus=6, burst_penalty=2)
-
-# Ares Predator VI: Hand-held sidearm (+4 AR Close/Near)
-pred_ss_ar = calc_ar_str(pred["ar"], ar_bonus=4, burst_penalty=0)
-pred_sa_ar = calc_ar_str(pred["ar"], ar_bonus=4, burst_penalty=2)
-pred_bf_ar = calc_ar_str(pred["ar"], ar_bonus=4, burst_penalty=4)
-
-whip_ar = calc_ar_str(whip["ar"], ar_bonus=4, burst_penalty=0)
-
-rows = [
-    "| Weapon Name | Mode (Rounds) | Final DV | Final Effective AR (C / N / M / F / E) | Notes & Constraints |",
-    "| :--- | :---: | :---: | :---: | :--- |",
-    f"| **Red Fox Array (Link-Fired)** | **SS** (1/gun) | {fox_base_dv + 4}P | **{fox_ss_ar}** | Link-fired 1x Red Fox + 2x Crimson Wasps (+4 DV array bonus, +2 AR). **1 round/gun** (3 rounds total) per attack. |",
-    f"| | **SA** (2/gun) | {fox_base_dv + 5}P | **{fox_sa_ar}** | Link-fired array (Drone mount halves SA penalty). **2 rounds/gun** (6 rounds total) per attack. |",
-    f"| | **BF** (4/gun) | {fox_base_dv + 6}P | **{fox_bf_ar}** | Link-fired array (Drone mount halves BF penalty). **4 rounds/gun** (12 rounds total) per attack. |",
-    f"| **Crimson Wasp Array (2x Link-Fired)** | **SS** (1/gun) | {wasp_base_dv + 2}P | **{wasp_ss_ar}** | Link-fired 2x Crimson Wasps (+2 DV array bonus, +1 AR). **1 round/gun** (2 rounds total) per attack. |",
-    f"| | **SA** (2/gun) | {wasp_base_dv + 3}P | **{wasp_sa_ar}** | Link-fired array (Drone mount halves SA penalty). **2 rounds/gun** (4 rounds total) per attack. |",
-    f"| | **BF** (4/gun) | {wasp_base_dv + 4}P | **{wasp_bf_ar}** | Link-fired array (Drone mount halves BF penalty). **4 rounds/gun** (8 rounds total) per attack. |",
-    "| **Tesla Coil (MAA Cyberarm)** | **SS** (1) | 5S(e) | **10 / 12* / — / — / —** | Max 20m, 20m Cone Area Attack (Flamethrower rules), Cyberarm Mount (+2 AR). |",
-    f"| **Ares Predator VI** | **SS** (1) | {pred_base_dv}P | **{pred_ss_ar}** | Hand-held sidearm (+4 AR Close/Near). |",
-    f"| | **SA** (2) | {pred_base_dv + 1}P | **{pred_sa_ar}** | 2-round SA burst. |",
-    f"| | **BF** (4) | {pred_base_dv + 2}P | **{pred_bf_ar}** | 4-round narrow burst. |",
-    f"| **Monofilament Whip** | **Melee** | {whip_base_dv}P | **{whip_ar}** |  |",
-    "| **Amalgam Cestas (Butler - Phys)** | **Melee** | 3P | **12 / — / — / — / —** | Personalized Grip +2 AR. Overrides Immunity to Normal Weapons. |"
-]
-
-print("\n".join(rows))
+print(get_weapon_attack_table("yuriko"))
 ```
 
 ---
@@ -95,29 +37,33 @@ print(render_weapon_card("red_fox"))
 print(render_weapon_card("crimson_wasp"))
 print(render_weapon_card("krime_gloves"))
 ```
-AR Bonuses
 
-* All smartlinked weapons have +3 (Smartgun + network bonus) - Ares Predator VI, Red Fox, Crimson Wasp
-* All drone mounted weapons have +2 (drone mount AR bonus) - Red Fox, Crimson Wasp, Monofilament Whip
-* All held weapons (Ares Predator VI (+1*), Krime Gloves (+2), Amalgam Cestus (+2)) have personalized grips
-* The monofilament whip is wireless on (+2 AR)
+### Attack Rating (AR) Modifiers Summary
+
+* All smartlinked weapons have +3 AR (Smartgun + network bonus) (Ares Predator VI, Red Fox, Crimson Wasp).
+* All drone mounted weapons have +2 AR (drone mount AR bonus) (Red Fox, Crimson Wasp, Monofilament Whip).
+* All held weapons (Ares Predator VI (+1*), Krime Gloves (+2), Amalgam Cestus (+2)) have personalized grips.
+* The monofilament whip is wireless on (+2 AR).
 
 ---
 
 ## Amalgam & Grey Mana Technology (GMT) Alloy Protocols
 
-*Ref: Scotophobia p. 181*
+Reference: *Scotophobia* (p. 181)
 
 ### 1. Overcoming Immunity to Normal Weapons (ItNW)
+
 * **Mechanic**: When attacking any materialized spirit, critter, or entity possessing the **Immunity to Normal Weapons (ItNW)** power using an **Amalgam / GMT Alloy** weapon (e.g. *Amalgam Cestas*), the Essence-based Hardened Armor provided by the immunity is treated as **normal armor** instead of hardened armor.
 * **Effect**: Armor dice do not automatically convert to automatic hits, allowing normal damage penetration without requiring spellcasting or adept weapon foci.
 
 ### 2. Wild Die & Durability
+
 * **Attack Test Wild Die**: Replace one normal die with a **Wild Die** on all attack tests made with GMT / Amalgam weapons.
 * **Misfire / Damage Condition**: If the Wild Die rolls a **1**, the alloy weapon suffers structural damage and cannot be used or retracted until repaired.
 * **Repair Procedure**: Requires an armorer facility/shop and an extended **Engineering (Armorer) + Logic (6, 1 hour)** test.
 
 ### 3. Disian Entity Bonuses
+
 * **Disian Chimeras**: +4 AR bonus on attack tests.
 * **Disian Shells**: +4 AR bonus and +2 DV bonus on attack tests.
 
@@ -126,17 +72,20 @@ AR Bonuses
 ## Firing Mode & Attack Rating Rules
 
 ### 1. Firing Mode Summary (SR6 Core p. 109 & Double Clutch p. 142)
+
 * **Single Shot (SS)**: 1 round fired. Base DV, 0 AR penalty.
 * **Semi-Automatic (SA Burst)**: 2 rounds fired. Adds **+1 DV**. Standard -2 AR penalty (halved to **-1 AR** on vehicle/drone mounts).
 * **Burst Fire (BF Narrow)**: 4 rounds fired. Adds **+2 DV**. Standard -4 AR penalty (halved to **-2 AR** on vehicle/drone mounts).
 
 ### 2. Attack Rating (AR) Modifications
+
 * **Smartlink System (+3 AR Total)**: Integrated smartlink (+2 AR) plus networked smartgun software (+1 AR).
 * **Personalized Grip (+1 / +2 AR)**: Custom grip adds +1 AR to Close & Near ranges for ranged weapons, +2 AR for melee.
 * **Vehicle / Drone Mount (+2 AR, Halve Burst Penalty)**: Mounted weapons gain +2 AR and halve burst fire AR penalties (*Double Clutch* p. 142).
 * **Link-Firing Bonus (+1 AR per secondary weapon)**: Adds +1 AR to primary weapon per secondary weapon in array.
 
 ### 3. Laser Weapon Ammunition & Batteries (Firing Squad p. 44)
+
 * **Peak-Discharge Batteries**:
   * **Red Fox**: 30 shots per Peak-Discharge Battery Clip (100¥).
   * **Crimson Wasp**: 15 shots per Peak-Discharge Battery Clip (100¥).
@@ -149,7 +98,7 @@ AR Bonuses
 Friction-liquefying gel rounds carrying glitter-based micro RFID tags and temporary skin paint.
 
 | 2D6 Result | Color Result | 2D6 Result | Color Result |
-|:---:|:---|:---:|:---|
+| :---: | :--- | :---: | :--- |
 | **2** | Silver | **8** | Red |
 | **3** | Blue | **9** | White |
 | **4** | Green | **10** | Yellow |

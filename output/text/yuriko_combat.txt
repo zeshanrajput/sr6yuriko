@@ -1,0 +1,44 @@
+============================================================================
+ COMBAT, WEAPON ARRAYS & BALLISTICS: YURIKO STAR
+============================================================================
+ WEAPONS & TACTICAL ARRAYS:
+  * ARES PREDATOR VI
+    DV: 3P   | Modes: SA,BF  | Ammo: 15(c)  | AR: 11/11/8/-/-
+    Accessories/Mods: Silencer, Smartlink, Personalized Grip
+----------------------------------------------------------------------------
+  * CRIMSON WASP ARRAY (2X LINK-FIRED)
+    DV: 5P   | Modes: SA     | Ammo: 15(c)  | AR: 16/14/11/6/-
+    Accessories/Mods: Smartlink, Drone Mount (+2 AR)
+----------------------------------------------------------------------------
+  * RED FOX ARRAY (LINK-FIRED)
+    DV: 6P   | Modes: SA,BF  | Ammo: 30(c)  | AR: 14/16/16/9/-
+    Accessories/Mods: Smartlink, Drone Mount (+2 AR), Link-Fired (2x Wasps)
+----------------------------------------------------------------------------
+  * TESLA COIL
+    DV: 5S(e) | Modes: SS     | Ammo: N/A    | AR: 8/10*/-/-/-
+    Accessories/Mods: MAA Cyberarm Mount (+2 AR)
+----------------------------------------------------------------------------
+  * MONOFILAMENT WHIP
+    DV: 6P   | Modes: SS/SA  | Ammo: N/A    | AR: 14/-/-/-/-
+    Accessories/Mods: Fingertip Cyberarm Mount (+2 AR), Wireless ON (+2 AR)
+----------------------------------------------------------------------------
+  * DAGGER OF THE SACRED ROSE (+1 WEAPON FOCUS)
+    DV: 2P   | Modes: SS/SA  | Ammo: N/A    | AR: 9/1/-/-/-
+----------------------------------------------------------------------------
+  * AMALGAM CESTAS (STUN)
+    DV: 4S(e) | Modes: SS/SA  | Ammo: N/A    | AR: 5/-/-/-/-
+    Accessories/Mods: Personalized Grip
+    Tactical Notes  : Amalgam Tech Cestas; overrides magical immunity to
+    normal weapons
+----------------------------------------------------------------------------
+  * AMALGAM CESTAS (PHYS)
+    DV: 3P   | Modes: SS/SA  | Ammo: N/A    | AR: 6/-/-/-/-
+    Accessories/Mods: Personalized Grip
+    Tactical Notes  : Amalgam Tech Cestas; overrides magical immunity to
+    normal weapons
+----------------------------------------------------------------------------
+ BALLISTIC ARMOR & DEFENSIVE PROTECTION:
+  * ARES SECURETECH SKINSHIELD (Defense Rating Bonus: +2)
+----------------------------------------------------------------------------
+  * SECURETECH INVISI-SHIELD ARMOR (Defense Rating Bonus: +2)
+----------------------------------------------------------------------------
