@@ -18,6 +18,9 @@ jobs:
         with:
           submodules: recursive
 
+      - name: Clone sr6-core sibling dependency
+        run: git clone --depth 1 https://github.com/zeshanrajput/sr6-core.git ../sr6-core
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:

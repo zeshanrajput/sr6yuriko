@@ -15,57 +15,57 @@
       <attributes id="RESONANCE" value="8" />
    </attributes>
    <qualities>
-      <quality lang="en" ref="natural_hacker" uuid="608924a4-b265-4b33-80ad-bc6539877cd2" />
-      <quality lang="en" ref="technoshaman" uuid="bd3481a6-48e3-41c2-9da6-275af517b2a8" />
-      <quality lang="en" ref="designer" uuid="4d61f895-7579-4070-a8eb-9b0bc96b9e30" />
-      <quality lang="en" ref="sensor_upgrade" uuid="09434645-8fc2-4203-929f-bc2976691519" />
-      <quality lang="en" ref="pilot_origins" uuid="e36ca0d2-2a5b-4406-bc81-412c0681741a" />
-      <quality lang="en" ref="buddy_system" uuid="6828fb2c-116c-4747-9364-6ed028ac5711" />
-      <quality lang="en" ref="sprite_bane" uuid="31099b1f-14b7-4a8e-87c9-ac7b675edfc1">
-         <decision choice="33f4af72-6d51-44f5-a0d5-d73f9c8f3092" value="Primal Sprite" />
+      <quality lang="en" ref="natural_hacker" uuid="a18bd7a2-ed56-48e2-95a3-59d43e165c55" />
+      <quality lang="en" ref="technoshaman" uuid="75b29697-8310-4e5e-9e32-28a1d813ddd2" />
+      <quality lang="en" ref="designer" uuid="be73581e-c491-47f8-bf3a-2473eb82ca72" />
+      <quality lang="en" ref="sensor_upgrade" uuid="8ef20884-a316-48f3-9892-8838ec030b40" />
+      <quality lang="en" ref="pilot_origins" uuid="b25a2dae-6663-4f3d-830b-6a332210ef11" />
+      <quality lang="en" ref="buddy_system" uuid="89c56ab8-d120-466b-8eef-5ea83913ebc8" />
+      <quality lang="en" ref="sprite_bane" uuid="65a5ad55-223a-4986-b5c3-4c2c8adc4ebb">
+         <decision choice="dd13a071-5076-4eba-9d33-dcf8131c5312" value="Primal Sprite" />
       </quality>
-      <quality lang="en" ref="hooder" uuid="bd533eb2-9824-4c09-a8d4-d25548eced30" value="2" />
+      <quality lang="en" ref="hooder" uuid="e4582940-f322-4677-a78c-c88ec1043582" value="2" />
    </qualities>
    <skills>
-      <skill lang="en" ref="tasking" uuid="5d5ed6b1-19c8-4320-a165-5bf627cc3a10" value="6">
-         <decision choice="9eba5b80-118c-44c0-8fae-572e73b2f492" value="Registering" />
+      <skill lang="en" ref="tasking" uuid="99f1fbfa-7c8c-4702-9df8-69943bdee044" value="6">
+         <decision choice="38b3c912-4ad1-482f-b653-41ee1455a813" value="Registering" />
       </skill>
-      <skill lang="en" ref="cracking" uuid="fc97f040-92f8-43be-afd6-3d9cd97271a7" value="5">
-         <decision choice="db268297-dccf-4efa-b603-93583b53c4a4" value="Hacking" />
+      <skill lang="en" ref="cracking" uuid="8d5158b3-beb1-44c9-9ec8-76bda076aeb5" value="5">
+         <decision choice="1da7840f-ca54-4725-a13e-6327ac729546" value="Hacking" />
       </skill>
-      <skill lang="en" ref="electronics" uuid="78ea9853-e0e9-4da6-9acf-3b757c289f16" value="5">
-         <decision choice="29790cba-e626-4e17-84fb-4ecf9eb03675" value="Software" />
+      <skill lang="en" ref="electronics" uuid="6a6832af-5270-427a-a410-d4245e22a6b2" value="5">
+         <decision choice="898de6d7-65e0-41b4-8a6c-b1aed0127337" value="Software" />
       </skill>
-      <skill lang="en" ref="influence" uuid="2403450e-662d-4171-8492-ef02dec7421b" value="1" />
-      <skill lang="en" ref="con" uuid="0757091a-7356-4950-af56-f40b6c0d24da" value="1" />
-      <skill lang="en" ref="language" uuid="bcf51a93-4da5-4436-a149-8b0363998465" value="4" />
+      <skill lang="en" ref="influence" uuid="44b87829-73ca-4e93-9a7c-53d664bdb879" value="1" />
+      <skill lang="en" ref="con" uuid="80088062-1352-400b-b90a-aa6c8dcc553d" value="1" />
+      <skill lang="en" ref="language" uuid="4e3f38ac-e138-4fd5-b782-e545337eaa70" value="4" />
    </skills>
    <items>
-      <item lang="en" mode="CARRIED" ref="50_explosive_rounds_(ares_predator_vi)" uuid="ff700fdc-7cd2-4e7c-a5b5-28a06e0132af" />
-      <item lang="en" mode="CARRIED" ref="50_krime_self_defense_rounds_(ares_predator_vi)" uuid="cd2b841c-c412-400a-929b-f1eaf6e1894d" />
-      <item lang="en" mode="CARRIED" ref="5x_peak-discharge_laser_battery_clips_(red_fox)" uuid="e59a00aa-9086-4d2d-98da-60213b721dfc" />
-      <item lang="en" mode="CARRIED" ref="10x_glitter_grenades" uuid="8725ac9b-fbc9-4565-8e41-899ef0e4cd4b" />
-      <item lang="en" mode="CARRIED" ref="built-in_utility_kit_&amp;_medkit_(butler_&amp;_man-at-arms)" uuid="f0e3271c-a4e1-4c3d-becb-ab61c90b3d0a" />
-      <item lang="en" mode="CARRIED" ref="facial_scanner" uuid="69f8f7d9-f0e0-4b75-9da2-fd5b18c68992" />
-      <item lang="en" mode="CARRIED" ref="p-ice_spines" uuid="c97b2472-b2f7-4661-be1f-a5e31562b196" />
-      <item lang="en" mode="CARRIED" ref="personal_assistant_(r6)" uuid="8f6e2c2d-7e8f-41fa-801e-e4fe8349242d" />
-      <item lang="en" mode="CARRIED" ref="social_hud_(r6)" uuid="b2af495d-9c84-4083-837c-0d86e4117454" />
-      <item lang="en" mode="CARRIED" ref="thermal_mood_reading" uuid="c52ccb4b-7a23-4bba-9950-f90f5020e149" />
-      <item lang="en" mode="CARRIED" ref="vocal_tension_detection" uuid="941e0d4b-0a05-45ab-a217-d83506704f74" />
-      <item lang="en" mode="CARRIED" ref="mctgnat" uuid="4d913858-a39d-492a-a7a2-9219871face8" />
-      <item lang="en" mode="CARRIED" ref="shiawasebdbutler" uuid="4fe35967-c41f-4aaa-bcda-1a406a86c521">
+      <item lang="en" mode="CARRIED" ref="50_explosive_rounds_(ares_predator_vi)" uuid="a0ee3977-b70a-4c8f-b7cf-f73ff6d914e6" />
+      <item lang="en" mode="CARRIED" ref="50_krime_self_defense_rounds_(ares_predator_vi)" uuid="27189dde-d3f1-48aa-84ac-023cf3255369" />
+      <item lang="en" mode="CARRIED" ref="5x_peak-discharge_laser_battery_clips_(red_fox)" uuid="0cfa2575-0f45-4f93-bca2-52bea2454997" />
+      <item lang="en" mode="CARRIED" ref="10x_glitter_grenades" uuid="e10c0af7-4f4e-42d6-98dc-21de8e5f8812" />
+      <item lang="en" mode="CARRIED" ref="built-in_utility_kit_&amp;_medkit_(butler_&amp;_man-at-arms)" uuid="ba1f1021-97be-45e2-838b-358a60524278" />
+      <item lang="en" mode="CARRIED" ref="facial_scanner" uuid="14daf050-7277-444e-a9e8-701f6a7f1bbf" />
+      <item lang="en" mode="CARRIED" ref="p-ice_spines" uuid="b2aaf3e9-1be2-4693-ae19-85b9325bb5e0" />
+      <item lang="en" mode="CARRIED" ref="personal_assistant_(r6)" uuid="76f7fce1-d7a1-4476-bac5-60357b41d7a7" />
+      <item lang="en" mode="CARRIED" ref="social_hud_(r6)" uuid="e9d542bc-0548-4a8b-b9e4-f6f4d61552cc" />
+      <item lang="en" mode="CARRIED" ref="thermal_mood_reading" uuid="bf05f0de-ac8d-4786-9f92-e3926ffb338a" />
+      <item lang="en" mode="CARRIED" ref="vocal_tension_detection" uuid="10a1660f-865a-4bb0-9a70-38e2ff541341" />
+      <item lang="en" mode="CARRIED" ref="mctgnat" uuid="072dc5ae-55af-4eb7-870b-18b0a8a1038a" />
+      <item lang="en" mode="CARRIED" ref="shiawasebdbutler" uuid="dfcaffbb-f7eb-4a8c-a651-b483883fb1f4">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="812dd133-28ad-42e2-a59d-3f2a35b683d6" />
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="cb81f239-4133-4769-9cb2-5d3dec2be2a0" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="federatedboeingskycommander_seattle" uuid="a42a4e6a-e356-4ec5-b303-b6770cf92aaf">
+      <item lang="en" mode="CARRIED" ref="federatedboeingskycommander_seattle" uuid="611a4f52-dbc0-4927-8fd3-ffb0fc1b3852">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="dccd31d6-f75e-410d-a270-cfc40a1123f6" />
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="6bae5644-ffc7-4216-abcb-5041691f27f6" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="shiawasebdmanatarms" uuid="f02c0f55-d5b8-427b-959d-c2b3d562b89d">
+      <item lang="en" mode="CARRIED" ref="shiawasebdmanatarms" uuid="3347eb40-56a4-4b45-8cc2-078a0ac250db">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="0f0364c0-dd22-4d45-aa0b-960345526bc6" />
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="b8771972-6a03-420a-a5c3-f3c4f2cf8372" />
          </accessories>
       </item>
    </items>
