@@ -76,35 +76,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -369,21 +340,6 @@ window.Quarto = {
   <a href="../chapters/23 Tea with a Ghost.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tea with a Ghost</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/24 Symlink.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Symlink</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/25 Renraku's Edge.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">25 Renraku’s Edge</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/26 Leaving the Nest.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">26 Leaving the Nest</span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -403,6 +359,11 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../reference/river_people.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">River People (Faction Reference)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/coffin_girls.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Coffin Girls (Faction &amp; Host Reference Dossier)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -519,42 +480,49 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="registering-sprites">Registering Sprites</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
+<col style="width: 17%">
+<col style="width: 21%">
+<col style="width: 17%">
+<col style="width: 21%">
+<col style="width: 21%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Downtime Action / Protocol</th>
-<th style="text-align: center;">Base Pool</th>
-<th style="text-align: center;">Bought Hits vs Defense</th>
-<th style="text-align: center;">Fading / Mitigation</th>
-<th style="text-align: center;">Net Services / Damage</th>
+<th style="text-align: left;">Sprite Protocol / Action</th>
+<th style="text-align: center;">Test Parameters</th>
+<th style="text-align: left;">Applied Modifiers Math</th>
+<th style="text-align: center;">Final Dice Pool</th>
+<th style="text-align: center;">Bought Hits</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><strong>Compile Sprite (L7)</strong></td>
-<td style="text-align: center;">Tasking 6 + RES 8 + Focus 4 = <strong>18d6</strong></td>
-<td style="text-align: center;"><strong>4 Hits</strong> vs 14d6 (3 Hits)</td>
-<td style="text-align: center;">FV: 3 vs Fade Res 17d6 (4 Hits)</td>
-<td style="text-align: center;"><strong>2 Services</strong> (0 Drain)</td>
+<td style="text-align: center;">Tasking (Compiling) + Resonance</td>
+<td style="text-align: left;">Base RES (6) + Tasking (6) + Focus (+0)</td>
+<td style="text-align: center;"><strong>12d6</strong></td>
+<td style="text-align: center;"><strong>3 Hits</strong></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Register Sprite (L7)</strong></td>
-<td style="text-align: center;">Registering 8 + RES 8 + Focus 4 = <strong>20d6</strong></td>
-<td style="text-align: center;"><strong>5 Hits</strong> vs 14d6 (3 Hits)</td>
-<td style="text-align: center;">FV: 6 vs Fade Res 17d6 (4 Hits)</td>
-<td style="text-align: center;"><strong>+2 Services</strong> (2 Stun Drain)</td>
+<td style="text-align: center;">Tasking (Registering) + Resonance</td>
+<td style="text-align: left;">Base RES (6) + Tasking (6) + Focus (+0)</td>
+<td style="text-align: center;"><strong>12d6</strong></td>
+<td style="text-align: center;"><strong>3 Hits</strong></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Resonance Focus Activation</strong></td>
-<td style="text-align: center;">Resonance Focus R4</td>
-<td style="text-align: center;">Automatic (Activation FV: 2)</td>
-<td style="text-align: center;">Fade Res 10d6 (2 Hits)</td>
-<td style="text-align: center;"><strong>0 Drain</strong> (Mitigated)</td>
+<td style="text-align: center;">Sustained Resonance Focus</td>
+<td style="text-align: left;">Foci Rating (+0 to Resonance Tests)</td>
+<td style="text-align: center;"><strong>+0d6</strong></td>
+<td style="text-align: center;"><strong>+0 Hits</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Fading Resistance Test</strong></td>
+<td style="text-align: center;">WIL (5) + LOG (5)</td>
+<td style="text-align: left;">Natural Drain/Fading Soak</td>
+<td style="text-align: center;"><strong>10d6</strong></td>
+<td style="text-align: center;"><strong>2 Hits</strong></td>
 </tr>
 </tbody>
 </table>
@@ -603,63 +571,55 @@ window.Quarto = {
 <p>All of these commands are available from Reiko’s pool of registered Modular Sprites at a cost of <strong>1 task per use</strong>. In SRMG, these commands function as Teamwork tests (except where modified by the SRM Guide FAQ):</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 19%">
-<col style="width: 19%">
-<col style="width: 23%">
-<col style="width: 19%">
-<col style="width: 19%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Sprite Command / Task</th>
-<th style="text-align: left;">Native Sprite Types</th>
-<th style="text-align: center;">Task Cost</th>
-<th style="text-align: left;">Mechanical Effect (Level 7)</th>
-<th style="text-align: left;">SRMG Rules &amp; Teamwork Limits</th>
+<th style="text-align: left;">Sprite Command</th>
+<th style="text-align: left;">Task / Action Type</th>
+<th style="text-align: left;">Mechanical Effect &amp; Modifiers</th>
+<th style="text-align: left;">Rules &amp; Usage Constraints</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><strong>Signal Boost</strong></td>
-<td style="text-align: left;">Courier, Defender</td>
-<td style="text-align: center;">1 Task</td>
-<td style="text-align: left;">Reduces Noise by <strong>7</strong> for <strong>7 combat rounds</strong></td>
-<td style="text-align: left;">Only benefits the technomancer (does not apply to other PAN devices).</td>
+<td style="text-align: left;">Simple Action</td>
+<td style="text-align: left;">Reduces Noise by <strong>7</strong> across all active PAN channels.</td>
+<td style="text-align: left;">Sustained while sprite remains on Matrix overwatch.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Host Ken</strong></td>
-<td style="text-align: left;">Crack</td>
-<td style="text-align: center;">1 Task</td>
-<td style="text-align: left;">Adds <strong>+7d6</strong> on Matrix actions or Complex Forms targeting a Host or IC</td>
-<td style="text-align: left;">Teamwork rules apply (bonus dice capped at character’s base skill rating).</td>
+<td style="text-align: left;">Simple Action</td>
+<td style="text-align: left;">Grants Teamwork bonus (Rating 7) on Host navigation and Matrix Perception.</td>
+<td style="text-align: left;">Teamwork rules apply. Max bonus capped at Technomancer skill rating.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Hyperthreading</strong></td>
-<td style="text-align: left;">Data, Music</td>
-<td style="text-align: center;">1 Task</td>
-<td style="text-align: left;">Adds <strong>+7d6</strong> on Threading Complex Forms</td>
-<td style="text-align: left;">Teamwork rules apply (bonus dice capped at Tasking skill rating).</td>
+<td style="text-align: left;">Complex Action</td>
+<td style="text-align: left;">Compiles task routines to reduce Fading Value of sustained Complex Forms by 1.</td>
+<td style="text-align: left;">Requires active Resonance bond.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>File Ken</strong></td>
-<td style="text-align: left;">Data</td>
-<td style="text-align: center;">1 Task</td>
-<td style="text-align: left;">Adds <strong>+7d6</strong> on Matrix actions targeting a File</td>
-<td style="text-align: left;">Teamwork rules apply (bonus dice capped at character’s base skill rating).</td>
+<td style="text-align: left;">Simple Action</td>
+<td style="text-align: left;">Teamwork assistance on Matrix Search and Decryption tests (Level 7).</td>
+<td style="text-align: left;">Teamwork rules apply.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Cybercombat Boost</strong></td>
-<td style="text-align: left;">Fault, Assassin</td>
-<td style="text-align: center;">1 Task</td>
-<td style="text-align: left;">Adds <strong>+4 Matrix DV</strong> to <em>Data Spike</em> or <em>Resonance Spike</em></td>
-<td style="text-align: left;">SRMG rule: Damage boost is <span class="math inline">\(\lceil\text{Resonance}/2\rceil\)</span> (half Resonance, rounded up).</td>
+<td style="text-align: left;">Free Action</td>
+<td style="text-align: left;">Adds <strong>+4 Matrix DV</strong> on successful Cybercombat and Brute Force attacks.</td>
+<td style="text-align: left;">Applies to next attack test.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Device Ken</strong></td>
-<td style="text-align: left;">Machine</td>
-<td style="text-align: center;">1 Task</td>
-<td style="text-align: left;">Adds <strong>+7d6</strong> on Matrix actions or Complex Forms targeting a Device</td>
-<td style="text-align: left;">Teamwork rules apply (bonus dice capped at character’s base skill rating).</td>
+<td style="text-align: left;">Simple Action</td>
+<td style="text-align: left;">Teamwork assistance on Control Device and Hardware tests (Level 7).</td>
+<td style="text-align: left;">Teamwork rules apply.</td>
 </tr>
 </tbody>
 </table>
