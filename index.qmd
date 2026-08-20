@@ -122,13 +122,11 @@ Active campaign stories written during play:
 * **[Chapter 21: ~](chapters/21 ~.md)**
 * **[Chapter 22: C Sharp](chapters/22 C Sharp.md)**
 * **[Chapter 23: Tea with a Ghost](chapters/23 Tea with a Ghost.md)**
-* **[Chapter 24: Symlink](chapters/24 Symlink.md)**
-* **[Chapter 25: Renraku's Edge](chapters/25 Renraku's Edge.md)**
-* **[Chapter 26: Leaving the Nest](chapters/26 Leaving the Nest.md)**
 
-### 4. Reference & Specifications
+### 5. Reference & Specifications
 Design rules, faction dossiers, and visual anchor specifications:
 
 * **[Master Visual Anchors](reference/visual_anchors.md)**: Visual anchors, key image reference links (Dante's, SEA Rain, Desert Wars), visual asset gallery, and prompt templates.
 * **[River People Faction Dossier](reference/river_people.md)**: Background and connection details for the River People technomancer/punk network.
+* **[The Coffin Girls Faction Dossier](reference/coffin_girls.md)**: Sovereign courtesans and DI haven sanctuary.
 * **[Voice Specification & Sensory Schema](reference/voice_spec.md)**: Character voice rules, animistic phenomenology, sensory lens, and kinship terminology.

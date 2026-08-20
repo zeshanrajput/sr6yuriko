@@ -1,6 +1,4 @@
-# 25 Renraku's Edge
-
-<audio controls src="audio/25%20Renraku's%20Edge.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
+# Renraku's Edge
 
 The gentleman caller arrived at the tea parlor shortly past dusk, carrying neither a bodyguard nor an obvious cyberdeck. He wore a charcoal cashmere overcoat tailored with the whisper-quiet drape of neo-Kyoto aristocracy, uncreased by the damp Seattle drizzle outside. When the parlor host bowed him toward the secluded corner alcove near the rain-slicked glass, his gait carried the effortless poise of a man accustomed to private galleries and velvet ropes.
 

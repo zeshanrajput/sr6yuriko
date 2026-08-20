@@ -107,8 +107,8 @@
       Connection: 3 (Fixed) | Loyalty: 2 | Active Favors: 0
       History / Changes: SRM 2081-21 Grudge Match Gladiators
 ----------------------------------------------------------------------------
- [25] SIGRÚN (AMS Shadowrunner) [AMS]
-      Connection: 5 (Fixed) | Loyalty: 3 | Active Favors: 1
+ [25] SIGRÚN (AMS House Orange-Nassau Johnson) [AMS]
+      Connection: 5 (Fixed) | Loyalty: 3 | Active Favors: 2
       History / Changes: CMP 2081-12 Uneasy lies the head
 ----------------------------------------------------------------------------
  [26] DIXIE L'AMIN (DW Naga) [DW]
@@ -246,4 +246,8 @@
  [56] COL. TREYLOR (DW Thunder Corps Fixer) [DW]
       Connection: 3 (Fixed) | Loyalty: 2 | Active Favors: 0
       History / Changes: CMP 2083-15 | By Land, Sea, and Hair
+----------------------------------------------------------------------------
+ [57] MOENEN (UNL infobroker) [AMS]
+      Connection: 5 (Fixed) | Loyalty: 2 | Active Favors: 0
+      History / Changes: CMP 2083-02 ROYAL ROAD
 ----------------------------------------------------------------------------

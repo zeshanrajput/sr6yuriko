@@ -1,18 +1,10 @@
 ============================================================================
- POWERS, COMPLEX FORMS & SUBMERSION ECHOES: YURIKO STAR
+ POWERS, COMPLEX FORMS, ABILITIES & CYBERWARE: YURIKO STAR
 ============================================================================
-  Abbreviations: FV (Fading Value), Dur (Duration: P=Permanent, S=Sustained,
- I=Instant)
-----------------------------------------------------------------------------
- COMPLEX FORMS (TECHNOMANCER):
+ COMPLEX FORMS:
+  Abbreviations: FV (Fading Value), Dur (Duration: P=Perm, S=Sust, I=Inst)
   - Cleaner                    | FV: 2  | Dur: P
   - Diffusion                  | FV: 4  | Dur: S
   - Technoregeneration         | FV: -1 | Dur: P
   - Puppeteer                  | FV: 5  | Dur: S
-----------------------------------------------------------------------------
- SUBMERSION ECHOES / METAMAGIC:
-  - Hybrid Sprites                   | New Sprite Type
-  - Sprite Conduit                   | Sprite Symbiosis
-  - Living Network                   | Transcendent Network
-  - Overclocking                     | Software Emulator
 ----------------------------------------------------------------------------

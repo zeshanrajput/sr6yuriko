@@ -27,6 +27,7 @@ sr6yuriko/
 ├── reference/                # Local project reference docs
 │   ├── voice_spec.md         # Character voice spec (extends sr6-core/reference/default_voice_spec.md)
 │   ├── visual_anchors.md     # Visual design anchors, art prompts, and key image links
+│   ├── coffin_girls.md       # Coffin Girls faction & haven dossier
 │   ├── river_people.md       # River People faction dossier
 │   └── story_continuity.md   # Auto-indexed campaign continuity map (from sr6 continuity)
 ├── chapters/                 # Quarto narrative story book
@@ -38,11 +39,15 @@ sr6yuriko/
 │   ├── rules_*.qmd           # Specialized rules cheatsheets (combat, matrix, sprites, drones)
 │   └── *.md                  # Narrative archive chapters
 ├── output/                   # Auto-generated exports (from sr6 sync-all)
-│   ├── yuriko_sheet.json     # Roll20 JSON sheet
-│   ├── yuriko_sheet.txt      # Plain-text VTT sheet
-│   └── yuriko_sheet.xml      # CommLink6 / Genesis compliant XML sheet
+│   ├── text/                 # 76-column modular plain-text sheets
+│   ├── pdf/                  # 1-page base sheets & printable card decks
+│   ├── vtt/                  # Roll20 JSON & CommLink6/Genesis XML sheets
+│   └── cards/                # Individual item & complex form stat cards
 ├── _quarto.yml               # Quarto book build configuration
-└── pyproject.toml            # uv project configuration pulling sr6-core master
+├── pyproject.toml            # uv project configuration pulling sr6-core
+└── .agents/
+    ├── AGENTS.md             # Master workspace instructions & orchestrator protocols
+    └── plugins.json          # Inherits Antigravity sr6-narrative-suite plugin
 ```
 
 ---
@@ -51,7 +56,19 @@ sr6yuriko/
 
 All rules audits, character sheet generation, and narrative evaluations are managed via the `sr6` CLI (provided by `sr6-core`):
 
-### 1. Ecosystem Synchronization & CommLink6 Roundtrip
+### 1. Unified 7-Axis Narrative Evaluator & Tabletop Ledger
+```bash
+# Run 7-axis evaluation on chapter prose calibrated to chapter tier
+sr6 evaluate "chapters/XX_n Saturation.md" --tier 2
+
+# Extract fired ammunition, damage taken, fading, and rewards into YAML diffs
+sr6 ledger parse "chapters/XX_n Saturation.md"
+
+# Lint chapter prose for banned buzzwords, cognitive verbs, and formatting
+sr6 lint "chapters/XX_n Saturation.md"
+```
+
+### 2. Ecosystem Synchronization & CommLink6 Roundtrip
 ```bash
 # Run deep audits, regenerate exports in output/, and patch active CommLink6 GUI saves
 sr6 sync-all
@@ -60,7 +77,7 @@ sr6 sync-all
 sr6 db sync-commlink
 ```
 
-### 2. Character Auditing & Export
+### 3. Character Auditing & Export
 ```bash
 # Deep item-by-item audit against master rules database
 sr6 characters audit yuriko
@@ -69,26 +86,16 @@ sr6 characters audit yuriko
 sr6 export yuriko --format=vtt
 ```
 
-### 3. Story Continuity & Prose Diagnostics
+### 4. Story Continuity & Rules RAG Assistant
 ```bash
-# Lint chapter prose for banned buzzwords, cognitive verbs, and formatting
-sr6 lint chapters/character_log.qmd
-
 # Index campaign relationships, sprite states, and heatmaps
 sr6 continuity .
 
-# Generate TTS audio narration for chapter
-sr6 narrate chapters/25\ Renraku\'s\ Edge.md
-```
-
-### 4. Rules Vault & RAG Assistant
-```bash
-# Full-text search enriched rules and stat cards
-sr6 search "sprite_symbiosis"
-sr6 card quality "amplified_fading"
-
 # Query Gemini AI Rules RAG with Yuriko's active dossier context
 sr6 rag query "How does fading healing interact with resonance wellsprings?" --char yuriko
+
+# Check Antigravity plugin status
+sr6 plugin status
 ```
 
 ---

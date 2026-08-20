@@ -239,7 +239,7 @@ Submersion_Grade = state["Submersion_Grade"]
 * **Rewards:** `{python} inc('Karma', 6)`, `{python} inc('Nuyen', 8500)`  
 * **Reputation:** `{python} add_rep('Amsterdam', 1)`  
 * **Heat:** 0 (Bribes: Yuriko)  
-* **Contacts:** `{python} contact("Sigrún", connection=5, fp=4, type_name="AMS Shadowrunner", notes="CMP 2081-12 Uneasy lies the head")`  
+* **Contacts:** `{python} contact("Sigrún", connection=5, fp=4, type_name="AMS House Orange-Nassau Johnson", notes="CMP 2081-12 Uneasy lies the head")`  
 * **Downtime Actions (2 Minor):**  
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
   * Add four dice to any single downtime Matrix Search (upcoming M-TOC II purchase)
@@ -537,6 +537,7 @@ Submersion_Grade = state["Submersion_Grade"]
     * Pending publication, I will treat them as 3P weapons that override magical immunity to normal weapons
   * *Register Sprites:* `{python} add_sprite('Sprite-M26', 7, 'Modular')`
 
+
 ---
 
 ### **2026-Aug-01: CMP 2083-15 | By Land, Sea, and Hair** `{python} start_mission('CMP 2083-15')`
@@ -555,4 +556,22 @@ Submersion_Grade = state["Submersion_Grade"]
   * *Register Sprites:* `{python} add_sprite('Sprite-M27', 7, 'Modular')`
 * **Other:**
   * Increased Resonance to 8: `{python} inc_many(('Karma', -40), ('Resonance', 1))`
+
+---
+
+### **2026-Aug-19: CMP 2083-02 | ROYAL ROAD** `{python} start_mission('CMP 2083-02')`
+
+* **Summary:** Conflicting reports led to a hunt for terrorists across the Hague. Police blockades combined with a small blizzard and heavy jamming prevented people from getting their Trids and MeFeed. Maas-Walker claimed the matter was completely under control.
+* **Team:** Mithral, Arrogant Ninja (Dwarf Mage), Rei, Yuriko
+* **Difficulty Level:** Veteran
+* **Rewards:** `{python} inc('Karma', 9)`, `{python} inc('Nuyen', 10000)` (8 Karma + 1 Veteran; 8,000 Nuyen + 2,000 Veteran)
+* **Reputation:** `{python} add_rep('UNL', 1)` (United Netherlands)
+* **Heat:** 0 (Spent `{python} inc('Nuyen', -1000)` on taxes/generosity/bribes to negate heat)
+* **Contacts:**
+  * `{python} contact("Moenen", connection=5, fp=2, type_name="UNL infobroker", region="AMS", notes="CMP 2083-02 ROYAL ROAD")`
+  * `{python} contact("Sigrún", connection=5, fp=1, type_name="House Oranje-Nassau Johnson", region="AMS", notes="CMP 2083-02 ROYAL ROAD")`
+* **Downtime Actions (2 Minor):**
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
+  * *Register Sprites:* `{python} add_sprite('Sprite-M28', 7, 'Modular')`
+
 

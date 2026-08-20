@@ -1,6 +1,4 @@
-# 26 Leaving the Nest
-
-<audio controls src="audio/26%20Leaving%20the%20Nest.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
+# Leaving the Nest
 
 Twilight settled across the bamboo garden in `~`, painted in quiet shades of deep violet and amber across the host’s skybox.
 

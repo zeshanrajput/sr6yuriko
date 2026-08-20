@@ -554,9 +554,9 @@ contacts:
 - name: "Sigr\xFAn"
   connection: 5
   loyalty: 3
-  favors: 1
-  type: AMS Shadowrunner
-  archetype: AMS Shadowrunner
+  favors: 2
+  type: AMS House Orange-Nassau Johnson
+  archetype: AMS House Orange-Nassau Johnson
   region: AMS
   is_canonical: false
   description: CMP 2081-12 Uneasy lies the head
@@ -847,6 +847,15 @@ contacts:
   region: DW
   is_canonical: false
   description: CMP 2083-15 | By Land, Sea, and Hair
+- name: Moenen
+  connection: 5
+  loyalty: 2
+  favors: 0
+  type: UNL infobroker
+  archetype: UNL infobroker
+  region: AMS
+  is_canonical: false
+  description: CMP 2083-02 ROYAL ROAD
 programs:
 - name: Baby Monitor
   category: Basic

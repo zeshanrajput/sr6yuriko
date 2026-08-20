@@ -1,7 +1,5 @@
 # Symlink
 
-<audio controls src="audio/24%20The%20Submersion.mp3" style="width: 100%; margin-bottom: 20px;"></audio>
-
 Inside the studio host, low-slung ceilings of brushed teak and burnished bronze held a heavy, enclosed quiet, shielded from the chalky corporate traffic humming across the grid outside. Along the kitchenette counter, the ceramic tea service emitted the delicate aroma of blooming jasmine. Over the central worktable, gold wireframe schematics of her Megalodon artillery cannon floated in silence, its recoil dampeners re-engineered for the physical limits of meatspace. Beside a book-lined alcove hung the recessed display case containing Brynne Taggart’s original contract-collar, its disarmed cipher-locks frozen in a state of perpetual decryption.
 
 Reiko hovered near the center table, her avatar’s sleeveless blue silk kimono catching the warm, ambient glow. Across her arms and cheekbones, the gold tactical network and indigo bioluminescence interlocked in a tight double-weave, humming at over-clocked speed. She dispatched a flock of gilded paper moths to sift through the telemetry streams collected by her children, attempting to shoulder the entire processing load herself to keep the young sparks safe from harm.

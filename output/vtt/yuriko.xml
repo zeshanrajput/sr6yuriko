@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<sr6char gender="DIVERSE" meta="ai-pilot ai" karmaF="4" karmaI="207" nuyen="4800">
+<sr6char gender="DIVERSE" meta="ai-pilot ai" karmaF="14" karmaI="207" nuyen="11800">
    <name>Yuriko Star</name>
    <realName>r31k0 Takahashi</realName>
    <attributes>
@@ -15,57 +15,57 @@
       <attributes id="RESONANCE" value="8" />
    </attributes>
    <qualities>
-      <quality lang="en" ref="natural_hacker" uuid="a18bd7a2-ed56-48e2-95a3-59d43e165c55" />
-      <quality lang="en" ref="technoshaman" uuid="75b29697-8310-4e5e-9e32-28a1d813ddd2" />
-      <quality lang="en" ref="designer" uuid="be73581e-c491-47f8-bf3a-2473eb82ca72" />
-      <quality lang="en" ref="sensor_upgrade" uuid="8ef20884-a316-48f3-9892-8838ec030b40" />
-      <quality lang="en" ref="pilot_origins" uuid="b25a2dae-6663-4f3d-830b-6a332210ef11" />
-      <quality lang="en" ref="buddy_system" uuid="89c56ab8-d120-466b-8eef-5ea83913ebc8" />
-      <quality lang="en" ref="sprite_bane" uuid="65a5ad55-223a-4986-b5c3-4c2c8adc4ebb">
-         <decision choice="dd13a071-5076-4eba-9d33-dcf8131c5312" value="Primal Sprite" />
+      <quality lang="en" ref="natural_hacker" uuid="78cb8d8b-b4e1-4456-90e7-93ca354bda63" />
+      <quality lang="en" ref="technoshaman" uuid="42fc284c-89ae-47df-8936-35779e7e354c" />
+      <quality lang="en" ref="designer" uuid="f37f258b-5c4c-4620-a745-f00c67ef61f6" />
+      <quality lang="en" ref="sensor_upgrade" uuid="95359e25-055b-4be8-9b1b-563454b7d0d1" />
+      <quality lang="en" ref="pilot_origins" uuid="41597441-f4dd-4237-b25f-14d13279db30" />
+      <quality lang="en" ref="buddy_system" uuid="533ec994-9a33-4b2a-85b5-2c9a9dbf58c4" />
+      <quality lang="en" ref="sprite_bane" uuid="7ce1cdf4-4160-4026-a8e4-db991834433b">
+         <decision choice="84685f16-c806-4852-be77-f5b257a8aa5a" value="Primal Sprite" />
       </quality>
-      <quality lang="en" ref="hooder" uuid="e4582940-f322-4677-a78c-c88ec1043582" value="2" />
+      <quality lang="en" ref="hooder" uuid="13e5d75e-566e-4ef9-9ce0-ae2c41264246" value="2" />
    </qualities>
    <skills>
-      <skill lang="en" ref="tasking" uuid="99f1fbfa-7c8c-4702-9df8-69943bdee044" value="6">
-         <decision choice="38b3c912-4ad1-482f-b653-41ee1455a813" value="Registering" />
+      <skill lang="en" ref="tasking" uuid="b10d9e99-530c-435d-b5b5-9d1d49680476" value="6">
+         <decision choice="45a794bf-d8af-40ae-9507-31e578a6c93c" value="Registering" />
       </skill>
-      <skill lang="en" ref="cracking" uuid="8d5158b3-beb1-44c9-9ec8-76bda076aeb5" value="5">
-         <decision choice="1da7840f-ca54-4725-a13e-6327ac729546" value="Hacking" />
+      <skill lang="en" ref="cracking" uuid="466c4fa6-0e9c-4f7e-a92e-95f34be0138e" value="5">
+         <decision choice="8a11e86c-0958-4fd4-b58a-8b1f95a6af93" value="Hacking" />
       </skill>
-      <skill lang="en" ref="electronics" uuid="6a6832af-5270-427a-a410-d4245e22a6b2" value="5">
-         <decision choice="898de6d7-65e0-41b4-8a6c-b1aed0127337" value="Software" />
+      <skill lang="en" ref="electronics" uuid="c48e8216-7095-4769-ab38-276dc49902c7" value="5">
+         <decision choice="b9ac5800-d422-41ae-a0c8-bd5423bc0085" value="Software" />
       </skill>
-      <skill lang="en" ref="influence" uuid="44b87829-73ca-4e93-9a7c-53d664bdb879" value="1" />
-      <skill lang="en" ref="con" uuid="80088062-1352-400b-b90a-aa6c8dcc553d" value="1" />
-      <skill lang="en" ref="language" uuid="4e3f38ac-e138-4fd5-b782-e545337eaa70" value="4" />
+      <skill lang="en" ref="influence" uuid="e05dee02-5c71-473b-bec5-90491eb7fa98" value="1" />
+      <skill lang="en" ref="con" uuid="45c138bd-66ed-45c0-9061-181a98b66fd5" value="1" />
+      <skill lang="en" ref="language" uuid="335aa6c5-aa99-41ac-9a80-95d527333d6d" value="4" />
    </skills>
    <items>
-      <item lang="en" mode="CARRIED" ref="50_explosive_rounds_(ares_predator_vi)" uuid="a0ee3977-b70a-4c8f-b7cf-f73ff6d914e6" />
-      <item lang="en" mode="CARRIED" ref="50_krime_self_defense_rounds_(ares_predator_vi)" uuid="27189dde-d3f1-48aa-84ac-023cf3255369" />
-      <item lang="en" mode="CARRIED" ref="5x_peak-discharge_laser_battery_clips_(red_fox)" uuid="0cfa2575-0f45-4f93-bca2-52bea2454997" />
-      <item lang="en" mode="CARRIED" ref="10x_glitter_grenades" uuid="e10c0af7-4f4e-42d6-98dc-21de8e5f8812" />
-      <item lang="en" mode="CARRIED" ref="built-in_utility_kit_&amp;_medkit_(butler_&amp;_man-at-arms)" uuid="ba1f1021-97be-45e2-838b-358a60524278" />
-      <item lang="en" mode="CARRIED" ref="facial_scanner" uuid="14daf050-7277-444e-a9e8-701f6a7f1bbf" />
-      <item lang="en" mode="CARRIED" ref="p-ice_spines" uuid="b2aaf3e9-1be2-4693-ae19-85b9325bb5e0" />
-      <item lang="en" mode="CARRIED" ref="personal_assistant_(r6)" uuid="76f7fce1-d7a1-4476-bac5-60357b41d7a7" />
-      <item lang="en" mode="CARRIED" ref="social_hud_(r6)" uuid="e9d542bc-0548-4a8b-b9e4-f6f4d61552cc" />
-      <item lang="en" mode="CARRIED" ref="thermal_mood_reading" uuid="bf05f0de-ac8d-4786-9f92-e3926ffb338a" />
-      <item lang="en" mode="CARRIED" ref="vocal_tension_detection" uuid="10a1660f-865a-4bb0-9a70-38e2ff541341" />
-      <item lang="en" mode="CARRIED" ref="mctgnat" uuid="072dc5ae-55af-4eb7-870b-18b0a8a1038a" />
-      <item lang="en" mode="CARRIED" ref="shiawasebdbutler" uuid="dfcaffbb-f7eb-4a8c-a651-b483883fb1f4">
+      <item lang="en" mode="CARRIED" ref="50_explosive_rounds_(ares_predator_vi)" uuid="8bc14ab2-3245-4a99-8c56-3e12fdb8c012" />
+      <item lang="en" mode="CARRIED" ref="50_krime_self_defense_rounds_(ares_predator_vi)" uuid="e342870b-37b3-41da-aafc-8f6e5e1c0cd7" />
+      <item lang="en" mode="CARRIED" ref="5x_peak-discharge_laser_battery_clips_(red_fox)" uuid="30ffe77e-4c8e-4443-a1ae-c7797ecca77d" />
+      <item lang="en" mode="CARRIED" ref="10x_glitter_grenades" uuid="2d688a9f-a5c1-46d9-849a-8eefa5ea0928" />
+      <item lang="en" mode="CARRIED" ref="built-in_utility_kit_&amp;_medkit_(butler_&amp;_man-at-arms)" uuid="f5b13681-9006-4d7c-ab41-f4bca5520858" />
+      <item lang="en" mode="CARRIED" ref="facial_scanner" uuid="205d474e-d20c-4d19-87d5-b416e3bbf5c4" />
+      <item lang="en" mode="CARRIED" ref="p-ice_spines" uuid="6da59b8a-4369-4f12-b305-37c59463bc78" />
+      <item lang="en" mode="CARRIED" ref="personal_assistant_(r6)" uuid="3e804c05-c725-4308-aa42-6cb4457ddf40" />
+      <item lang="en" mode="CARRIED" ref="social_hud_(r6)" uuid="48f74f1f-800f-4ed1-a2f8-927f5de8bb4f" />
+      <item lang="en" mode="CARRIED" ref="thermal_mood_reading" uuid="b7f33761-d1b6-43a3-bde8-b729d7c597a6" />
+      <item lang="en" mode="CARRIED" ref="vocal_tension_detection" uuid="02f49a52-2910-4a3d-9b17-c8d45eec9d98" />
+      <item lang="en" mode="CARRIED" ref="mctgnat" uuid="dba7a616-4662-4089-a125-a7a3aa65f4be" />
+      <item lang="en" mode="CARRIED" ref="shiawasebdbutler" uuid="2f302f04-55f8-4dff-9c70-4ef7911fad79">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="cb81f239-4133-4769-9cb2-5d3dec2be2a0" />
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="6adefc47-5874-4f3d-a46d-9f84fcc9cd4f" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="federatedboeingskycommander_seattle" uuid="611a4f52-dbc0-4927-8fd3-ffb0fc1b3852">
+      <item lang="en" mode="CARRIED" ref="federatedboeingskycommander_seattle" uuid="5a0d796f-8143-4a16-86ad-01e2fa945dc5">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="6bae5644-ffc7-4216-abcb-5041691f27f6" />
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="e33a0adc-5861-4e41-ae52-41bb88fc00f9" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="shiawasebdmanatarms" uuid="3347eb40-56a4-4b45-8cc2-078a0ac250db">
+      <item lang="en" mode="CARRIED" ref="shiawasebdmanatarms" uuid="555edf15-3fcd-4ddb-8101-c96bc2d4cce0">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="b8771972-6a03-420a-a5c3-f3c4f2cf8372" />
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="3e976e06-b11f-4357-b576-e4688a68fb1f" />
          </accessories>
       </item>
    </items>
@@ -142,7 +142,7 @@
       <contact name="Kirt Liger" rat="3" type="STREET" typename="SEA Body Mod/Engineering Cybercatman" loy="2" favors="0">
          <description>SRM 2081-21 Grudge Match Gladiators</description>
       </contact>
-      <contact name="Sigrún" rat="5" type="STREET" typename="AMS Shadowrunner" loy="3" favors="1">
+      <contact name="Sigrún" rat="5" type="CORPORATE" typename="AMS House Orange-Nassau Johnson" loy="3" favors="2">
          <description>CMP 2081-12 Uneasy lies the head</description>
       </contact>
       <contact name="Dixie L'Amin" rat="4" type="STREET" typename="DW Naga" loy="2" favors="0">
@@ -235,6 +235,9 @@
       </contact>
       <contact name="Col. Treylor" rat="3" type="CORPORATE" typename="DW Thunder Corps Fixer" loy="2" favors="0">
          <description>CMP 2083-15 | By Land, Sea, and Hair</description>
+      </contact>
+      <contact name="Moenen" rat="5" type="STREET" typename="UNL infobroker" loy="2" favors="0">
+         <description>CMP 2083-02 ROYAL ROAD</description>
       </contact>
    </contacts>
    <rewards>
@@ -343,6 +346,9 @@
       <reward date="2026-08-01T00:00:00.000Z" exp="6" money="11000">
          <title>CMP 2083-15 | By Land, Sea, and Hair</title>
          <gamemaster>(GenCon 2026 Saturday 1pm slot)</gamemaster>
+      </reward>
+      <reward date="2026-08-19T00:00:00.000Z" exp="9" money="10000">
+         <title>CMP 2083-02 | ROYAL ROAD</title>
       </reward>
    </rewards>
 </sr6char>

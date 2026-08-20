@@ -56,13 +56,11 @@ book:
         - chapters/21 ~.md
         - chapters/22 C Sharp.md
         - chapters/23 Tea with a Ghost.md
-        - chapters/24 Symlink.md
-        - chapters/25 Renraku's Edge.md
-        - chapters/26 Leaving the Nest.md
     - part: "Reference & Specifications"
       chapters:
         - reference/visual_anchors.md
         - reference/river_people.md
+        - reference/coffin_girls.md
         - reference/voice_spec.md
 
 format:

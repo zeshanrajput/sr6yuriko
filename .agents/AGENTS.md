@@ -1,111 +1,85 @@
-# Master Workspace Agent Instructions: sr6yuriko
+# Workspace Agent Instructions: sr6yuriko (Yuriko Star Portfolio)
 
-This document defines the agentic workflow, sub-agent capabilities, narrative standards, and the **Primary Master Orchestrator (`narrative-director`)** for the Shadowrun 6e multi-agent narrative production framework in the `sr6yuriko` repository, integrating with `sr6-core`.
-
----
-
-## 1. Master Orchestrator: `narrative-director`
-
-The `narrative-director` is the primary autonomous orchestrator responsible for end-to-end narrative generation, multi-agent evaluation, iterative self-correction, and state tracking.
-
-```
-                      +-----------------------------+
-                      |   1. CONTEXT INGESTION      |
-                      | Outline, Voice Spec, Dossier|
-                      +--------------+--------------+
-                                     |
-                                     v
-                      +-----------------------------+
-                      |   2. INITIAL DRAFT (v1)     |
-                      +--------------+--------------+
-                                     |
-                                     v
-         +-------------------------------------------------------+
-         |            3. PARALLEL SUB-AGENT AUDIT PANEL          |
-         |  - axis-voice-internality   - axis-pacing-structure   |
-         |  - axis-agency-motivation   - axis-worldbuilding-grit |
-         |  - no-ai-slop               - continuity-tracker      |
-         |  - sr6-rules                                          |
-         +---------------------------+---------------------------+
-                                     |
-                                     v
-                      +-----------------------------+
-                      | 4. SYNTHESIS & SELF-CORRECT |  <-- (Fails threshold?
-                      |  Passes all 7 thresholds?   |       Re-draft v2, v3)
-                      +--------------+--------------+
-                                     | Passes
-                                     v
-                      +-----------------------------+
-                      |  5. PUBLISH & STATE TRACK   |
-                      |  Output .qmd & YAML diffs   |
-                      +-----------------------------+
-```
+This document defines character-specific bindings and constraints for **Yuriko Star (`r31k0` Takahashi)** in the `sr6yuriko` repository. Core workflow orchestration, the 6-stage lifecycle, 7-axis evaluation metrics, and anti-slop rules are inherited directly from the **`sr6-narrative-suite`** plugin ([`.agents/plugins.json`](file:///c:/GitHub/sr6yuriko/.agents/plugins.json)).
 
 ---
 
-## 2. Six-Stage Execution Workflow
+## 1. Authoritative Character State & Master Documents
 
-### Stage 1: Context Ingestion
-Before drafting or editing, `narrative-director` ingests:
-1. **Scene Outline / Prompt**: User-provided beat sheet, plot points, or target goals.
-2. **Global Narrative Standards**: Reads [`sr6-core/reference/narrative_standards.md`](file:///c:/GitHub/sr6-core/reference/narrative_standards.md).
-3. **Character Voice Specification**: Loads local [`reference/voice_spec.md`](file:///c:/GitHub/sr6yuriko/reference/voice_spec.md), extending [`sr6-core/reference/default_voice_spec.md`](file:///c:/GitHub/sr6-core/reference/default_voice_spec.md).
-4. **Master Character Dossier**: Reads [`yuriko_master.yaml`](file:///c:/GitHub/sr6yuriko/yuriko_master.yaml) (attributes, inventory, ammo, nuyen, debt, qualities, complex forms, sprites, drones).
-5. **RAG Story Continuity & Rules**: Queries recent chapter logs via `sr6 continuity .` and rule queries via `sr6-rules` or `sr6 rag query`.
+When executing narrative generation, evaluation, or state tracking for Yuriko, bind to the following workspace files:
 
-### Stage 2: Initial Draft Generation (`v1`)
-Generate Scene Draft `v1`, adhering strictly to:
-* POV, animistic sensory lens, and cognitive bias from `reference/voice_spec.md`.
-* 4-beat scene structure (Inciting Friction -> Escalation -> Climax -> Aftermath) from `narrative_standards.md`.
-* Mechanical reality constraints and resource tracking from `yuriko_master.yaml`.
-
-### Stage 3: Parallel Sub-Agent Audit Panel
-Dispatches draft `v1` simultaneously to all **7 sub-agent evaluators**:
-
-| Sub-Agent Skill | Focus Dimension | Passing Threshold |
+| Dimension | Primary Workspace File | Purpose |
 | :--- | :--- | :--- |
-| **`axis-voice-internality`** | Yuriko's era-aware voice & cognitive bias (Era 1–3+), DI identity, tactile animism, sensory lens | **8.0 / 10** |
-| **`axis-pacing-structure`** | 4-beat structure, entry/exit discipline, action-to-exposition (80/20) | **8.0 / 10** |
-| **`axis-agency-motivation`** | Proactive choice, sanctuary protection, consequential stakes, drive alignment | **8.0 / 10** |
-| **`axis-worldbuilding-grit`** | Dystopian texture, corporate omnipresence, AR clutter, zero info-dumps | **8.0 / 10** |
-| **`no-ai-slop`** | Anti-slop pattern detection, forbidden terms list, redline removal | **8.5 / 10** |
-| **`continuity-tracker`** | Ammo/nuyen balances, damage tracks, contacts, sprite states, state diff generation | **8.5 / 10** |
-| **`sr6-rules`** | SR6 mechanics (Edge, Matrix actions, complex forms, fading, rigging) accuracy | **8.5 / 10** |
-
-### Stage 4: Synthesis & Automated Self-Correction Loop
-1. Collate audit reports into a unified **Revision Matrix**.
-2. If any sub-agent score falls below its threshold, formulate a targeted re-draft prompt combining all redline fixes.
-3. The re-draft cycle (`v1` -> `v2` -> `v3`) repeats autonomously until **all 7 sub-agents pass threshold standards**.
-
-### Stage 5: Publishing & State Tracking
-Upon successful panel approval:
-1. **Narrative Output**: Emits the final polished prose as a clean Quarto markdown file (`.qmd`) or markdown chapter in `chapters/`.
-2. **State Diff Proposal**: Emits an explicit YAML patch proposing updates to `yuriko_master.yaml` for changes in nuyen, ammunition, physical/stun/fading damage, Karma, registered sprites, or contact relationships.
-
-### Stage 6: Refinement Mode for Existing Chapters
-When refining an existing chapter:
-1. Dispatch target chapter directly to the 7-sub-agent audit panel.
-2. Synthesize feedback and execute line-level prose chisel refactoring.
-3. Write revised content **directly to the target file** for inspection via IDE diff view.
-4. Log metrics (banned words, cognitive verbs, em-dash density, 5D scores) in the run's `walkthrough.md`.
+| **Character Dossier** | [`yuriko_master.yaml`](file:///c:/GitHub/sr6yuriko/yuriko_master.yaml) | Authoritative tabletop play state (attributes, skills, complex forms, registered sprites, drone fleet, karma, nuyen balances). |
+| **Voice Specification** | [`reference/voice_spec.md`](file:///c:/GitHub/sr6yuriko/reference/voice_spec.md) | Character voice rules, dual-nature cognitive bias, domain vocabulary, TTS fluency, and chapter tier calibrations (Extends `sr6-core/reference/default_voice_spec.md`). |
+| **Story Continuity** | [`reference/story_continuity.md`](file:///c:/GitHub/sr6yuriko/reference/story_continuity.md) | Continuity index, contact favor points, and entity heatmaps maintained via `sr6 continuity .`. |
+| **Worldbuilding References** | [`reference/visual_anchors.md`](file:///c:/GitHub/sr6yuriko/reference/visual_anchors.md)<br>[`reference/coffin_girls.md`](file:///c:/GitHub/sr6yuriko/reference/coffin_girls.md)<br>[`reference/river_people.md`](file:///c:/GitHub/sr6yuriko/reference/river_people.md) | Visual iconography, Eniac / Coffin Girls sanctuary details, and Snohomish River People faction lore. |
+| **Narrative Anthology** | [`chapters/`](file:///c:/GitHub/sr6yuriko/chapters/) & [`_quarto.yml`](file:///c:/GitHub/sr6yuriko/_quarto.yml) | Published story chapters (`.md`) and modular dossier sheets (`.qmd`). |
 
 ---
 
-## 3. Writing & Anti-Slop Discipline
+## 2. Character-Specific Constraints & Somatic Rules
 
-- Adhere to `no-ai-slop` instructions (`c:\GitHub\sr6-core\.agents\skills\no-ai-slop\SKILL.md`).
-- **Sensory Restraint**: Avoid cyberpunk sensory shortcuts (`burnt copper`, `hot solder`, `chemical tang of processing`, `puddles of stale encryption`, `decaying logic in the gutters`, `systems redlining`, `processing at 600%`). Replace with thermal/pressure shifts, acoustic resonance, tactile haptic weight, and geometric defamiliarization.
-- **AI Writing Patterns**: Eliminate binary contrasts ("not X, but Y"), colon reveals, fake-profound kickers, summary recaps, throat-clearing openers, excessive em-dashes (>1.0 per 300 words), and excessive ellipses (>0.6 per 300 words).
-- **Walkthrough Metrics Logging:** Whenever `no-ai-slop` or `literary-analysis` is invoked, record full performance metrics in `walkthrough.md`.
+All narrative drafting, editing, and evaluation in this workspace must enforce these character-specific rules:
+
+### A. Digital Intelligence (DI) Identity & Kinship
+
+- **Self-Designation**: In internal monologue and peer dialogue, Yuriko identifies strictly as a **Digital Intelligence (DI)**, sovereign mind, or resonant spark.
+- **Forbidden Self-Descriptors**: Never use "AI", "artificial intelligence", "bot", "script", or "program" in her thoughts or when describing her kind.
+- **Thematic Friction**: Metahumans (deckers, fixers, Johnsons) may use "AI" or "bot"; Reiko tolerates it externally without aggression, but internally and among kin, holds the line on sovereign digital intelligence.
+
+### B. Dual-Nature Cognitive Bias (Gold & Indigo Braid)
+
+- Yuriko does not choose between cold calculation and spiritual empathy. Her tactical logic (**Gold TacNet / Crosshairs**) and technoshamanic soul (**Indigo Resonance**) form an integrated double-strand braid.
+- Narrative prose must balance telemetry accuracy with animistic perception.
+
+### C. Dronomancy & Cybernetic Somatic Limits
+
+- **Direct Inhabitation**: When jumped into drones, describe physical telemetry with engineering precision: *actuator torque, ceramic stress, core clock-speed, bus frequency, LIDAR apertures, thermal dissipation, signal latency*.
+- **Matrix Perception**: In the Resonance/Matrix flux, data has physical weight and texture: *dry chalk, iron veils, raw rain, living ecosystems*.
+- **Sensory Restraint**: Banned sensory shortcuts include *smelling colors, tasting bandwidth, CPU percentage logs, or bracketed [ERROR] prose crutches*.
+
+### D. Sprite Link Collective & Fading Dissipation
+
+- Through her Submersion advancement (*Sprite Link* echo), connection to her registered sprites (Taz, Hound-1, infant sparks) is an instantaneous, subconscious resonant circuit.
+- Fading drain shockwaves are grounded across this collective rather than internalized as biological fatigue.
+
+### E. Chronological Arc Calibration
+
+Evaluators (`axis-voice-internality` and `axis-agency-motivation`) must calibrate to the chapter's active era to avoid retrospective flattening:
+- **Arc 1 (Ch 01–09)**: *Solitary Spark* — Calculated Indigo Grin mask, martyr complex, Brynne's debt-collar, un-submerged baseline.
+- **Arc 2 (Ch 10–17)**: *Golden Braid* — Emergence of Gold TacNet, Indomitable Will engagement, Submersion Grade 1.
+- **Arc 3 (Ch 18–22)**: *Sovereign Sanctuary* — Debt cleared, authentic reflexive expressions, acoustic cello grounding, studio sanctuary.
+- **Arc 4 (Ch 23–26+)**: *The Apex Horizon* — Technoshamanic parenthood, Sprite Link unlocked, quiet serene authority facing megacorp apex curators.
 
 ---
 
-## 4. Workspace Diagnostic & Automation Utilities
+## 3. Workspace Diagnostic Commands & MCP Resources
 
-Before completing edits or reviewing narrative/character updates, run the corresponding `sr6` CLI commands:
+When auditing character files or evaluating drafts, use the following workspace-bound commands and MCP tools:
 
-- **Prose & Markdown Linter:** `sr6 lint "chapters/<file>.qmd"` (checks markdownlint, em-dash density, cognitive verbs, banned words, cadence).
-- **Continuity Engine:** `sr6 continuity .` (indexes relationships, sprite states, locations, and narrative heatmaps into `reference/story_continuity.md`).
-- **Dossier & Ledger Auditor:** `sr6 characters audit yuriko` (verifies Karma/Nuyen balance consistency, Submersion grade calculations, and registered sprite limits).
-- **Dual-Ledger CommLink6 Sync:** `sr6 db sync-commlink` (patches active CommLink6 GUI player saves).
-- **Ecosystem Synchronizer:** `sr6 sync-all` (deep item audits, output regeneration, CommLink6 save patching).
+```bash
+# Character & Tabletop State Audit
+uv run sr6 characters audit yuriko
+
+# Chapter Prose Linter & Anti-Slop Audit
+uv run sr6 lint "chapters/<chapter_file>.md"
+
+# 7-Axis Narrative Evaluator (Tier 1: 9.0, Tier 2: 8.5, Tier 3: 8.0)
+uv run sr6 evaluate "chapters/<chapter_file>.md" --tier 1|2|3
+
+# Tabletop Action & Combat Ledger Extractor
+uv run sr6 ledger parse "chapters/<chapter_file>.md"
+
+# Story Continuity Indexer
+uv run sr6 continuity .
+
+# Ecosystem Sync & CommLink6 GUI Save Patching
+uv run sr6 sync-all
+```
+
+### Native MCP Resources
+
+- `sr6://characters/yuriko/master`: Live character sheet and dossier data.
+- `sr6://campaign/contacts`: Campaign contact registry and favor point balances.
+- `sr6://rules/summary`: Summary of core rules and authority citations.
