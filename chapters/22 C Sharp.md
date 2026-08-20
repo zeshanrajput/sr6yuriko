@@ -10,6 +10,8 @@ Seattle lay a week behind her. This was her fifth night in the new sanctuary—a
 
 Reiko had caught the Comtesse off-guard only once: when she offered to play. The Comtesse was herself a musician of rare talent, though she seldom performed for patrons. Reiko did not play in the traditional sense; she translated ambient shifts in the local Resonance, converting data-currents into harmonic progressions. Any of the Emerged would instantly recognize the alien cadence of her melodies, yet even unawakened ears found the music serene and strangely uplifting. After that first trial, the Comtesse had entrusted her with an instrument modeled after a 1704 Stradivarius.
 
+![Reiko Playing for the Salon](../images/r31k0%20-%20violin.jpeg)
+
 "An amuse-bouche, my dear?" The baritone voice was warm and familiar. Reiko recognized the man—a regular patron from her first night in the salon. She paused her bowing, looking up at an impeccably tailored man with silvering temples. He held out a delicate hors d'oeuvre on a linen napkin.
 
 "Thank you, sir, but no," Reiko replied softly, her vocal diaphragm tuned to a gentle, quiet cadence. "I am one of the sisters."
