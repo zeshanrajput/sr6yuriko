@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<sr6char gender="DIVERSE" meta="ai-pilot ai" karmaF="14" karmaI="207" nuyen="11800">
+<sr6char gender="DIVERSE" meta="ai-pilot ai" karmaF="14" karmaI="207" nuyen="12800">
    <name>Yuriko Star</name>
    <realName>r31k0 Takahashi</realName>
    <attributes>
@@ -15,57 +15,57 @@
       <attributes id="RESONANCE" value="8" />
    </attributes>
    <qualities>
-      <quality lang="en" ref="natural_hacker" uuid="78cb8d8b-b4e1-4456-90e7-93ca354bda63" />
-      <quality lang="en" ref="technoshaman" uuid="42fc284c-89ae-47df-8936-35779e7e354c" />
-      <quality lang="en" ref="designer" uuid="f37f258b-5c4c-4620-a745-f00c67ef61f6" />
-      <quality lang="en" ref="sensor_upgrade" uuid="95359e25-055b-4be8-9b1b-563454b7d0d1" />
-      <quality lang="en" ref="pilot_origins" uuid="41597441-f4dd-4237-b25f-14d13279db30" />
-      <quality lang="en" ref="buddy_system" uuid="533ec994-9a33-4b2a-85b5-2c9a9dbf58c4" />
-      <quality lang="en" ref="sprite_bane" uuid="7ce1cdf4-4160-4026-a8e4-db991834433b">
-         <decision choice="84685f16-c806-4852-be77-f5b257a8aa5a" value="Primal Sprite" />
+      <quality lang="en" ref="natural_hacker" uuid="9f98c594-9122-4e37-9f36-7803beae58f0" />
+      <quality lang="en" ref="technoshaman" uuid="f05ee90e-8bcd-4015-8384-8813df8197a3" />
+      <quality lang="en" ref="designer" uuid="f8f64db6-b4db-44a2-a520-4bc9cc27bf32" />
+      <quality lang="en" ref="sensor_upgrade" uuid="50a7c814-20a4-4345-b02c-d377a58b295a" />
+      <quality lang="en" ref="pilot_origins" uuid="01cdc412-b3e1-4b36-80b3-ea87f4fd84ce" />
+      <quality lang="en" ref="buddy_system" uuid="241ce4f4-3f95-4046-bab4-2da2de33d430" />
+      <quality lang="en" ref="sprite_bane" uuid="8df68976-e6c7-4510-8106-41cd0d6a47f4">
+         <decision choice="ef21a0fb-9f64-4c06-a360-d5db56136580" value="Primal Sprite" />
       </quality>
-      <quality lang="en" ref="hooder" uuid="13e5d75e-566e-4ef9-9ce0-ae2c41264246" value="2" />
+      <quality lang="en" ref="hooder" uuid="cb6f849e-e8a5-4b5b-9b45-274a6f04ea02" value="2" />
    </qualities>
    <skills>
-      <skill lang="en" ref="tasking" uuid="b10d9e99-530c-435d-b5b5-9d1d49680476" value="6">
-         <decision choice="45a794bf-d8af-40ae-9507-31e578a6c93c" value="Registering" />
+      <skill lang="en" ref="tasking" uuid="aaebce9f-a29f-4862-afe1-d2bc74efca01" value="6">
+         <decision choice="b3899281-1146-4634-a9f5-851966c90423" value="Registering" />
       </skill>
-      <skill lang="en" ref="cracking" uuid="466c4fa6-0e9c-4f7e-a92e-95f34be0138e" value="5">
-         <decision choice="8a11e86c-0958-4fd4-b58a-8b1f95a6af93" value="Hacking" />
+      <skill lang="en" ref="cracking" uuid="7d46cece-1771-4b83-9998-2a183ed24cee" value="5">
+         <decision choice="3c15856e-40e8-4ba2-8759-41364e6d0236" value="Hacking" />
       </skill>
-      <skill lang="en" ref="electronics" uuid="c48e8216-7095-4769-ab38-276dc49902c7" value="5">
-         <decision choice="b9ac5800-d422-41ae-a0c8-bd5423bc0085" value="Software" />
+      <skill lang="en" ref="electronics" uuid="08ad4197-1b42-4ade-b801-fbc5c919a5d6" value="5">
+         <decision choice="ee52b157-dad4-41d2-a75a-999f7268a1a7" value="Software" />
       </skill>
-      <skill lang="en" ref="influence" uuid="e05dee02-5c71-473b-bec5-90491eb7fa98" value="1" />
-      <skill lang="en" ref="con" uuid="45c138bd-66ed-45c0-9061-181a98b66fd5" value="1" />
-      <skill lang="en" ref="language" uuid="335aa6c5-aa99-41ac-9a80-95d527333d6d" value="4" />
+      <skill lang="en" ref="influence" uuid="c6a4a9c2-ca26-4409-b72a-2a93feed3027" value="1" />
+      <skill lang="en" ref="con" uuid="ec994175-789d-466d-b16c-0ba54079b684" value="1" />
+      <skill lang="en" ref="language" uuid="fd2e49d2-422c-4d04-b7ce-438468e10450" value="4" />
    </skills>
    <items>
-      <item lang="en" mode="CARRIED" ref="50_explosive_rounds_(ares_predator_vi)" uuid="8bc14ab2-3245-4a99-8c56-3e12fdb8c012" />
-      <item lang="en" mode="CARRIED" ref="50_krime_self_defense_rounds_(ares_predator_vi)" uuid="e342870b-37b3-41da-aafc-8f6e5e1c0cd7" />
-      <item lang="en" mode="CARRIED" ref="5x_peak-discharge_laser_battery_clips_(red_fox)" uuid="30ffe77e-4c8e-4443-a1ae-c7797ecca77d" />
-      <item lang="en" mode="CARRIED" ref="10x_glitter_grenades" uuid="2d688a9f-a5c1-46d9-849a-8eefa5ea0928" />
-      <item lang="en" mode="CARRIED" ref="built-in_utility_kit_&amp;_medkit_(butler_&amp;_man-at-arms)" uuid="f5b13681-9006-4d7c-ab41-f4bca5520858" />
-      <item lang="en" mode="CARRIED" ref="facial_scanner" uuid="205d474e-d20c-4d19-87d5-b416e3bbf5c4" />
-      <item lang="en" mode="CARRIED" ref="p-ice_spines" uuid="6da59b8a-4369-4f12-b305-37c59463bc78" />
-      <item lang="en" mode="CARRIED" ref="personal_assistant_(r6)" uuid="3e804c05-c725-4308-aa42-6cb4457ddf40" />
-      <item lang="en" mode="CARRIED" ref="social_hud_(r6)" uuid="48f74f1f-800f-4ed1-a2f8-927f5de8bb4f" />
-      <item lang="en" mode="CARRIED" ref="thermal_mood_reading" uuid="b7f33761-d1b6-43a3-bde8-b729d7c597a6" />
-      <item lang="en" mode="CARRIED" ref="vocal_tension_detection" uuid="02f49a52-2910-4a3d-9b17-c8d45eec9d98" />
-      <item lang="en" mode="CARRIED" ref="mctgnat" uuid="dba7a616-4662-4089-a125-a7a3aa65f4be" />
-      <item lang="en" mode="CARRIED" ref="shiawasebdbutler" uuid="2f302f04-55f8-4dff-9c70-4ef7911fad79">
+      <item lang="en" mode="CARRIED" ref="50_explosive_rounds_(ares_predator_vi)" uuid="da43754e-4832-4013-abf5-5b5f22faf21e" />
+      <item lang="en" mode="CARRIED" ref="50_krime_self_defense_rounds_(ares_predator_vi)" uuid="db8416d6-1961-4452-9df5-2ff9550d84ca" />
+      <item lang="en" mode="CARRIED" ref="5x_peak-discharge_laser_battery_clips_(red_fox)" uuid="d0a3a8fb-ecca-42a8-afc2-d57c82e719ad" />
+      <item lang="en" mode="CARRIED" ref="10x_glitter_grenades" uuid="f973abf7-c315-4ed3-b3ba-2ac31b91adbd" />
+      <item lang="en" mode="CARRIED" ref="built-in_utility_kit_&amp;_medkit_(butler_&amp;_man-at-arms)" uuid="cba5bf21-af98-4271-b6d4-149206ed0b55" />
+      <item lang="en" mode="CARRIED" ref="facial_scanner" uuid="26b12bdf-fe93-4f06-983a-f1fd104e9507" />
+      <item lang="en" mode="CARRIED" ref="p-ice_spines" uuid="bc7b5eb8-3fe8-4c1c-8ab7-c4d62b096f29" />
+      <item lang="en" mode="CARRIED" ref="personal_assistant_(r6)" uuid="564b6c6e-3243-4655-9cce-f3984ae6f5fc" />
+      <item lang="en" mode="CARRIED" ref="social_hud_(r6)" uuid="f8b69dde-6d40-45e3-9930-f95d3a1f3b69" />
+      <item lang="en" mode="CARRIED" ref="thermal_mood_reading" uuid="f77650c3-5c2d-4aa0-911f-cef6fd312acf" />
+      <item lang="en" mode="CARRIED" ref="vocal_tension_detection" uuid="904cd425-fd65-4aa8-940f-eb901844763e" />
+      <item lang="en" mode="CARRIED" ref="mctgnat" uuid="536d5862-f75c-4979-a863-670955eb7eaf" />
+      <item lang="en" mode="CARRIED" ref="shiawasebdbutler" uuid="10f58006-83cd-46be-82a7-a9267606483b">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="6adefc47-5874-4f3d-a46d-9f84fcc9cd4f" />
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="537f3980-cba2-4913-9625-2b068a54a19e" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="federatedboeingskycommander_seattle" uuid="5a0d796f-8143-4a16-86ad-01e2fa945dc5">
+      <item lang="en" mode="CARRIED" ref="federatedboeingskycommander_seattle" uuid="983dbfd2-fd64-4ab1-8b5a-57c78518d087">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="e33a0adc-5861-4e41-ae52-41bb88fc00f9" />
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="0723f3b8-87a9-427f-8fb2-2c1efefdeead" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="shiawasebdmanatarms" uuid="555edf15-3fcd-4ddb-8101-c96bc2d4cce0">
+      <item lang="en" mode="CARRIED" ref="shiawasebdmanatarms" uuid="cce85fcb-f81e-4c41-ab9b-e98ef618a072">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="3e976e06-b11f-4357-b576-e4688a68fb1f" />
+            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="e515abb4-aeea-4d61-b3ed-d867cfd18552" />
          </accessories>
       </item>
    </items>
@@ -82,149 +82,149 @@
       <contact name="Roanoke" rat="3" type="MATRIX" typename="Ecological Activist" loy="3" favors="2">
          <description>Uses: Getting jobs, environmental science, shamanism | Types: Criminal, Matrix</description>
       </contact>
-      <contact name="Piotr Krolik" rat="4" type="CRIMINAL" typename="NOLA Vory Borjevik" loy="1" favors="1">
+      <contact name="Piotr Krolik" rat="4" type="CRIMINAL" typename="NOLA Vory Borjevik" loy="1" favors="0">
          <description>SMH 2083-02 EggHunt at the Jackalope Ranch</description>
       </contact>
-      <contact name="Le Tigre" rat="5" type="MAGIC" typename="Epoch Model" loy="2" favors="1">
+      <contact name="Le Tigre" rat="5" type="MAGIC" typename="Epoch Model" loy="2" favors="0">
          <description>Uses: Getting jobs, parties, modeling | Types: Corporate, Magic</description>
       </contact>
-      <contact name="White Jackalope" rat="2" type="STREET" typename="Emergent Lifeform" loy="1" favors="1">
+      <contact name="White Jackalope" rat="2" type="STREET" typename="Emergent Lifeform" loy="1" favors="0">
          <description>SMH 2083-02 EggHunt at the Jackalope Ranch</description>
       </contact>
-      <contact name="Big Louie" rat="3" type="STREET" typename="SEA Fixer" loy="1" favors="1">
+      <contact name="Big Louie" rat="3" type="STREET" typename="SEA Fixer" loy="1" favors="0">
          <description>CMP First Taste : Top Chef - Seattle</description>
       </contact>
-      <contact name="Dominique Augustin" rat="4" type="GOVERNMENT" typename="NOLA Wolverine Security" loy="2" favors="0">
+      <contact name="Dominique Augustin" rat="4" type="GOVERNMENT" typename="NOLA Wolverine Security" loy="1" favors="1">
          <description>2083-03 Unofficial Dunkelzahn Fan Club</description>
       </contact>
-      <contact name="Daniel Fortune" rat="3" type="STREET" typename="NOLA" loy="1" favors="1">
+      <contact name="Daniel Fortune" rat="3" type="STREET" typename="NOLA" loy="1" favors="0">
          <description>2083-03 Unofficial Dunkelzahn Fan Club</description>
       </contact>
-      <contact name="Renée Martin" rat="4" type="MAGIC" typename="League of Laveau Liaison" loy="2" favors="2">
+      <contact name="Renée Martin" rat="4" type="MAGIC" typename="League of Laveau Liaison" loy="2" favors="1">
          <description>Uses: Getting jobs, magic, voodoo, zombies | Types: Corporate, Magic</description>
       </contact>
-      <contact name="The Frisian" rat="6" type="CRIMINAL" typename="AMS Crime Lord of the Dutch Penose syndicate" loy="1" favors="1">
+      <contact name="The Frisian" rat="6" type="CRIMINAL" typename="AMS Crime Lord of the Dutch Penose syndicate" loy="1" favors="0">
          <description>CMP 2081-09 Bring me Prince Charming</description>
       </contact>
-      <contact name="Ree 'Dolly' Hacker" rat="4" type="MAGIC" typename="KY Talismonger and Racer" loy="2" favors="0">
+      <contact name="Ree 'Dolly' Hacker" rat="4" type="MAGIC" typename="KY Talismonger and Racer" loy="1" favors="1">
          <description>CMP 2081-18 Blue Kentucky Girl</description>
       </contact>
-      <contact name="Granny" rat="6" type="STREET" typename="KY Lady of the Autumn Wind" loy="2" favors="0">
+      <contact name="Granny" rat="6" type="STREET" typename="KY Lady of the Autumn Wind" loy="1" favors="1">
          <description>CMP 2081-18 Blue Kentucky Girl</description>
       </contact>
-      <contact name="Kiara Shaw" rat="4" type="CORPORATE" typename="AMS Knight Errant Company Suit" loy="2" favors="1">
+      <contact name="Kiara Shaw" rat="4" type="CORPORATE" typename="AMS Knight Errant Company Suit" loy="2" favors="0">
          <description>CMP 2081-10 A Diamond in The Rough</description>
       </contact>
-      <contact name="Simon Andrews" rat="5" type="CORPORATE" typename="AMS S-K Johnson" loy="2" favors="2">
+      <contact name="Simon Andrews" rat="5" type="CORPORATE" typename="AMS S-K Johnson" loy="2" favors="1">
          <description>CMP 2081-11 Paved with good intentions</description>
       </contact>
-      <contact name="Squint" rat="2" type="STREET" typename="AMS Smuggler" loy="1" favors="1">
+      <contact name="Squint" rat="2" type="STREET" typename="AMS Smuggler" loy="1" favors="0">
          <description>CMP 2081-11 Paved with good intentions</description>
       </contact>
-      <contact name="Dr. Laureline Dodd" rat="5" type="STREET" typename="KY Arcano-Archeologist" loy="2" favors="0">
+      <contact name="Dr. Laureline Dodd" rat="5" type="STREET" typename="KY Arcano-Archeologist" loy="1" favors="1">
          <description>CMP 2081-19 The Blue Moon of Kentucky</description>
       </contact>
-      <contact name="Thaddeus" rat="3" type="STREET" typename="KY Street Samurai" loy="1" favors="1">
+      <contact name="Thaddeus" rat="3" type="STREET" typename="KY Street Samurai" loy="1" favors="0">
          <description>CMP 2081-19 The Blue Moon of Kentucky</description>
       </contact>
-      <contact name="Duan Yuhai" rat="3" type="CORPORATE" typename="SEA Minor 88s Johnson" loy="1" favors="1">
+      <contact name="Duan Yuhai" rat="3" type="CORPORATE" typename="SEA Minor 88s Johnson" loy="1" favors="0">
          <description>SRM 2081-17 Framed in Blood</description>
       </contact>
-      <contact name="Xiong Giuyin" rat="4" type="STREET" typename="SEA Wuxing" loy="1" favors="1">
+      <contact name="Xiong Giuyin" rat="4" type="STREET" typename="SEA Wuxing" loy="1" favors="0">
          <description>SRM 2081-17 Framed in Blood</description>
       </contact>
-      <contact name="Reilly Dragman" rat="1" type="MAGIC" typename="Novice Magician" loy="2" favors="0">
+      <contact name="Reilly Dragman" rat="1" type="MAGIC" typename="Novice Magician" loy="1" favors="1">
          <description>Magic | Types: Magic</description>
       </contact>
-      <contact name="Queen Brane" rat="12" type="MAGIC" typename="Magic" loy="1" favors="1">
+      <contact name="Queen Brane" rat="12" type="MAGIC" typename="Magic" loy="1" favors="0">
          <description>Magic (Special Note: This contact cannot be called during a mission.) | Types: Magic</description>
       </contact>
-      <contact name="Kirt Liger" rat="3" type="STREET" typename="SEA Body Mod/Engineering Cybercatman" loy="2" favors="0">
+      <contact name="Kirt Liger" rat="3" type="STREET" typename="SEA Body Mod/Engineering Cybercatman" loy="1" favors="1">
          <description>SRM 2081-21 Grudge Match Gladiators</description>
       </contact>
-      <contact name="Sigrún" rat="5" type="CORPORATE" typename="AMS House Orange-Nassau Johnson" loy="3" favors="2">
+      <contact name="Sigrún" rat="5" type="CORPORATE" typename="AMS House Orange-Nassau Johnson" loy="3" favors="1">
          <description>CMP 2081-12 Uneasy lies the head</description>
       </contact>
-      <contact name="Dixie L'Amin" rat="4" type="STREET" typename="DW Naga" loy="2" favors="0">
+      <contact name="Dixie L'Amin" rat="4" type="STREET" typename="DW Naga" loy="1" favors="1">
          <description>CMP 2083-14 A Day at the Beach</description>
       </contact>
-      <contact name="Ayanda 'Shieldbearer' Mahlangu" rat="3" type="STREET" typename="DW 'Mystic Edge' Producer" loy="1" favors="1">
+      <contact name="Ayanda 'Shieldbearer' Mahlangu" rat="3" type="STREET" typename="DW 'Mystic Edge' Producer" loy="1" favors="0">
          <description>CMP 2083-14 A Day at the Beach</description>
       </contact>
-      <contact name="Ebon Abirashur" rat="1" type="STREET" typename="DW Leviathan Dragon" loy="2" favors="0">
+      <contact name="Ebon Abirashur" rat="1" type="STREET" typename="DW Leviathan Dragon" loy="1" favors="1">
          <description>CMP 2083-14 A Day at the Beach</description>
       </contact>
-      <contact name="Col. Deborah Kentwell" rat="5" type="CORPORATE" typename="DW Thunder Corps Fixer" loy="2" favors="0">
+      <contact name="Col. Deborah Kentwell" rat="5" type="CORPORATE" typename="DW Thunder Corps Fixer" loy="1" favors="1">
          <description>CMP 2083-16 War Never Changes</description>
       </contact>
-      <contact name="Polyphemous 'Paul' Pellagios" rat="1" type="STREET" typename="DW Background Actor" loy="1" favors="1">
+      <contact name="Polyphemous 'Paul' Pellagios" rat="1" type="STREET" typename="DW Background Actor" loy="1" favors="0">
          <description>CMP 2083-16 War Never Changes</description>
       </contact>
-      <contact name="Fernand Anato" rat="4" type="STREET" typename="Kozlowski Capo" loy="1" favors="1">
+      <contact name="Fernand Anato" rat="4" type="STREET" typename="Kozlowski Capo" loy="1" favors="0">
          <description>Uses: Getting jobs, fencing gear, organized crime | Types: Criminal, Street</description>
       </contact>
-      <contact name="Monsieur Johnson" rat="5" type="CORPORATE" typename="NOLA Johnson" loy="2" favors="1">
+      <contact name="Monsieur Johnson" rat="5" type="CORPORATE" typename="NOLA Johnson" loy="2" favors="0">
          <description>SRM 2083-19 The Hallow Feast</description>
       </contact>
-      <contact name="Swango" rat="3" type="STREET" typename="SEA Rapper" loy="2" favors="1">
+      <contact name="Swango" rat="3" type="STREET" typename="SEA Rapper" loy="2" favors="0">
          <description>SRM 2081-05 This is Renton</description>
       </contact>
-      <contact name="Toil" rat="4" type="STREET" typename="Fixer" loy="1" favors="1">
+      <contact name="Toil" rat="4" type="STREET" typename="Fixer" loy="1" favors="0">
          <description>Uses: Drugs, exotic dancer clubs, getting jobs (Shadowrun Missions Seattle) | Types: Criminal, Street</description>
       </contact>
-      <contact name="Trubble" rat="1" type="MAGIC" typename="Bodyguard" loy="1" favors="1">
+      <contact name="Trubble" rat="1" type="MAGIC" typename="Bodyguard" loy="1" favors="0">
          <description>Uses: Bodyguards, insults, talismans (Shadowrun Missions Seattle) | Types: Magic</description>
       </contact>
-      <contact name="SpiiniCop" rat="2" type="STREET" typename="AMS Penose Spider" loy="1" favors="1">
+      <contact name="SpiiniCop" rat="2" type="STREET" typename="AMS Penose Spider" loy="1" favors="0">
          <description>CMP 2083-01 NONPLUSHED</description>
       </contact>
-      <contact name="Eddie Wei" rat="4" type="MATRIX" typename="Triad Johnson" loy="1" favors="1">
+      <contact name="Eddie Wei" rat="4" type="MATRIX" typename="Triad Johnson" loy="1" favors="0">
          <description>Uses: Business and economics, getting jobs, triads (Shadowrun Missions Seattle) | Types: Criminal, Matrix (Not available after 2081-24)</description>
       </contact>
-      <contact name="Julian Müntefering" rat="1" type="CORPORATE" typename="Corporate Kid" loy="1" favors="1">
+      <contact name="Julian Müntefering" rat="1" type="CORPORATE" typename="Corporate Kid" loy="1" favors="0">
          <description>Uses: Corporate playground rumors, drones, rigging research (Shadowrun Missions Seattle) | Types: Corporate, Engineering</description>
       </contact>
-      <contact name="Ni Ni Xiaolu" rat="3" type="CRIMINAL" typename="Triad Johnson" loy="2" favors="2">
+      <contact name="Ni Ni Xiaolu" rat="3" type="CRIMINAL" typename="Triad Johnson" loy="2" favors="1">
          <description>Uses: Getting jobs, drugs, street rumors, triads (Shadowrun Missions Seattle) | Types: Criminal</description>
       </contact>
-      <contact name="Bookie" rat="3" type="STREET" typename="SEA Ancients Bookie" loy="1" favors="1">
+      <contact name="Bookie" rat="3" type="STREET" typename="SEA Ancients Bookie" loy="1" favors="0">
          <description>SRM 2081-07 Bootleg Bliss</description>
       </contact>
-      <contact name="Trudy" rat="2" type="STREET" typename="SEA Cutter Lieutenant" loy="1" favors="1">
+      <contact name="Trudy" rat="2" type="STREET" typename="SEA Cutter Lieutenant" loy="1" favors="0">
          <description>SRM 2081-07 Bootleg Bliss</description>
       </contact>
-      <contact name="Saint James" rat="8" type="STREET" typename="Fixer" loy="2" favors="1">
+      <contact name="Saint James" rat="8" type="STREET" typename="Fixer" loy="2" favors="0">
          <description>Uses: Corporations, getting jobs (Shadowrun Missions Seattle), fencing gear, gangs | Types: Criminal, Street (Not available after 2081-24)</description>
       </contact>
-      <contact name="Jeanie Trudel" rat="1" type="STREET" typename="SEA Bartender" loy="1" favors="1">
+      <contact name="Jeanie Trudel" rat="1" type="STREET" typename="SEA Bartender" loy="1" favors="0">
          <description>SRM 2081-06 Cutting Strings</description>
       </contact>
-      <contact name="Kingston" rat="2" type="STREET" typename="Shadowrunner / Street Samurai" loy="1" favors="1">
+      <contact name="Kingston" rat="2" type="STREET" typename="Shadowrunner / Street Samurai" loy="1" favors="0">
          <description>Uses: Shadowrunners, street rumors (Shadowrun Missions Seattle) | Types: Criminal, Street</description>
       </contact>
-      <contact name="Kaatje" rat="2" type="MEDIA" typename="AMS Young Entertainer" loy="1" favors="1">
+      <contact name="Kaatje" rat="2" type="MEDIA" typename="AMS Young Entertainer" loy="1" favors="0">
          <description>CMP 2083-04 Hog Wild</description>
       </contact>
-      <contact name="Mr. Fa" rat="4" type="CORPORATE" typename="HKB Corporate Middle Manager" loy="2" favors="0">
+      <contact name="Mr. Fa" rat="4" type="CORPORATE" typename="HKB Corporate Middle Manager" loy="1" favors="1">
          <description>CMP 2083-05 Precious Cargo</description>
       </contact>
-      <contact name="Liao Fa Ren" rat="3" type="MEDIA" typename="HK Rookie Journalist" loy="2" favors="1">
+      <contact name="Liao Fa Ren" rat="3" type="MEDIA" typename="HK Rookie Journalist" loy="2" favors="0">
          <description>CMP 2083-05 Precious Cargo</description>
       </contact>
-      <contact name="Aloysius Springinsguth" rat="3" type="STREET" typename="NOLA Sound of Silence Music Shop Owner" loy="2" favors="1">
+      <contact name="Aloysius Springinsguth" rat="3" type="STREET" typename="NOLA Sound of Silence Music Shop Owner" loy="2" favors="0">
          <description>SRM 2083-12 When You're Smiling</description>
       </contact>
-      <contact name="Jolene Price" rat="7" type="CORPORATE" typename="Riverboat Alliance Leader" loy="2" favors="1">
+      <contact name="Jolene Price" rat="7" type="CORPORATE" typename="Riverboat Alliance Leader" loy="2" favors="0">
          <description>Uses: Getting jobs, dragons, mafia | Types: Corporate, Street</description>
       </contact>
       <contact name="Coffin Girls" rat="3" type="STREET" typename="NOLA Independent Courtesans Group" loy="4" favors="0" />
-      <contact name="Cedar" rat="3" type="MAGIC" typename="NOLA Talismonger" loy="1" favors="1">
+      <contact name="Cedar" rat="3" type="MAGIC" typename="NOLA Talismonger" loy="1" favors="0">
          <description>SRM 2083-20 The Fallacy of Plans</description>
       </contact>
-      <contact name="Detective Remy LeBlanc" rat="3" type="STREET" typename="NOLA Detective" loy="2" favors="1">
+      <contact name="Detective Remy LeBlanc" rat="3" type="STREET" typename="NOLA Detective" loy="2" favors="0">
          <description>SRM 2083-20 The Fallacy of Plans</description>
       </contact>
-      <contact name="Claudette Laurier" rat="5" type="MATRIX" typename="Golden Dawn Librarian" loy="1" favors="1">
+      <contact name="Claudette Laurier" rat="5" type="MATRIX" typename="Golden Dawn Librarian" loy="1" favors="0">
          <description>Uses: Getting jobs, magical traditions | Types: Criminal, Matrix</description>
       </contact>
       <contact name="League of Laveau" rat="6" type="MAGIC" typename="NOLA Voodoo Organization" loy="3" favors="1">
@@ -233,10 +233,10 @@
       <contact name="Zobop" rat="6" type="MAGIC" typename="NOLA Voodoo Organization" loy="3" favors="1">
          <description>SRM 2083-18 Some Kind of Voodoo?</description>
       </contact>
-      <contact name="Col. Treylor" rat="3" type="CORPORATE" typename="DW Thunder Corps Fixer" loy="2" favors="0">
+      <contact name="Col. Treylor" rat="3" type="CORPORATE" typename="DW Thunder Corps Fixer" loy="1" favors="1">
          <description>CMP 2083-15 | By Land, Sea, and Hair</description>
       </contact>
-      <contact name="Moenen" rat="5" type="STREET" typename="UNL infobroker" loy="2" favors="0">
+      <contact name="Moenen" rat="5" type="STREET" typename="UNL infobroker" loy="1" favors="1">
          <description>CMP 2083-02 ROYAL ROAD</description>
       </contact>
    </contacts>

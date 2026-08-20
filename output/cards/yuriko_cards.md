@@ -3,10 +3,10 @@
 
 ---
 ### [CARD] YURIKO STAR - BASE ATTRIBUTES & POOLS (Core)
-> **ATT (STR)**: 7 | **SLZ (REA)**: 9 | **DP (AGI)**: 7 | **FW (BOD)**: 9 | **WIL**: 6 | **LOG**: 4 | **INT**: 2 | **CHA**: 4 | **EDG**: 4 | **RES / MAG**: 8 | **ESS**: 6.0 | **Submersion**: Grade 7 | **Nuyen & Karma**: 11,800.0¥ | 14 Karma | **Composure**: 10 | **Judge Intentions**: 8 | **Memory**: 10 | **Lift & Carry**: 16 | **Matrix Initiative**: 10 + 4D6 (Hot-Sim VR / Overclock) | **Condition Boxes**: Phys [13] | Stun [11] | **ASDF Ratings**: A:7 S:9 D:7 F:9 | **Full Matrix Def**: 34d6 (8 Hits)
+> **ATT (STR)**: 7 | **SLZ (REA)**: 9 | **DP (AGI)**: 7 | **FW (BOD)**: 9 | **WIL**: 6 | **LOG**: 4 | **INT**: 2 | **CHA**: 4 | **EDG**: 4 | **RES / MAG**: 8 | **ESS**: 6.0 | **Submersion**: Grade 7 | **Nuyen & Karma**: 12,800.0¥ | 14 Karma | **Composure**: 10 | **Judge Intentions**: 8 | **Memory**: 10 | **Lift & Carry**: 16 | **Matrix Initiative**: 10 + 4D6 (Hot-Sim VR / Overclock) | **Condition Boxes**: Phys [13] | Stun [11] | **ASDF Ratings**: A:7 S:9 D:7 F:9 | **Full Matrix Def**: 34d6 (8 Hits)
 
 Runner: Yuriko Star (AI-Pilot AI) | Stream: Technoshamans
-Submersion Grade 7 | Available Funds: 11,800.0¥ | Active Karma: 14 Pool
+Submersion Grade 7 | Available Funds: 12,800.0¥ | Active Karma: 14 Pool
 Derived Pools: Composure [10], Judge Intentions [8], Memory [10], Lift/Carry [16].
 Full Matrix Defense: 34d6 [RES 8 + FW 9 + PA 6 + DP 7 + Focus 4 = 34d6].
 
