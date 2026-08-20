@@ -566,7 +566,7 @@ Submersion_Grade = state["Submersion_Grade"]
 * **Difficulty Level:** Veteran
 * **Rewards:** `{python} inc('Karma', 9)`, `{python} inc('Nuyen', 10000)` (8 Karma + 1 Veteran; 8,000 Nuyen + 2,000 Veteran)
 * **Reputation:** `{python} add_rep('UNL', 1)` (United Netherlands)
-* **Heat:** 0 (Spent `{python} inc('Nuyen', -1000)` on taxes/generosity/bribes to negate heat)
+* **Heat:** 0 (Mithral and Arrogant Ninja on taxes/generosity/bribes to negate heat)
 * **Contacts:**
   * `{python} contact("Moenen", connection=5, fp=2, type_name="UNL infobroker", region="AMS", notes="CMP 2083-02 ROYAL ROAD")`
   * `{python} contact("Sigrún", connection=5, fp=1, type_name="House Oranje-Nassau Johnson", region="AMS", notes="CMP 2083-02 ROYAL ROAD")`
