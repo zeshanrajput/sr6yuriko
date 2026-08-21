@@ -76,6 +76,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -401,9 +430,10 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#decking-protocols-cheat-sheet" id="toc-decking-protocols-cheat-sheet" class="nav-link" data-scroll-target="#decking-protocols-cheat-sheet">Decking Protocols Cheat Sheet</a>
   <ul class="collapse">
-  <li><a href="#cracking-tests-cracking-res" id="toc-cracking-tests-cracking-res" class="nav-link" data-scroll-target="#cracking-tests-cracking-res">1. Cracking Tests (Cracking + RES)</a></li>
-  <li><a href="#electronics-tests-electronics-res" id="toc-electronics-tests-electronics-res" class="nav-link" data-scroll-target="#electronics-tests-electronics-res">2. Electronics Tests (Electronics + RES)</a></li>
-  <li><a href="#matrix-edge-actions" id="toc-matrix-edge-actions" class="nav-link" data-scroll-target="#matrix-edge-actions">3. Matrix Edge Actions</a></li>
+  <li><a href="#cracking-tests-cracking-res-via-natural-hacker" id="toc-cracking-tests-cracking-res-via-natural-hacker" class="nav-link" data-scroll-target="#cracking-tests-cracking-res-via-natural-hacker">1. Cracking Tests (Cracking + RES via Natural Hacker)</a></li>
+  <li><a href="#electronics-tests-electronics-res-via-natural-hacker" id="toc-electronics-tests-electronics-res-via-natural-hacker" class="nav-link" data-scroll-target="#electronics-tests-electronics-res-via-natural-hacker">2. Electronics Tests (Electronics + RES via Natural Hacker)</a></li>
+  <li><a href="#matrix-defense-protocols" id="toc-matrix-defense-protocols" class="nav-link" data-scroll-target="#matrix-defense-protocols">3. Matrix Defense Protocols</a></li>
+  <li><a href="#matrix-edge-actions" id="toc-matrix-edge-actions" class="nav-link" data-scroll-target="#matrix-edge-actions">4. Matrix Edge Actions</a></li>
   </ul></li>
   <li><a href="#foundation-rules" id="toc-foundation-rules" class="nav-link" data-scroll-target="#foundation-rules">Foundation Rules</a>
   <ul class="collapse">
@@ -662,26 +692,70 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="decking-protocols-cheat-sheet" class="level2">
 <h2 class="anchored" data-anchor-id="decking-protocols-cheat-sheet">Decking Protocols Cheat Sheet</h2>
-<p>Standardized action categorization grouped strictly by Skill &amp; Specialization:</p>
-<section id="cracking-tests-cracking-res" class="level3">
-<h3 class="anchored" data-anchor-id="cracking-tests-cracking-res">1. Cracking Tests (Cracking + RES)</h3>
+<p>Standardized action categorization grouped strictly by Skill &amp; Specialization, incorporating <strong>Natural Hacker</strong> (Resonance attribute substitution), <strong>Resonance Focus (+4)</strong>, <strong>Taz Ally Sprite Teamwork (+4)</strong>, <strong>Overclocking (+2, 1 wild die)</strong>, and <strong>Tactical Software</strong>:</p>
+<section id="cracking-tests-cracking-res-via-natural-hacker" class="level3">
+<h3 class="anchored" data-anchor-id="cracking-tests-cracking-res-via-natural-hacker">1. Cracking Tests (Cracking + RES via Natural Hacker)</h3>
 <ul>
-<li><strong>Hacking Specialization</strong>: Backdoor Entry, Crack File, Delayed Command, Garbage In / Garbage Out, Known Exploit, Metahuman in the Middle, Probe, Puppet Cyberware, Spoof Command.</li>
-<li><strong>Cybercombat Specialization</strong>: Brute Force, Crash Program, Data Spike, Device Lock, Disarm Data Bomb, Resonance Spike, Tar Pit.</li>
-<li><strong>Electronic Warfare Specialization</strong>: Calibration, Check OS, Hide, Jam Signals, Masquerade, Popup, Snoop, Watchdog.</li>
+<li><strong>Hacking Specialization</strong>: <strong>9d6 (1 wild)</strong> <span class="math inline">\(\rightarrow\)</span> <strong>2 Bought Hits</strong>
+<ul>
+<li><em>Applied Modifiers</em>: Base Cracking (5) + RES (8) + RES Focus (+4) + Hacking Spec (+2) + Taz Teamwork (+4) + Overclock (+2, 1 wild) + ECM Warrior II (+2)</li>
+<li><em>Actions</em>: Backdoor Entry, Crack File, Delayed Command, Garbage In / Garbage Out, Known Exploit, Metahuman in the Middle, Probe, Puppet Cyberware, Spoof Command.</li>
+</ul></li>
+<li><strong>Cybercombat Specialization</strong>: <strong>9d6 (1 wild)</strong> <span class="math inline">\(\rightarrow\)</span> <strong>2 Bought Hits</strong>
+<ul>
+<li><em>Applied Modifiers</em>: Base Cracking (5) + RES (8) + RES Focus (+4) + Taz Teamwork (+4) + Overclock (+2, 1 wild) + ECM Warrior II (+2)</li>
+<li><em>Actions</em>: Brute Force, Crash Program, Data Spike, Device Lock, Disarm Data Bomb, Resonance Spike, Tar Pit.</li>
+</ul></li>
+<li><strong>Electronic Warfare Specialization</strong>: <strong>9d6 (1 wild)</strong> <span class="math inline">\(\rightarrow\)</span> <strong>2 Bought Hits</strong>
+<ul>
+<li><em>Applied Modifiers</em>: Base Cracking (5) + RES (8) + RES Focus (+4) + Taz Teamwork (+4) + Overclock (+2, 1 wild) + ECM Warrior II (+2)</li>
+<li><em>Actions</em>: Calibration, Check OS, Hide, Jam Signals, Masquerade, Popup, Snoop, Watchdog.</li>
+</ul></li>
 </ul>
 </section>
-<section id="electronics-tests-electronics-res" class="level3">
-<h3 class="anchored" data-anchor-id="electronics-tests-electronics-res">2. Electronics Tests (Electronics + RES)</h3>
+<section id="electronics-tests-electronics-res-via-natural-hacker" class="level3">
+<h3 class="anchored" data-anchor-id="electronics-tests-electronics-res-via-natural-hacker">2. Electronics Tests (Electronics + RES via Natural Hacker)</h3>
 <ul>
-<li><strong>Software Specialization</strong>: Control Device, Format Device, Jack Out, Jump into Rigged Device, Reboot Device, Set Data Bomb, Trace Icon.</li>
-<li><strong>Computer Specialization</strong>: Edit File, Encrypt File, Erase Matrix Signature, Hash Check, Matrix Perception, Matrix Search, Modify Icon, Threat Analysis.</li>
-<li><strong>Hardware Specialization</strong>: Denial of Service, Squelch, Subvert Infrastructure, Turning off Wireless, removing headjammer, keycard copier, tag eraser, bug scanner.</li>
-<li><strong>Complex Forms</strong>: Any complex form requiring an Electronics test.</li>
+<li><strong>Software Specialization</strong>: <strong>10d6 (1 wild)</strong> <span class="math inline">\(\rightarrow\)</span> <strong>2 Bought Hits</strong>
+<ul>
+<li><em>Applied Modifiers</em>: Base Electronics (5) + RES (8) + RES Focus (+4) + Software Spec (+2) + Taz Teamwork (+4) + Overclock (+2, 1 wild)</li>
+<li><em>Actions</em>: Control Device, Format Device, Jack Out, Jump into Rigged Device, Reboot Device, Set Data Bomb, Trace Icon.</li>
+</ul></li>
+<li><strong>Computer Specialization</strong>: <strong>10d6 (1 wild)</strong> <span class="math inline">\(\rightarrow\)</span> <strong>2 Bought Hits</strong>
+<ul>
+<li><em>Applied Modifiers</em>: Base Electronics (5) + RES (8) + RES Focus (+4) + Taz Teamwork (+4) + Overclock (+2, 1 wild)</li>
+<li><em>Actions</em>: Edit File, Encrypt File, Erase Matrix Signature, Hash Check, Matrix Perception, Matrix Search, Modify Icon, Threat Analysis.</li>
+</ul></li>
+<li><strong>Hardware Specialization</strong>: <strong>10d6 (1 wild)</strong> <span class="math inline">\(\rightarrow\)</span> <strong>2 Bought Hits</strong>
+<ul>
+<li><em>Applied Modifiers</em>: Base Electronics (5) + RES (8) + RES Focus (+4) + Taz Teamwork (+4) + Overclock (+2, 1 wild)</li>
+<li><em>Actions</em>: Denial of Service, Squelch, Subvert Infrastructure, Turning off Wireless, removing headjammer, keycard copier, tag eraser, bug scanner.</li>
+</ul></li>
+<li><strong>Complex Forms (Electronics-based)</strong>: <strong>10d6 (1 wild)</strong> <span class="math inline">\(\rightarrow\)</span> <strong>2 Bought Hits</strong>
+<ul>
+<li><em>Applied Modifiers</em>: Base Electronics (5) + RES (8) + RES Focus (+4) + Taz Teamwork (+4) + Overclock (+2, 1 wild)</li>
+</ul></li>
+</ul>
+</section>
+<section id="matrix-defense-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="matrix-defense-protocols">3. Matrix Defense Protocols</h3>
+<ul>
+<li><strong>Full Matrix Defense</strong>: <strong>13d6</strong> <span class="math inline">\(\rightarrow\)</span> <strong>3 Bought Hits</strong>
+<ul>
+<li><em>Applied Modifiers</em>: RES (8) + RES Focus (+4) + FW (8) + Personal Assistant App R6 (+6) + Directional Shield Active DP (+8)</li>
+</ul></li>
+<li><strong>Standard Matrix Defense (vs Attack Actions: Brute Force, Data Spike)</strong>: <strong>20d6</strong> <span class="math inline">\(\rightarrow\)</span> <strong>5 Bought Hits</strong>
+<ul>
+<li><em>Applied Modifiers</em>: Firewall (8) + Natural Hacker RES (8) + RES Focus (+4)</li>
+</ul></li>
+<li><strong>Standard Matrix Defense (vs Sleaze Actions: Probe, Backdoor Entry, Hack)</strong>: <strong>20d6</strong> <span class="math inline">\(\rightarrow\)</span> <strong>5 Bought Hits</strong>
+<ul>
+<li><em>Applied Modifiers</em>: Firewall (8) + Natural Hacker RES (8) + RES Focus (+4)</li>
+</ul></li>
 </ul>
 </section>
 <section id="matrix-edge-actions" class="level3">
-<h3 class="anchored" data-anchor-id="matrix-edge-actions">3. Matrix Edge Actions</h3>
+<h3 class="anchored" data-anchor-id="matrix-edge-actions">4. Matrix Edge Actions</h3>
 <ul>
 <li><strong>1 Edge</strong>: Batch Exec, Emergency Boost, Paint Target.</li>
 <li><strong>2 Edge</strong>: Technobabble (CHA instead of LOG), Intervene, Hog, Signal Scream.</li>
@@ -729,14 +803,15 @@ ul.task-list li input[type="checkbox"] {
 <li>Resonance (Highest Attribute) = 9</li>
 </ul>
 </section>
-<section id="skills" class="level4">
-<h4 class="anchored" data-anchor-id="skills">Skills</h4>
+<section id="skills-derived-action-pools" class="level4">
+<h4 class="anchored" data-anchor-id="skills-derived-action-pools">Skills &amp; Derived Action Pools</h4>
+<p>Under the Nexus Protocol [HnS p.&nbsp;142], Reiko uses her real-world skills and attributes with a +1 bonus to highest attribute (RES 8 + 1 = 9) and highest skill (Tasking 6 + 1 = 7), plus a dedicated bonus pool of +7 dice in combat (+3 dice in downtime), alongside Natural Hacker, Resonance Focus (+4), Taz Teamwork (+4), Overclock (+2), and ECM Warrior II (+2):</p>
 <ul>
-<li>Tasking (Highest Skill) = 7</li>
-<li>Social Tests: 27</li>
-<li>Perception/Physical/Piloting: 14</li>
-<li>Combat: 24</li>
-<li>Technical tests: 14</li>
+<li><strong>Tasking (Highest Skill)</strong>: 7</li>
+<li><strong>Social Tests (Cracking [Hacking] + RES)</strong>: 31d6 (Downtime: 25d6) / <strong>35d6 (Combat: 29d6, 1 wild)</strong></li>
+<li><strong>Perception / Physical / Piloting (Electronics [Computer] + RES)</strong>: 27d6 (Downtime: 23d6) / <strong>31d6 (Combat: 27d6, 1 wild)</strong></li>
+<li><strong>Combat Tests (Cracking [Cybercombat] + RES)</strong>: 29d6 (Downtime: 25d6) / <strong>33d6 (Combat: 29d6, 1 wild)</strong></li>
+<li><strong>Technical Tests (Electronics [Software] + RES)</strong>: 29d6 (Downtime: 25d6) / <strong>33d6 (Combat: 29d6, 1 wild)</strong></li>
 </ul>
 
 
