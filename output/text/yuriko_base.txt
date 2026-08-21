@@ -2,8 +2,8 @@
  SHADOWRUN 6E DOSSIER: YURIKO STAR
 ============================================================================
  Real Name : r31k0 Takahashi    | Metatype : AI-Pilot AI (Technoshamans)
- Submersion: Grade 7            | Gender   : DIVERSE (Age: ~ 10)
- Available Nuyen : 12,800.0¥ | Karma: 14 Pool (221 Lifetime)
+ Submersion: Grade 8            | Gender   : DIVERSE (Age: ~ 10)
+ Available Nuyen : 17,550.0¥ | Karma: 5 Pool (229 Lifetime)
 ----------------------------------------------------------------------------
  ATTRIBUTES & DERIVED RATINGS:
   ATT (STR): 7  | SLZ (REA): 9  | DP (AGI): 7  | FW (BOD): 9 

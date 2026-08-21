@@ -5,7 +5,7 @@
  the SRM Guide.
 ----------------------------------------------------------------------------
  [01] BRYNNE TAGGART (Fixer) [SEA]
-      Connection: 4 (Fixed) | Loyalty: 2 | Active Favors: 2
+      Connection: 4 (Fixed) | Loyalty: 3 | Active Favors: 3
       History / Changes: Uses: Getting jobs, fencing gear, gangs (Shadowrun
       Missions Seattle) | Types: Criminal, Street
 ----------------------------------------------------------------------------
@@ -250,4 +250,8 @@
  [57] MOENEN (UNL infobroker) [AMS]
       Connection: 5 (Fixed) | Loyalty: 2 | Active Favors: 0
       History / Changes: CMP 2083-02 ROYAL ROAD
+----------------------------------------------------------------------------
+ [58] BLACKSTONE (SEA Contact) [SEA]
+      Connection: 3 (Fixed) | Loyalty: 1 | Active Favors: 0
+      History / Changes: SRM 2081-18 Friendships Never Grow Rust
 ----------------------------------------------------------------------------
