@@ -7,4 +7,5 @@
   - Diffusion                  | FV: 4  | Dur: S
   - Technoregeneration         | FV: -1 | Dur: P
   - Puppeteer                  | FV: 5  | Dur: S
+  - Cyber Spike                | FV: 3  | Dur: I
 ----------------------------------------------------------------------------

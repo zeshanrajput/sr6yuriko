@@ -1,12 +1,12 @@
 # [CARD] Reference Card Deck: Yuriko Star
-*Total Cards in Deck: 36*
+*Total Cards in Deck: 38*
 
 ---
 ### [CARD] YURIKO STAR - BASE ATTRIBUTES & POOLS (Core)
-> **ATT (STR)**: 7 | **SLZ (REA)**: 9 | **DP (AGI)**: 7 | **FW (BOD)**: 9 | **WIL**: 6 | **LOG**: 4 | **INT**: 2 | **CHA**: 4 | **EDG**: 4 | **RES / MAG**: 8 | **ESS**: 6.0 | **Submersion**: Grade 7 | **Nuyen & Karma**: 12,800.0¥ | 14 Karma | **Composure**: 10 | **Judge Intentions**: 8 | **Memory**: 10 | **Lift & Carry**: 16 | **Matrix Initiative**: 10 + 4D6 (Hot-Sim VR / Overclock) | **Condition Boxes**: Phys [13] | Stun [11] | **ASDF Ratings**: A:7 S:9 D:7 F:9 | **Full Matrix Def**: 34d6 (8 Hits)
+> **ATT (STR)**: 7 | **SLZ (REA)**: 9 | **DP (AGI)**: 7 | **FW (BOD)**: 9 | **WIL**: 6 | **LOG**: 4 | **INT**: 2 | **CHA**: 4 | **EDG**: 4 | **RES / MAG**: 8 | **ESS**: 6.0 | **Submersion**: Grade 8 | **Nuyen & Karma**: 17,550.0¥ | 5 Karma | **Composure**: 10 | **Judge Intentions**: 8 | **Memory**: 10 | **Lift & Carry**: 16 | **Matrix Initiative**: 10 + 4D6 (Hot-Sim VR / Overclock) | **Condition Boxes**: Phys [13] | Stun [11] | **ASDF Ratings**: A:7 S:9 D:7 F:9 | **Full Matrix Def**: 34d6 (8 Hits)
 
 Runner: Yuriko Star (AI-Pilot AI) | Stream: Technoshamans
-Submersion Grade 7 | Available Funds: 12,800.0¥ | Active Karma: 14 Pool
+Submersion Grade 8 | Available Funds: 17,550.0¥ | Active Karma: 5 Pool
 Derived Pools: Composure [10], Judge Intentions [8], Memory [10], Lift/Carry [16].
 Full Matrix Defense: 34d6 [RES 8 + FW 9 + PA 6 + DP 7 + Focus 4 = 34d6].
 
@@ -193,6 +193,15 @@ You may take the Control Device action on a device even if you do not have the p
 
 ---
 
+### [CARD] Cyber Spike (Complex Form)
+> **Fade**: 2 | **Duration**: Immediate | **Target**: Device, Persona | **Source**: hack_slash | **Fading**: 3
+
+## Cyber Spike
+
+*Source: [Hack and Slash, Page 1]*
+
+---
+
 ### [CARD] Hybrid Sprites (Meta Echo)
 
 **Hybrid Sprites:** When you compile a sprite, you can allocate net hits toward using this echo (instead of using those net hits to add more services). For each net hit you allocate in this way, you may provide the sprite with a skill or power that is normally only available to a different type of sprite that you know how to compile.
@@ -254,6 +263,14 @@ You may take the Control Device action on a device even if you do not have the p
 **Software Emulator:** You must have Living Network in order to take this echo. You are capable of running commlink apps, cyberprograms, and autosofts on your living persona. You have
 
 (Resonance/2) program slots. The maximum rating for any program you are capable of running is 6, and you are incapable of running an agent on your Living Network. Before you can emulate a program, you need to acquire a copy of it to absorb. Absorbing a program consumes it, causing its complete deletion. This takes an extended Electronics (Software) test with a threshold of 4 or the program’s rating, whichever is...
+
+*Source: [Hack and Slash, p. 70]*
+
+---
+
+### [CARD] Sprite Link (Meta Echo)
+
+**Sprite Link:** Your mind is more closely linked to your sprites, which allows them to more clearly understand your commands. When you spend a task and a Minor Action to command a sprite to assist you in a Teamwork test using one of its skills, you gain a bonus Minor Action. With a Minor Anytime Action and the use of one task, you may transfer fading damage that you would suffer to one of your sprites. You may attempt to resist fading first, then transfer as many boxes of unresisted damage as you choose. Your Sprite Rep goes down by 1 every time you do this.
 
 *Source: [Hack and Slash, p. 70]*
 

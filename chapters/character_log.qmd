@@ -87,7 +87,7 @@ Submersion_Grade = state["Submersion_Grade"]
   * `{python} contact("Renée Martin", connection=4, fp=3, type_name="NOLA League of Laveau Community Outreach", notes="2083-03 Unofficial Dunkelzahn Fan Club")`  
 * **Downtime Actions (1 Major & 1 Minor):**  
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
-  * *Submersion - Sprite Symbiosis:* `{python} inc_many(('Karma', -13), ('Submersion_Grade', 1))`
+  * *Submersion - Sprite Symbiosis:* `{python} inc_many(('Karma', -12), ('Submersion_Grade', 1))`
 
 ---
 
@@ -190,7 +190,7 @@ Submersion_Grade = state["Submersion_Grade"]
   * `{python} contact("Xiong Giuyin", connection=4, fp=1, type_name="SEA Wuxing", notes="SRM 2081-17 Framed in Blood")`  
 * **Heat:** No heat (Bribes: Poe, Yuriko)  
 * **Downtime Actions (1 Major & 1 Minor):**  
-  * *Submersion - Living Network:* `{python} inc_many(('Karma', -14), ('Submersion_Grade', 1))`  
+  * *Submersion - Living Network:* `{python} inc_many(('Karma', -13), ('Submersion_Grade', 1))`  
   * *Rent & Working for the People (Hooder):* `{python} inc_many(('Karma', 1), ('Nuyen', -4000))`  
 * **Other**
   * Three additional registered sprites compiled during game downtime (3 nights): `{python} add_sprite('Sprite-M9a', 7, 'Modular', 'Downtime 3 nights')`, `{python} add_sprite('Sprite-M9b', 7, 'Modular', 'Downtime 3 nights')`, `{python} add_sprite('Sprite-M9c', 7, 'Modular', 'Downtime 3 nights')`
@@ -225,7 +225,7 @@ Submersion_Grade = state["Submersion_Grade"]
 * **Reputation:** `{python} add_rep('Seattle', 1)`  
 * **Contacts:** `{python} contact("Kirt Liger", connection=3, fp=2, type_name="SEA Body Mod/Engineering Cybercatman", notes="SRM 2081-21 Grudge Match Gladiators")`  
 * **Downtime Actions (1 Major & 1 Minor):**  
-  * *Submersion - Transcendent Network:* `{python} inc_many(('Karma', -15), ('Submersion_Grade', 1))`  
+  * *Submersion - Transcendent Network:* `{python} inc_many(('Karma', -14), ('Submersion_Grade', 1))`  
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`  
 
 ---
@@ -301,7 +301,7 @@ Submersion_Grade = state["Submersion_Grade"]
   * `{python} contact("Monsieur Johnson", connection=5, fp=3, type_name="NOLA Johnson", notes="SRM 2083-19 The Hallow Feast")`
 * **Downtime Actions (1 Minor):**
   * *Rent & Working for the People (Hooder):* `{python} inc_many(('Karma', 1), ('Nuyen', -4000))`
-  * *Submersion - Overclocking:* `{python} inc_many(('Karma', -16), ('Submersion_Grade', 1))`
+  * *Submersion - Overclocking:* `{python} inc_many(('Karma', -15), ('Submersion_Grade', 1))`
 
 ---
 
@@ -379,7 +379,7 @@ Submersion_Grade = state["Submersion_Grade"]
   * `{python} contact("Trudy", connection=2, fp=1, type_name="SEA Cutter Lieutenant", notes="SRM 2081-07 Bootleg Bliss")`
 * **Downtime Actions (3 Minor):**
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
-  * *Submersion - Software Emulator:* `{python} inc_many(('Karma', -17), ('Submersion_Grade', 1))`
+  * *Submersion - Software Emulator:* `{python} inc_many(('Karma', -16), ('Submersion_Grade', 1))`
 * **Other**
   * Two sprites registered during in-game downtime
     * `{python} add_sprite('Sprite-M19a', 7, 'Modular', 'Autosofts')`
@@ -572,6 +572,33 @@ Submersion_Grade = state["Submersion_Grade"]
   * `{python} contact("Sigrún", connection=5, fp=1, type_name="House Oranje-Nassau Johnson", region="AMS", notes="CMP 2083-02 ROYAL ROAD")`
 * **Downtime Actions (2 Minor):**
   * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
-  * *Register Sprites:* `{python} add_sprite('Sprite-M28', 7, 'Modular')`
+  * *Learn Complex Form — Cyber Spike:* `{python} inc('Karma', -5)`
+
+---
+
+### **2026-Aug-20: SRM 2081-18 | Friendships Never Grow Rust** `{python} start_mission('SRM 2081-18')`
+
+* **Summary:** An unidentified helicopter crashed into the Strait of Juan de Fuca NE of Whidbey Island (presumed lost with no recoveries per Kiro News @7). Sam the Cat reported unrest within the 88s Triad with factions not playing nice with each other.
+* **Team:** Cherry (connor2847), Yuriko, Arrogant Ninja
+* **GM:** JaGator
+* **Difficulty Level:** Normal
+* **Rewards:** `{python} inc('Karma', 7)`, `{python} inc('Nuyen', 8250)`
+* **Reputation:** ±0
+* **Heat:** No Heat (`{python} inc('Nuyen', -1000)` Yuriko bribe/reduction)
+* **Contacts:**
+  * `{python} contact("Brynne Taggart", connection=4, fp=4, type_name="SEA Fixer", notes="SRM 2081-18 Friendships Never Grow Rust")`
+  * `{python} contact("Ni Ni Xiaolu", connection=3, fp=1, type_name="SEA Triad Johnson", notes="SRM 2081-18 Friendships Never Grow Rust")`
+  * `{python} contact("Saint James", connection=8, fp=1, type_name="SEA Fixer", notes="SRM 2081-18 Friendships Never Grow Rust")`
+  * `{python} contact("Blackstone", connection=3, fp=1, type_name="SEA Contact", notes="SRM 2081-18 Friendships Never Grow Rust")`
+* **Downtime Actions (1 Major, 1 Minor):**
+  * *Submersion - Sprite Link:* `{python} inc_many(('Karma', -17), ('Submersion_Grade', 1))`
+  * *Working for the People:* `{python} inc_many(('Karma', 1), ('Nuyen', -2000))`
+* **Other:**
+  * Contact info / favor fee to Blackstone: `{python} inc('Nuyen', -500)`
+  * Two sprites registered during in-session downtime:
+    * `{python} add_sprite('Sprite-M29a', 7, 'Modular')`
+    * `{python} add_sprite('Sprite-M29b', 7, 'Modular')`
+  * **Lifestyle:** 1 month High Lifestyle granted at no additional cost (no real coffee addictions). Monthly expenses (lifestyle + hooder) are normally paid every other SRM (ignoring non-SRM mission types); because 1 month High is complimentary and Hooder is covered via Working for the People, regular rent payment is waived for this cycle.
+
 
 

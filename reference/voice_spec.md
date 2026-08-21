@@ -92,7 +92,7 @@ chapter_tiers:
       - "20 The Price of Silk"
       - "21 ~"
       - "22 C Sharp"
-      - "XX_2 Symlink (Martyrdom Resolution & Sprite Link)"
+      - "24 Symlink (Martyrdom Resolution & Sprite Link)"
       - "XX_3 Renraku's Edge (The Amuse-Bouche / Curator Prelude)"
       - "XX_4 Leaving the Nest (Technoshamanic Parenthood)"
       - "XX_n Saturation (Sensory Trade in Eniac & Coffin Girls Refuge)"

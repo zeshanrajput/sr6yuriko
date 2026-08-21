@@ -235,6 +235,13 @@
         "ref": "puppeteer",
         "fading": 5,
         "duration": "Sustained"
+      },
+      {
+        "name": "Cyber Spike",
+        "ref": "cyber_spike",
+        "target": "Device, Persona",
+        "fading": 3,
+        "duration": "Immediate"
       }
     ]
   }

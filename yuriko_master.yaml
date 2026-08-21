@@ -113,6 +113,11 @@ complex_forms:
   ref: puppeteer
   fading: 5
   duration: Sustained
+- name: Cyber Spike
+  ref: cyber_spike
+  target: Device, Persona
+  fading: 3
+  duration: Immediate
 meta_echoes:
 - name: Hybrid Sprites
   ref: hybrid_sprites
@@ -130,6 +135,8 @@ meta_echoes:
   ref: overclocking
 - name: Software Emulator
   ref: software_emulator
+- name: Sprite Link
+  ref: sprite_link
 drones:
 - name: MCT Gnat
   ref: mctgnat
@@ -333,8 +340,8 @@ lifestyles:
 contacts:
 - name: Brynne Taggart
   connection: 4
-  loyalty: 2
-  favors: 2
+  loyalty: 3
+  favors: 3
   type: Fixer
   archetype: Fixer
   region: SEA
@@ -856,6 +863,15 @@ contacts:
   region: AMS
   is_canonical: false
   description: CMP 2083-02 ROYAL ROAD
+- name: Blackstone
+  connection: 3
+  loyalty: 1
+  favors: 0
+  type: SEA Contact
+  archetype: SEA Contact
+  region: SEA
+  is_canonical: false
+  description: SRM 2081-18 Friendships Never Grow Rust
 programs:
 - name: Baby Monitor
   category: Basic

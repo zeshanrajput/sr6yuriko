@@ -68,7 +68,7 @@ This reference details Reiko's Complex Forms, sprite compiling and registering d
 | **Smartgun Amplifier** | Pending |
 | **Enhance Autosofts** | Pending |
 | **Resonance Wires** | Pending |
-| **Cyber Spike** | Pending |
+| **Cyber Spike** | CMP 2083-02 |
 | **Resonance Spike** | Pending |
 
 ---
