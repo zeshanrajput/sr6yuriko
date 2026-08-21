@@ -174,37 +174,37 @@ Standardized action categorization grouped strictly by Skill & Specialization, i
 ### 1. Cracking Tests (Cracking + RES via Natural Hacker)
 
 * **Hacking Specialization**: **`{python} cracking_hacking_pool`d6 (1 wild)** $\rightarrow$ **`{python} cracking_hacking_hits` Bought Hits**
-  * *Applied Modifiers*: Base Cracking (`{python} CRACKING_RATING}`) + RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`) + Hacking Spec (+2) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK}`) + Overclock (+`{python} OVERCLOCK_BONUS}`, 1 wild) + ECM Warrior II (+`{python} ECM_WARRIOR_BONUS}`)
+  * *Applied Modifiers*: Base Cracking (`{python} CRACKING_RATING`) + RES (`{python} RESONANCE`) + RES Focus (+`{python} RESONANCE_FOCUS`) + Hacking Spec (+2) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK`) + Overclock (+`{python} OVERCLOCK_BONUS`, 1 wild) + ECM Warrior II (+`{python} ECM_WARRIOR_BONUS`)
   * *Actions*: Backdoor Entry, Crack File, Delayed Command, Garbage In / Garbage Out, Known Exploit, Metahuman in the Middle, Probe, Puppet Cyberware, Spoof Command.
 * **Cybercombat Specialization**: **`{python} cracking_other_pool`d6 (1 wild)** $\rightarrow$ **`{python} cracking_other_hits` Bought Hits**
-  * *Applied Modifiers*: Base Cracking (`{python} CRACKING_RATING}`) + RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK}`) + Overclock (+`{python} OVERCLOCK_BONUS}`, 1 wild) + ECM Warrior II (+`{python} ECM_WARRIOR_BONUS}`)
+  * *Applied Modifiers*: Base Cracking (`{python} CRACKING_RATING`) + RES (`{python} RESONANCE`) + RES Focus (+`{python} RESONANCE_FOCUS`) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK`) + Overclock (+`{python} OVERCLOCK_BONUS`, 1 wild) + ECM Warrior II (+`{python} ECM_WARRIOR_BONUS`)
   * *Actions*: Brute Force, Crash Program, Data Spike, Device Lock, Disarm Data Bomb, Resonance Spike, Tar Pit.
 * **Electronic Warfare Specialization**: **`{python} cracking_other_pool`d6 (1 wild)** $\rightarrow$ **`{python} cracking_other_hits` Bought Hits**
-  * *Applied Modifiers*: Base Cracking (`{python} CRACKING_RATING}`) + RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK}`) + Overclock (+`{python} OVERCLOCK_BONUS}`, 1 wild) + ECM Warrior II (+`{python} ECM_WARRIOR_BONUS}`)
+  * *Applied Modifiers*: Base Cracking (`{python} CRACKING_RATING`) + RES (`{python} RESONANCE`) + RES Focus (+`{python} RESONANCE_FOCUS`) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK`) + Overclock (+`{python} OVERCLOCK_BONUS`, 1 wild) + ECM Warrior II (+`{python} ECM_WARRIOR_BONUS`)
   * *Actions*: Calibration, Check OS, Hide, Jam Signals, Masquerade, Popup, Snoop, Watchdog.
 
 ### 2. Electronics Tests (Electronics + RES via Natural Hacker)
 
 * **Software Specialization**: **`{python} electronics_software_pool`d6 (1 wild)** $\rightarrow$ **`{python} electronics_software_hits` Bought Hits**
-  * *Applied Modifiers*: Base Electronics (`{python} ELECTRONICS_RATING}`) + RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`) + Software Spec (+2) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK}`) + Overclock (+`{python} OVERCLOCK_BONUS}`, 1 wild)
+  * *Applied Modifiers*: Base Electronics (`{python} ELECTRONICS_RATING`) + RES (`{python} RESONANCE`) + RES Focus (+`{python} RESONANCE_FOCUS`) + Software Spec (+2) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK`) + Overclock (+`{python} OVERCLOCK_BONUS`, 1 wild)
   * *Actions*: Control Device, Format Device, Jack Out, Jump into Rigged Device, Reboot Device, Set Data Bomb, Trace Icon.
 * **Computer Specialization**: **`{python} electronics_other_pool`d6 (1 wild)** $\rightarrow$ **`{python} electronics_other_hits` Bought Hits**
-  * *Applied Modifiers*: Base Electronics (`{python} ELECTRONICS_RATING}`) + RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK}`) + Overclock (+`{python} OVERCLOCK_BONUS}`, 1 wild)
+  * *Applied Modifiers*: Base Electronics (`{python} ELECTRONICS_RATING`) + RES (`{python} RESONANCE`) + RES Focus (+`{python} RESONANCE_FOCUS`) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK`) + Overclock (+`{python} OVERCLOCK_BONUS`, 1 wild)
   * *Actions*: Edit File, Encrypt File, Erase Matrix Signature, Hash Check, Matrix Perception, Matrix Search, Modify Icon, Threat Analysis.
 * **Hardware Specialization**: **`{python} electronics_other_pool`d6 (1 wild)** $\rightarrow$ **`{python} electronics_other_hits` Bought Hits**
-  * *Applied Modifiers*: Base Electronics (`{python} ELECTRONICS_RATING}`) + RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK}`) + Overclock (+`{python} OVERCLOCK_BONUS}`, 1 wild)
+  * *Applied Modifiers*: Base Electronics (`{python} ELECTRONICS_RATING`) + RES (`{python} RESONANCE`) + RES Focus (+`{python} RESONANCE_FOCUS`) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK`) + Overclock (+`{python} OVERCLOCK_BONUS`, 1 wild)
   * *Actions*: Denial of Service, Squelch, Subvert Infrastructure, Turning off Wireless, removing headjammer, keycard copier, tag eraser, bug scanner.
 * **Complex Forms (Electronics-based)**: **`{python} electronics_other_pool`d6 (1 wild)** $\rightarrow$ **`{python} electronics_other_hits` Bought Hits**
-  * *Applied Modifiers*: Base Electronics (`{python} ELECTRONICS_RATING}`) + RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK}`) + Overclock (+`{python} OVERCLOCK_BONUS}`, 1 wild)
+  * *Applied Modifiers*: Base Electronics (`{python} ELECTRONICS_RATING`) + RES (`{python} RESONANCE`) + RES Focus (+`{python} RESONANCE_FOCUS`) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK`) + Overclock (+`{python} OVERCLOCK_BONUS`, 1 wild)
 
 ### 3. Matrix Defense Protocols
 
 * **Full Matrix Defense**: **`{python} full_defense_pool`d6** $\rightarrow$ **`{python} full_defense_hits` Bought Hits**
-  * *Applied Modifiers*: RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`) + FW (`{python} ACTIVE_F}`) + Personal Assistant App R6 (+6) + Directional Shield Active DP (+`{python} ACTIVE_D}`)
+  * *Applied Modifiers*: RES (`{python} RESONANCE`) + RES Focus (+`{python} RESONANCE_FOCUS`) + FW (`{python} ACTIVE_F`) + Personal Assistant App R6 (+6) + Directional Shield Active DP (+`{python} ACTIVE_D`)
 * **Standard Matrix Defense (vs Attack Actions: Brute Force, Data Spike)**: **`{python} ACTIVE_F + RESONANCE + RESONANCE_FOCUS`d6** $\rightarrow$ **`{python} (ACTIVE_F + RESONANCE + RESONANCE_FOCUS) // 4` Bought Hits**
-  * *Applied Modifiers*: Firewall (`{python} ACTIVE_F}`) + Natural Hacker RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`)
+  * *Applied Modifiers*: Firewall (`{python} ACTIVE_F`) + Natural Hacker RES (`{python} RESONANCE`) + RES Focus (+`{python} RESONANCE_FOCUS`)
 * **Standard Matrix Defense (vs Sleaze Actions: Probe, Backdoor Entry, Hack)**: **`{python} ACTIVE_F + RESONANCE + RESONANCE_FOCUS`d6** $\rightarrow$ **`{python} (ACTIVE_F + RESONANCE + RESONANCE_FOCUS) // 4` Bought Hits**
-  * *Applied Modifiers*: Firewall (`{python} ACTIVE_F}`) + Natural Hacker RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`)
+  * *Applied Modifiers*: Firewall (`{python} ACTIVE_F`) + Natural Hacker RES (`{python} RESONANCE`) + RES Focus (+`{python} RESONANCE_FOCUS`)
 
 ### 4. Matrix Edge Actions
 
