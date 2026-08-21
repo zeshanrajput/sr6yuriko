@@ -3,8 +3,11 @@ project:
   output-dir: _book
   resources:
     - chapters/audio/
+    - output/pdf/
+    - output/vtt/
+    - output/text/
   pre-render:
-    - uv run sr6 export yuriko --format=vtt
+    - uv run sr6 sync-all
 
 book:
   title: "REIKO // Yuriko Star Portfolio"
@@ -74,4 +77,3 @@ format:
 
 execute:
   engine: jupyter
-  python: .venv/Scripts/python.exe

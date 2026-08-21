@@ -29,6 +29,7 @@ powers_txt = export_powers_sheet(char_data)
 * **Printable Index Card Deck (4.25" x 5.5" / 4" x 6" Laserjet PDF)**: [yuriko_cards_deck.pdf](../output/pdf/yuriko_cards_deck.pdf)
 * **Printable Base Sheet (1-Page PDF)**: [yuriko_base_sheet.pdf](../output/pdf/yuriko_base_sheet.pdf)
 * **VTT & CommLink6 Saves**: [yuriko.xml](../output/vtt/yuriko.xml) | [yuriko.json](../output/vtt/yuriko.json)
+* **Plain-Text Modular Exports**: [Base Sheet](../output/text/yuriko_base.txt) | [Combat](../output/text/yuriko_combat.txt) | [Vehicles](../output/text/yuriko_vehicles.txt) | [Inventory](../output/text/yuriko_inventory.txt) | [Powers](../output/text/yuriko_powers.txt) | [Contacts](../output/text/yuriko_contacts.txt)
 :::
 
 ## 1. Base Sheet
@@ -36,9 +37,7 @@ powers_txt = export_powers_sheet(char_data)
 ```{python}
 #| echo: false
 #| output: asis
-print("```text")
-print(base_txt)
-print("```")
+print(f"```text\n{base_txt}\n```")
 ```
 
 ## 2. Combat & Tactical Arrays
@@ -46,9 +45,7 @@ print("```")
 ```{python}
 #| echo: false
 #| output: asis
-print("```text")
-print(combat_txt)
-print("```")
+print(f"```text\n{combat_txt}\n```")
 ```
 
 ## 3. Vehicles & Drones
@@ -56,9 +53,7 @@ print("```")
 ```{python}
 #| echo: false
 #| output: asis
-print("```text")
-print(vehicles_txt)
-print("```")
+print(f"```text\n{vehicles_txt}\n```")
 ```
 
 ## 4. Inventory, Hardware & Software
@@ -66,9 +61,7 @@ print("```")
 ```{python}
 #| echo: false
 #| output: asis
-print("```text")
-print(inventory_txt)
-print("```")
+print(f"```text\n{inventory_txt}\n```")
 ```
 
 ## 5. Powers & Complex Forms
@@ -76,9 +69,7 @@ print("```")
 ```{python}
 #| echo: false
 #| output: asis
-print("```text")
-print(powers_txt)
-print("```")
+print(f"```text\n{powers_txt}\n```")
 ```
 
 ## 6. Contacts Directory (SRM Canonical)
@@ -86,7 +77,5 @@ print("```")
 ```{python}
 #| echo: false
 #| output: asis
-print("```text")
-print(contacts_txt)
-print("```")
+print(f"```text\n{contacts_txt}\n```")
 ```

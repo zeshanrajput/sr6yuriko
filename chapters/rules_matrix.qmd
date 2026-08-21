@@ -33,13 +33,28 @@ edge_storage_total = SUBMERSION_GRADE + edge_storage_mtoc
 
 matrix_pools = ModifierEngine.get_matrix_action_pools(_char)
 cracking_hacking_pool = matrix_pools["cracking_hacking"].total_pool
+cracking_hacking_hits = matrix_pools["cracking_hacking"].bought_hits
 cracking_other_pool = matrix_pools["cracking_other"].total_pool
+cracking_other_hits = matrix_pools["cracking_other"].bought_hits
+full_defense_pool = matrix_pools["full_matrix_defense"].total_pool
+full_defense_hits = matrix_pools["full_matrix_defense"].bought_hits
 electronics_software_pool = matrix_pools["electronics_software"].total_pool
+electronics_software_hits = matrix_pools["electronics_software"].bought_hits
 electronics_other_pool = matrix_pools["electronics_other"].total_pool
+electronics_other_hits = matrix_pools["electronics_other"].bought_hits
+buy_gear_pool = matrix_pools["buy_gear"].total_pool
+buy_gear_hits = matrix_pools["buy_gear"].bought_hits
+programming_pool = matrix_pools["programming"].total_pool
+programming_hits = matrix_pools["programming"].bought_hits
+
+CRACKING_RATING = 5
 CRACKING_HACKING = 7
-CRACKING_OTHER = 5
+ELECTRONICS_RATING = 5
+ELECTRONICS_SOFTWARE = 7
 RESONANCE_FOCUS = 4
 ALLY_SPRITE_TEAMWORK = 4
+OVERCLOCK_BONUS = 2
+ECM_WARRIOR_BONUS = 2
 ```
 
 This reference details Reiko's Matrix attributes, action pool breakdowns, network benefits, learned programs, defense math, remote node network architecture, and decking cheat sheet.
@@ -154,22 +169,44 @@ print(get_matrix_action_table("yuriko"))
 
 ## Decking Protocols Cheat Sheet
 
-Standardized action categorization grouped strictly by Skill & Specialization:
+Standardized action categorization grouped strictly by Skill & Specialization, incorporating **Natural Hacker** (Resonance attribute substitution), **Resonance Focus (+4)**, **Taz Ally Sprite Teamwork (+4)**, **Overclocking (+2, 1 wild die)**, and **Tactical Software**:
 
-### 1. Cracking Tests (Cracking + RES)
+### 1. Cracking Tests (Cracking + RES via Natural Hacker)
 
-* **Hacking Specialization**: Backdoor Entry, Crack File, Delayed Command, Garbage In / Garbage Out, Known Exploit, Metahuman in the Middle, Probe, Puppet Cyberware, Spoof Command.
-* **Cybercombat Specialization**: Brute Force, Crash Program, Data Spike, Device Lock, Disarm Data Bomb, Resonance Spike, Tar Pit.
-* **Electronic Warfare Specialization**: Calibration, Check OS, Hide, Jam Signals, Masquerade, Popup, Snoop, Watchdog.
+* **Hacking Specialization**: **`{python} cracking_hacking_pool`d6 (1 wild)** $\rightarrow$ **`{python} cracking_hacking_hits` Bought Hits**
+  * *Applied Modifiers*: Base Cracking (`{python} CRACKING_RATING}`) + RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`) + Hacking Spec (+2) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK}`) + Overclock (+`{python} OVERCLOCK_BONUS}`, 1 wild) + ECM Warrior II (+`{python} ECM_WARRIOR_BONUS}`)
+  * *Actions*: Backdoor Entry, Crack File, Delayed Command, Garbage In / Garbage Out, Known Exploit, Metahuman in the Middle, Probe, Puppet Cyberware, Spoof Command.
+* **Cybercombat Specialization**: **`{python} cracking_other_pool`d6 (1 wild)** $\rightarrow$ **`{python} cracking_other_hits` Bought Hits**
+  * *Applied Modifiers*: Base Cracking (`{python} CRACKING_RATING}`) + RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK}`) + Overclock (+`{python} OVERCLOCK_BONUS}`, 1 wild) + ECM Warrior II (+`{python} ECM_WARRIOR_BONUS}`)
+  * *Actions*: Brute Force, Crash Program, Data Spike, Device Lock, Disarm Data Bomb, Resonance Spike, Tar Pit.
+* **Electronic Warfare Specialization**: **`{python} cracking_other_pool`d6 (1 wild)** $\rightarrow$ **`{python} cracking_other_hits` Bought Hits**
+  * *Applied Modifiers*: Base Cracking (`{python} CRACKING_RATING}`) + RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK}`) + Overclock (+`{python} OVERCLOCK_BONUS}`, 1 wild) + ECM Warrior II (+`{python} ECM_WARRIOR_BONUS}`)
+  * *Actions*: Calibration, Check OS, Hide, Jam Signals, Masquerade, Popup, Snoop, Watchdog.
 
-### 2. Electronics Tests (Electronics + RES)
+### 2. Electronics Tests (Electronics + RES via Natural Hacker)
 
-* **Software Specialization**: Control Device, Format Device, Jack Out, Jump into Rigged Device, Reboot Device, Set Data Bomb, Trace Icon.
-* **Computer Specialization**: Edit File, Encrypt File, Erase Matrix Signature, Hash Check, Matrix Perception, Matrix Search, Modify Icon, Threat Analysis.
-* **Hardware Specialization**: Denial of Service, Squelch, Subvert Infrastructure, Turning off Wireless, removing headjammer, keycard copier, tag eraser, bug scanner.
-* **Complex Forms**: Any complex form requiring an Electronics test.
+* **Software Specialization**: **`{python} electronics_software_pool`d6 (1 wild)** $\rightarrow$ **`{python} electronics_software_hits` Bought Hits**
+  * *Applied Modifiers*: Base Electronics (`{python} ELECTRONICS_RATING}`) + RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`) + Software Spec (+2) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK}`) + Overclock (+`{python} OVERCLOCK_BONUS}`, 1 wild)
+  * *Actions*: Control Device, Format Device, Jack Out, Jump into Rigged Device, Reboot Device, Set Data Bomb, Trace Icon.
+* **Computer Specialization**: **`{python} electronics_other_pool`d6 (1 wild)** $\rightarrow$ **`{python} electronics_other_hits` Bought Hits**
+  * *Applied Modifiers*: Base Electronics (`{python} ELECTRONICS_RATING}`) + RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK}`) + Overclock (+`{python} OVERCLOCK_BONUS}`, 1 wild)
+  * *Actions*: Edit File, Encrypt File, Erase Matrix Signature, Hash Check, Matrix Perception, Matrix Search, Modify Icon, Threat Analysis.
+* **Hardware Specialization**: **`{python} electronics_other_pool`d6 (1 wild)** $\rightarrow$ **`{python} electronics_other_hits` Bought Hits**
+  * *Applied Modifiers*: Base Electronics (`{python} ELECTRONICS_RATING}`) + RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK}`) + Overclock (+`{python} OVERCLOCK_BONUS}`, 1 wild)
+  * *Actions*: Denial of Service, Squelch, Subvert Infrastructure, Turning off Wireless, removing headjammer, keycard copier, tag eraser, bug scanner.
+* **Complex Forms (Electronics-based)**: **`{python} electronics_other_pool`d6 (1 wild)** $\rightarrow$ **`{python} electronics_other_hits` Bought Hits**
+  * *Applied Modifiers*: Base Electronics (`{python} ELECTRONICS_RATING}`) + RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`) + Taz Teamwork (+`{python} ALLY_SPRITE_TEAMWORK}`) + Overclock (+`{python} OVERCLOCK_BONUS}`, 1 wild)
 
-### 3. Matrix Edge Actions
+### 3. Matrix Defense Protocols
+
+* **Full Matrix Defense**: **`{python} full_defense_pool`d6** $\rightarrow$ **`{python} full_defense_hits` Bought Hits**
+  * *Applied Modifiers*: RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`) + FW (`{python} ACTIVE_F}`) + Personal Assistant App R6 (+6) + Directional Shield Active DP (+`{python} ACTIVE_D}`)
+* **Standard Matrix Defense (vs Attack Actions: Brute Force, Data Spike)**: **`{python} ACTIVE_F + RESONANCE + RESONANCE_FOCUS`d6** $\rightarrow$ **`{python} (ACTIVE_F + RESONANCE + RESONANCE_FOCUS) // 4` Bought Hits**
+  * *Applied Modifiers*: Firewall (`{python} ACTIVE_F}`) + Natural Hacker RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`)
+* **Standard Matrix Defense (vs Sleaze Actions: Probe, Backdoor Entry, Hack)**: **`{python} ACTIVE_F + RESONANCE + RESONANCE_FOCUS`d6** $\rightarrow$ **`{python} (ACTIVE_F + RESONANCE + RESONANCE_FOCUS) // 4` Bought Hits**
+  * *Applied Modifiers*: Firewall (`{python} ACTIVE_F}`) + Natural Hacker RES (`{python} RESONANCE}`) + RES Focus (+`{python} RESONANCE_FOCUS}`)
+
+### 4. Matrix Edge Actions
 
 * **1 Edge**: Batch Exec, Emergency Boost, Paint Target.
 * **2 Edge**: Technobabble (CHA instead of LOG), Intervene, Hog, Signal Scream.
@@ -212,10 +249,12 @@ Standardized action categorization grouped strictly by Skill & Specialization:
 * Edge (`{python} EDGE`)
 * Resonance (Highest Attribute) = `{python} RESONANCE + 1`
 
-#### Skills
+#### Skills & Derived Action Pools
 
-* Tasking (Highest Skill) = 7
-* Social Tests: `{python} int(CRACKING_HACKING * 1.5) + RESONANCE + 1 + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK`
-* Perception/Physical/Piloting: `{python} electronics_other_pool + int(CRACKING_HACKING * 0.5) + 1`
-* Combat: `{python} int(CRACKING_OTHER * 1.5) + RESONANCE + 1 + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK`
-* Technical tests: `{python} electronics_software_pool + int(CRACKING_HACKING * 0.5) + 1`
+Under the Nexus Protocol [HnS p. 142], Reiko uses her real-world skills and attributes with a +1 bonus to highest attribute (RES 8 + 1 = 9) and highest skill (Tasking 6 + 1 = 7), plus a dedicated bonus pool of +7 dice in combat (+3 dice in downtime), alongside Natural Hacker, Resonance Focus (+4), Taz Teamwork (+4), Overclock (+2), and ECM Warrior II (+2):
+
+* **Tasking (Highest Skill)**: 7
+* **Social Tests (Cracking [Hacking] + RES)**: `{python} CRACKING_HACKING + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + ECM_WARRIOR_BONUS + 3`d6 (Downtime: 25d6) / **`{python} CRACKING_HACKING + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + ECM_WARRIOR_BONUS + 7`d6 (Combat: 29d6, 1 wild)**
+* **Perception / Physical / Piloting (Electronics [Computer] + RES)**: `{python} ELECTRONICS_RATING + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + 3`d6 (Downtime: 23d6) / **`{python} ELECTRONICS_RATING + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + 7`d6 (Combat: 27d6, 1 wild)**
+* **Combat Tests (Cracking [Cybercombat] + RES)**: `{python} CRACKING_RATING + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + ECM_WARRIOR_BONUS + 3`d6 (Downtime: 25d6) / **`{python} CRACKING_RATING + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + ECM_WARRIOR_BONUS + 7`d6 (Combat: 29d6, 1 wild)**
+* **Technical Tests (Electronics [Software] + RES)**: `{python} ELECTRONICS_SOFTWARE + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + 3`d6 (Downtime: 25d6) / **`{python} ELECTRONICS_SOFTWARE + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + 7`d6 (Combat: 29d6, 1 wild)**
