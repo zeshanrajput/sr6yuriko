@@ -44,6 +44,8 @@ Brynne looked at the boy, then at Reiko’s flushed circuits, and let out a wear
 
 Reiko linked their feeds, drawing Brynne’s sensory awareness gently out of the Downtown bedroom and into her private architecture.
 
+![Reiko, Percy, and Brynne](../images/r31k0%20-%20symlink.jpeg)
+
 ---
 
 Inside `~`, low-slung ceilings of brushed teak and burnished bronze held a heavy, serene quiet, insulated from the chalky roar of Seattle’s public grid. The warm, environmental scent of blooming jasmine drifted from a celadon tea service resting on the low counter.

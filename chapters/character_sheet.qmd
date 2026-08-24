@@ -11,10 +11,11 @@ from sr6core.exporters.vtt_text import (
     export_inventory_sheet,
     export_vehicles_sheet,
     export_powers_sheet,
+    export_ledger_sheet,
 )
 
 cm = CharacterManager()
-char_data = cm.get_character_data("yuriko")
+char_data = cm.get_character_data("yuriko") or {}
 
 base_txt = export_base_sheet(char_data, char_repo_path=".")
 combat_txt = export_combat_sheet(char_data)
@@ -22,6 +23,7 @@ contacts_txt = export_contacts_sheet(char_data)
 inventory_txt = export_inventory_sheet(char_data)
 vehicles_txt = export_vehicles_sheet(char_data)
 powers_txt = export_powers_sheet(char_data)
+ledger_txt = export_ledger_sheet(char_data, char_repo_path=".")
 ```
 
 ::: {.callout-note}
@@ -29,7 +31,7 @@ powers_txt = export_powers_sheet(char_data)
 * **Printable Index Card Deck (4.25" x 5.5" / 4" x 6" Laserjet PDF)**: [yuriko_cards_deck.pdf](../output/pdf/yuriko_cards_deck.pdf)
 * **Printable Base Sheet (1-Page PDF)**: [yuriko_base_sheet.pdf](../output/pdf/yuriko_base_sheet.pdf)
 * **VTT & CommLink6 Saves**: [yuriko.xml](../output/vtt/yuriko.xml) | [yuriko.json](../output/vtt/yuriko.json)
-* **Plain-Text Modular Exports**: [Base Sheet](../output/text/yuriko_base.txt) | [Combat](../output/text/yuriko_combat.txt) | [Vehicles](../output/text/yuriko_vehicles.txt) | [Inventory](../output/text/yuriko_inventory.txt) | [Powers](../output/text/yuriko_powers.txt) | [Contacts](../output/text/yuriko_contacts.txt)
+* **Plain-Text Modular Exports**: [Base Sheet](../output/text/yuriko_base.txt) | [Combat](../output/text/yuriko_combat.txt) | [Vehicles](../output/text/yuriko_vehicles.txt) | [Inventory](../output/text/yuriko_inventory.txt) | [Powers](../output/text/yuriko_powers.txt) | [Contacts](../output/text/yuriko_contacts.txt) | [Ledger](../output/text/yuriko_ledger.txt)
 :::
 
 ## 1. Base Sheet
@@ -79,3 +81,12 @@ print(f"```text\n{powers_txt}\n```")
 #| output: asis
 print(f"```text\n{contacts_txt}\n```")
 ```
+
+## 7. Financial & Advancement Ledger
+
+```{python}
+#| echo: false
+#| output: asis
+print(f"```text\n{ledger_txt}\n```")
+```
+
