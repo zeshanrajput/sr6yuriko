@@ -15,59 +15,66 @@
       <attributes id="RESONANCE" value="8" />
    </attributes>
    <qualities>
-      <quality lang="en" ref="natural_hacker" uuid="b8c056d6-bac2-46be-8e46-1a826aab0465" />
-      <quality lang="en" ref="technoshaman" uuid="b4da0f3d-2d74-4efc-b3fe-11a6d6093f37" />
-      <quality lang="en" ref="designer" uuid="4dae2227-54c5-47c3-bd2c-8f3702580e0f" />
-      <quality lang="en" ref="sensor_upgrade" uuid="acf8f308-5db9-4b3a-87dd-f77eac1258dc" />
-      <quality lang="en" ref="pilot_origins" uuid="c4479667-acc9-4db9-aea3-2c899025edd5" />
-      <quality lang="en" ref="buddy_system" uuid="08fe19b8-1296-42f4-b063-6591d0c9966b" />
-      <quality lang="en" ref="sprite_bane" uuid="f965d6ae-8d5f-49c9-90e4-9bc6353dfa38">
-         <decision choice="1610bcea-53c3-4d2c-9274-0f060dc3c7eb" value="Primal Sprite" />
+      <quality lang="en" ref="natural_hacker" uuid="8950a672-3889-4dea-9e7e-23ce73f81242" />
+      <quality lang="en" ref="technoshaman" uuid="038aa274-0d27-4a6e-9d7c-91a9b09e0a7e" />
+      <quality lang="en" ref="designer" uuid="a9aa9c05-2e92-4c99-a16c-bd9ef2424a4c" />
+      <quality lang="en" ref="sensor_upgrade" uuid="abfe5630-7a51-4bf4-af5f-260f00c73b66" />
+      <quality lang="en" ref="pilot_origins" uuid="182df109-f8a8-4105-b36f-cd84b6c90f4a" />
+      <quality lang="en" ref="buddy_system" uuid="cdee8463-d032-4c57-947a-498681a6b125" />
+      <quality lang="en" ref="sprite_bane" uuid="d959a723-6a94-41aa-903b-77ea24a85507">
+         <decision choice="62991962-d46b-4516-b5e0-8a484eb3bf11" value="Primal Sprite" />
       </quality>
-      <quality lang="en" ref="hooder" uuid="558506a0-94d8-4c47-9fbe-5c54217194ef" value="2" />
+      <quality lang="en" ref="hooder" uuid="313630d9-926a-45c5-b840-723ae91274c1" value="2" />
    </qualities>
    <skills>
-      <skill lang="en" ref="tasking" uuid="deb2e7bd-13bf-4953-959b-976bf6553414" value="6">
-         <decision choice="ef38366d-abc4-49cc-81fe-f55d1c0a065d" value="Registering" />
+      <skill lang="en" ref="tasking" uuid="d196b750-23c1-4b12-bd02-fb3509fff142" value="6">
+         <skillspec lang="en" ref="registering" />
       </skill>
-      <skill lang="en" ref="cracking" uuid="4cd2cbbb-3a3c-4156-b9d5-cb59f872aa0c" value="5">
-         <decision choice="7f7c9001-2903-44da-856d-3d58daacc358" value="Hacking" />
+      <skill lang="en" ref="cracking" uuid="e4798393-2716-4094-9c10-b1c2e206925b" value="5">
+         <skillspec lang="en" ref="hacking" />
       </skill>
-      <skill lang="en" ref="electronics" uuid="80901482-80b6-4e3a-a120-2680bbc14cbc" value="5">
-         <decision choice="5cb68404-4d9d-4d69-87b8-796432cac576" value="Software" />
+      <skill lang="en" ref="electronics" uuid="cf104b2f-81cb-4ccd-bb31-306b5d54bcdf" value="5">
+         <skillspec lang="en" ref="software" />
       </skill>
-      <skill lang="en" ref="influence" uuid="18413980-4dd1-46e1-ad43-57a2bccf0ff6" value="1" />
-      <skill lang="en" ref="con" uuid="c33bae86-7a0b-4a8f-b3d5-09c41820dedb" value="1" />
-      <skill lang="en" ref="language" uuid="d451ba67-f2ce-40ce-addc-b5387bf85810" value="4" />
+      <skill lang="en" ref="influence" uuid="6f3d7698-f4b6-4dfd-b810-6cd149901cee" value="1" />
+      <skill lang="en" ref="con" uuid="b10300b4-441f-4601-ba60-8219b0d2d9f8" value="1" />
+      <skill lang="en" ref="language" uuid="04ad3150-5173-4e2c-ad6a-35f40e41b3f3" value="4">
+         <decision choice="a7103ee4-31fa-435d-ac42-08f7d4d1e80c" value="Native Language" />
+      </skill>
    </skills>
+   <metaEchoes>
+      <metaEcho lang="en" ref="hybrid_sprites" />
+      <metaEcho lang="en" ref="new_sprite_type" />
+      <metaEcho lang="en" ref="sprite_conduit" />
+      <metaEcho lang="en" ref="sprite_symbiosis" />
+      <metaEcho lang="en" ref="living_network" />
+      <metaEcho lang="en" ref="transcendent_network" />
+      <metaEcho lang="en" ref="overclocking" />
+      <metaEcho lang="en" ref="software_emulator" />
+      <metaEcho lang="en" ref="sprite_link" />
+   </metaEchoes>
+   <complexforms>
+      <complexforms lang="en" ref="cleaner" />
+      <complexforms lang="en" ref="diffusion" />
+      <complexforms lang="en" ref="technoregeneration" />
+      <complexforms lang="en" ref="puppeteer" />
+      <complexforms lang="en" ref="cyber_spike" />
+   </complexforms>
    <items>
-      <item lang="en" mode="CARRIED" ref="50_explosive_rounds_(ares_predator_vi)" uuid="25dc667f-610c-45a4-befc-028dbffc6de1" />
-      <item lang="en" mode="CARRIED" ref="50_krime_self_defense_rounds_(ares_predator_vi)" uuid="87b1d445-c7ff-4656-9472-7281c8cba416" />
-      <item lang="en" mode="CARRIED" ref="5x_peak-discharge_laser_battery_clips_(red_fox)" uuid="44c17afe-1a4c-439f-b32b-f5ad29295f1d" />
-      <item lang="en" mode="CARRIED" ref="10x_glitter_grenades" uuid="5cbfbc00-70a0-475b-8689-6da305b0b815" />
-      <item lang="en" mode="CARRIED" ref="built-in_utility_kit_&amp;_medkit_(butler_&amp;_man-at-arms)" uuid="3badb8a4-e990-4aa0-96d9-9ae6f18287e2" />
-      <item lang="en" mode="CARRIED" ref="facial_scanner" uuid="40e5a0fb-0bd6-4926-ab00-ead01834f284" />
-      <item lang="en" mode="CARRIED" ref="p-ice_spines" uuid="99bb88c3-99b1-42ad-9605-2c8e9b69b090" />
-      <item lang="en" mode="CARRIED" ref="personal_assistant_(r6)" uuid="25a6c8fc-3570-4030-841e-4481614f6d5d" />
-      <item lang="en" mode="CARRIED" ref="social_hud_(r6)" uuid="82826ea4-f3e9-40cc-a8d1-79bc727fbff7" />
-      <item lang="en" mode="CARRIED" ref="thermal_mood_reading" uuid="0b701254-ec4a-4046-88e8-0d2c30189a87" />
-      <item lang="en" mode="CARRIED" ref="vocal_tension_detection" uuid="f6e990d8-4b83-47bd-83a7-ff788d26db38" />
-      <item lang="en" mode="CARRIED" ref="mctgnat" uuid="51085b9b-86f9-4992-8034-8caf11bfd617" />
-      <item lang="en" mode="CARRIED" ref="shiawasebdbutler" uuid="2b274855-c5e8-4c9b-a0ba-3ffdd02e21d2">
+      <item lang="en" mode="SA,BF" ref="ares_predator_vi" uuid="f27713e0-48ca-4405-bc69-90d8f234d740">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="95dd7b51-7aa5-42db-9e32-a1fe88b38da2" />
+            <item lang="en" mode="EMBEDDED" ref="silencer" uuid="42c26c39-6455-45f5-abba-edbdff72fab5" />
+            <item lang="en" mode="EMBEDDED" ref="smartlink" uuid="797ec9e5-7e6b-4211-84d4-8160aa9c242a" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="federatedboeingskycommander_seattle" uuid="952b011a-3493-428f-8179-f8fad0c5c9de">
-         <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="641d4eff-927e-414f-8d3a-a958ec425b06" />
-         </accessories>
+      <item lang="en" mode="CARRIED" ref="monofilament_whip" uuid="7bda1dee-3f57-490c-ba83-6b2cbf30d29f">
+         <accessories />
       </item>
-      <item lang="en" mode="CARRIED" ref="shiawasebdmanatarms" uuid="9320dc8d-e4ba-40cc-8274-c0edf1ad2aa6">
-         <accessories>
-            <item lang="en" mode="EMBEDDED" ref="satellite_link" slot="VEHICLE_ELECTRONICS" uuid="74863b52-12d5-4c15-b2f0-7ee5b48d2f75" />
-         </accessories>
-      </item>
+      <item lang="en" mode="CARRIED" ref="hermes_ikon" uuid="ad762ac7-daef-4fd5-a66b-67359cdabe7e" />
+      <item lang="en" mode="CARRIED" ref="facial_scanner" uuid="5d5eacf1-fa38-48f3-bd42-d0be8692ba09" />
+      <item lang="en" mode="CARRIED" ref="p-ice_spines" uuid="8b9fe935-605b-4c16-8d5b-ce09d7ca9aa5" />
+      <item lang="en" mode="CARRIED" ref="thermal_mood_reading" uuid="1b18b0ad-6f2b-4470-8282-e793b5961833" />
+      <item lang="en" mode="CARRIED" ref="vocal_tension_detection" uuid="5ae6049b-06b3-4969-b577-fac447ace1a4" />
    </items>
    <contacts>
       <contact name="Brynne Taggart" rat="4" type="STREET" typename="Fixer" loy="3" favors="3">
@@ -292,7 +299,7 @@
          <title>2026-June-12: CMP 2081-12 | Uneasy lies the head</title>
          <gamemaster>Kira Capalu</gamemaster>
       </reward>
-      <reward date="2026-01-01T00:00:00.000Z" exp="-27" money="13000">
+      <reward date="2026-01-01T00:00:00.000Z" exp="8" money="13000">
          <title>2026-June-19: CMP 2083-14 | A Day at the Beach</title>
          <gamemaster>Nick</gamemaster>
       </reward>
@@ -304,7 +311,7 @@
          <title>2026-June-20: SRM 2083-19 | The Hallow Feast</title>
          <gamemaster>Morgan</gamemaster>
       </reward>
-      <reward date="2026-01-01T00:00:00.000Z" exp="8" money="11500">
+      <reward date="2026-01-01T00:00:00.000Z" exp="8" money="12500">
          <title>2026-June-25: SRM 2081-05 | This is Renton</title>
          <gamemaster>CDT Agent Kira Capalu</gamemaster>
       </reward>
