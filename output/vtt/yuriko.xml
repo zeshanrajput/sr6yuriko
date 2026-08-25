@@ -15,30 +15,30 @@
       <attributes id="RESONANCE" value="8" />
    </attributes>
    <qualities>
-      <quality lang="en" ref="natural_hacker" uuid="8950a672-3889-4dea-9e7e-23ce73f81242" />
-      <quality lang="en" ref="technoshaman" uuid="038aa274-0d27-4a6e-9d7c-91a9b09e0a7e" />
-      <quality lang="en" ref="designer" uuid="a9aa9c05-2e92-4c99-a16c-bd9ef2424a4c" />
-      <quality lang="en" ref="sensor_upgrade" uuid="abfe5630-7a51-4bf4-af5f-260f00c73b66" />
-      <quality lang="en" ref="pilot_origins" uuid="182df109-f8a8-4105-b36f-cd84b6c90f4a" />
-      <quality lang="en" ref="buddy_system" uuid="cdee8463-d032-4c57-947a-498681a6b125" />
-      <quality lang="en" ref="sprite_bane" uuid="d959a723-6a94-41aa-903b-77ea24a85507">
-         <decision choice="62991962-d46b-4516-b5e0-8a484eb3bf11" value="Primal Sprite" />
+      <quality lang="en" ref="natural_hacker" uuid="65a0ef03-82c7-4e2b-a07e-ac710b21d57a" />
+      <quality lang="en" ref="technoshaman" uuid="653a626d-38bd-4d29-94fb-6d1ef5c07202" />
+      <quality lang="en" ref="designer" uuid="de527e6b-e71c-439a-a17f-1b825edc9e6e" />
+      <quality lang="en" ref="sensor_upgrade" uuid="a20b9ee6-6212-452f-8326-b472ea698785" />
+      <quality lang="en" ref="pilot_origins" uuid="42af08b8-27ac-4a8b-a164-90a6fb16bee5" />
+      <quality lang="en" ref="buddy_system" uuid="1738c952-cc74-4edf-b36b-4751c8a7a39d" />
+      <quality lang="en" ref="sprite_bane" uuid="8e9a5235-0dea-4720-b306-c66d593b8d4e">
+         <decision choice="1e67fd96-40d3-4359-a659-971fa04a9380" value="Primal Sprite" />
       </quality>
-      <quality lang="en" ref="hooder" uuid="313630d9-926a-45c5-b840-723ae91274c1" value="2" />
+      <quality lang="en" ref="hooder" uuid="7c4bc4ac-39b4-456e-aa99-f9507f7d9e08" value="2" />
    </qualities>
    <skills>
-      <skill lang="en" ref="tasking" uuid="d196b750-23c1-4b12-bd02-fb3509fff142" value="6">
+      <skill lang="en" ref="tasking" uuid="d3b78185-9810-40ff-b890-c77fd842d859" value="6">
          <skillspec lang="en" ref="registering" />
       </skill>
-      <skill lang="en" ref="cracking" uuid="e4798393-2716-4094-9c10-b1c2e206925b" value="5">
+      <skill lang="en" ref="cracking" uuid="3e225cb5-b77a-469e-8b1a-426792dc89f1" value="5">
          <skillspec lang="en" ref="hacking" />
       </skill>
-      <skill lang="en" ref="electronics" uuid="cf104b2f-81cb-4ccd-bb31-306b5d54bcdf" value="5">
+      <skill lang="en" ref="electronics" uuid="7d346fb3-fcf0-4eef-b3c3-7bb719a93cab" value="5">
          <skillspec lang="en" ref="software" />
       </skill>
-      <skill lang="en" ref="influence" uuid="6f3d7698-f4b6-4dfd-b810-6cd149901cee" value="1" />
-      <skill lang="en" ref="con" uuid="b10300b4-441f-4601-ba60-8219b0d2d9f8" value="1" />
-      <skill lang="en" ref="language" uuid="04ad3150-5173-4e2c-ad6a-35f40e41b3f3" value="4">
+      <skill lang="en" ref="influence" uuid="bfea58cc-4ef9-4469-a486-1a758d5b3bf8" value="1" />
+      <skill lang="en" ref="con" uuid="fd1f6ba0-f9c5-4ccd-88b2-3b2e726404c2" value="1" />
+      <skill lang="en" ref="language" uuid="5a429ff2-5582-4aad-be01-19b2498bdaea" value="4">
          <decision choice="a7103ee4-31fa-435d-ac42-08f7d4d1e80c" value="Native Language" />
       </skill>
    </skills>
@@ -61,20 +61,20 @@
       <complexforms lang="en" ref="cyber_spike" />
    </complexforms>
    <items>
-      <item lang="en" mode="SA,BF" ref="ares_predator_vi" uuid="f27713e0-48ca-4405-bc69-90d8f234d740">
+      <item lang="en" mode="SA,BF" ref="ares_predator_vi" uuid="0e11ca8f-d7d2-4cf7-bc7f-74eea9bdd9ec">
          <accessories>
-            <item lang="en" mode="EMBEDDED" ref="silencer" uuid="42c26c39-6455-45f5-abba-edbdff72fab5" />
-            <item lang="en" mode="EMBEDDED" ref="smartlink" uuid="797ec9e5-7e6b-4211-84d4-8160aa9c242a" />
+            <item lang="en" mode="EMBEDDED" ref="silencer" uuid="c1bbf349-ea21-4a29-bafd-2a27156fae79" />
+            <item lang="en" mode="EMBEDDED" ref="smartlink" uuid="b064690f-614d-4aff-a27d-3ea8e53e4861" />
          </accessories>
       </item>
-      <item lang="en" mode="CARRIED" ref="monofilament_whip" uuid="7bda1dee-3f57-490c-ba83-6b2cbf30d29f">
+      <item lang="en" mode="CARRIED" ref="monofilament_whip" uuid="4af24d07-a859-4270-b67b-06017b0bcbbd">
          <accessories />
       </item>
-      <item lang="en" mode="CARRIED" ref="hermes_ikon" uuid="ad762ac7-daef-4fd5-a66b-67359cdabe7e" />
-      <item lang="en" mode="CARRIED" ref="facial_scanner" uuid="5d5eacf1-fa38-48f3-bd42-d0be8692ba09" />
-      <item lang="en" mode="CARRIED" ref="p-ice_spines" uuid="8b9fe935-605b-4c16-8d5b-ce09d7ca9aa5" />
-      <item lang="en" mode="CARRIED" ref="thermal_mood_reading" uuid="1b18b0ad-6f2b-4470-8282-e793b5961833" />
-      <item lang="en" mode="CARRIED" ref="vocal_tension_detection" uuid="5ae6049b-06b3-4969-b577-fac447ace1a4" />
+      <item lang="en" mode="CARRIED" ref="hermes_ikon" uuid="dbbd9194-e9bc-4285-8388-d930d11dc68d" />
+      <item lang="en" mode="CARRIED" ref="facial_scanner" uuid="2e8dab58-f571-40d9-bc8c-78ac056bfe7d" />
+      <item lang="en" mode="CARRIED" ref="p-ice_spines" uuid="a0f6aad4-4859-4403-8bbb-8eb687e884ab" />
+      <item lang="en" mode="CARRIED" ref="thermal_mood_reading" uuid="58a0b0b3-c927-4587-b885-f3d259908345" />
+      <item lang="en" mode="CARRIED" ref="vocal_tension_detection" uuid="964f1a83-d99c-462b-a67f-5e6ebd883062" />
    </items>
    <contacts>
       <contact name="Brynne Taggart" rat="4" type="STREET" typename="Fixer" loy="3" favors="3">

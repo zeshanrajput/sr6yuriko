@@ -25,6 +25,7 @@ book:
         - chapters/character_purchases.qmd
         - chapters/twenty_questions.qmd
         - chapters/dronomancy.md
+        - chapters/appendix_dossier.qmd
     - part: "Rules & Downtime Protocols"
       chapters:
         - chapters/rules_and_downtime.qmd

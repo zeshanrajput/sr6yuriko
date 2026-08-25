@@ -17,7 +17,6 @@ dependencies = [
     "kokoro",
     "soundfile",
     "mutagen>=1.47.0",
-    "python-fasthtml>=0.14.11",
     "sr6-core",
 ]
 
