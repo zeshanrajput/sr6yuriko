@@ -3,7 +3,6 @@ project:
   output-dir: _book
   resources:
     - chapters/audio/
-    - output/pdf/
     - output/vtt/
     - output/text/
   pre-render:

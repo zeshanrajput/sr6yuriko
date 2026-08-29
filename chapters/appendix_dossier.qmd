@@ -26,34 +26,16 @@ format: html
 
 ## Tactical Weapon Arrays
 
-::: {.callout-note icon=false title="⚔️ WEAPON: Ares Predator VI (General)"}
-| Damage | Attack Rating (C/N/M/F/E) | Modes | Ammo | Avail | Cost |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **3P** | 13 / 13 / 8 / — / — | SA,BF | 15(c) | 1 | — |
-:::
-
 ::: {.callout-note icon=false title="⚔️ WEAPON: Crimson Wasp Array (2x Link-Fired) (General)"}
 | Damage | Attack Rating (C/N/M/F/E) | Modes | Ammo | Avail | Cost |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **5P** | 18 / 16 / 11 / 6 / — | SA | 15(c) | 1 | — |
-:::
-
-::: {.callout-note icon=false title="⚔️ WEAPON: Red Fox Array (Link-Fired) (General)"}
-| Damage | Attack Rating (C/N/M/F/E) | Modes | Ammo | Avail | Cost |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **6P** | 16 / 18 / 16 / 9 / — | SA,BF | 30(c) | 1 | — |
+| **7P** | 24 / 22 / 17 / 12 / — | SA | 15(c) | 1 | — |
 :::
 
 ::: {.callout-note icon=false title="⚔️ WEAPON: Tesla Coil (General)"}
 | Damage | Attack Rating (C/N/M/F/E) | Modes | Ammo | Avail | Cost |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **5S(e)** | 8 / — / — / — / — | SS | —(c) | 1 | — |
-:::
-
-::: {.callout-note icon=false title="⚔️ WEAPON: Monofilament Whip (General)"}
-| Damage | Attack Rating (C/N/M/F/E) | Modes | Ammo | Avail | Cost |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **6P** | 14 / — / — / — / — | SA | —(c) | 1 | — |
 :::
 
 ::: {.callout-note icon=false title="⚔️ WEAPON: Dagger of the Sacred Rose (+1 Weapon Focus) (General)"}

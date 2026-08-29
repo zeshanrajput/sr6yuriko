@@ -63,15 +63,13 @@ This reference details Reiko's Matrix attributes, action pool breakdowns, networ
 
 ## Matrix Attributes{#matrix-attributes}
 
-```{python}
-#| echo: false
-#| output: asis
-from sr6core.rules_engine import get_matrix_asdf_derivation_table
+Reiko's base ASDF is 3535. She gains +6 from sprite symbiosis with Taz, +1 from Toolbox, +1 from Encryption, and +8 from her Resonance. This gives a total of +16. 
 
-print(get_matrix_asdf_derivation_table("yuriko"))
-```
+::: {.callout-note} 
+Under SR6 AI rules (*Hack & Slash* pp. 116–120), Matrix ASDF attributes represent the intrinsic physical and mental characteristics of Artificial Intelligences (AI) and Emergent Intelligences (EI), making them subject to the standard **+4 Augmented Attribute Limit**.
+:::
 
-*Note on Augmented ASDF Limits*: Under SR6 AI rules (*Hack & Slash* pp. 116–120), Matrix ASDF attributes represent the intrinsic physical and mental characteristics of Artificial Intelligences (AI) and Emergent Intelligences (EI), making them subject to the standard **+4 Augmented Attribute Limit**. Unlike metahuman deckers (who use cyberdeck hardware arrays) or metahuman technomancers (who derive persona stats from mental attributes and can exceed +4 via complex forms), an AI/EI's ASDF is capped at +4 above natural base scores.
+We therefore add +4 to all of Reiko's ASDF attributes. This gives her a total of 3535 + 4444 = 7979.
 
 ---
 
@@ -91,7 +89,7 @@ print(get_matrix_action_table("yuriko"))
 * Ratings for commonly programmed items
   * Knowsofts: Rating 3
   * Linguasofts: Rating 5
-  * Autosoft: Programmed to Rating 8
+  * Autosoft: Rating 9
 * Cost: 1 karma per 4,000¥
 
 ---
@@ -109,7 +107,7 @@ print(get_matrix_action_table("yuriko"))
 * **Smartguns**: +1 AR to smartlinked weapons.
 * **Encryption**: +1 threshold for all incoming Cracking tests against network.
 * **Tactical Software Apps**:
-  * *Artillery Barrage*: +1 to Launchers.
+  * *Artillery Barrage*: +1 dice pool to Launchers (grenade, rocket, mortar).
   * *ECM Warrior II*: +2 Offensive Cracking tests.
   * *Sneak-Sneak*: +2 Stealth.
   * *Target Artist*: Attack without LOS on painted targets.
@@ -150,7 +148,7 @@ print(get_matrix_action_table("yuriko"))
 
 ### 1. Home Device Configuration (Active Venue Drone)
 
-* **Venue Drone as Home Device**: Reiko configures her active inhabited drone (Shiawase Butler or Man-at-Arms) as her Home Device instead of the M-TOC II.
+* **Venue Drone as Home Device**: Reiko configures her active inhabited drone (Shiawase Man-at-Arms) as her Home Device instead of the M-TOC II.
 * **Sprite Power 'Override'**: Replaces active drone's Pilot rating with her Resonance (`{python} RESONANCE`).
 * **Attribute Enhancement**: Adds +1 to Body (or Sensors).
 * **Designer Trait / AI Origin Benefits**: +1 Pilot/DP, +2 Noise Reduction, Edge Defense Rating considered 4 higher [HnS p. 124].
@@ -211,50 +209,3 @@ Standardized action categorization grouped strictly by Skill & Specialization, i
 * **1 Edge**: Batch Exec, Emergency Boost, Paint Target.
 * **2 Edge**: Technobabble (CHA instead of LOG), Intervene, Hog, Signal Scream.
 * **3 Edge**: Under the Radar (Action does not increase OS).
-
----
-
-## Foundation Rules
-
-### Base Foundation Rules
-
-[HnS p. 141]
-
-* Social Tests: Cracking [Hacking]
-* Perception/Physical/Piloting: Electronics [Computer]
-* Combat: Cracking [Cybercombat]
-* Technical tests: Electronics [Software] or Cracking [Electronic Warfare]
-* Physical Attributes follow the [Matrix Equivalent Attributes](rules_drones.qmd#matrix-equivalent-attributes)
-* All damage is 3P or 3S
-
-### Nexus Protocol Rules
-
-[HnS p. 142]
-
-* Characters with an Electronics or Cracking skill also gain a pool of bonus dice to use. This pool is equal to the higher skill rating and refreshes each combat round. Outside of combat, a maximum of half the pool can be added to a test.
-* Hitchhikers gain +1 to their highest-rating skill and attribute.
-
-### Reiko's Foundation Form
-
-#### Attributes
-
-* Body → Firewall (`{python} ACTIVE_F`)
-* Agility → Data Processing (`{python} ACTIVE_D`)
-* Reaction → Sleaze (`{python} ACTIVE_S`)
-* Strength → Attack (`{python} ACTIVE_A`)
-* Willpower (`{python} WILLPOWER`)
-* Logic (`{python} LOGIC`)
-* Intuition (`{python} INTUITION`)
-* Charisma (`{python} CHARISMA`)
-* Edge (`{python} EDGE`)
-* Resonance (Highest Attribute) = `{python} RESONANCE + 1`
-
-#### Skills & Derived Action Pools
-
-Under the Nexus Protocol [HnS p. 142], Reiko uses her real-world skills and attributes with a +1 bonus to highest attribute (RES 8 + 1 = 9) and highest skill (Tasking 6 + 1 = 7), plus a dedicated bonus pool of +7 dice in combat (+3 dice in downtime), alongside Natural Hacker, Resonance Focus (+4), Taz Teamwork (+4), Overclock (+2), and ECM Warrior II (+2):
-
-* **Tasking (Highest Skill)**: 7
-* **Social Tests (Cracking [Hacking] + RES)**: `{python} CRACKING_HACKING + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + ECM_WARRIOR_BONUS + 3`d6 (Downtime: 25d6) / **`{python} CRACKING_HACKING + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + ECM_WARRIOR_BONUS + 7`d6 (Combat: 29d6, 1 wild)**
-* **Perception / Physical / Piloting (Electronics [Computer] + RES)**: `{python} ELECTRONICS_RATING + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + 3`d6 (Downtime: 23d6) / **`{python} ELECTRONICS_RATING + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + 7`d6 (Combat: 27d6, 1 wild)**
-* **Combat Tests (Cracking [Cybercombat] + RES)**: `{python} CRACKING_RATING + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + ECM_WARRIOR_BONUS + 3`d6 (Downtime: 25d6) / **`{python} CRACKING_RATING + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + ECM_WARRIOR_BONUS + 7`d6 (Combat: 29d6, 1 wild)**
-* **Technical Tests (Electronics [Software] + RES)**: `{python} ELECTRONICS_SOFTWARE + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + 3`d6 (Downtime: 25d6) / **`{python} ELECTRONICS_SOFTWARE + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + 7`d6 (Combat: 29d6, 1 wild)**

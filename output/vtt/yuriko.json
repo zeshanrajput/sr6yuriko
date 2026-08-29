@@ -1,1441 +1,1366 @@
 {
-  "schema_version": "1.0",
-  "system": "Shadowrun 6th Edition (SR6)",
-  "character": {
-    "name": "Yuriko Star",
-    "real_name": "r31k0 Takahashi",
-    "metatype": "AI-Pilot AI",
-    "tradition": "",
-    "mortype": "",
-    "stream": "Technoshamans",
-    "gender": "DIVERSE",
-    "age": "~ 10",
-    "financials": {
-      "nuyen": 17550.0,
-      "karma_available": 5,
-      "karma_lifetime": 229,
-      "heat": 1,
-      "reputation": {
-        "Vory": 2,
-        "Seattle": 7,
-        "AMS": 2,
-        "Kentucky": 3,
-        "Amsterdam": 1,
-        "Mercenary": 3,
-        "NOLA": 9,
-        "UNL": 2,
-        "Southeast Asia": 2,
-        "DW": 2
-      }
+  "system": "SHADOWRUN6",
+  "version": "3.2.0",
+  "name": "r31k0 Takahashi",
+  "streetName": "Yuriko Star",
+  "metaType": "AI-Pilot AI",
+  "size": 0,
+  "weight": 0,
+  "age": "~ 10",
+  "gender": "DIVERSE",
+  "heat": 1,
+  "reputation": 0,
+  "karma": 229,
+  "freeKarma": 1,
+  "nuyen": 5000,
+  "initiation": 0,
+  "submersion": 9,
+  "attributes": [
+    {
+      "name": "Body",
+      "id": "BODY",
+      "points": 5,
+      "modifiedValue": 5
     },
-    "attributes": {
-      "body": 5,
-      "agility": 3,
-      "reaction": 5,
-      "strength": 3,
-      "willpower": 6,
-      "logic": 4,
-      "intuition": 2,
-      "charisma": 4,
-      "edge": 4,
-      "magic": 0,
-      "resonance": 8,
-      "power_points": 0
+    {
+      "name": "Agility",
+      "id": "AGILITY",
+      "points": 3,
+      "modifiedValue": 3
     },
-    "living_persona": {
-      "asdf_bonuses": {
-        "firewall": 3,
-        "sleaze": 1,
-        "data_processing": 1,
-        "attack": 3
-      }
+    {
+      "name": "Reaction",
+      "id": "REACTION",
+      "points": 5,
+      "modifiedValue": 5
     },
-    "skills": [
-      {
-        "name": "Tasking",
-        "id": "tasking",
-        "attribute": "Resonance",
-        "rating": 6,
-        "specialization": "Registering"
-      },
-      {
-        "name": "Cracking",
-        "id": "cracking",
-        "attribute": "Logic",
-        "rating": 5,
-        "specialization": "Hacking"
-      },
-      {
-        "name": "Electronics",
-        "id": "electronics",
-        "attribute": "Logic",
-        "rating": 5,
-        "specialization": "Software"
-      },
-      {
-        "name": "Influence",
-        "id": "influence",
-        "attribute": "Charisma",
-        "rating": 1
-      },
-      {
-        "name": "Con",
-        "id": "con",
-        "attribute": "Charisma",
-        "rating": 1
-      },
-      {
-        "name": "Native Language",
-        "id": "language",
-        "attribute": "Logic",
-        "rating": 4
-      }
-    ],
-    "qualities": {
-      "positive": [
-        {
-          "name": "Natural Hacker",
-          "ref": "natural_hacker"
-        },
-        {
-          "name": "Stream: Technoshamans",
-          "ref": "technoshaman"
-        },
-        {
-          "name": "Designer",
-          "ref": "designer"
-        },
-        {
-          "name": "Sensor Upgrade",
-          "ref": "sensor_upgrade"
-        },
-        {
-          "name": "Pilot Origins",
-          "ref": "pilot_origins"
-        }
-      ],
-      "negative": [
-        {
-          "name": "Buddy System",
-          "ref": "buddy_system"
-        },
-        {
-          "name": "Sprite Bane",
-          "ref": "sprite_bane",
-          "choice": "Primal Sprite"
-        },
-        {
-          "name": "Hooder",
-          "ref": "hooder",
-          "rating": 2
-        }
-      ]
+    {
+      "name": "Strength",
+      "id": "STRENGTH",
+      "points": 3,
+      "modifiedValue": 3
     },
-    "spells": [],
-    "adept_powers": [],
-    "meta_echoes": [
-      {
-        "name": "Hybrid Sprites",
-        "ref": "hybrid_sprites"
-      },
-      {
-        "name": "New Sprite Type",
-        "ref": "new_sprite_type"
-      },
-      {
-        "name": "Sprite Conduit",
-        "ref": "sprite_conduit"
-      },
-      {
-        "name": "Sprite Symbiosis",
-        "ref": "sprite_symbiosis"
-      },
-      {
-        "name": "Living Network",
-        "ref": "living_network"
-      },
-      {
-        "name": "Transcendent Network",
-        "ref": "transcendent_network"
-      },
-      {
-        "name": "Overclocking",
-        "ref": "overclocking"
-      },
-      {
-        "name": "Software Emulator",
-        "ref": "software_emulator"
-      },
-      {
-        "name": "Sprite Link",
-        "ref": "sprite_link"
-      }
-    ],
-    "weapons": {
-      "ranged": [
-        {
-          "name": "Ares Predator VI",
-          "damage": "3P",
-          "attack_rating": "11/11/8/-/-",
-          "mode": "SA,BF",
-          "ammo": "15(c)",
-          "smartlink": true,
-          "personalized_grip": true,
-          "accessories": [
-            "Silencer",
-            "Smartlink",
-            "Personalized Grip"
-          ]
-        },
-        {
-          "name": "Crimson Wasp Array (2x Link-Fired)",
-          "damage": "5P",
-          "attack_rating": "16/14/11/6/-",
-          "mode": "SA",
-          "ammo": "15(c)",
-          "smartlink": true,
-          "is_vehicle_mounted": true,
-          "accessories": [
-            "Smartlink",
-            "Drone Mount (+2 AR)"
-          ]
-        },
-        {
-          "name": "Red Fox Array (Link-Fired)",
-          "damage": "6P",
-          "attack_rating": "14/16/16/9/-",
-          "mode": "SA,BF",
-          "ammo": "30(c)",
-          "smartlink": true,
-          "is_vehicle_mounted": true,
-          "link_fired_count": 2,
-          "accessories": [
-            "Smartlink",
-            "Drone Mount (+2 AR)",
-            "Link-Fired (2x Wasps)"
-          ]
-        },
-        {
-          "name": "Tesla Coil",
-          "damage": "5S(e)",
-          "attack_rating": "8/10*/-/-/-",
-          "mode": "SS",
-          "max_range": "20m",
-          "area_effect": "Cone (Flamethrower rules)",
-          "is_vehicle_mounted": true,
-          "accessories": [
-            "MAA Cyberarm Mount (+2 AR)"
-          ]
-        }
-      ],
-      "close_combat": [
-        {
-          "name": "Monofilament Whip",
-          "damage": "6P",
-          "attack_rating": "14/-/-/-/-",
-          "wireless_on": true,
-          "is_vehicle_mounted": true,
-          "accessories": [
-            "Fingertip Cyberarm Mount (+2 AR)",
-            "Wireless ON (+2 AR)"
-          ]
-        },
-        {
-          "name": "Dagger of the Sacred Rose (+1 Weapon Focus)",
-          "damage": "2P",
-          "attack_rating": "9/1/-/-/-"
-        },
-        {
-          "name": "Amalgam Cestas (Stun)",
-          "damage": "4S(e)",
-          "attack_rating": "5/-/-/-/-",
-          "personalized_grip": true,
-          "accessories": [
-            "Personalized Grip"
-          ],
-          "notes": "Amalgam Tech Cestas; overrides magical immunity to normal weapons"
-        },
-        {
-          "name": "Amalgam Cestas (Phys)",
-          "damage": "3P",
-          "attack_rating": "6/-/-/-/-",
-          "personalized_grip": true,
-          "accessories": [
-            "Personalized Grip"
-          ],
-          "notes": "Amalgam Tech Cestas; overrides magical immunity to normal weapons"
-        }
-      ]
+    {
+      "name": "Willpower",
+      "id": "WILLPOWER",
+      "points": 6,
+      "modifiedValue": 6
     },
-    "armors": [
-      {
-        "name": "Ares Securetech SkinShield",
-        "rating": 2,
-        "primary": true
-      },
-      {
-        "name": "SecureTech Invisi-Shield Armor",
-        "rating": 2,
-        "primary": false
-      }
-    ],
-    "matrix_devices": {
-      "commlinks": [
-        {
-          "name": "Hermes Ikon",
-          "device_rating": 5,
-          "data_processing": 5,
-          "firewall": 4
-        }
-      ],
-      "hosts": [
-        {
-          "name": "The Holy Wild Sanctuary Host (Compact Studio & Glade Portal)",
-          "type": "Framework Host",
-          "rating": 2,
-          "scale": "1 (Micro)",
-          "grade": "2 (Default)",
-          "acquired": "SRM 2083-12 When You're Smiling",
-          "notes": "Compact high-rise studio apartment (10-visitor limit) & Holy Wild glade portal for Reiko and liberated emergent sparks."
-        }
-      ]
+    {
+      "name": "Logic",
+      "id": "LOGIC",
+      "points": 4,
+      "modifiedValue": 4
     },
-    "software": [],
-    "items": [],
-    "gear": [
-      {
-        "name": "50 Explosive Rounds (Ares Predator VI)",
-        "qty": 50
-      },
-      {
-        "name": "50 Krime Self Defense Rounds (Ares Predator VI)",
-        "qty": 50
-      },
-      {
-        "name": "5x Peak-Discharge Laser Battery Clips (Red Fox)",
-        "qty": 5
-      },
-      {
-        "name": "10x Glitter Grenades",
-        "qty": 10
-      },
-      {
-        "name": "Built-in Utility Kit & Medkit (Butler & Man-at-Arms)",
-        "qty": 2
-      },
-      {
-        "name": "Facial Scanner"
-      },
-      {
-        "name": "P-ICE Spines"
-      },
-      {
-        "name": "Personal Assistant (R6)"
-      },
-      {
-        "name": "Social HUD (R6)"
-      },
-      {
-        "name": "Thermal Mood Reading"
-      },
-      {
-        "name": "Vocal Tension Detection"
-      }
-    ],
-    "drones": [
-      {
-        "name": "MCT Gnat",
-        "ref": "mctgnat",
-        "body": 0,
-        "armor": 0,
-        "pilot": 2,
-        "sensor": 1,
-        "speed": 30,
-        "handling_on": 3,
-        "handling_off": 3,
-        "accel_on": 4,
-        "accel_off": 4,
-        "speed_interval_on": 10,
-        "page": "CRB 299"
-      },
-      {
-        "name": "Shiawase Butler",
-        "ref": "shiawasebdbutler",
-        "body": 4,
-        "armor": 0,
-        "pilot": 2,
-        "sensor": 3,
-        "speed": 8,
-        "handling_on": 4,
-        "handling_off": 5,
-        "accel_on": 5,
-        "accel_off": 5,
-        "speed_interval_on": 5,
-        "page": "DC 116",
-        "modifications": [
-          "Increased Structural Integrity 2",
-          "Secondary Propulsion (Rotor)",
-          "Increased Sensors 3",
-          "Retractable Skates",
-          "Satellite Link"
-        ]
-      },
-      {
-        "name": "Federated-Boeing Sky Commander (Seattle Retrans Relay)",
-        "ref": "federatedboeingskycommander_seattle",
-        "body": 3,
-        "armor": 0,
-        "pilot": 3,
-        "sensor": 3,
-        "speed": 120,
-        "handling_on": 4,
-        "handling_off": 4,
-        "accel_on": 10,
-        "accel_off": 10,
-        "speed_interval_on": 20,
-        "page": "6WB 288 / DC 122",
-        "modifications": [
-          "Retrans Unit",
-          "Satellite Link",
-          "RAM Plating 4",
-          "Enhanced Sensors 3",
-          "ECM 6",
-          "Integrated Matrix Device Dock",
-          "M-TOC II Repository & Software Tags",
-          "Rating 2 Framework Host Repository (Scale 1 Micro, Grade 2 Default)"
-        ],
-        "framework_host": {
-          "name": "The Holy Wild Sanctuary Host (Compact Studio & Glade Portal)",
-          "rating": 2,
-          "scale": "1 (Micro / Personal LAN - Optical Brick Cluster)",
-          "grade": "2 (Default Security / IC Budget)",
-          "asdf": "A:2 S:2 D:3 F:3",
-          "capacity": "10 visitors max (Compact Studio Apartment architecture)",
-          "ic": [
-            "Patrol IC (Gilded paper-moth data-sprites)",
-            "Acid IC"
-          ],
-          "purpose": "Sovereign home and sanctuary for Reiko and liberated emergent sparks",
-          "host_architecture": "High-rise studio apartment (brushed teak & dry copper ceilings, jasmine tea service, Megalodon schematics worktable, cased contract-collar niche, compiled gold logic floorboards)",
-          "foundation_door": "Quartz sliding glass door opening an un-insulated permanent conduit into the Holy Wild glade (fossilized directory trees, fractal willows, telemetry ferns, de-allocated address pools) and the Deep Foundation"
-        }
-      },
-      {
-        "name": "Shiawase Man-at-Arms",
-        "ref": "shiawasebdmanatarms",
-        "body": 10,
-        "armor": 8,
-        "pilot": 2,
-        "sensor": 2,
-        "speed": 10,
-        "handling_on": 3,
-        "handling_off": 3,
-        "accel_on": 5,
-        "accel_off": 5,
-        "speed_interval_on": 5,
-        "page": "DC 116",
-        "modifications": [
-          "Weapon Mount (Heavy)",
-          "Pop-Out Concealment (Large)",
-          "Armor Increase 5",
-          "Secondary Propulsion (Rotor)",
-          "Increased Sensors 3",
-          "Retractable Skates",
-          "Satellite Link"
-        ]
-      }
-    ],
-    "complex_forms": [
-      {
-        "name": "Cleaner",
-        "ref": "cleaner",
-        "fading": 2,
-        "duration": "Permanent"
-      },
-      {
-        "name": "Diffusion",
-        "ref": "diffusion",
-        "target": "Firewall",
-        "fading": 4,
-        "duration": "Sustained"
-      },
-      {
-        "name": "Technoregeneration",
-        "ref": "technoregeneration",
-        "fading": -1,
-        "duration": "Permanent"
-      },
-      {
-        "name": "Puppeteer",
-        "ref": "puppeteer",
-        "fading": 5,
-        "duration": "Sustained"
-      },
-      {
-        "name": "Cyber Spike",
-        "ref": "cyber_spike",
-        "target": "Device, Persona",
-        "fading": 3,
-        "duration": "Immediate"
-      }
-    ],
-    "contacts": {
-      "Brynne Taggart": {
-        "name": "Brynne Taggart",
-        "canonical_name": "Brynne Taggart",
-        "is_canonical": true,
-        "connection": 4,
-        "loyalty": 3,
-        "favors": 3,
-        "type": "Fixer",
-        "region": "SEA",
-        "description": "Uses: Getting jobs, fencing gear, gangs (Shadowrun Missions Seattle) | Types: Criminal, Street",
-        "notes": "Uses: Getting jobs, fencing gear, gangs (Shadowrun Missions Seattle) | Types: Criminal, Street",
-        "history": [
-          "Character Creation (Met: C4 L2)",
-          "SRM 2081-05 This is Renton (+2 FP)",
-          "SRM 2081-18 Friendships Never Grow Rust (+4 FP)",
-          "Auto-Promoted to Loyalty 3 (-3 FP)"
-        ]
-      },
-      "Whiskey": {
-        "name": "Whiskey",
-        "canonical_name": "Whiskey",
-        "is_canonical": true,
-        "connection": 2,
-        "loyalty": 4,
-        "favors": 0,
-        "type": "Street Doc",
-        "region": "SEA",
-        "description": "Uses: Medicine, street docs (Shadowrun Missions Seattle) | Types: Medical",
-        "notes": "Uses: Medicine, street docs (Shadowrun Missions Seattle) | Types: Medical",
-        "history": [
-          "Character Creation (Met: C2 L4)"
-        ]
-      },
-      "Indomitable Will": {
-        "name": "Indomitable Will",
-        "canonical_name": "Indomitable Will",
-        "is_canonical": true,
-        "connection": 3,
-        "loyalty": 3,
-        "favors": 0,
-        "type": "River People Sysop",
-        "region": "NOLA",
-        "description": "Uses: Banking, HVAC systems, Matrix | Types: Corporate, Matrix",
-        "notes": "Uses: Banking, HVAC systems, Matrix | Types: Corporate, Matrix",
-        "history": [
-          "Character Creation (Met: C3 L3)"
-        ]
-      },
-      "Roanoke": {
-        "name": "Roanoke",
-        "canonical_name": "Roanoke",
-        "is_canonical": true,
-        "connection": 3,
-        "loyalty": 3,
-        "favors": 2,
-        "type": "Ecological Activist",
-        "region": "NOLA",
-        "description": "Uses: Getting jobs, environmental science, shamanism | Types: Criminal, Matrix",
-        "notes": "Uses: Getting jobs, environmental science, shamanism | Types: Criminal, Matrix",
-        "history": [
-          "Character Creation (Met: C3 L3)",
-          "SRM 2083-17 Haute Blooded (+1 FP)",
-          "SRM 2083-20 The Fallacy of Plans (+1 FP)"
-        ]
-      },
-      "Piotr Krolik": {
-        "name": "Piotr Krolik",
-        "canonical_name": "Piotr Krolik",
-        "is_canonical": false,
-        "connection": 4,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "NOLA Vory Borjevik",
-        "region": "NOLA",
-        "description": "SMH 2083-02 EggHunt at the Jackalope Ranch",
-        "notes": "SMH 2083-02 EggHunt at the Jackalope Ranch",
-        "history": [
-          "SMH 2083-02 EggHunt at the Jackalope Ranch (Met: C4 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Le Tigre": {
-        "name": "Le Tigre",
-        "canonical_name": "Le Tigre",
-        "is_canonical": true,
-        "connection": 5,
-        "loyalty": 2,
-        "favors": 0,
-        "type": "Epoch Model",
-        "region": "NOLA",
-        "description": "Uses: Getting jobs, parties, modeling | Types: Corporate, Magic",
-        "notes": "Uses: Getting jobs, parties, modeling | Types: Corporate, Magic",
-        "history": [
-          "SMH 2083-02 EggHunt at the Jackalope Ranch (Met: C5 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)",
-          "SRM 2083-17 Haute Blooded (+1 FP)",
-          "CMP 2083-15 | By Land, Sea, and Hair (+1 FP)",
-          "Auto-Promoted to Loyalty 2 (-2 FP)"
-        ]
-      },
-      "White Jackalope": {
-        "name": "White Jackalope",
-        "canonical_name": "White Jackalope",
-        "is_canonical": false,
-        "connection": 2,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "Emergent Lifeform",
-        "region": "GEN",
-        "description": "SMH 2083-02 EggHunt at the Jackalope Ranch",
-        "notes": "SMH 2083-02 EggHunt at the Jackalope Ranch",
-        "history": [
-          "SMH 2083-02 EggHunt at the Jackalope Ranch (Met: C2 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Big Louie": {
-        "name": "Big Louie",
-        "canonical_name": "Big Louie",
-        "is_canonical": false,
-        "connection": 3,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "SEA Fixer",
-        "region": "SEA",
-        "description": "CMP First Taste : Top Chef - Seattle",
-        "notes": "CMP First Taste : Top Chef - Seattle",
-        "history": [
-          "CMP First Taste : Top Chef - Seattle (Met: C3 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Dominique Augustin": {
-        "name": "Dominique Augustin",
-        "canonical_name": "Dominique Augustin",
-        "is_canonical": false,
-        "connection": 4,
-        "loyalty": 1,
-        "favors": 1,
-        "type": "NOLA Wolverine Security",
-        "region": "NOLA",
-        "description": "2083-03 Unofficial Dunkelzahn Fan Club",
-        "notes": "2083-03 Unofficial Dunkelzahn Fan Club",
-        "history": [
-          "2083-03 Unofficial Dunkelzahn Fan Club (Met: C4 L0, +2 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Daniel Fortune": {
-        "name": "Daniel Fortune",
-        "canonical_name": "Daniel Fortune",
-        "is_canonical": false,
-        "connection": 3,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "NOLA",
-        "region": "NOLA",
-        "description": "2083-03 Unofficial Dunkelzahn Fan Club",
-        "notes": "2083-03 Unofficial Dunkelzahn Fan Club",
-        "history": [
-          "2083-03 Unofficial Dunkelzahn Fan Club (Met: C3 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Ren\u00e9e Martin": {
-        "name": "Ren\u00e9e Martin",
-        "canonical_name": "Ren\u00e9e Martin",
-        "is_canonical": true,
-        "connection": 4,
-        "loyalty": 2,
-        "favors": 1,
-        "type": "League of Laveau Liaison",
-        "region": "NOLA",
-        "description": "Uses: Getting jobs, magic, voodoo, zombies | Types: Corporate, Magic",
-        "notes": "Uses: Getting jobs, magic, voodoo, zombies | Types: Corporate, Magic",
-        "history": [
-          "2083-03 Unofficial Dunkelzahn Fan Club (Met: C4 L0, +3 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)",
-          "Auto-Promoted to Loyalty 2 (-2 FP)",
-          "SRM 2083-20 The Fallacy of Plans (+1 FP)"
-        ]
-      },
-      "The Frisian": {
-        "name": "The Frisian",
-        "canonical_name": "The Frisian",
-        "is_canonical": false,
-        "connection": 6,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "AMS Crime Lord of the Dutch Penose syndicate",
-        "region": "AMS",
-        "description": "CMP 2081-09 Bring me Prince Charming",
-        "notes": "CMP 2081-09 Bring me Prince Charming",
-        "history": [
-          "CMP 2081-09 Bring me Prince Charming (Met: C6 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Ree 'Dolly' Hacker": {
-        "name": "Ree 'Dolly' Hacker",
-        "canonical_name": "Ree 'Dolly' Hacker",
-        "is_canonical": false,
-        "connection": 4,
-        "loyalty": 1,
-        "favors": 1,
-        "type": "KY Talismonger and Racer",
-        "region": "KY",
-        "description": "CMP 2081-18 Blue Kentucky Girl",
-        "notes": "CMP 2081-18 Blue Kentucky Girl",
-        "history": [
-          "CMP 2081-18 Blue Kentucky Girl (Met: C4 L0, +2 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Granny": {
-        "name": "Granny",
-        "canonical_name": "Granny",
-        "is_canonical": false,
-        "connection": 6,
-        "loyalty": 1,
-        "favors": 1,
-        "type": "KY Lady of the Autumn Wind",
-        "region": "KY",
-        "description": "CMP 2081-18 Blue Kentucky Girl",
-        "notes": "CMP 2081-18 Blue Kentucky Girl",
-        "history": [
-          "CMP 2081-18 Blue Kentucky Girl (Met: C6 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)",
-          "CMP 2081-20 In the Cold Kentucky Rain (+1 FP)"
-        ]
-      },
-      "Kiara Shaw": {
-        "name": "Kiara Shaw",
-        "canonical_name": "Kiara Shaw",
-        "is_canonical": false,
-        "connection": 4,
-        "loyalty": 2,
-        "favors": 0,
-        "type": "AMS Knight Errant Company Suit",
-        "region": "AMS",
-        "description": "CMP 2081-10 A Diamond in The Rough",
-        "notes": "CMP 2081-10 A Diamond in The Rough",
-        "history": [
-          "CMP 2081-10 A Diamond in The Rough (Met: C4 L0, +2 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)",
-          "CMP 2083-04 Hog Wild (+1 FP)",
-          "Auto-Promoted to Loyalty 2 (-2 FP)"
-        ]
-      },
-      "Simon Andrews": {
-        "name": "Simon Andrews",
-        "canonical_name": "Simon Andrews",
-        "is_canonical": false,
-        "connection": 5,
-        "loyalty": 2,
-        "favors": 1,
-        "type": "AMS S-K Johnson",
-        "region": "AMS",
-        "description": "CMP 2081-11 Paved with good intentions",
-        "notes": "CMP 2081-11 Paved with good intentions",
-        "history": [
-          "CMP 2081-11 Paved with good intentions (Met: C5 L0, +2 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)",
-          "CMP 2083-01 NONPLUSHED (+1 FP)",
-          "Auto-Promoted to Loyalty 2 (-2 FP)",
-          "CMP 2083-04 Hog Wild (+1 FP)"
-        ]
-      },
-      "Squint": {
-        "name": "Squint",
-        "canonical_name": "Squint",
-        "is_canonical": false,
-        "connection": 2,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "AMS Smuggler",
-        "region": "AMS",
-        "description": "CMP 2081-11 Paved with good intentions",
-        "notes": "CMP 2081-11 Paved with good intentions",
-        "history": [
-          "CMP 2081-11 Paved with good intentions (Met: C2 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Dr. Laureline Dodd": {
-        "name": "Dr. Laureline Dodd",
-        "canonical_name": "Dr. Laureline Dodd",
-        "is_canonical": false,
-        "connection": 5,
-        "loyalty": 1,
-        "favors": 1,
-        "type": "KY Arcano-Archeologist",
-        "region": "KY",
-        "description": "CMP 2081-19 The Blue Moon of Kentucky",
-        "notes": "CMP 2081-19 The Blue Moon of Kentucky",
-        "history": [
-          "CMP 2081-19 The Blue Moon of Kentucky (Met: C5 L0, +2 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Thaddeus": {
-        "name": "Thaddeus",
-        "canonical_name": "Thaddeus",
-        "is_canonical": false,
-        "connection": 3,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "KY Street Samurai",
-        "region": "KY",
-        "description": "CMP 2081-19 The Blue Moon of Kentucky",
-        "notes": "CMP 2081-19 The Blue Moon of Kentucky",
-        "history": [
-          "CMP 2081-19 The Blue Moon of Kentucky (Met: C3 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Duan Yuhai": {
-        "name": "Duan Yuhai",
-        "canonical_name": "Duan Yuhai",
-        "is_canonical": false,
-        "connection": 3,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "SEA Minor 88s Johnson",
-        "region": "SEA",
-        "description": "SRM 2081-17 Framed in Blood",
-        "notes": "SRM 2081-17 Framed in Blood",
-        "history": [
-          "SRM 2081-17 Framed in Blood (Met: C3 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Xiong Giuyin": {
-        "name": "Xiong Giuyin",
-        "canonical_name": "Xiong Giuyin",
-        "is_canonical": false,
-        "connection": 4,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "SEA Wuxing",
-        "region": "SEA",
-        "description": "SRM 2081-17 Framed in Blood",
-        "notes": "SRM 2081-17 Framed in Blood",
-        "history": [
-          "SRM 2081-17 Framed in Blood (Met: C4 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Reilly Dragman": {
-        "name": "Reilly Dragman",
-        "canonical_name": "Reilly Dragman",
-        "is_canonical": true,
-        "connection": 1,
-        "loyalty": 1,
-        "favors": 1,
-        "type": "Magic",
-        "region": "KY",
-        "description": "Magic | Types: Magic",
-        "notes": "Magic | Types: Magic",
-        "history": [
-          "CMP 2081-20 In the Cold Kentucky Rain (Met: C1 L0, +2 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Queen Brane": {
-        "name": "Queen Brane",
-        "canonical_name": "Queen Brane",
-        "is_canonical": true,
-        "connection": 12,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "Magic",
-        "region": "KY",
-        "description": "Magic (Special Note: This contact cannot be called during a mission.) | Types: Magic",
-        "notes": "Magic (Special Note: This contact cannot be called during a mission.) | Types: Magic",
-        "history": [
-          "CMP 2081-20 In the Cold Kentucky Rain (Met: C12 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Kirt Liger": {
-        "name": "Kirt Liger",
-        "canonical_name": "Kirt Liger",
-        "is_canonical": false,
-        "connection": 3,
-        "loyalty": 1,
-        "favors": 1,
-        "type": "SEA Body Mod/Engineering Cybercatman",
-        "region": "SEA",
-        "description": "SRM 2081-21 Grudge Match Gladiators",
-        "notes": "SRM 2081-21 Grudge Match Gladiators",
-        "history": [
-          "SRM 2081-21 Grudge Match Gladiators (Met: C3 L0, +2 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Sigr\u00fan": {
-        "name": "Sigr\u00fan",
-        "canonical_name": "Sigr\u00fan",
-        "is_canonical": false,
-        "connection": 5,
-        "loyalty": 3,
-        "favors": 1,
-        "type": "AMS House Orange-Nassau Johnson",
-        "region": "AMS",
-        "description": "CMP 2081-12 Uneasy lies the head",
-        "notes": "CMP 2081-12 Uneasy lies the head",
-        "history": [
-          "CMP 2081-12 Uneasy lies the head (Met: C5 L0, +4 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)",
-          "Auto-Promoted to Loyalty 2 (-2 FP)",
-          "CMP 2083-04 Hog Wild (+2 FP)",
-          "Auto-Promoted to Loyalty 3 (-3 FP)",
-          "CMP 2083-02 ROYAL ROAD (+1 FP)"
-        ]
-      },
-      "Dixie L'Amin": {
-        "name": "Dixie L'Amin",
-        "canonical_name": "Dixie L'Amin",
-        "is_canonical": false,
-        "connection": 4,
-        "loyalty": 1,
-        "favors": 1,
-        "type": "DW Naga",
-        "region": "DW",
-        "description": "CMP 2083-14 A Day at the Beach",
-        "notes": "CMP 2083-14 A Day at the Beach",
-        "history": [
-          "CMP 2083-14 A Day at the Beach (Met: C4 L0, +2 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Ayanda 'Shieldbearer' Mahlangu": {
-        "name": "Ayanda 'Shieldbearer' Mahlangu",
-        "canonical_name": "Ayanda 'Shieldbearer' Mahlangu",
-        "is_canonical": false,
-        "connection": 3,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "DW 'Mystic Edge' Producer",
-        "region": "DW",
-        "description": "CMP 2083-14 A Day at the Beach",
-        "notes": "CMP 2083-14 A Day at the Beach",
-        "history": [
-          "CMP 2083-14 A Day at the Beach (Met: C3 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Ebon Abirashur": {
-        "name": "Ebon Abirashur",
-        "canonical_name": "Ebon Abirashur",
-        "is_canonical": false,
-        "connection": 1,
-        "loyalty": 1,
-        "favors": 1,
-        "type": "DW Leviathan Dragon",
-        "region": "DW",
-        "description": "CMP 2083-14 A Day at the Beach",
-        "notes": "CMP 2083-14 A Day at the Beach",
-        "history": [
-          "CMP 2083-14 A Day at the Beach (Met: C1 L0, +2 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Col. Deborah Kentwell": {
-        "name": "Col. Deborah Kentwell",
-        "canonical_name": "Col. Deborah Kentwell",
-        "is_canonical": false,
-        "connection": 5,
-        "loyalty": 1,
-        "favors": 1,
-        "type": "DW Thunder Corps Fixer",
-        "region": "DW",
-        "description": "CMP 2083-16 War Never Changes",
-        "notes": "CMP 2083-16 War Never Changes",
-        "history": [
-          "CMP 2083-16 War Never Changes (Met: C5 L0, +2 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Polyphemous 'Paul' Pellagios": {
-        "name": "Polyphemous 'Paul' Pellagios",
-        "canonical_name": "Polyphemous 'Paul' Pellagios",
-        "is_canonical": false,
-        "connection": 1,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "DW Background Actor",
-        "region": "DW",
-        "description": "CMP 2083-16 War Never Changes",
-        "notes": "CMP 2083-16 War Never Changes",
-        "history": [
-          "CMP 2083-16 War Never Changes (Met: C1 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Fernand Anato": {
-        "name": "Fernand Anato",
-        "canonical_name": "Fernand Anato",
-        "is_canonical": true,
-        "connection": 4,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "Kozlowski Capo",
-        "region": "NOLA",
-        "description": "Uses: Getting jobs, fencing gear, organized crime | Types: Criminal, Street",
-        "notes": "Uses: Getting jobs, fencing gear, organized crime | Types: Criminal, Street",
-        "history": [
-          "SRM 2083-19 The Hallow Feast (Met: C4 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Monsieur Johnson": {
-        "name": "Monsieur Johnson",
-        "canonical_name": "Monsieur Johnson",
-        "is_canonical": false,
-        "connection": 5,
-        "loyalty": 2,
-        "favors": 0,
-        "type": "NOLA Johnson",
-        "region": "NOLA",
-        "description": "SRM 2083-19 The Hallow Feast",
-        "notes": "SRM 2083-19 The Hallow Feast",
-        "history": [
-          "SRM 2083-19 The Hallow Feast (Met: C5 L0, +3 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)",
-          "Auto-Promoted to Loyalty 2 (-2 FP)"
-        ]
-      },
-      "Swango": {
-        "name": "Swango",
-        "canonical_name": "Swango",
-        "is_canonical": false,
-        "connection": 3,
-        "loyalty": 2,
-        "favors": 0,
-        "type": "SEA Rapper",
-        "region": "SEA",
-        "description": "SRM 2081-05 This is Renton",
-        "notes": "SRM 2081-05 This is Renton",
-        "history": [
-          "SRM 2081-05 This is Renton (Met: C3 L0, +3 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)",
-          "Auto-Promoted to Loyalty 2 (-2 FP)"
-        ]
-      },
-      "Toil": {
-        "name": "Toil",
-        "canonical_name": "Toil",
-        "is_canonical": true,
-        "connection": 4,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "Fixer",
-        "region": "SEA",
-        "description": "Uses: Drugs, exotic dancer clubs, getting jobs (Shadowrun Missions Seattle) | Types: Criminal, Street",
-        "notes": "Uses: Drugs, exotic dancer clubs, getting jobs (Shadowrun Missions Seattle) | Types: Criminal, Street",
-        "history": [
-          "SRM 2081-05 This is Renton (Met: C4 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Trubble": {
-        "name": "Trubble",
-        "canonical_name": "Trubble",
-        "is_canonical": true,
-        "connection": 1,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "Bodyguard",
-        "region": "SEA",
-        "description": "Uses: Bodyguards, insults, talismans (Shadowrun Missions Seattle) | Types: Magic",
-        "notes": "Uses: Bodyguards, insults, talismans (Shadowrun Missions Seattle) | Types: Magic",
-        "history": [
-          "SRM 2081-05 This is Renton (Met: C1 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "SpiiniCop": {
-        "name": "SpiiniCop",
-        "canonical_name": "SpiiniCop",
-        "is_canonical": false,
-        "connection": 2,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "AMS Penose Spider",
-        "region": "AMS",
-        "description": "CMP 2083-01 NONPLUSHED",
-        "notes": "CMP 2083-01 NONPLUSHED",
-        "history": [
-          "CMP 2083-01 NONPLUSHED (Met: C2 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Eddie Wei": {
-        "name": "Eddie Wei",
-        "canonical_name": "Eddie Wei",
-        "is_canonical": true,
-        "connection": 4,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "Triad Johnson",
-        "region": "SEA",
-        "description": "Uses: Business and economics, getting jobs, triads (Shadowrun Missions Seattle) | Types: Criminal, Matrix (Not available after 2081-24)",
-        "notes": "Uses: Business and economics, getting jobs, triads (Shadowrun Missions Seattle) | Types: Criminal, Matrix (Not available after 2081-24)",
-        "history": [
-          "SRM 2081-08 Child's Play (Met: C4 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Julian M\u00fcntefering": {
-        "name": "Julian M\u00fcntefering",
-        "canonical_name": "Julian M\u00fcntefering",
-        "is_canonical": true,
-        "connection": 1,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "Corporate Kid",
-        "region": "SEA",
-        "description": "Uses: Corporate playground rumors, drones, rigging research (Shadowrun Missions Seattle) | Types: Corporate, Engineering",
-        "notes": "Uses: Corporate playground rumors, drones, rigging research (Shadowrun Missions Seattle) | Types: Corporate, Engineering",
-        "history": [
-          "SRM 2081-08 Child's Play (Met: C1 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Ni Ni Xiaolu": {
-        "name": "Ni Ni Xiaolu",
-        "canonical_name": "Ni Ni Xiaolu",
-        "is_canonical": true,
-        "connection": 3,
-        "loyalty": 2,
-        "favors": 2,
-        "type": "Triad Johnson",
-        "region": "SEA",
-        "description": "Uses: Getting jobs, drugs, street rumors, triads (Shadowrun Missions Seattle) | Types: Criminal",
-        "notes": "Uses: Getting jobs, drugs, street rumors, triads (Shadowrun Missions Seattle) | Types: Criminal",
-        "history": [
-          "SRM 2081-07 Bootleg Bliss (Met: C3 L0, +3 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)",
-          "Auto-Promoted to Loyalty 2 (-2 FP)",
-          "CMP 2083-05 Precious Cargo (+1 FP)",
-          "SRM 2081-18 Friendships Never Grow Rust (+1 FP)"
-        ]
-      },
-      "Bookie": {
-        "name": "Bookie",
-        "canonical_name": "Bookie",
-        "is_canonical": false,
-        "connection": 3,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "SEA Ancients Bookie",
-        "region": "SEA",
-        "description": "SRM 2081-07 Bootleg Bliss",
-        "notes": "SRM 2081-07 Bootleg Bliss",
-        "history": [
-          "SRM 2081-07 Bootleg Bliss (Met: C3 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Trudy": {
-        "name": "Trudy",
-        "canonical_name": "Trudy",
-        "is_canonical": false,
-        "connection": 2,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "SEA Cutter Lieutenant",
-        "region": "SEA",
-        "description": "SRM 2081-07 Bootleg Bliss",
-        "notes": "SRM 2081-07 Bootleg Bliss",
-        "history": [
-          "SRM 2081-07 Bootleg Bliss (Met: C2 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Saint James": {
-        "name": "Saint James",
-        "canonical_name": "Saint James",
-        "is_canonical": true,
-        "connection": 8,
-        "loyalty": 2,
-        "favors": 1,
-        "type": "Fixer",
-        "region": "SEA",
-        "description": "Uses: Corporations, getting jobs (Shadowrun Missions Seattle), fencing gear, gangs | Types: Criminal, Street (Not available after 2081-24)",
-        "notes": "Uses: Corporations, getting jobs (Shadowrun Missions Seattle), fencing gear, gangs | Types: Criminal, Street (Not available after 2081-24)",
-        "history": [
-          "SRM 2081-06 Cutting Strings (Met: C8 L0, +3 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)",
-          "Auto-Promoted to Loyalty 2 (-2 FP)",
-          "SRM 2081-18 Friendships Never Grow Rust (+1 FP)"
-        ]
-      },
-      "Jeanie Trudel": {
-        "name": "Jeanie Trudel",
-        "canonical_name": "Jeanie Trudel",
-        "is_canonical": false,
-        "connection": 1,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "SEA Bartender",
-        "region": "SEA",
-        "description": "SRM 2081-06 Cutting Strings",
-        "notes": "SRM 2081-06 Cutting Strings",
-        "history": [
-          "SRM 2081-06 Cutting Strings (Met: C1 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Kingston": {
-        "name": "Kingston",
-        "canonical_name": "Kingston",
-        "is_canonical": true,
-        "connection": 2,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "Shadowrunner/Street Samurai",
-        "region": "SEA",
-        "description": "Uses: Shadowrunners, street rumors (Shadowrun Missions Seattle) | Types: Criminal, Street",
-        "notes": "Uses: Shadowrunners, street rumors (Shadowrun Missions Seattle) | Types: Criminal, Street",
-        "history": [
-          "SRM 2081-06 Cutting Strings (Met: C2 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Kaatje": {
-        "name": "Kaatje",
-        "canonical_name": "Kaatje",
-        "is_canonical": false,
-        "connection": 2,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "AMS Young Entertainer",
-        "region": "AMS",
-        "description": "CMP 2083-04 Hog Wild",
-        "notes": "CMP 2083-04 Hog Wild",
-        "history": [
-          "CMP 2083-04 Hog Wild (Met: C2 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Mr. Fa": {
-        "name": "Mr. Fa",
-        "canonical_name": "Mr. Fa",
-        "is_canonical": false,
-        "connection": 4,
-        "loyalty": 1,
-        "favors": 1,
-        "type": "HKB Corporate Middle Manager",
-        "region": "HK",
-        "description": "CMP 2083-05 Precious Cargo",
-        "notes": "CMP 2083-05 Precious Cargo",
-        "history": [
-          "CMP 2083-05 Precious Cargo (Met: C4 L0, +2 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Liao Fa Ren": {
-        "name": "Liao Fa Ren",
-        "canonical_name": "Liao Fa Ren",
-        "is_canonical": false,
-        "connection": 3,
-        "loyalty": 2,
-        "favors": 0,
-        "type": "HK Rookie Journalist",
-        "region": "HK",
-        "description": "CMP 2083-05 Precious Cargo",
-        "notes": "CMP 2083-05 Precious Cargo",
-        "history": [
-          "CMP 2083-05 Precious Cargo (Met: C3 L0, +3 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)",
-          "Auto-Promoted to Loyalty 2 (-2 FP)"
-        ]
-      },
-      "Aloysius Springinsguth": {
-        "name": "Aloysius Springinsguth",
-        "canonical_name": "Aloysius Springinsguth",
-        "is_canonical": false,
-        "connection": 3,
-        "loyalty": 2,
-        "favors": 0,
-        "type": "NOLA Sound of Silence Music Shop Owner",
-        "region": "NOLA",
-        "description": "SRM 2083-12 When You're Smiling",
-        "notes": "SRM 2083-12 When You're Smiling",
-        "history": [
-          "SRM 2083-12 When You're Smiling (Met: C3 L0, +3 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)",
-          "Auto-Promoted to Loyalty 2 (-2 FP)"
-        ]
-      },
-      "Jolene Price": {
-        "name": "Jolene Price",
-        "canonical_name": "Jolene Price",
-        "is_canonical": true,
-        "connection": 7,
-        "loyalty": 2,
-        "favors": 0,
-        "type": "Riverboat Alliance Leader",
-        "region": "NOLA",
-        "description": "Uses: Getting jobs, dragons, mafia | Types: Corporate, Street",
-        "notes": "Uses: Getting jobs, dragons, mafia | Types: Corporate, Street",
-        "history": [
-          "SRM 2083-17 Haute Blooded (Met: C7 L0, +3 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)",
-          "Auto-Promoted to Loyalty 2 (-2 FP)"
-        ]
-      },
-      "Coffin Girls": {
-        "name": "Coffin Girls",
-        "canonical_name": "Coffin Girls",
-        "is_canonical": false,
-        "connection": 3,
-        "loyalty": 4,
-        "favors": 0,
-        "type": "NOLA Independent Courtesans Group",
-        "region": "NOLA",
-        "description": "",
-        "notes": "",
-        "history": [
-          "SRM 2083-17 (Met: C3 L3, +1 FP)",
-          "SRM 2083-20 (+1 FP)",
-          "SRM 2083-18 Some Kind of Voodoo? (+1 FP)",
-          "SRM 2083-18 (+1 FP)",
-          "Auto-Promoted to Loyalty 4 (-4 FP)"
-        ]
-      },
-      "Cedar": {
-        "name": "Cedar",
-        "canonical_name": "Cedar",
-        "is_canonical": false,
-        "connection": 3,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "NOLA Talismonger",
-        "region": "NOLA",
-        "description": "SRM 2083-20 The Fallacy of Plans",
-        "notes": "SRM 2083-20 The Fallacy of Plans",
-        "history": [
-          "SRM 2083-20 The Fallacy of Plans (Met: C3 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Detective Remy LeBlanc": {
-        "name": "Detective Remy LeBlanc",
-        "canonical_name": "Detective Remy LeBlanc",
-        "is_canonical": false,
-        "connection": 3,
-        "loyalty": 2,
-        "favors": 0,
-        "type": "NOLA Detective",
-        "region": "NOLA",
-        "description": "SRM 2083-20 The Fallacy of Plans",
-        "notes": "SRM 2083-20 The Fallacy of Plans",
-        "history": [
-          "SRM 2083-20 The Fallacy of Plans (Met: C3 L0, +3 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)",
-          "Auto-Promoted to Loyalty 2 (-2 FP)"
-        ]
-      },
-      "Claudette Laurier": {
-        "name": "Claudette Laurier",
-        "canonical_name": "Claudette Laurier",
-        "is_canonical": true,
-        "connection": 5,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "Order of the Golden Dawn Librarian",
-        "region": "NOLA",
-        "description": "Uses: Getting jobs, magical traditions | Types: Criminal, Matrix",
-        "notes": "Uses: Getting jobs, magical traditions | Types: Criminal, Matrix",
-        "history": [
-          "SRM 2083-20 The Fallacy of Plans (Met: C5 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "League of Laveau": {
-        "name": "League of Laveau",
-        "canonical_name": "League of Laveau",
-        "is_canonical": false,
-        "connection": 6,
-        "loyalty": 3,
-        "favors": 1,
-        "type": "NOLA Voodoo Organization",
-        "region": "NOLA",
-        "description": "SRM 2083-18 Some Kind of Voodoo?",
-        "notes": "SRM 2083-18 Some Kind of Voodoo?",
-        "history": [
-          "SRM 2083-18 Some Kind of Voodoo? (Met: C6 L3, +1 FP)"
-        ]
-      },
-      "Zobop": {
-        "name": "Zobop",
-        "canonical_name": "Zobop",
-        "is_canonical": false,
-        "connection": 6,
-        "loyalty": 3,
-        "favors": 1,
-        "type": "NOLA Voodoo Organization",
-        "region": "NOLA",
-        "description": "SRM 2083-18 Some Kind of Voodoo?",
-        "notes": "SRM 2083-18 Some Kind of Voodoo?",
-        "history": [
-          "SRM 2083-18 Some Kind of Voodoo? (Met: C6 L3, +1 FP)"
-        ]
-      },
-      "Col. Treylor": {
-        "name": "Col. Treylor",
-        "canonical_name": "Col. Treylor",
-        "is_canonical": false,
-        "connection": 3,
-        "loyalty": 1,
-        "favors": 1,
-        "type": "DW Thunder Corps Fixer",
-        "region": "DW",
-        "description": "CMP 2083-15 | By Land, Sea, and Hair",
-        "notes": "CMP 2083-15 | By Land, Sea, and Hair",
-        "history": [
-          "CMP 2083-15 | By Land, Sea, and Hair (Met: C3 L0, +2 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Moenen": {
-        "name": "Moenen",
-        "canonical_name": "Moenen",
-        "is_canonical": false,
-        "connection": 5,
-        "loyalty": 1,
-        "favors": 1,
-        "type": "UNL infobroker",
-        "region": "AMS",
-        "description": "CMP 2083-02 ROYAL ROAD",
-        "notes": "CMP 2083-02 ROYAL ROAD",
-        "history": [
-          "CMP 2083-02 ROYAL ROAD (Met: C5 L0, +2 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      },
-      "Blackstone": {
-        "name": "Blackstone",
-        "canonical_name": "Blackstone",
-        "is_canonical": false,
-        "connection": 3,
-        "loyalty": 1,
-        "favors": 0,
-        "type": "SEA Contact",
-        "region": "SEA",
-        "description": "SRM 2081-18 Friendships Never Grow Rust",
-        "notes": "SRM 2081-18 Friendships Never Grow Rust",
-        "history": [
-          "SRM 2081-18 Friendships Never Grow Rust (Met: C3 L0, +1 FP)",
-          "Auto-Promoted to Loyalty 1 (-1 FP)"
-        ]
-      }
+    {
+      "name": "Intuition",
+      "id": "INTUITION",
+      "points": 2,
+      "modifiedValue": 2
+    },
+    {
+      "name": "Charisma",
+      "id": "CHARISMA",
+      "points": 4,
+      "modifiedValue": 4
+    },
+    {
+      "name": "Edge",
+      "id": "EDGE",
+      "points": 4,
+      "modifiedValue": 4
+    },
+    {
+      "name": "Magic",
+      "id": "MAGIC",
+      "points": 0,
+      "modifiedValue": 0
+    },
+    {
+      "name": "Resonance",
+      "id": "RESONANCE",
+      "points": 8,
+      "modifiedValue": 8
+    },
+    {
+      "name": "Power Points",
+      "id": "POWER_POINTS",
+      "points": 0,
+      "modifiedValue": 0
+    },
+    {
+      "name": "Defense Pool",
+      "id": "DEFENSE_POOL_PHYSICAL",
+      "points": 0,
+      "modifiedValue": 7
+    },
+    {
+      "name": "Composure",
+      "id": "COMPOSURE",
+      "points": 0,
+      "modifiedValue": 10
+    },
+    {
+      "name": "Judge Intentions",
+      "id": "JUDGE_INTENTIONS",
+      "points": 0,
+      "modifiedValue": 8
+    },
+    {
+      "name": "Memory",
+      "id": "MEMORY",
+      "points": 0,
+      "modifiedValue": 6
+    },
+    {
+      "name": "Lift / Carry",
+      "id": "LIFT_CARRY",
+      "points": 0,
+      "modifiedValue": 11
     }
-  }
+  ],
+  "initiatives": [
+    {
+      "name": "Initiative (Astral)",
+      "id": "INITIATIVE_ASTRAL",
+      "value": 6,
+      "dice": "+2D6"
+    },
+    {
+      "name": "Initiative",
+      "id": "INITIATIVE_PHYSICAL",
+      "value": 7,
+      "dice": "+1D6"
+    },
+    {
+      "name": "Initiative (Matrix AR)",
+      "id": "INITIATIVE_MATRIX",
+      "value": 6,
+      "dice": "+2D6"
+    },
+    {
+      "name": "Initiative (Matrix VR)",
+      "id": "INITIATIVE_MATRIX_VR_COLD",
+      "value": 5,
+      "dice": "+2D6"
+    },
+    {
+      "name": "Initiative (Matrix Hot)",
+      "id": "INITIATIVE_MATRIX_VR_HOT",
+      "value": 5,
+      "dice": "+3D6"
+    }
+  ],
+  "qualities": [
+    {
+      "name": "Natural Hacker",
+      "id": "natural_hacker",
+      "choice": "",
+      "positive": true,
+      "rating": 0,
+      "page": "Hack'n Slash 83",
+      "description": ""
+    },
+    {
+      "name": "Stream: Technoshamans",
+      "id": "technoshaman",
+      "choice": "",
+      "positive": true,
+      "rating": 0,
+      "page": "Hack'n Slash 131",
+      "description": ""
+    },
+    {
+      "name": "Buddy System",
+      "id": "buddy_system",
+      "choice": "",
+      "positive": false,
+      "rating": 0,
+      "page": "Hack'n Slash 84",
+      "description": ""
+    },
+    {
+      "name": "Sprite Bane",
+      "id": "sprite_bane",
+      "choice": "Primal Sprite",
+      "positive": false,
+      "rating": 0,
+      "page": "Core Rulebook 79",
+      "description": ""
+    },
+    {
+      "name": "Hooder",
+      "id": "hooder",
+      "choice": "",
+      "positive": false,
+      "rating": 2,
+      "page": "Sixth World Companion 137",
+      "description": ""
+    },
+    {
+      "name": "Designer",
+      "id": "designer",
+      "choice": "",
+      "positive": true,
+      "rating": 0,
+      "page": "Hack'n Slash 119",
+      "description": ""
+    },
+    {
+      "name": "Sensor Upgrade",
+      "id": "sensor_upgrade",
+      "choice": "",
+      "positive": true,
+      "rating": 0,
+      "page": "Hack'n Slash 120",
+      "description": ""
+    },
+    {
+      "name": "Pilot Origins",
+      "id": "pilot_origins",
+      "choice": "",
+      "positive": true,
+      "rating": 1,
+      "page": "Hack'n Slash 120",
+      "description": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Con",
+      "id": "con",
+      "attribute": "Charisma",
+      "rating": 1,
+      "pool": 0,
+      "specializations": [],
+      "influencedBy": [],
+      "description": ""
+    },
+    {
+      "name": "Cracking",
+      "id": "cracking",
+      "attribute": "Logic",
+      "rating": 5,
+      "pool": 0,
+      "specializations": [
+        {
+          "name": "Hacking",
+          "id": "hacking",
+          "expertise": false,
+          "attribute": "Logic",
+          "pool": 0,
+          "description": ""
+        }
+      ],
+      "influencedBy": [],
+      "description": ""
+    },
+    {
+      "name": "Electronics",
+      "id": "electronics",
+      "attribute": "Logic",
+      "rating": 5,
+      "pool": 0,
+      "specializations": [
+        {
+          "name": "Software",
+          "id": "software",
+          "expertise": false,
+          "attribute": "Logic",
+          "pool": 0,
+          "description": ""
+        }
+      ],
+      "influencedBy": [],
+      "description": ""
+    },
+    {
+      "name": "Influence",
+      "id": "influence",
+      "attribute": "Charisma",
+      "rating": 1,
+      "pool": 0,
+      "specializations": [],
+      "influencedBy": [],
+      "description": ""
+    },
+    {
+      "name": "Native Language",
+      "id": "language",
+      "attribute": "Logic",
+      "rating": 4,
+      "pool": 0,
+      "specializations": [],
+      "influencedBy": [],
+      "description": ""
+    },
+    {
+      "name": "Tasking",
+      "id": "tasking",
+      "attribute": "Resonance",
+      "rating": 6,
+      "pool": 1,
+      "specializations": [
+        {
+          "name": "Registering",
+          "id": "registering",
+          "expertise": false,
+          "attribute": "Resonance",
+          "pool": 1,
+          "description": ""
+        }
+      ],
+      "influencedBy": [
+        "Sprite Bane"
+      ],
+      "description": ""
+    }
+  ],
+  "spells": [],
+  "rituals": [],
+  "metamagic": null,
+  "echoes": [
+    {
+      "name": "Hybrid Sprites",
+      "page": "Hack'n Slash 67",
+      "description": ""
+    },
+    {
+      "name": "New Sprite Type",
+      "page": "Hack'n Slash 68",
+      "description": ""
+    },
+    {
+      "name": "Sprite Conduit",
+      "page": "Hack'n Slash 69",
+      "description": ""
+    },
+    {
+      "name": "Sprite Symbiosis",
+      "page": "Hack'n Slash 69",
+      "description": ""
+    },
+    {
+      "name": "Living Network",
+      "page": "Core Rulebook 195",
+      "description": ""
+    },
+    {
+      "name": "Transcendent Network",
+      "page": "Hack'n Slash 69",
+      "description": ""
+    },
+    {
+      "name": "Overclocking",
+      "page": "Core Rulebook 195",
+      "description": ""
+    },
+    {
+      "name": "Software Emulator",
+      "page": "Hack'n Slash 68",
+      "description": ""
+    },
+    {
+      "name": "Sprite Link",
+      "page": "Hack'n Slash 69",
+      "description": ""
+    }
+  ],
+  "complexForms": [
+    {
+      "name": "Cleaner",
+      "duration": "Permanent",
+      "fading": 2,
+      "influences": [],
+      "page": "Core Rulebook 190",
+      "description": ""
+    },
+    {
+      "name": "Diffusion",
+      "duration": "Sustained",
+      "fading": 4,
+      "influences": [],
+      "page": "Core Rulebook 190",
+      "description": ""
+    },
+    {
+      "name": "Technoregeneration",
+      "duration": "Permanent",
+      "fading": -1,
+      "influences": [],
+      "page": "Hack'n Slash 67",
+      "description": ""
+    },
+    {
+      "name": "Puppeteer",
+      "duration": "Sustained",
+      "fading": 5,
+      "influences": [],
+      "page": "Core Rulebook 190",
+      "description": ""
+    },
+    {
+      "name": "Cyber Spike",
+      "duration": "Instantaneous",
+      "fading": -1,
+      "influences": [],
+      "page": "Hack'n Slash 63",
+      "description": ""
+    }
+  ],
+  "adeptPowers": [],
+  "longRangeWeapons": [
+    {
+      "name": "Ares Predator VI",
+      "type": "Firearms",
+      "subtype": "Heavy Pistols",
+      "skill": null,
+      "pool": 2,
+      "damage": "3P",
+      "attackRating": "11/11/8/-/-",
+      "mode": "SA,BF",
+      "ammunition": "15(c)",
+      "wifi": [
+        "Digital ammunition counter and an ARO that tells you the ammo type loaded. ",
+        "If equipped with DNI, you gain a bonus Minor Action any turn when you eject a clip (for weapons that have them) or change fire modes."
+      ],
+      "accessories": [
+        {
+          "name": "Silencer",
+          "type": "Accessories",
+          "subType": "Weapon Accessories",
+          "rating": 0,
+          "description": ""
+        }
+      ],
+      "page": "Core Rulebook 253",
+      "description": "",
+      "primary": false
+    },
+    {
+      "name": "Red Fox",
+      "type": "Exotic Weapons",
+      "subtype": "Special Weapons",
+      "skill": null,
+      "pool": 3,
+      "damage": "6P",
+      "attackRating": "14/16/16/9/-",
+      "mode": "SA,BF",
+      "ammunition": "30(c)",
+      "wifi": [
+        "Digital ammunition counter and an ARO that tells you the ammo type loaded. ",
+        "If equipped with DNI, you gain a bonus Minor Action any turn when you eject a clip (for weapons that have them) or change fire modes."
+      ],
+      "accessories": [],
+      "page": "Firing Squad 44",
+      "description": "",
+      "primary": false
+    },
+    {
+      "name": "Crimson Wasp",
+      "type": "Exotic Weapons",
+      "subtype": "Special Weapons",
+      "skill": null,
+      "pool": 3,
+      "damage": "5P",
+      "attackRating": "16/14/11/6/-",
+      "mode": "SA",
+      "ammunition": "15(c)",
+      "wifi": [
+        "Digital ammunition counter and an ARO that tells you the ammo type loaded. ",
+        "If equipped with DNI, you gain a bonus Minor Action any turn when you eject a clip (for weapons that have them) or change fire modes."
+      ],
+      "accessories": [],
+      "page": "Firing Squad 44",
+      "description": "",
+      "primary": false
+    }
+  ],
+  "closeCombatWeapons": [
+    {
+      "name": "Monofilament Whip",
+      "type": "Close Combat Weapons",
+      "subtype": "Whips",
+      "skill": null,
+      "pool": 3,
+      "damage": "6P",
+      "attackRating": "21/-/-/-/-",
+      "wifi": [
+        "The whip uses your visuals on the target to make small adjustments in targeting, and the whip adjusts its trajectory. This increases the Attack Rating by 2. Also, the whip\u2019s built-in safety system retracts automatically instead of hitting you on a critical glitch."
+      ],
+      "accessories": [],
+      "page": "Core Rulebook 249",
+      "description": "",
+      "primary": false
+    },
+    {
+      "name": "Dagger of the Sacred Rose (+1 Weapon Focus)",
+      "type": "Close Combat Weapons",
+      "subtype": "Blades",
+      "skill": null,
+      "pool": 2,
+      "damage": "2P",
+      "attackRating": "9/1/-/-/-",
+      "wifi": [],
+      "accessories": [],
+      "page": "Core Rulebook 247",
+      "description": "",
+      "primary": false
+    },
+    {
+      "name": "Amalgam Cestas",
+      "type": "Close Combat Weapons",
+      "subtype": "Blades",
+      "skill": null,
+      "pool": 2,
+      "damage": "3P",
+      "attackRating": "13/2/-/-/-",
+      "wifi": [
+        "The knife displays an ARO of local maps and your GPS position, along with providing basic biomonitor data when in your hand."
+      ],
+      "accessories": [],
+      "page": "Core Rulebook 248",
+      "description": "",
+      "primary": false
+    },
+    {
+      "name": "Krime Gloves",
+      "type": "Close Combat Weapons",
+      "subtype": "Unarmed",
+      "skill": null,
+      "pool": 2,
+      "damage": "4S(e)",
+      "attackRating": "10/-/-/-/-",
+      "wifi": [],
+      "accessories": [],
+      "page": "Deadly Arts 30",
+      "description": "",
+      "primary": false
+    },
+    {
+      "name": "Krime Gloves",
+      "type": "Close Combat Weapons",
+      "subtype": "Unarmed",
+      "skill": null,
+      "pool": 2,
+      "damage": "3P",
+      "attackRating": "9/-/-/-/-",
+      "wifi": [],
+      "accessories": [],
+      "page": "Deadly Arts 30",
+      "description": "",
+      "primary": false
+    },
+    {
+      "name": "Unarmed",
+      "type": "Close Combat Weapons",
+      "subtype": "Unarmed",
+      "skill": null,
+      "pool": 2,
+      "damage": "2S",
+      "attackRating": "8/-/-/-/-",
+      "wifi": [],
+      "accessories": [],
+      "page": "Core Rulebook 67",
+      "description": "",
+      "primary": false
+    }
+  ],
+  "armors": [
+    {
+      "name": "Ares Securetech SkinShield",
+      "rating": 2,
+      "socialrating": 0,
+      "accessories": [
+        {
+          "name": "Ballistic Hood",
+          "type": "Accessories",
+          "subType": "Armor",
+          "rating": 0,
+          "description": ""
+        }
+      ],
+      "isIgnored": false,
+      "page": "Firing Squad 49",
+      "description": "",
+      "primary": true
+    },
+    {
+      "name": "SecureTech Invisi-Shield Armor",
+      "rating": 2,
+      "socialrating": 0,
+      "accessories": [],
+      "isIgnored": false,
+      "page": "Firing Squad 50",
+      "description": "",
+      "primary": false
+    },
+    {
+      "name": "Ballistic Hood",
+      "rating": 1,
+      "socialrating": 0,
+      "accessories": [],
+      "isIgnored": false,
+      "page": "Core Rulebook, Seattle City Edition 335",
+      "description": "",
+      "primary": false
+    }
+  ],
+  "items": [
+    {
+      "name": "Heavy Pistol/SMG (10x)",
+      "count": 5,
+      "rating": 0,
+      "type": "Ammunition & Explosives",
+      "subType": "Ammunition",
+      "page": "Core Rulebook 262",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "Heavy Pistol/SMG (10x)",
+      "count": 5,
+      "rating": 0,
+      "type": "Ammunition & Explosives",
+      "subType": "Ammunition",
+      "page": "Core Rulebook 262",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "Grenade, Glitter",
+      "count": 10,
+      "rating": 0,
+      "type": "Ammunition & Explosives",
+      "subType": "Grenades",
+      "page": "Firing Squad 36",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "Kit",
+      "count": 1,
+      "rating": 0,
+      "type": "Tools",
+      "subType": "Tools",
+      "page": "Core Rulebook 273",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "Medkit",
+      "count": 1,
+      "rating": 0,
+      "type": "Biology",
+      "subType": "Biotech",
+      "page": "Core Rulebook 281",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "Medkit supplies",
+      "count": 5,
+      "rating": 0,
+      "type": "Biology",
+      "subType": "Biotech",
+      "page": "Core Rulebook 281",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "Order of the Lion of the United Netherlands Medal",
+      "count": 1,
+      "rating": 0,
+      "type": "Tools",
+      "subType": "Tools",
+      "page": "",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "Broach of the Seelie Court (+2 Power Focus)",
+      "count": 1,
+      "rating": 0,
+      "type": "Chemicals",
+      "subType": "Drugs",
+      "page": "Core Rulebook 124",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "\"Smile for the Camera!\" Quality (Shiawase)",
+      "count": 1,
+      "rating": 0,
+      "type": "Chemicals",
+      "subType": "Drugs",
+      "page": "Core Rulebook 124",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "Narcoject",
+      "count": 10,
+      "rating": 0,
+      "type": "Chemicals",
+      "subType": "Toxins",
+      "page": "Core Rulebook 122",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "Cyanide",
+      "count": 5,
+      "rating": 0,
+      "type": "Chemicals",
+      "subType": "Toxins",
+      "page": "Body Shop 113",
+      "accessories": [],
+      "description": ""
+    },
+    {
+      "name": "Software Library",
+      "count": 1,
+      "rating": 0,
+      "type": "Electronic",
+      "subType": "Tools",
+      "page": "Core Rulebook 271",
+      "accessories": [],
+      "description": ""
+    }
+  ],
+  "augmentations": [
+    {
+      "name": "Pilot Origins",
+      "level": null,
+      "essence": 0.0,
+      "page": "Core Rulebook 283",
+      "quality": null,
+      "description": "",
+      "accessories": []
+    }
+  ],
+  "vehicles": [],
+  "drones": [
+    {
+      "name": "MCT Gnat",
+      "type": null,
+      "subtype": null,
+      "count": 5,
+      "handlOn": 3,
+      "handlOff": 3,
+      "accelOn": 4,
+      "accelOff": 4,
+      "speedIntOn": 10,
+      "speedIntOff": 10,
+      "speed": 30,
+      "body": 0,
+      "armor": 0,
+      "pilot": 2,
+      "sensor": 1,
+      "page": "Core Rulebook 299",
+      "accessories": null,
+      "description": ""
+    },
+    {
+      "name": "Shiawase Bi-Drone Butler",
+      "type": null,
+      "subtype": null,
+      "count": 1,
+      "handlOn": 4,
+      "handlOff": 5,
+      "accelOn": 5,
+      "accelOff": 5,
+      "speedIntOn": 5,
+      "speedIntOff": 5,
+      "speed": 8,
+      "body": 4,
+      "armor": 0,
+      "pilot": 2,
+      "sensor": 3,
+      "page": "Double Clutch 117",
+      "accessories": null,
+      "description": ""
+    },
+    {
+      "name": "Shiawase Bi-Drone Man-At-Arms",
+      "type": null,
+      "subtype": null,
+      "count": 1,
+      "handlOn": 3,
+      "handlOff": 3,
+      "accelOn": 5,
+      "accelOff": 5,
+      "speedIntOn": 5,
+      "speedIntOff": 5,
+      "speed": 10,
+      "body": 10,
+      "armor": 8,
+      "pilot": 2,
+      "sensor": 2,
+      "page": "Double Clutch 117",
+      "accessories": null,
+      "description": ""
+    },
+    {
+      "name": "Federated-Boeing Sky Commander",
+      "type": null,
+      "subtype": null,
+      "count": 1,
+      "handlOn": 4,
+      "handlOff": 4,
+      "accelOn": 20,
+      "accelOff": 20,
+      "speedIntOn": 30,
+      "speedIntOff": 30,
+      "speed": 190,
+      "body": 4,
+      "armor": 2,
+      "pilot": 4,
+      "sensor": 2,
+      "page": "Double Clutch 106",
+      "accessories": null,
+      "description": ""
+    }
+  ],
+  "lifestyles": [
+    {
+      "customName": "Low",
+      "name": "Low",
+      "cost": 0,
+      "paidMonths": 1,
+      "sin": null,
+      "options": null,
+      "description": null
+    }
+  ],
+  "sins": [
+    {
+      "name": "Yuriko Star",
+      "description": null,
+      "quality": 6
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Brynne Taggart",
+      "type": "Fixer",
+      "loyalty": 3,
+      "influence": 4,
+      "description": "Uses: Getting jobs, fencing gear, gangs (Shadowrun Missions Seattle) | Types: Criminal, Street",
+      "favors": 3
+    },
+    {
+      "name": "Whiskey",
+      "type": "Street Doc",
+      "loyalty": 4,
+      "influence": 2,
+      "description": "Uses: Medicine, street docs (Shadowrun Missions Seattle) | Types: Medical",
+      "favors": 0
+    },
+    {
+      "name": "Indomitable Will",
+      "type": "River People Sysop",
+      "loyalty": 3,
+      "influence": 3,
+      "description": "Uses: Banking, HVAC systems, Matrix | Types: Corporate, Matrix",
+      "favors": 0
+    },
+    {
+      "name": "Roanoke",
+      "type": "Ecological Activist",
+      "loyalty": 3,
+      "influence": 3,
+      "description": "Uses: Getting jobs, environmental science, shamanism | Types: Criminal, Matrix",
+      "favors": 2
+    },
+    {
+      "name": "Piotr Krolik",
+      "type": "NOLA Vory Borjevik",
+      "loyalty": 1,
+      "influence": 4,
+      "description": "SMH 2083-02 EggHunt at the Jackalope Ranch",
+      "favors": 0
+    },
+    {
+      "name": "Le Tigre",
+      "type": "Epoch Model",
+      "loyalty": 2,
+      "influence": 5,
+      "description": "Uses: Getting jobs, parties, modeling | Types: Corporate, Magic",
+      "favors": 0
+    },
+    {
+      "name": "White Jackalope",
+      "type": "Emergent Lifeform",
+      "loyalty": 1,
+      "influence": 2,
+      "description": "SMH 2083-02 EggHunt at the Jackalope Ranch",
+      "favors": 0
+    },
+    {
+      "name": "Big Louie",
+      "type": "SEA Fixer",
+      "loyalty": 1,
+      "influence": 3,
+      "description": "CMP First Taste : Top Chef - Seattle",
+      "favors": 0
+    },
+    {
+      "name": "Dominique Augustin",
+      "type": "NOLA Wolverine Security",
+      "loyalty": 1,
+      "influence": 4,
+      "description": "2083-03 Unofficial Dunkelzahn Fan Club",
+      "favors": 1
+    },
+    {
+      "name": "Daniel Fortune",
+      "type": "NOLA",
+      "loyalty": 1,
+      "influence": 3,
+      "description": "2083-03 Unofficial Dunkelzahn Fan Club",
+      "favors": 0
+    },
+    {
+      "name": "Ren\u00e9e Martin",
+      "type": "League of Laveau Liaison",
+      "loyalty": 2,
+      "influence": 4,
+      "description": "Uses: Getting jobs, magic, voodoo, zombies | Types: Corporate, Magic",
+      "favors": 1
+    },
+    {
+      "name": "The Frisian",
+      "type": "AMS Crime Lord of the Dutch Penose syndicate",
+      "loyalty": 1,
+      "influence": 6,
+      "description": "CMP 2081-09 Bring me Prince Charming",
+      "favors": 0
+    },
+    {
+      "name": "Ree 'Dolly' Hacker",
+      "type": "KY Talismonger and Racer",
+      "loyalty": 1,
+      "influence": 4,
+      "description": "CMP 2081-18 Blue Kentucky Girl",
+      "favors": 1
+    },
+    {
+      "name": "Granny",
+      "type": "KY Lady of the Autumn Wind",
+      "loyalty": 1,
+      "influence": 6,
+      "description": "CMP 2081-18 Blue Kentucky Girl",
+      "favors": 1
+    },
+    {
+      "name": "Kiara Shaw",
+      "type": "AMS Knight Errant Company Suit",
+      "loyalty": 2,
+      "influence": 4,
+      "description": "CMP 2081-10 A Diamond in The Rough",
+      "favors": 0
+    },
+    {
+      "name": "Simon Andrews",
+      "type": "AMS S-K Johnson",
+      "loyalty": 2,
+      "influence": 5,
+      "description": "CMP 2081-11 Paved with good intentions",
+      "favors": 1
+    },
+    {
+      "name": "Squint",
+      "type": "AMS Smuggler",
+      "loyalty": 1,
+      "influence": 2,
+      "description": "CMP 2081-11 Paved with good intentions",
+      "favors": 0
+    },
+    {
+      "name": "Dr. Laureline Dodd",
+      "type": "KY Arcano-Archeologist",
+      "loyalty": 1,
+      "influence": 5,
+      "description": "CMP 2081-19 The Blue Moon of Kentucky",
+      "favors": 1
+    },
+    {
+      "name": "Thaddeus",
+      "type": "KY Street Samurai",
+      "loyalty": 1,
+      "influence": 3,
+      "description": "CMP 2081-19 The Blue Moon of Kentucky",
+      "favors": 0
+    },
+    {
+      "name": "Duan Yuhai",
+      "type": "SEA Minor 88s Johnson",
+      "loyalty": 1,
+      "influence": 3,
+      "description": "SRM 2081-17 Framed in Blood",
+      "favors": 0
+    },
+    {
+      "name": "Xiong Giuyin",
+      "type": "SEA Wuxing",
+      "loyalty": 1,
+      "influence": 4,
+      "description": "SRM 2081-17 Framed in Blood",
+      "favors": 0
+    },
+    {
+      "name": "Reilly Dragman",
+      "type": "Novice Magician",
+      "loyalty": 1,
+      "influence": 1,
+      "description": "Magic | Types: Magic",
+      "favors": 1
+    },
+    {
+      "name": "Queen Brane",
+      "type": "Magic",
+      "loyalty": 1,
+      "influence": 12,
+      "description": "Magic (Special Note: This contact cannot be called during a mission.) | Types: Magic",
+      "favors": 0
+    },
+    {
+      "name": "Dixie L'Amin",
+      "type": "DW Naga",
+      "loyalty": 1,
+      "influence": 4,
+      "description": "CMP 2083-14 A Day at the Beach",
+      "favors": 1
+    },
+    {
+      "name": "Ebon Abirashur",
+      "type": "DW Leviathan Dragon",
+      "loyalty": 1,
+      "influence": 1,
+      "description": "CMP 2083-14 A Day at the Beach",
+      "favors": 1
+    },
+    {
+      "name": "Col. Deborah Kentwell",
+      "type": "DW Thunder Corps Fixer",
+      "loyalty": 1,
+      "influence": 5,
+      "description": "CMP 2083-16 War Never Changes",
+      "favors": 1
+    },
+    {
+      "name": "Polyphemous 'Paul' Pellagios",
+      "type": "DW Background Actor",
+      "loyalty": 1,
+      "influence": 1,
+      "description": "CMP 2083-16 War Never Changes",
+      "favors": 0
+    },
+    {
+      "name": "Fernand Anato",
+      "type": "Kozlowski Capo",
+      "loyalty": 1,
+      "influence": 4,
+      "description": "Uses: Getting jobs, fencing gear, organized crime | Types: Criminal, Street",
+      "favors": 0
+    },
+    {
+      "name": "Monsieur Johnson",
+      "type": "NOLA Johnson",
+      "loyalty": 2,
+      "influence": 5,
+      "description": "SRM 2083-19 The Hallow Feast",
+      "favors": 0
+    },
+    {
+      "name": "Swango",
+      "type": "SEA Rapper",
+      "loyalty": 2,
+      "influence": 3,
+      "description": "SRM 2081-05 This is Renton",
+      "favors": 0
+    },
+    {
+      "name": "Toil",
+      "type": "Fixer",
+      "loyalty": 1,
+      "influence": 4,
+      "description": "Uses: Drugs, exotic dancer clubs, getting jobs (Shadowrun Missions Seattle) | Types: Criminal, Street",
+      "favors": 0
+    },
+    {
+      "name": "Trubble",
+      "type": "Bodyguard",
+      "loyalty": 1,
+      "influence": 1,
+      "description": "Uses: Bodyguards, insults, talismans (Shadowrun Missions Seattle) | Types: Magic",
+      "favors": 0
+    },
+    {
+      "name": "SpiiniCop",
+      "type": "AMS Penose Spider",
+      "loyalty": 1,
+      "influence": 2,
+      "description": "CMP 2083-01 NONPLUSHED",
+      "favors": 0
+    },
+    {
+      "name": "Eddie Wei",
+      "type": "Triad Johnson",
+      "loyalty": 1,
+      "influence": 4,
+      "description": "Uses: Business and economics, getting jobs, triads (Shadowrun Missions Seattle) | Types: Criminal, Matrix (Not available after 2081-24)",
+      "favors": 0
+    },
+    {
+      "name": "Julian M\u00fcntefering",
+      "type": "Corporate Kid",
+      "loyalty": 1,
+      "influence": 1,
+      "description": "Uses: Corporate playground rumors, drones, rigging research (Shadowrun Missions Seattle) | Types: Corporate, Engineering",
+      "favors": 0
+    },
+    {
+      "name": "Ni Ni Xiaolu",
+      "type": "Triad Johnson",
+      "loyalty": 2,
+      "influence": 3,
+      "description": "Uses: Getting jobs, drugs, street rumors, triads (Shadowrun Missions Seattle) | Types: Criminal",
+      "favors": 2
+    },
+    {
+      "name": "Bookie",
+      "type": "SEA Ancients Bookie",
+      "loyalty": 1,
+      "influence": 3,
+      "description": "SRM 2081-07 Bootleg Bliss",
+      "favors": 0
+    },
+    {
+      "name": "Trudy",
+      "type": "SEA Cutter Lieutenant",
+      "loyalty": 1,
+      "influence": 2,
+      "description": "SRM 2081-07 Bootleg Bliss",
+      "favors": 0
+    },
+    {
+      "name": "Kaatje",
+      "type": "AMS Young Entertainer",
+      "loyalty": 1,
+      "influence": 2,
+      "description": "CMP 2083-04 Hog Wild",
+      "favors": 0
+    },
+    {
+      "name": "Kirt Liger",
+      "type": "SEA Body Mod/Engineering Cybercatman",
+      "loyalty": 1,
+      "influence": 3,
+      "description": "SRM 2081-21 Grudge Match Gladiators",
+      "favors": 1
+    },
+    {
+      "name": "Sigr\u00fan",
+      "type": "AMS House Orange-Nassau Johnson",
+      "loyalty": 3,
+      "influence": 5,
+      "description": "CMP 2081-12 Uneasy lies the head",
+      "favors": 1
+    },
+    {
+      "name": "Ayanda 'Shieldbearer' Mahlangu",
+      "type": "DW 'Mystic Edge' Producer",
+      "loyalty": 1,
+      "influence": 3,
+      "description": "CMP 2083-14 A Day at the Beach",
+      "favors": 0
+    },
+    {
+      "name": "Saint James",
+      "type": "Fixer",
+      "loyalty": 2,
+      "influence": 8,
+      "description": "Uses: Corporations, getting jobs (Shadowrun Missions Seattle), fencing gear, gangs | Types: Criminal, Street (Not available after 2081-24)",
+      "favors": 1
+    },
+    {
+      "name": "Jeanie Trudel",
+      "type": "SEA Bartender",
+      "loyalty": 1,
+      "influence": 1,
+      "description": "SRM 2081-06 Cutting Strings",
+      "favors": 0
+    },
+    {
+      "name": "Kingston",
+      "type": "Shadowrunner / Street Samurai",
+      "loyalty": 1,
+      "influence": 2,
+      "description": "Uses: Shadowrunners, street rumors (Shadowrun Missions Seattle) | Types: Criminal, Street",
+      "favors": 0
+    },
+    {
+      "name": "Mr. Fa",
+      "type": "HKB Corporate Middle Manager",
+      "loyalty": 1,
+      "influence": 4,
+      "description": "CMP 2083-05 Precious Cargo",
+      "favors": 1
+    },
+    {
+      "name": "Liao Fa Ren",
+      "type": "HK Rookie Journalist",
+      "loyalty": 2,
+      "influence": 3,
+      "description": "CMP 2083-05 Precious Cargo",
+      "favors": 0
+    },
+    {
+      "name": "Aloysius Springinsguth",
+      "type": "NOLA Sound of Silence Music Shop Owner",
+      "loyalty": 2,
+      "influence": 3,
+      "description": "SRM 2083-12 When You're Smiling",
+      "favors": 0
+    },
+    {
+      "name": "Jolene Price",
+      "type": "Riverboat Alliance Leader",
+      "loyalty": 2,
+      "influence": 7,
+      "description": "Uses: Getting jobs, dragons, mafia | Types: Corporate, Street",
+      "favors": 0
+    },
+    {
+      "name": "Coffin Girls",
+      "type": "NOLA Independent Courtesans Group",
+      "loyalty": 4,
+      "influence": 3,
+      "description": "SRM 2083-18 Some Kind of Voodoo?",
+      "favors": 0
+    },
+    {
+      "name": "Cedar",
+      "type": "NOLA Talismonger",
+      "loyalty": 1,
+      "influence": 3,
+      "description": "SRM 2083-20 The Fallacy of Plans",
+      "favors": 0
+    },
+    {
+      "name": "Detective Remy LeBlanc",
+      "type": "NOLA Detective",
+      "loyalty": 2,
+      "influence": 3,
+      "description": "SRM 2083-20 The Fallacy of Plans",
+      "favors": 0
+    },
+    {
+      "name": "Claudette Laurier",
+      "type": "Golden Dawn Librarian",
+      "loyalty": 1,
+      "influence": 5,
+      "description": "Uses: Getting jobs, magical traditions | Types: Criminal, Matrix",
+      "favors": 0
+    },
+    {
+      "name": "League of Laveau",
+      "type": "NOLA Voodoo Organization",
+      "loyalty": 3,
+      "influence": 6,
+      "description": "SRM 2083-18 Some Kind of Voodoo?",
+      "favors": 1
+    },
+    {
+      "name": "Zobop",
+      "type": "NOLA Voodoo Organization",
+      "loyalty": 3,
+      "influence": 6,
+      "description": "SRM 2083-18 Some Kind of Voodoo?",
+      "favors": 1
+    },
+    {
+      "name": "Col. Treylor",
+      "type": "DW Thunder Corps Fixer",
+      "loyalty": 1,
+      "influence": 3,
+      "description": "CMP 2083-15 | By Land, Sea, and Hair",
+      "favors": 1
+    },
+    {
+      "name": "Moenen",
+      "type": "UNL infobroker",
+      "loyalty": 1,
+      "influence": 5,
+      "description": "CMP 2083-02 ROYAL ROAD",
+      "favors": 1
+    },
+    {
+      "name": "Blackstone",
+      "type": "SEA Contact",
+      "loyalty": 1,
+      "influence": 3,
+      "description": "SRM 2081-18 Friendships Never Grow Rust",
+      "favors": 0
+    }
+  ],
+  "licenses": [
+    {
+      "name": "Drone License",
+      "sin": "Yuriko Star",
+      "type": null,
+      "rating": "SECOND_LIFE"
+    },
+    {
+      "name": "Firearms License",
+      "sin": "Yuriko Star",
+      "type": null,
+      "rating": "SECOND_LIFE"
+    }
+  ],
+  "matrixItems": [
+    {
+      "name": "M-TOC Mark II",
+      "dataProcessing": 6,
+      "firewall": 5,
+      "attack": 0,
+      "sleaze": 0,
+      "deviceRating": 0,
+      "type": "Electronic",
+      "subType": "TAC_NET",
+      "page": "Firing Squad 90",
+      "concurrentPrograms": 0,
+      "accessories": [
+        {
+          "name": "Satellite link",
+          "type": "Electronic",
+          "subType": "Electronic Accessories",
+          "rating": 0,
+          "description": ""
+        }
+      ],
+      "programs": [],
+      "description": ""
+    },
+    {
+      "name": "Hermes Ikon",
+      "dataProcessing": 3,
+      "firewall": 0,
+      "attack": 0,
+      "sleaze": 0,
+      "deviceRating": 0,
+      "type": "Electronic",
+      "subType": "COMMLINK",
+      "page": "Core Rulebook 267",
+      "concurrentPrograms": 2,
+      "accessories": [],
+      "programs": [],
+      "description": ""
+    }
+  ],
+  "martialArts": [],
+  "signatureManeuvers": [],
+  "notes": null
 }

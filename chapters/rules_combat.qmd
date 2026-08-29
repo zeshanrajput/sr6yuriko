@@ -6,7 +6,7 @@
 from sr6core.rules_engine import render_weapon_card
 ```
 
-This reference details Reiko's standardized weapon attack tables, link-fired weapon arrays, firing mode penalties, attack rating modifiers, laser battery rules, Amalgam/GMT alloy mechanics, and Krime splash ammunition.
+This reference details Reiko's standardized weapon attack tables, link-fired weapon arrays, firing mode penalties, attack rating modifiers, laser battery rules, and Amalgam/GMT alloy mechanics.
 
 ---
 
@@ -31,19 +31,14 @@ print(get_weapon_attack_table("yuriko"))
 #| output: asis
 from sr6core.rules_engine import render_weapon_card
 
-print(render_weapon_card("ares_predator_vi"))
-print(render_weapon_card("monofilament_whip"))
-print(render_weapon_card("red_fox"))
 print(render_weapon_card("crimson_wasp"))
-print(render_weapon_card("krime_gloves"))
 ```
 
 ### Attack Rating (AR) Modifiers Summary
 
-* All smartlinked weapons have +3 AR (Smartgun + network bonus) (Ares Predator VI, Red Fox, Crimson Wasp).
-* All drone mounted weapons have +2 AR (drone mount AR bonus) (Red Fox, Crimson Wasp, Monofilament Whip).
-* All held weapons (Ares Predator VI (+1*), Krime Gloves (+2), Amalgam Cestus (+2)) have personalized grips.
-* The monofilament whip is wireless on (+2 AR).
+* All smartlinked weapons have +3 AR (Smartgun + network bonus) (Crimson Wasp).
+* All drone mounted weapons have +2 AR (drone mount AR bonus) (Crimson Wasp, Tesla Coil).
+* All held/melee weapons (Amalgam Cestas (+2)) have personalized grips.
 
 ---
 
@@ -87,21 +82,5 @@ Reference: *Scotophobia* (p. 181)
 ### 3. Laser Weapon Ammunition & Batteries (Firing Squad p. 44)
 
 * **Peak-Discharge Batteries**:
-  * **Red Fox**: 30 shots per Peak-Discharge Battery Clip (100¥).
   * **Crimson Wasp**: 15 shots per Peak-Discharge Battery Clip (100¥).
 * **Field Ammunition**: Yuriko carries 5x Peak-Discharge Battery Clips (500¥ total).
-
----
-
-## Krime Splash Self-Defense Ammunition
-
-Friction-liquefying gel rounds carrying glitter-based micro RFID tags and temporary skin paint.
-
-| 2D6 Result | Color Result | 2D6 Result | Color Result |
-| :---: | :--- | :---: | :--- |
-| **2** | Silver | **8** | Red |
-| **3** | Blue | **9** | White |
-| **4** | Green | **10** | Yellow |
-| **5** | Orange | **11** | Indigo |
-| **6** | Pink | **12** | Rainbow *(Just roll with it and make the targets taste the rainbow!)* |
-| **7** | Purple | | |

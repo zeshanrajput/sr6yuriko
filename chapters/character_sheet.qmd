@@ -27,9 +27,7 @@ ledger_txt = export_ledger_sheet(char_data, char_repo_path=".")
 ```
 
 ::: {.callout-note}
-### Downloadable Character Sheets & Card Decks
-* **Printable Index Card Deck (4.25" x 5.5" / 4" x 6" Laserjet PDF)**: [yuriko_cards_deck.pdf](../output/pdf/yuriko_cards_deck.pdf)
-* **Printable Base Sheet (1-Page PDF)**: [yuriko_base_sheet.pdf](../output/pdf/yuriko_base_sheet.pdf)
+### Downloadable Character Sheets & VTT Saves
 * **VTT & CommLink6 Saves**: [yuriko.xml](../output/vtt/yuriko.xml) | [yuriko.json](../output/vtt/yuriko.json)
 * **Plain-Text Modular Exports**: [Base Sheet](../output/text/yuriko_base.txt) | [Combat](../output/text/yuriko_combat.txt) | [Vehicles](../output/text/yuriko_vehicles.txt) | [Inventory](../output/text/yuriko_inventory.txt) | [Powers](../output/text/yuriko_powers.txt) | [Contacts](../output/text/yuriko_contacts.txt) | [Ledger](../output/text/yuriko_ledger.txt)
 :::

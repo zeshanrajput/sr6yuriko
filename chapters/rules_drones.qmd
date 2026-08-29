@@ -21,15 +21,7 @@ This reference details Reiko's active drone profiles, drone action pools, AI att
 
 Stat blocks list active drones in official **SR6 Vehicle/Drone Stat Block Order** (Handling, Acceleration, Speed, Body, Armor, Pilot, Sensor).
 
-### 1. Shiawase Butler (Anthrodrone)
-
-```{python}
-#| echo: false
-#| output: asis
-print(get_drone_statblock_table("yuriko", "butler"))
-```
-
-### 2. Shiawase Man-at-Arms (Anthrodrone)
+### 1. Shiawase Man-at-Arms (Anthrodrone)
 
 ```{python}
 #| echo: false
@@ -37,12 +29,28 @@ print(get_drone_statblock_table("yuriko", "butler"))
 print(get_drone_statblock_table("yuriko", "man-at-arms"))
 ```
 
-### 3. MCT Gnat (Microdrone)
+### 2. MCT Gnat (Microdrone)
 
 ```{python}
 #| echo: false
 #| output: asis
 print(get_drone_statblock_table("yuriko", "gnat"))
+```
+
+### 3. Kwonsham Dream Genie (Small Wheeled Drone)
+
+```{python}
+#| echo: false
+#| output: asis
+print(get_drone_statblock_table("yuriko", "dream"))
+```
+
+### 4. Vulcan Systems Utility-One (Small Special Drone)
+
+```{python}
+#| echo: false
+#| output: asis
+print(get_drone_statblock_table("yuriko", "utility"))
 ```
 
 ### Retractable Skates Alternate Movement
@@ -61,7 +69,7 @@ All anthrodrones feature **Retractable Skates** [BS p. 47]:
 ```{python}
 #| echo: false
 #| output: asis
-print(get_drone_action_table("yuriko", "butler", mode="remote_ar"))
+print(get_drone_action_table("yuriko", "man-at-arms", mode="remote_ar"))
 ```
 
 ### 2. Inhabited Override Operation (Sprite Power *Override*)
@@ -71,7 +79,7 @@ Reiko can also operate drones using the *Override* Sprite Power [SR6H p. 194], w
 ```{python}
 #| echo: false
 #| output: asis
-print(get_drone_action_table("yuriko", "butler", mode="inhabited_override"))
+print(get_drone_action_table("yuriko", "man-at-arms", mode="inhabited_override"))
 ```
 
 ---

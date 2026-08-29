@@ -1,4 +1,4 @@
-# Emergence
+# Resonance & Sprites
 
 ```{python}
 #| echo: false
@@ -6,7 +6,7 @@
 from sr6core.log_engine import get_log_totals
 from sr6core.character_manager import CharacterManager
 from sr6core.modifiers import ModifierEngine
-from sr6core.rules_engine import get_sprite_action_table, get_sprite_commands_table
+from sr6core.rules_engine import get_sprite_action_table
 
 cm = CharacterManager()
 _char = cm.get_character_data("yuriko") or {}
@@ -64,12 +64,7 @@ This reference details Reiko's Complex Forms, sprite compiling and registering d
 | **Cleaner** | Character Creation |
 | **Diffusion (Firewall)** | SRM 2081-17 |
 | **Puppeteer** | CMP 2083-16 |
-| **Threat Analyzer** | Pending |
-| **Smartgun Amplifier** | Pending |
-| **Enhance Autosofts** | Pending |
-| **Resonance Wires** | Pending |
 | **Cyber Spike** | CMP 2083-02 |
-| **Resonance Spike** | Pending |
 
 ---
 
@@ -82,7 +77,7 @@ print(get_sprite_action_table("yuriko", sprite_level=SPRITE_LEVEL))
 ```
 
 * **Minor Downtime Action**: Register up to 8 levels of sprites (up to Rating `{python} SPRITE_LEVEL` sprite).
-* **Schedule**: 1 per night's rest (7 hours registering, 3 hours restoration). Buying hits per SRMG p. 19.
+* **Schedule**: 1 per night's rest (7 hours registering, 3 hours restoration) or minor downtime action. Buying hits per SRMG p. 19.
 * **Standard Outcome**: Level `{python} SPRITE_LEVEL` Modular Sprite with `{python} total_services` services/powers for 3 missions.
 
 ### 1. Compiling Phase
@@ -106,11 +101,18 @@ print(get_sprite_action_table("yuriko", sprite_level=SPRITE_LEVEL))
 * **Fading Resistance**: Willpower (`{python} WILLPOWER`) + Charisma (`{python} CHARISMA`) + Submersion Grade (`{python} SUBMERSION_GRADE`) = **`{python} fade_res_pool`d6** → **`{python} fade_res_hits` Bought Hits**.
 * **Registering Damage Taken**: `{python} registering_fade_fv` FV - `{python} fade_res_hits` hits = **`{python} registering_damage` boxes of Stun damage**.
 
-### 3. Resonance Focus Standalone Fading
+### 3. Resonance Focus & Data Structure Protocols
 
-* **Focus Fading FV**: Resonance Focus rating / 2 (`{python} RESONANCE_FOCUS` / 2 = **`{python} focus_fade_fv` FV**).
-* **Focus Fading Pool**: WIL (`{python} WILLPOWER`) + LOG (`{python} LOGIC`) = **`{python} focus_fade_res_pool`d6** → **`{python} focus_fade_res_hits` Bought Hits**.
-* **Damage Taken**: `{python} focus_fade_fv` FV - `{python} focus_fade_res_hits` hits = **`{python} focus_fade_damage` Damage**.
+* **Resonance Focus (Rating 4)**: Encoded into the physical **Shiawase Man-at-Arms** drone chassis.
+  * **Bonus**: Adds **+4 dice** to any test using the Resonance attribute while inhabiting the chassis.
+  * **Focus Fading FV**: Rating / 2 (`{python} RESONANCE_FOCUS` / 2 = **`{python} focus_fade_fv` FV**).
+  * **Fading Pool**: WIL (`{python} WILLPOWER`) + LOG (`{python} LOGIC`) = **`{python} focus_fade_res_pool`d6** → **`{python} focus_fade_res_hits` Bought Hits**.
+  * **Damage Taken**: `{python} focus_fade_fv` FV - `{python} focus_fade_res_hits` hits = **`{python} focus_fade_damage` Damage**.
+* **Oracle Data Structure (Rating 4)**: Encoded into **The Holy Wild Sanctuary Host** on the remote Sky Commander.
+  * **Bonus**: Adds **+4 dice** to **Matrix Perception** and **Matrix Search** tests, and reduces extended Matrix Search intervals to a **Major Action**.
+  * **Data Structure Fading FV**: Rating / 2 (4 / 2 = **2 FV** Stun).
+  * **Fading Pool**: WIL (`{python} WILLPOWER`) + LOG (`{python} LOGIC`) = **`{python} focus_fade_res_pool`d6** → **`{python} focus_fade_res_hits` Bought Hits** (0 damage taken).
+* *Note on EI Host Contact (SRMG v2.4 p. 69–71)*: Under SRM rules, an Emergent Intelligence must reside in/touch the device/host housing the data structure to activate it (Minor Action), limiting active use to one data structure at a time based on current operational locus.
 
 ---
 
@@ -118,8 +120,57 @@ print(get_sprite_action_table("yuriko", sprite_level=SPRITE_LEVEL))
 
 All of these commands are available from Reiko's pool of registered Modular Sprites at a cost of **1 task per use**. In SRMG, these commands function as Teamwork tests (except where modified by the SRM Guide FAQ):
 
-```{python}
-#| echo: false
-#| output: asis
-print(get_sprite_commands_table("yuriko", sprite_level=SPRITE_LEVEL))
-```
+| Sprite Command | Task / Action Type | Mechanical Effect & Rules (SRM) | Notes & Constraints |
+| :--- | :--- | :--- | :--- |
+| **Signal Boost** | Simple Action | Reduces Noise penalty by sprite Rating (**`{python} SPRITE_LEVEL`**). | SRM: Applies **only to the TM/EI**. |
+| **Host Ken** | Simple Action | Teamwork assistance (adds dice) on tests **versus hosts and IC**. | |
+| **Hyperthreading** | Complex Action | Teamwork assistance (adds dice) to **Threading tests** (Complex Forms). | |
+| **File Ken** | Simple Action | Teamwork assistance (adds dice) to any **Matrix action that targets files** (Search, Edit, Decryption, File Perception). | |
+| **Cybercombat Boost** | Free Action | Adds **+4 Matrix DV** (Level / 2 rounded up) to **Data Spikes and Resonance Spikes**. | SRMG modifies this to 1/2 sprite RES. |
+| **Device Ken** | Simple Action | Teamwork assistance (adds dice) to **any Matrix action or Complex Form that targets a device**. | |
+---
+
+## Foundation Rules
+
+### Base Foundation Rules
+
+[HnS p. 141]
+
+* Social Tests: Cracking [Hacking]
+* Perception/Physical/Piloting: Electronics [Computer]
+* Combat: Cracking [Cybercombat]
+* Technical tests: Electronics [Software] or Cracking [Electronic Warfare]
+* Physical Attributes follow the [Matrix Equivalent Attributes](rules_drones.qmd#matrix-equivalent-attributes)
+* All damage is 3P or 3S
+
+### Nexus Protocol Rules
+
+[HnS p. 142]
+
+* Characters with an Electronics or Cracking skill also gain a pool of bonus dice to use. This pool is equal to the higher skill rating and refreshes each combat round. Outside of combat, a maximum of half the pool can be added to a test.
+* Hitchhikers gain +1 to their highest-rating skill and attribute.
+
+### Reiko's Foundation Form
+
+#### Attributes
+
+* Body → Firewall (`{python} ACTIVE_F`)
+* Agility → Data Processing (`{python} ACTIVE_D`)
+* Reaction → Sleaze (`{python} ACTIVE_S`)
+* Strength → Attack (`{python} ACTIVE_A`)
+* Willpower (`{python} WILLPOWER`)
+* Logic (`{python} LOGIC`)
+* Intuition (`{python} INTUITION`)
+* Charisma (`{python} CHARISMA`)
+* Edge (`{python} EDGE`)
+* Resonance (Highest Attribute) = `{python} RESONANCE + 1`
+
+#### Skills & Derived Action Pools
+
+Under the Nexus Protocol [HnS p. 142], Reiko uses her real-world skills and attributes with a +1 bonus to highest attribute (RES 8 + 1 = 9) and highest skill (Tasking 6 + 1 = 7), plus a dedicated bonus pool of +7 dice in combat (+3 dice in downtime), alongside Natural Hacker, Resonance Focus (+4), Taz Teamwork (+4), Overclock (+2), and ECM Warrior II (+2):
+
+* **Tasking (Highest Skill)**: 7
+* **Social Tests (Cracking [Hacking] + RES)**: `{python} CRACKING_HACKING + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + ECM_WARRIOR_BONUS + 3`d6 (Downtime: 25d6) / **`{python} CRACKING_HACKING + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + ECM_WARRIOR_BONUS + 7`d6 (Combat: 29d6, 1 wild)**
+* **Perception / Physical / Piloting (Electronics [Computer] + RES)**: `{python} ELECTRONICS_RATING + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + 3`d6 (Downtime: 23d6) / **`{python} ELECTRONICS_RATING + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + 7`d6 (Combat: 27d6, 1 wild)**
+* **Combat Tests (Cracking [Cybercombat] + RES)**: `{python} CRACKING_RATING + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + ECM_WARRIOR_BONUS + 3`d6 (Downtime: 25d6) / **`{python} CRACKING_RATING + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + ECM_WARRIOR_BONUS + 7`d6 (Combat: 29d6, 1 wild)**
+* **Technical Tests (Electronics [Software] + RES)**: `{python} ELECTRONICS_SOFTWARE + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + 3`d6 (Downtime: 25d6) / **`{python} ELECTRONICS_SOFTWARE + (RESONANCE + 1) + RESONANCE_FOCUS + ALLY_SPRITE_TEAMWORK + OVERCLOCK_BONUS + 7`d6 (Combat: 29d6, 1 wild)**

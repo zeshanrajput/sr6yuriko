@@ -62,7 +62,7 @@ This landing hub consolidates Reiko's downtime protocols, calculation shortcuts,
 
 ### [DRONES_RIGGING]
 
-* **Active Inhabited Drone**: Shiawase Butler / Man-at-Arms
+* **Active Inhabited Drone**: Shiawase Man-at-Arms
 * **Pilot Override**: Rating `{python} RESONANCE` (Resonance)
 * **Drone Gunnery Pool**: 7 + Data Processing (`{python} ACTIVE_D`) + Symbiosis (+4)
 * **[View Drones & Rigging Protocols](rules_drones.qmd)**
@@ -73,9 +73,9 @@ This landing hub consolidates Reiko's downtime protocols, calculation shortcuts,
 
 ### [WEAPONS_TACTICAL]
 
-* **Primary Array**: Red Fox + 2x Crimson Wasps (Link-Fired, MOA) or 2x Crimson Wasps (Link-Fired, Butler)
+* **Primary Array**: 2x Crimson Wasp Laser Array (Eye Mounts, Link-Fired)
 * **Laser Ammo System**: Peak-Discharge Batteries (5 clips)
-* **Non-Lethal Sidearm**: Tesla Coil (MOA) or Ares Predator VI / Amalgam Cestas (Butler)
+* **Secondary Tactical**: Tesla Coil (Area Cone) & Amalgam Cestas (Anti-Spirit CQC)
 * **[View Weapons & Tactical Protocols](rules_combat.qmd)**
 
 :::
@@ -91,5 +91,5 @@ Select a domain reference for full formulas, dice pool breakdowns, step-by-step 
 1. **[Matrix & Network Protocols](rules_matrix.qmd)**: Base & Active ASDF attributes, standardized Matrix action pools, network benefits, learned programs, Full Matrix Defense step-by-step breakdown, remote node & Sanctuary Host architecture, and decking cheat sheet.
 
 2. **[Sprites & Resonance Protocols](rules_sprites.qmd)**: Complex Forms roster, step-by-step compiling & registering downtime math, Technoshaman fading mitigation, and Resonance Focus fading calculations.
-3. **[Drones & Rigging Protocols](rules_drones.qmd)**: Detailed drone stat blocks (Shiawase Butler, Man-at-Arms, MCT Gnat), retractable skates rules, standardized drone action pools, Jumped-In vs Remote AI attribute mapping rules, and Sensor Lock mechanics.
-4. **[Weapons & Tactical Gear Protocols](rules_combat.qmd)**: Standardized weapon attack tables (Red Fox array, Crimson Wasp array, Tesla Coil, Ares Predator VI, Monofilament Whip, Amalgam Cestas), firing mode rules, Attack Rating modification breakdown, laser battery rules, and Krime Splash ammunition table.
+3. **[Drones & Rigging Protocols](rules_drones.qmd)**: Detailed drone stat blocks (Shiawase Man-at-Arms, MCT Gnat), retractable skates rules, standardized drone action pools, Jumped-In vs Remote AI attribute mapping rules, and Sensor Lock mechanics.
+4. **[Weapons & Tactical Gear Protocols](rules_combat.qmd)**: Standardized weapon attack tables (Crimson Wasp array, Tesla Coil, Amalgam Cestas), firing mode rules, Attack Rating modification breakdown, and laser battery rules.

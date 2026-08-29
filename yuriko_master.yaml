@@ -31,6 +31,13 @@ synergies:
     - name: Resonance Focus
       rating: 4
       applies_to: resonance
+      host_device: Shiawase Man-at-Arms
+      notes: +4 dice to tests using Resonance attribute. 2 FV Stun resisted with WIL (6) + LOG (4).
+    - name: Oracle Data Structure
+      rating: 4
+      applies_to: matrix_perception, matrix_search
+      host_device: The Holy Wild Sanctuary Host (Remote Sky Commander)
+      notes: +4 dice to Matrix Perception & Matrix Search; reduces Matrix Search interval to 1 Major Action. 2 FV Stun resisted with WIL (6) + LOG (4).
   companions:
     - name: Taz
       type: Assassin Sprite
@@ -151,25 +158,6 @@ drones:
   accel_off: 4
   speed_interval_on: 10
   page: CRB 299
-- name: Shiawase Butler
-  ref: shiawasebdbutler
-  body: 4
-  armor: 0
-  pilot: 2
-  sensor: 3
-  speed: 8
-  handling_on: 4
-  handling_off: 5
-  accel_on: 5
-  accel_off: 5
-  speed_interval_on: 5
-  page: DC 116
-  modifications:
-  - Increased Structural Integrity 2
-  - Secondary Propulsion (Rotor)
-  - Increased Sensors 3
-  - Retractable Skates
-  - Satellite Link
 - name: Federated-Boeing Sky Commander (Seattle Retrans Relay)
   ref: federatedboeingskycommander_seattle
   body: 3
@@ -184,6 +172,7 @@ drones:
   speed_interval_on: 20
   page: 6WB 288 / DC 122
   modifications:
+  - Drone Bay (Micro/Mini)
   - Retrans Unit
   - Satellite Link
   - RAM Plating 4
@@ -223,55 +212,67 @@ drones:
   speed_interval_on: 5
   page: DC 116
   modifications:
-  - Weapon Mount (Heavy)
-  - Pop-Out Concealment (Large)
+  - Weapon Mount (Standard) x2
+  - Pop-Out Concealment (Standard) x2
+  - Chameleon Coating 2
+  - Drone Rack (Small)
+  - Tesla Coil
+  - Wrist Shield
   - Armor Increase 5
+  - Increased Structural Integrity 5
+  - Realistic Features 4
   - Secondary Propulsion (Rotor)
   - Increased Sensors 3
   - Retractable Skates
+  - Built-In MedKit
   - Satellite Link
-armors:
-- name: Ares Securetech SkinShield
-  rating: 2
-  primary: true
-- name: SecureTech Invisi-Shield Armor
-  rating: 2
-  primary: false
+  - Laser Jack
+- name: Kwonsham Dream Genie
+  ref: kwonshamdreamgenie
+  body: 2
+  armor: 0
+  pilot: 1
+  sensor: 1
+  speed: 10
+  handling_on: 2
+  handling_off: 4
+  accel_on: 10
+  accel_off: 10
+  speed_interval_on: 5
+  page: Seoul Survivor 1
+  modifications:
+  - Trid Projector
+  - Smart Tires
+- name: Vulcan Systems Utility-One
+  ref: vulcansystemsutilityone
+  body: 2
+  armor: 0
+  pilot: 1
+  sensor: 1
+  speed: 5
+  handling_on: 3
+  handling_off: 3
+  accel_on: 3
+  accel_off: 3
+  speed_interval_on: 5
+  page: DC 122 / SRMG 2.4
+  modifications:
+  - Integrated Engineering & Repair Tool Package
+armors: []
 weapons:
   ranged:
-  - name: Ares Predator VI
-    damage: 3P
-    attack_rating: 11/11/8/-/-
-    mode: SA,BF
-    ammo: 15(c)
-    smartlink: true
-    personalized_grip: true
-    accessories:
-    - Silencer
-    - Smartlink
-    - Personalized Grip
   - name: Crimson Wasp Array (2x Link-Fired)
-    damage: 5P
-    attack_rating: 16/14/11/6/-
+    damage: 7P
+    attack_rating: 22/20/17/12/-
     mode: SA
     ammo: 15(c)
-    smartlink: true
-    is_vehicle_mounted: true
-    accessories:
-    - Smartlink
-    - Drone Mount (+2 AR)
-  - name: Red Fox Array (Link-Fired)
-    damage: 6P
-    attack_rating: 14/16/16/9/-
-    mode: SA,BF
-    ammo: 30(c)
     smartlink: true
     is_vehicle_mounted: true
     link_fired_count: 2
     accessories:
     - Smartlink
     - Drone Mount (+2 AR)
-    - Link-Fired (2x Wasps)
+    - Link-Fired (2x Crimson Wasps)
   - name: Tesla Coil
     damage: 5S(e)
     attack_rating: 8/10*/-/-/-
@@ -282,14 +283,6 @@ weapons:
     accessories:
     - MAA Cyberarm Mount (+2 AR)
   close_combat:
-  - name: Monofilament Whip
-    damage: 6P
-    attack_rating: 14/-/-/-/-
-    wireless_on: true
-    is_vehicle_mounted: true
-    accessories:
-    - Fingertip Cyberarm Mount (+2 AR)
-    - Wireless ON (+2 AR)
   - name: Dagger of the Sacred Rose (+1 Weapon Focus)
     damage: 2P
     attack_rating: 9/1/-/-/-
@@ -935,16 +928,12 @@ autosofts:
 - name: Tracking Autosoft
   rating: 9
 gear:
-- name: 50 Explosive Rounds (Ares Predator VI)
-  qty: 50
-- name: 50 Krime Self Defense Rounds (Ares Predator VI)
-  qty: 50
-- name: 5x Peak-Discharge Laser Battery Clips (Red Fox)
+- name: 5x Peak-Discharge Laser Battery Clips (Crimson Wasp)
   qty: 5
 - name: 10x Glitter Grenades
   qty: 10
-- name: Built-in Utility Kit & Medkit (Butler & Man-at-Arms)
-  qty: 2
+- name: Built-in Medkit (Man-at-Arms)
+  qty: 1
 - name: Facial Scanner
 - name: P-ICE Spines
 - name: Personal Assistant (R6)

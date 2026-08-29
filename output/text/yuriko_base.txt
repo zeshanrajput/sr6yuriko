@@ -3,12 +3,12 @@
 ============================================================================
  Real Name : r31k0 Takahashi    | Metatype : AI-Pilot AI (Technoshamans)
  Submersion: Grade 8            | Gender   : DIVERSE (Age: ~ 10)
- Available Nuyen : 17,550.0¥ | Karma: 5 Pool (229 Lifetime)
+ Available Nuyen : 5,000.0¥ | Karma: 1 Pool (229 Lifetime)
 ----------------------------------------------------------------------------
  ATTRIBUTES & DERIVED RATINGS:
   ATT (STR): 7  | SLZ (REA): 9  | DP (AGI): 7  | FW (BOD): 9 
   WIL: 6        | LOG: 4        | INT: 2       | CHA: 4 
-  EDG: 4        | RES: 8        | MAG: 0       | ESS: 6.0
+  EDG: 4        | RES: 8        | MAG: 0       | ESS: 6.0 
   Derived Pools       : Composure [10] | Judge Int [8] | Memory [10]
   Condition Monitors  : Physical [13 boxes] | Stun [11 boxes]
 ----------------------------------------------------------------------------
